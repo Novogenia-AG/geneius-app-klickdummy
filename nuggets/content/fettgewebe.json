@@ -19,11 +19,13 @@
           "files": [
             "clips/fett_1.mp4",
             "clips/fett_2.mp4",
-            "clips/fett_3.mp4"
+            "clips/fett_3.mp4",
+            "clips/kh_1.mp4",
+            "clips/kh_2.mp4"
           ],
-          "dur": 140,
+          "dur": 227,
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm und die fünf Gene hinter deiner Fettempfindlichkeit",
+          "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm, die fünf Gene und was sein eigenes Ergebnis für ihn bedeutet",
           "ai": false
         },
         {

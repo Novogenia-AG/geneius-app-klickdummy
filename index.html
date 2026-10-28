@@ -2938,6 +2938,7 @@ const L = (id, t, formula, scalebar, extra = {}) => ({ id, t, formula, scalebar,
 const STATIONS = [
   { k: 'zelle', n: 'Zelle', sub: 'Grundlagen', img: 'st01_zelle', lessons: [
     L('relevanz', 'Warum Gene relevant sind', null, null, { full: true }),
+    L('longevity', 'Longevity – ewig leben?', null, null, { full: true }),
     L('gene', 'Was sind Gene?', null, null, { full: true }) ] },
   { k: 'fett', n: 'Fettgewebe', sub: 'Stoffwechsel & Gewicht', img: 'st02_fettgewebe', lessons: [
     L('fett', 'Fettempfindlichkeit', 'DNA_SHAPE_FATSENSITIVITY', 'DNA_SHAPE_FAT_SENSITIVITY_SCALEBAR'),
@@ -3019,6 +3020,17 @@ const CONTENT = {
     { t: 'text', h: 'Für ein ganzes Leben', p: 'Ein Elektroauto wird nach zehn Jahren nicht plötzlich zum Diesel. Genauso bleiben deine Gene ein Leben lang gleich. Ändern kannst du sie nicht. Aber du kannst wissen, wie sie arbeiten, und dich danach richten.' },
     { t: 'quiz', q: 'Können sich deine Gene im Laufe des Lebens ändern?', o: ['Ja, mit dem Alter ändern sie sich laufend', 'Nein, sie bleiben ein Leben lang gleich', 'Nur wenn du deine Ernährung umstellst', 'Ja, durch Sport'], c: 1, e: 'Richtig. Deine Gene bleiben ein Leben lang gleich. Darum reicht eine Analyse für dein ganzes Leben.' },
     { t: 'quiz', q: 'Was verraten dir deine Gene?', o: ['Welchen „Treibstoff“ dein Körper braucht', 'Deine Lieblingsfarbe', 'Wie viel du heute gegessen hast', 'Wie das Wetter morgen wird'], c: 0, e: 'Genau. Deine Gene sind die Bedienungsanleitung deines Körpers, zum Beispiel dafür, welche Nährstoffe du besonders brauchst.' }
+  ] },
+  longevity: { minutes: 8, blocks: [
+    { t: 'text', h: 'Wie lange können wir leben?', p: 'Longevity, auf Deutsch Langlebigkeit, ist eines der heißesten Themen der Medizin: das Leben verlängern und vor allem die gesunde Phase des Lebens. Wie lange haben Menschen früher gelebt, wie lange leben wir heute und wohin geht die Reise?' },
+    { t: 'video', yt: { de: 'jHgdDRGy0hA', en: 'J5zMYFBtjQA' }, dur: { de: 342, en: 326 }, aiLang: ['en'], cap: 'Langlebigkeit erklärt: Wie deine Gene dein Leben verlängern können', tag: 'Originalaufnahme' },
+    { t: 'text', h: 'Von 35 auf 86 Jahre', p: 'Bis ins Jahr 1800 lag die durchschnittliche Lebenserwartung bei rund 35 Jahren. Sauberes Wasser und Seife hoben sie auf 49 Jahre. Danach kamen Sterilisierung, Impfungen, Antibiotika, Operationen und Transplantationen, Krebsfrüherkennung und das Human Genome Project. Heute liegt das fortschrittlichste Land bei durchschnittlich 86 Jahren.' },
+    { t: 'quiz', q: 'Wie hoch war die durchschnittliche Lebenserwartung bis ins Jahr 1800?', o: ['Rund 35 Jahre', 'Rund 50 Jahre', 'Rund 70 Jahre', 'Rund 86 Jahre'], c: 0, e: 'Rund 35 Jahre. Erst sauberes Wasser, Hygiene und Medizin haben die Lebenserwartung danach stark steigen lassen.' },
+    { t: 'text', h: 'Jedes Jahr drei Monate mehr', p: 'Unsere Lebenserwartung steigt jedes Jahr um rund drei Monate. Wer ein Jahr nach dir geboren ist, lebt statistisch drei Monate länger als du.' },
+    { t: 'quiz', q: 'Um wie viel steigt die Lebenserwartung jedes Jahr?', o: ['Um einen Tag', 'Um rund drei Monate', 'Um ein ganzes Jahr', 'Gar nicht mehr'], c: 1, e: 'Rund drei Monate pro Jahr. Die Medizin verlängert unser Leben laufend weiter.' },
+    { t: 'text', h: 'Was als Nächstes kommt', p: 'Geforscht wird an der Umprogrammierung gealterter Zellen, an Organen aus dem 3D-Drucker, an epigenetischer Verjüngung und an Nanorobotern, die Schäden reparieren. Der X-Prize ist mit 101 Millionen Dollar dotiert für die erste Gruppe, die das Alter in drei Organsystemen um 10 bis 20 Jahre zurückdreht. Viele Wissenschaftler halten 120 Jahre für machbar.' },
+    { t: 'text', h: 'Jetzt ist die Zeit der Genetik', p: 'Bis diese Technologien da sind, sind Genanalyse und ein darauf abgestimmter Lebensstil der nächste Schritt: Ernährung und Gesundheit individuell auf dich zugeschnitten, für die bestmögliche Langlebigkeit.' },
+    { t: 'quiz', q: 'Was ist heute der nächste Schritt für ein längeres, gesundes Leben?', o: ['Abwarten, bis es Nanoroboter gibt', 'Genetik und ein darauf abgestimmter Lebensstil', 'Möglichst viele Vitamine auf einmal', 'Nur noch Organe aus dem 3D-Drucker'], c: 1, e: 'Genau. Mit Genanalyse und personalisierter Ernährung kannst du heute schon für deine Gesundheit arbeiten.' }
   ] },
   gene: { minutes: 4, blocks: [
     { t: 'img', src: 'nuggets/img/bericht_gene_figur.png', report: true, h: 'In jeder Zelle steckt dein Code', p: 'Dein Körper besteht aus rund 50 Billionen Zellen, das ist eine 5 mit 13 Nullen. In fast jeder Zelle steckt ein Zellkern mit deinem kompletten genetischen Code: der DNA.' },
@@ -3291,6 +3303,12 @@ function blockHTML(b, i) {
   if (b.t === 'text') return `<div class="blk"><h3>${b.h}</h3><p>${b.p}</p></div>`;
   if (b.t === 'img' && b.report) return `<div class="blk"><div class="fig" style="aspect-ratio:auto;background:#fff;padding:10px"><img src="${b.src}" alt="${esc(b.h)}" style="height:auto;object-fit:contain"></div><h3>${b.h}</h3><p>${b.p}</p></div>`;
   if (b.t === 'img') return `<div class="blk"><div class="fig"><img src="${IMG(b.img)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${IMG(STATIONS[lessonById(LS.id).si].img)}'"></div><h3>${b.h}</h3><p>${b.p}</p><div class="ai-note">Illustration KI-generiert</div></div>`;
+  if (b.t === 'video' && b.yt) { // Video je App-Sprache (Profil): z. B. deutsches Original, englische KI-Version
+    const lang = document.querySelector('[data-lang][aria-pressed="true"]')?.dataset.lang === 'en' ? 'en' : 'de';
+    const id = b.yt[lang] || b.yt.de, len = Math.round((b.dur && (b.dur[lang] || b.dur.de)) || 0), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
+    const ai = (b.aiLang || []).includes(lang);
+    return `<div class="blk"><div class="video" data-yt="${id}"><button class="poster" aria-label="Video abspielen: ${esc(b.cap)}"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
+      <div class="vcap"><span><span class="vtag">${ai ? 'KI-Sprachversion' : b.tag}</span>${esc(b.cap)}${ai ? ' · <b>Stimme und Lippenbewegung KI-generiert</b>' : ''}</span></div></div>`; }
   if (b.t === 'video' && b.files) b = { ...b, file: b.files[0] };          // mehrere Clips am Stück in einem Player
   if (b.t === 'video' && b.file && gnYtId(b.file)) { // eigener Clip als ungelistetes YouTube-Video (ganzes Video, kein start/end)
     const len = Math.round(b.dur || ((b.end || 0) - (b.start || 0))), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
