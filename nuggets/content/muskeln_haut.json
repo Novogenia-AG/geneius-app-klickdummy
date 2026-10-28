@@ -1,1326 +1,1308 @@
 {
- "lessons": [
-  {
-   "id": "faser",
-   "station": "muskel",
-   "title": "Muskelfasertyp: Kraft oder Ausdauer?",
-   "minutes": 5,
-   "formula": null,
-   "scalebar": "DNA_PERFORMANCE_MUSKELFASER_SCALEBAR",
-   "invert": false,
-   "blocks": [
+  "lessons": [
     {
-     "t": "text",
-     "h": "Sprinter oder Marathonläufer?",
-     "p": "Manche Menschen sind beim Sprint kaum zu schlagen, andere laufen stundenlang, ohne müde zu werden. Hast du dich schon einmal gefragt, wofür deine Muskeln eigentlich gebaut sind? Ein Teil der Antwort steht in deinen Genen."
+      "id": "faser",
+      "station": "muskel",
+      "title": "Muskelfasertyp: Kraft oder Ausdauer?",
+      "minutes": 5,
+      "formula": null,
+      "scalebar": "DNA_PERFORMANCE_MUSKELFASER_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Sprinter oder Marathonläufer?",
+          "p": "Manche Menschen sind beim Sprint kaum zu schlagen, andere laufen stundenlang, ohne müde zu werden. Hast du dich schon einmal gefragt, wofür deine Muskeln eigentlich gebaut sind? Ein Teil der Antwort steht in deinen Genen."
+        },
+        {
+          "t": "text",
+          "h": "Weiße und rote Muskelfasern",
+          "p": "Deine Muskeln bestehen aus zwei Hauptarten von Fasern. Weiße Fasern sind groß, kraftvoll und schnell, ermüden aber rasch. Rote Fasern sind ausdauernd und ermüden langsam. Wie viele du von welcher Sorte hast, legen deine Gene mit fest."
+        },
+        {
+          "t": "quiz",
+          "q": "Welche Muskelfasern ermüden langsam und eignen sich für Ausdauersport?",
+          "o": [
+            "Weiße Muskelfasern",
+            "Alle Fasern ermüden gleich schnell",
+            "Rote Muskelfasern",
+            "Nur die Fasern im Herzmuskel"
+          ],
+          "c": 2,
+          "e": "Rote Fasern ermüden langsam und sind für Ausdauer gemacht. Weiße Fasern liefern schnelle Kraft, ermüden aber rasch."
+        },
+        {
+          "t": "text",
+          "h": "Das ACTN3-Gen entscheidet mit",
+          "p": "Das ACTN3-Gen bildet das Eiweiß Alpha-Aktinin-3. Wird genug davon gebildet, überwiegen die weißen Fasern: die Kraft-Version. Du hast zwei Kopien des Gens. Arbeitet mindestens eine normal, bleibt es bei der Kraft-Version. Erst wenn beide Kopien verändert sind, überwiegen die roten Fasern: die Ausdauer-Version."
+        },
+        {
+          "t": "quiz",
+          "q": "Wann überwiegen laut Bericht die roten Muskelfasern?",
+          "o": [
+            "Wenn beide Kopien des ACTN3-Gens verändert sind",
+            "Wenn nur eine Kopie verändert ist",
+            "Wenn man viel Eiweiß isst",
+            "Wenn man nur am Abend trainiert"
+          ],
+          "c": 0,
+          "e": "Mit einer veränderten Kopie arbeitet das Gen weiterhin normal. Erst mit zwei veränderten Kopien wird weniger Alpha-Aktinin-3 gebildet, und die roten Fasern überwiegen."
+        },
+        {
+          "t": "text",
+          "h": "Kein Besser oder Schlechter",
+          "p": "Dein Muskelfasertyp ist keine Note, sondern eine Richtung. Mit mehr weißen Fasern fallen dir Kraft und schnelle, explosive Bewegungen leichter. Mit mehr roten Fasern liegt dir eher alles, was lange dauert. Trainieren kannst du beides. Dein Typ zeigt dir nur, wo du von Natur aus einen Vorsprung hast."
+        },
+        {
+          "t": "text",
+          "h": "Kraft ist nicht gleich Volumen",
+          "p": "Im Performance-Bericht bekommst du passende Trainingsprinzipien dazu. Für maximale Kraft trainiert man mit schweren Gewichten und 1 bis 6 Wiederholungen. Für mehr Muskelvolumen sind es 6 bis 12 Wiederholungen. Kraft und Volumen sind nicht dasselbe und brauchen unterschiedliches Training."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 980.3,
+          "end": 1014.9,
+          "file": "clips/faser_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie viele Wiederholungen für Kraft und für Muskelvolumen passen",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viele Wiederholungen nennt Daniel für ein Training auf maximale Kraft?",
+          "o": [
+            "20 bis 30",
+            "6 bis 12",
+            "Immer genau 10",
+            "1 bis 6"
+          ],
+          "c": 3,
+          "e": "1 bis 6 schwere Wiederholungen bauen Kraft auf. 6 bis 12 Wiederholungen zielen eher auf Muskelvolumen."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Muskelfasertyp",
+        "report": "Performance-Bericht · Sporttyp",
+        "E": {
+          "pill": "Kraft-Version",
+          "title": "Mehr weiße Muskelfasern",
+          "text": "Deine ACTN3-Gene bilden genug Alpha-Aktinin-3. Dadurch überwiegen bei dir die weißen Muskelfasern, gebaut für schnelle, kraftvolle Bewegungen.",
+          "rec": "Kraftsport, Sprints und Sportarten mit explosiven Bewegungen können dir besonders liegen. Ausdauer kannst du trotzdem gezielt trainieren."
+        },
+        "B": null,
+        "D": {
+          "pill": "Ausdauer-Version",
+          "title": "Mehr rote Muskelfasern",
+          "text": "Deine ACTN3-Gene bilden weniger Alpha-Aktinin-3. Dadurch überwiegen bei dir die roten Muskelfasern, die langsam ermüden.",
+          "rec": "Ausdauersportarten wie Laufen, Radfahren oder Schwimmen können dir besonders liegen. Kraft kannst du trotzdem gezielt aufbauen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Welcher Muskelfasertyp du bist, zeigt die Gene Story „Muskelfasertyp“ in der Performance-Analyse (Sportliche Leistung).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Muskeln eher auf Kraft oder auf Ausdauer gebaut sind."
+        }
+      },
+      "images": [
+        {
+          "key": "l_faser_fasern",
+          "prompt": "A translucent muscle bundle split open, showing thick bright fast-twitch fibers beside slender deep-red endurance fibers, softly glowing."
+        },
+        {
+          "key": "l_faser_actn3",
+          "prompt": "A DNA strand unwinding into a translucent protein scaffold that anchors a powerful muscle fiber, with a sprinter's silhouette dissolving into light behind it."
+        }
+      ],
+      "sources": [
+        "OM-Report 1752 MODULE_MUSKELFASERTYP_V4 (Teil von 1739 PERFORMANCE BOOK 1): Genetische Verteilung der Muskelfasern, Ergebnis Kraft-/Ausdauer-Version, Wissenschaft der Gene",
+        "Clip faser_1: Video GyIfKaYmLoE 16:20–16:55 (Wiederholungen: Volumen 6–12, Kraft 1–6)"
+      ],
+      "open_questions": [
+        "Muskelfasertyp ist ein Typ, nicht wertend: Ergebniskarte bitte mit neutralen Farben statt rot/grün darstellen (App-Logik).",
+        "Bericht kennt nur zwei Ergebnisse (Kraft-Version / Ausdauer-Version) → B = null. Laut Wissenschaftsseite ergibt eine veränderte Kopie weiterhin die Kraft-Version. Die App leitet den Zustand aus dem SCALEBAR ab (01–03 = D, 04–07 = B, 08–10 = E); für Stufe 04–07 gibt es hier keinen Text → Vorschlag: bei faser B auf E abbilden. Zudem ungeprüft, ob 10 = Kraft-Ende der Skala ist (angenommen, weil beide Gene effektiv = weiße Fasern).",
+        "formula = null: DNA_PERFORMANCE_*_HIDER-Variablen unbekannt; Zustand nur aus SCALEBAR abgeleitet.",
+        "Kein Hauptvideo-Ausschnitt zum Muskelfasertyp selbst (GyIfKaYmLoE erwähnt weiße/rote Fasern nur in einem wertenden Satz am Berichtsbeispiel, 15:52–16:06, zu kurz) – Animation nötig (ACTN3, weiße vs. rote Fasern).",
+        "Clip faser_1: Daniel verspricht sich kurz („6 bis 12, wenn man für Kraft trainiert … da steht 1 bis 6“); der Lektionstext nennt die korrekten Werte. Bitte anhören, ob es verständlich genug ist."
+      ]
     },
     {
-     "t": "img",
-     "img": "l_faser_fasern",
-     "h": "Weiße und rote Muskelfasern",
-     "p": "Deine Muskeln bestehen aus zwei Hauptarten von Fasern. Weiße Fasern sind groß, kraftvoll und schnell, ermüden aber rasch. Rote Fasern sind ausdauernd und ermüden langsam. Wie viele du von welcher Sorte hast, legen deine Gene mit fest."
+      "id": "vo2",
+      "station": "muskel",
+      "title": "Maximale Sauerstoffaufnahme (VO2max)",
+      "minutes": 4,
+      "formula": null,
+      "scalebar": "DNA_PERFORMANCE_VO2MAX_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Wie viel Luft steckt in dir?",
+          "p": "Beim Bergauflaufen geht dir irgendwann die Puste aus, deinem Trainingspartner aber vielleicht noch lange nicht. Wie viel Sauerstoff dein Körper aufnehmen und zu den Muskeln bringen kann, hat viel mit Training zu tun. Und auch mit deinen Genen."
+        },
+        {
+          "t": "text",
+          "h": "Was ist die VO2max?",
+          "p": "VO2max steht für die maximale Sauerstoffaufnahme: die größte Menge Sauerstoff, die dein Körper bei voller Anstrengung aufnehmen und nutzen kann. Sauerstoff gelangt über die Atmung in die Lunge, wird dort ans Blut abgegeben und zu den Muskeln transportiert. Die Muskeln brauchen ihn, um Energie zu gewinnen."
+        },
+        {
+          "t": "quiz",
+          "q": "Wofür steht VO2max?",
+          "o": [
+            "Für die maximale Sauerstoffaufnahme",
+            "Für den höchsten Puls",
+            "Für ein Vitamin namens O2",
+            "Für die gesamte Muskelmasse"
+          ],
+          "c": 0,
+          "e": "VO2max ist die maximale Sauerstoffaufnahme. Sie zeigt, wie viel Sauerstoff dein Körper bei voller Belastung nutzen kann."
+        },
+        {
+          "t": "text",
+          "h": "Gene legen das Ausgangsniveau fest",
+          "p": "Bestimmte Gene legen fest, wie gut deine Lunge Sauerstoff aufnimmt und ans Blut abgibt. Mit den günstigen Varianten gelingt das besonders effektiv, und deine VO2max ist von Natur aus erhöht. Mit den anderen Varianten ist die Sauerstoffaufnahme normal, also nicht zusätzlich erhöht."
+        },
+        {
+          "t": "quiz",
+          "q": "Was bedeutet das Ergebnis „Keine erhöhte Sauerstoffaufnahme“?",
+          "o": [
+            "Deine Lunge nimmt keinen Sauerstoff auf",
+            "Du darfst keinen Ausdauersport machen",
+            "Deine Sauerstoffaufnahme ist normal, nur nicht von Natur aus erhöht",
+            "Du brauchst beim Sport eine Sauerstoffflasche"
+          ],
+          "c": 2,
+          "e": "Das Ergebnis heißt nur: kein genetischer Extra-Vorsprung. Deine Lunge nimmt ganz normal Sauerstoff auf."
+        },
+        {
+          "t": "text",
+          "h": "Warum eine hohe VO2max hilft",
+          "p": "Je mehr Sauerstoff deine Muskeln bekommen, desto länger halten sie eine hohe Belastung durch. Darum gilt die VO2max als wichtiger Wert für Ausdauersportarten wie Laufen, Radfahren oder Langlauf. Deine Gene geben dir einen Startpunkt. Regelmäßiges Ausdauertraining verbessert die VO2max."
+        },
+        {
+          "t": "text",
+          "h": "Gemessen oder vererbt?",
+          "p": "Deine aktuelle VO2max kann man in einem Leistungstest messen. Sie zeigt, wo du heute stehst. Deine Gene zeigen dagegen deine Veranlagung: wie leicht es deinem Körper von Natur aus fällt, viel Sauerstoff aufzunehmen. Beides zusammen ergibt das ganze Bild."
+        },
+        {
+          "t": "quiz",
+          "q": "Was verbessert deine VO2max?",
+          "o": [
+            "Mehr Schlaf am Wochenende",
+            "Ein Kaffee vor dem Training",
+            "Weniger trinken",
+            "Regelmäßiges Ausdauertraining"
+          ],
+          "c": 3,
+          "e": "Ausdauertraining ist der wichtigste Hebel. Deine Gene bestimmen nur, von welchem Startpunkt aus du trainierst."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Maximale Sauerstoffaufnahme (VO2max)",
+        "report": "Performance-Bericht · Sporttyp",
+        "E": {
+          "pill": "Erhöht",
+          "title": "Erhöhte Sauerstoffaufnahme",
+          "text": "Durch deine Gene kann deine Lunge sehr effektiv Sauerstoff aufnehmen und ins Blut transportieren. Du hast eine Veranlagung für eine erhöhte VO2max.",
+          "rec": "Das kann dir bei Ausdauersportarten einen Vorsprung geben. Mit gezieltem Ausdauertraining kannst du dieses Potenzial nutzen."
+        },
+        "B": {
+          "pill": "Leicht erhöht",
+          "title": "Leicht erhöhte Sauerstoffaufnahme",
+          "text": "Durch deine Gene kann deine Lunge etwas mehr Sauerstoff aufnehmen und ins Blut transportieren. Du hast eine Veranlagung für eine leicht erhöhte VO2max.",
+          "rec": "Das kann deine Ausdauerleistung etwas unterstützen. Am weitesten bringt dich regelmäßiges Ausdauertraining."
+        },
+        "D": {
+          "pill": "Normal",
+          "title": "Keine erhöhte Sauerstoffaufnahme",
+          "text": "Deine Gene sorgen für eine normale Sauerstoffaufnahme. Einen genetischen Extra-Vorsprung bei der VO2max hast du nicht.",
+          "rec": "Für deine Gesundheit ist das kein Nachteil. Deine Ausdauer kannst du mit regelmäßigem Training trotzdem verbessern."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie gut deine Gene die Sauerstoffaufnahme unterstützen, zeigt die Gene Story „Maximale Sauerstoffaufnahme (VO2max)“ in der Performance-Analyse (Sportliche Leistung).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du von Natur aus einen Vorsprung bei der Ausdauer hast."
+        }
+      },
+      "images": [
+        {
+          "key": "l_vo2_lunge",
+          "prompt": "Translucent lungs drawing in streams of glowing oxygen particles that flow through branching blood vessels into a working leg muscle."
+        },
+        {
+          "key": "l_vo2_gene",
+          "prompt": "A DNA double helix wrapped around a translucent alveolus, opening tiny gates through which oxygen molecules pour into red blood cells."
+        }
+      ],
+      "sources": [
+        "OM-Report 1754 MODULE_MAXIMALE SAUERSTOFFAUFNAHME (VO2max) (Teil von 1739): Genetischer Einfluss auf Sauerstoffaufnahme, Ergebnis Hohe / Etwas höhere / Normale VO2max-Version",
+        "Allgemeines Lehrbuchwissen zur Definition der VO2max (ohne Zahlen)"
+      ],
+      "open_questions": [
+        "Gene der VO2max stehen im Bericht nur in Grafiken (nicht als Text) → keine Gennamen in der Lektion.",
+        "Zustand D („Keine erhöhte Sauerstoffaufnahme“) ist inhaltlich normal, nicht schlecht → rote Farbe auf der Karte irreführend; neutral/gelb erwägen.",
+        "Widerspruch im Bericht: Seite „Mit ungünstigen Genen“ sagt „geringere Sauerstoffaufnahme“, Ergebnisseite „normale Sauerstoffaufnahme“. Lektion folgt der Ergebnisseite.",
+        "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
+        "Kein Hauptvideo-Ausschnitt – Animation nötig (GyIfKaYmLoE gezielt durchsucht: weder VO2max noch Sauerstoffaufnahme oder Lunge kommen vor; das Video beginnt erst beim Thema Regeneration)."
+      ]
     },
     {
-     "t": "quiz",
-     "q": "Welche Muskelfasern ermüden langsam und eignen sich für Ausdauersport?",
-     "o": [
-      "Weiße Muskelfasern",
-      "Alle Fasern ermüden gleich schnell",
-      "Rote Muskelfasern",
-      "Nur die Fasern im Herzmuskel"
-     ],
-     "c": 2,
-     "e": "Rote Fasern ermüden langsam und sind für Ausdauer gemacht. Weiße Fasern liefern schnelle Kraft, ermüden aber rasch."
+      "id": "ermued",
+      "station": "muskel",
+      "title": "Muskelermüdung beim Krafttraining",
+      "minutes": 5,
+      "formula": null,
+      "scalebar": "DNA_PERFORMANCE_FATIGUE_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Noch ein Satz oder lieber Pause?",
+          "p": "Du stemmst ein Gewicht, nach ein paar Wiederholungen brennen die Muskeln, und nichts geht mehr. Manche sind nach kurzer Pause wieder fit, andere brauchen deutlich länger. Wie schnell deine Muskeln beim Krafttraining ermüden, ist zum Teil genetisch."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 1058.1,
+          "end": 1104.3,
+          "file": "clips/ermued_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, warum deine Gene die Pause zwischen den Sätzen mitbestimmen",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Was Muskelermüdung bedeutet",
+          "p": "Beim Krafttraining arbeitest du in Sätzen: Gewicht heben, wiederholen, bis die Kraft nachlässt. Dann folgt eine Pause. Wie schnell die Kraft nachlässt und wie schnell sie zurückkommt, ist von Mensch zu Mensch verschieden. Manche ermüden viel langsamer, andere viel schneller. Das ist eine genetische Eigenschaft."
+        },
+        {
+          "t": "quiz",
+          "q": "Was heißt es laut Daniel, wenn du beim Krafttraining schneller ermüdest?",
+          "o": [
+            "Du solltest gar nicht mehr trainieren",
+            "Du brauchst längere Pausen zwischen den Sätzen",
+            "Du solltest schwerere Gewichte nehmen",
+            "Du musst mehr Wiederholungen machen"
+          ],
+          "c": 1,
+          "e": "Je stärker du ermüdest, desto länger sollte die Pause sein. So holst du am Ende das meiste aus deinem Training heraus."
+        },
+        {
+          "t": "text",
+          "h": "Drei Ergebnisse und ein Helfer namens Laktat",
+          "p": "Im Performance-Bericht gibt es drei Ergebnisse: geringe, normale und hohe Muskelermüdung bei Kraftsport. In die Empfehlung fließt noch ein zweiter Wert ein: Laktat. Laktat bildet sich im Muskel, wenn du hart trainierst. Wer weniger davon bildet, kann härter trainieren."
+        },
+        {
+          "t": "quiz",
+          "q": "Welcher Stoff bildet sich laut Daniel im Muskel, wenn du hart trainierst?",
+          "o": [
+            "Koffein",
+            "Kollagen",
+            "Laktat",
+            "Melanin"
+          ],
+          "c": 2,
+          "e": "Laktat entsteht bei harter Belastung im Muskel. Niedrigere Laktatwerte erlauben ein härteres Training."
+        },
+        {
+          "t": "text",
+          "h": "Pausen nach Maß",
+          "p": "Aus deinen Genen leitet der Bericht eine passende Pausenlänge ab. In Daniels Beispiel sind es 1 Minute 30 Sekunden zwischen den Sätzen. Andere können schneller weitermachen, andere sollten länger pausieren. Genug Erholung zwischen den Trainingstagen, ausreichend Eiweiß und genug Wasser helfen allen."
+        },
+        {
+          "t": "text",
+          "h": "Muskelkater? Lieber warten",
+          "p": "Bei Muskelkater rät Daniel klar: nicht trainieren. Muskeln wachsen nicht im Fitnessstudio, sondern danach. Beim Training werden sie beansprucht, in der Erholung neu aufgebaut. Diese Zeit brauchen sie."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 1245.3,
+          "end": 1260.2,
+          "file": "clips/ermued_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel: Bei Muskelkater nicht trainieren",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Wann wachsen Muskeln laut Daniel?",
+          "o": [
+            "In der Erholungszeit nach dem Training",
+            "Während des Trainings",
+            "Nur bei Muskelkater, wenn man weitertrainiert",
+            "Nur, wenn man jeden Tag trainiert"
+          ],
+          "c": 0,
+          "e": "Training setzt den Reiz, aufgebaut wird in der Pause. Darum ist Erholung Teil des Trainings."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Muskelermüdung bei Kraftsport",
+        "report": "Performance-Bericht · Sporttyp",
+        "E": {
+          "pill": "Gering",
+          "title": "Geringe Muskelermüdung bei Kraftsport",
+          "text": "Dein Körper neigt dazu, bei intensivem Krafttraining weniger schnell zu ermüden.",
+          "rec": "Kürzere Pausen zwischen den Sätzen können für dich reichen. Plane trotzdem genug Erholung zwischen deinen Trainingstagen ein."
+        },
+        "B": {
+          "pill": "Normal",
+          "title": "Normale Muskelermüdung bei Kraftsport",
+          "text": "Deine Gene zeigen weder eine besonders hohe noch eine besonders geringe Neigung zur Ermüdung beim Krafttraining.",
+          "rec": "Normale Satzpausen passen gut zu dir. Genug Erholung, Eiweiß und Wasser unterstützen deine Muskeln."
+        },
+        "D": {
+          "pill": "Hoch",
+          "title": "Hohe Muskelermüdung bei Kraftsport",
+          "text": "Dein Körper neigt dazu, bei intensiven Kraftübungen schneller zu ermüden.",
+          "rec": "Längere Pausen zwischen den Sätzen und eine passende Intensität können dir helfen, mehr aus deinem Training herauszuholen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie schnell deine Muskeln beim Krafttraining ermüden, zeigt die Gene Story „Muskelermüdung bei Kraftsport“ in der Performance-Analyse (Sportliche Leistung).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie lange deine Pausen zwischen den Sätzen sein sollten."
+        }
+      },
+      "images": [
+        {
+          "key": "l_ermued_satz",
+          "prompt": "A translucent arm muscle lifting a dumbbell, its fibers glowing brightly at first and gradually dimming like a draining battery."
+        },
+        {
+          "key": "l_ermued_laktat",
+          "prompt": "Tiny lactate molecules accumulating like golden sparks inside a translucent working muscle fiber, with a stopwatch shape formed by light in the background."
+        }
+      ],
+      "sources": [
+        "OM-Report 1757 MODULE_Muskelermüdung Kraftsport_PERFORMANCE_V4 (Teil von 1755/1739): Ergebnis Geringe / Normale / Hohe Muskelermüdung bei Kraftsport, Empfehlungen",
+        "Clip ermued_1: Video GyIfKaYmLoE 17:38–18:24 (Pausenlänge, Muskelermüdung, Laktat, 1 min 30 s Pause)",
+        "Clip ermued_2: Video GyIfKaYmLoE 20:45–21:00 (Muskelkater, Muskeln wachsen außerhalb des Studios)"
+      ],
+      "open_questions": [
+        "Gennamen stehen im Bericht nur in Grafiken → in der Lektion keine Gene genannt.",
+        "Ergebnis B heißt „Normale Muskelermüdung“ (Mittelwert) – gelbe Farbe wirkt strenger als gemeint; prüfen.",
+        "Kein deutsches Animationsvideo vorhanden.",
+        "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
+        "Muskelermüdung bei Ausdauersport (DNA_PERFORMANCE_ENDURANCE_FATIGUE_SCALEBAR) ist eine eigene Gene Story und hier nicht abgedeckt."
+      ]
     },
     {
-     "t": "img",
-     "img": "l_faser_actn3",
-     "h": "Das ACTN3-Gen entscheidet mit",
-     "p": "Das ACTN3-Gen bildet das Eiweiß Alpha-Aktinin-3. Wird genug davon gebildet, überwiegen die weißen Fasern: die Kraft-Version. Du hast zwei Kopien des Gens. Arbeitet mindestens eine normal, bleibt es bei der Kraft-Version. Erst wenn beide Kopien verändert sind, überwiegen die roten Fasern: die Ausdauer-Version."
+      "id": "erhol",
+      "station": "muskel",
+      "title": "Erholung nach Verletzungen",
+      "minutes": 5,
+      "formula": null,
+      "scalebar": "DNA_PERFORMANCE_INJURY_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Warum bist du nach dem Training so lange platt?",
+          "p": "Gestern hart trainiert, heute wieder voll motiviert, aber die Muskeln sagen Nein. Jeder Tag ohne Training ist ein Tag ohne Fortschritt. Wie schnell du dich von kleinen Verletzungen im Muskel erholst, hängt auch von deinem Immunsystem ab. Und das programmieren deine Gene."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 98.66,
+          "end": 117.9,
+          "file": "clips/erhol_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie das Immunsystem Mikrorisse im Muskel repariert",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Mikrorisse und Reparatur",
+          "p": "Hartes Training verursacht winzige Risse in den Muskelfasern. Das Immunsystem erkennt diese Schäden, löst eine Entzündung aus und startet so die Reparatur. Das spürst du als schmerzende Muskeln. Entzündungs-Gene steuern, wie stark diese Reaktion ausfällt."
+        },
+        {
+          "t": "quiz",
+          "q": "Was startet die Reparatur nach kleinen Muskelschäden?",
+          "o": [
+            "Die Leber mit Koffein",
+            "Das Immunsystem mit einer Entzündung",
+            "Die Haut mit Kollagen",
+            "Der Darm mit Ballaststoffen"
+          ],
+          "c": 1,
+          "e": "Das Immunsystem erkennt die Mikrorisse und entzündet den Muskel. Damit beginnt die Reparatur."
+        },
+        {
+          "t": "text",
+          "h": "Wenn das Immunsystem zu aggressiv ist",
+          "p": "Bei funktionierenden Genen reagiert das Immunsystem genau richtig: Es repariert, ohne gesunde Zellen anzugreifen. Bei veränderten Entzündungs-Genen reagiert es zu stark. Statt das Gewebe nur zu reparieren, schädigt es es zuerst zusätzlich. Die Entzündung wird schlimmer, und die Erholung dauert länger."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 139.82,
+          "end": 170.8,
+          "file": "clips/erhol_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Wenn das Immunsystem überreagiert, dauert die Erholung länger",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was passiert bei veränderten Entzündungs-Genen?",
+          "o": [
+            "Das Immunsystem schaltet sich ab",
+            "Muskeln wachsen doppelt so schnell",
+            "Das Immunsystem reagiert zu stark, und die Erholung dauert länger",
+            "Es entsteht nie mehr Muskelkater"
+          ],
+          "c": 2,
+          "e": "Ein zu aggressives Immunsystem schädigt auch gesundes Gewebe. Dadurch dauert die Erholung länger."
+        },
+        {
+          "t": "text",
+          "h": "Ernährung stellt das Immunsystem lauter oder leiser",
+          "p": "Arachidonsäure, eine Omega-6-Fettsäure aus tierischen Lebensmitteln, wirkt entzündungsfördernd. Auch Alkohol kann die Muskelreparatur bremsen. Omega-3-Fettsäuren und MSM, also organischer Schwefel, wirken dagegen entzündungshemmend. So kannst du in die Erholung eingreifen, auch wenn deine Gene dich nicht unterstützen."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 207.7,
+          "end": 240.1,
+          "file": "clips/erhol_3.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel zu Arachidonsäure, Omega-3 und MSM",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Welche Stoffe nennt der Bericht als entzündungshemmend?",
+          "o": [
+            "Zucker und Fruchtzucker",
+            "Arachidonsäure und Alkohol",
+            "Koffein und Salz",
+            "Omega-3 und MSM"
+          ],
+          "c": 3,
+          "e": "Omega-3 und MSM drosseln ein zu aktives Immunsystem. Arachidonsäure und Alkohol wirken in die andere Richtung."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Erholung nach muskulären Verletzungen",
+        "report": "Performance-Bericht · Erholungstyp",
+        "E": {
+          "pill": "Normal",
+          "title": "Erholung nach muskulären Verletzungen normal",
+          "text": "Deine Entzündungsgene sind normal programmiert. Dein Immunsystem reagiert angemessen, und du erholst dich normal schnell von muskulären Verletzungen.",
+          "rec": "Weniger entzündungsfördernde und mehr entzündungshemmende Lebensmittel können deine Erholung trotzdem unterstützen."
+        },
+        "B": {
+          "pill": "Vermindert",
+          "title": "Erholung nach muskulären Verletzungen vermindert",
+          "text": "Deine Entzündungsgene sind etwas zu aggressiv programmiert. Du erholst dich etwas langsamer von muskulären Verletzungen, etwa nach einer Überdehnung.",
+          "rec": "Weniger Arachidonsäure und mehr Omega-3 können für dich sinnvoll sein. Plane genug Erholung zwischen harten Einheiten ein."
+        },
+        "D": {
+          "pill": "Langsam",
+          "title": "Erholung nach muskulären Verletzungen schlecht",
+          "text": "Deine Entzündungsgene sind deutlich zu aggressiv programmiert. Dein Immunsystem reagiert zu stark, und du erholst dich langsamer von muskulären Verletzungen.",
+          "rec": "Eine entzündungsarme Ernährung mit Omega-3 und MSM kann für dich besonders sinnvoll sein. Bei echten Verletzungen besprich dein Training mit deiner Ärztin oder deinem Arzt."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie schnell du dich von muskulären Verletzungen erholst, zeigt die Gene Story „Erholung nach muskulären Verletzungen“ in der Performance-Analyse (Sportliche Leistung).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dein Immunsystem deine Erholung bremst und was du dagegen tun kannst."
+        }
+      },
+      "images": [
+        {
+          "key": "l_erhol_mikrorisse",
+          "prompt": "A translucent muscle fiber with tiny glowing micro-tears, small immune cells gathering around them like a repair crew."
+        },
+        {
+          "key": "l_erhol_immun",
+          "prompt": "A balance scale made of light: on one side calm immune cells mending a muscle fiber, on the other an overreacting swarm of immune cells creating extra sparks of damage."
+        }
+      ],
+      "sources": [
+        "OM-Report 1764 MODULE_Dein Immunsystem_V4 (Teil von 1745/1739): Wenn die Gene effektiv/defekt sind, Dein Ergebnis – Erholung nach muskulären Verletzungen normal / vermindert / schlecht",
+        "Clip erhol_1: Video GyIfKaYmLoE 1:38–1:58 (Entzündung, Mikrorisse, Muskelkater)",
+        "Clip erhol_2: Video GyIfKaYmLoE 2:19–2:51 (Gene steuern, wie aggressiv das Immunsystem reagiert)",
+        "Clip erhol_3: Video GyIfKaYmLoE 3:27–4:00 (Arachidonsäure, Omega-3, MSM)"
+      ],
+      "open_questions": [
+        "Entzündungs-Gene sind im Bericht nur als Grafik benannt → keine Gennamen in der Lektion.",
+        "Abgrenzung zur Schwester-Story „Erholung bei Entzündung“ (DNA_PERFORMANCE_IMMUN_SCALEBAR, gleiche Seiten, gleiche Mechanik) – eigene Lektion oder Zusammenlegung?",
+        "Kein deutsches Animationsvideo (EN „Inflammation-and-your-genes“ unveröffentlicht).",
+        "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
+        "Sport-Video nennt 8 % des Sauerstoffs werden zu freien Radikalen, Beauty-Bericht und Beauty-Video 5 % → Zahl in dieser Lektion bewusst weggelassen.",
+        "Clips bewusst ohne die dazwischenliegenden Teile zu oxidativem Stress und Antioxidantien (1:58–2:19 und 3:02–3:27, Nachbarthema)."
+      ]
     },
     {
-     "t": "quiz",
-     "q": "Wann überwiegen laut Bericht die roten Muskelfasern?",
-     "o": [
-      "Wenn beide Kopien des ACTN3-Gens verändert sind",
-      "Wenn nur eine Kopie verändert ist",
-      "Wenn man viel Eiweiß isst",
-      "Wenn man nur am Abend trainiert"
-     ],
-     "c": 0,
-     "e": "Mit einer veränderten Kopie arbeitet das Gen weiterhin normal. Erst mit zwei veränderten Kopien wird weniger Alpha-Aktinin-3 gebildet, und die roten Fasern überwiegen."
+      "id": "verletz",
+      "station": "muskel",
+      "title": "Sport und Verletzungsrisiko",
+      "minutes": 6,
+      "formula": null,
+      "scalebar": "DNA_PERFORMANCE_INJURYRISK_TYPE_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Achillessehne, Kreuzband, Tennisarm",
+          "p": "Manche Sportler verletzen sich ständig, andere trainieren jahrelang ohne Ausfall. Pech? Nicht nur. Wie oft und wo du dich verletzt, hängt auch von deinen Genen ab."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 262.3,
+          "end": 304.2,
+          "file": "clips/verletz_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, warum Gene dein Verletzungsrisiko mitbestimmen",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Gene bauen deine Sehnen",
+          "p": "Viele der untersuchten Gene liefern den Bauplan für stabiles Bindegewebe, zum Beispiel für Sehnen. Ein Beispiel ist das Kollagen-Gen COL5A1. Arbeitet ein solches Gen nicht richtig, wird die Sehne schwächer, als sie sein sollte, und Verletzungen passieren leichter."
+        },
+        {
+          "t": "video",
+          "id": "GyIfKaYmLoE",
+          "start": 304.75,
+          "end": 366.5,
+          "file": "clips/verletz_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Ein Gen, fast ein Drittel weniger Spiele: die Studie mit Fußballern",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was passiert, wenn ein Gen für stabile Sehnen nicht richtig arbeitet?",
+          "o": [
+            "Die Sehne wird schwächer, und Verletzungen passieren leichter",
+            "Die Sehne wird doppelt so stark",
+            "Die Muskeln wachsen schneller",
+            "Es passiert gar nichts"
+          ],
+          "c": 0,
+          "e": "Solche Gene bauen das Bindegewebe. Arbeiten sie schlechter, ist die Sehne weniger belastbar."
+        },
+        {
+          "t": "text",
+          "h": "Eine Studie mit Fußballern",
+          "p": "Wie groß der Effekt sein kann, zeigt eine Studie mit Fußballspielern, die Daniel im Video vorstellt. Spieler mit einer Genvariante im COL5A1-Gen bestritten wegen Verletzungen rund 28 % weniger Spiele als die anderen. Eine kleine Veränderung im Gen, ein großer Unterschied für die Karriere."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viel weniger Spiele bestritten Fußballer mit der Genvariante laut Daniel?",
+          "o": [
+            "Rund 2 %",
+            "Rund 28 %",
+            "Rund 80 %",
+            "Gar keinen Unterschied"
+          ],
+          "c": 1,
+          "e": "Rund 28 % weniger Spiele, fast ein Drittel, nur wegen Verletzungen."
+        },
+        {
+          "t": "text",
+          "h": "Mehrere Balken, ein Verletzungstyp",
+          "p": "Im Performance-Bericht siehst du dein Risiko für mehrere Verletzungsarten: Muskelverletzungen, die Achillessehne, Bänder wie das Kreuzband und die Rotatorenmanschette in der Schulter. Dazu kommt der Tennisarm. Daraus ergibt sich dein Verletzungstyp: widerstandsfähig, moderat oder anfällig."
+        },
+        {
+          "t": "text",
+          "h": "Vorbeugen, wo es zählt",
+          "p": "Wer sein Risiko kennt, kann gezielt vorbeugen: gründlich aufwärmen und genau die Bereiche kräftigen, die genetisch empfindlicher sind. So kannst du verhindern, dass dich eine Verletzung wochenlang ausbremst."
+        },
+        {
+          "t": "quiz",
+          "q": "Was rät Daniel bei erhöhtem Verletzungsrisiko?",
+          "o": [
+            "Ganz auf Sport verzichten",
+            "Nur noch im Sitzen trainieren",
+            "Vor dem Training mehr Kaffee trinken",
+            "Gut aufwärmen und den empfindlichen Bereich gezielt stärken"
+          ],
+          "c": 3,
+          "e": "Aufwärmen und gezieltes Kräftigen machen den empfindlichen Bereich belastbarer. Sport bleibt erlaubt und sinnvoll."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Sport und Verletzungsrisiko",
+        "report": "Performance-Bericht · Verletzungstyp",
+        "E": {
+          "pill": "Widerstandsfähig",
+          "title": "Widerstandsfähiger Verletzungstyp",
+          "text": "Aufgrund deiner Gene neigst du dazu, seltener die untersuchten Sportverletzungen zu erleiden.",
+          "rec": "Du kannst intensiv und regelmäßig trainieren, ohne dass deine Gene das Verletzungsrisiko erhöhen. Aufwärmen bleibt trotzdem wichtig."
+        },
+        "B": {
+          "pill": "Moderat",
+          "title": "Moderater Verletzungstyp",
+          "text": "Aufgrund deiner Gene hast du ein moderates Risiko für die untersuchten Sportverletzungen.",
+          "rec": "Gutes Aufwärmen und gezieltes Kräftigen der Bereiche mit erhöhtem Risiko können dir helfen, Verletzungen zu vermeiden."
+        },
+        "D": {
+          "pill": "Anfällig",
+          "title": "Anfälliger Verletzungstyp",
+          "text": "Aufgrund deiner Gene neigst du dazu, häufiger die untersuchten Sportverletzungen zu erleiden.",
+          "rec": "Eine sorgfältige Trainingsplanung mit Aufwärmen, Kräftigung und genug Erholung kann dein Risiko gering halten. Bei Beschwerden lass dich ärztlich beraten."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie hoch dein Risiko für typische Sportverletzungen ist, zeigt die Gene Story „Sport und Verletzungsrisiko“ in der Performance-Analyse (Sportliche Leistung).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, welche Bereiche deines Körpers du beim Training besonders schützen solltest."
+        }
+      },
+      "images": [
+        {
+          "key": "l_verletz_sehne",
+          "prompt": "A translucent Achilles tendon made of twisted collagen ropes, with a DNA helix weaving new fibers into it."
+        },
+        {
+          "key": "l_verletz_fussball",
+          "prompt": "A translucent soccer player's leg mid-kick, knee ligaments and tendons glowing softly, a football made of light at the foot."
+        }
+      ],
+      "sources": [
+        "OM-Report 1766 MODULE_Sport und Verletzungsrisiko_V4 (Ergebnisseiten Verletzungen 1–2) und 1746 MODULE_VERLETZUNGSTYP_V4 (Widerstandsfähiger / Moderater / Anfälliger Verletzungstyp – Deine Zusammenfassung)",
+        "Clip verletz_1: Video GyIfKaYmLoE 4:22–5:04 (Gene und Verletzungsarten, Sehnen, Aufwärmen)",
+        "Clip verletz_2: Video GyIfKaYmLoE 5:05–6:07 (COL5A1-Studie mit Fußballern, 28 % weniger Spiele)"
+      ],
+      "open_questions": [
+        "Karte nutzt den Sammelwert DNA_PERFORMANCE_INJURYRISK_TYPE_SCALEBAR; Titel E/B/D aus den Typ-Zusammenfassungen (Modul 1746). Ob der Sammelwert genau diesen drei Typen entspricht, ist nicht verifiziert.",
+        "Gen „COL5A1“ aus dem Auto-Transkript rekonstruiert („Call 51 Kollagen“); Studie (Fußballer, 28 % weniger Spiele) nur aus dem Video, nicht aus dem Bericht → Zahl und Gen bitte prüfen.",
+        "Bericht führt zusätzlich Tennisarm und Weichteilverletzungen; die STATIONS-Beschreibung nennt 4 Balken (Achilles, Muskel, Bänder, Rotatoren).",
+        "Kein deutsches Animationsvideo vorhanden.",
+        "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
+        "Clip verletz_2: Daniel sagt erst „28 % weniger Spiele“, dann „30 %“ bzw. „fast ein Drittel“; der Lektionstext nennt 28 %."
+      ]
     },
     {
-     "t": "text",
-     "h": "Kein Besser oder Schlechter",
-     "p": "Dein Muskelfasertyp ist keine Note, sondern eine Richtung. Mit mehr weißen Fasern fallen dir Kraft und schnelle, explosive Bewegungen leichter. Mit mehr roten Fasern liegt dir eher alles, was lange dauert. Trainieren kannst du beides. Dein Typ zeigt dir nur, wo du von Natur aus einen Vorsprung hast."
+      "id": "kollagen",
+      "station": "haut",
+      "title": "Kollagen und Festigkeit der Haut",
+      "minutes": 6,
+      "formula": "DNA_BEAUTY_COLLAGEN_FIRMNESS",
+      "scalebar": "DNA_BEAUTY_COLLAGEN_FIRMNESS_SCALA",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Warum altert Haut unterschiedlich schnell?",
+          "p": "Zwei Menschen, gleiches Alter, und doch wirkt die Haut des einen deutlich jünger. Sonne, Pflege und Lebensstil spielen mit. Ein wichtiger Teil steckt aber in deinen Genen, genauer in der Frage: Wie schnell baut deine Haut Kollagen ab?"
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 70.85,
+          "end": 127.9,
+          "file": "clips/kollagen_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie das MMP1-Gen altes Kollagen abbaut",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Kollagen: die Kabel deiner Haut",
+          "p": "Kollagen besteht aus langen, flexiblen Fasern und ist das häufigste Eiweiß in der Haut. Die Hautzellen halten sich daran fest wie an Kabeln, so bleibt die Haut fest. Damit sie frisch bleibt, wird altes Kollagen laufend abgebaut und durch neues ersetzt. Der Abbau beginnt schon ab Mitte 20."
+        },
+        {
+          "t": "quiz",
+          "q": "Welches Gen bildet das Enzym, das altes Kollagen abbaut?",
+          "o": [
+            "MTHFR",
+            "MMP1",
+            "ACTN3",
+            "NQO1"
+          ],
+          "c": 1,
+          "e": "Das MMP1-Gen bildet das Enzym MMP1. Es baut altes Kollagen ab und schafft Platz für neues."
+        },
+        {
+          "t": "text",
+          "h": "Wenn das Gen zu fleißig ist",
+          "p": "Das Enzym MMP1 arbeitet wie ein kleiner Pac-Man, der altes Kollagen frisst. Bei manchen Menschen ist das MMP1-Gen verändert und bildet zu viel davon. Dann wird Kollagen schneller abgebaut, als der Körper es nachbilden kann, und die Kollagendichte nimmt ab. Laut Daniel haben nur rund 20 % der Menschen zwei funktionierende Kopien, rund 33 % bauen Kollagen viel zu schnell ab."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 128.95,
+          "end": 167.5,
+          "file": "clips/kollagen_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Ein Gendefekt, der zu gut arbeitet: zu viel MMP1",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was macht ein verändertes MMP1-Gen?",
+          "o": [
+            "Es bildet gar kein MMP1 mehr",
+            "Es macht die Haut dunkler",
+            "Es bildet Vitamin C",
+            "Es bildet zu viel MMP1, und Kollagen wird zu schnell abgebaut"
+          ],
+          "c": 3,
+          "e": "Das Besondere: Die Veränderung macht das Gen nicht schwächer, sondern zu aktiv. Zu viel MMP1 baut zu viel Kollagen ab."
+        },
+        {
+          "t": "text",
+          "h": "Von außen und von innen",
+          "p": "Bestimmte Nährstoffe können ein überaktives MMP1 bremsen: Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure. Manche wirken in einer Creme direkt auf der Haut, andere als Nahrungsergänzung von innen. Phytosterole zum Beispiel wirken nur von innen, denn auf der Haut werden sie nicht aufgenommen."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 191.3,
+          "end": 261.2,
+          "file": "clips/kollagen_3.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Welche Nährstoffe MMP1 bremsen und wo sie wirken",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Warum bringen Phytosterole in einer Hautcreme laut Daniel nichts?",
+          "o": [
+            "Weil die Haut sie nicht aufnimmt",
+            "Weil sie die Haut austrocknen",
+            "Weil sie nur nachts wirken",
+            "Weil sie Kollagen zerstören"
+          ],
+          "c": 0,
+          "e": "Ein Nährstoff muss dorthin gelangen, wo er gebraucht wird. Phytosterole dringen nicht in die Haut ein und wirken deshalb nur von innen."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Kollagen und Festigkeit der Haut",
+        "report": "Beauty-Bericht · Kollagenabbau",
+        "E": {
+          "pill": "Normal",
+          "title": "Normaler Kollagenabbau",
+          "text": "Deine MMP1-Gene funktionieren richtig und bilden die richtige Menge MMP1. Altes Kollagen wird wie gewollt abgebaut, das hält deine Haut jung.",
+          "rec": "Mit dem Alter steigt die MMP1-Bildung langsam an. Eine geringe Menge Lutein, Vitamin C und Vitamin E kann dem entgegenwirken."
+        },
+        "B": {
+          "pill": "Etwas schneller",
+          "title": "Etwas schnellerer Kollagenabbau",
+          "text": "Deine MMP1-Gene sind beeinträchtigt. Deine Haut bildet etwas mehr MMP1 und baut Kollagen etwas schneller ab.",
+          "rec": "Nährstoffe, die MMP1 bremsen, wie Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure, können für dich sinnvoll sein, in der Creme und von innen."
+        },
+        "D": {
+          "pill": "Viel zu schnell",
+          "title": "Viel zu schneller Kollagenabbau",
+          "text": "Deine MMP1-Gene bilden zu viel MMP1. Deine Haut baut Kollagen schneller ab, als sie es nachbilden kann.",
+          "rec": "Für dich kann es besonders sinnvoll sein, MMP1 gezielt zu bremsen: mit Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure von außen und von innen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie schnell deine Haut Kollagen abbaut, zeigt die Gene Story „Kollagen und Festigkeit der Haut“ in der Beauty-Analyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Haut Kollagen zu schnell abbaut und welche Nährstoffe sie schützen."
+        }
+      },
+      "images": [
+        {
+          "key": "l_kollagen_kabel",
+          "prompt": "A translucent cross-section of skin with long flexible collagen fibers stretched like cables, skin cells holding onto them."
+        },
+        {
+          "key": "l_kollagen_pacman",
+          "prompt": "Tiny round enzyme shapes nibbling through old collagen strands in translucent skin, while fresh golden collagen fibers grow in behind them."
+        }
+      ],
+      "sources": [
+        "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel KOLLAGEN UND FESTIGKEIT DER HAUT: Intro, Gen effektiv/defekt, Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
+        "Clip kollagen_1: Video 5A5XoWH7XKk 1:11–2:08 (Kollagen als Kabel, MMP1 als Pac-Man)",
+        "Clip kollagen_2: Video 5A5XoWH7XKk 2:09–2:48 (Gendefekt bildet zu viel MMP1)",
+        "Clip kollagen_3: Video 5A5XoWH7XKk 3:11–4:21 (Nährstoffe innen/außen, Phytosterole)",
+        "Video 5A5XoWH7XKk 5:00–5:40 (20 % / 47 % / 33 % der Bevölkerung, nicht als Clip verwendet)"
+      ],
+      "open_questions": [
+        "Prozentwerte 20 % / 33 % nur aus dem Auto-Transkript (Daniel liest sie von einer Folie, teils widersprüchlich: am Ende „20 % haben einen sehr langsamen Kollagenabbau“) → gegen Bericht-Grafik „Wissenschaft der Gene 2“ prüfen.",
+        "Beauty-Video 5A5XoWH7XKk spricht in Sie-Form und hat Übersetzungsartefakte – möglicherweise ein KI-Dub eines englischen Vortrags. Falls ja: \"ai\": true setzen und KI-Hinweis ergänzen.",
+        "Wertebereich von DNA_BEAUTY_COLLAGEN_FIRMNESS_SCALA (ob 01–10) nicht verifiziert.",
+        "Keine deutsche Animation vorhanden."
+      ]
     },
     {
-     "t": "text",
-     "h": "Kraft ist nicht gleich Volumen",
-     "p": "Im Performance-Bericht bekommst du passende Trainingsprinzipien dazu. Für maximale Kraft trainiert man mit schweren Gewichten und 1 bis 6 Wiederholungen. Für mehr Muskelvolumen sind es 6 bis 12 Wiederholungen. Kraft und Volumen sind nicht dasselbe und brauchen unterschiedliches Training."
+      "id": "uv",
+      "station": "haut",
+      "title": "Schutz gegen UV-Strahlen",
+      "minutes": 5,
+      "formula": "SectionDNA_BEAUTY_UVPROTECTION",
+      "scalebar": "DNA_BEAUTY_UVRISK_SCALA",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Gleiche Sonne, andere Haut",
+          "p": "Manche werden in der Sonne schnell rot, andere kaum. Sonne lässt die Haut schneller altern, aber nicht bei allen gleich stark. Warum? Deine Gene bauen einen eigenen Sonnenschutz, und der ist unterschiedlich stark."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 393.15,
+          "end": 479.9,
+          "file": "clips/uv_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erzählt von einem LKW-Fahrer, dessen Gesicht nur auf einer Seite gealtert ist",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Eine Gesichtshälfte älter",
+          "p": "Ein LKW-Fahrer fuhr 15 Jahre lang mit offenem Fenster. Die Gesichtshälfte, die zur Sonne zeigte, wirkt wie die eines 80-Jährigen, die andere passt zu seinen 66 Jahren. UV-Strahlung ist der schädlichste Umweltfaktor für junge Haut: Die Strahlen dringen in die Zellen ein und richten dort Schäden an."
+        },
+        {
+          "t": "quiz",
+          "q": "Was zeigt das Beispiel des LKW-Fahrers?",
+          "o": [
+            "Sonne lässt die Haut schneller altern",
+            "Fahrtwind macht die Haut jünger",
+            "Nur Männer altern durch die Sonne",
+            "Die Haut altert auf beiden Seiten immer gleich"
+          ],
+          "c": 0,
+          "e": "Die sonnige Gesichtshälfte war optisch um viele Jahre älter. Allerdings trifft das nicht jeden gleich stark, und da kommen die Gene ins Spiel."
+        },
+        {
+          "t": "text",
+          "h": "Dein eingebauter Sonnenschutz",
+          "p": "Die Gene MC1R und STXBP5L sorgen dafür, dass deine Haut schützende Pigmente bildet. Das MC1R-Gen bestimmt auch die Farbe von Haut und Haaren. Die Pigmente fangen einen Großteil der UV-Strahlen ab, bevor sie Schaden anrichten. Du hast zwei Kopien: Zwei funktionierende bedeuten starken, eine veränderte mäßigen und zwei veränderte schwachen UV-Schutz."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 482.15,
+          "end": 535.9,
+          "file": "clips/uv_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Das Sonnenschutz-Gen: eingebauter Schutz oder lichtempfindliche Haut",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Welches Gen bestimmt laut Bericht auch die Farbe von Haut und Haaren?",
+          "o": [
+            "MMP1",
+            "NQO1",
+            "MC1R",
+            "SOD2"
+          ],
+          "c": 2,
+          "e": "MC1R sagt dem Körper, wie viel Pigment er bilden soll. Das beeinflusst Haut- und Haarfarbe und den natürlichen UV-Schutz."
+        },
+        {
+          "t": "text",
+          "h": "Sonnencreme bleibt Pflicht",
+          "p": "Auch mit starken Genen ersetzt dein eigener Schutz keine Sonnencreme. Sie wirkt nur von außen als Barriere, schlucken bringt nichts. Von innen und auf der Haut können Vitamin C und Vitamin E helfen: Sie unterstützen sich gegenseitig und helfen der Haut, UV-Schäden zu reparieren."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 536.6,
+          "end": 597.7,
+          "file": "clips/uv_3.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Sonnencreme von außen, Vitamin C und E von innen",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was gilt laut Daniel für Sonnencreme?",
+          "o": [
+            "Sie wirkt am besten als Kapsel",
+            "Sie wirkt nur von außen als Barriere",
+            "Mit guten Genen braucht man sie nie",
+            "Sie ersetzt Vitamin C"
+          ],
+          "c": 1,
+          "e": "Sonnencreme bildet eine Barriere auf der Haut. Von innen eingenommen hätte sie keinen Sinn."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Schutz gegen UV-Strahlen",
+        "report": "Beauty-Bericht · UV-Schutz",
+        "E": {
+          "pill": "Stark",
+          "title": "Starker UV-Schutz",
+          "text": "Deine Gene funktionieren ausreichend und schützen deine Haut relativ gut gegen die UV-Strahlen der Sonne.",
+          "rec": "Dein genetischer Schutz ersetzt keine Sonnencreme. Bei moderater Sonne kann ein niedrigerer Lichtschutzfaktor reichen, passe ihn aber immer an die UV-Stärke an."
+        },
+        "B": {
+          "pill": "Mäßig",
+          "title": "Mäßiger UV-Schutz",
+          "text": "Manche der Gene, die deine Haut vor UV-Strahlen schützen sollen, funktionieren nicht richtig. Direkte Sonne schädigt deine Haut etwas stärker als bei anderen Menschen.",
+          "rec": "Verwende in direkter Sonne konsequent Sonnencreme, je nach Situation mit mittlerem bis höherem Lichtschutzfaktor. Vitamin C und E können die Reparatur unterstützen."
+        },
+        "D": {
+          "pill": "Schwach",
+          "title": "Schwacher UV-Schutz",
+          "text": "Manche der Gene, die deine Haut vor UV-Strahlen schützen sollen, funktionieren nicht richtig. Direkte Sonne schädigt deine Haut stärker als bei anderen Menschen.",
+          "rec": "Für dich ist konsequenter Sonnenschutz mit höherem Lichtschutzfaktor besonders wichtig, vor allem bei längeren Aufenthalten im Freien."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie stark dein natürlicher UV-Schutz ist, zeigt die Gene Story „Schutz gegen UV-Strahlen“ in der Beauty-Analyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie empfindlich deine Haut auf Sonne reagiert und wie viel Schutz sie braucht."
+        }
+      },
+      "images": [
+        {
+          "key": "l_uv_lkw",
+          "prompt": "A translucent human face divided down the middle, one half bathed in sunlight with fine aging lines, the other half smooth in soft shade."
+        },
+        {
+          "key": "l_uv_schild",
+          "prompt": "Translucent skin cells producing a shimmering layer of pigment that deflects incoming UV rays like a golden shield."
+        }
+      ],
+      "sources": [
+        "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel SCHUTZ GEGEN UV-STRAHLEN: Intro, Genetik des UV-Schutzes, Gen effektiv/defekt, Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
+        "Clip uv_1: Video 5A5XoWH7XKk 6:33–8:00 (LKW-Fahrer 15 Jahre, 66 vs. 80)",
+        "Clip uv_2: Video 5A5XoWH7XKk 8:02–8:56 (Sonnenschutz-Gen)",
+        "Clip uv_3: Video 5A5XoWH7XKk 8:57–9:58 (Sonnencreme nur außen, Vitamin C und E)",
+        "Video 5A5XoWH7XKk 10:00–10:16 (zwei Kopien: stark / moderat / schwach, nicht als Clip verwendet)"
+      ],
+      "open_questions": [
+        "Formel-Gruppe laut STATIONS „SectionDNA_BEAUTY_UVPROTECTION“ (mit Section-Präfix) – prüfen, ob es auch DNA_BEAUTY_UVPROTECTION_*_HIDER gibt.",
+        "UV-Skala DNA_BEAUTY_UVRISK_SCALA: Name „RISK“ deutet evtl. auf umgekehrte Richtung hin (hoch = hohes Risiko?) – nicht verifiziert; invert ggf. auf true setzen. Dieselbe Skala nutzt laut Recherche auch „Feuchtigkeit der Haut“.",
+        "Bericht-Text widersprüchlich: Gen-Box nennt nur „MC1R-Gene“, Intro „MC1R und STXBP5L“.",
+        "Beauty-Video evtl. KI-Dub (Sie-Form) – siehe Lektion kollagen.",
+        "Keine deutsche Animation vorhanden.",
+        "Clip uv_1 beginnt mit „jetzt sprechen wir über UV-Strahlen“ (direkt nach dem Kollagen-Abschluss geschnitten) – bitte anhören.",
+        "Drei UV-Clips zusammen rund 3:20 min – ggf. uv_3 streichen, falls die Lektion zu lang wird."
+      ]
     },
     {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 980.3,
-     "end": 1014.9,
-     "file": "clips/faser_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, wie viele Wiederholungen für Kraft und für Muskelvolumen passen",
-     "ai": false
+      "id": "oxi",
+      "station": "haut",
+      "title": "Oxidativer Stress und Hautalterung",
+      "minutes": 6,
+      "formula": "DNA_BEAUTY_OXISTRESS",
+      "scalebar": "DNA_BEAUTY_OXRISK_SCALA",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Lässt dich Atmen altern?",
+          "p": "Ohne Sauerstoff kein Leben. Und doch lässt derselbe Sauerstoff manche Menschen schneller altern als andere. Wie gut dein Körper diese Schattenseite des Atmens im Griff hat, steht in deinen Genen."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 621.6,
+          "end": 703.1,
+          "file": "clips/oxi_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt freie Radikale und die genetische Feuerwehr",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Freie Radikale: Feuer im trockenen Wald",
+          "p": "Etwa 5 % des eingeatmeten Sauerstoffs werden zu aggressiven Stoffen, den freien Radikalen. Ein freies Radikal wirkt wie ein Feuer im trockenen Wald: Der Schaden breitet sich aus. Über Jahre sammeln sich diese Schäden an. Sie gelten als eine der Hauptursachen der Hautalterung."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viel des eingeatmeten Sauerstoffs wird laut Bericht zu freien Radikalen?",
+          "o": [
+            "Etwa 50 %",
+            "Etwa 5 %",
+            "Gar nichts",
+            "Nur bei Rauchern ein Teil"
+          ],
+          "c": 1,
+          "e": "Rund 5 % des Sauerstoffs werden zu freien Radikalen. Das passiert bei jedem Menschen, einfach weil wir leben und Energie verbrauchen."
+        },
+        {
+          "t": "text",
+          "h": "Deine genetische Feuerwehr",
+          "p": "Schutz-Gene wie SOD2 und die GST-Gene erkennen freie Radikale und machen sie unschädlich, bevor sie Schaden anrichten. SOD2 schützt dort, wo die meisten Brände entstehen: in den Kraftwerken deiner Zellen, den Mitochondrien. Sind diese Gene verändert, arbeitet die Feuerwehr zu langsam, und die Haut altert schneller."
+        },
+        {
+          "t": "video",
+          "id": "Bf-WdkeB7E0",
+          "start": 28.8,
+          "end": 72.1,
+          "file": "clips/oxi_3.mp4",
+          "tag": "Animation",
+          "cap": "Feuerwehr und Regen: so wirken Antioxidantien",
+          "ai": true
+        },
+        {
+          "t": "quiz",
+          "q": "Wo schützt das Enzym aus dem SOD2-Gen besonders?",
+          "o": [
+            "Im Magen",
+            "In den Haarspitzen",
+            "Im Blutplasma",
+            "In den Mitochondrien, den Kraftwerken der Zellen"
+          ],
+          "c": 3,
+          "e": "In den Mitochondrien entstehen die meisten freien Radikale. Genau dort setzt der SOD2-Schutz an."
+        },
+        {
+          "t": "text",
+          "h": "Regen für den Waldbrand",
+          "p": "Schafft die Feuerwehr es nicht allein, muss Regen löschen. Dieser Regen sind Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure. Sie wirken in einer Creme direkt in der Haut und auch von innen. Zink hilft nur von innen, weil es nicht durch die Haut dringt. Je besser deine Gene arbeiten, desto weniger davon brauchst du."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 719.4,
+          "end": 780.1,
+          "file": "clips/oxi_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Welche Antioxidantien von außen und von innen wirken",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Warum bringt Zink in einer Hautcreme laut Daniel wenig?",
+          "o": [
+            "Weil es freie Radikale erzeugt",
+            "Weil es die Haut verfärbt",
+            "Weil es nicht durch die Haut dringt",
+            "Weil es nur bei Kindern wirkt"
+          ],
+          "c": 2,
+          "e": "Zink ist Teil eines körpereigenen Antioxidans, kommt aber nicht durch die Haut. Darum wirkt es nur von innen."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Oxidativer Stress und Hautalterung",
+        "report": "Beauty-Bericht · Oxidativer Stress",
+        "E": {
+          "pill": "Guter Schutz",
+          "title": "Guter Schutz gegen freie Radikale",
+          "text": "Deine Schutz-Gene arbeiten gut und machen freie Radikale unschädlich, bevor sie deiner Haut schaden.",
+          "rec": "Eine kleine Menge Antioxidantien als Unterstützung reicht für dich. Eine gesunde Ernährung mit viel Obst und Gemüse ist dafür eine gute Basis."
+        },
+        "B": {
+          "pill": "Schlechterer Schutz",
+          "title": "Schlechterer Schutz gegen freie Radikale",
+          "text": "Einige deiner antioxidativen Gene arbeiten nicht optimal. Freie Radikale werden zu langsam neutralisiert, deine Haut kann dadurch schneller altern.",
+          "rec": "Eine besonders gute Versorgung mit Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure kann für dich sinnvoll sein, über die Ernährung oder die Haut."
+        },
+        "D": {
+          "pill": "Schlechter Schutz",
+          "title": "Schlechter Schutz gegen freie Radikale",
+          "text": "Deine antioxidativen Gene arbeiten nicht richtig. Freie Radikale werden zu langsam neutralisiert und beschleunigen die Hautalterung.",
+          "rec": "Für dich kann eine besonders hohe Zufuhr an Antioxidantien sinnvoll sein, von innen und von außen. Sei sparsam mit dem, was das Feuer anheizt: Rauchen, Alkohol und Zucker."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie gut deine Haut vor freien Radikalen geschützt ist, zeigt die Gene Story „Oxidativer Stress und Hautalterung“ in der Beauty-Analyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie viele Antioxidantien deine Haut wirklich braucht."
+        }
+      },
+      "images": [
+        {
+          "key": "l_oxi_waldbrand",
+          "prompt": "Inside translucent skin tissue, tiny glowing sparks of free radicals spreading like a small wildfire through delicate cell structures."
+        },
+        {
+          "key": "l_oxi_feuerwehr",
+          "prompt": "A translucent mitochondrion with tiny enzyme shapes extinguishing sparks of free radicals, gentle golden droplets falling like rain from above."
+        }
+      ],
+      "sources": [
+        "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel OXIDATIVER STRESS UND HAUTALTERUNG: Intro (5 % des Sauerstoffs), Genetik (SOD2, GSTM1/GSTT1/GSTP1), Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
+        "Clip oxi_1: Video 5A5XoWH7XKk 10:22–11:43 (freie Radikale, Waldbrand, genetische Feuerwehr)",
+        "Clip oxi_2: Video 5A5XoWH7XKk 11:59–13:00 (Antioxidantien innen/außen, Zink nur innen)",
+        "Clip oxi_3: Animation Bf-WdkeB7E0 0:29–1:12 (Feuerwehr, Mitochondrien, Regen = Antioxidantien; KI-Stimme)",
+        "Animation Bf-WdkeB7E0 1:16–1:20 (Rauchen, Alkohol, Zucker, nicht im Clip)"
+      ],
+      "open_questions": [
+        "Animation Bf-WdkeB7E0 gehört zur Lifestyle-Story „Schutz vor freien Radikalen“ (SOD2). Überschneidung mit Lektion radikale (Station Leber) – Clip-Doppelung abstimmen.",
+        "Ergebnis-Texte für MEDIUM und DEFECT sind im Bericht identisch (Textblock „Ergebnis beeinträchtigt und defekt“); B und D hier leicht abgestuft formuliert.",
+        "Wissenschaftsseite nennt andere Titel („Guter / Mäßiger / Eingeschränkter Schutz gegen oxidativen Stress und freie Radikale“) als die Ergebnisseiten; verwendet wurden die Ergebnisseiten.",
+        "Beauty-Video evtl. KI-Dub (Sie-Form) – siehe Lektion kollagen.",
+        "Zwischen oxi_1 und oxi_2 ausgelassen: 11:43–11:59 (Beispielperson „irgendwo dazwischen“, Kundenbeispiel)."
+      ]
     },
     {
-     "t": "quiz",
-     "q": "Wie viele Wiederholungen nennt Daniel für ein Training auf maximale Kraft?",
-     "o": [
-      "20 bis 30",
-      "6 bis 12",
-      "Immer genau 10",
-      "1 bis 6"
-     ],
-     "c": 3,
-     "e": "1 bis 6 schwere Wiederholungen bauen Kraft auf. 6 bis 12 Wiederholungen zielen eher auf Muskelvolumen."
-    },
-    {
-     "t": "result"
+      "id": "q10haut",
+      "station": "haut",
+      "title": "Wirkung von Q10",
+      "minutes": 6,
+      "formula": "DNA_BEAUTY_Q10",
+      "scalebar": "DNA_BEAUTY_Q10_SCALA",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Wirkt deine Q10-Creme überhaupt?",
+          "p": "Q10 steckt in unzähligen Cremes und Nahrungsergänzungsmitteln und gilt als das Anti-Aging-Molekül. Es ist teuer, und bei manchen Menschen wirkt es kaum. Ob es bei dir wirkt, entscheidet ein einziges Gen."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 785.6,
+          "end": 862.7,
+          "file": "clips/q10haut_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Q10 muss erst aufgeladen werden",
+          "p": "Coenzym Q10 ist zunächst inaktiv, wie eine leere Batterie. Das NQO1-Gen bildet das Enzym NQO1, das Q10 in seine aktive Form umwandelt: Ubiquinol. Erst Ubiquinol fängt freie Radikale ein. Danach lädt das Enzym es einfach wieder auf."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie heißt die aktive Form von Q10?",
+          "o": [
+            "Ubiquinol",
+            "Methylfolat",
+            "Kollagen",
+            "Melanin"
+          ],
+          "c": 0,
+          "e": "Das NQO1-Enzym wandelt Q10 in Ubiquinol um. Erst diese Form schützt vor freien Radikalen."
+        },
+        {
+          "t": "text",
+          "h": "Zwei Kopien, drei Möglichkeiten",
+          "p": "Du hast zwei Kopien des NQO1-Gens, eine von deiner Mutter, eine von deinem Vater. Funktionieren beide, wird Q10 mühelos aktiviert, egal ob es aus deinem Körper, aus einer Kapsel oder aus einer Creme kommt. Ist eine Kopie verändert, gelingt das nur langsam. Mit zwei veränderten Kopien wird Q10 nicht aktiviert. Das betrifft etwa jeden Elften."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viele Menschen haben laut Animation zwei veränderte NQO1-Kopien?",
+          "o": [
+            "Fast alle",
+            "Etwa jeder Zweite",
+            "Etwa jeder Elfte",
+            "Niemand"
+          ],
+          "c": 2,
+          "e": "Etwa jeder Elfte hat zwei veränderte Kopien. Bei diesen Menschen bleibt Q10 weitgehend wirkungslos."
+        },
+        {
+          "t": "text",
+          "h": "Die Falle beim Bluttest",
+          "p": "Ab etwa 20 Jahren sinkt der Q10-Gehalt in deinen Organen langsam. Ein Bluttest kann trotzdem viel Q10 zeigen. Er verrät aber nicht, ob es aktiviert wird. Bei veränderten NQO1-Genen bleibt Q10 inaktiv, egal wie viel davon im Blut ist."
+        },
+        {
+          "t": "video",
+          "id": "yvh9JKmdNvI",
+          "start": 24.6,
+          "end": 78.4,
+          "file": "clips/q10haut_3.mp4",
+          "tag": "Animation",
+          "cap": "Q10 als Batterie: so lädt das NQO1-Gen es auf",
+          "ai": true
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 864.2,
+          "end": 910.4,
+          "file": "clips/q10haut_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Was du tun kannst, wenn Q10 bei dir nicht wirkt",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was kannst du tun, wenn deine NQO1-Gene Q10 nicht aktivieren?",
+          "o": [
+            "Die doppelte Menge Q10 nehmen",
+            "Auf andere Antioxidantien wie Vitamin C und E ausweichen",
+            "Q10 nur abends auftragen",
+            "Nichts, freie Radikale sind harmlos"
+          ],
+          "c": 1,
+          "e": "Mehr Q10 hilft nicht, wenn das Gen es nicht aktiviert. Andere Antioxidantien erreichen dasselbe Ziel auf anderem Weg."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Wirkung von Q10",
+        "report": "Beauty-Bericht · Aktivierung von Q10",
+        "E": {
+          "pill": "Wirksam",
+          "title": "Die Aktivierung von Coenzym Q10 ist wirksam",
+          "text": "Deine NQO1-Gene funktionieren richtig und wandeln Q10 effektiv in die aktive Form Ubiquinol um.",
+          "rec": "Q10 kann für dich ein wirksamer Inhaltsstoff sein, als Creme oder als Nahrungsergänzung, besonders wenn du älter wirst."
+        },
+        "B": {
+          "pill": "Eingeschränkt",
+          "title": "Aktivierung von Coenzym Q10 ist eingeschränkt",
+          "text": "Deine NQO1-Gene sind beeinträchtigt und wandeln Q10 nur langsam in die aktive Form um.",
+          "rec": "Q10 kann für dich trotzdem nützlich sein. Zusätzliche Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure können den Schutz ergänzen."
+        },
+        "D": {
+          "pill": "Defekt",
+          "title": "Die Aktivierung von Coenzym Q10 ist defekt",
+          "text": "Deine NQO1-Gene können Q10 nicht in die aktive Form umwandeln. Auch zusätzlich eingenommenes Q10 zeigt bei dir keine antioxidative Wirkung.",
+          "rec": "Statt Q10 können andere Antioxidantien wie Vitamin C, Vitamin E, Alpha-Liponsäure, Zink und Mangan für dich die bessere Wahl sein."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Ob Q10 bei dir wirkt, zeigt die Gene Story „Wirkung von Q10“ in der Beauty-Analyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich Q10 in deiner Hautpflege lohnt oder ob andere Antioxidantien besser passen."
+        }
+      },
+      "images": [
+        {
+          "key": "l_q10haut_batterie",
+          "prompt": "A translucent empty battery-shaped Q10 molecule being charged by a glowing enzyme inside a skin cell, turning bright gold as it fills."
+        },
+        {
+          "key": "l_q10haut_kopien",
+          "prompt": "Two translucent DNA strands side by side, one feeding glowing energy into a cream droplet on skin, the other dim with the droplet staying pale."
+        }
+      ],
+      "sources": [
+        "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel WIRKUNG VON Q10 (Überschrift im Bericht „Die Aktivierung von Q10“): Intro, Genetik des Q10-Metabolismus, Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
+        "Clip q10haut_1: Video 5A5XoWH7XKk 13:06–14:23 (NQO1, Ubiquinol, Bluttest-Falle)",
+        "Clip q10haut_2: Video 5A5XoWH7XKk 14:24–15:10 (andere Antioxidantien statt Q10)",
+        "Clip q10haut_3: Animation yvh9JKmdNvI 0:25–1:18 (Batterie, zwei Kopien, etwa jeder Elfte; KI-Stimme)",
+        "Animation yvh9JKmdNvI 0:16–0:23 (ab etwa 20 Jahren sinkt Q10, nicht im Clip)"
+      ],
+      "open_questions": [
+        "Überschneidung mit Lektion q10 (Station Leber, DNA_NUTRITION_Q10): gleiches Gen, gleiche Animation – Inhalte und Clips abstimmen.",
+        "Kapitelname im OM „WIRKUNG VON Q10“, Überschrift im Bericht aber „Die Aktivierung von Q10“.",
+        "Bericht-Text B widersprüchlich: „Die beeinträchtigten NQO1-Gene produzieren kein NQO1-Protein“ neben „nur langsam“ – Lektion folgt „nur langsam“.",
+        "Beauty-Video evtl. KI-Dub (Sie-Form) – siehe Lektion kollagen."
+      ]
     }
-   ],
-   "result": {
-    "story": "Muskelfasertyp",
-    "report": "Performance-Bericht · Sporttyp",
-    "E": {
-     "pill": "Kraft-Version",
-     "title": "Mehr weiße Muskelfasern",
-     "text": "Deine ACTN3-Gene bilden genug Alpha-Aktinin-3. Dadurch überwiegen bei dir die weißen Muskelfasern, gebaut für schnelle, kraftvolle Bewegungen.",
-     "rec": "Kraftsport, Sprints und Sportarten mit explosiven Bewegungen können dir besonders liegen. Ausdauer kannst du trotzdem gezielt trainieren."
-    },
-    "B": null,
-    "D": {
-     "pill": "Ausdauer-Version",
-     "title": "Mehr rote Muskelfasern",
-     "text": "Deine ACTN3-Gene bilden weniger Alpha-Aktinin-3. Dadurch überwiegen bei dir die roten Muskelfasern, die langsam ermüden.",
-     "rec": "Ausdauersportarten wie Laufen, Radfahren oder Schwimmen können dir besonders liegen. Kraft kannst du trotzdem gezielt aufbauen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Welcher Muskelfasertyp du bist, zeigt die Gene Story „Muskelfasertyp“ in der Performance-Analyse (Sportliche Leistung).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Muskeln eher auf Kraft oder auf Ausdauer gebaut sind."
-    }
-   },
-   "images": [
-    {
-     "key": "l_faser_fasern",
-     "prompt": "A translucent muscle bundle split open, showing thick bright fast-twitch fibers beside slender deep-red endurance fibers, softly glowing."
-    },
-    {
-     "key": "l_faser_actn3",
-     "prompt": "A DNA strand unwinding into a translucent protein scaffold that anchors a powerful muscle fiber, with a sprinter's silhouette dissolving into light behind it."
-    }
-   ],
-   "sources": [
-    "OM-Report 1752 MODULE_MUSKELFASERTYP_V4 (Teil von 1739 PERFORMANCE BOOK 1): Genetische Verteilung der Muskelfasern, Ergebnis Kraft-/Ausdauer-Version, Wissenschaft der Gene",
-    "Clip faser_1: Video GyIfKaYmLoE 16:20–16:55 (Wiederholungen: Volumen 6–12, Kraft 1–6)"
-   ],
-   "open_questions": [
-    "Muskelfasertyp ist ein Typ, nicht wertend: Ergebniskarte bitte mit neutralen Farben statt rot/grün darstellen (App-Logik).",
-    "Bericht kennt nur zwei Ergebnisse (Kraft-Version / Ausdauer-Version) → B = null. Laut Wissenschaftsseite ergibt eine veränderte Kopie weiterhin die Kraft-Version. Die App leitet den Zustand aus dem SCALEBAR ab (01–03 = D, 04–07 = B, 08–10 = E); für Stufe 04–07 gibt es hier keinen Text → Vorschlag: bei faser B auf E abbilden. Zudem ungeprüft, ob 10 = Kraft-Ende der Skala ist (angenommen, weil beide Gene effektiv = weiße Fasern).",
-    "formula = null: DNA_PERFORMANCE_*_HIDER-Variablen unbekannt; Zustand nur aus SCALEBAR abgeleitet.",
-    "Kein Hauptvideo-Ausschnitt zum Muskelfasertyp selbst (GyIfKaYmLoE erwähnt weiße/rote Fasern nur in einem wertenden Satz am Berichtsbeispiel, 15:52–16:06, zu kurz) – Animation nötig (ACTN3, weiße vs. rote Fasern).",
-    "Clip faser_1: Daniel verspricht sich kurz („6 bis 12, wenn man für Kraft trainiert … da steht 1 bis 6“); der Lektionstext nennt die korrekten Werte. Bitte anhören, ob es verständlich genug ist."
-   ]
-  },
-  {
-   "id": "vo2",
-   "station": "muskel",
-   "title": "Maximale Sauerstoffaufnahme (VO2max)",
-   "minutes": 4,
-   "formula": null,
-   "scalebar": "DNA_PERFORMANCE_VO2MAX_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Wie viel Luft steckt in dir?",
-     "p": "Beim Bergauflaufen geht dir irgendwann die Puste aus, deinem Trainingspartner aber vielleicht noch lange nicht. Wie viel Sauerstoff dein Körper aufnehmen und zu den Muskeln bringen kann, hat viel mit Training zu tun. Und auch mit deinen Genen."
-    },
-    {
-     "t": "img",
-     "img": "l_vo2_lunge",
-     "h": "Was ist die VO2max?",
-     "p": "VO2max steht für die maximale Sauerstoffaufnahme: die größte Menge Sauerstoff, die dein Körper bei voller Anstrengung aufnehmen und nutzen kann. Sauerstoff gelangt über die Atmung in die Lunge, wird dort ans Blut abgegeben und zu den Muskeln transportiert. Die Muskeln brauchen ihn, um Energie zu gewinnen."
-    },
-    {
-     "t": "quiz",
-     "q": "Wofür steht VO2max?",
-     "o": [
-      "Für die maximale Sauerstoffaufnahme",
-      "Für den höchsten Puls",
-      "Für ein Vitamin namens O2",
-      "Für die gesamte Muskelmasse"
-     ],
-     "c": 0,
-     "e": "VO2max ist die maximale Sauerstoffaufnahme. Sie zeigt, wie viel Sauerstoff dein Körper bei voller Belastung nutzen kann."
-    },
-    {
-     "t": "img",
-     "img": "l_vo2_gene",
-     "h": "Gene legen das Ausgangsniveau fest",
-     "p": "Bestimmte Gene legen fest, wie gut deine Lunge Sauerstoff aufnimmt und ans Blut abgibt. Mit den günstigen Varianten gelingt das besonders effektiv, und deine VO2max ist von Natur aus erhöht. Mit den anderen Varianten ist die Sauerstoffaufnahme normal, also nicht zusätzlich erhöht."
-    },
-    {
-     "t": "quiz",
-     "q": "Was bedeutet das Ergebnis „Keine erhöhte Sauerstoffaufnahme“?",
-     "o": [
-      "Deine Lunge nimmt keinen Sauerstoff auf",
-      "Du darfst keinen Ausdauersport machen",
-      "Deine Sauerstoffaufnahme ist normal, nur nicht von Natur aus erhöht",
-      "Du brauchst beim Sport eine Sauerstoffflasche"
-     ],
-     "c": 2,
-     "e": "Das Ergebnis heißt nur: kein genetischer Extra-Vorsprung. Deine Lunge nimmt ganz normal Sauerstoff auf."
-    },
-    {
-     "t": "text",
-     "h": "Warum eine hohe VO2max hilft",
-     "p": "Je mehr Sauerstoff deine Muskeln bekommen, desto länger halten sie eine hohe Belastung durch. Darum gilt die VO2max als wichtiger Wert für Ausdauersportarten wie Laufen, Radfahren oder Langlauf. Deine Gene geben dir einen Startpunkt. Regelmäßiges Ausdauertraining verbessert die VO2max."
-    },
-    {
-     "t": "text",
-     "h": "Gemessen oder vererbt?",
-     "p": "Deine aktuelle VO2max kann man in einem Leistungstest messen. Sie zeigt, wo du heute stehst. Deine Gene zeigen dagegen deine Veranlagung: wie leicht es deinem Körper von Natur aus fällt, viel Sauerstoff aufzunehmen. Beides zusammen ergibt das ganze Bild."
-    },
-    {
-     "t": "quiz",
-     "q": "Was verbessert deine VO2max?",
-     "o": [
-      "Mehr Schlaf am Wochenende",
-      "Ein Kaffee vor dem Training",
-      "Weniger trinken",
-      "Regelmäßiges Ausdauertraining"
-     ],
-     "c": 3,
-     "e": "Ausdauertraining ist der wichtigste Hebel. Deine Gene bestimmen nur, von welchem Startpunkt aus du trainierst."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Maximale Sauerstoffaufnahme (VO2max)",
-    "report": "Performance-Bericht · Sporttyp",
-    "E": {
-     "pill": "Erhöht",
-     "title": "Erhöhte Sauerstoffaufnahme",
-     "text": "Durch deine Gene kann deine Lunge sehr effektiv Sauerstoff aufnehmen und ins Blut transportieren. Du hast eine Veranlagung für eine erhöhte VO2max.",
-     "rec": "Das kann dir bei Ausdauersportarten einen Vorsprung geben. Mit gezieltem Ausdauertraining kannst du dieses Potenzial nutzen."
-    },
-    "B": {
-     "pill": "Leicht erhöht",
-     "title": "Leicht erhöhte Sauerstoffaufnahme",
-     "text": "Durch deine Gene kann deine Lunge etwas mehr Sauerstoff aufnehmen und ins Blut transportieren. Du hast eine Veranlagung für eine leicht erhöhte VO2max.",
-     "rec": "Das kann deine Ausdauerleistung etwas unterstützen. Am weitesten bringt dich regelmäßiges Ausdauertraining."
-    },
-    "D": {
-     "pill": "Normal",
-     "title": "Keine erhöhte Sauerstoffaufnahme",
-     "text": "Deine Gene sorgen für eine normale Sauerstoffaufnahme. Einen genetischen Extra-Vorsprung bei der VO2max hast du nicht.",
-     "rec": "Für deine Gesundheit ist das kein Nachteil. Deine Ausdauer kannst du mit regelmäßigem Training trotzdem verbessern."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie gut deine Gene die Sauerstoffaufnahme unterstützen, zeigt die Gene Story „Maximale Sauerstoffaufnahme (VO2max)“ in der Performance-Analyse (Sportliche Leistung).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du von Natur aus einen Vorsprung bei der Ausdauer hast."
-    }
-   },
-   "images": [
-    {
-     "key": "l_vo2_lunge",
-     "prompt": "Translucent lungs drawing in streams of glowing oxygen particles that flow through branching blood vessels into a working leg muscle."
-    },
-    {
-     "key": "l_vo2_gene",
-     "prompt": "A DNA double helix wrapped around a translucent alveolus, opening tiny gates through which oxygen molecules pour into red blood cells."
-    }
-   ],
-   "sources": [
-    "OM-Report 1754 MODULE_MAXIMALE SAUERSTOFFAUFNAHME (VO2max) (Teil von 1739): Genetischer Einfluss auf Sauerstoffaufnahme, Ergebnis Hohe / Etwas höhere / Normale VO2max-Version",
-    "Allgemeines Lehrbuchwissen zur Definition der VO2max (ohne Zahlen)"
-   ],
-   "open_questions": [
-    "Gene der VO2max stehen im Bericht nur in Grafiken (nicht als Text) → keine Gennamen in der Lektion.",
-    "Zustand D („Keine erhöhte Sauerstoffaufnahme“) ist inhaltlich normal, nicht schlecht → rote Farbe auf der Karte irreführend; neutral/gelb erwägen.",
-    "Widerspruch im Bericht: Seite „Mit ungünstigen Genen“ sagt „geringere Sauerstoffaufnahme“, Ergebnisseite „normale Sauerstoffaufnahme“. Lektion folgt der Ergebnisseite.",
-    "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
-    "Kein Hauptvideo-Ausschnitt – Animation nötig (GyIfKaYmLoE gezielt durchsucht: weder VO2max noch Sauerstoffaufnahme oder Lunge kommen vor; das Video beginnt erst beim Thema Regeneration)."
-   ]
-  },
-  {
-   "id": "ermued",
-   "station": "muskel",
-   "title": "Muskelermüdung beim Krafttraining",
-   "minutes": 5,
-   "formula": null,
-   "scalebar": "DNA_PERFORMANCE_FATIGUE_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Noch ein Satz oder lieber Pause?",
-     "p": "Du stemmst ein Gewicht, nach ein paar Wiederholungen brennen die Muskeln, und nichts geht mehr. Manche sind nach kurzer Pause wieder fit, andere brauchen deutlich länger. Wie schnell deine Muskeln beim Krafttraining ermüden, ist zum Teil genetisch."
-    },
-    {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 1058.1,
-     "end": 1104.3,
-     "file": "clips/ermued_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, warum deine Gene die Pause zwischen den Sätzen mitbestimmen",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_ermued_satz",
-     "h": "Was Muskelermüdung bedeutet",
-     "p": "Beim Krafttraining arbeitest du in Sätzen: Gewicht heben, wiederholen, bis die Kraft nachlässt. Dann folgt eine Pause. Wie schnell die Kraft nachlässt und wie schnell sie zurückkommt, ist von Mensch zu Mensch verschieden. Manche ermüden viel langsamer, andere viel schneller. Das ist eine genetische Eigenschaft."
-    },
-    {
-     "t": "quiz",
-     "q": "Was heißt es laut Daniel, wenn du beim Krafttraining schneller ermüdest?",
-     "o": [
-      "Du solltest gar nicht mehr trainieren",
-      "Du brauchst längere Pausen zwischen den Sätzen",
-      "Du solltest schwerere Gewichte nehmen",
-      "Du musst mehr Wiederholungen machen"
-     ],
-     "c": 1,
-     "e": "Je stärker du ermüdest, desto länger sollte die Pause sein. So holst du am Ende das meiste aus deinem Training heraus."
-    },
-    {
-     "t": "img",
-     "img": "l_ermued_laktat",
-     "h": "Drei Ergebnisse und ein Helfer namens Laktat",
-     "p": "Im Performance-Bericht gibt es drei Ergebnisse: geringe, normale und hohe Muskelermüdung bei Kraftsport. In die Empfehlung fließt noch ein zweiter Wert ein: Laktat. Laktat bildet sich im Muskel, wenn du hart trainierst. Wer weniger davon bildet, kann härter trainieren."
-    },
-    {
-     "t": "quiz",
-     "q": "Welcher Stoff bildet sich laut Daniel im Muskel, wenn du hart trainierst?",
-     "o": [
-      "Koffein",
-      "Kollagen",
-      "Laktat",
-      "Melanin"
-     ],
-     "c": 2,
-     "e": "Laktat entsteht bei harter Belastung im Muskel. Niedrigere Laktatwerte erlauben ein härteres Training."
-    },
-    {
-     "t": "text",
-     "h": "Pausen nach Maß",
-     "p": "Aus deinen Genen leitet der Bericht eine passende Pausenlänge ab. In Daniels Beispiel sind es 1 Minute 30 Sekunden zwischen den Sätzen. Andere können schneller weitermachen, andere sollten länger pausieren. Genug Erholung zwischen den Trainingstagen, ausreichend Eiweiß und genug Wasser helfen allen."
-    },
-    {
-     "t": "text",
-     "h": "Muskelkater? Lieber warten",
-     "p": "Bei Muskelkater rät Daniel klar: nicht trainieren. Muskeln wachsen nicht im Fitnessstudio, sondern danach. Beim Training werden sie beansprucht, in der Erholung neu aufgebaut. Diese Zeit brauchen sie."
-    },
-    {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 1245.3,
-     "end": 1260.2,
-     "file": "clips/ermued_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel: Bei Muskelkater nicht trainieren",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Wann wachsen Muskeln laut Daniel?",
-     "o": [
-      "In der Erholungszeit nach dem Training",
-      "Während des Trainings",
-      "Nur bei Muskelkater, wenn man weitertrainiert",
-      "Nur, wenn man jeden Tag trainiert"
-     ],
-     "c": 0,
-     "e": "Training setzt den Reiz, aufgebaut wird in der Pause. Darum ist Erholung Teil des Trainings."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Muskelermüdung bei Kraftsport",
-    "report": "Performance-Bericht · Sporttyp",
-    "E": {
-     "pill": "Gering",
-     "title": "Geringe Muskelermüdung bei Kraftsport",
-     "text": "Dein Körper neigt dazu, bei intensivem Krafttraining weniger schnell zu ermüden.",
-     "rec": "Kürzere Pausen zwischen den Sätzen können für dich reichen. Plane trotzdem genug Erholung zwischen deinen Trainingstagen ein."
-    },
-    "B": {
-     "pill": "Normal",
-     "title": "Normale Muskelermüdung bei Kraftsport",
-     "text": "Deine Gene zeigen weder eine besonders hohe noch eine besonders geringe Neigung zur Ermüdung beim Krafttraining.",
-     "rec": "Normale Satzpausen passen gut zu dir. Genug Erholung, Eiweiß und Wasser unterstützen deine Muskeln."
-    },
-    "D": {
-     "pill": "Hoch",
-     "title": "Hohe Muskelermüdung bei Kraftsport",
-     "text": "Dein Körper neigt dazu, bei intensiven Kraftübungen schneller zu ermüden.",
-     "rec": "Längere Pausen zwischen den Sätzen und eine passende Intensität können dir helfen, mehr aus deinem Training herauszuholen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie schnell deine Muskeln beim Krafttraining ermüden, zeigt die Gene Story „Muskelermüdung bei Kraftsport“ in der Performance-Analyse (Sportliche Leistung).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie lange deine Pausen zwischen den Sätzen sein sollten."
-    }
-   },
-   "images": [
-    {
-     "key": "l_ermued_satz",
-     "prompt": "A translucent arm muscle lifting a dumbbell, its fibers glowing brightly at first and gradually dimming like a draining battery."
-    },
-    {
-     "key": "l_ermued_laktat",
-     "prompt": "Tiny lactate molecules accumulating like golden sparks inside a translucent working muscle fiber, with a stopwatch shape formed by light in the background."
-    }
-   ],
-   "sources": [
-    "OM-Report 1757 MODULE_Muskelermüdung Kraftsport_PERFORMANCE_V4 (Teil von 1755/1739): Ergebnis Geringe / Normale / Hohe Muskelermüdung bei Kraftsport, Empfehlungen",
-    "Clip ermued_1: Video GyIfKaYmLoE 17:38–18:24 (Pausenlänge, Muskelermüdung, Laktat, 1 min 30 s Pause)",
-    "Clip ermued_2: Video GyIfKaYmLoE 20:45–21:00 (Muskelkater, Muskeln wachsen außerhalb des Studios)"
-   ],
-   "open_questions": [
-    "Gennamen stehen im Bericht nur in Grafiken → in der Lektion keine Gene genannt.",
-    "Ergebnis B heißt „Normale Muskelermüdung“ (Mittelwert) – gelbe Farbe wirkt strenger als gemeint; prüfen.",
-    "Kein deutsches Animationsvideo vorhanden.",
-    "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
-    "Muskelermüdung bei Ausdauersport (DNA_PERFORMANCE_ENDURANCE_FATIGUE_SCALEBAR) ist eine eigene Gene Story und hier nicht abgedeckt."
-   ]
-  },
-  {
-   "id": "erhol",
-   "station": "muskel",
-   "title": "Erholung nach Verletzungen",
-   "minutes": 5,
-   "formula": null,
-   "scalebar": "DNA_PERFORMANCE_INJURY_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Warum bist du nach dem Training so lange platt?",
-     "p": "Gestern hart trainiert, heute wieder voll motiviert, aber die Muskeln sagen Nein. Jeder Tag ohne Training ist ein Tag ohne Fortschritt. Wie schnell du dich von kleinen Verletzungen im Muskel erholst, hängt auch von deinem Immunsystem ab. Und das programmieren deine Gene."
-    },
-    {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 98.66,
-     "end": 117.9,
-     "file": "clips/erhol_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, wie das Immunsystem Mikrorisse im Muskel repariert",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_erhol_mikrorisse",
-     "h": "Mikrorisse und Reparatur",
-     "p": "Hartes Training verursacht winzige Risse in den Muskelfasern. Das Immunsystem erkennt diese Schäden, löst eine Entzündung aus und startet so die Reparatur. Das spürst du als schmerzende Muskeln. Entzündungs-Gene steuern, wie stark diese Reaktion ausfällt."
-    },
-    {
-     "t": "quiz",
-     "q": "Was startet die Reparatur nach kleinen Muskelschäden?",
-     "o": [
-      "Die Leber mit Koffein",
-      "Das Immunsystem mit einer Entzündung",
-      "Die Haut mit Kollagen",
-      "Der Darm mit Ballaststoffen"
-     ],
-     "c": 1,
-     "e": "Das Immunsystem erkennt die Mikrorisse und entzündet den Muskel. Damit beginnt die Reparatur."
-    },
-    {
-     "t": "img",
-     "img": "l_erhol_immun",
-     "h": "Wenn das Immunsystem zu aggressiv ist",
-     "p": "Bei funktionierenden Genen reagiert das Immunsystem genau richtig: Es repariert, ohne gesunde Zellen anzugreifen. Bei veränderten Entzündungs-Genen reagiert es zu stark. Statt das Gewebe nur zu reparieren, schädigt es es zuerst zusätzlich. Die Entzündung wird schlimmer, und die Erholung dauert länger."
-    },
-    {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 139.82,
-     "end": 170.8,
-     "file": "clips/erhol_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Wenn das Immunsystem überreagiert, dauert die Erholung länger",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was passiert bei veränderten Entzündungs-Genen?",
-     "o": [
-      "Das Immunsystem schaltet sich ab",
-      "Muskeln wachsen doppelt so schnell",
-      "Das Immunsystem reagiert zu stark, und die Erholung dauert länger",
-      "Es entsteht nie mehr Muskelkater"
-     ],
-     "c": 2,
-     "e": "Ein zu aggressives Immunsystem schädigt auch gesundes Gewebe. Dadurch dauert die Erholung länger."
-    },
-    {
-     "t": "text",
-     "h": "Ernährung stellt das Immunsystem lauter oder leiser",
-     "p": "Arachidonsäure, eine Omega-6-Fettsäure aus tierischen Lebensmitteln, wirkt entzündungsfördernd. Auch Alkohol kann die Muskelreparatur bremsen. Omega-3-Fettsäuren und MSM, also organischer Schwefel, wirken dagegen entzündungshemmend. So kannst du in die Erholung eingreifen, auch wenn deine Gene dich nicht unterstützen."
-    },
-    {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 207.7,
-     "end": 240.1,
-     "file": "clips/erhol_3.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel zu Arachidonsäure, Omega-3 und MSM",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Welche Stoffe nennt der Bericht als entzündungshemmend?",
-     "o": [
-      "Zucker und Fruchtzucker",
-      "Arachidonsäure und Alkohol",
-      "Koffein und Salz",
-      "Omega-3 und MSM"
-     ],
-     "c": 3,
-     "e": "Omega-3 und MSM drosseln ein zu aktives Immunsystem. Arachidonsäure und Alkohol wirken in die andere Richtung."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Erholung nach muskulären Verletzungen",
-    "report": "Performance-Bericht · Erholungstyp",
-    "E": {
-     "pill": "Normal",
-     "title": "Erholung nach muskulären Verletzungen normal",
-     "text": "Deine Entzündungsgene sind normal programmiert. Dein Immunsystem reagiert angemessen, und du erholst dich normal schnell von muskulären Verletzungen.",
-     "rec": "Weniger entzündungsfördernde und mehr entzündungshemmende Lebensmittel können deine Erholung trotzdem unterstützen."
-    },
-    "B": {
-     "pill": "Vermindert",
-     "title": "Erholung nach muskulären Verletzungen vermindert",
-     "text": "Deine Entzündungsgene sind etwas zu aggressiv programmiert. Du erholst dich etwas langsamer von muskulären Verletzungen, etwa nach einer Überdehnung.",
-     "rec": "Weniger Arachidonsäure und mehr Omega-3 können für dich sinnvoll sein. Plane genug Erholung zwischen harten Einheiten ein."
-    },
-    "D": {
-     "pill": "Langsam",
-     "title": "Erholung nach muskulären Verletzungen schlecht",
-     "text": "Deine Entzündungsgene sind deutlich zu aggressiv programmiert. Dein Immunsystem reagiert zu stark, und du erholst dich langsamer von muskulären Verletzungen.",
-     "rec": "Eine entzündungsarme Ernährung mit Omega-3 und MSM kann für dich besonders sinnvoll sein. Bei echten Verletzungen besprich dein Training mit deiner Ärztin oder deinem Arzt."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie schnell du dich von muskulären Verletzungen erholst, zeigt die Gene Story „Erholung nach muskulären Verletzungen“ in der Performance-Analyse (Sportliche Leistung).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dein Immunsystem deine Erholung bremst und was du dagegen tun kannst."
-    }
-   },
-   "images": [
-    {
-     "key": "l_erhol_mikrorisse",
-     "prompt": "A translucent muscle fiber with tiny glowing micro-tears, small immune cells gathering around them like a repair crew."
-    },
-    {
-     "key": "l_erhol_immun",
-     "prompt": "A balance scale made of light: on one side calm immune cells mending a muscle fiber, on the other an overreacting swarm of immune cells creating extra sparks of damage."
-    }
-   ],
-   "sources": [
-    "OM-Report 1764 MODULE_Dein Immunsystem_V4 (Teil von 1745/1739): Wenn die Gene effektiv/defekt sind, Dein Ergebnis – Erholung nach muskulären Verletzungen normal / vermindert / schlecht",
-    "Clip erhol_1: Video GyIfKaYmLoE 1:38–1:58 (Entzündung, Mikrorisse, Muskelkater)",
-    "Clip erhol_2: Video GyIfKaYmLoE 2:19–2:51 (Gene steuern, wie aggressiv das Immunsystem reagiert)",
-    "Clip erhol_3: Video GyIfKaYmLoE 3:27–4:00 (Arachidonsäure, Omega-3, MSM)"
-   ],
-   "open_questions": [
-    "Entzündungs-Gene sind im Bericht nur als Grafik benannt → keine Gennamen in der Lektion.",
-    "Abgrenzung zur Schwester-Story „Erholung bei Entzündung“ (DNA_PERFORMANCE_IMMUN_SCALEBAR, gleiche Seiten, gleiche Mechanik) – eigene Lektion oder Zusammenlegung?",
-    "Kein deutsches Animationsvideo (EN „Inflammation-and-your-genes“ unveröffentlicht).",
-    "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
-    "Sport-Video nennt 8 % des Sauerstoffs werden zu freien Radikalen, Beauty-Bericht und Beauty-Video 5 % → Zahl in dieser Lektion bewusst weggelassen.",
-    "Clips bewusst ohne die dazwischenliegenden Teile zu oxidativem Stress und Antioxidantien (1:58–2:19 und 3:02–3:27, Nachbarthema)."
-   ]
-  },
-  {
-   "id": "verletz",
-   "station": "muskel",
-   "title": "Sport und Verletzungsrisiko",
-   "minutes": 6,
-   "formula": null,
-   "scalebar": "DNA_PERFORMANCE_INJURYRISK_TYPE_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Achillessehne, Kreuzband, Tennisarm",
-     "p": "Manche Sportler verletzen sich ständig, andere trainieren jahrelang ohne Ausfall. Pech? Nicht nur. Wie oft und wo du dich verletzt, hängt auch von deinen Genen ab."
-    },
-    {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 262.3,
-     "end": 304.2,
-     "file": "clips/verletz_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, warum Gene dein Verletzungsrisiko mitbestimmen",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_verletz_sehne",
-     "h": "Gene bauen deine Sehnen",
-     "p": "Viele der untersuchten Gene liefern den Bauplan für stabiles Bindegewebe, zum Beispiel für Sehnen. Ein Beispiel ist das Kollagen-Gen COL5A1. Arbeitet ein solches Gen nicht richtig, wird die Sehne schwächer, als sie sein sollte, und Verletzungen passieren leichter."
-    },
-    {
-     "t": "video",
-     "id": "GyIfKaYmLoE",
-     "start": 304.75,
-     "end": 366.5,
-     "file": "clips/verletz_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Ein Gen, fast ein Drittel weniger Spiele: die Studie mit Fußballern",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was passiert, wenn ein Gen für stabile Sehnen nicht richtig arbeitet?",
-     "o": [
-      "Die Sehne wird schwächer, und Verletzungen passieren leichter",
-      "Die Sehne wird doppelt so stark",
-      "Die Muskeln wachsen schneller",
-      "Es passiert gar nichts"
-     ],
-     "c": 0,
-     "e": "Solche Gene bauen das Bindegewebe. Arbeiten sie schlechter, ist die Sehne weniger belastbar."
-    },
-    {
-     "t": "img",
-     "img": "l_verletz_fussball",
-     "h": "Eine Studie mit Fußballern",
-     "p": "Wie groß der Effekt sein kann, zeigt eine Studie mit Fußballspielern, die Daniel im Video vorstellt. Spieler mit einer Genvariante im COL5A1-Gen bestritten wegen Verletzungen rund 28 % weniger Spiele als die anderen. Eine kleine Veränderung im Gen, ein großer Unterschied für die Karriere."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie viel weniger Spiele bestritten Fußballer mit der Genvariante laut Daniel?",
-     "o": [
-      "Rund 2 %",
-      "Rund 28 %",
-      "Rund 80 %",
-      "Gar keinen Unterschied"
-     ],
-     "c": 1,
-     "e": "Rund 28 % weniger Spiele, fast ein Drittel, nur wegen Verletzungen."
-    },
-    {
-     "t": "text",
-     "h": "Mehrere Balken, ein Verletzungstyp",
-     "p": "Im Performance-Bericht siehst du dein Risiko für mehrere Verletzungsarten: Muskelverletzungen, die Achillessehne, Bänder wie das Kreuzband und die Rotatorenmanschette in der Schulter. Dazu kommt der Tennisarm. Daraus ergibt sich dein Verletzungstyp: widerstandsfähig, moderat oder anfällig."
-    },
-    {
-     "t": "text",
-     "h": "Vorbeugen, wo es zählt",
-     "p": "Wer sein Risiko kennt, kann gezielt vorbeugen: gründlich aufwärmen und genau die Bereiche kräftigen, die genetisch empfindlicher sind. So kannst du verhindern, dass dich eine Verletzung wochenlang ausbremst."
-    },
-    {
-     "t": "quiz",
-     "q": "Was rät Daniel bei erhöhtem Verletzungsrisiko?",
-     "o": [
-      "Ganz auf Sport verzichten",
-      "Nur noch im Sitzen trainieren",
-      "Vor dem Training mehr Kaffee trinken",
-      "Gut aufwärmen und den empfindlichen Bereich gezielt stärken"
-     ],
-     "c": 3,
-     "e": "Aufwärmen und gezieltes Kräftigen machen den empfindlichen Bereich belastbarer. Sport bleibt erlaubt und sinnvoll."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Sport und Verletzungsrisiko",
-    "report": "Performance-Bericht · Verletzungstyp",
-    "E": {
-     "pill": "Widerstandsfähig",
-     "title": "Widerstandsfähiger Verletzungstyp",
-     "text": "Aufgrund deiner Gene neigst du dazu, seltener die untersuchten Sportverletzungen zu erleiden.",
-     "rec": "Du kannst intensiv und regelmäßig trainieren, ohne dass deine Gene das Verletzungsrisiko erhöhen. Aufwärmen bleibt trotzdem wichtig."
-    },
-    "B": {
-     "pill": "Moderat",
-     "title": "Moderater Verletzungstyp",
-     "text": "Aufgrund deiner Gene hast du ein moderates Risiko für die untersuchten Sportverletzungen.",
-     "rec": "Gutes Aufwärmen und gezieltes Kräftigen der Bereiche mit erhöhtem Risiko können dir helfen, Verletzungen zu vermeiden."
-    },
-    "D": {
-     "pill": "Anfällig",
-     "title": "Anfälliger Verletzungstyp",
-     "text": "Aufgrund deiner Gene neigst du dazu, häufiger die untersuchten Sportverletzungen zu erleiden.",
-     "rec": "Eine sorgfältige Trainingsplanung mit Aufwärmen, Kräftigung und genug Erholung kann dein Risiko gering halten. Bei Beschwerden lass dich ärztlich beraten."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie hoch dein Risiko für typische Sportverletzungen ist, zeigt die Gene Story „Sport und Verletzungsrisiko“ in der Performance-Analyse (Sportliche Leistung).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, welche Bereiche deines Körpers du beim Training besonders schützen solltest."
-    }
-   },
-   "images": [
-    {
-     "key": "l_verletz_sehne",
-     "prompt": "A translucent Achilles tendon made of twisted collagen ropes, with a DNA helix weaving new fibers into it."
-    },
-    {
-     "key": "l_verletz_fussball",
-     "prompt": "A translucent soccer player's leg mid-kick, knee ligaments and tendons glowing softly, a football made of light at the foot."
-    }
-   ],
-   "sources": [
-    "OM-Report 1766 MODULE_Sport und Verletzungsrisiko_V4 (Ergebnisseiten Verletzungen 1–2) und 1746 MODULE_VERLETZUNGSTYP_V4 (Widerstandsfähiger / Moderater / Anfälliger Verletzungstyp – Deine Zusammenfassung)",
-    "Clip verletz_1: Video GyIfKaYmLoE 4:22–5:04 (Gene und Verletzungsarten, Sehnen, Aufwärmen)",
-    "Clip verletz_2: Video GyIfKaYmLoE 5:05–6:07 (COL5A1-Studie mit Fußballern, 28 % weniger Spiele)"
-   ],
-   "open_questions": [
-    "Karte nutzt den Sammelwert DNA_PERFORMANCE_INJURYRISK_TYPE_SCALEBAR; Titel E/B/D aus den Typ-Zusammenfassungen (Modul 1746). Ob der Sammelwert genau diesen drei Typen entspricht, ist nicht verifiziert.",
-    "Gen „COL5A1“ aus dem Auto-Transkript rekonstruiert („Call 51 Kollagen“); Studie (Fußballer, 28 % weniger Spiele) nur aus dem Video, nicht aus dem Bericht → Zahl und Gen bitte prüfen.",
-    "Bericht führt zusätzlich Tennisarm und Weichteilverletzungen; die STATIONS-Beschreibung nennt 4 Balken (Achilles, Muskel, Bänder, Rotatoren).",
-    "Kein deutsches Animationsvideo vorhanden.",
-    "formula = null: Zustand nur aus SCALEBAR (01–03 = D, 04–07 = B, 08–10 = E), HIDER unbekannt.",
-    "Clip verletz_2: Daniel sagt erst „28 % weniger Spiele“, dann „30 %“ bzw. „fast ein Drittel“; der Lektionstext nennt 28 %."
-   ]
-  },
-  {
-   "id": "kollagen",
-   "station": "haut",
-   "title": "Kollagen und Festigkeit der Haut",
-   "minutes": 6,
-   "formula": "DNA_BEAUTY_COLLAGEN_FIRMNESS",
-   "scalebar": "DNA_BEAUTY_COLLAGEN_FIRMNESS_SCALA",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Warum altert Haut unterschiedlich schnell?",
-     "p": "Zwei Menschen, gleiches Alter, und doch wirkt die Haut des einen deutlich jünger. Sonne, Pflege und Lebensstil spielen mit. Ein wichtiger Teil steckt aber in deinen Genen, genauer in der Frage: Wie schnell baut deine Haut Kollagen ab?"
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 70.85,
-     "end": 127.9,
-     "file": "clips/kollagen_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, wie das MMP1-Gen altes Kollagen abbaut",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_kollagen_kabel",
-     "h": "Kollagen: die Kabel deiner Haut",
-     "p": "Kollagen besteht aus langen, flexiblen Fasern und ist das häufigste Eiweiß in der Haut. Die Hautzellen halten sich daran fest wie an Kabeln, so bleibt die Haut fest. Damit sie frisch bleibt, wird altes Kollagen laufend abgebaut und durch neues ersetzt. Der Abbau beginnt schon ab Mitte 20."
-    },
-    {
-     "t": "quiz",
-     "q": "Welches Gen bildet das Enzym, das altes Kollagen abbaut?",
-     "o": [
-      "MTHFR",
-      "MMP1",
-      "ACTN3",
-      "NQO1"
-     ],
-     "c": 1,
-     "e": "Das MMP1-Gen bildet das Enzym MMP1. Es baut altes Kollagen ab und schafft Platz für neues."
-    },
-    {
-     "t": "img",
-     "img": "l_kollagen_pacman",
-     "h": "Wenn das Gen zu fleißig ist",
-     "p": "Das Enzym MMP1 arbeitet wie ein kleiner Pac-Man, der altes Kollagen frisst. Bei manchen Menschen ist das MMP1-Gen verändert und bildet zu viel davon. Dann wird Kollagen schneller abgebaut, als der Körper es nachbilden kann, und die Kollagendichte nimmt ab. Laut Daniel haben nur rund 20 % der Menschen zwei funktionierende Kopien, rund 33 % bauen Kollagen viel zu schnell ab."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 128.95,
-     "end": 167.5,
-     "file": "clips/kollagen_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Ein Gendefekt, der zu gut arbeitet: zu viel MMP1",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was macht ein verändertes MMP1-Gen?",
-     "o": [
-      "Es bildet gar kein MMP1 mehr",
-      "Es macht die Haut dunkler",
-      "Es bildet Vitamin C",
-      "Es bildet zu viel MMP1, und Kollagen wird zu schnell abgebaut"
-     ],
-     "c": 3,
-     "e": "Das Besondere: Die Veränderung macht das Gen nicht schwächer, sondern zu aktiv. Zu viel MMP1 baut zu viel Kollagen ab."
-    },
-    {
-     "t": "text",
-     "h": "Von außen und von innen",
-     "p": "Bestimmte Nährstoffe können ein überaktives MMP1 bremsen: Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure. Manche wirken in einer Creme direkt auf der Haut, andere als Nahrungsergänzung von innen. Phytosterole zum Beispiel wirken nur von innen, denn auf der Haut werden sie nicht aufgenommen."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 191.3,
-     "end": 261.2,
-     "file": "clips/kollagen_3.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Welche Nährstoffe MMP1 bremsen und wo sie wirken",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Warum bringen Phytosterole in einer Hautcreme laut Daniel nichts?",
-     "o": [
-      "Weil die Haut sie nicht aufnimmt",
-      "Weil sie die Haut austrocknen",
-      "Weil sie nur nachts wirken",
-      "Weil sie Kollagen zerstören"
-     ],
-     "c": 0,
-     "e": "Ein Nährstoff muss dorthin gelangen, wo er gebraucht wird. Phytosterole dringen nicht in die Haut ein und wirken deshalb nur von innen."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Kollagen und Festigkeit der Haut",
-    "report": "Beauty-Bericht · Kollagenabbau",
-    "E": {
-     "pill": "Normal",
-     "title": "Normaler Kollagenabbau",
-     "text": "Deine MMP1-Gene funktionieren richtig und bilden die richtige Menge MMP1. Altes Kollagen wird wie gewollt abgebaut, das hält deine Haut jung.",
-     "rec": "Mit dem Alter steigt die MMP1-Bildung langsam an. Eine geringe Menge Lutein, Vitamin C und Vitamin E kann dem entgegenwirken."
-    },
-    "B": {
-     "pill": "Etwas schneller",
-     "title": "Etwas schnellerer Kollagenabbau",
-     "text": "Deine MMP1-Gene sind beeinträchtigt. Deine Haut bildet etwas mehr MMP1 und baut Kollagen etwas schneller ab.",
-     "rec": "Nährstoffe, die MMP1 bremsen, wie Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure, können für dich sinnvoll sein, in der Creme und von innen."
-    },
-    "D": {
-     "pill": "Viel zu schnell",
-     "title": "Viel zu schneller Kollagenabbau",
-     "text": "Deine MMP1-Gene bilden zu viel MMP1. Deine Haut baut Kollagen schneller ab, als sie es nachbilden kann.",
-     "rec": "Für dich kann es besonders sinnvoll sein, MMP1 gezielt zu bremsen: mit Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure von außen und von innen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie schnell deine Haut Kollagen abbaut, zeigt die Gene Story „Kollagen und Festigkeit der Haut“ in der Beauty-Analyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Haut Kollagen zu schnell abbaut und welche Nährstoffe sie schützen."
-    }
-   },
-   "images": [
-    {
-     "key": "l_kollagen_kabel",
-     "prompt": "A translucent cross-section of skin with long flexible collagen fibers stretched like cables, skin cells holding onto them."
-    },
-    {
-     "key": "l_kollagen_pacman",
-     "prompt": "Tiny round enzyme shapes nibbling through old collagen strands in translucent skin, while fresh golden collagen fibers grow in behind them."
-    }
-   ],
-   "sources": [
-    "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel KOLLAGEN UND FESTIGKEIT DER HAUT: Intro, Gen effektiv/defekt, Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
-    "Clip kollagen_1: Video 5A5XoWH7XKk 1:11–2:08 (Kollagen als Kabel, MMP1 als Pac-Man)",
-    "Clip kollagen_2: Video 5A5XoWH7XKk 2:09–2:48 (Gendefekt bildet zu viel MMP1)",
-    "Clip kollagen_3: Video 5A5XoWH7XKk 3:11–4:21 (Nährstoffe innen/außen, Phytosterole)",
-    "Video 5A5XoWH7XKk 5:00–5:40 (20 % / 47 % / 33 % der Bevölkerung, nicht als Clip verwendet)"
-   ],
-   "open_questions": [
-    "Prozentwerte 20 % / 33 % nur aus dem Auto-Transkript (Daniel liest sie von einer Folie, teils widersprüchlich: am Ende „20 % haben einen sehr langsamen Kollagenabbau“) → gegen Bericht-Grafik „Wissenschaft der Gene 2“ prüfen.",
-    "Beauty-Video 5A5XoWH7XKk spricht in Sie-Form und hat Übersetzungsartefakte – möglicherweise ein KI-Dub eines englischen Vortrags. Falls ja: \"ai\": true setzen und KI-Hinweis ergänzen.",
-    "Wertebereich von DNA_BEAUTY_COLLAGEN_FIRMNESS_SCALA (ob 01–10) nicht verifiziert.",
-    "Keine deutsche Animation vorhanden."
-   ]
-  },
-  {
-   "id": "uv",
-   "station": "haut",
-   "title": "Schutz gegen UV-Strahlen",
-   "minutes": 5,
-   "formula": "SectionDNA_BEAUTY_UVPROTECTION",
-   "scalebar": "DNA_BEAUTY_UVRISK_SCALA",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Gleiche Sonne, andere Haut",
-     "p": "Manche werden in der Sonne schnell rot, andere kaum. Sonne lässt die Haut schneller altern, aber nicht bei allen gleich stark. Warum? Deine Gene bauen einen eigenen Sonnenschutz, und der ist unterschiedlich stark."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 393.15,
-     "end": 479.9,
-     "file": "clips/uv_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erzählt von einem LKW-Fahrer, dessen Gesicht nur auf einer Seite gealtert ist",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_uv_lkw",
-     "h": "Eine Gesichtshälfte älter",
-     "p": "Ein LKW-Fahrer fuhr 15 Jahre lang mit offenem Fenster. Die Gesichtshälfte, die zur Sonne zeigte, wirkt wie die eines 80-Jährigen, die andere passt zu seinen 66 Jahren. UV-Strahlung ist der schädlichste Umweltfaktor für junge Haut: Die Strahlen dringen in die Zellen ein und richten dort Schäden an."
-    },
-    {
-     "t": "quiz",
-     "q": "Was zeigt das Beispiel des LKW-Fahrers?",
-     "o": [
-      "Sonne lässt die Haut schneller altern",
-      "Fahrtwind macht die Haut jünger",
-      "Nur Männer altern durch die Sonne",
-      "Die Haut altert auf beiden Seiten immer gleich"
-     ],
-     "c": 0,
-     "e": "Die sonnige Gesichtshälfte war optisch um viele Jahre älter. Allerdings trifft das nicht jeden gleich stark, und da kommen die Gene ins Spiel."
-    },
-    {
-     "t": "img",
-     "img": "l_uv_schild",
-     "h": "Dein eingebauter Sonnenschutz",
-     "p": "Die Gene MC1R und STXBP5L sorgen dafür, dass deine Haut schützende Pigmente bildet. Das MC1R-Gen bestimmt auch die Farbe von Haut und Haaren. Die Pigmente fangen einen Großteil der UV-Strahlen ab, bevor sie Schaden anrichten. Du hast zwei Kopien: Zwei funktionierende bedeuten starken, eine veränderte mäßigen und zwei veränderte schwachen UV-Schutz."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 482.15,
-     "end": 535.9,
-     "file": "clips/uv_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Das Sonnenschutz-Gen: eingebauter Schutz oder lichtempfindliche Haut",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Welches Gen bestimmt laut Bericht auch die Farbe von Haut und Haaren?",
-     "o": [
-      "MMP1",
-      "NQO1",
-      "MC1R",
-      "SOD2"
-     ],
-     "c": 2,
-     "e": "MC1R sagt dem Körper, wie viel Pigment er bilden soll. Das beeinflusst Haut- und Haarfarbe und den natürlichen UV-Schutz."
-    },
-    {
-     "t": "text",
-     "h": "Sonnencreme bleibt Pflicht",
-     "p": "Auch mit starken Genen ersetzt dein eigener Schutz keine Sonnencreme. Sie wirkt nur von außen als Barriere, schlucken bringt nichts. Von innen und auf der Haut können Vitamin C und Vitamin E helfen: Sie unterstützen sich gegenseitig und helfen der Haut, UV-Schäden zu reparieren."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 536.6,
-     "end": 597.7,
-     "file": "clips/uv_3.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Sonnencreme von außen, Vitamin C und E von innen",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was gilt laut Daniel für Sonnencreme?",
-     "o": [
-      "Sie wirkt am besten als Kapsel",
-      "Sie wirkt nur von außen als Barriere",
-      "Mit guten Genen braucht man sie nie",
-      "Sie ersetzt Vitamin C"
-     ],
-     "c": 1,
-     "e": "Sonnencreme bildet eine Barriere auf der Haut. Von innen eingenommen hätte sie keinen Sinn."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Schutz gegen UV-Strahlen",
-    "report": "Beauty-Bericht · UV-Schutz",
-    "E": {
-     "pill": "Stark",
-     "title": "Starker UV-Schutz",
-     "text": "Deine Gene funktionieren ausreichend und schützen deine Haut relativ gut gegen die UV-Strahlen der Sonne.",
-     "rec": "Dein genetischer Schutz ersetzt keine Sonnencreme. Bei moderater Sonne kann ein niedrigerer Lichtschutzfaktor reichen, passe ihn aber immer an die UV-Stärke an."
-    },
-    "B": {
-     "pill": "Mäßig",
-     "title": "Mäßiger UV-Schutz",
-     "text": "Manche der Gene, die deine Haut vor UV-Strahlen schützen sollen, funktionieren nicht richtig. Direkte Sonne schädigt deine Haut etwas stärker als bei anderen Menschen.",
-     "rec": "Verwende in direkter Sonne konsequent Sonnencreme, je nach Situation mit mittlerem bis höherem Lichtschutzfaktor. Vitamin C und E können die Reparatur unterstützen."
-    },
-    "D": {
-     "pill": "Schwach",
-     "title": "Schwacher UV-Schutz",
-     "text": "Manche der Gene, die deine Haut vor UV-Strahlen schützen sollen, funktionieren nicht richtig. Direkte Sonne schädigt deine Haut stärker als bei anderen Menschen.",
-     "rec": "Für dich ist konsequenter Sonnenschutz mit höherem Lichtschutzfaktor besonders wichtig, vor allem bei längeren Aufenthalten im Freien."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie stark dein natürlicher UV-Schutz ist, zeigt die Gene Story „Schutz gegen UV-Strahlen“ in der Beauty-Analyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie empfindlich deine Haut auf Sonne reagiert und wie viel Schutz sie braucht."
-    }
-   },
-   "images": [
-    {
-     "key": "l_uv_lkw",
-     "prompt": "A translucent human face divided down the middle, one half bathed in sunlight with fine aging lines, the other half smooth in soft shade."
-    },
-    {
-     "key": "l_uv_schild",
-     "prompt": "Translucent skin cells producing a shimmering layer of pigment that deflects incoming UV rays like a golden shield."
-    }
-   ],
-   "sources": [
-    "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel SCHUTZ GEGEN UV-STRAHLEN: Intro, Genetik des UV-Schutzes, Gen effektiv/defekt, Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
-    "Clip uv_1: Video 5A5XoWH7XKk 6:33–8:00 (LKW-Fahrer 15 Jahre, 66 vs. 80)",
-    "Clip uv_2: Video 5A5XoWH7XKk 8:02–8:56 (Sonnenschutz-Gen)",
-    "Clip uv_3: Video 5A5XoWH7XKk 8:57–9:58 (Sonnencreme nur außen, Vitamin C und E)",
-    "Video 5A5XoWH7XKk 10:00–10:16 (zwei Kopien: stark / moderat / schwach, nicht als Clip verwendet)"
-   ],
-   "open_questions": [
-    "Formel-Gruppe laut STATIONS „SectionDNA_BEAUTY_UVPROTECTION“ (mit Section-Präfix) – prüfen, ob es auch DNA_BEAUTY_UVPROTECTION_*_HIDER gibt.",
-    "UV-Skala DNA_BEAUTY_UVRISK_SCALA: Name „RISK“ deutet evtl. auf umgekehrte Richtung hin (hoch = hohes Risiko?) – nicht verifiziert; invert ggf. auf true setzen. Dieselbe Skala nutzt laut Recherche auch „Feuchtigkeit der Haut“.",
-    "Bericht-Text widersprüchlich: Gen-Box nennt nur „MC1R-Gene“, Intro „MC1R und STXBP5L“.",
-    "Beauty-Video evtl. KI-Dub (Sie-Form) – siehe Lektion kollagen.",
-    "Keine deutsche Animation vorhanden.",
-    "Clip uv_1 beginnt mit „jetzt sprechen wir über UV-Strahlen“ (direkt nach dem Kollagen-Abschluss geschnitten) – bitte anhören.",
-    "Drei UV-Clips zusammen rund 3:20 min – ggf. uv_3 streichen, falls die Lektion zu lang wird."
-   ]
-  },
-  {
-   "id": "oxi",
-   "station": "haut",
-   "title": "Oxidativer Stress und Hautalterung",
-   "minutes": 6,
-   "formula": "DNA_BEAUTY_OXISTRESS",
-   "scalebar": "DNA_BEAUTY_OXRISK_SCALA",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Lässt dich Atmen altern?",
-     "p": "Ohne Sauerstoff kein Leben. Und doch lässt derselbe Sauerstoff manche Menschen schneller altern als andere. Wie gut dein Körper diese Schattenseite des Atmens im Griff hat, steht in deinen Genen."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 621.6,
-     "end": 703.1,
-     "file": "clips/oxi_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt freie Radikale und die genetische Feuerwehr",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_oxi_waldbrand",
-     "h": "Freie Radikale: Feuer im trockenen Wald",
-     "p": "Etwa 5 % des eingeatmeten Sauerstoffs werden zu aggressiven Stoffen, den freien Radikalen. Ein freies Radikal wirkt wie ein Feuer im trockenen Wald: Der Schaden breitet sich aus. Über Jahre sammeln sich diese Schäden an. Sie gelten als eine der Hauptursachen der Hautalterung."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie viel des eingeatmeten Sauerstoffs wird laut Bericht zu freien Radikalen?",
-     "o": [
-      "Etwa 50 %",
-      "Etwa 5 %",
-      "Gar nichts",
-      "Nur bei Rauchern ein Teil"
-     ],
-     "c": 1,
-     "e": "Rund 5 % des Sauerstoffs werden zu freien Radikalen. Das passiert bei jedem Menschen, einfach weil wir leben und Energie verbrauchen."
-    },
-    {
-     "t": "img",
-     "img": "l_oxi_feuerwehr",
-     "h": "Deine genetische Feuerwehr",
-     "p": "Schutz-Gene wie SOD2 und die GST-Gene erkennen freie Radikale und machen sie unschädlich, bevor sie Schaden anrichten. SOD2 schützt dort, wo die meisten Brände entstehen: in den Kraftwerken deiner Zellen, den Mitochondrien. Sind diese Gene verändert, arbeitet die Feuerwehr zu langsam, und die Haut altert schneller."
-    },
-    {
-     "t": "video",
-     "id": "Bf-WdkeB7E0",
-     "start": 28.8,
-     "end": 72.1,
-     "file": "clips/oxi_3.mp4",
-     "tag": "Animation",
-     "cap": "Feuerwehr und Regen: so wirken Antioxidantien",
-     "ai": true
-    },
-    {
-     "t": "quiz",
-     "q": "Wo schützt das Enzym aus dem SOD2-Gen besonders?",
-     "o": [
-      "Im Magen",
-      "In den Haarspitzen",
-      "Im Blutplasma",
-      "In den Mitochondrien, den Kraftwerken der Zellen"
-     ],
-     "c": 3,
-     "e": "In den Mitochondrien entstehen die meisten freien Radikale. Genau dort setzt der SOD2-Schutz an."
-    },
-    {
-     "t": "text",
-     "h": "Regen für den Waldbrand",
-     "p": "Schafft die Feuerwehr es nicht allein, muss Regen löschen. Dieser Regen sind Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure. Sie wirken in einer Creme direkt in der Haut und auch von innen. Zink hilft nur von innen, weil es nicht durch die Haut dringt. Je besser deine Gene arbeiten, desto weniger davon brauchst du."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 719.4,
-     "end": 780.1,
-     "file": "clips/oxi_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Welche Antioxidantien von außen und von innen wirken",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Warum bringt Zink in einer Hautcreme laut Daniel wenig?",
-     "o": [
-      "Weil es freie Radikale erzeugt",
-      "Weil es die Haut verfärbt",
-      "Weil es nicht durch die Haut dringt",
-      "Weil es nur bei Kindern wirkt"
-     ],
-     "c": 2,
-     "e": "Zink ist Teil eines körpereigenen Antioxidans, kommt aber nicht durch die Haut. Darum wirkt es nur von innen."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Oxidativer Stress und Hautalterung",
-    "report": "Beauty-Bericht · Oxidativer Stress",
-    "E": {
-     "pill": "Guter Schutz",
-     "title": "Guter Schutz gegen freie Radikale",
-     "text": "Deine Schutz-Gene arbeiten gut und machen freie Radikale unschädlich, bevor sie deiner Haut schaden.",
-     "rec": "Eine kleine Menge Antioxidantien als Unterstützung reicht für dich. Eine gesunde Ernährung mit viel Obst und Gemüse ist dafür eine gute Basis."
-    },
-    "B": {
-     "pill": "Schlechterer Schutz",
-     "title": "Schlechterer Schutz gegen freie Radikale",
-     "text": "Einige deiner antioxidativen Gene arbeiten nicht optimal. Freie Radikale werden zu langsam neutralisiert, deine Haut kann dadurch schneller altern.",
-     "rec": "Eine besonders gute Versorgung mit Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure kann für dich sinnvoll sein, über die Ernährung oder die Haut."
-    },
-    "D": {
-     "pill": "Schlechter Schutz",
-     "title": "Schlechter Schutz gegen freie Radikale",
-     "text": "Deine antioxidativen Gene arbeiten nicht richtig. Freie Radikale werden zu langsam neutralisiert und beschleunigen die Hautalterung.",
-     "rec": "Für dich kann eine besonders hohe Zufuhr an Antioxidantien sinnvoll sein, von innen und von außen. Sei sparsam mit dem, was das Feuer anheizt: Rauchen, Alkohol und Zucker."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie gut deine Haut vor freien Radikalen geschützt ist, zeigt die Gene Story „Oxidativer Stress und Hautalterung“ in der Beauty-Analyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie viele Antioxidantien deine Haut wirklich braucht."
-    }
-   },
-   "images": [
-    {
-     "key": "l_oxi_waldbrand",
-     "prompt": "Inside translucent skin tissue, tiny glowing sparks of free radicals spreading like a small wildfire through delicate cell structures."
-    },
-    {
-     "key": "l_oxi_feuerwehr",
-     "prompt": "A translucent mitochondrion with tiny enzyme shapes extinguishing sparks of free radicals, gentle golden droplets falling like rain from above."
-    }
-   ],
-   "sources": [
-    "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel OXIDATIVER STRESS UND HAUTALTERUNG: Intro (5 % des Sauerstoffs), Genetik (SOD2, GSTM1/GSTT1/GSTP1), Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
-    "Clip oxi_1: Video 5A5XoWH7XKk 10:22–11:43 (freie Radikale, Waldbrand, genetische Feuerwehr)",
-    "Clip oxi_2: Video 5A5XoWH7XKk 11:59–13:00 (Antioxidantien innen/außen, Zink nur innen)",
-    "Clip oxi_3: Animation Bf-WdkeB7E0 0:29–1:12 (Feuerwehr, Mitochondrien, Regen = Antioxidantien; KI-Stimme)",
-    "Animation Bf-WdkeB7E0 1:16–1:20 (Rauchen, Alkohol, Zucker, nicht im Clip)"
-   ],
-   "open_questions": [
-    "Animation Bf-WdkeB7E0 gehört zur Lifestyle-Story „Schutz vor freien Radikalen“ (SOD2). Überschneidung mit Lektion radikale (Station Leber) – Clip-Doppelung abstimmen.",
-    "Ergebnis-Texte für MEDIUM und DEFECT sind im Bericht identisch (Textblock „Ergebnis beeinträchtigt und defekt“); B und D hier leicht abgestuft formuliert.",
-    "Wissenschaftsseite nennt andere Titel („Guter / Mäßiger / Eingeschränkter Schutz gegen oxidativen Stress und freie Radikale“) als die Ergebnisseiten; verwendet wurden die Ergebnisseiten.",
-    "Beauty-Video evtl. KI-Dub (Sie-Form) – siehe Lektion kollagen.",
-    "Zwischen oxi_1 und oxi_2 ausgelassen: 11:43–11:59 (Beispielperson „irgendwo dazwischen“, Kundenbeispiel)."
-   ]
-  },
-  {
-   "id": "q10haut",
-   "station": "haut",
-   "title": "Wirkung von Q10",
-   "minutes": 6,
-   "formula": "DNA_BEAUTY_Q10",
-   "scalebar": "DNA_BEAUTY_Q10_SCALA",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Wirkt deine Q10-Creme überhaupt?",
-     "p": "Q10 steckt in unzähligen Cremes und Nahrungsergänzungsmitteln und gilt als das Anti-Aging-Molekül. Es ist teuer, und bei manchen Menschen wirkt es kaum. Ob es bei dir wirkt, entscheidet ein einziges Gen."
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 785.6,
-     "end": 862.7,
-     "file": "clips/q10haut_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_q10haut_batterie",
-     "h": "Q10 muss erst aufgeladen werden",
-     "p": "Coenzym Q10 ist zunächst inaktiv, wie eine leere Batterie. Das NQO1-Gen bildet das Enzym NQO1, das Q10 in seine aktive Form umwandelt: Ubiquinol. Erst Ubiquinol fängt freie Radikale ein. Danach lädt das Enzym es einfach wieder auf."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie heißt die aktive Form von Q10?",
-     "o": [
-      "Ubiquinol",
-      "Methylfolat",
-      "Kollagen",
-      "Melanin"
-     ],
-     "c": 0,
-     "e": "Das NQO1-Enzym wandelt Q10 in Ubiquinol um. Erst diese Form schützt vor freien Radikalen."
-    },
-    {
-     "t": "img",
-     "img": "l_q10haut_kopien",
-     "h": "Zwei Kopien, drei Möglichkeiten",
-     "p": "Du hast zwei Kopien des NQO1-Gens, eine von deiner Mutter, eine von deinem Vater. Funktionieren beide, wird Q10 mühelos aktiviert, egal ob es aus deinem Körper, aus einer Kapsel oder aus einer Creme kommt. Ist eine Kopie verändert, gelingt das nur langsam. Mit zwei veränderten Kopien wird Q10 nicht aktiviert. Das betrifft etwa jeden Elften."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie viele Menschen haben laut Animation zwei veränderte NQO1-Kopien?",
-     "o": [
-      "Fast alle",
-      "Etwa jeder Zweite",
-      "Etwa jeder Elfte",
-      "Niemand"
-     ],
-     "c": 2,
-     "e": "Etwa jeder Elfte hat zwei veränderte Kopien. Bei diesen Menschen bleibt Q10 weitgehend wirkungslos."
-    },
-    {
-     "t": "text",
-     "h": "Die Falle beim Bluttest",
-     "p": "Ab etwa 20 Jahren sinkt der Q10-Gehalt in deinen Organen langsam. Ein Bluttest kann trotzdem viel Q10 zeigen. Er verrät aber nicht, ob es aktiviert wird. Bei veränderten NQO1-Genen bleibt Q10 inaktiv, egal wie viel davon im Blut ist."
-    },
-    {
-     "t": "video",
-     "id": "yvh9JKmdNvI",
-     "start": 24.6,
-     "end": 78.4,
-     "file": "clips/q10haut_3.mp4",
-     "tag": "Animation",
-     "cap": "Q10 als Batterie: so lädt das NQO1-Gen es auf",
-     "ai": true
-    },
-    {
-     "t": "video",
-     "id": "5A5XoWH7XKk",
-     "start": 864.2,
-     "end": 910.4,
-     "file": "clips/q10haut_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Was du tun kannst, wenn Q10 bei dir nicht wirkt",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was kannst du tun, wenn deine NQO1-Gene Q10 nicht aktivieren?",
-     "o": [
-      "Die doppelte Menge Q10 nehmen",
-      "Auf andere Antioxidantien wie Vitamin C und E ausweichen",
-      "Q10 nur abends auftragen",
-      "Nichts, freie Radikale sind harmlos"
-     ],
-     "c": 1,
-     "e": "Mehr Q10 hilft nicht, wenn das Gen es nicht aktiviert. Andere Antioxidantien erreichen dasselbe Ziel auf anderem Weg."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Wirkung von Q10",
-    "report": "Beauty-Bericht · Aktivierung von Q10",
-    "E": {
-     "pill": "Wirksam",
-     "title": "Die Aktivierung von Coenzym Q10 ist wirksam",
-     "text": "Deine NQO1-Gene funktionieren richtig und wandeln Q10 effektiv in die aktive Form Ubiquinol um.",
-     "rec": "Q10 kann für dich ein wirksamer Inhaltsstoff sein, als Creme oder als Nahrungsergänzung, besonders wenn du älter wirst."
-    },
-    "B": {
-     "pill": "Eingeschränkt",
-     "title": "Aktivierung von Coenzym Q10 ist eingeschränkt",
-     "text": "Deine NQO1-Gene sind beeinträchtigt und wandeln Q10 nur langsam in die aktive Form um.",
-     "rec": "Q10 kann für dich trotzdem nützlich sein. Zusätzliche Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure können den Schutz ergänzen."
-    },
-    "D": {
-     "pill": "Defekt",
-     "title": "Die Aktivierung von Coenzym Q10 ist defekt",
-     "text": "Deine NQO1-Gene können Q10 nicht in die aktive Form umwandeln. Auch zusätzlich eingenommenes Q10 zeigt bei dir keine antioxidative Wirkung.",
-     "rec": "Statt Q10 können andere Antioxidantien wie Vitamin C, Vitamin E, Alpha-Liponsäure, Zink und Mangan für dich die bessere Wahl sein."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Ob Q10 bei dir wirkt, zeigt die Gene Story „Wirkung von Q10“ in der Beauty-Analyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich Q10 in deiner Hautpflege lohnt oder ob andere Antioxidantien besser passen."
-    }
-   },
-   "images": [
-    {
-     "key": "l_q10haut_batterie",
-     "prompt": "A translucent empty battery-shaped Q10 molecule being charged by a glowing enzyme inside a skin cell, turning bright gold as it fills."
-    },
-    {
-     "key": "l_q10haut_kopien",
-     "prompt": "Two translucent DNA strands side by side, one feeding glowing energy into a cream droplet on skin, the other dim with the droplet staying pale."
-    }
-   ],
-   "sources": [
-    "OM-Report 1784 BEAUTY_V2 (10X) Y1BEA, Kapitel WIRKUNG VON Q10 (Überschrift im Bericht „Die Aktivierung von Q10“): Intro, Genetik des Q10-Metabolismus, Ergebnis EFFECTIV/MEDIUM/DEFECT, Empfehlungen",
-    "Clip q10haut_1: Video 5A5XoWH7XKk 13:06–14:23 (NQO1, Ubiquinol, Bluttest-Falle)",
-    "Clip q10haut_2: Video 5A5XoWH7XKk 14:24–15:10 (andere Antioxidantien statt Q10)",
-    "Clip q10haut_3: Animation yvh9JKmdNvI 0:25–1:18 (Batterie, zwei Kopien, etwa jeder Elfte; KI-Stimme)",
-    "Animation yvh9JKmdNvI 0:16–0:23 (ab etwa 20 Jahren sinkt Q10, nicht im Clip)"
-   ],
-   "open_questions": [
-    "Überschneidung mit Lektion q10 (Station Leber, DNA_NUTRITION_Q10): gleiches Gen, gleiche Animation – Inhalte und Clips abstimmen.",
-    "Kapitelname im OM „WIRKUNG VON Q10“, Überschrift im Bericht aber „Die Aktivierung von Q10“.",
-    "Bericht-Text B widersprüchlich: „Die beeinträchtigten NQO1-Gene produzieren kein NQO1-Protein“ neben „nur langsam“ – Lektion folgt „nur langsam“.",
-    "Beauty-Video evtl. KI-Dub (Sie-Form) – siehe Lektion kollagen."
-   ]
-  }
- ]
+  ]
 }

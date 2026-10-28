@@ -25,8 +25,7 @@
           "ai": false
         },
         {
-          "t": "img",
-          "img": "l_kopien_eltern",
+          "t": "text",
           "h": "Eine Kopie von jedem Elternteil",
           "p": "Bei der Befruchtung bekommt jedes Kind die Hälfte der Gene vom Vater und die Hälfte von der Mutter. So hast du in der Regel von jedem Gen zwei Kopien. Welche Version ein Elternteil weitergibt, bestimmt der Zufall. Darum können Geschwister ganz unterschiedliche Gene haben."
         },
@@ -43,8 +42,7 @@
           "e": "Von jedem Elternteil bekommst du eine Kopie. Zusammen bestimmen sie, wie das Gen bei dir arbeitet."
         },
         {
-          "t": "img",
-          "img": "l_kopien_kombis",
+          "t": "text",
           "h": "Drei mögliche Kombinationen",
           "p": "Beide Kopien können gut arbeiten, nur eine von beiden oder keine. Ein Beispiel ist das Gen MMP1, das altes Kollagen in der Haut abbaut: Nur rund 20 % der Menschen haben zwei funktionstüchtige Kopien. 47 % haben eine defekte Kopie und bauen Kollagen etwas schneller ab, 33 % deutlich zu schnell. Erst die Kombination beider Kopien ergibt dein Ergebnis."
         },
@@ -98,8 +96,7 @@
           "e": "Nur eineiige Zwillinge haben dieselben Gene. Alle anderen sind in ihrer Kombination einzigartig."
         },
         {
-          "t": "info",
-          "img": "st01_zelle",
+          "t": "text",
           "h": "Und bei dir?",
           "p": "In deinem Bericht siehst du bei jeder Gene Story, wie <b>deine beiden Kopien</b> zusammenarbeiten. In der nächsten Lektion erfährst du, was <b>effektiv, beeinträchtigt und defekt</b> bedeutet."
         }
@@ -146,8 +143,7 @@
           "p": "Dein genetischer Code ist 3,2 Milliarden Buchstaben lang. Bei den meisten Unterschieden zwischen Menschen ist nur ein einziger Buchstabe anders. Kann so eine Kleinigkeit wirklich etwas verändern?"
         },
         {
-          "t": "img",
-          "img": "l_varianten_buchstabe",
+          "t": "text",
           "h": "Ein Schreibfehler im Bauplan",
           "p": "Eine Genvariante ist eine Stelle, an der dein Code anders aussieht als bei den meisten Menschen. Meist ist ein einzelner Buchstabe ausgetauscht. Fachleute nennen das SNP, gesprochen „Snip“. So eine Variante kann ein Gen schwächer machen, es ganz ausschalten oder es sogar zu aktiv machen. Bei manchen Genen fehlt die Kopie auch komplett. Varianten sind ganz normal: Jeder Mensch trägt viele davon."
         },
@@ -164,8 +160,7 @@
           "e": "Ein SNP ist ein ausgetauschter Buchstabe im genetischen Code. Er kann verändern, wie gut ein Gen seine Aufgabe erfüllt."
         },
         {
-          "t": "img",
-          "img": "l_varianten_stufen",
+          "t": "text",
           "h": "Effektiv, beeinträchtigt, defekt",
           "p": "Dein Bericht fasst das Ergebnis deiner beiden Kopien in drei Stufen zusammen. <b>Effektiv</b>: Deine Gene arbeiten wie vorgesehen. <b>Beeinträchtigt</b>: Sie arbeiten, aber langsamer oder schwächer. <b>Defekt</b>: Eine ungünstige Variante bremst die Aufgabe stark. Defekt heißt dabei nicht immer Totalausfall. Beim MTHFR-Gen etwa reicht die Folsäure-Umwandlung je nach Variante von 100 % über 83 % und 66 % bis zu 25 %."
         },
@@ -182,8 +177,7 @@
           "e": "„Defekt“ steht für eine ungünstige Variante. Das Gen arbeitet dann deutlich schlechter, fällt aber nicht immer ganz aus."
         },
         {
-          "t": "img",
-          "img": "l_varianten_balken",
+          "t": "text",
           "h": "So liest du den rot-grünen Balken",
           "p": "Zu jeder Gene Story zeigt dein Bericht einen Balken aus zehn Stufen: links rot, rechts grün. Der Griff zeigt, wo deine Gene stehen. Je weiter rechts, desto besser arbeiten sie bei diesem Thema. Darüber steht dein Ergebnis in Worten, zum Beispiel „Folsäureumwandlung funktioniert“."
         },
@@ -215,8 +209,7 @@
           "e": "Mindestens drei Studien von drei Forschungsgruppen an drei Bevölkerungsgruppen müssen den Effekt zeigen. Die Studien findest du im hinteren Teil jedes Kapitels."
         },
         {
-          "t": "info",
-          "img": "st01_zelle",
+          "t": "text",
           "h": "Und bei dir?",
           "p": "Ab der nächsten Station siehst du am Ende jeder Lektion <b>deinen eigenen Balken</b>: ob deine Gene bei diesem Thema effektiv, beeinträchtigt oder defekt arbeiten."
         }
@@ -269,8 +262,7 @@
           "p": "Deine Gene bleiben ein Leben lang gleich. Trotzdem ist nicht jedes Gen ständig gleich aktiv. Gene können durch deinen Lebensstil lauter oder leiser geschaltet werden. Wie passt das zusammen?"
         },
         {
-          "t": "img",
-          "img": "l_epigenetik_marker",
+          "t": "text",
           "h": "Der Textmarker für deine Gene",
           "p": "Stell dir deinen Körper als Buch vor. Die Wörter und Sätze sind deine Gene. Epigenetik ist der farbige Marker: Sie betont bestimmte Stellen und lässt andere in den Hintergrund treten. Der Text selbst, also dein genetischer Code, bleibt dabei unverändert."
         },
@@ -292,8 +284,7 @@
           "p": "Bewegung, gesunde Ernährung und ausreichend Schlaf sind wie Stifte, mit denen du positive Markierungen setzt. Sie fördern Gene, die mit Gesundheit und Wohlbefinden zusammenhängen. Rauchen, ungesunde Ernährung und chronischer Stress können dagegen negative Markierungen hinterlassen und schützende Gene leiser stellen."
         },
         {
-          "t": "img",
-          "img": "l_epigenetik_okinawa",
+          "t": "text",
           "h": "Das Beispiel Okinawa",
           "p": "1949 fiel Forschenden ein Volk auf der japanischen Insel Okinawa auf, bekannt für Gesundheit und ein langes Leben. Ihre Ernährung unterschied sich kaum von der im restlichen Japan. Mit einer Ausnahme: Sie aßen 10 bis 20 % weniger Kalorien. Der gesundheitsfördernde Effekt weniger Kalorien wurde später auch bei Würmern, Ratten und Affen nachgewiesen."
         },
@@ -315,8 +306,7 @@
           "p": "Heute weiß man: Werden die Kalorien langfristig auf 10 % unter den Grundumsatz gesenkt, bei ausreichender Versorgung mit Vitaminen und Mineralstoffen, aktiviert das die Gene DNMT1 und DNMT3b. Sie setzen günstige epigenetische Markierungen: Ungünstige Gene werden abgeschaltet, gute wieder aktiviert."
         },
         {
-          "t": "img",
-          "img": "l_epigenetik_altern",
+          "t": "text",
           "h": "Junge Zellen, alte Zellen",
           "p": "Mit dem Alter wird die epigenetische Programmierung ungenauer. Gesundheitswichtige Gene werden nach und nach leiser, ungünstige können sich einschalten. Bestimmte Lebensmittel wirken ähnlich wie weniger Kalorien: Resveratrol aus Trauben, Genistein aus Soja, Sulphoraphane aus Brokkoli und Allyl Mercaptan aus Knoblauch."
         },
@@ -333,8 +323,7 @@
           "e": "Resveratrol steckt in Trauben. Brokkoli, Knoblauch und Soja liefern andere epigenetisch wirksame Stoffe."
         },
         {
-          "t": "info",
-          "img": "st01_zelle",
+          "t": "text",
           "h": "Und bei dir?",
           "p": "Im Kapitel <b>Epigenetik</b> deines Lifestyle-Berichts steht, welche Lebensmittel für dich aus epigenetischer Sicht sinnvoll sein können, zum Beispiel Weintrauben, Himbeeren, Brokkoli oder Grüner Tee."
         }
@@ -383,8 +372,7 @@
           "p": "Medikamente sollen helfen, und oft tun sie das auch. Doch nur bei etwa 60 % der Menschen entfalten sie die gewünschte Wirkung. Manche spüren gar nichts, andere bekommen Nebenwirkungen. Woran liegt das?"
         },
         {
-          "t": "img",
-          "img": "l_wirkung_weg",
+          "t": "text",
           "h": "Die Reise eines Wirkstoffs",
           "p": "Wenn du eine Tablette schluckst, gelangt der Wirkstoff über Magen und Darm ins Blut und von dort an den Ort, wo er wirken soll. Danach wird er in der Leber von Enzymen abgebaut. Gesteuert wird das von deinen Genen. Zum Schluss scheiden die Nieren den umgewandelten Wirkstoff mit dem Urin aus."
         },
@@ -401,8 +389,7 @@
           "e": "In der Leber bauen Enzyme den Wirkstoff ab. Wie gut sie das tun, steht in deinen Genen."
         },
         {
-          "t": "img",
-          "img": "l_wirkung_enzym",
+          "t": "text",
           "h": "Gene bauen die Werkzeuge",
           "p": "Die Enzyme in der Leber sind Werkzeuge, deren Bauplan in deinen Genen steht. Ein Beispiel ist Citalopram, ein häufiges Mittel gegen Depressionen. Es wird vor allem vom Gen CYP2C19 abgebaut. Arbeitet das Gen normal, bleibt der Wirkstoff lange genug im Körper, um zu wirken, aber nicht so lange, dass Nebenwirkungen entstehen. Für etwa 20 Gene gibt es offizielle pharmakogenetische Leitlinien."
         },
@@ -419,8 +406,7 @@
           "e": "CYP2C19 steuert den Abbau von Citalopram. Andere Medikamente hängen an anderen Genen."
         },
         {
-          "t": "img",
-          "img": "l_wirkung_spiegel",
+          "t": "text",
           "h": "Wenn sich ein Wirkstoff anstaut",
           "p": "Viele Medikamente nimmst du regelmäßig ein, damit ihr Spiegel im Blut im Wirkungsbereich bleibt. Bauen deine Gene den Wirkstoff zu langsam ab, steigt der Spiegel mit jeder weiteren Tablette an. Schon eine normale Dosis kann dann zu viel sein und Nebenwirkungen wie Übelkeit, Unruhe oder Herzrhythmusstörungen auslösen."
         },
@@ -442,8 +428,7 @@
           "e": "Der Wirkstoff staut sich an. So kann eine normale Dosis zu hoch werden und Nebenwirkungen auslösen."
         },
         {
-          "t": "info",
-          "img": "st11_medikamente",
+          "t": "text",
           "h": "Und bei dir?",
           "p": "Die Medikamenten-Analyse <b>Pharmaco Sensor</b> zeigt, wie dein Körper <b>über 2.500 Wirkstoffe</b> verarbeitet. Änderungen an deinen Medikamenten bitte nur gemeinsam mit deiner Ärztin, deinem Arzt oder in der Apotheke."
         }
@@ -492,8 +477,7 @@
           "p": "Gene sind nicht nur effektiv oder defekt. Sie arbeiten auch unterschiedlich schnell. Bei Medikamenten macht das einen großen Unterschied: Dieselbe Dosis kann für den einen genau richtig, für die andere zu viel und für den nächsten zu wenig sein."
         },
         {
-          "t": "img",
-          "img": "l_typen_tempo",
+          "t": "text",
           "h": "Die vier Metabolisierungstypen",
           "p": "Wie schnell deine Gene einen Wirkstoff abbauen, nennt man Metabolisierungstyp. <b>Normal</b>: genau richtig abgebaut. <b>Eingeschränkt</b>: etwas langsamer, meist wirkt das Medikament trotzdem, leichte Nebenwirkungen sind möglich. <b>Langsam</b>: der Wirkstoff reichert sich an, das Risiko für Nebenwirkungen steigt. <b>(Ultra)schnell</b>: der Wirkstoff ist so rasch wieder draußen, dass er kaum wirkt. Entscheidend sind immer deine zwei Genkopien."
         },
@@ -510,8 +494,7 @@
           "e": "Bei ultraschnellem Abbau hat ein normaler Wirkstoff kaum Zeit zu wirken."
         },
         {
-          "t": "img",
-          "img": "l_typen_dosis",
+          "t": "text",
           "h": "Gleiche Packung, andere Dosis",
           "p": "Je nach Typ kann eine normale Dosis passen, eine niedrigere, eine höhere oder ein anderes Medikament. Ein Beispiel: Für Citalopram nennt die Packungsbeilage bis zu 40 mg pro Tag. Für langsame und eingeschränkte Metabolisierer empfehlen klinische Leitlinien, die Dosis um bis zu 50 % zu senken. Diese Entscheidung trifft immer deine Ärztin oder dein Arzt."
         },
@@ -528,8 +511,7 @@
           "e": "Wer langsam abbaut, behält den Wirkstoff länger im Körper. Mit jeder Dosis steigt der Spiegel."
         },
         {
-          "t": "img",
-          "img": "l_typen_prodrug",
+          "t": "text",
           "h": "Prodrugs: erst aktivieren, dann wirken",
           "p": "Manche Medikamente sind beim Schlucken noch inaktiv. Erst deine Gene wandeln sie in die wirksame Form um. Das Schmerzmittel Codein zum Beispiel wird im Körper zu Morphium. Bei solchen Prodrugs ist alles umgekehrt: Arbeiten deine Gene langsam, wird kaum Wirkstoff aktiviert und das Medikament bleibt wirkungslos. Arbeiten sie sehr schnell, entsteht auf einmal zu viel Wirkstoff."
         },
@@ -551,8 +533,7 @@
           "p": "Dasselbe Prinzip gilt nicht nur für Medikamente. Das Gen CYP1A2 baut in der Leber Koffein ab. Bei manchen arbeitet es schnell, bei anderen langsam. Darum verträgt der eine abends noch einen Espresso, während die andere nachts wach liegt."
         },
         {
-          "t": "info",
-          "img": "st11_medikamente",
+          "t": "text",
           "h": "Und bei dir?",
           "p": "Welcher Metabolisierungstyp du bei den wichtigsten Genen bist, zeigt die Medikamenten-Analyse <b>Pharmaco Sensor</b>. Sie bewertet, wie du <b>über 2.500 Wirkstoffe</b> verarbeitest. Nimm dein Ergebnis zum nächsten Gespräch mit deiner Ärztin oder deinem Arzt mit."
         }
@@ -601,8 +582,7 @@
           "p": "Stell dir vor, du bekommst ein neues Rezept und könntest sofort nachsehen, wie deine Gene mit diesem Wirkstoff umgehen. Genau das macht die Medikamentenliste: Sie bewertet über 2.500 Medikamente nach deinen Genen. Aber wie liest man sie richtig?"
         },
         {
-          "t": "img",
-          "img": "l_ampel_farben",
+          "t": "text",
           "h": "Rot, Orange, Grün",
           "p": "Jedes Medikament bekommt eine Farbe. <b>Rot</b>: Eine offizielle Leitlinie nennt für dein Ergebnis eine andere Dosis oder ein anderes Medikament. <b>Orange</b>: Es gibt einen Hinweis im Beipackzettel oder gut belegte Studien zu deinem Genotyp. <b>Grün</b>: Zu deinen Genen gibt es bei diesem Wirkstoff keine genetischen Anmerkungen."
         },
@@ -619,8 +599,7 @@
           "e": "Rot heißt: Für deinen Genotyp gibt es eine Leitlinie mit einer Anpassung. Was daraus folgt, entscheidet deine Ärztin oder dein Arzt."
         },
         {
-          "t": "img",
-          "img": "l_ampel_gruen",
+          "t": "text",
           "h": "Grün heißt nicht unbedenklich",
           "p": "Grün bedeutet nur: Deine Gene geben bei diesem Wirkstoff keinen Hinweis auf ein Problem. Es heißt nicht, dass das Medikament für dich harmlos ist. Auch ohne genetische Auffälligkeiten sind Nebenwirkungen und Wechselwirkungen mit anderen Medikamenten möglich. Allergien, Vorerkrankungen oder andere Arzneimittel zeigt keine Genanalyse."
         },
@@ -642,8 +621,7 @@
           "p": "5-FU ist weltweit das Standardmedikament bei Darmkrebs. Wer es genetisch bedingt kaum abbaut, für den kann schon die Standarddosis lebensbedrohliche Nebenwirkungen auslösen. Weiß das Behandlungsteam vorher Bescheid, kann es die Dosis anpassen oder ein anderes Medikament wählen."
         },
         {
-          "t": "img",
-          "img": "l_ampel_arzt",
+          "t": "text",
           "h": "Niemals selbst absetzen",
           "p": "Deine Medikamenten-Ampel ist eine Information für dich und für deine Ärztin oder deinen Arzt. Setz ein Medikament nie selbst ab und ändere nie selbst die Dosis, auch nicht bei Rot. Jede Anpassung darf nur deine Ärztin, dein Arzt oder deine Apotheke vornehmen. Nimm dein Ergebnis am besten zum nächsten Termin mit."
         },
@@ -660,8 +638,7 @@
           "e": "Änderungen gehören immer in ärztliche Hände. Sprich dein Ergebnis an, bevor du etwas änderst."
         },
         {
-          "t": "info",
-          "img": "st11_medikamente",
+          "t": "text",
           "h": "Und bei dir?",
           "p": "Deine persönliche Ampel für <b>über 2.500 Wirkstoffe</b> zeigt dir die Medikamenten-Analyse <b>Pharmaco Sensor</b>. Änderungen an deinen Medikamenten nur mit deiner Ärztin, deinem Arzt oder deiner Apotheke."
         }

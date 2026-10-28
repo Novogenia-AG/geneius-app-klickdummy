@@ -1,934 +1,920 @@
 {
- "lessons": [
-  {
-   "id": "fett",
-   "station": "fett",
-   "title": "Wie empfindlich bist du für Fett?",
-   "minutes": 6,
-   "formula": "DNA_SHAPE_FATSENSITIVITY",
-   "scalebar": "DNA_SHAPE_FAT_SENSITIVITY_SCALEBAR",
-   "invert": false,
-   "blocks": [
+  "lessons": [
     {
-     "t": "text",
-     "h": "Essen, ohne zuzunehmen?",
-     "p": "Bestimmt kennst du jemanden, der essen kann, was er will, und kein Gramm zunimmt. Andere nehmen scheinbar schon vom Hinsehen zu. Kalorien wirken also nicht bei jedem gleich. Forscher schätzen, dass 60 bis 80 Prozent des Übergewichts genetische Ursachen haben. Warum macht Fett den einen dick und den anderen nicht?"
+      "id": "fett",
+      "station": "fett",
+      "title": "Wie empfindlich bist du für Fett?",
+      "minutes": 6,
+      "formula": "DNA_SHAPE_FATSENSITIVITY",
+      "scalebar": "DNA_SHAPE_FAT_SENSITIVITY_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Essen, ohne zuzunehmen?",
+          "p": "Bestimmt kennst du jemanden, der essen kann, was er will, und kein Gramm zunimmt. Andere nehmen scheinbar schon vom Hinsehen zu. Kalorien wirken also nicht bei jedem gleich. Forscher schätzen, dass 60 bis 80 Prozent des Übergewichts genetische Ursachen haben. Warum macht Fett den einen dick und den anderen nicht?"
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 64.88,
+          "end": 138.2,
+          "file": "clips/fett_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt die Fett-Studie mit 720 Personen und den Fett-Stopp im Darm",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Der Fett-Stopp im Darm",
+          "p": "Fett aus dem Essen wird im Darm aufgenommen. Hat dein Körper genug, schalten sich Regulierungsgene ein, zum Beispiel das FABP2-Gen. Sie blockieren die weitere Fettaufnahme. Das überschüssige Fett wird nicht aufgenommen und ausgeschieden. Sind die Gene defekt, fehlt dieser Stopp: Das Fett wird aufgenommen, und was der Körper nicht braucht, wird gespeichert."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 150.9,
+          "end": 173.6,
+          "file": "clips/fett_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Warum die anderen zugenommen haben: ein Schreibfehler im Gen",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was machen effektive Fett-Regulierungsgene, wenn dein Körper genug Fett aufgenommen hat?",
+          "o": [
+            "Sie verbrennen das Fett im Muskel",
+            "Sie blockieren die weitere Fettaufnahme im Darm",
+            "Sie wandeln Fett in Zucker um",
+            "Sie speichern das Fett für später"
+          ],
+          "c": 1,
+          "e": "Effektive Gene stoppen die Fettaufnahme, sobald der Körper genug hat. Der Rest wird ausgeschieden."
+        },
+        {
+          "t": "text",
+          "h": "Fünf Gene, ein Balken",
+          "p": "In einer Studie bekamen 720 Personen zusätzliche Fettkalorien. Viele nahmen zu, manche hielten ihr Gewicht. Der Unterschied lag in den FABP2-Genen. Für deine Fettempfindlichkeit werden fünf Gene ausgewertet: FABP2, FTO, PPARG, APOA2 und APOA5. Beim FABP2-Gen haben rund 56 % der Menschen zwei effektive Kopien, 38 % eine defekte und 6 % zwei defekte. Aus allen fünf Genen ergibt sich dein Platz auf dem Balken, von gering bis hoch."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viele Gene fließen in deine Fettempfindlichkeit ein?",
+          "o": [
+            "Nur eines, das FABP2-Gen",
+            "Drei",
+            "Fünf",
+            "Über zwanzig"
+          ],
+          "c": 2,
+          "e": "Es sind fünf Gene: FABP2, FTO, PPARG, APOA2 und APOA5. Zusammen bestimmen sie deinen Platz auf dem Balken."
+        },
+        {
+          "t": "text",
+          "h": "Gutes Fett, schlechtes Fett",
+          "p": "Fett ist der Energielieferant mit der höchsten Energiedichte. Gesättigte Fettsäuren stecken vor allem in Butter, Schmalz, Fleisch und Milch, aber auch in Kokosfett und Palmöl. Sie sollten höchstens ein Drittel deiner Fettzufuhr ausmachen. Mindestens zwei Drittel sollten aus ungesättigten Fettsäuren kommen, etwa aus Pflanzenölen und Fisch. Bist du fettempfindlich, zählt vor allem die Gesamtmenge an Fett."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 311.8,
+          "end": 355.3,
+          "file": "clips/fett_3.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Fünf Gene, ein Balken: von gar nicht bis sehr fettempfindlich",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was empfiehlt der Bericht, wenn du fettempfindlich bist?",
+          "o": [
+            "Fett komplett weglassen",
+            "Vor allem gesättigte Fette wie Butter essen",
+            "Mehr Fett essen, damit sich der Körper daran gewöhnt",
+            "Die Gesamtmenge an Fett reduzieren und ungesättigtes Fett bevorzugen"
+          ],
+          "c": 3,
+          "e": "Bei hoher Fettempfindlichkeit geht es vor allem um die Gesamtmenge. Wenn Fett, dann das gesunde, ungesättigte."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Fettempfindlichkeit",
+        "report": "Shape-Bericht · Ernährungstyp",
+        "E": {
+          "pill": "Gering",
+          "title": "Fettempfindlichkeit gering",
+          "text": "Deine Gene stoppen die Fettaufnahme im Darm, sobald dein Körper genug hat. Ein hoher Fettgehalt im Essen führt bei dir kaum zu Übergewicht.",
+          "rec": "Fett ist für dich ein geringer Faktor für Übergewicht. Gesunde, ungesättigte Fette bleiben trotzdem die bessere Wahl."
+        },
+        "B": {
+          "pill": "Mäßig",
+          "title": "Fettempfindlichkeit mäßig",
+          "text": "Deine Gene können nur einen Teil der unerwünschten Fettaufnahme blockieren. Du nimmst mehr Fett aus dem Darm auf und speicherst es als Menschen mit anderen Genen.",
+          "rec": "Fettreiches Essen kann bei dir leichter zu Übergewicht führen. Es kann sinnvoll sein, die Fettmenge zu reduzieren und ungesättigtes Fett zu bevorzugen."
+        },
+        "D": {
+          "pill": "Hoch",
+          "title": "Fettempfindlichkeit hoch",
+          "text": "Deine Gene können die überschüssige Fettaufnahme nicht blockieren. Dein Körper nimmt das Fett aus dem Essen auf und speichert, was er nicht braucht.",
+          "rec": "Fett ist für dich ein wichtiger Faktor für Übergewicht. Es kann sinnvoll sein, die Fettmenge genau zu steuern und vor allem ungesättigte Fette zu wählen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Fettempfindlichkeit“ in der Gewichtsanalyse (Shape-Bericht).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob bei dir eher Fett oder eher Kohlenhydrate auf die Waage schlagen."
+        }
+      },
+      "images": [
+        {
+          "key": "l_fett_darm",
+          "prompt": "A translucent intestinal wall where golden fat droplets pass inward until a glowing molecular gate closes, leaving the remaining droplets drifting onward."
+        },
+        {
+          "key": "l_fett_varianten",
+          "prompt": "Five translucent DNA strands side by side, each carrying a small glowing switch, flowing together into one horizontal gradient bar."
+        }
+      ],
+      "sources": [
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 20 (Video-Text: 60 bis 80 Prozent), S. 21 (Fette einfach erklärt), S. 22 (Studie 720 Personen, FABP2), S. 23/24 (Gen effektiv/defekt), S. 25–30 (Ergebnisse gering/mäßig/hoch, Gentabelle FABP2, FTO, PPARG, APOA2, APOA5)",
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 54 (Wissenschaft der Gene: FABP2 56 % / 38 % / 6 %)",
+        "Video 2QmG2UWqR1Y 1:04,9–2:18,2 (clips/fett_1: Fett-Studie, Fett-Stopp im Darm)",
+        "Video 2QmG2UWqR1Y 2:30,9–2:53,6 (clips/fett_2: Gendefekt, Ursache für Übergewicht)",
+        "Video 2QmG2UWqR1Y 5:11,8–5:55,3 (clips/fett_3: fünf Gene, Balken)"
+      ],
+      "open_questions": [
+        "Farblogik geprüft: E = „Fettempfindlichkeit gering“ = günstig, daher invert:false.",
+        "Im Video (2QmG2UWqR1Y 2:20–2:25, direkt nach dem Clip) nennt Daniel für die Fett-Studie das Gen „PPAR gamma“, der Bericht S. 22 nennt FABP2. Die Lektion folgt dem Bericht; Clip 1 endet nach „Also tolles Gen.“, Clip 2 beginnt erst bei „So, warum haben die anderen zugenommen?“, die Stelle mit PPAR gamma ist herausgeschnitten.",
+        "Video sagt „ungefähr 80 %“ genetische Ursache, Bericht „60 bis 80 Prozent“ – Lektion nutzt den Berichtswert.",
+        "Wissenschaftsseiten widersprüchlich bei PPARG (S. 55: 86 % „beide Gene defekt“, S. 148/161: 86 % „beide Gene effektiv“) – PPARG-Häufigkeiten daher nicht verwendet."
+      ]
     },
     {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 64.88,
-     "end": 138.2,
-     "file": "clips/fett_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt die Fett-Studie mit 720 Personen und den Fett-Stopp im Darm",
-     "ai": false
+      "id": "kh",
+      "station": "fett",
+      "title": "Kohlenhydrate: Freund oder Falle?",
+      "minutes": 6,
+      "formula": "DNA_SHAPE_CARBSENSITIVITY",
+      "scalebar": "DNA_SHAPE_CARB_SENSITIVITY_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Machen Nudeln dick?",
+          "p": "Low Carb, Low Fat, ausgewogen: Gefühlt gibt es jede Woche eine neue Diät. Die meisten haben ihre Berechtigung, aber sie wirken nicht bei jedem gleich gut. Ob Pasta und Brot bei dir auf die Waage schlagen, hängt auch von deinen Genen ab."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 361.4,
+          "end": 406.95,
+          "file": "clips/kh_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel zeigt sein eigenes Ergebnis: Kohlenhydrate kein Problem, Fett schon",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Das ADRB2-Gen entscheidet mit",
+          "p": "Kohlenhydrate kommen über die Nahrung in den Körper. Arbeiten deine ADRB2-Gene effektiv, verhindern sie, dass sich überschüssige Kohlenhydratkalorien als Fett ablagern. Sind sie defekt, fehlt dieser Schutz: Die überschüssigen Kalorien werden als Fettpölsterchen gespeichert."
+        },
+        {
+          "t": "quiz",
+          "q": "Was passiert, wenn die ADRB2-Gene defekt sind?",
+          "o": [
+            "Überschüssige Kohlenhydratkalorien werden als Fett abgelagert",
+            "Kohlenhydrate können nicht mehr verdaut werden",
+            "Der Körper verbrennt mehr Fett",
+            "Der Blutzucker steigt nicht mehr an"
+          ],
+          "c": 0,
+          "e": "Defekte ADRB2-Gene können das Ablagern von Kohlenhydratkalorien als Fett nicht verhindern."
+        },
+        {
+          "t": "text",
+          "h": "Die Studie mit 313 Personen",
+          "p": "In einer Studie mit 313 Personen nahmen Menschen mit defekten ADRB2-Genen zu, wenn sie mehr als 50 % ihrer Kalorien aus Kohlenhydraten bezogen, besonders Frauen. Bei funktionstüchtigen ADRB2-Genen führte dieselbe Menge nicht zu Übergewicht. Wichtig: Fett und Kohlenhydrate sind zwei unabhängige Effekte. Manche sind nur gegen das eine empfindlich, manche gegen beides, manche gegen keines."
+        },
+        {
+          "t": "quiz",
+          "q": "Ab welchem Anteil an Kohlenhydraten nahmen Menschen mit defekten ADRB2-Genen in der Studie zu?",
+          "o": [
+            "Ab 10 % der Kalorien",
+            "Ab 25 % der Kalorien",
+            "Ab mehr als 50 % der Kalorien",
+            "Erst ab 90 % der Kalorien"
+          ],
+          "c": 2,
+          "e": "Ab mehr als 50 % der Kalorien aus Kohlenhydraten nahmen Personen mit defekten ADRB2-Genen zu. Mit funktionstüchtigen Genen nicht."
+        },
+        {
+          "t": "text",
+          "h": "Kurze und lange Ketten",
+          "p": "Kurzkettige Kohlenhydrate stecken vor allem in Zucker, aber auch in Obst. Der Körper verarbeitet sie schnell: Der Blutzucker steigt rasch an und fällt rasch wieder ab. Du bist weniger lang satt, und Heißhunger kommt leichter. Langkettige Kohlenhydrate, etwa aus Kartoffeln oder Hülsenfrüchten, müssen im Darm erst aufgespalten werden. Sie bringen den Blutzucker weniger durcheinander und halten länger satt."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 407.3,
+          "end": 448.9,
+          "file": "clips/kh_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Mehr Spaghetti, weniger Steak: was das Ergebnis beim Abnehmen bedeutet",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Welche Kohlenhydrate halten länger satt?",
+          "o": [
+            "Kurzkettige aus Zucker",
+            "Die Kohlenhydrate aus Obst",
+            "Alle Kohlenhydrate gleich lang",
+            "Langkettige, etwa aus Kartoffeln und Hülsenfrüchten"
+          ],
+          "c": 3,
+          "e": "Langkettige Kohlenhydrate werden erst im Darm aufgespalten und langsamer aufgenommen. Darum halten sie länger satt."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Kohlenhydratempfindlichkeit",
+        "report": "Shape-Bericht · Ernährungstyp",
+        "E": {
+          "pill": "Gering",
+          "title": "Kohlenhydratempfindlichkeit gering",
+          "text": "Deine ADRB2-Gene verhindern, dass sich überschüssige Kohlenhydratkalorien als Fett ablagern. Du reagierst kaum empfindlich auf Kohlenhydrate.",
+          "rec": "Kohlenhydratreiche Lebensmittel sind für dich ein geringer Faktor für Übergewicht. Langkettige Kohlenhydrate bleiben trotzdem die bessere Wahl."
+        },
+        "B": null,
+        "D": {
+          "pill": "Hoch",
+          "title": "Kohlenhydratempfindlichkeit hoch",
+          "text": "Deine ADRB2-Gene können nicht verhindern, dass sich überschüssige Kohlenhydratkalorien als Fett ablagern. Du reagierst empfindlich auf Kohlenhydrate.",
+          "rec": "Zu viele kohlenhydratreiche Lebensmittel können bei dir zu Übergewicht führen. Es kann sinnvoll sein, die Kohlenhydratmenge genau im Blick zu behalten und langkettige Kohlenhydrate zu bevorzugen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Kohlenhydratempfindlichkeit“ in der Gewichtsanalyse (Shape-Bericht).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Pasta, Brot und Co. bei dir eher kein Problem sind oder ob du sie besser genau dosierst."
+        }
+      },
+      "images": [
+        {
+          "key": "l_kh_adrb2",
+          "prompt": "Translucent starch chains flowing into a body cell where a glowing gene-shaped shield deflects them away from a small fat droplet."
+        },
+        {
+          "key": "l_kh_studie",
+          "prompt": "Two translucent human silhouettes side by side before a bowl of pasta, one stays slim while soft golden fat droplets gather in the other."
+        }
+      ],
+      "sources": [
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 31 (Kohlenhydrate einfach erklärt), S. 32 (Studie 313 Personen, ADRB2, mehr als 50 % der Kalorien aus Kohlenhydraten), S. 33/34 (Gen effektiv/defekt), S. 35–38 (Ergebnisse gering/hoch, Gentabelle ADRB2)",
+        "Video 2QmG2UWqR1Y 6:01,4–6:46,95 (clips/kh_1: Kohlenhydrate, Daniels eigenes Ergebnis, Eiweiß)",
+        "Video 2QmG2UWqR1Y 6:47,3–7:28,9 (clips/kh_2: was das Ergebnis für die Ernährung bedeutet)"
+      ],
+      "open_questions": [
+        "Nur zwei Zustände im Bericht (gering/hoch), daher B = null. Farblogik: E = gering = günstig, invert:false.",
+        "Bericht S. 32 trägt als Quelle den Platzhalter „Pubmed 123456“ – echte PubMed-ID der 313-Personen-Studie fehlt.",
+        "ADRB2-Häufigkeiten in den Wissenschaftsseiten widersprüchlich (S. 56: 64 % „beide Gene effektiv“, S. 83: 64 % „beide Gene defekt“) – nicht verwendet.",
+        "Clips kh_1/kh_2 zeigen Daniels persönliches Ergebnis und erwähnen seine Frau (ohne Namen) – bitte bestätigen, dass das für Endkunden passt.",
+        "Die Studie mit 313 Personen nennt das Hauptvideo nicht (nur „ein anderes Gen, andere Forschungsgruppe“); Zahl steht nur im Lektionstext aus dem Bericht."
+      ]
     },
     {
-     "t": "img",
-     "img": "l_fett_darm",
-     "h": "Der Fett-Stopp im Darm",
-     "p": "Fett aus dem Essen wird im Darm aufgenommen. Hat dein Körper genug, schalten sich Regulierungsgene ein, zum Beispiel das FABP2-Gen. Sie blockieren die weitere Fettaufnahme. Das überschüssige Fett wird nicht aufgenommen und ausgeschieden. Sind die Gene defekt, fehlt dieser Stopp: Das Fett wird aufgenommen, und was der Körper nicht braucht, wird gespeichert."
+      "id": "sport",
+      "station": "fett",
+      "title": "Bringt dir Sport beim Abnehmen etwas?",
+      "minutes": 6,
+      "formula": "DNA_SHAPE_SPORT",
+      "scalebar": "DNA_SHAPE_SPORT_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Gleicher Sport, anderes Ergebnis",
+          "p": "Zwei Menschen trainieren gleich oft, gleich lang und gleich diszipliniert. Der eine nimmt deutlich ab, der andere kaum. Unfair? Ja. Bevor du dich auf den Weg ins Fitnesscenter machst, solltest du wissen: Deine Gene entscheiden mit, wie viel Gewicht du durch Sport verlieren kannst."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 512.85,
+          "end": 567.95,
+          "file": "clips/sport_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt die Sport-Studien: gleicher Sport, anderes Ergebnis",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Drei Gene entscheiden mit",
+          "p": "Für diese Gene Story werden drei Gene ausgewertet: ADRB3, FTO und PPARG. Sind sie effektiv, nimmst du bei konsequentem Training gut ab. Nach vier Monaten Training ist die Gewichtsabnahme bis zu dreimal höher als bei Menschen mit anderen Genen. Sind sie defekt, nimmst du trotz konsequenten Trainings nicht effektiv ab."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viel höher kann die Gewichtsabnahme mit effektiven Genen nach vier Monaten Training sein?",
+          "o": [
+            "Etwa 10 % höher",
+            "Bis zu dreimal höher",
+            "Zehnmal höher",
+            "Gar nicht höher, die Gene spielen keine Rolle"
+          ],
+          "c": 1,
+          "e": "Mit effektiven Genen ist die Gewichtsabnahme nach vier Monaten Training bis zu dreimal höher als bei anderen Genen."
+        },
+        {
+          "t": "text",
+          "h": "Responder und Non-Responder",
+          "p": "In 25 Studien trainierten große Gruppen nach genau demselben Programm. Jedes Mal teilten sie sich in zwei Gruppen: Responder, die gut abnahmen, und Non-Responder, die je nach Studie zwei- bis achtmal weniger verloren. Beim ADRB3-Gen haben rund 78 % der Menschen zwei effektive Kopien, 20 % eine defekte und 2 % zwei defekte."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie nennt man Menschen, die durch dasselbe Training deutlich weniger abnehmen?",
+          "o": [
+            "Sporttypen",
+            "Responder",
+            "Kalorienspartypen",
+            "Non-Responder"
+          ],
+          "c": 3,
+          "e": "Non-Responder nehmen trotz gleichem Training weniger ab. Responder sprechen gut auf Sport an."
+        },
+        {
+          "t": "text",
+          "h": "Sport bleibt gesund",
+          "p": "Auch wenn Sport bei dir wenig fürs Abnehmen bringt: Für deine Gesundheit ist er trotzdem wichtig. Und es gibt einen zweiten Weg, Kalorien loszuwerden: weniger essen. Wie gut der bei dir wirkt, zeigt die nächste Gene Story. Zusammen ergibt sich, ob du eher ein Sporttyp, ein Kalorienspartyp oder ein Mischtyp bist."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 568.0,
+          "end": 597.7,
+          "file": "clips/sport_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Welche Gene dahinterstecken: für manche eine Superkraft, für andere Quälerei",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was gilt, wenn Sport bei dir genetisch wenig zum Abnehmen beiträgt?",
+          "o": [
+            "Sport ist dann ungesund für dich",
+            "Du solltest einfach doppelt so viel trainieren",
+            "Sport bleibt gesund, aber weniger essen kann die wirksamere Strategie sein",
+            "Du kannst gar nicht abnehmen"
+          ],
+          "c": 2,
+          "e": "Sport ist immer gesund. Fürs Abnehmen lohnt es sich aber, auf die Methode zu setzen, die bei deinen Genen am besten wirkt."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Abnehmen durch Sport",
+        "report": "Shape-Bericht · Sport oder Kalorienreduktion?",
+        "E": {
+          "pill": "Effektiv",
+          "title": "Abnehmen durch Sport effektiv",
+          "text": "Deine Gene bewirken, dass du bei konsequentem Training gut an Gewicht verlierst. Nach vier Monaten Training ist deine Gewichtsabnahme bis zu dreimal höher als bei Personen mit anderen Genen.",
+          "rec": "Sport ist für dich eine effektive Methode, um dein Gewicht zu reduzieren. Ein intensiveres Sportprogramm kann sich bei dir besonders lohnen."
+        },
+        "B": {
+          "pill": "Mäßig effektiv",
+          "title": "Abnehmen durch Sport mäßig effektiv",
+          "text": "Deine Gene sind beeinträchtigt: Du nimmst trotz konsequenten Trainings nur mäßig ab. Nach vier Monaten ist deine Gewichtsabnahme etwas geringer als bei Personen mit effektiven Genen.",
+          "rec": "Sport bleibt wichtig für deine Gesundheit. Fürs Abnehmen kann eine ausgewogene Kombination aus Sport und weniger essen sinnvoll sein."
+        },
+        "D": {
+          "pill": "Nicht effektiv",
+          "title": "Abnehmen durch Sport nicht effektiv",
+          "text": "Deine Gene bewirken, dass du trotz konsequenten Trainings nicht effektiv abnimmst. Nach vier Monaten ist deine Gewichtsabnahme geringer als bei Personen mit anderen Genen.",
+          "rec": "Sport ist trotzdem wichtig für deine Gesundheit. Zum Abnehmen kann es sinnvoller sein, den Schwerpunkt auf weniger Kalorien beim Essen zu legen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Abnehmen durch Sport“ in der Gewichtsanalyse (Shape-Bericht).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich beim Abnehmen eher Training oder eher weniger essen für dich lohnt."
+        }
+      },
+      "images": [
+        {
+          "key": "l_sport_gene",
+          "prompt": "A translucent runner on a treadmill whose body glows with three small DNA switches, golden fat droplets dissolving into light around the waist."
+        },
+        {
+          "key": "l_sport_responder",
+          "prompt": "Two identical translucent figures on identical exercise bikes, one surrounded by many dissolving golden fat droplets, the other by only a few."
+        }
+      ],
+      "sources": [
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 58 (Video-Text: Kalorien verbrennen durch Sport), S. 59/60 (Gen effektiv/defekt: bis zu dreimal höher nach vier Monaten), S. 61–66 (Ergebnisse effektiv/mäßig effektiv/nicht effektiv, Gentabelle ADRB3, FTO, PPARG)",
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 82 (Wissenschaft der Gene: ADRB3 78 % / 20 % / 2 %)",
+        "Video 2QmG2UWqR1Y 8:32,85–9:27,95 (clips/sport_1: 25 Studien, Responder/Non-Responder, zwei- bis achtmal)",
+        "Video 2QmG2UWqR1Y 9:28,0–9:57,7 (clips/sport_2: Gene ADRB3, FTO, PPARG; Daniel ist Responder)"
+      ],
+      "open_questions": [
+        "Farblogik: E = effektiv = günstig, invert:false.",
+        "Faktor uneinheitlich: Clip sport_1 sagt „je nach Studie zwei bis achtmal weniger“, der Bericht „bis zu dreimal höher nach vier Monaten“. Lektion nennt beide Angaben getrennt (Bericht im Mechanismus-Block, Video-Spanne im Responder-Block) – bitte Zahl festlegen.",
+        "„25 Studien“ steht nur im Video, nicht im Bericht.",
+        "Clip sport_2 sagt „ADH beta3“ (gemeint: ADRB3) und „PPAR gamma“ – sinngemäß passend zur Gentabelle.",
+        "FTO-Häufigkeiten auf S. 82 (14 % / 40 % / 46 %) passen nicht zu S. 54 (46 % / 40 % / 14 %) – nicht verwendet.",
+        "Der Bericht erklärt nicht, was ADRB3, FTO und PPARG im Stoffwechsel tun – die Lektion beschreibt nur die Wirkung. Für ein Mechanismus-Bild ggf. Daniels Erklärung nötig."
+      ]
     },
     {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 150.9,
-     "end": 173.6,
-     "file": "clips/fett_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Warum die anderen zugenommen haben: ein Schreibfehler im Gen",
-     "ai": false
+      "id": "kalred",
+      "station": "fett",
+      "title": "Weniger essen: Wie gut wirkt es bei dir?",
+      "minutes": 5,
+      "formula": "DNA_SHAPE_CALRED",
+      "scalebar": "DNA_SHAPE_CALREDUCTION_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Einfach weniger essen?",
+          "p": "Iss weniger, als du verbrauchst, dann muss dein Körper die Energie aus den Fettreserven holen. Das klingt einfach und funktioniert grundsätzlich auch. Aber wie viel du dadurch wirklich verlierst, legen auch deine Gene fest."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 598.4,
+          "end": 611.95,
+          "file": "clips/kalred_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Weniger essen: manche nehmen bis zu dreimal weniger ab",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Das ADRB2-Gen und die Kalorienreduktion",
+          "p": "Für diese Gene Story wird das ADRB2-Gen ausgewertet. Sind deine Gene effektiv, nimmst du durch disziplinierte Kalorienreduktion gut ab. Nach vier Monaten ist deine Gewichtsabnahme höher als bei Menschen mit anderen Genen. Sind sie defekt, nimmst du trotz disziplinierter Kalorienreduktion nicht effektiv ab."
+        },
+        {
+          "t": "quiz",
+          "q": "Welches Gen wertet der Bericht für das Abnehmen durch Kalorienreduktion aus?",
+          "o": [
+            "FABP2",
+            "ADRB2",
+            "APOA5",
+            "MTHFR"
+          ],
+          "c": 1,
+          "e": "Es ist das ADRB2-Gen. Dasselbe Gen spielt auch bei der Kohlenhydratempfindlichkeit eine Rolle."
+        },
+        {
+          "t": "text",
+          "h": "Bis zu dreimal Unterschied",
+          "p": "Auch beim weniger Essen gibt es große Unterschiede. In Studien nahmen übergewichtige Menschen, die ihre Kalorien reduzierten, unterschiedlich stark ab: manche gut, andere bis zu dreimal weniger. Weniger essen funktioniert also nicht bei jedem gleich gut. Es hängt von deinen Genen ab, wie effektiv eine Kalorienreduktion ist."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie groß kann der Unterschied beim Abnehmen durch weniger essen zwischen Menschen sein?",
+          "o": [
+            "Es gibt keinen Unterschied",
+            "Höchstens 5 %",
+            "Bis zu dreimal",
+            "Bis zu hundertmal"
+          ],
+          "c": 2,
+          "e": "In Studien nahmen manche Menschen durch weniger essen bis zu dreimal weniger ab als andere."
+        },
+        {
+          "t": "text",
+          "h": "Sporttyp, Kalorienspartyp oder Mischtyp?",
+          "p": "Aus beiden Gene Stories, Sport und Kalorienreduktion, ergibt sich deine Abnehmstrategie. Kalorienspartypen sparen am besten beim Essen ein. Sporttypen kommen mit Training weiter. Mischtypen fahren mit einer ausgewogenen Verteilung am besten. Übrigens: Auch Sporttypen empfiehlt der Bericht, den Großteil der Kalorien über die Ernährung einzusparen. Das ist einfacher zu kontrollieren und kostet weniger Zeit als Sport."
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 617.9,
+          "end": 660.2,
+          "file": "clips/kalred_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie du dich auf deine Stärken konzentrierst",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Wie entsteht deine persönliche Abnehmstrategie?",
+          "o": [
+            "Aus der Kombination deiner Ergebnisse zu Sport und Kalorienreduktion",
+            "Nur aus deinem Körpergewicht",
+            "Aus deiner Lieblingssportart",
+            "Sie ist für alle Menschen gleich"
+          ],
+          "c": 0,
+          "e": "Beide Gene Stories zusammen zeigen, ob du Sporttyp, Kalorienspartyp oder Mischtyp bist."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Abnehmen durch Kalorienreduktion",
+        "report": "Shape-Bericht · Sport oder Kalorienreduktion?",
+        "E": {
+          "pill": "Effektiv",
+          "title": "Abnehmen durch Kalorienreduktion effektiv",
+          "text": "Deine Gene bewirken, dass du durch disziplinierte Kalorienreduktion effektiv abnimmst. Nach vier Monaten hast du einen größeren Abnehmerfolg als Personen mit anderen Genen.",
+          "rec": "Weniger essen ist für dich eine wirksame Methode, um dein Gewicht zu reduzieren. Es kann sinnvoll sein, deine Abnehmstrategie vor allem darauf aufzubauen."
+        },
+        "B": {
+          "pill": "Mäßig effektiv",
+          "title": "Abnehmen durch Kalorienreduktion mäßig effektiv",
+          "text": "Deine Gene sind beeinträchtigt: Du nimmst trotz disziplinierter Kalorienreduktion nur mäßig ab. Nach vier Monaten ist deine Gewichtsabnahme etwas geringer als bei Personen mit effektiven Genen.",
+          "rec": "Weniger essen bleibt ein wichtiger Bestandteil deines Abnehmprogramms. Eine Kombination mit Sport kann für dich sinnvoll sein."
+        },
+        "D": {
+          "pill": "Nicht effektiv",
+          "title": "Abnehmen durch Kalorienreduktion nicht effektiv",
+          "text": "Deine Gene bewirken, dass du trotz disziplinierter Kalorienreduktion nicht effektiv abnimmst. Personen mit anderen Genen nehmen dadurch leichter ab.",
+          "rec": "Weniger essen bleibt trotzdem ein wichtiger Bestandteil beim Abnehmen. Wenn Sport bei dir gut wirkt, kann es sich lohnen, dort einen Schwerpunkt zu setzen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Abnehmen durch Kalorienreduktion“ in der Gewichtsanalyse (Shape-Bericht).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob weniger essen bei dir gut wirkt oder ob du eher auf Sport setzen solltest."
+        }
+      },
+      "images": [
+        {
+          "key": "l_kalred_gen",
+          "prompt": "A translucent plate with a smaller portion of food beside a glowing DNA strand, golden fat stores in a translucent body slowly turning into light."
+        },
+        {
+          "key": "l_kalred_vergleich",
+          "prompt": "Two translucent figures with identical small meals, one releasing many golden energy particles from its fat stores, the other only a few."
+        }
+      ],
+      "sources": [
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 58 (Video-Text: Kalorien einsparen durch weniger Essen), S. 67/68 (Gen effektiv/defekt), S. 69–74 (Ergebnisse effektiv/mäßig effektiv/nicht effektiv, Gentabelle ADRB2), S. 76–80 (Sporttyp/Kalorienspartyp/Mischtyp)",
+        "Video 2QmG2UWqR1Y 9:58,4–10:11,95 (clips/kalred_1: bis zu dreimal weniger, Gene spielen eine Rolle)",
+        "Video 2QmG2UWqR1Y 10:17,9–11:00,2 (clips/kalred_2: Strategie: Stärken nutzen, Schwächen meiden)"
+      ],
+      "open_questions": [
+        "Farblogik: E = effektiv = günstig, invert:false.",
+        "Video 2QmG2UWqR1Y 10:11–10:17 enthält einen Versprecher (Daniel: „ich bin dieser Typ, der nicht gut darauf anspricht, abzunehmen durch Sport“, gemeint ist Kalorienreduktion). Der Satz ist herausgeschnitten: kalred_1 endet bei 10:11,95 („welche Gene eine Rolle spielen.“), kalred_2 beginnt bei 10:17,9.",
+        "Clip kalred_1 ist nur 13,6 s lang (das Hauptvideo hat zur Kalorienreduktion nur diese zwei Sätze). Für mehr Tiefe wäre eine Animation nötig.",
+        "Clip kalred_2 nennt „wie bei Daniel“ und „wie bei meiner Frau“ (ohne Namen) als Beispiele für Sport- bzw. Kalorienspartyp.",
+        "Bericht nennt für die Kalorienreduktion nur „höher“ bzw. „größerer Abnehmerfolg“, keinen Faktor; „bis zu dreimal“ stammt aus den Videos.",
+        "Clip-Quelle jetzt ausschließlich das Hauptvideo 2QmG2UWqR1Y (Daniel 17.10.: keine Schulungsvideos)."
+      ]
     },
     {
-     "t": "quiz",
-     "q": "Was machen effektive Fett-Regulierungsgene, wenn dein Körper genug Fett aufgenommen hat?",
-     "o": [
-      "Sie verbrennen das Fett im Muskel",
-      "Sie blockieren die weitere Fettaufnahme im Darm",
-      "Sie wandeln Fett in Zucker um",
-      "Sie speichern das Fett für später"
-     ],
-     "c": 1,
-     "e": "Effektive Gene stoppen die Fettaufnahme, sobald der Körper genug hat. Der Rest wird ausgeschieden."
+      "id": "muskelv",
+      "station": "fett",
+      "title": "Schützen deine Gene deine Muskeln?",
+      "minutes": 6,
+      "formula": "DNA_SHAPE_MUSCLELOSS",
+      "scalebar": "DNA_SHAPE_MUSCLELOSS_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Woran stirbt man beim Hungern?",
+          "p": "1981 traten in Nordirland 23 Gefangene in einen Hungerstreik. Zehn von ihnen starben, alle nach etwa 60 Tagen, egal wie viel Fett sie zu Beginn hatten. Der Grund: Am Ende fehlten nicht die Fettreserven, sondern eine andere Energiequelle. Welche, und was hat das mit deiner nächsten Diät zu tun?"
+        },
+        {
+          "t": "text",
+          "h": "Muskeln als Notreserve",
+          "p": "Wenn du deutlich weniger isst, holt sich dein Körper Energie aus den Fettreserven. Manche Organe, etwa das Gehirn, brauchen aber Glukose. Die gewinnt der Körper aus Aminosäuren, und die meisten Aminosäuren stecken in deinen Muskeln. Darum baut der Körper beim Abnehmen neben Fett auch Muskelmasse ab. Effektive Gene helfen, die Muskelmasse zu erhalten, während Fettgewebe abgebaut wird."
+        },
+        {
+          "t": "quiz",
+          "q": "Warum baut der Körper bei einer Kalorienreduktion auch Muskeln ab?",
+          "o": [
+            "Weil Muskeln zu schwer werden",
+            "Weil er Aminosäuren aus den Muskeln als Energiequelle nutzt",
+            "Weil Muskeln sich in Fett umwandeln",
+            "Weil Sport während einer Diät schadet"
+          ],
+          "c": 1,
+          "e": "Für Glukose braucht der Körper Aminosäuren, und die meisten davon findet er in den Muskeln."
+        },
+        {
+          "t": "text",
+          "h": "Günstige und ungünstige Gene",
+          "p": "Für diese Gene Story wird das ADRB2-Gen ausgewertet. Sind deine Gene effektiv, bleibt bei einer Kalorienreduktion die Muskelmasse gut erhalten. Sind sie defekt, wird neben Fettgewebe unerwünscht auch Muskelmasse abgebaut. Während einer Diät gleichzeitig Muskeln aufzubauen, ist leider fast unmöglich. Deshalb geht es darum, deine Muskeln bestmöglich zu erhalten."
+        },
+        {
+          "t": "quiz",
+          "q": "Was bewirken effektive Gene bei einer Kalorienreduktion?",
+          "o": [
+            "Sie bauen schnell neue Muskeln auf",
+            "Sie verhindern jeden Fettabbau",
+            "Sie helfen, die Muskelmasse zu erhalten, während Fett abgebaut wird",
+            "Sie machen Sport überflüssig"
+          ],
+          "c": 2,
+          "e": "Effektive Gene schützen die Muskelmasse, während der Körper Fettgewebe abbaut."
+        },
+        {
+          "t": "text",
+          "h": "Die richtige Sportart",
+          "p": "Je nach Ergebnis passt eine andere Sportart. Mit geringem Muskelverlust reicht Ausdauersport: Damit verbrennst du in kurzer Zeit viele Kalorien. Bei mäßigem Verlust ist eine Kombination aus Ausdauer- und Kraftsport sinnvoll. Bei erhöhtem Verlust hilft gezieltes Krafttraining. Es setzt einen Wachstumsimpuls, der die Muskeln während der Diät erhält."
+        },
+        {
+          "t": "quiz",
+          "q": "Welcher Sport passt laut Bericht, wenn du bei einer Diät viel Muskelmasse verlierst?",
+          "o": [
+            "Gezieltes Krafttraining",
+            "Nur lange Spaziergänge",
+            "Gar kein Sport",
+            "Ausschließlich Dehnübungen"
+          ],
+          "c": 0,
+          "e": "Krafttraining belastet die Muskeln stark und setzt einen Wachstumsimpuls, der sie während der Diät erhält."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Muskelmasseverlust bei Diät",
+        "report": "Shape-Bericht · Erhaltung deiner Muskelmasse",
+        "E": {
+          "pill": "Gering",
+          "title": "Muskelmasseverlust bei Diät gering",
+          "text": "Deine Gene sorgen dafür, dass bei einer Kalorienreduktion deine Muskelmasse gut erhalten bleibt. Du verlierst weniger Muskelmasse als Personen mit anderen Genen.",
+          "rec": "Ausdauertraining ist für dich ausreichend, um deine Muskelmasse beim Abnehmen bestmöglich zu unterstützen."
+        },
+        "B": {
+          "pill": "Mäßig",
+          "title": "Muskelmasseverlust bei Diät mäßig",
+          "text": "Deine Gene sind beeinträchtigt: Bei einer Kalorienreduktion wird der Abbau deiner Muskelmasse etwas beschleunigt.",
+          "rec": "Eine Kombination aus Ausdauer- und Krafttraining kann dir helfen, deine Muskelmasse beim Abnehmen zu erhalten."
+        },
+        "D": {
+          "pill": "Erhöht",
+          "title": "Muskelmasseverlust bei Diät erhöht",
+          "text": "Deine Gene schützen deine Muskeln bei einer Kalorienreduktion nicht. Der Abbau deiner Muskelmasse wird beschleunigt.",
+          "rec": "Gezieltes Krafttraining kann dem Muskelabbau beim Abnehmen entgegenwirken."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Muskelmasseverlust bei Diät“ in der Gewichtsanalyse (Shape-Bericht).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob beim Abnehmen Ausdauersport reicht oder ob Krafttraining für deine Muskeln wichtig ist."
+        }
+      },
+      "images": [
+        {
+          "key": "l_muskelv_amino",
+          "prompt": "A translucent muscle fiber releasing small glowing amino acid beads that flow towards a softly lit brain."
+        },
+        {
+          "key": "l_muskelv_gene",
+          "prompt": "A translucent body during a diet where golden fat droplets fade away while the muscles stay firm, held by glowing DNA strands."
+        }
+      ],
+      "sources": [
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 86 (Video-Text: Hungerstreik 1981, 23 Gefangene, zehn starben nach etwa 60 Tagen), S. 87/88 (Muskeln einfach erklärt), S. 89/90 (Gen effektiv/defekt), S. 91–96 (Ergebnisse gering/mäßig/erhöht, Gentabelle ADRB2, Sportempfehlung)"
+      ],
+      "open_questions": [
+        "Farblogik: E = „Muskelmasseverlust gering“ = günstig, invert:false.",
+        "Lektionstitel in STATIONS „Muskelmasse bei Diät“, Bericht-Story „Muskelmasseverlust bei Diät“ – Ergebnistitel wortgleich aus dem Bericht.",
+        "Kein Hauptvideo-Ausschnitt – Animation nötig. Die Hauptvideos (2QmG2UWqR1Y Gewicht, GyIfKaYmLoE Sport, 79MPy6BFqu8 Nutrition) behandeln dieses Thema nicht, eine deutsche Animation gibt es nicht. Der frühere Clip aus der Analyseberatung wurde entfernt (Daniel 17.10.: keine Schulungsvideos).",
+        "Der Bericht hat zur Muskelmasse ein eigenes Video (QR qr.ng1.at/bdkzB5, Vimeo 819778201) – als Originalaufnahme vermutlich besser, liegt aber nicht auf YouTube.",
+        "Die Hungerstreik-Geschichte ist ernst – bitte prüfen, ob der Einstieg für die App passt."
+      ]
     },
     {
-     "t": "img",
-     "img": "l_fett_varianten",
-     "h": "Fünf Gene, ein Balken",
-     "p": "In einer Studie bekamen 720 Personen zusätzliche Fettkalorien. Viele nahmen zu, manche hielten ihr Gewicht. Der Unterschied lag in den FABP2-Genen. Für deine Fettempfindlichkeit werden fünf Gene ausgewertet: FABP2, FTO, PPARG, APOA2 und APOA5. Beim FABP2-Gen haben rund 56 % der Menschen zwei effektive Kopien, 38 % eine defekte und 6 % zwei defekte. Aus allen fünf Genen ergibt sich dein Platz auf dem Balken, von gering bis hoch."
+      "id": "fettvert",
+      "station": "fett",
+      "title": "Wo setzt sich dein Fett an?",
+      "minutes": 5,
+      "formula": "DNA_SHAPE_FATORGANDEPOSIT",
+      "scalebar": "DNA_SHAPE_FATORGANDEPOSIT_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Übergewicht ist nicht gleich Übergewicht",
+          "p": "Fett an den Hüften stört viele beim Blick in den Spiegel. Für die Gesundheit ist aber ein anderes Fett viel wichtiger: das Fett, das du nicht siehst. Wo dein Körper überschüssiges Fett ablegt, steuern auch deine Gene."
+        },
+        {
+          "t": "text",
+          "h": "Hüfte oder Bauchinneres",
+          "p": "Isst du mehr Kalorien, als du brauchst, speichert dein Körper sie als Fettgewebe. Menschen mit effektiven Genen legen das Fett eher außerhalb des Bauchraums an, um die Hüften. Menschen mit defekten Genen speichern es mehr um die Organe im Bauchinneren. Dieses Fett heißt viszerales Fett."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie heißt das Fett, das sich im Bauchinneren um die Organe ansammelt?",
+          "o": [
+            "Unterhautfett",
+            "Braunes Fett",
+            "Viszerales Fett",
+            "Hüftfett"
+          ],
+          "c": 2,
+          "e": "Viszerales Fett liegt im Bauchinneren um die Organe. Es ist stoffwechselaktiv und deshalb ungünstiger als Hüftfett."
+        },
+        {
+          "t": "text",
+          "h": "Warum Bauchfett so aktiv ist",
+          "p": "Viszerales Fett ist stoffwechselaktiv. Es enthält Botenstoffe, die zum Beispiel Entzündungs- und Stoffwechselprozesse im Körper beeinflussen. Ein Übermaß an viszeralem Fett kann deshalb das Risiko für Herz-Kreislauf-Erkrankungen wie Herzinfarkt oder Schlaganfall erhöhen. Für diese Gene Story werden vier Gene ausgewertet: FABP2, PPARG, ADRB2 und APOA2."
+        },
+        {
+          "t": "quiz",
+          "q": "Warum ist Fett um die Organe ungünstiger als Fett um die Hüften?",
+          "o": [
+            "Es ist schwerer",
+            "Es ist stoffwechselaktiv und enthält Botenstoffe",
+            "Es lässt sich nie mehr abbauen",
+            "Es entsteht nur durch Zucker"
+          ],
+          "c": 1,
+          "e": "Viszerales Fett ist stoffwechselaktiv: Seine Botenstoffe beeinflussen etwa Entzündungs- und Stoffwechselprozesse."
+        },
+        {
+          "t": "text",
+          "h": "Was das für dich bedeutet",
+          "p": "Legt dein Körper Fett eher im Bauchinneren an, hat ein gesundes Körpergewicht für dich eine noch größere Bedeutung als für andere. Die wichtigste Regel ist für alle gleich: Sorge dafür, dass du nicht zu viele Kalorien zu dir nimmst. Dann muss dein Körper gar kein überschüssiges Fett speichern, egal wo."
+        },
+        {
+          "t": "quiz",
+          "q": "Was ist laut Bericht die wichtigste Regel, damit sich kein Bauchfett anlagert?",
+          "o": [
+            "Viel Obst essen",
+            "Nur abends essen",
+            "Weniger Salz essen",
+            "Nicht zu viele Kalorien zu sich nehmen"
+          ],
+          "c": 3,
+          "e": "Ohne Kalorienüberschuss muss der Körper kein überschüssiges Fett speichern, weder an den Hüften noch um die Organe."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Fettverteilung",
+        "report": "Shape-Bericht · Fettverteilung",
+        "E": {
+          "pill": "Schwach",
+          "title": "Schwacher Fettorgan-Typ",
+          "text": "Deine Gene schützen dich vor übermäßiger Ablagerung von Fett um die Organe im Bauchinneren. Überschüssiges Fett würde sich bei dir eher um die Hüften anlegen.",
+          "rec": "Deine Gene bieten dir hier guten Schutz. Achte trotzdem darauf, nicht zu viele Kalorien zu dir zu nehmen."
+        },
+        "B": {
+          "pill": "Mäßig",
+          "title": "Mäßiger Fettorgan-Typ",
+          "text": "Deine Gene begünstigen, dass sich überschüssiges Fett vermehrt um die Organe im Bauchinneren anlagert, mehr als bei anderen Personen.",
+          "rec": "Ein optimales Körpergewicht hat für dich eine größere gesundheitliche Bedeutung. Es kann sinnvoll sein, besonders auf deine Kalorienbilanz zu achten."
+        },
+        "D": {
+          "pill": "Stark",
+          "title": "Starker Fettorgan-Typ",
+          "text": "Deine Gene begünstigen, dass sich überschüssiges Fett hauptsächlich um die Organe im Bauchinneren anlagert. Dieses Fett ist stoffwechselaktiv.",
+          "rec": "Ein optimales Körpergewicht hat für dich eine besonders große gesundheitliche Bedeutung. Besprich Fragen zu deinem Herz-Kreislauf-Risiko mit deiner Ärztin oder deinem Arzt."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Fettverteilung“ in der Gewichtsanalyse (Shape-Bericht).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dein Körper überschüssiges Fett eher an den Hüften oder im Bauchinneren ablegt."
+        }
+      },
+      "images": [
+        {
+          "key": "l_fettvert_organe",
+          "prompt": "A translucent human torso with soft golden fat deposits around the hips on one side and around the inner abdominal organs on the other."
+        },
+        {
+          "key": "l_fettvert_aktiv",
+          "prompt": "Translucent visceral fat cells around an abdominal organ, releasing tiny glowing messenger molecules that drift towards a softly lit heart."
+        }
+      ],
+      "sources": [
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 137 (Intro), S. 138 (Video-Text: viszerales Fett, Botenstoffe, Herzinfarkt, Schlaganfall), S. 139/140 (Gen effektiv/defekt), S. 141–146 (Ergebnisse schwacher/mäßiger/starker Fettorgan-Typ, Gentabelle FABP2, PPARG, ADRB2, APOA2)"
+      ],
+      "open_questions": [
+        "Farblogik: E = „Schwacher Fettorgan-Typ“ = günstig (Schutz vor Bauchfett), invert:false.",
+        "Video-Text S. 138 bricht in der OM-Fassung nach „Schlaganfall aber auch“ ab – vollständige Aufzählung der Risiken im Original prüfen.",
+        "Kein Hauptvideo-Ausschnitt – Animation nötig. Die Hauptvideos (2QmG2UWqR1Y Gewicht, GyIfKaYmLoE Sport, 79MPy6BFqu8 Nutrition) behandeln dieses Thema nicht, eine deutsche Animation gibt es nicht. Der frühere Clip aus der Analyseberatung wurde entfernt (Daniel 17.10.: keine Schulungsvideos).",
+        "Kapitel-Intro S. 137 trägt den Titel „Endlich schlank und jetzt?“ (gehört zu Jo-Jo) – vermutlich Fehler im Bericht."
+      ]
     },
     {
-     "t": "quiz",
-     "q": "Wie viele Gene fließen in deine Fettempfindlichkeit ein?",
-     "o": [
-      "Nur eines, das FABP2-Gen",
-      "Drei",
-      "Fünf",
-      "Über zwanzig"
-     ],
-     "c": 2,
-     "e": "Es sind fünf Gene: FABP2, FTO, PPARG, APOA2 und APOA5. Zusammen bestimmen sie deinen Platz auf dem Balken."
-    },
-    {
-     "t": "text",
-     "h": "Gutes Fett, schlechtes Fett",
-     "p": "Fett ist der Energielieferant mit der höchsten Energiedichte. Gesättigte Fettsäuren stecken vor allem in Butter, Schmalz, Fleisch und Milch, aber auch in Kokosfett und Palmöl. Sie sollten höchstens ein Drittel deiner Fettzufuhr ausmachen. Mindestens zwei Drittel sollten aus ungesättigten Fettsäuren kommen, etwa aus Pflanzenölen und Fisch. Bist du fettempfindlich, zählt vor allem die Gesamtmenge an Fett."
-    },
-    {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 311.8,
-     "end": 355.3,
-     "file": "clips/fett_3.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Fünf Gene, ein Balken: von gar nicht bis sehr fettempfindlich",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was empfiehlt der Bericht, wenn du fettempfindlich bist?",
-     "o": [
-      "Fett komplett weglassen",
-      "Vor allem gesättigte Fette wie Butter essen",
-      "Mehr Fett essen, damit sich der Körper daran gewöhnt",
-      "Die Gesamtmenge an Fett reduzieren und ungesättigtes Fett bevorzugen"
-     ],
-     "c": 3,
-     "e": "Bei hoher Fettempfindlichkeit geht es vor allem um die Gesamtmenge. Wenn Fett, dann das gesunde, ungesättigte."
-    },
-    {
-     "t": "result"
+      "id": "jojo",
+      "station": "fett",
+      "title": "Der Jo-Jo-Effekt: Halten deine Gene dein Gewicht?",
+      "minutes": 5,
+      "formula": "DNA_SHAPE_JOJO",
+      "scalebar": "DNA_SHAPE_JOJO_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Endlich schlank. Und jetzt?",
+          "p": "Viele kennen es: Mit viel Mühe hast du abgenommen, der Sommer war ein Erfolg, und plötzlich rutschst du zurück in alte Gewohnheiten. Das Gewicht steigt wieder. Das ist der berühmte Jo-Jo-Effekt. Aber warum trifft er manche viel härter als andere?"
+        },
+        {
+          "t": "text",
+          "h": "Langsam oder schnell zurück",
+          "p": "Nach einer erfolgreichen Diät fallen viele in alte Gewohnheiten zurück. Bei Menschen mit effektiven Genen steigt das Gewicht dann nur sehr langsam wieder an. Sie sind vor einer raschen erneuten Gewichtszunahme geschützt. Bei Menschen mit defekten Genen steigt das Gewicht sehr schnell wieder an."
+        },
+        {
+          "t": "quiz",
+          "q": "Was passiert bei Menschen mit effektiven Genen nach einer Diät, wenn sie in alte Gewohnheiten zurückfallen?",
+          "o": [
+            "Das Gewicht steigt sehr schnell wieder an",
+            "Das Gewicht steigt nur sehr langsam wieder an",
+            "Sie nehmen automatisch weiter ab",
+            "Das Gewicht bleibt immer gleich, egal was sie essen"
+          ],
+          "c": 1,
+          "e": "Effektive Gene schützen vor einer raschen erneuten Gewichtszunahme. Ganz ohne Folgen bleiben alte Gewohnheiten aber nicht."
+        },
+        {
+          "t": "text",
+          "h": "Zwei Gene, ein Leben lang",
+          "p": "Für diese Gene Story werden zwei Gene ausgewertet: PPARG und ADRB2. Studien zeigen, dass Menschen mit bestimmten Gendefekten viel schneller und leichter wieder zunehmen. Deine Gene können dich also dabei unterstützen, dein Gewicht zu halten, oder gegen dich arbeiten. Und sie bleiben ein Leben lang gleich: Du musst den Test nie wiederholen."
+        },
+        {
+          "t": "quiz",
+          "q": "Welche Gene wertet der Bericht für den Jo-Jo-Effekt aus?",
+          "o": [
+            "FABP2 und APOA5",
+            "FTO und ADRB3",
+            "MTHFR und VDR",
+            "PPARG und ADRB2"
+          ],
+          "c": 3,
+          "e": "Für den Jo-Jo-Effekt sind es PPARG und ADRB2. Beide spielen auch bei anderen Gewichts-Stories eine Rolle."
+        },
+        {
+          "t": "text",
+          "h": "Keine Crash-Diät",
+          "p": "Weil deine Gene sich nicht ändern, lohnt sich vor allem eines: den Lebensstil dauerhaft umzustellen und einen Weg zu finden, den du leicht durchhältst. Ohne bleibende Strategie können bestimmte Gendefekte deine Erfolge schnell wieder zunichtemachen. Mit einem neuen Lebensstil kannst du dein Gewicht trotzdem halten, auch wenn deine Gene gegen dich arbeiten."
+        },
+        {
+          "t": "quiz",
+          "q": "Was ist laut Bericht der beste Schutz vor dem Jo-Jo-Effekt?",
+          "o": [
+            "Eine dauerhafte Umstellung des Lebensstils",
+            "Eine möglichst kurze Crash-Diät",
+            "Nach der Diät wieder wie früher essen",
+            "Jedes Jahr einen neuen Gentest machen"
+          ],
+          "c": 0,
+          "e": "Gene bleiben ein Leben lang gleich. Deshalb hilft eine dauerhafte, leicht umsetzbare Umstellung am meisten."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Jo-Jo-Effekt",
+        "report": "Shape-Bericht · Endlich schlank. Und jetzt?",
+        "E": {
+          "pill": "Schwach",
+          "title": "Schwacher Jojo-Typ",
+          "text": "Deine Gene schützen dich vor einer schnellen erneuten Gewichtszunahme nach einer erfolgreichen Abnehmkur. Sie helfen dir, dein Gewicht einfacher zu halten.",
+          "rec": "Achte nach dem Abnehmen trotzdem auf die Grundregeln deines Berichts. Ein neuer Lebensstil hilft dir zusätzlich, dein Gewicht langfristig zu halten."
+        },
+        "B": null,
+        "D": {
+          "pill": "Stark",
+          "title": "Starker Jojo-Typ",
+          "text": "Deine Gene begünstigen eine schnelle erneute Gewichtszunahme nach einer erfolgreichen Abnehmkur. Mit alten Gewohnheiten würde dein Gewicht schnell wieder ansteigen.",
+          "rec": "Stell dich darauf ein, die Regeln für eine optimale Ernährung auch nach dem Abnehmen beizubehalten. Mit einem dauerhaft neuen Lebensstil kannst du dein Gewicht trotzdem halten."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Jo-Jo-Effekt“ in der Gewichtsanalyse (Shape-Bericht).",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Gene dir beim Gewichthalten helfen oder ob du nach dem Abnehmen besonders dranbleiben solltest."
+        }
+      },
+      "images": [
+        {
+          "key": "l_jojo_kurve",
+          "prompt": "A translucent yo-yo on a glowing thread whose path forms a weight curve, falling and rising again, with a DNA strand woven into the string."
+        },
+        {
+          "key": "l_jojo_gene",
+          "prompt": "Two translucent DNA strands holding a balance scale steady in soft golden light."
+        }
+      ],
+      "sources": [
+        "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 151 (Intro), S. 152 (Video-Text: Gene bleiben ein Leben lang gleich), S. 153/154 (Der Jo-Jo Effekt), S. 155/156 (Gen effektiv/defekt), S. 157–160 (Ergebnisse schwacher/starker Jojo-Typ, Gentabelle PPARG, ADRB2), S. 161/162 (Wissenschaft der Gene)"
+      ],
+      "open_questions": [
+        "Bericht und OM haben nur zwei Zustände (schwacher/starker Jojo-Typ), daher B = null. Recherche 01 listet zusätzlich „Mäßiger Jojo-Typ“, und laut shape-bauplan.md liefert die Formel bei demo-kunde-c IMPAIRED – im Bericht gibt es dafür keinen Text. Bitte klären.",
+        "Farblogik: E = „Schwacher Jojo-Typ“ = günstig, invert:false.",
+        "Kein Hauptvideo-Ausschnitt – Animation nötig. Die Hauptvideos (2QmG2UWqR1Y Gewicht, GyIfKaYmLoE Sport, 79MPy6BFqu8 Nutrition) behandeln dieses Thema nicht, eine deutsche Animation gibt es nicht. Der frühere Clip aus der Analyseberatung wurde entfernt (Daniel 17.10.: keine Schulungsvideos). Alternative: Bericht-Video (QR qr.ng1.at/bdkzCx, Vimeo 825340575) prüfen.",
+        "Wissenschaftsseite S. 162 zeigt den ADRB2-Block doppelt – vermutlich Fehler im Bericht."
+      ]
     }
-   ],
-   "result": {
-    "story": "Fettempfindlichkeit",
-    "report": "Shape-Bericht · Ernährungstyp",
-    "E": {
-     "pill": "Gering",
-     "title": "Fettempfindlichkeit gering",
-     "text": "Deine Gene stoppen die Fettaufnahme im Darm, sobald dein Körper genug hat. Ein hoher Fettgehalt im Essen führt bei dir kaum zu Übergewicht.",
-     "rec": "Fett ist für dich ein geringer Faktor für Übergewicht. Gesunde, ungesättigte Fette bleiben trotzdem die bessere Wahl."
-    },
-    "B": {
-     "pill": "Mäßig",
-     "title": "Fettempfindlichkeit mäßig",
-     "text": "Deine Gene können nur einen Teil der unerwünschten Fettaufnahme blockieren. Du nimmst mehr Fett aus dem Darm auf und speicherst es als Menschen mit anderen Genen.",
-     "rec": "Fettreiches Essen kann bei dir leichter zu Übergewicht führen. Es kann sinnvoll sein, die Fettmenge zu reduzieren und ungesättigtes Fett zu bevorzugen."
-    },
-    "D": {
-     "pill": "Hoch",
-     "title": "Fettempfindlichkeit hoch",
-     "text": "Deine Gene können die überschüssige Fettaufnahme nicht blockieren. Dein Körper nimmt das Fett aus dem Essen auf und speichert, was er nicht braucht.",
-     "rec": "Fett ist für dich ein wichtiger Faktor für Übergewicht. Es kann sinnvoll sein, die Fettmenge genau zu steuern und vor allem ungesättigte Fette zu wählen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Fettempfindlichkeit“ in der Gewichtsanalyse (Shape-Bericht).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob bei dir eher Fett oder eher Kohlenhydrate auf die Waage schlagen."
-    }
-   },
-   "images": [
-    {
-     "key": "l_fett_darm",
-     "prompt": "A translucent intestinal wall where golden fat droplets pass inward until a glowing molecular gate closes, leaving the remaining droplets drifting onward."
-    },
-    {
-     "key": "l_fett_varianten",
-     "prompt": "Five translucent DNA strands side by side, each carrying a small glowing switch, flowing together into one horizontal gradient bar."
-    }
-   ],
-   "sources": [
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 20 (Video-Text: 60 bis 80 Prozent), S. 21 (Fette einfach erklärt), S. 22 (Studie 720 Personen, FABP2), S. 23/24 (Gen effektiv/defekt), S. 25–30 (Ergebnisse gering/mäßig/hoch, Gentabelle FABP2, FTO, PPARG, APOA2, APOA5)",
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 54 (Wissenschaft der Gene: FABP2 56 % / 38 % / 6 %)",
-    "Video 2QmG2UWqR1Y 1:04,9–2:18,2 (clips/fett_1: Fett-Studie, Fett-Stopp im Darm)",
-    "Video 2QmG2UWqR1Y 2:30,9–2:53,6 (clips/fett_2: Gendefekt, Ursache für Übergewicht)",
-    "Video 2QmG2UWqR1Y 5:11,8–5:55,3 (clips/fett_3: fünf Gene, Balken)"
-   ],
-   "open_questions": [
-    "Farblogik geprüft: E = „Fettempfindlichkeit gering“ = günstig, daher invert:false.",
-    "Im Video (2QmG2UWqR1Y 2:20–2:25, direkt nach dem Clip) nennt Daniel für die Fett-Studie das Gen „PPAR gamma“, der Bericht S. 22 nennt FABP2. Die Lektion folgt dem Bericht; Clip 1 endet nach „Also tolles Gen.“, Clip 2 beginnt erst bei „So, warum haben die anderen zugenommen?“, die Stelle mit PPAR gamma ist herausgeschnitten.",
-    "Video sagt „ungefähr 80 %“ genetische Ursache, Bericht „60 bis 80 Prozent“ – Lektion nutzt den Berichtswert.",
-    "Wissenschaftsseiten widersprüchlich bei PPARG (S. 55: 86 % „beide Gene defekt“, S. 148/161: 86 % „beide Gene effektiv“) – PPARG-Häufigkeiten daher nicht verwendet."
-   ]
-  },
-  {
-   "id": "kh",
-   "station": "fett",
-   "title": "Kohlenhydrate: Freund oder Falle?",
-   "minutes": 6,
-   "formula": "DNA_SHAPE_CARBSENSITIVITY",
-   "scalebar": "DNA_SHAPE_CARB_SENSITIVITY_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Machen Nudeln dick?",
-     "p": "Low Carb, Low Fat, ausgewogen: Gefühlt gibt es jede Woche eine neue Diät. Die meisten haben ihre Berechtigung, aber sie wirken nicht bei jedem gleich gut. Ob Pasta und Brot bei dir auf die Waage schlagen, hängt auch von deinen Genen ab."
-    },
-    {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 361.4,
-     "end": 406.95,
-     "file": "clips/kh_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel zeigt sein eigenes Ergebnis: Kohlenhydrate kein Problem, Fett schon",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_kh_adrb2",
-     "h": "Das ADRB2-Gen entscheidet mit",
-     "p": "Kohlenhydrate kommen über die Nahrung in den Körper. Arbeiten deine ADRB2-Gene effektiv, verhindern sie, dass sich überschüssige Kohlenhydratkalorien als Fett ablagern. Sind sie defekt, fehlt dieser Schutz: Die überschüssigen Kalorien werden als Fettpölsterchen gespeichert."
-    },
-    {
-     "t": "quiz",
-     "q": "Was passiert, wenn die ADRB2-Gene defekt sind?",
-     "o": [
-      "Überschüssige Kohlenhydratkalorien werden als Fett abgelagert",
-      "Kohlenhydrate können nicht mehr verdaut werden",
-      "Der Körper verbrennt mehr Fett",
-      "Der Blutzucker steigt nicht mehr an"
-     ],
-     "c": 0,
-     "e": "Defekte ADRB2-Gene können das Ablagern von Kohlenhydratkalorien als Fett nicht verhindern."
-    },
-    {
-     "t": "img",
-     "img": "l_kh_studie",
-     "h": "Die Studie mit 313 Personen",
-     "p": "In einer Studie mit 313 Personen nahmen Menschen mit defekten ADRB2-Genen zu, wenn sie mehr als 50 % ihrer Kalorien aus Kohlenhydraten bezogen, besonders Frauen. Bei funktionstüchtigen ADRB2-Genen führte dieselbe Menge nicht zu Übergewicht. Wichtig: Fett und Kohlenhydrate sind zwei unabhängige Effekte. Manche sind nur gegen das eine empfindlich, manche gegen beides, manche gegen keines."
-    },
-    {
-     "t": "quiz",
-     "q": "Ab welchem Anteil an Kohlenhydraten nahmen Menschen mit defekten ADRB2-Genen in der Studie zu?",
-     "o": [
-      "Ab 10 % der Kalorien",
-      "Ab 25 % der Kalorien",
-      "Ab mehr als 50 % der Kalorien",
-      "Erst ab 90 % der Kalorien"
-     ],
-     "c": 2,
-     "e": "Ab mehr als 50 % der Kalorien aus Kohlenhydraten nahmen Personen mit defekten ADRB2-Genen zu. Mit funktionstüchtigen Genen nicht."
-    },
-    {
-     "t": "text",
-     "h": "Kurze und lange Ketten",
-     "p": "Kurzkettige Kohlenhydrate stecken vor allem in Zucker, aber auch in Obst. Der Körper verarbeitet sie schnell: Der Blutzucker steigt rasch an und fällt rasch wieder ab. Du bist weniger lang satt, und Heißhunger kommt leichter. Langkettige Kohlenhydrate, etwa aus Kartoffeln oder Hülsenfrüchten, müssen im Darm erst aufgespalten werden. Sie bringen den Blutzucker weniger durcheinander und halten länger satt."
-    },
-    {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 407.3,
-     "end": 448.9,
-     "file": "clips/kh_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Mehr Spaghetti, weniger Steak: was das Ergebnis beim Abnehmen bedeutet",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Welche Kohlenhydrate halten länger satt?",
-     "o": [
-      "Kurzkettige aus Zucker",
-      "Die Kohlenhydrate aus Obst",
-      "Alle Kohlenhydrate gleich lang",
-      "Langkettige, etwa aus Kartoffeln und Hülsenfrüchten"
-     ],
-     "c": 3,
-     "e": "Langkettige Kohlenhydrate werden erst im Darm aufgespalten und langsamer aufgenommen. Darum halten sie länger satt."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Kohlenhydratempfindlichkeit",
-    "report": "Shape-Bericht · Ernährungstyp",
-    "E": {
-     "pill": "Gering",
-     "title": "Kohlenhydratempfindlichkeit gering",
-     "text": "Deine ADRB2-Gene verhindern, dass sich überschüssige Kohlenhydratkalorien als Fett ablagern. Du reagierst kaum empfindlich auf Kohlenhydrate.",
-     "rec": "Kohlenhydratreiche Lebensmittel sind für dich ein geringer Faktor für Übergewicht. Langkettige Kohlenhydrate bleiben trotzdem die bessere Wahl."
-    },
-    "B": null,
-    "D": {
-     "pill": "Hoch",
-     "title": "Kohlenhydratempfindlichkeit hoch",
-     "text": "Deine ADRB2-Gene können nicht verhindern, dass sich überschüssige Kohlenhydratkalorien als Fett ablagern. Du reagierst empfindlich auf Kohlenhydrate.",
-     "rec": "Zu viele kohlenhydratreiche Lebensmittel können bei dir zu Übergewicht führen. Es kann sinnvoll sein, die Kohlenhydratmenge genau im Blick zu behalten und langkettige Kohlenhydrate zu bevorzugen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Kohlenhydratempfindlichkeit“ in der Gewichtsanalyse (Shape-Bericht).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Pasta, Brot und Co. bei dir eher kein Problem sind oder ob du sie besser genau dosierst."
-    }
-   },
-   "images": [
-    {
-     "key": "l_kh_adrb2",
-     "prompt": "Translucent starch chains flowing into a body cell where a glowing gene-shaped shield deflects them away from a small fat droplet."
-    },
-    {
-     "key": "l_kh_studie",
-     "prompt": "Two translucent human silhouettes side by side before a bowl of pasta, one stays slim while soft golden fat droplets gather in the other."
-    }
-   ],
-   "sources": [
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 31 (Kohlenhydrate einfach erklärt), S. 32 (Studie 313 Personen, ADRB2, mehr als 50 % der Kalorien aus Kohlenhydraten), S. 33/34 (Gen effektiv/defekt), S. 35–38 (Ergebnisse gering/hoch, Gentabelle ADRB2)",
-    "Video 2QmG2UWqR1Y 6:01,4–6:46,95 (clips/kh_1: Kohlenhydrate, Daniels eigenes Ergebnis, Eiweiß)",
-    "Video 2QmG2UWqR1Y 6:47,3–7:28,9 (clips/kh_2: was das Ergebnis für die Ernährung bedeutet)"
-   ],
-   "open_questions": [
-    "Nur zwei Zustände im Bericht (gering/hoch), daher B = null. Farblogik: E = gering = günstig, invert:false.",
-    "Bericht S. 32 trägt als Quelle den Platzhalter „Pubmed 123456“ – echte PubMed-ID der 313-Personen-Studie fehlt.",
-    "ADRB2-Häufigkeiten in den Wissenschaftsseiten widersprüchlich (S. 56: 64 % „beide Gene effektiv“, S. 83: 64 % „beide Gene defekt“) – nicht verwendet.",
-    "Clips kh_1/kh_2 zeigen Daniels persönliches Ergebnis und erwähnen seine Frau (ohne Namen) – bitte bestätigen, dass das für Endkunden passt.",
-    "Die Studie mit 313 Personen nennt das Hauptvideo nicht (nur „ein anderes Gen, andere Forschungsgruppe“); Zahl steht nur im Lektionstext aus dem Bericht."
-   ]
-  },
-  {
-   "id": "sport",
-   "station": "fett",
-   "title": "Bringt dir Sport beim Abnehmen etwas?",
-   "minutes": 6,
-   "formula": "DNA_SHAPE_SPORT",
-   "scalebar": "DNA_SHAPE_SPORT_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Gleicher Sport, anderes Ergebnis",
-     "p": "Zwei Menschen trainieren gleich oft, gleich lang und gleich diszipliniert. Der eine nimmt deutlich ab, der andere kaum. Unfair? Ja. Bevor du dich auf den Weg ins Fitnesscenter machst, solltest du wissen: Deine Gene entscheiden mit, wie viel Gewicht du durch Sport verlieren kannst."
-    },
-    {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 512.85,
-     "end": 567.95,
-     "file": "clips/sport_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt die Sport-Studien: gleicher Sport, anderes Ergebnis",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_sport_gene",
-     "h": "Drei Gene entscheiden mit",
-     "p": "Für diese Gene Story werden drei Gene ausgewertet: ADRB3, FTO und PPARG. Sind sie effektiv, nimmst du bei konsequentem Training gut ab. Nach vier Monaten Training ist die Gewichtsabnahme bis zu dreimal höher als bei Menschen mit anderen Genen. Sind sie defekt, nimmst du trotz konsequenten Trainings nicht effektiv ab."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie viel höher kann die Gewichtsabnahme mit effektiven Genen nach vier Monaten Training sein?",
-     "o": [
-      "Etwa 10 % höher",
-      "Bis zu dreimal höher",
-      "Zehnmal höher",
-      "Gar nicht höher, die Gene spielen keine Rolle"
-     ],
-     "c": 1,
-     "e": "Mit effektiven Genen ist die Gewichtsabnahme nach vier Monaten Training bis zu dreimal höher als bei anderen Genen."
-    },
-    {
-     "t": "img",
-     "img": "l_sport_responder",
-     "h": "Responder und Non-Responder",
-     "p": "In 25 Studien trainierten große Gruppen nach genau demselben Programm. Jedes Mal teilten sie sich in zwei Gruppen: Responder, die gut abnahmen, und Non-Responder, die je nach Studie zwei- bis achtmal weniger verloren. Beim ADRB3-Gen haben rund 78 % der Menschen zwei effektive Kopien, 20 % eine defekte und 2 % zwei defekte."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie nennt man Menschen, die durch dasselbe Training deutlich weniger abnehmen?",
-     "o": [
-      "Sporttypen",
-      "Responder",
-      "Kalorienspartypen",
-      "Non-Responder"
-     ],
-     "c": 3,
-     "e": "Non-Responder nehmen trotz gleichem Training weniger ab. Responder sprechen gut auf Sport an."
-    },
-    {
-     "t": "text",
-     "h": "Sport bleibt gesund",
-     "p": "Auch wenn Sport bei dir wenig fürs Abnehmen bringt: Für deine Gesundheit ist er trotzdem wichtig. Und es gibt einen zweiten Weg, Kalorien loszuwerden: weniger essen. Wie gut der bei dir wirkt, zeigt die nächste Gene Story. Zusammen ergibt sich, ob du eher ein Sporttyp, ein Kalorienspartyp oder ein Mischtyp bist."
-    },
-    {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 568.0,
-     "end": 597.7,
-     "file": "clips/sport_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Welche Gene dahinterstecken: für manche eine Superkraft, für andere Quälerei",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was gilt, wenn Sport bei dir genetisch wenig zum Abnehmen beiträgt?",
-     "o": [
-      "Sport ist dann ungesund für dich",
-      "Du solltest einfach doppelt so viel trainieren",
-      "Sport bleibt gesund, aber weniger essen kann die wirksamere Strategie sein",
-      "Du kannst gar nicht abnehmen"
-     ],
-     "c": 2,
-     "e": "Sport ist immer gesund. Fürs Abnehmen lohnt es sich aber, auf die Methode zu setzen, die bei deinen Genen am besten wirkt."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Abnehmen durch Sport",
-    "report": "Shape-Bericht · Sport oder Kalorienreduktion?",
-    "E": {
-     "pill": "Effektiv",
-     "title": "Abnehmen durch Sport effektiv",
-     "text": "Deine Gene bewirken, dass du bei konsequentem Training gut an Gewicht verlierst. Nach vier Monaten Training ist deine Gewichtsabnahme bis zu dreimal höher als bei Personen mit anderen Genen.",
-     "rec": "Sport ist für dich eine effektive Methode, um dein Gewicht zu reduzieren. Ein intensiveres Sportprogramm kann sich bei dir besonders lohnen."
-    },
-    "B": {
-     "pill": "Mäßig effektiv",
-     "title": "Abnehmen durch Sport mäßig effektiv",
-     "text": "Deine Gene sind beeinträchtigt: Du nimmst trotz konsequenten Trainings nur mäßig ab. Nach vier Monaten ist deine Gewichtsabnahme etwas geringer als bei Personen mit effektiven Genen.",
-     "rec": "Sport bleibt wichtig für deine Gesundheit. Fürs Abnehmen kann eine ausgewogene Kombination aus Sport und weniger essen sinnvoll sein."
-    },
-    "D": {
-     "pill": "Nicht effektiv",
-     "title": "Abnehmen durch Sport nicht effektiv",
-     "text": "Deine Gene bewirken, dass du trotz konsequenten Trainings nicht effektiv abnimmst. Nach vier Monaten ist deine Gewichtsabnahme geringer als bei Personen mit anderen Genen.",
-     "rec": "Sport ist trotzdem wichtig für deine Gesundheit. Zum Abnehmen kann es sinnvoller sein, den Schwerpunkt auf weniger Kalorien beim Essen zu legen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Abnehmen durch Sport“ in der Gewichtsanalyse (Shape-Bericht).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich beim Abnehmen eher Training oder eher weniger essen für dich lohnt."
-    }
-   },
-   "images": [
-    {
-     "key": "l_sport_gene",
-     "prompt": "A translucent runner on a treadmill whose body glows with three small DNA switches, golden fat droplets dissolving into light around the waist."
-    },
-    {
-     "key": "l_sport_responder",
-     "prompt": "Two identical translucent figures on identical exercise bikes, one surrounded by many dissolving golden fat droplets, the other by only a few."
-    }
-   ],
-   "sources": [
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 58 (Video-Text: Kalorien verbrennen durch Sport), S. 59/60 (Gen effektiv/defekt: bis zu dreimal höher nach vier Monaten), S. 61–66 (Ergebnisse effektiv/mäßig effektiv/nicht effektiv, Gentabelle ADRB3, FTO, PPARG)",
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 82 (Wissenschaft der Gene: ADRB3 78 % / 20 % / 2 %)",
-    "Video 2QmG2UWqR1Y 8:32,85–9:27,95 (clips/sport_1: 25 Studien, Responder/Non-Responder, zwei- bis achtmal)",
-    "Video 2QmG2UWqR1Y 9:28,0–9:57,7 (clips/sport_2: Gene ADRB3, FTO, PPARG; Daniel ist Responder)"
-   ],
-   "open_questions": [
-    "Farblogik: E = effektiv = günstig, invert:false.",
-    "Faktor uneinheitlich: Clip sport_1 sagt „je nach Studie zwei bis achtmal weniger“, der Bericht „bis zu dreimal höher nach vier Monaten“. Lektion nennt beide Angaben getrennt (Bericht im Mechanismus-Block, Video-Spanne im Responder-Block) – bitte Zahl festlegen.",
-    "„25 Studien“ steht nur im Video, nicht im Bericht.",
-    "Clip sport_2 sagt „ADH beta3“ (gemeint: ADRB3) und „PPAR gamma“ – sinngemäß passend zur Gentabelle.",
-    "FTO-Häufigkeiten auf S. 82 (14 % / 40 % / 46 %) passen nicht zu S. 54 (46 % / 40 % / 14 %) – nicht verwendet.",
-    "Der Bericht erklärt nicht, was ADRB3, FTO und PPARG im Stoffwechsel tun – die Lektion beschreibt nur die Wirkung. Für ein Mechanismus-Bild ggf. Daniels Erklärung nötig."
-   ]
-  },
-  {
-   "id": "kalred",
-   "station": "fett",
-   "title": "Weniger essen: Wie gut wirkt es bei dir?",
-   "minutes": 5,
-   "formula": "DNA_SHAPE_CALRED",
-   "scalebar": "DNA_SHAPE_CALREDUCTION_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Einfach weniger essen?",
-     "p": "Iss weniger, als du verbrauchst, dann muss dein Körper die Energie aus den Fettreserven holen. Das klingt einfach und funktioniert grundsätzlich auch. Aber wie viel du dadurch wirklich verlierst, legen auch deine Gene fest."
-    },
-    {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 598.4,
-     "end": 611.95,
-     "file": "clips/kalred_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Weniger essen: manche nehmen bis zu dreimal weniger ab",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_kalred_gen",
-     "h": "Das ADRB2-Gen und die Kalorienreduktion",
-     "p": "Für diese Gene Story wird das ADRB2-Gen ausgewertet. Sind deine Gene effektiv, nimmst du durch disziplinierte Kalorienreduktion gut ab. Nach vier Monaten ist deine Gewichtsabnahme höher als bei Menschen mit anderen Genen. Sind sie defekt, nimmst du trotz disziplinierter Kalorienreduktion nicht effektiv ab."
-    },
-    {
-     "t": "quiz",
-     "q": "Welches Gen wertet der Bericht für das Abnehmen durch Kalorienreduktion aus?",
-     "o": [
-      "FABP2",
-      "ADRB2",
-      "APOA5",
-      "MTHFR"
-     ],
-     "c": 1,
-     "e": "Es ist das ADRB2-Gen. Dasselbe Gen spielt auch bei der Kohlenhydratempfindlichkeit eine Rolle."
-    },
-    {
-     "t": "img",
-     "img": "l_kalred_vergleich",
-     "h": "Bis zu dreimal Unterschied",
-     "p": "Auch beim weniger Essen gibt es große Unterschiede. In Studien nahmen übergewichtige Menschen, die ihre Kalorien reduzierten, unterschiedlich stark ab: manche gut, andere bis zu dreimal weniger. Weniger essen funktioniert also nicht bei jedem gleich gut. Es hängt von deinen Genen ab, wie effektiv eine Kalorienreduktion ist."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie groß kann der Unterschied beim Abnehmen durch weniger essen zwischen Menschen sein?",
-     "o": [
-      "Es gibt keinen Unterschied",
-      "Höchstens 5 %",
-      "Bis zu dreimal",
-      "Bis zu hundertmal"
-     ],
-     "c": 2,
-     "e": "In Studien nahmen manche Menschen durch weniger essen bis zu dreimal weniger ab als andere."
-    },
-    {
-     "t": "text",
-     "h": "Sporttyp, Kalorienspartyp oder Mischtyp?",
-     "p": "Aus beiden Gene Stories, Sport und Kalorienreduktion, ergibt sich deine Abnehmstrategie. Kalorienspartypen sparen am besten beim Essen ein. Sporttypen kommen mit Training weiter. Mischtypen fahren mit einer ausgewogenen Verteilung am besten. Übrigens: Auch Sporttypen empfiehlt der Bericht, den Großteil der Kalorien über die Ernährung einzusparen. Das ist einfacher zu kontrollieren und kostet weniger Zeit als Sport."
-    },
-    {
-     "t": "video",
-     "id": "2QmG2UWqR1Y",
-     "start": 617.9,
-     "end": 660.2,
-     "file": "clips/kalred_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, wie du dich auf deine Stärken konzentrierst",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Wie entsteht deine persönliche Abnehmstrategie?",
-     "o": [
-      "Aus der Kombination deiner Ergebnisse zu Sport und Kalorienreduktion",
-      "Nur aus deinem Körpergewicht",
-      "Aus deiner Lieblingssportart",
-      "Sie ist für alle Menschen gleich"
-     ],
-     "c": 0,
-     "e": "Beide Gene Stories zusammen zeigen, ob du Sporttyp, Kalorienspartyp oder Mischtyp bist."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Abnehmen durch Kalorienreduktion",
-    "report": "Shape-Bericht · Sport oder Kalorienreduktion?",
-    "E": {
-     "pill": "Effektiv",
-     "title": "Abnehmen durch Kalorienreduktion effektiv",
-     "text": "Deine Gene bewirken, dass du durch disziplinierte Kalorienreduktion effektiv abnimmst. Nach vier Monaten hast du einen größeren Abnehmerfolg als Personen mit anderen Genen.",
-     "rec": "Weniger essen ist für dich eine wirksame Methode, um dein Gewicht zu reduzieren. Es kann sinnvoll sein, deine Abnehmstrategie vor allem darauf aufzubauen."
-    },
-    "B": {
-     "pill": "Mäßig effektiv",
-     "title": "Abnehmen durch Kalorienreduktion mäßig effektiv",
-     "text": "Deine Gene sind beeinträchtigt: Du nimmst trotz disziplinierter Kalorienreduktion nur mäßig ab. Nach vier Monaten ist deine Gewichtsabnahme etwas geringer als bei Personen mit effektiven Genen.",
-     "rec": "Weniger essen bleibt ein wichtiger Bestandteil deines Abnehmprogramms. Eine Kombination mit Sport kann für dich sinnvoll sein."
-    },
-    "D": {
-     "pill": "Nicht effektiv",
-     "title": "Abnehmen durch Kalorienreduktion nicht effektiv",
-     "text": "Deine Gene bewirken, dass du trotz disziplinierter Kalorienreduktion nicht effektiv abnimmst. Personen mit anderen Genen nehmen dadurch leichter ab.",
-     "rec": "Weniger essen bleibt trotzdem ein wichtiger Bestandteil beim Abnehmen. Wenn Sport bei dir gut wirkt, kann es sich lohnen, dort einen Schwerpunkt zu setzen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Abnehmen durch Kalorienreduktion“ in der Gewichtsanalyse (Shape-Bericht).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob weniger essen bei dir gut wirkt oder ob du eher auf Sport setzen solltest."
-    }
-   },
-   "images": [
-    {
-     "key": "l_kalred_gen",
-     "prompt": "A translucent plate with a smaller portion of food beside a glowing DNA strand, golden fat stores in a translucent body slowly turning into light."
-    },
-    {
-     "key": "l_kalred_vergleich",
-     "prompt": "Two translucent figures with identical small meals, one releasing many golden energy particles from its fat stores, the other only a few."
-    }
-   ],
-   "sources": [
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 58 (Video-Text: Kalorien einsparen durch weniger Essen), S. 67/68 (Gen effektiv/defekt), S. 69–74 (Ergebnisse effektiv/mäßig effektiv/nicht effektiv, Gentabelle ADRB2), S. 76–80 (Sporttyp/Kalorienspartyp/Mischtyp)",
-    "Video 2QmG2UWqR1Y 9:58,4–10:11,95 (clips/kalred_1: bis zu dreimal weniger, Gene spielen eine Rolle)",
-    "Video 2QmG2UWqR1Y 10:17,9–11:00,2 (clips/kalred_2: Strategie: Stärken nutzen, Schwächen meiden)"
-   ],
-   "open_questions": [
-    "Farblogik: E = effektiv = günstig, invert:false.",
-    "Video 2QmG2UWqR1Y 10:11–10:17 enthält einen Versprecher (Daniel: „ich bin dieser Typ, der nicht gut darauf anspricht, abzunehmen durch Sport“, gemeint ist Kalorienreduktion). Der Satz ist herausgeschnitten: kalred_1 endet bei 10:11,95 („welche Gene eine Rolle spielen.“), kalred_2 beginnt bei 10:17,9.",
-    "Clip kalred_1 ist nur 13,6 s lang (das Hauptvideo hat zur Kalorienreduktion nur diese zwei Sätze). Für mehr Tiefe wäre eine Animation nötig.",
-    "Clip kalred_2 nennt „wie bei Daniel“ und „wie bei meiner Frau“ (ohne Namen) als Beispiele für Sport- bzw. Kalorienspartyp.",
-    "Bericht nennt für die Kalorienreduktion nur „höher“ bzw. „größerer Abnehmerfolg“, keinen Faktor; „bis zu dreimal“ stammt aus den Videos.",
-    "Clip-Quelle jetzt ausschließlich das Hauptvideo 2QmG2UWqR1Y (Daniel 17.10.: keine Schulungsvideos)."
-   ]
-  },
-  {
-   "id": "muskelv",
-   "station": "fett",
-   "title": "Schützen deine Gene deine Muskeln?",
-   "minutes": 6,
-   "formula": "DNA_SHAPE_MUSCLELOSS",
-   "scalebar": "DNA_SHAPE_MUSCLELOSS_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Woran stirbt man beim Hungern?",
-     "p": "1981 traten in Nordirland 23 Gefangene in einen Hungerstreik. Zehn von ihnen starben, alle nach etwa 60 Tagen, egal wie viel Fett sie zu Beginn hatten. Der Grund: Am Ende fehlten nicht die Fettreserven, sondern eine andere Energiequelle. Welche, und was hat das mit deiner nächsten Diät zu tun?"
-    },
-    {
-     "t": "img",
-     "img": "l_muskelv_amino",
-     "h": "Muskeln als Notreserve",
-     "p": "Wenn du deutlich weniger isst, holt sich dein Körper Energie aus den Fettreserven. Manche Organe, etwa das Gehirn, brauchen aber Glukose. Die gewinnt der Körper aus Aminosäuren, und die meisten Aminosäuren stecken in deinen Muskeln. Darum baut der Körper beim Abnehmen neben Fett auch Muskelmasse ab. Effektive Gene helfen, die Muskelmasse zu erhalten, während Fettgewebe abgebaut wird."
-    },
-    {
-     "t": "quiz",
-     "q": "Warum baut der Körper bei einer Kalorienreduktion auch Muskeln ab?",
-     "o": [
-      "Weil Muskeln zu schwer werden",
-      "Weil er Aminosäuren aus den Muskeln als Energiequelle nutzt",
-      "Weil Muskeln sich in Fett umwandeln",
-      "Weil Sport während einer Diät schadet"
-     ],
-     "c": 1,
-     "e": "Für Glukose braucht der Körper Aminosäuren, und die meisten davon findet er in den Muskeln."
-    },
-    {
-     "t": "img",
-     "img": "l_muskelv_gene",
-     "h": "Günstige und ungünstige Gene",
-     "p": "Für diese Gene Story wird das ADRB2-Gen ausgewertet. Sind deine Gene effektiv, bleibt bei einer Kalorienreduktion die Muskelmasse gut erhalten. Sind sie defekt, wird neben Fettgewebe unerwünscht auch Muskelmasse abgebaut. Während einer Diät gleichzeitig Muskeln aufzubauen, ist leider fast unmöglich. Deshalb geht es darum, deine Muskeln bestmöglich zu erhalten."
-    },
-    {
-     "t": "quiz",
-     "q": "Was bewirken effektive Gene bei einer Kalorienreduktion?",
-     "o": [
-      "Sie bauen schnell neue Muskeln auf",
-      "Sie verhindern jeden Fettabbau",
-      "Sie helfen, die Muskelmasse zu erhalten, während Fett abgebaut wird",
-      "Sie machen Sport überflüssig"
-     ],
-     "c": 2,
-     "e": "Effektive Gene schützen die Muskelmasse, während der Körper Fettgewebe abbaut."
-    },
-    {
-     "t": "text",
-     "h": "Die richtige Sportart",
-     "p": "Je nach Ergebnis passt eine andere Sportart. Mit geringem Muskelverlust reicht Ausdauersport: Damit verbrennst du in kurzer Zeit viele Kalorien. Bei mäßigem Verlust ist eine Kombination aus Ausdauer- und Kraftsport sinnvoll. Bei erhöhtem Verlust hilft gezieltes Krafttraining. Es setzt einen Wachstumsimpuls, der die Muskeln während der Diät erhält."
-    },
-    {
-     "t": "quiz",
-     "q": "Welcher Sport passt laut Bericht, wenn du bei einer Diät viel Muskelmasse verlierst?",
-     "o": [
-      "Gezieltes Krafttraining",
-      "Nur lange Spaziergänge",
-      "Gar kein Sport",
-      "Ausschließlich Dehnübungen"
-     ],
-     "c": 0,
-     "e": "Krafttraining belastet die Muskeln stark und setzt einen Wachstumsimpuls, der sie während der Diät erhält."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Muskelmasseverlust bei Diät",
-    "report": "Shape-Bericht · Erhaltung deiner Muskelmasse",
-    "E": {
-     "pill": "Gering",
-     "title": "Muskelmasseverlust bei Diät gering",
-     "text": "Deine Gene sorgen dafür, dass bei einer Kalorienreduktion deine Muskelmasse gut erhalten bleibt. Du verlierst weniger Muskelmasse als Personen mit anderen Genen.",
-     "rec": "Ausdauertraining ist für dich ausreichend, um deine Muskelmasse beim Abnehmen bestmöglich zu unterstützen."
-    },
-    "B": {
-     "pill": "Mäßig",
-     "title": "Muskelmasseverlust bei Diät mäßig",
-     "text": "Deine Gene sind beeinträchtigt: Bei einer Kalorienreduktion wird der Abbau deiner Muskelmasse etwas beschleunigt.",
-     "rec": "Eine Kombination aus Ausdauer- und Krafttraining kann dir helfen, deine Muskelmasse beim Abnehmen zu erhalten."
-    },
-    "D": {
-     "pill": "Erhöht",
-     "title": "Muskelmasseverlust bei Diät erhöht",
-     "text": "Deine Gene schützen deine Muskeln bei einer Kalorienreduktion nicht. Der Abbau deiner Muskelmasse wird beschleunigt.",
-     "rec": "Gezieltes Krafttraining kann dem Muskelabbau beim Abnehmen entgegenwirken."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Muskelmasseverlust bei Diät“ in der Gewichtsanalyse (Shape-Bericht).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob beim Abnehmen Ausdauersport reicht oder ob Krafttraining für deine Muskeln wichtig ist."
-    }
-   },
-   "images": [
-    {
-     "key": "l_muskelv_amino",
-     "prompt": "A translucent muscle fiber releasing small glowing amino acid beads that flow towards a softly lit brain."
-    },
-    {
-     "key": "l_muskelv_gene",
-     "prompt": "A translucent body during a diet where golden fat droplets fade away while the muscles stay firm, held by glowing DNA strands."
-    }
-   ],
-   "sources": [
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 86 (Video-Text: Hungerstreik 1981, 23 Gefangene, zehn starben nach etwa 60 Tagen), S. 87/88 (Muskeln einfach erklärt), S. 89/90 (Gen effektiv/defekt), S. 91–96 (Ergebnisse gering/mäßig/erhöht, Gentabelle ADRB2, Sportempfehlung)"
-   ],
-   "open_questions": [
-    "Farblogik: E = „Muskelmasseverlust gering“ = günstig, invert:false.",
-    "Lektionstitel in STATIONS „Muskelmasse bei Diät“, Bericht-Story „Muskelmasseverlust bei Diät“ – Ergebnistitel wortgleich aus dem Bericht.",
-    "Kein Hauptvideo-Ausschnitt – Animation nötig. Die Hauptvideos (2QmG2UWqR1Y Gewicht, GyIfKaYmLoE Sport, 79MPy6BFqu8 Nutrition) behandeln dieses Thema nicht, eine deutsche Animation gibt es nicht. Der frühere Clip aus der Analyseberatung wurde entfernt (Daniel 17.10.: keine Schulungsvideos).",
-    "Der Bericht hat zur Muskelmasse ein eigenes Video (QR qr.ng1.at/bdkzB5, Vimeo 819778201) – als Originalaufnahme vermutlich besser, liegt aber nicht auf YouTube.",
-    "Die Hungerstreik-Geschichte ist ernst – bitte prüfen, ob der Einstieg für die App passt."
-   ]
-  },
-  {
-   "id": "fettvert",
-   "station": "fett",
-   "title": "Wo setzt sich dein Fett an?",
-   "minutes": 5,
-   "formula": "DNA_SHAPE_FATORGANDEPOSIT",
-   "scalebar": "DNA_SHAPE_FATORGANDEPOSIT_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Übergewicht ist nicht gleich Übergewicht",
-     "p": "Fett an den Hüften stört viele beim Blick in den Spiegel. Für die Gesundheit ist aber ein anderes Fett viel wichtiger: das Fett, das du nicht siehst. Wo dein Körper überschüssiges Fett ablegt, steuern auch deine Gene."
-    },
-    {
-     "t": "img",
-     "img": "l_fettvert_organe",
-     "h": "Hüfte oder Bauchinneres",
-     "p": "Isst du mehr Kalorien, als du brauchst, speichert dein Körper sie als Fettgewebe. Menschen mit effektiven Genen legen das Fett eher außerhalb des Bauchraums an, um die Hüften. Menschen mit defekten Genen speichern es mehr um die Organe im Bauchinneren. Dieses Fett heißt viszerales Fett."
-    },
-    {
-     "t": "quiz",
-     "q": "Wie heißt das Fett, das sich im Bauchinneren um die Organe ansammelt?",
-     "o": [
-      "Unterhautfett",
-      "Braunes Fett",
-      "Viszerales Fett",
-      "Hüftfett"
-     ],
-     "c": 2,
-     "e": "Viszerales Fett liegt im Bauchinneren um die Organe. Es ist stoffwechselaktiv und deshalb ungünstiger als Hüftfett."
-    },
-    {
-     "t": "img",
-     "img": "l_fettvert_aktiv",
-     "h": "Warum Bauchfett so aktiv ist",
-     "p": "Viszerales Fett ist stoffwechselaktiv. Es enthält Botenstoffe, die zum Beispiel Entzündungs- und Stoffwechselprozesse im Körper beeinflussen. Ein Übermaß an viszeralem Fett kann deshalb das Risiko für Herz-Kreislauf-Erkrankungen wie Herzinfarkt oder Schlaganfall erhöhen. Für diese Gene Story werden vier Gene ausgewertet: FABP2, PPARG, ADRB2 und APOA2."
-    },
-    {
-     "t": "quiz",
-     "q": "Warum ist Fett um die Organe ungünstiger als Fett um die Hüften?",
-     "o": [
-      "Es ist schwerer",
-      "Es ist stoffwechselaktiv und enthält Botenstoffe",
-      "Es lässt sich nie mehr abbauen",
-      "Es entsteht nur durch Zucker"
-     ],
-     "c": 1,
-     "e": "Viszerales Fett ist stoffwechselaktiv: Seine Botenstoffe beeinflussen etwa Entzündungs- und Stoffwechselprozesse."
-    },
-    {
-     "t": "text",
-     "h": "Was das für dich bedeutet",
-     "p": "Legt dein Körper Fett eher im Bauchinneren an, hat ein gesundes Körpergewicht für dich eine noch größere Bedeutung als für andere. Die wichtigste Regel ist für alle gleich: Sorge dafür, dass du nicht zu viele Kalorien zu dir nimmst. Dann muss dein Körper gar kein überschüssiges Fett speichern, egal wo."
-    },
-    {
-     "t": "quiz",
-     "q": "Was ist laut Bericht die wichtigste Regel, damit sich kein Bauchfett anlagert?",
-     "o": [
-      "Viel Obst essen",
-      "Nur abends essen",
-      "Weniger Salz essen",
-      "Nicht zu viele Kalorien zu sich nehmen"
-     ],
-     "c": 3,
-     "e": "Ohne Kalorienüberschuss muss der Körper kein überschüssiges Fett speichern, weder an den Hüften noch um die Organe."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Fettverteilung",
-    "report": "Shape-Bericht · Fettverteilung",
-    "E": {
-     "pill": "Schwach",
-     "title": "Schwacher Fettorgan-Typ",
-     "text": "Deine Gene schützen dich vor übermäßiger Ablagerung von Fett um die Organe im Bauchinneren. Überschüssiges Fett würde sich bei dir eher um die Hüften anlegen.",
-     "rec": "Deine Gene bieten dir hier guten Schutz. Achte trotzdem darauf, nicht zu viele Kalorien zu dir zu nehmen."
-    },
-    "B": {
-     "pill": "Mäßig",
-     "title": "Mäßiger Fettorgan-Typ",
-     "text": "Deine Gene begünstigen, dass sich überschüssiges Fett vermehrt um die Organe im Bauchinneren anlagert, mehr als bei anderen Personen.",
-     "rec": "Ein optimales Körpergewicht hat für dich eine größere gesundheitliche Bedeutung. Es kann sinnvoll sein, besonders auf deine Kalorienbilanz zu achten."
-    },
-    "D": {
-     "pill": "Stark",
-     "title": "Starker Fettorgan-Typ",
-     "text": "Deine Gene begünstigen, dass sich überschüssiges Fett hauptsächlich um die Organe im Bauchinneren anlagert. Dieses Fett ist stoffwechselaktiv.",
-     "rec": "Ein optimales Körpergewicht hat für dich eine besonders große gesundheitliche Bedeutung. Besprich Fragen zu deinem Herz-Kreislauf-Risiko mit deiner Ärztin oder deinem Arzt."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Fettverteilung“ in der Gewichtsanalyse (Shape-Bericht).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dein Körper überschüssiges Fett eher an den Hüften oder im Bauchinneren ablegt."
-    }
-   },
-   "images": [
-    {
-     "key": "l_fettvert_organe",
-     "prompt": "A translucent human torso with soft golden fat deposits around the hips on one side and around the inner abdominal organs on the other."
-    },
-    {
-     "key": "l_fettvert_aktiv",
-     "prompt": "Translucent visceral fat cells around an abdominal organ, releasing tiny glowing messenger molecules that drift towards a softly lit heart."
-    }
-   ],
-   "sources": [
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 137 (Intro), S. 138 (Video-Text: viszerales Fett, Botenstoffe, Herzinfarkt, Schlaganfall), S. 139/140 (Gen effektiv/defekt), S. 141–146 (Ergebnisse schwacher/mäßiger/starker Fettorgan-Typ, Gentabelle FABP2, PPARG, ADRB2, APOA2)"
-   ],
-   "open_questions": [
-    "Farblogik: E = „Schwacher Fettorgan-Typ“ = günstig (Schutz vor Bauchfett), invert:false.",
-    "Video-Text S. 138 bricht in der OM-Fassung nach „Schlaganfall aber auch“ ab – vollständige Aufzählung der Risiken im Original prüfen.",
-    "Kein Hauptvideo-Ausschnitt – Animation nötig. Die Hauptvideos (2QmG2UWqR1Y Gewicht, GyIfKaYmLoE Sport, 79MPy6BFqu8 Nutrition) behandeln dieses Thema nicht, eine deutsche Animation gibt es nicht. Der frühere Clip aus der Analyseberatung wurde entfernt (Daniel 17.10.: keine Schulungsvideos).",
-    "Kapitel-Intro S. 137 trägt den Titel „Endlich schlank und jetzt?“ (gehört zu Jo-Jo) – vermutlich Fehler im Bericht."
-   ]
-  },
-  {
-   "id": "jojo",
-   "station": "fett",
-   "title": "Der Jo-Jo-Effekt: Halten deine Gene dein Gewicht?",
-   "minutes": 5,
-   "formula": "DNA_SHAPE_JOJO",
-   "scalebar": "DNA_SHAPE_JOJO_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Endlich schlank. Und jetzt?",
-     "p": "Viele kennen es: Mit viel Mühe hast du abgenommen, der Sommer war ein Erfolg, und plötzlich rutschst du zurück in alte Gewohnheiten. Das Gewicht steigt wieder. Das ist der berühmte Jo-Jo-Effekt. Aber warum trifft er manche viel härter als andere?"
-    },
-    {
-     "t": "img",
-     "img": "l_jojo_kurve",
-     "h": "Langsam oder schnell zurück",
-     "p": "Nach einer erfolgreichen Diät fallen viele in alte Gewohnheiten zurück. Bei Menschen mit effektiven Genen steigt das Gewicht dann nur sehr langsam wieder an. Sie sind vor einer raschen erneuten Gewichtszunahme geschützt. Bei Menschen mit defekten Genen steigt das Gewicht sehr schnell wieder an."
-    },
-    {
-     "t": "quiz",
-     "q": "Was passiert bei Menschen mit effektiven Genen nach einer Diät, wenn sie in alte Gewohnheiten zurückfallen?",
-     "o": [
-      "Das Gewicht steigt sehr schnell wieder an",
-      "Das Gewicht steigt nur sehr langsam wieder an",
-      "Sie nehmen automatisch weiter ab",
-      "Das Gewicht bleibt immer gleich, egal was sie essen"
-     ],
-     "c": 1,
-     "e": "Effektive Gene schützen vor einer raschen erneuten Gewichtszunahme. Ganz ohne Folgen bleiben alte Gewohnheiten aber nicht."
-    },
-    {
-     "t": "img",
-     "img": "l_jojo_gene",
-     "h": "Zwei Gene, ein Leben lang",
-     "p": "Für diese Gene Story werden zwei Gene ausgewertet: PPARG und ADRB2. Studien zeigen, dass Menschen mit bestimmten Gendefekten viel schneller und leichter wieder zunehmen. Deine Gene können dich also dabei unterstützen, dein Gewicht zu halten, oder gegen dich arbeiten. Und sie bleiben ein Leben lang gleich: Du musst den Test nie wiederholen."
-    },
-    {
-     "t": "quiz",
-     "q": "Welche Gene wertet der Bericht für den Jo-Jo-Effekt aus?",
-     "o": [
-      "FABP2 und APOA5",
-      "FTO und ADRB3",
-      "MTHFR und VDR",
-      "PPARG und ADRB2"
-     ],
-     "c": 3,
-     "e": "Für den Jo-Jo-Effekt sind es PPARG und ADRB2. Beide spielen auch bei anderen Gewichts-Stories eine Rolle."
-    },
-    {
-     "t": "text",
-     "h": "Keine Crash-Diät",
-     "p": "Weil deine Gene sich nicht ändern, lohnt sich vor allem eines: den Lebensstil dauerhaft umzustellen und einen Weg zu finden, den du leicht durchhältst. Ohne bleibende Strategie können bestimmte Gendefekte deine Erfolge schnell wieder zunichtemachen. Mit einem neuen Lebensstil kannst du dein Gewicht trotzdem halten, auch wenn deine Gene gegen dich arbeiten."
-    },
-    {
-     "t": "quiz",
-     "q": "Was ist laut Bericht der beste Schutz vor dem Jo-Jo-Effekt?",
-     "o": [
-      "Eine dauerhafte Umstellung des Lebensstils",
-      "Eine möglichst kurze Crash-Diät",
-      "Nach der Diät wieder wie früher essen",
-      "Jedes Jahr einen neuen Gentest machen"
-     ],
-     "c": 0,
-     "e": "Gene bleiben ein Leben lang gleich. Deshalb hilft eine dauerhafte, leicht umsetzbare Umstellung am meisten."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Jo-Jo-Effekt",
-    "report": "Shape-Bericht · Endlich schlank. Und jetzt?",
-    "E": {
-     "pill": "Schwach",
-     "title": "Schwacher Jojo-Typ",
-     "text": "Deine Gene schützen dich vor einer schnellen erneuten Gewichtszunahme nach einer erfolgreichen Abnehmkur. Sie helfen dir, dein Gewicht einfacher zu halten.",
-     "rec": "Achte nach dem Abnehmen trotzdem auf die Grundregeln deines Berichts. Ein neuer Lebensstil hilft dir zusätzlich, dein Gewicht langfristig zu halten."
-    },
-    "B": null,
-    "D": {
-     "pill": "Stark",
-     "title": "Starker Jojo-Typ",
-     "text": "Deine Gene begünstigen eine schnelle erneute Gewichtszunahme nach einer erfolgreichen Abnehmkur. Mit alten Gewohnheiten würde dein Gewicht schnell wieder ansteigen.",
-     "rec": "Stell dich darauf ein, die Regeln für eine optimale Ernährung auch nach dem Abnehmen beizubehalten. Mit einem dauerhaft neuen Lebensstil kannst du dein Gewicht trotzdem halten."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene hier arbeiten, zeigt die Gene Story „Jo-Jo-Effekt“ in der Gewichtsanalyse (Shape-Bericht).",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Gene dir beim Gewichthalten helfen oder ob du nach dem Abnehmen besonders dranbleiben solltest."
-    }
-   },
-   "images": [
-    {
-     "key": "l_jojo_kurve",
-     "prompt": "A translucent yo-yo on a glowing thread whose path forms a weight curve, falling and rising again, with a DNA strand woven into the string."
-    },
-    {
-     "key": "l_jojo_gene",
-     "prompt": "Two translucent DNA strands holding a balance scale steady in soft golden light."
-    }
-   ],
-   "sources": [
-    "Shape-Bericht (Gewichtsanalyse, OM-Bericht 1654) S. 151 (Intro), S. 152 (Video-Text: Gene bleiben ein Leben lang gleich), S. 153/154 (Der Jo-Jo Effekt), S. 155/156 (Gen effektiv/defekt), S. 157–160 (Ergebnisse schwacher/starker Jojo-Typ, Gentabelle PPARG, ADRB2), S. 161/162 (Wissenschaft der Gene)"
-   ],
-   "open_questions": [
-    "Bericht und OM haben nur zwei Zustände (schwacher/starker Jojo-Typ), daher B = null. Recherche 01 listet zusätzlich „Mäßiger Jojo-Typ“, und laut shape-bauplan.md liefert die Formel bei demo-kunde-c IMPAIRED – im Bericht gibt es dafür keinen Text. Bitte klären.",
-    "Farblogik: E = „Schwacher Jojo-Typ“ = günstig, invert:false.",
-    "Kein Hauptvideo-Ausschnitt – Animation nötig. Die Hauptvideos (2QmG2UWqR1Y Gewicht, GyIfKaYmLoE Sport, 79MPy6BFqu8 Nutrition) behandeln dieses Thema nicht, eine deutsche Animation gibt es nicht. Der frühere Clip aus der Analyseberatung wurde entfernt (Daniel 17.10.: keine Schulungsvideos). Alternative: Bericht-Video (QR qr.ng1.at/bdkzCx, Vimeo 825340575) prüfen.",
-    "Wissenschaftsseite S. 162 zeigt den ADRB2-Block doppelt – vermutlich Fehler im Bericht."
-   ]
-  }
- ]
+  ]
 }

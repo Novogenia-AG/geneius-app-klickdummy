@@ -2937,10 +2937,8 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const L = (id, t, formula, scalebar, extra = {}) => ({ id, t, formula, scalebar, ...extra });
 const STATIONS = [
   { k: 'zelle', n: 'Zelle', sub: 'Grundlagen', img: 'st01_zelle', lessons: [
-    L('gene', 'Was sind Gene?', null, null, { full: true }),
-    L('kopien', 'Zwei Kopien – eine von jedem Elternteil'),
-    L('varianten', 'Wenn ein Gen anders arbeitet'),
-    L('epigenetik', 'Epigenetik – Gene lauter und leiser schalten') ] },
+    L('relevanz', 'Warum Gene relevant sind', null, null, { full: true }),
+    L('gene', 'Was sind Gene?', null, null, { full: true }) ] },
   { k: 'fett', n: 'Fettgewebe', sub: 'Stoffwechsel & Gewicht', img: 'st02_fettgewebe', lessons: [
     L('fett', 'Fettempfindlichkeit', 'DNA_SHAPE_FATSENSITIVITY', 'DNA_SHAPE_FAT_SENSITIVITY_SCALEBAR'),
     L('kh', 'Kohlenhydratempfindlichkeit', 'DNA_SHAPE_CARBSENSITIVITY', 'DNA_SHAPE_CARB_SENSITIVITY_SCALEBAR'),
@@ -3015,29 +3013,31 @@ const IMG = n => 'nuggets/img/' + n + '.jpg';
 const GN_YT = {"alkohol_1":"aMbH5GGB3zA","alkohol_2":"Tti70Y_PaRY","alkohol_3":"RClEri_ezE8","burnout_1":"BeYnWOHh_IU","burnout_2":"1sZbZjr9-O4","burnout_3":"FMVmO4RKgvM","chemie_1":"lLY5h1ffILo","chemie_2":"qtc4SjYUc64","eisen_1":"VOau_SFQ5Jg","eisen_2":"6O2Te_uIDQg","entz_1":"waiNk3TK7Cg","entz_2":"yEyk8ZfDfYA","entz_3":"uhtsWVpH_Wg","erhol_1":"mlYBEWIg7_s","erhol_2":"Z7QDtHV5wsg","erhol_3":"n-A8nvv8ReQ","ermued_1":"Fj7K75W8MdM","ermued_2":"eBO3leV75mo","faser_1":"AQdBsZAZZrU","fett_1":"wuCDwkc6Nl4","fett_2":"hpSOgeDiUeQ","fett_3":"h_X6ggAjMg8","folsaeure_1":"ihNO2L7hWMA","folsaeure_2":"uCVzPpjq7nQ","folsaeure_3":"M-9jQrePu10","folsaeure_4":"PNTEv8VZjco","gene_1":"rBmaBw35VRw","gene_2":"9T06ongp0GE","gene_3":"oWBKSTyChVw","hdl_1":"D1H7OIJXsRY","hdl_2":"FdhYMfIChkg","kaffee_1":"3RI_6g3M3PI","kaffee_2":"FRM1PSEcywo","kaffee_3":"R9R0egD3Zds","kalred_1":"3RWVaSlUta0","kalred_2":"ZU0Dopz7VEk","kalzium_1":"BII4jqizyLs","kh_1":"kXQ4kSnlrs8","kh_2":"GbvoZPSNLeA","kollagen_1":"-pmFKfOvH4o","kollagen_2":"c8WwSUqWS1Y","kollagen_3":"P6m5Ql5MOgg","kopien_1":"bl5J83uBXwg","kopien_2":"E41XFaDdunc","kopien_3":"YZqbprWLDl8","ldl_1":"P9hAEnmFGa4","ldl_2":"Iqdl-egL3bo","medi_1":"hFZgHokvC6E","medi_2":"-SDQFt6p1yc","oxi_1":"BFXrL5QPcpI","oxi_2":"HikghhpFpsk","oxi_3":"hXlz_6CUEJ4","q10_1":"ncTbP9vEVGw","q10_2":"tS40TnD8L_s","q10haut_1":"vmT-WmkoSt0","q10haut_2":"M0bdZBu1Vms","q10haut_3":"Ozal6LX_9P8","radikale_1":"PcvDY7b0n_E","radikale_2":"7h3ZPNIH6ck","radikale_3":"PKEgFjBz5D8","salz_1":"osEQSMlogpY","salz_2":"HHytewkskho","salz_3":"ER5lnyUIwO8","sport_1":"Rb6cVWovPGM","sport_2":"4-3XCgD8byo","telomere_1":"Y4AMVECQF_Y","telomere_2":"L3nnlwlrP34","telomere_3":"DnGKgcgh46o","uv_1":"8eDduv4esqY","uv_2":"1nIKzut0KAQ","uv_3":"DTikLD_3IWQ","varianten_1":"Qa2Ab8ETvfc","verbrannt_1":"EcJqUoHNnpg","verbrannt_2":"jfsNXSwoQ9k","verbrannt_3":"ZXuOKoqwf6E","verletz_1":"BSV5ssOJJRo","verletz_2":"N9z2Hscb1ak","vitd_1":"1x_F9ckJ4Q4","vitd_2":"F4ncYnt6SRw"};
 const gnYtId = file => GN_YT[String(file || '').replace(/^.*\//, '').replace(/\.mp4$/, '')];
 const CONTENT = {
-  gene: { minutes: 6, blocks: [
-    { t: 'text', h: 'Die Bedienungsanleitung deines Körpers', p: 'Weißt du, welchen Treibstoff dein Auto braucht? Fast jeder weiß es. Und welchen Treibstoff braucht dein Körper? Da wird es meistens still. Dabei steht genau das in deinen Genen.' },
-    { t: 'video', id: '71EHqtv3NOA', start: 54, end: 145, file: 'clips/gene_1.mp4', cap: 'Daniels Frage an jedes Publikum: Welchen Treibstoff braucht dein Körper?', tag: 'Originalaufnahme' },
+  relevanz: { minutes: 4, blocks: [
+    { t: 'video', id: '71EHqtv3NOA', start: 54, end: 182, file: 'clips/gene_1.mp4', file2: 'clips/gene_2.mp4', cap: 'Welchen Treibstoff braucht dein Körper? Die Gene als Bedienungsanleitung', tag: 'Originalaufnahme' },
+    { t: 'text', h: 'Die Bedienungsanleitung deines Körpers', p: 'Welchen Treibstoff dein Auto braucht, weiß fast jeder. Welchen Treibstoff dein Körper braucht, wissen die wenigsten. Genau das steht in deinen Genen: welche Nährstoffe du besonders brauchst, wie du auf Fett und Kohlenhydrate reagierst und was dir guttut.' },
+    { t: 'text', h: 'Für ein ganzes Leben', p: 'Ein Elektroauto wird nach zehn Jahren nicht plötzlich zum Diesel. Genauso bleiben deine Gene ein Leben lang gleich. Ändern kannst du sie nicht. Aber du kannst wissen, wie sie arbeiten, und dich danach richten.' },
+    { t: 'quiz', q: 'Können sich deine Gene im Laufe des Lebens ändern?', o: ['Ja, mit dem Alter ändern sie sich laufend', 'Nein, sie bleiben ein Leben lang gleich', 'Nur wenn du deine Ernährung umstellst', 'Ja, durch Sport'], c: 1, e: 'Richtig. Deine Gene bleiben ein Leben lang gleich. Darum reicht eine Analyse für dein ganzes Leben.' },
+    { t: 'quiz', q: 'Was verraten dir deine Gene?', o: ['Welchen „Treibstoff“ dein Körper braucht', 'Deine Lieblingsfarbe', 'Wie viel du heute gegessen hast', 'Wie das Wetter morgen wird'], c: 0, e: 'Genau. Deine Gene sind die Bedienungsanleitung deines Körpers, zum Beispiel dafür, welche Nährstoffe du besonders brauchst.' }
+  ] },
+  gene: { minutes: 4, blocks: [
     { t: 'img', src: 'nuggets/img/bericht_gene_figur.png', report: true, h: 'In jeder Zelle steckt dein Code', p: 'Dein Körper besteht aus rund 50 Billionen Zellen, das ist eine 5 mit 13 Nullen. In fast jeder Zelle steckt ein Zellkern mit deinem kompletten genetischen Code: der DNA.' },
     { t: 'text', h: 'Vier Buchstaben, 3,2 Milliarden Mal', p: 'Der Code besteht aus nur vier Buchstaben: A, T, C und G. Zusammen sind es rund 3,2 Milliarden. Ein winziger Ausschnitt sieht so aus: <span class="code">ATCGATCTTCGGAAATCTTGA</span>' },
     { t: 'quiz', q: 'Aus wie vielen verschiedenen Buchstaben besteht der genetische Code?', o: ['Zwei', 'Vier', '26, wie das Alphabet', '3,2 Milliarden'], c: 1, e: 'Vier Buchstaben: A, T, C und G. 3,2 Milliarden ist die Länge des ganzen Codes.' },
-    { t: 'img', img: 'l_gene_bauplan', h: 'Gene sind Anleitungen', p: 'Ein Gen ist ein Abschnitt dieses Codes, eine Anleitung für eine bestimmte Aufgabe. Rund 23.000 Gene steuern zum Beispiel, wie schnell du Koffein abbaust, wie gut du Folsäure aktivierst oder wie dein Körper auf Fett reagiert.' },
-    { t: 'text', h: 'Für ein ganzes Leben', p: 'Ein Elektroauto wird nach zehn Jahren nicht plötzlich zum Diesel. Genauso bleiben deine Gene ein Leben lang gleich. Ändern kannst du sie nicht. Aber du kannst wissen, wie sie arbeiten, und dich danach richten.' },
-    { t: 'video', id: '71EHqtv3NOA', start: 146, end: 182, file: 'clips/gene_2.mp4', cap: 'Die Gene als Bedienungsanleitung deines Körpers', tag: 'Originalaufnahme' },
+    { t: 'text', h: 'Gene sind Anleitungen', p: 'Ein Gen ist ein Abschnitt dieses Codes, eine Anleitung für eine bestimmte Aufgabe. Rund 23.000 Gene steuern zum Beispiel, wie schnell du Koffein abbaust, wie gut du Folsäure aktivierst oder wie dein Körper auf Fett reagiert.' },
     { t: 'quiz', q: 'Was ist ein Gen?', o: ['Ein kleines Organ im Bauch', 'Ein Abschnitt der DNA mit der Anleitung für eine bestimmte Aufgabe', 'Ein Vitamin, das der Körper selbst bildet', 'Eine besondere Zelle im Blut'], c: 1, e: 'Genau. Jedes Gen ist eine Anleitung, zum Beispiel für ein Enzym, das einen Nährstoff umwandelt.' },
-    { t: 'img', img: 'l_gene_speichel', h: 'So liest Novogenia deine Gene', p: 'Für die Analyse reicht eine Speichelprobe. Darin stecken Zellen mit deinem kompletten Code. Im Labor wird die DNA herausgelöst und ausgewertet.' },
-    { t: 'video', id: '71EHqtv3NOA', start: 182, end: 205, file: 'clips/gene_3.mp4', cap: 'Warum eine Speichelprobe reicht', tag: 'Originalaufnahme' },
+    { t: 'text', h: 'So liest Novogenia deine Gene', p: 'Für die Analyse reicht eine Speichelprobe. Darin stecken Zellen mit deinem kompletten Code. Im Labor wird die DNA herausgelöst und ausgewertet.' },
     { t: 'quiz', q: 'Was braucht Novogenia, um deine Gene zu analysieren?', o: ['Eine Blutabnahme beim Arzt', 'Eine Speichelprobe', 'Eine Haarsträhne mit Haarfärbung', 'Einen Fragebogen zu deiner Ernährung'], c: 1, e: 'Richtig ist die Speichelprobe. Grundsätzlich ginge fast jede Zellart, Speichel ist aber am angenehmsten zu sammeln.' },
-    { t: 'info', img: 'st01_zelle', h: 'Und bei dir?', p: 'Deine Reise hat <b>11 Stationen</b>. Am Ende jeder Lektion siehst du, wie <b>deine eigenen Gene</b> bei diesem Thema arbeiten.' }
+    { t: 'text', h: 'Und bei dir?', p: 'Deine Reise hat <b>11 Stationen</b>. Am Ende jeder Lektion siehst du, wie <b>deine eigenen Gene</b> bei diesem Thema arbeiten.' }
   ] },
   folsaeure: { minutes: 7, blocks: [
     { t: 'text', h: 'Wirkt Folsäure bei dir überhaupt?', p: 'Folsäure ist eines der beliebtesten Nahrungsergänzungsmittel der Welt. Frauenärzte empfehlen sie in der Schwangerschaft, und auch für Männer ist sie wichtig: für gesunde Zellen und ein gesundes Herz. Ob sie bei dir wirkt, steht in deinen Genen.' },
     { t: 'video', id: '79MPy6BFqu8', start: 446, end: 482, file: 'clips/folsaeure_1.mp4', cap: 'Daniel erklärt, wie Folsäure aktiviert wird', tag: 'Originalaufnahme' },
-    { t: 'img', img: 'l_fol_umwandlung', h: 'Erst aktivieren, dann wirken', p: 'Folsäure selbst ist noch inaktiv. Das MTHFR-Gen bildet ein Enzym, das Folsäure erkennt und in die aktive Form umwandelt: Methylfolat. Erst Methylfolat schützt das Herz und das ungeborene Kind.' },
+    { t: 'text', h: 'Erst aktivieren, dann wirken', p: 'Folsäure selbst ist noch inaktiv. Das MTHFR-Gen bildet ein Enzym, das Folsäure erkennt und in die aktive Form umwandelt: Methylfolat. Erst Methylfolat schützt das Herz und das ungeborene Kind.' },
     { t: 'quiz', q: 'Wie heißt die aktive Form der Folsäure?', o: ['Homocystein', 'Methylfolat', 'Vitamin B12', 'Folat-Ester'], c: 1, e: 'Methylfolat ist die aktive Form. Das MTHFR-Gen sorgt für die Umwandlung.' },
-    { t: 'img', img: 'l_fol_kopien', h: 'Zwei Kopien, unterschiedlich schnell', p: 'Du hast zwei Kopien des MTHFR-Gens: eine von deiner Mutter, eine von deinem Vater. Nicht bei jedem arbeiten beide gleich gut. Es gibt mehrere Stufen: Bei manchen wandelt das Gen Folsäure sehr gut um, bei anderen langsamer, und bei manchen so langsam, dass Folsäure praktisch wirkungslos bleibt.' },
+    { t: 'text', h: 'Zwei Kopien, unterschiedlich schnell', p: 'Du hast zwei Kopien des MTHFR-Gens: eine von deiner Mutter, eine von deinem Vater. Nicht bei jedem arbeiten beide gleich gut. Es gibt mehrere Stufen: Bei manchen wandelt das Gen Folsäure sehr gut um, bei anderen langsamer, und bei manchen so langsam, dass Folsäure praktisch wirkungslos bleibt.' },
     { t: 'quiz', q: 'Wie viele Kopien des MTHFR-Gens hast du?', o: ['Eine', 'Zwei, eine von jedem Elternteil', 'Vier', 'Das ist bei jedem Menschen anders'], c: 1, e: 'Von jedem Gen hast du zwei Kopien. Wie gut beide arbeiten, entscheidet über die Umwandlung.' },
-    { t: 'img', img: 'l_fol_bluttest', h: 'Die Falle beim Bluttest', p: 'Ein Bluttest zeigt, wie viel Folsäure in deinem Blut ist, aber nicht, ob sie aktiviert wird. Wer schlecht umwandelt, kann gute Blutwerte haben, obwohl die Folsäure kaum wirkt. Das zeigen nur deine Gene.' },
+    { t: 'text', h: 'Die Falle beim Bluttest', p: 'Ein Bluttest zeigt, wie viel Folsäure in deinem Blut ist, aber nicht, ob sie aktiviert wird. Wer schlecht umwandelt, kann gute Blutwerte haben, obwohl die Folsäure kaum wirkt. Das zeigen nur deine Gene.' },
     { t: 'video', id: '79MPy6BFqu8', start: 494, end: 530, file: 'clips/folsaeure_2.mp4', cap: 'Warum der Bluttest bei Folsäure täuscht', tag: 'Originalaufnahme' },
     { t: 'text', h: 'Folsäure oder Methylfolat?', p: 'Methylfolat ist bereits aktiv und braucht das Gen nicht. Folsäure hat aber Vorteile: Sie ist stabil, günstig und wird doppelt so gut aufgenommen, sofern deine Gene sie aktivieren können.' },
     { t: 'video', id: '79MPy6BFqu8', start: 549, end: 607, file: 'clips/folsaeure_3.mp4', cap: 'Methylfolat umgeht das Gen, Folsäure hat trotzdem Vorteile', tag: 'Originalaufnahme' },
@@ -3287,12 +3287,13 @@ $('lclose').addEventListener('click', closeLesson);
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && LS && !$('cele').classList.contains('on')) closeLesson(); });
 
 function blockHTML(b, i) {
+  if ((b.t === 'img' && !b.report) || b.t === 'info') b = { t: 'text', h: b.h, p: b.p }; // keine KI-generierten Bilder im Content
   if (b.t === 'text') return `<div class="blk"><h3>${b.h}</h3><p>${b.p}</p></div>`;
   if (b.t === 'img' && b.report) return `<div class="blk"><div class="fig" style="aspect-ratio:auto;background:#fff;padding:10px"><img src="${b.src}" alt="${esc(b.h)}" style="height:auto;object-fit:contain"></div><h3>${b.h}</h3><p>${b.p}</p></div>`;
   if (b.t === 'img') return `<div class="blk"><div class="fig"><img src="${IMG(b.img)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${IMG(STATIONS[lessonById(LS.id).si].img)}'"></div><h3>${b.h}</h3><p>${b.p}</p><div class="ai-note">Illustration KI-generiert</div></div>`;
   if (b.t === 'video' && b.file && gnYtId(b.file)) { // eigener Clip als ungelistetes YouTube-Video (ganzes Video, kein start/end)
     const len = Math.round((b.end || 0) - (b.start || 0)), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
-    return `<div class="blk"><div class="video" data-yt="${gnYtId(b.file)}"><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
+    return `<div class="blk"><div class="video" data-yt="${gnYtId(b.file)}"${b.file2 && gnYtId(b.file2) ? ` data-yt2="${gnYtId(b.file2)}"` : ''}><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
       <div class="vcap"><span><span class="vtag">${b.tag}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
   if (b.t === 'video' && b.file) // Fallback: lokaler, exakt geschnittener Clip
     return `<div class="blk"><div class="video"><video controls playsinline preload="metadata" poster="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" src="nuggets/${b.file}" style="position:absolute;inset:0;width:100%;height:100%;background:#1b1018"></video></div>
@@ -3324,13 +3325,13 @@ function wireBlocks(box) {
     const v = p.parentElement;
     /* Artifact-Hosting (claudeusercontent) blockiert eingebettete YouTube-Player -> Clip auf YouTube in neuem Fenster */
     if (/claudeusercontent\.com$/.test(location.hostname) && v.dataset.yt) {
-      window.open(`https://www.youtube.com/watch?v=${v.dataset.yt}`, '_blank', 'noopener');
+      window.open(v.dataset.yt2 ? `https://www.youtube.com/watch_videos?video_ids=${v.dataset.yt},${v.dataset.yt2}` : `https://www.youtube.com/watch?v=${v.dataset.yt}`, '_blank', 'noopener');
       if (!v.querySelector('.ytnote')) v.insertAdjacentHTML('beforeend', '<p class="ytnote">Der Clip läuft in einem neuen Fenster auf YouTube. In der fertigen App spielt er direkt hier.</p>');
       return;
     }
     const f = document.createElement('iframe');
     f.src = v.dataset.yt
-      ? `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1`
+      ? `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1${v.dataset.yt2 ? '&playlist=' + v.dataset.yt2 : ''}`
       : `https://www.youtube-nocookie.com/embed/${v.dataset.id}?start=${v.dataset.s}&end=${v.dataset.e}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
     f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.title = 'Videoclip'; f.referrerPolicy = 'strict-origin-when-cross-origin';
     p.replaceWith(f);

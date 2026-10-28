@@ -1,976 +1,962 @@
 {
- "lessons": [
-  {
-   "id": "hdl",
-   "station": "herz",
-   "title": "Hilft Fischöl deinem guten Cholesterin?",
-   "minutes": 6,
-   "formula": "DNA_NUTRITION_HDL",
-   "scalebar": "DNA_NUTRITION_HDL_SCALEBAR",
-   "invert": false,
-   "blocks": [
+  "lessons": [
     {
-     "t": "text",
-     "h": "Hilft Fischöl deinem Cholesterin?",
-     "p": "Hast du hohe Cholesterinwerte, wird dir oft zuerst Omega-3 empfohlen. Es gilt als das gesunde Fett, zum Beispiel aus Lachs, Makrele oder Hering. Doch die Studien widersprechen sich: Bei manchen Menschen steigt das gute Cholesterin, bei anderen tut sich nichts. Woran liegt das?"
+      "id": "hdl",
+      "station": "herz",
+      "title": "Hilft Fischöl deinem guten Cholesterin?",
+      "minutes": 6,
+      "formula": "DNA_NUTRITION_HDL",
+      "scalebar": "DNA_NUTRITION_HDL_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Hilft Fischöl deinem Cholesterin?",
+          "p": "Hast du hohe Cholesterinwerte, wird dir oft zuerst Omega-3 empfohlen. Es gilt als das gesunde Fett, zum Beispiel aus Lachs, Makrele oder Hering. Doch die Studien widersprechen sich: Bei manchen Menschen steigt das gute Cholesterin, bei anderen tut sich nichts. Woran liegt das?"
+        },
+        {
+          "t": "video",
+          "id": "q5RLfiwj88Y",
+          "start": 15.6,
+          "end": 57.3,
+          "file": "clips/hdl_1.mp4",
+          "tag": "Animation",
+          "cap": "Wie das gute Cholesterin auf Omega-3 reagiert",
+          "ai": true
+        },
+        {
+          "t": "text",
+          "h": "HDL, die Müllabfuhr im Blut",
+          "p": "HDL ist das sogenannte gute Cholesterin. Es sammelt überschüssiges Cholesterin im Blut ein und bringt es zur Entsorgung in die Leber. Der wichtigste Baustein dieser Müllabfuhr entsteht nach der Anleitung der APOA1-Gene. Funktionieren sie, arbeiten sie mit Omega-3 zusammen und dein HDL-Cholesterin steigt."
+        },
+        {
+          "t": "quiz",
+          "q": "Welche Aufgabe hat das HDL-Cholesterin?",
+          "o": [
+            "Es lagert Fett in den Gefäßwänden ab",
+            "Es sammelt überschüssiges Cholesterin ein und bringt es zur Leber",
+            "Es stellt Omega-3 aus Fisch her",
+            "Es erhöht den Blutdruck"
+          ],
+          "c": 1,
+          "e": "HDL ist die Müllabfuhr im Blut. Deshalb nennt man es das gute Cholesterin."
+        },
+        {
+          "t": "text",
+          "h": "Nur wenige profitieren voll",
+          "p": "Du hast zwei Kopien des APOA1-Gens. Rund 4 % der Menschen haben zwei normal funktionierende Kopien: Je mehr Omega-3 sie aufnehmen, desto höher steigt ihr HDL. 30 % haben eine funktionierende und eine veränderte Kopie, bei ihnen ist der Effekt kleiner. Die übrigen 66 % haben zwei veränderte Kopien. Bei ihnen hebt zusätzliches Omega-3 das HDL nicht weiter an."
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viele Menschen haben zwei veränderte APOA1-Gene?",
+          "o": [
+            "Rund 4 %",
+            "Rund 30 %",
+            "Fast niemand",
+            "Rund 66 %, also die Mehrheit"
+          ],
+          "c": 3,
+          "e": "Zwei von drei Menschen haben zwei veränderte APOA1-Gene. Bei ihnen steigert zusätzliches Omega-3 das HDL nicht."
+        },
+        {
+          "t": "text",
+          "h": "Omega-3 bleibt trotzdem wertvoll",
+          "p": "Auch wenn dein HDL nicht auf Omega-3 reagiert: Omega-3 unterstützt Herz und Gefäße, senkt die Triglyceride und wirkt entzündungshemmend. Fisch und Pflanzenöle sind außerdem besser als gesättigte tierische Fette. Für das Cholesterin gibt es eine Alternative: Phytosterole, vereinfacht gesagt das Cholesterin der Pflanzen. Sie konkurrieren im Darm mit dem Cholesterin. Für jedes Gramm Phytosterole landet ein Gramm weniger Cholesterin im Blut."
+        },
+        {
+          "t": "video",
+          "id": "q5RLfiwj88Y",
+          "start": 58.2,
+          "end": 73.4,
+          "file": "clips/hdl_2.mp4",
+          "tag": "Animation",
+          "cap": "Was das für dich bedeutet",
+          "ai": true
+        },
+        {
+          "t": "quiz",
+          "q": "Was ist eine gute Alternative, wenn Omega-3 dein HDL nicht verbessert?",
+          "o": [
+            "Phytosterole, das Cholesterin der Pflanzen",
+            "Mehr Butter und Sahne",
+            "Ganz auf Fett verzichten",
+            "Die doppelte Menge Fischöl"
+          ],
+          "c": 0,
+          "e": "Phytosterole verdrängen Cholesterin im Darm, sodass weniger davon ins Blut gelangt."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Wirkung von Omega-3 auf HDL-Cholesterin",
+        "report": "Lifestyle-Bericht · Gesund ernähren",
+        "E": {
+          "pill": "Omega-3 wirkt",
+          "title": "Omega-3 verbessert HDL-Cholesterin",
+          "text": "Deine APOA1-Gene arbeiten mit Omega-3 zusammen. Mehrfach ungesättigte Fettsäuren heben dein gutes HDL-Cholesterin deutlich an.",
+          "rec": "Omega-3 aus fettem Fisch, Walnüssen und Pflanzenölen kann für dich ein wirksamer Weg sein, deine Cholesterinwerte zu verbessern."
+        },
+        "B": {
+          "pill": "Wirkt etwas",
+          "title": "Omega-3 verbessert HDL-Cholesterin etwas",
+          "text": "Deine APOA1-Gene arbeiten eingeschränkt, aber ausreichend gut. Omega-3 hebt dein HDL-Cholesterin etwas, aber weniger stark als bei anderen Menschen.",
+          "rec": "Omega-3 bleibt für dich sinnvoll. Einen Teil davon durch Phytosterole zu ersetzen, kann deine Cholesterinwerte zusätzlich unterstützen."
+        },
+        "D": {
+          "pill": "Kein HDL-Effekt",
+          "title": "Omega-3 hat keinen positiven Effekt auf HDL-Cholesterin",
+          "text": "Deine APOA1-Gene reagieren nicht auf Omega-3. Zusätzliches Omega-3 hebt dein HDL-Cholesterin nicht weiter an.",
+          "rec": "Für Herz, Gefäße und Triglyceride bleibt Omega-3 trotzdem wertvoll. Um dein Cholesterin zu verbessern, können Phytosterole die passendere Wahl sein."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Ob Omega-3 dein gutes Cholesterin hebt, zeigt die Gene Story „Wirkung von Omega-3 auf HDL-Cholesterin“ in der Ernährungsanalyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Fischöl bei dir das HDL verbessert oder ob Phytosterole der bessere Weg sind."
+        }
+      },
+      "images": [
+        {
+          "key": "l_hdl_muellabfuhr",
+          "prompt": "Tiny translucent HDL particles shaped like little collector vessels gathering golden cholesterol droplets in a bloodstream and carrying them toward a glowing liver."
+        },
+        {
+          "key": "l_hdl_varianten",
+          "prompt": "Omega-3 droplets from a fish oil capsule meeting two pairs of DNA strands: one pair lights up and releases more cholesterol-collecting particles, the other pair stays dim."
+        }
+      ],
+      "sources": [
+        "Report Studio story-omega3 (Lifestyle-Bericht, Wirkung von Omega-3 auf HDL-Cholesterin): Ergebnis-Titel, APOA1 (rs670) 4 % / 30 % / 66 %, Müllabfuhr-Bild, Phytosterole, Empfehlungstexte",
+        "OM-TextBlock ND_WP „Omega 3 verschlechtert HDL-Cholesterin“ = „Omega-3 hat keinen positiven Effekt auf HDL-Cholesterin“",
+        "Video q5RLfiwj88Y 0:15,6–0:57,3 und 0:58,2–1:13,4 (DE-Animation, KI-Stimme), Clips hdl_1 und hdl_2"
+      ],
+      "open_questions": [
+        "Kein Hauptvideo-Ausschnitt: Omega-3 und HDL kommen in keinem der langen Hauptvideos vor. Beide Clips stammen aus der deutschen Animation.",
+        "Die Animation sagt in hdl_1, manche Studien zeigten sogar eine Verschlechterung des HDL. Der Berichtstext ist entschärft („kein positiver Effekt“). Clip bei 0:51 enden lassen?",
+        "Titel D: Studio-Ergebnisseite und OM-Block sagen „Omega-3 hat keinen positiven Effekt auf HDL-Cholesterin“, die Studio-Übersichtskarte sagt „Omega-3 hat keinen Effekt auf HDL-Cholesterin“. Verwendet: Wortlaut der Ergebnisseite."
+      ]
     },
     {
-     "t": "video",
-     "id": "q5RLfiwj88Y",
-     "start": 15.6,
-     "end": 57.3,
-     "file": "clips/hdl_1.mp4",
-     "tag": "Animation",
-     "cap": "Wie das gute Cholesterin auf Omega-3 reagiert",
-     "ai": true
+      "id": "ldl",
+      "station": "herz",
+      "title": "Wie deine Gene das LDL-Cholesterin filtern",
+      "minutes": 6,
+      "formula": "DNA_NUTRITION_LDL",
+      "scalebar": "DNA_NUTRITION_LDL_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Gleiches Frühstück, andere Werte",
+          "p": "Manche Menschen essen viel Ei, Butter und Käse und haben trotzdem gute Cholesterinwerte. Bei anderen steigt das LDL schon bei wenig davon. Woran liegt das?"
+        },
+        {
+          "t": "video",
+          "id": "hjObdjQaguw",
+          "start": 0.9,
+          "end": 35.6,
+          "file": "clips/ldl_1.mp4",
+          "tag": "Animation",
+          "cap": "Warum LDL das schlechte Cholesterin heißt",
+          "ai": true
+        },
+        {
+          "t": "text",
+          "h": "Zwei Quellen, ein Filter",
+          "p": "Cholesterin bekommst du über die Nahrung, und dein Körper stellt es auch selbst her. Das LDL verteilt es von der Leber über das Blut im Körper. Bleibt zu viel LDL im Blut, lagert es sich an den Gefäßwänden ab. Deshalb heißt es schlechtes Cholesterin. Regulierungsgene wie LDLR bauen auf deinen Leberzellen eine Art Greifarme. Sie fischen das LDL aus dem Blut."
+        },
+        {
+          "t": "quiz",
+          "q": "Woher kommt das Cholesterin in deinem Blut?",
+          "o": [
+            "Nur aus der Nahrung",
+            "Nur aus Nahrungsergänzung",
+            "Aus der Nahrung und aus der eigenen Produktion im Körper",
+            "Aus dem Sonnenlicht"
+          ],
+          "c": 2,
+          "e": "Es gibt zwei Quellen: das Essen und die Produktion im eigenen Körper. Die Regulierungsgene sorgen dafür, dass der Wert nicht zu hoch wird."
+        },
+        {
+          "t": "text",
+          "h": "Wenn der Filter schwächer ist",
+          "p": "Dein Bericht wertet dafür mehrere Gene aus, zum Beispiel LDLR und APOB. Funktionieren sie, filtern sie genug LDL aus dem Blut. Sind sie verändert, bleibt mehr LDL im Blut und dasselbe Essen lässt den Wert stärker steigen. Dazu kommt das APOE-Gen mit Typen wie E2, E3 und E4. Rund zwei Drittel der Menschen haben den Normaltyp E3/E3."
+        },
+        {
+          "t": "quiz",
+          "q": "Was passiert, wenn die Regulierungsgene verändert sind?",
+          "o": [
+            "Das LDL wird schneller abgebaut",
+            "Mehr LDL bleibt im Blut",
+            "Der Körper bildet kein Cholesterin mehr",
+            "Das HDL steigt automatisch"
+          ],
+          "c": 1,
+          "e": "Veränderte Gene filtern zu wenig LDL aus dem Blut. Der Wert steigt leichter an."
+        },
+        {
+          "t": "text",
+          "h": "Gene helfen, entscheiden aber nicht allein",
+          "p": "Gute Gene machen hohe LDL-Werte nicht unmöglich. Ein ungesunder Lebensstil kann sie trotzdem steigen lassen. Und je weniger deine Gene mithelfen, desto mehr zählt deine Ernährung: weniger Trans-Fette und gesättigte Fette, mehr grünes Gemüse, Vollkorn, Hülsenfrüchte und Nüsse. Auch die mediterrane Küche mit Olivenöl und Fisch gilt als gut geeignet."
+        },
+        {
+          "t": "video",
+          "id": "hjObdjQaguw",
+          "start": 36.9,
+          "end": 63.9,
+          "file": "clips/ldl_2.mp4",
+          "tag": "Animation",
+          "cap": "Wie Greifarme das LDL aus dem Blut ziehen",
+          "ai": true
+        },
+        {
+          "t": "quiz",
+          "q": "Welche Ernährung hilft laut Bericht, das LDL-Cholesterin zu senken?",
+          "o": [
+            "Viel Fast Food mit Trans-Fetten",
+            "Möglichst viele tierische Fette",
+            "Nur Obst, sonst nichts",
+            "Pflanzenbetont mit Gemüse, Vollkorn, Hülsenfrüchten und Nüssen"
+          ],
+          "c": 3,
+          "e": "Eine pflanzenbetonte, mediterrane Küche mit wenig Trans- und gesättigten Fetten unterstützt deine LDL-Werte."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Regulierung von LDL-Cholesterin",
+        "report": "Lifestyle-Bericht · Gesund ernähren",
+        "E": {
+          "pill": "Gut reguliert",
+          "title": "LDL-Cholesterinregulierung in Ordnung",
+          "text": "Deine Regulierungsgene filtern ausreichend LDL-Cholesterin aus deinem Blut. Dein genetisches Risiko für erhöhte LDL-Werte ist gering.",
+          "rec": "Spezielle Ernährungsregeln brauchst du dafür nicht. Eine pflanzenbetonte, mediterrane Küche bleibt trotzdem eine gute Wahl."
+        },
+        "B": {
+          "pill": "Eingeschränkt",
+          "title": "LDL-Cholesterinregulierung eingeschränkt",
+          "text": "Deine Gene filtern etwas zu wenig LDL-Cholesterin aus deinem Blut. Dein Risiko für erhöhte LDL-Werte ist leicht erhöht.",
+          "rec": "Achte darauf, nicht zu viel Cholesterin über die Nahrung aufzunehmen. Weniger Trans- und gesättigte Fette sowie Omega-3 und Phytosterole können dich unterstützen."
+        },
+        "D": {
+          "pill": "Stark eingeschränkt",
+          "title": "LDL-Cholesterinregulierung stark eingeschränkt",
+          "text": "Deine Gene filtern zu wenig LDL-Cholesterin aus deinem Blut. Dein Risiko für erhöhte LDL-Werte ist erhöht.",
+          "rec": "Für dich ist die Ernährung ein besonders wichtiger Hebel: wenig Trans- und gesättigte Fette, viel Pflanzliches. Besprich deine Blutfettwerte mit deiner Ärztin oder deinem Arzt."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie gut deine Gene das LDL-Cholesterin aus dem Blut filtern, zeigt die Gene Story „Regulierung von LDL-Cholesterin“ in der Ernährungsanalyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie stark deine Ernährung bei deinen Cholesterinwerten zählt."
+        }
+      },
+      "images": [
+        {
+          "key": "l_ldl_greifarme",
+          "prompt": "A translucent liver cell with delicate golden grabbing arms on its surface, catching LDL cholesterol particles out of a flowing bloodstream."
+        },
+        {
+          "key": "l_ldl_varianten",
+          "prompt": "Two side-by-side blood vessels: in one, LDL particles are filtered out by glowing receptor arms; in the other, broken receptor arms let particles pile up along the vessel wall."
+        }
+      ],
+      "sources": [
+        "Report Studio story-ldl (Lifestyle-Bericht, Regulierung von LDL-Cholesterin): Ergebnis-Titel, Mechanismus, Gene LDLR (rs688) und APOB (rs5742904), Empfehlungstexte",
+        "OM-TextBlock 105285 (APOE / LDLR-Greifarme)",
+        "Video hjObdjQaguw 0:00,9–0:35,6 und 0:36,9–1:03,9 (DE-Animation, KI-Stimme), Clips ldl_1 und ldl_2",
+        "APOE-Typen und E3/E3 rund zwei Drittel: Daniels Schulungsvideo g7kP9S66Wbo (nur als Textquelle, kein Clip)"
+      ],
+      "open_questions": [
+        "Kein Hauptvideo-Ausschnitt: LDL-Cholesterin kommt in keinem der langen Hauptvideos vor. Beide Clips stammen aus der deutschen Animation.",
+        "APOE und „rund zwei Drittel E3/E3“ stammen nur aus Daniels Schulungsvideo, nicht aus der Gentabelle des Studio-Kapitels (dort LDLR und APOB). Prüfen, ob APOE in die Formel DNA_NUTRITION_LDL eingeht, sonst Satz streichen.",
+        "ldl_2 endet bewusst vor dem Satz „Etwa jeder Zehnte hat diesen Fehler in beiden Kopien“, weil diese Zahl nicht im Bericht steht."
+      ]
     },
     {
-     "t": "img",
-     "img": "l_hdl_muellabfuhr",
-     "h": "HDL, die Müllabfuhr im Blut",
-     "p": "HDL ist das sogenannte gute Cholesterin. Es sammelt überschüssiges Cholesterin im Blut ein und bringt es zur Entsorgung in die Leber. Der wichtigste Baustein dieser Müllabfuhr entsteht nach der Anleitung der APOA1-Gene. Funktionieren sie, arbeiten sie mit Omega-3 zusammen und dein HDL-Cholesterin steigt."
+      "id": "trigly",
+      "station": "herz",
+      "title": "Triglyceride: das andere Fett im Blut",
+      "minutes": 5,
+      "formula": "DNA_NUTRITION_TRIGLYC",
+      "scalebar": "DNA_NUTRITION_TRIGLYC_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Das andere Fett im Blut",
+          "p": "Auf dem Laborzettel stehen neben dem Cholesterin oft auch die Triglyceride. Sie sind eine eigene Form von Fett und dienen deinem Körper als Energiespeicher. Lebenswichtig sind sie, in zu großer Menge aber ungesund für dein Herz. Wie gut dein Körper sie im Griff hat, hängt auch von deinen Genen ab."
+        },
+        {
+          "t": "text",
+          "h": "Regulierungsgene halten die Werte unten",
+          "p": "Triglyceride nimmst du mit der Nahrung auf, und dein Körper bildet sie auch selbst. Regulierungsgene arbeiten dagegen und senken die Triglyceride im Blut. Ein wichtiges davon ist das APOA5-Gen. Funktioniert es, bleibt dein Triglyceridwert in Ordnung."
+        },
+        {
+          "t": "quiz",
+          "q": "Wofür nutzt dein Körper Triglyceride?",
+          "o": [
+            "Als Energiespeicher",
+            "Als Baustein für Knochen",
+            "Zum Transport von Sauerstoff",
+            "Als Botenstoff im Gehirn"
+          ],
+          "c": 0,
+          "e": "Triglyceride sind Fett, das als Energiespeicher dient. Nur in zu großer Menge werden sie zum Problem."
+        },
+        {
+          "t": "text",
+          "h": "Fast jeder Dritte ist betroffen",
+          "p": "Das APOA5-Gen funktioniert bei etwa 29 % der Menschen nicht richtig. Dann werden die Triglyceride schlechter gesenkt und können stark ansteigen. Laut Bericht geht diese Veranlagung außerdem mit niedrigeren HDL-Werten einher, also mit weniger gutem Cholesterin."
+        },
+        {
+          "t": "quiz",
+          "q": "Bei wie vielen Menschen funktioniert das APOA5-Gen nicht richtig?",
+          "o": [
+            "Bei fast allen",
+            "Bei etwa 29 %",
+            "Bei etwa 1 %",
+            "Bei niemandem"
+          ],
+          "c": 1,
+          "e": "Bei etwa 29 % der Menschen arbeitet das APOA5-Gen nicht richtig. Ihre Triglyceride steigen leichter an."
+        },
+        {
+          "t": "text",
+          "h": "Was du beeinflussen kannst",
+          "p": "Die Triglyceride, die dein Körper selbst bildet, kannst du kaum steuern. Die aus der Nahrung schon. Zucker in Fertigprodukten und Softdrinks, Weißbrot, Trans-Fette und gesättigte Fette treiben die Werte nach oben, bei beeinträchtigten Genen auch Alkohol. Wichtig: Fettarm allein reicht nicht. Es kommt auf die Qualität der Fette an, etwa Olivenöl und Fisch mit Omega-3. Eine ballaststoffreiche, pflanzenbetonte Ernährung hilft zusätzlich."
+        },
+        {
+          "t": "quiz",
+          "q": "Was hilft laut Bericht, die Triglyceride zu senken?",
+          "o": [
+            "Einfach möglichst fettarm essen",
+            "Softdrinks statt fettiger Speisen",
+            "Weniger Zucker und bessere Fette wie Olivenöl und Fisch",
+            "Mehr Weißbrot"
+          ],
+          "c": 2,
+          "e": "Fettarm allein hilft nicht. Weniger Zucker und gute Fette machen den Unterschied."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Regulierung von Triglyceriden",
+        "report": "Lifestyle-Bericht · Gesund ernähren",
+        "E": {
+          "pill": "Effektiv",
+          "title": "Senkung der Triglyceride effektiv",
+          "text": "Deine Regulierungsgene senken die Triglyceride in deinem Blut ausreichend. Dein genetisches Risiko für erhöhte Triglyceride ist nicht erhöht.",
+          "rec": "Besondere Ernährungsregeln brauchst du dafür nicht. Wenig Zucker und gute Fette bleiben trotzdem gesund."
+        },
+        "B": {
+          "pill": "Leicht eingeschränkt",
+          "title": "Senkung der Triglyceride leicht eingeschränkt",
+          "text": "Deine Gene senken die Triglyceride nur mäßig. Dein Risiko für erhöhte Triglyceride ist leicht erhöht.",
+          "rec": "Es kann sinnvoll sein, weniger Triglyceride über die Nahrung aufzunehmen: weniger Zucker, Weißbrot, Alkohol und gesättigte Fette."
+        },
+        "D": {
+          "pill": "Stark eingeschränkt",
+          "title": "Senkung der Triglyceride stark eingeschränkt",
+          "text": "Deine Gene können die Triglyceride nicht ausreichend senken. Dein Risiko für erhöhte Triglyceride ist erhöht.",
+          "rec": "Für dich zählt die Ernährung besonders: wenig Zucker und schnelle Kohlenhydrate, bessere Fette und viele Ballaststoffe. Besprich deine Blutfettwerte mit deiner Ärztin oder deinem Arzt."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie gut deine Gene die Triglyceride senken, zeigt die Gene Story „Regulierung von Triglyceriden“ in der Ernährungsanalyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie stark Zucker und Fette bei dir auf die Blutfette wirken."
+        }
+      },
+      "images": [
+        {
+          "key": "l_trigly_regler",
+          "prompt": "Golden triglyceride droplets entering a translucent bloodstream from food and from the body, while a glowing DNA-shaped regulator gently pushes their level down."
+        },
+        {
+          "key": "l_trigly_varianten",
+          "prompt": "A transparent energy storage cell filled with golden fat droplets next to a DNA strand with one softly dimmed segment, symbolizing a gene that regulates blood fats."
+        }
+      ],
+      "sources": [
+        "Report Studio story-trigly (Lifestyle-Bericht, Regulierung von Triglyceriden): Ergebnis-Titel, APOA5 (rs662799), 29 %, Empfehlungstexte",
+        "Daniels Schulungsvideo hUFY050zS7k nur als Textquelle (Ballaststoffe, Omega-3), kein Clip"
+      ],
+      "open_questions": [
+        "Kein Hauptvideo-Ausschnitt – Animation nötig. Triglyceride kommen in keinem langen Hauptvideo vor; es gibt nur die englische Animation Triglycerides-and-your-genes_EN.mp4 (unveröffentlicht)."
+      ]
     },
     {
-     "t": "quiz",
-     "q": "Welche Aufgabe hat das HDL-Cholesterin?",
-     "o": [
-      "Es lagert Fett in den Gefäßwänden ab",
-      "Es sammelt überschüssiges Cholesterin ein und bringt es zur Leber",
-      "Es stellt Omega-3 aus Fisch her",
-      "Es erhöht den Blutdruck"
-     ],
-     "c": 1,
-     "e": "HDL ist die Müllabfuhr im Blut. Deshalb nennt man es das gute Cholesterin."
+      "id": "homocys",
+      "station": "herz",
+      "title": "Homocystein: der unbekannte Herz-Faktor",
+      "minutes": 5,
+      "formula": "DNA_NUTRITION_HOMOCYSTEINE",
+      "scalebar": "DNA_NUTRITION_HOMOCYSTEINE_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Ein Stoff, den kaum jemand kennt",
+          "p": "Cholesterin kennt jeder, Homocystein kaum jemand. Dabei ist es ähnlich wichtig für dein Herz. Dein Körper braucht es als Baustein für neue Eiweiße. Zu viel davon belastet aber Herz und Gefäße. Wie gut du es abbaust, steht in deinen Genen."
+        },
+        {
+          "t": "text",
+          "h": "Zwei Wege aus der Gefahrenzone",
+          "p": "Dein Körper hat zwei Wege, um Homocystein unschädlich zu machen. Auf dem ersten wandeln die MTRR-Gene es mit Hilfe von Vitamin B12 in Methionin um, eine Aminosäure, die dein Körper braucht. Auf dem zweiten wird es mit Hilfe von Vitamin B6 zu Cystein. Sind die MTRR-Gene verändert, läuft der erste Weg nur sehr langsam."
+        },
+        {
+          "t": "quiz",
+          "q": "Welches Vitamin unterstützt die MTRR-Gene bei der Umwandlung in Methionin?",
+          "o": [
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin B12",
+            "Vitamin K"
+          ],
+          "c": 2,
+          "e": "Vitamin B12 hilft den MTRR-Genen, Homocystein in Methionin umzuwandeln. Vitamin B6 ist am zweiten Weg beteiligt."
+        },
+        {
+          "t": "text",
+          "h": "Die Sache mit Vitamin B2",
+          "p": "In diesem Kapitel gibt es einen zweiten Balken. Vitamin B2 kann Homocystein ebenfalls senken, aber nur dann, wenn die dafür zuständigen MTHFR-Gene nicht intakt sind. Deshalb ist dieser Balken umgedreht: Ein „defektes“ Ergebnis heißt hier, dass dir Vitamin B2 beim Abbau hilft. Bei intakten Genen hat Vitamin B2 keinen Einfluss auf deinen Homocysteinspiegel."
+        },
+        {
+          "t": "quiz",
+          "q": "Wann hilft Vitamin B2, Homocystein zu senken?",
+          "o": [
+            "Immer, bei jedem Menschen",
+            "Nur wenn die MTHFR-Gene nicht intakt sind",
+            "Nur zusammen mit Kaffee",
+            "Nie, B2 hat nichts mit Homocystein zu tun"
+          ],
+          "c": 1,
+          "e": "Vitamin B2 senkt Homocystein nur, wenn die MTHFR-Gene nicht intakt sind. Bei intakten Genen hat es keinen Einfluss."
+        },
+        {
+          "t": "text",
+          "h": "Was Homocystein ansteigen lässt",
+          "p": "Neben den Genen zählen die Nährstoffe. Ein Mangel an Vitamin B12, Vitamin B6 oder Folsäure kann den Homocysteinwert erhöhen. Weitere Ursachen sind zum Beispiel viel Alkohol oder Übergewicht. Vitamin B12 steckt fast nur in tierischen Lebensmitteln wie Fleisch, fettem Seefisch, Käse, Eiern und Milch. Vitamin B6 findest du auch in Vollkorn, Kartoffeln, Hülsenfrüchten und Kohlgemüse."
+        },
+        {
+          "t": "quiz",
+          "q": "Welcher Mangel kann den Homocysteinwert erhöhen?",
+          "o": [
+            "Ein Mangel an Vitamin B12, B6 oder Folsäure",
+            "Ein Mangel an Zucker",
+            "Zu wenig Salz",
+            "Zu wenig Koffein"
+          ],
+          "c": 0,
+          "e": "Die Vitamine B12 und B6 sowie Folsäure helfen beim Abbau. Fehlen sie, kann Homocystein ansteigen."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Herz-Schutz vor Homocystein",
+        "report": "Lifestyle-Bericht · Gesund ernähren",
+        "E": {
+          "pill": "Reicht aus",
+          "title": "Homocysteinregulierung reicht aus",
+          "text": "Deine MTRR-Gene wandeln Homocystein ausreichend schnell in unschädliche Stoffe um, bevor es das Herz belasten kann.",
+          "rec": "Eine gute Versorgung mit Vitamin B12 und B6 bleibt trotzdem gesund."
+        },
+        "B": {
+          "pill": "Beeinträchtigt",
+          "title": "Homocysteinregulierung beeinträchtigt",
+          "text": "Deine Gene können Homocystein nur eingeschränkt regulieren. Die Umwandlung in Methionin läuft langsamer.",
+          "rec": "Mehr Vitamin B6 und B12 in deiner Ernährung kann die Umwandlung unterstützen. Ob dir zusätzlich Vitamin B2 hilft, zeigt der zweite Balken in deinem Bericht."
+        },
+        "D": {
+          "pill": "Funktioniert nicht",
+          "title": "Homocysteinregulierung funktioniert nicht",
+          "text": "Deine Gene können Homocystein nicht ausreichend regulieren. Es wird zu langsam umgewandelt und kann das Herz belasten.",
+          "rec": "Mehr Vitamin B6 und B12 kann die Umwandlung unterstützen. Besprich deinen Homocysteinwert und eine mögliche Nahrungsergänzung mit deiner Ärztin oder deinem Arzt."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie gut dein Körper Homocystein abbaut, zeigt die Gene Story „Herz-Schutz vor Homocystein“ in der Ernährungsanalyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du mehr Vitamin B6 und B12 brauchst und ob dir Vitamin B2 hilft."
+        }
+      },
+      "images": [
+        {
+          "key": "l_homocys_wege",
+          "prompt": "A translucent homocysteine molecule at a fork in a glowing pathway: one branch transforms it into methionine with a small B12 crystal, the other into cysteine with a B6 crystal."
+        },
+        {
+          "key": "l_homocys_b2",
+          "prompt": "A delicate vitamin B2 crystal gently dissolving homocysteine molecules near a DNA strand with a softly dimmed segment, inside a calm translucent heart vessel."
+        }
+      ],
+      "sources": [
+        "Report Studio story-hcy (Lifestyle-Bericht, Herz-Schutz vor Homocystein): Ergebnis-Titel Hauptbalken und B2-Balken, MTRR (rs1801394), zwei Abbauwege, B2 nur bei nicht intakten MTHFR-Genen, Ursachen und Lebensmittel",
+        "Daniels Schulungsvideo TT0PxT6Wc0o nur als Textquelle, kein Clip"
+      ],
+      "open_questions": [
+        "Zweiter Balken DNA_NUTRITION_HOMOCYSTEINE_VITB2_SCALEBAR ist farblich umgedreht: „defekt“ = „Vitamin B2 beeinflusst Homocysteinspiegel positiv“ (gute Nachricht). Die Karte nutzt nur den Hauptbalken (invert: false). Soll der B2-Balken eine eigene Mini-Karte mit invert: true bekommen? Titel B2 laut Bericht: E „Vitamin B2 beeinflusst Homocysteinspiegel nicht“, B „Vitamin B2 beeinflusst Homocysteinspiegel bedingt“, D „Vitamin B2 beeinflusst Homocysteinspiegel positiv“.",
+        "Im Studio hängen die B2-Sätze in den Empfehlungstexten am Hauptzustand (E = B2 ohne Einfluss, D = B2 positiv), obwohl B2 einen eigenen Balken hat. Bitte prüfen.",
+        "Keine Bevölkerungszahlen für MTRR in Bericht oder Video gefunden; Variantenblock daher ohne Prozentangaben.",
+        "Kein Hauptvideo-Ausschnitt – Animation nötig. Homocystein kommt in keinem langen Hauptvideo vor (79MPy6BFqu8 erwähnt bei Folsäure nur die Herzgesundheit); Homocysteine-and-your-genes_EN.mp4 existiert nur englisch (unveröffentlicht)."
+      ]
     },
     {
-     "t": "img",
-     "img": "l_hdl_varianten",
-     "h": "Nur wenige profitieren voll",
-     "p": "Du hast zwei Kopien des APOA1-Gens. Rund 4 % der Menschen haben zwei normal funktionierende Kopien: Je mehr Omega-3 sie aufnehmen, desto höher steigt ihr HDL. 30 % haben eine funktionierende und eine veränderte Kopie, bei ihnen ist der Effekt kleiner. Die übrigen 66 % haben zwei veränderte Kopien. Bei ihnen hebt zusätzliches Omega-3 das HDL nicht weiter an."
+      "id": "salz",
+      "station": "herz",
+      "title": "Ist Salz für jeden gleich schlecht?",
+      "minutes": 6,
+      "formula": "DNA_NUTRITION_SALT",
+      "scalebar": "DNA_NUTRITION_SALT_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Weniger Salz, niedrigerer Blutdruck?",
+          "p": "Diesen Rat hast du sicher schon gehört. Ganz so einfach ist es aber nicht."
+        },
+        {
+          "t": "video",
+          "id": "vnMSYJRUVns",
+          "start": 0.3,
+          "end": 21.9,
+          "file": "clips/salz_1.mp4",
+          "tag": "Animation",
+          "cap": "Ist Salz wirklich für jeden schlecht?",
+          "ai": true
+        },
+        {
+          "t": "text",
+          "h": "Warum Salz den Druck erhöht",
+          "p": "Je mehr Salz im Körper ist, desto mehr Flüssigkeit braucht er. Um das Salz schnell über die Nieren aus dem Blut zu spülen, erhöht dein Körper den Blutdruck. Wie stark er das tut, beeinflusst das AGT-Gen."
+        },
+        {
+          "t": "video",
+          "id": "vnMSYJRUVns",
+          "start": 22.3,
+          "end": 55.5,
+          "file": "clips/salz_2.mp4",
+          "tag": "Animation",
+          "cap": "Ein Lautstärkeregler für Salz",
+          "ai": true
+        },
+        {
+          "t": "quiz",
+          "q": "Warum erhöht der Körper nach viel Salz den Blutdruck?",
+          "o": [
+            "Um das Salz über die Nieren auszuspülen",
+            "Um mehr Salz zu speichern",
+            "Weil Salz den Magen reizt",
+            "Um die Muskeln zu wärmen"
+          ],
+          "c": 0,
+          "e": "Der höhere Druck hilft, das Salz über die Nieren aus dem Blut zu spülen. Bei manchen Genen fällt diese Reaktion stärker aus."
+        },
+        {
+          "t": "text",
+          "h": "Ein Lautstärkeregler für Salz",
+          "p": "Du hast zwei Kopien des AGT-Gens. Mit der unempfindlichen Version schützt dich das Gen: Salz wirkt schwächer auf deinen Blutdruck. Mit der empfindlichen Version ist der Regler aufgedreht. Dasselbe Salz erhöht den Blutdruck dann etwa doppelt so stark."
+        },
+        {
+          "t": "quiz",
+          "q": "Welches Gen beeinflusst, wie stark Salz deinen Blutdruck erhöht?",
+          "o": [
+            "MTHFR",
+            "AGT",
+            "COMT",
+            "APOA1"
+          ],
+          "c": 1,
+          "e": "Das AGT-Gen wirkt wie ein Lautstärkeregler für die Wirkung von Salz auf den Blutdruck."
+        },
+        {
+          "t": "text",
+          "h": "Wo das Salz wirklich steckt",
+          "p": "Mehr als 70 % des täglichen Salzes stammen aus verarbeiteten Lebensmitteln, Fertiggerichten, Fast Food und dem Essen außer Haus. Auch Brot, Wurst und manche Käsesorten sind salzig. Die WHO empfiehlt höchstens 5 g Salz pro Tag. Frisch kochen und mit Kräutern, Pfeffer oder Chili würzen hilft beim Sparen. Reduzierst du schrittweise, gewöhnen sich deine Geschmacksnerven daran."
+        },
+        {
+          "t": "video",
+          "id": "vnMSYJRUVns",
+          "start": 56.0,
+          "end": 72.9,
+          "file": "clips/salz_3.mp4",
+          "tag": "Animation",
+          "cap": "Was das für dich bedeutet",
+          "ai": true
+        },
+        {
+          "t": "quiz",
+          "q": "Woher stammt laut Bericht der Großteil des Salzes, das wir essen?",
+          "o": [
+            "Aus dem Salzstreuer am Tisch",
+            "Aus Obst und Gemüse",
+            "Aus dem Leitungswasser",
+            "Aus verarbeiteten Lebensmitteln und Fertiggerichten"
+          ],
+          "c": 3,
+          "e": "Mehr als 70 % stecken in verarbeiteten Lebensmitteln. Frisch kochen ist deshalb der wirksamste Weg zum Salzsparen."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Kochsalz und Blutdruck",
+        "report": "Lifestyle-Bericht · Gesund ernähren",
+        "E": {
+          "pill": "Kaum Einfluss",
+          "title": "Kochsalz trägt kaum zu erhöhtem Blutdruck bei",
+          "text": "Deine AGT-Gene schützen dich gut vor der blutdruckerhöhenden Wirkung von Kochsalz. Salz hat bei dir nur wenig Einfluss auf den Blutdruck.",
+          "rec": "Übliche Mengen Salz sind für dich kein besonderes Problem. Sehr viel Salz ist trotzdem für niemanden gesund."
+        },
+        "B": {
+          "pill": "Mäßiger Einfluss",
+          "title": "Kochsalz trägt mäßig zu erhöhtem Blutdruck bei",
+          "text": "Deine Gene schützen dich nur eingeschränkt vor Kochsalz. Salz kann deinen Blutdruck mäßig ansteigen lassen.",
+          "rec": "Es kann sinnvoll sein, Salz und salzhaltige Lebensmittel zu reduzieren, vor allem Fertigprodukte."
+        },
+        "D": {
+          "pill": "Starker Einfluss",
+          "title": "Kochsalz trägt zu erhöhtem Blutdruck bei",
+          "text": "Deine Gene schützen dich nicht vor einem übermäßigen Anstieg des Blutdrucks durch Kochsalz.",
+          "rec": "Weniger Salz ist für dich ein besonders wirksamer Hebel. Besprich deinen Blutdruck mit deiner Ärztin oder deinem Arzt."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie stark Salz deinen Blutdruck beeinflusst, zeigt die Gene Story „Kochsalz und Blutdruck“ in der Ernährungsanalyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Salzsparen für dich ein großer oder ein kleiner Hebel ist."
+        }
+      },
+      "images": [
+        {
+          "key": "l_salz_wasser",
+          "prompt": "Salt crystals in a translucent blood vessel drawing water molecules toward them, while a softly glowing kidney filters them out."
+        },
+        {
+          "key": "l_salz_regler",
+          "prompt": "An elegant golden volume dial made of a DNA helix, with salt crystals on one side and a translucent pressure wave in a blood vessel on the other."
+        }
+      ],
+      "sources": [
+        "Report Studio story-salz und nut-overview (OM 104546 / 104547 / 104548): Ergebnis-Titel, AGT (rs699), Mechanismus, 70 %, WHO 5 g, Würztipps",
+        "Video vnMSYJRUVns 0:00,3–0:21,9 / 0:22,3–0:55,5 / 0:56,0–1:12,9 (DE-Animation, KI-Stimme), Clips salz_1 bis salz_3; „etwa doppelt so stark“ aus diesem Video"
+      ],
+      "open_questions": [
+        "Kein Hauptvideo-Ausschnitt: Kochsalz und Blutdruck kommen in keinem langen Hauptvideo vor. Alle drei Clips stammen aus der deutschen Animation.",
+        "salz_1 sagt, die meisten essen etwa doppelt so viel Salz, wie die WHO empfiehlt. Das steht so nicht im Bericht (dort nur: höchstens 5 g pro Tag). Bitte bestätigen.",
+        "salz_3 endet mit „Übertreib es nur [nicht]“, das Ende des Satzes ist im Untertitel abgeschnitten. Bitte gegenhören.",
+        "Titel B: Die Studio-Kapitelseite (rd-heading__salz_n205) zeigt „Kochsalz trägt zu erhöhtem Blutdruck bei“ mit „mäßig“-Text; die OM-Blöcke trennen B „mäßig“ und D „zu erhöhtem Blutdruck“. Verwendet: OM-Wortlaut. Eine eigene D-Ergebnisseite fehlt im Studio.",
+        "„Etwa doppelt so stark“ stammt nur aus der Animation, nicht aus dem Bericht. Bitte bestätigen.",
+        "Im Beispiel-Formel-Output war DNA_NUTRITION_SALT_DEFECTIVE_HIDER = Show bei Stufe 05 (Recherche 01, Abschnitt 4.3). Für die Karte gilt der HIDER-Zustand."
+      ]
     },
     {
-     "t": "quiz",
-     "q": "Wie viele Menschen haben zwei veränderte APOA1-Gene?",
-     "o": [
-      "Rund 4 %",
-      "Rund 30 %",
-      "Fast niemand",
-      "Rund 66 %, also die Mehrheit"
-     ],
-     "c": 3,
-     "e": "Zwei von drei Menschen haben zwei veränderte APOA1-Gene. Bei ihnen steigert zusätzliches Omega-3 das HDL nicht."
+      "id": "burnout",
+      "station": "gehirn",
+      "title": "Stress und Burnout: was deine Gene verraten",
+      "minutes": 7,
+      "formula": "DNA_BURNOUT",
+      "scalebar": "DNA_BURNOUT_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Warum hält der eine mehr Stress aus?",
+          "p": "Zwei Kolleginnen, gleicher Job, gleicher Druck. Die eine bleibt gelassen, die andere ist nach ein paar Wochen ausgelaugt. Nicht jeder reagiert auf dieselbe Belastung gleich. Wie dein Kopf mit Stress umgeht, liegt auch an deinen Genen."
+        },
+        {
+          "t": "video",
+          "id": "eOqrJicdJZM",
+          "start": 10.5,
+          "end": 25.9,
+          "file": "clips/burnout_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie ein Burnout entsteht",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Nach der Aufregung muss Dopamin weg",
+          "p": "Erlebst du etwas Aufregendes oder Stressiges, schüttet dein Gehirn Dopamin aus. Dieser Botenstoff gibt die Nachricht von Zelle zu Zelle weiter, bis das ganze Gehirn Bescheid weiß. Ist die Situation vorbei, muss das Dopamin wieder abgebaut werden, damit dein Gehirn zur Ruhe kommt. Das erledigt das Enzym COMT. Gebildet wird es von deinen COMT-Genen."
+        },
+        {
+          "t": "video",
+          "id": "eOqrJicdJZM",
+          "start": 186.1,
+          "end": 243.7,
+          "file": "clips/burnout_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Was passiert, wenn das Gehirn nach Stress nicht zur Ruhe kommt",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was macht das Enzym COMT im Gehirn?",
+          "o": [
+            "Es bildet neues Dopamin",
+            "Es baut Dopamin nach der Aufregung wieder ab",
+            "Es speichert Erinnerungen",
+            "Es senkt den Blutzucker"
+          ],
+          "c": 1,
+          "e": "COMT baut Dopamin ab, damit das Gehirn nach Stress wieder in den Ruhezustand kommt."
+        },
+        {
+          "t": "text",
+          "h": "Drei Eigenschaften, ein Gen",
+          "p": "Arbeiten die COMT-Gene langsamer, bleibt Dopamin länger im Gehirn. Kommt neuer Stress dazu, wird es überstimuliert. Dein Bericht zeigt deshalb drei Balken: deine <b>Leistung in Stresssituationen</b>, deine <b>emotionale Belastbarkeit</b>, also wie sehr dich negative Gefühle belasten, und deine <b>Veranlagung zu Impulsivität</b>. 41 % der Menschen haben zwei effektive COMT-Gene, 44 % ein verändertes und 15 % zwei veränderte."
+        },
+        {
+          "t": "quiz",
+          "q": "Welche drei Eigenschaften zeigt dein Bericht beim Thema Stress?",
+          "o": [
+            "Schlaf, Appetit und Gewicht",
+            "Blutdruck, Puls und Atmung",
+            "Leistung unter Stress, emotionale Belastbarkeit und Impulsivität",
+            "Gedächtnis, Sehkraft und Gehör"
+          ],
+          "c": 2,
+          "e": "Alle drei hängen am Dopamin-Abbau durch COMT. Zusammen zeigen sie, wie gut du mit Stress umgehst."
+        },
+        {
+          "t": "text",
+          "h": "Gene sind kein Schicksal",
+          "p": "Stress dauert meist eine Zeit lang und geht vorbei. Ein Burnout ist ein Dauerzustand: Du fühlst dich emotional, mental und körperlich ausgelaugt, oft ohne Motivation, selbst für Dinge, die dir früher Spaß gemacht haben. Je ungünstiger deine Gene, desto wichtiger wird dein Lebensstil: Grenzen setzen, Pausen einlegen, gut schlafen, Kontakte pflegen und täglich etwa 30 Minuten Bewegung. Bemerkst du über längere Zeit Zeichen wie ständige Erschöpfung, sprich mit deiner Ärztin oder deinem Arzt."
+        },
+        {
+          "t": "video",
+          "id": "eOqrJicdJZM",
+          "start": 33.45,
+          "end": 89.4,
+          "file": "clips/burnout_3.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel über die drei Eigenschaften und die richtige Lebensführung",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Was unterscheidet einen Burnout von normalem Stress?",
+          "o": [
+            "Ein Burnout dauert nur einen Tag",
+            "Stress ist immer gefährlicher",
+            "Es gibt keinen Unterschied",
+            "Ein Burnout ist ein Dauerzustand der Erschöpfung"
+          ],
+          "c": 3,
+          "e": "Stress kommt und geht. Bei einem Burnout bleibt die Erschöpfung, oft zusammen mit Hoffnungslosigkeit und fehlender Motivation."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Stress und Burnout",
+        "report": "Lifestyle-Bericht · Stress und Burnout",
+        "E": {
+          "pill": "Stressfest",
+          "title": "Bessere Leistung in Stresssituationen",
+          "text": "Deine COMT-Gene bauen Dopamin effektiv ab, dein Gehirn kommt nach Stress schnell zur Ruhe. Das bedeutet bessere Leistung unter Druck, hohe emotionale Belastbarkeit und eine geringe Veranlagung zu Impulsivität.",
+          "rec": "Du bist nicht besonders gefährdet, einen Burnout zu erleiden. Pausen, Bewegung und guter Schlaf bleiben trotzdem gute Gewohnheiten."
+        },
+        "B": {
+          "pill": "Etwas empfindlicher",
+          "title": "Etwas schlechtere Leistung in Stresssituationen",
+          "text": "Deine COMT-Gene bauen Dopamin langsamer ab als vorgesehen. Unter Stress leistest du etwas weniger, bist emotional etwas weniger belastbar und neigst etwas mehr zu Impulsivität.",
+          "rec": "Du bist etwas mehr gefährdet als andere. Ein stressarmer Alltag mit Pausen, Bewegung und klaren Grenzen kann für dich besonders sinnvoll sein."
+        },
+        "D": {
+          "pill": "Stressempfindlich",
+          "title": "Schlechtere Leistung in Stresssituationen",
+          "text": "Deine COMT-Gene bauen Dopamin nicht so schnell ab, wie es sollte. Dein Gehirn bleibt nach Stress lange übererregt: geringere Leistung unter Druck, geringe emotionale Belastbarkeit und eine höhere Veranlagung zu Impulsivität.",
+          "rec": "Du bist deutlich mehr gefährdet, einen Burnout zu erleiden. Stress gezielt zu verringern, ist für dich besonders wichtig. Bei anhaltender Erschöpfung sprich mit deiner Ärztin oder deinem Arzt."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie gut dein Gehirn mit Stress umgeht, zeigt die Gene Story „Stress und Burnout“ in der Burnout-Analyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie belastbar du unter Druck bist und wie wichtig ein stressarmer Alltag für dich ist."
+        }
+      },
+      "images": [
+        {
+          "key": "l_burnout_dopamin",
+          "prompt": "Translucent brain cells passing glowing golden dopamine particles from one to the next, while small enzyme figures gently clear them away to restore calm."
+        },
+        {
+          "key": "l_burnout_drei",
+          "prompt": "A softly lit translucent brain with three delicate glowing threads running out of it, balanced like a calm scale against a storm of tiny stress sparks."
+        }
+      ],
+      "sources": [
+        "Report Studio story-burnout (Lifestyle-Bericht, Stress und Burnout): Titel der drei Balken je Zustand, COMT (rs4680), 41 % / 44 % / 15 %, Stress vs. Burnout, Empfehlungen",
+        "nut-overview gs-h__n27 „Stress und Burnout“",
+        "Hauptvideo eOqrJicdJZM 0:10,5–0:25,9 / 3:06,1–4:03,7 / 0:33,5–1:29,4, Clips burnout_1 bis burnout_3"
+      ],
+      "open_questions": [
+        "Die Gruppe DNA_BURNOUT hat im Bericht keinen eigenen Ergebnis-Titel, nur die drei Balken-Titel. Für die Karte (Sammelwert DNA_BURNOUT_SCALEBAR) wurden die Titel des ersten Balkens (Leistung in Stresssituationen) verwendet. Titel der anderen Balken: emotionale Belastbarkeit E „Hohe emotionale Belastbarkeit“, B „Etwas geringere emotionale Belastbarkeit“, D „Geringe emotionale Belastbarkeit“; Impulsivität E „Geringe Veranlagung zu Impulsivität“, B „Etwas höhere Veranlagung zu Impulsivität“, D „Hohe Veranlagung zu Impulsivität“. Lieber einen eigenen Sammeltitel?",
+        "burnout_3 enthält Hinweise auf den Bericht („Die, die grün sind …“, „Da steht alles hier“). Bitte prüfen, ob das für Endkunden passt; sonst bei 0:44,0 neu ansetzen und bei 1:04,4 enden.",
+        "burnout_2 erwähnt kurz die Anfälligkeit für Glücksspiel."
+      ]
     },
     {
-     "t": "text",
-     "h": "Omega-3 bleibt trotzdem wertvoll",
-     "p": "Auch wenn dein HDL nicht auf Omega-3 reagiert: Omega-3 unterstützt Herz und Gefäße, senkt die Triglyceride und wirkt entzündungshemmend. Fisch und Pflanzenöle sind außerdem besser als gesättigte tierische Fette. Für das Cholesterin gibt es eine Alternative: Phytosterole, vereinfacht gesagt das Cholesterin der Pflanzen. Sie konkurrieren im Darm mit dem Cholesterin. Für jedes Gramm Phytosterole landet ein Gramm weniger Cholesterin im Blut."
-    },
-    {
-     "t": "video",
-     "id": "q5RLfiwj88Y",
-     "start": 58.2,
-     "end": 73.4,
-     "file": "clips/hdl_2.mp4",
-     "tag": "Animation",
-     "cap": "Was das für dich bedeutet",
-     "ai": true
-    },
-    {
-     "t": "quiz",
-     "q": "Was ist eine gute Alternative, wenn Omega-3 dein HDL nicht verbessert?",
-     "o": [
-      "Phytosterole, das Cholesterin der Pflanzen",
-      "Mehr Butter und Sahne",
-      "Ganz auf Fett verzichten",
-      "Die doppelte Menge Fischöl"
-     ],
-     "c": 0,
-     "e": "Phytosterole verdrängen Cholesterin im Darm, sodass weniger davon ins Blut gelangt."
-    },
-    {
-     "t": "result"
+      "id": "alkohol",
+      "station": "gehirn",
+      "title": "Alkohol und dein Belohnungssystem",
+      "minutes": 6,
+      "formula": "DNA_TOXO",
+      "scalebar": "DNA_NUTRITION_ALCABUSE_SCALEBAR",
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Warum genießen manche mehr?",
+          "p": "Für die meisten Menschen ist ein gelegentliches Glas Wein oder Bier kein Problem. Manchen fällt es aber schwerer, Maß zu halten oder aufzuhören. Das liegt nicht nur am Willen. Ein Teil der Antwort steht in den Genen, genauer: im Belohnungssystem deines Gehirns."
+        },
+        {
+          "t": "video",
+          "id": "eOqrJicdJZM",
+          "start": 116.45,
+          "end": 170.1,
+          "file": "clips/alkohol_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie das Gehirn Dopamin ausschüttet und wieder abbaut",
+          "ai": false
+        },
+        {
+          "t": "text",
+          "h": "Das Belohnungssystem",
+          "p": "Wenn etwas Schönes passiert, schüttet dein Gehirn Dopamin aus, den Botenstoff für Belohnung und Motivation. Danach muss es wieder abgebaut werden. Das übernimmt das Enzym COMT, gebildet vom COMT-Gen. Arbeitet es langsamer, bleiben Dopamin und Noradrenalin länger im Gehirn. Das kann beeinflussen, wie du auf Alkohol reagierst, und das Verlangen nach Belohnung verstärken."
+        },
+        {
+          "t": "quiz",
+          "q": "Welcher Botenstoff steht im Mittelpunkt dieser Gene Story?",
+          "o": [
+            "Insulin",
+            "Melatonin",
+            "Dopamin",
+            "Histamin"
+          ],
+          "c": 2,
+          "e": "Dopamin ist der Botenstoff für Belohnung und Motivation. Das COMT-Gen steuert, wie schnell er wieder abgebaut wird."
+        },
+        {
+          "t": "text",
+          "h": "Schnelle und langsame Kopien",
+          "p": "Das COMT-Gen gibt es in einer schnellen und einer langsamen Version. 85 % der Menschen haben mindestens eine schnelle Kopie. 15 % haben zwei langsame: Ihr Gehirn baut Dopamin drei- bis viermal langsamer ab. Schöne Momente fühlen sich für sie intensiver an, sie sind oft neugieriger und aufmerksamer. Gleichzeitig fühlen sich Alkohol und Glücksspiel lohnender an. Deshalb bringen Studien diese Variante mit einem höheren Suchtrisiko in Verbindung."
+        },
+        {
+          "t": "video",
+          "id": "n1jkxseJBf4",
+          "start": 28.3,
+          "end": 69.9,
+          "file": "clips/alkohol_2.mp4",
+          "tag": "Animation",
+          "cap": "Schnelle und langsame Kopien des Gens",
+          "ai": true
+        },
+        {
+          "t": "quiz",
+          "q": "Was bedeutet eine langsame COMT-Version für das Gehirn?",
+          "o": [
+            "Dopamin bleibt länger wirksam",
+            "Das Gehirn bildet kein Dopamin mehr",
+            "Alkohol wird schneller abgebaut",
+            "Alkohol schmeckt nach nichts"
+          ],
+          "c": 0,
+          "e": "Langsames COMT heißt: Dopamin wird später abgebaut. Belohnung fühlt sich intensiver an, mit Vor- und Nachteilen."
+        },
+        {
+          "t": "text",
+          "h": "Eine Veranlagung ist kein Schicksal",
+          "p": "Ein erhöhtes Risiko bedeutet nicht, dass du abhängig wirst. Umwelt und Lebensstil spielen ebenfalls eine wichtige Rolle. Das Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Der Bericht empfiehlt allen: die Menge begrenzen, regelmäßig alkoholfreie Tage einlegen, Stress gesund abbauen und dich mit Menschen umgeben, die dich dabei unterstützen. Merkst du, dass dir das Aufhören schwerfällt, ist es in Ordnung, Hilfe zu suchen, etwa bei einer Ärztin, einem Psychologen oder in einer Selbsthilfegruppe."
+        },
+        {
+          "t": "video",
+          "id": "n1jkxseJBf4",
+          "start": 82.0,
+          "end": 97.4,
+          "file": "clips/alkohol_3.mp4",
+          "tag": "Animation",
+          "cap": "Was das für dich bedeutet",
+          "ai": true
+        },
+        {
+          "t": "quiz",
+          "q": "Was empfiehlt der Bericht, unabhängig vom Ergebnis?",
+          "o": [
+            "Einfach weitermachen wie bisher",
+            "Die Menge begrenzen und regelmäßig alkoholfreie Tage einlegen",
+            "Nur am Wochenende, dafür mehr",
+            "Auf Stressabbau verzichten"
+          ],
+          "c": 1,
+          "e": "Ein bewusster Umgang mit Alkohol ist für alle sinnvoll. Mit einer ungünstigen Veranlagung wird er noch wichtiger."
+        },
+        {
+          "t": "result"
+        }
+      ],
+      "result": {
+        "story": "Alkohol",
+        "report": "Lifestyle-Bericht · Entgiften",
+        "E": {
+          "pill": "Normales Risiko",
+          "title": "Risiko für Alkoholabhängigkeit normal",
+          "text": "Deine COMT-Gene bauen Dopamin in normaler Geschwindigkeit ab. Dein genetisches Risiko, alkoholabhängig zu werden, ist nicht erhöht.",
+          "rec": "Ein bewusster Umgang mit Alkohol bleibt trotzdem sinnvoll: die Menge begrenzen und regelmäßig alkoholfreie Tage einlegen."
+        },
+        "B": {
+          "pill": "Leicht erhöht",
+          "title": "Risiko für Alkoholabhängigkeit leicht erhöht",
+          "text": "Deine Gene machen dich etwas anfälliger für eine Alkoholabhängigkeit. Dein genetisches Risiko ist leicht erhöht.",
+          "rec": "Dieses Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Alkoholfreie Tage, gesunder Stressabbau und ein unterstützendes Umfeld können dich dabei stärken."
+        },
+        "D": {
+          "pill": "Erhöht",
+          "title": "Risiko für Alkoholabhängigkeit erhöht",
+          "text": "Deine Gene machen dich anfälliger für eine Alkoholabhängigkeit. Dein genetisches Risiko ist erhöht.",
+          "rec": "Eine Veranlagung ist kein Schicksal. Weniger trinken, alkoholfreie Tage und Vorsicht bei Glücksspiel können sinnvoll sein. Fällt dir das Aufhören schwer, ist es in Ordnung, dir Hilfe zu holen."
+        },
+        "N": {
+          "pill": "Noch nicht analysiert",
+          "title": "Diese Analyse hast du noch nicht",
+          "text": "Wie deine Gene dein Belohnungssystem beeinflussen, zeigt die Gene Story „Alkohol“ im Entgiften-Teil des Lifestyle-Berichts.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du beim Thema Alkohol besonders achtsam sein solltest."
+        }
+      },
+      "images": [
+        {
+          "key": "l_alkohol_belohnung",
+          "prompt": "A translucent brain softly glowing with golden dopamine particles, a delicate wine glass silhouette dissolving into light beside it, calm and non-judgmental."
+        },
+        {
+          "key": "l_alkohol_kopien",
+          "prompt": "Two DNA strands side by side, one with a quick flowing golden current and one with a slow, lingering glow, symbolizing fast and slow enzyme versions."
+        }
+      ],
+      "sources": [
+        "Report Studio story-alk (Lifestyle-Bericht, Alkohol): Ergebnis-Titel, COMT (rs4680), Mechanismus Dopamin/Noradrenalin, Empfehlungen inkl. Unterstützung suchen",
+        "OM-Blöcke 106835 / 106697 / 106700 (Titel E / B / D)",
+        "Hauptvideo eOqrJicdJZM 1:56,5–2:50,1, Clip alkohol_1",
+        "Video n1jkxseJBf4 0:28,3–1:09,9 und 1:22,0–1:37,4 (DE-Animation, KI-Stimme), Clips alkohol_2 und alkohol_3; 85 % / 15 % und drei- bis viermal langsamer aus diesem Video"
+      ],
+      "open_questions": [
+        "Das Kapitel heißt im Studio „Alkohol“, in der Recherche „Alkohol und Drogen“ (zweiter Balken DNA_TOXO_CANA zu Cannabis und Schizophrenie). Der Cannabis-Balken ist bewusst nicht Teil dieser Lektion. Eigene Lektion gewünscht?",
+        "85 % / 15 % und „drei- bis viermal langsamer“ stammen aus der Animation, nicht aus dem Alkohol-Kapitel. Die Burnout-Gentabelle (gleiches Gen COMT rs4680) nennt ebenfalls 15 % mit zwei veränderten Genen.",
+        "Die Studienzahlen der Animation (27 % mehr Alkohol, 2,5-faches Risiko, 1:10–1:21) sind bewusst ausgelassen.",
+        "alkohol_1 stammt aus dem Burnout-Hauptvideo (Alkohol hat kein eigenes Hauptvideo). Er überschneidet sich nicht mit den Burnout-Clips."
+      ]
     }
-   ],
-   "result": {
-    "story": "Wirkung von Omega-3 auf HDL-Cholesterin",
-    "report": "Lifestyle-Bericht · Gesund ernähren",
-    "E": {
-     "pill": "Omega-3 wirkt",
-     "title": "Omega-3 verbessert HDL-Cholesterin",
-     "text": "Deine APOA1-Gene arbeiten mit Omega-3 zusammen. Mehrfach ungesättigte Fettsäuren heben dein gutes HDL-Cholesterin deutlich an.",
-     "rec": "Omega-3 aus fettem Fisch, Walnüssen und Pflanzenölen kann für dich ein wirksamer Weg sein, deine Cholesterinwerte zu verbessern."
-    },
-    "B": {
-     "pill": "Wirkt etwas",
-     "title": "Omega-3 verbessert HDL-Cholesterin etwas",
-     "text": "Deine APOA1-Gene arbeiten eingeschränkt, aber ausreichend gut. Omega-3 hebt dein HDL-Cholesterin etwas, aber weniger stark als bei anderen Menschen.",
-     "rec": "Omega-3 bleibt für dich sinnvoll. Einen Teil davon durch Phytosterole zu ersetzen, kann deine Cholesterinwerte zusätzlich unterstützen."
-    },
-    "D": {
-     "pill": "Kein HDL-Effekt",
-     "title": "Omega-3 hat keinen positiven Effekt auf HDL-Cholesterin",
-     "text": "Deine APOA1-Gene reagieren nicht auf Omega-3. Zusätzliches Omega-3 hebt dein HDL-Cholesterin nicht weiter an.",
-     "rec": "Für Herz, Gefäße und Triglyceride bleibt Omega-3 trotzdem wertvoll. Um dein Cholesterin zu verbessern, können Phytosterole die passendere Wahl sein."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Ob Omega-3 dein gutes Cholesterin hebt, zeigt die Gene Story „Wirkung von Omega-3 auf HDL-Cholesterin“ in der Ernährungsanalyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Fischöl bei dir das HDL verbessert oder ob Phytosterole der bessere Weg sind."
-    }
-   },
-   "images": [
-    {
-     "key": "l_hdl_muellabfuhr",
-     "prompt": "Tiny translucent HDL particles shaped like little collector vessels gathering golden cholesterol droplets in a bloodstream and carrying them toward a glowing liver."
-    },
-    {
-     "key": "l_hdl_varianten",
-     "prompt": "Omega-3 droplets from a fish oil capsule meeting two pairs of DNA strands: one pair lights up and releases more cholesterol-collecting particles, the other pair stays dim."
-    }
-   ],
-   "sources": [
-    "Report Studio story-omega3 (Lifestyle-Bericht, Wirkung von Omega-3 auf HDL-Cholesterin): Ergebnis-Titel, APOA1 (rs670) 4 % / 30 % / 66 %, Müllabfuhr-Bild, Phytosterole, Empfehlungstexte",
-    "OM-TextBlock ND_WP „Omega 3 verschlechtert HDL-Cholesterin“ = „Omega-3 hat keinen positiven Effekt auf HDL-Cholesterin“",
-    "Video q5RLfiwj88Y 0:15,6–0:57,3 und 0:58,2–1:13,4 (DE-Animation, KI-Stimme), Clips hdl_1 und hdl_2"
-   ],
-   "open_questions": [
-    "Kein Hauptvideo-Ausschnitt: Omega-3 und HDL kommen in keinem der langen Hauptvideos vor. Beide Clips stammen aus der deutschen Animation.",
-    "Die Animation sagt in hdl_1, manche Studien zeigten sogar eine Verschlechterung des HDL. Der Berichtstext ist entschärft („kein positiver Effekt“). Clip bei 0:51 enden lassen?",
-    "Titel D: Studio-Ergebnisseite und OM-Block sagen „Omega-3 hat keinen positiven Effekt auf HDL-Cholesterin“, die Studio-Übersichtskarte sagt „Omega-3 hat keinen Effekt auf HDL-Cholesterin“. Verwendet: Wortlaut der Ergebnisseite."
-   ]
-  },
-  {
-   "id": "ldl",
-   "station": "herz",
-   "title": "Wie deine Gene das LDL-Cholesterin filtern",
-   "minutes": 6,
-   "formula": "DNA_NUTRITION_LDL",
-   "scalebar": "DNA_NUTRITION_LDL_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Gleiches Frühstück, andere Werte",
-     "p": "Manche Menschen essen viel Ei, Butter und Käse und haben trotzdem gute Cholesterinwerte. Bei anderen steigt das LDL schon bei wenig davon. Woran liegt das?"
-    },
-    {
-     "t": "video",
-     "id": "hjObdjQaguw",
-     "start": 0.9,
-     "end": 35.6,
-     "file": "clips/ldl_1.mp4",
-     "tag": "Animation",
-     "cap": "Warum LDL das schlechte Cholesterin heißt",
-     "ai": true
-    },
-    {
-     "t": "img",
-     "img": "l_ldl_greifarme",
-     "h": "Zwei Quellen, ein Filter",
-     "p": "Cholesterin bekommst du über die Nahrung, und dein Körper stellt es auch selbst her. Das LDL verteilt es von der Leber über das Blut im Körper. Bleibt zu viel LDL im Blut, lagert es sich an den Gefäßwänden ab. Deshalb heißt es schlechtes Cholesterin. Regulierungsgene wie LDLR bauen auf deinen Leberzellen eine Art Greifarme. Sie fischen das LDL aus dem Blut."
-    },
-    {
-     "t": "quiz",
-     "q": "Woher kommt das Cholesterin in deinem Blut?",
-     "o": [
-      "Nur aus der Nahrung",
-      "Nur aus Nahrungsergänzung",
-      "Aus der Nahrung und aus der eigenen Produktion im Körper",
-      "Aus dem Sonnenlicht"
-     ],
-     "c": 2,
-     "e": "Es gibt zwei Quellen: das Essen und die Produktion im eigenen Körper. Die Regulierungsgene sorgen dafür, dass der Wert nicht zu hoch wird."
-    },
-    {
-     "t": "img",
-     "img": "l_ldl_varianten",
-     "h": "Wenn der Filter schwächer ist",
-     "p": "Dein Bericht wertet dafür mehrere Gene aus, zum Beispiel LDLR und APOB. Funktionieren sie, filtern sie genug LDL aus dem Blut. Sind sie verändert, bleibt mehr LDL im Blut und dasselbe Essen lässt den Wert stärker steigen. Dazu kommt das APOE-Gen mit Typen wie E2, E3 und E4. Rund zwei Drittel der Menschen haben den Normaltyp E3/E3."
-    },
-    {
-     "t": "quiz",
-     "q": "Was passiert, wenn die Regulierungsgene verändert sind?",
-     "o": [
-      "Das LDL wird schneller abgebaut",
-      "Mehr LDL bleibt im Blut",
-      "Der Körper bildet kein Cholesterin mehr",
-      "Das HDL steigt automatisch"
-     ],
-     "c": 1,
-     "e": "Veränderte Gene filtern zu wenig LDL aus dem Blut. Der Wert steigt leichter an."
-    },
-    {
-     "t": "text",
-     "h": "Gene helfen, entscheiden aber nicht allein",
-     "p": "Gute Gene machen hohe LDL-Werte nicht unmöglich. Ein ungesunder Lebensstil kann sie trotzdem steigen lassen. Und je weniger deine Gene mithelfen, desto mehr zählt deine Ernährung: weniger Trans-Fette und gesättigte Fette, mehr grünes Gemüse, Vollkorn, Hülsenfrüchte und Nüsse. Auch die mediterrane Küche mit Olivenöl und Fisch gilt als gut geeignet."
-    },
-    {
-     "t": "video",
-     "id": "hjObdjQaguw",
-     "start": 36.9,
-     "end": 63.9,
-     "file": "clips/ldl_2.mp4",
-     "tag": "Animation",
-     "cap": "Wie Greifarme das LDL aus dem Blut ziehen",
-     "ai": true
-    },
-    {
-     "t": "quiz",
-     "q": "Welche Ernährung hilft laut Bericht, das LDL-Cholesterin zu senken?",
-     "o": [
-      "Viel Fast Food mit Trans-Fetten",
-      "Möglichst viele tierische Fette",
-      "Nur Obst, sonst nichts",
-      "Pflanzenbetont mit Gemüse, Vollkorn, Hülsenfrüchten und Nüssen"
-     ],
-     "c": 3,
-     "e": "Eine pflanzenbetonte, mediterrane Küche mit wenig Trans- und gesättigten Fetten unterstützt deine LDL-Werte."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Regulierung von LDL-Cholesterin",
-    "report": "Lifestyle-Bericht · Gesund ernähren",
-    "E": {
-     "pill": "Gut reguliert",
-     "title": "LDL-Cholesterinregulierung in Ordnung",
-     "text": "Deine Regulierungsgene filtern ausreichend LDL-Cholesterin aus deinem Blut. Dein genetisches Risiko für erhöhte LDL-Werte ist gering.",
-     "rec": "Spezielle Ernährungsregeln brauchst du dafür nicht. Eine pflanzenbetonte, mediterrane Küche bleibt trotzdem eine gute Wahl."
-    },
-    "B": {
-     "pill": "Eingeschränkt",
-     "title": "LDL-Cholesterinregulierung eingeschränkt",
-     "text": "Deine Gene filtern etwas zu wenig LDL-Cholesterin aus deinem Blut. Dein Risiko für erhöhte LDL-Werte ist leicht erhöht.",
-     "rec": "Achte darauf, nicht zu viel Cholesterin über die Nahrung aufzunehmen. Weniger Trans- und gesättigte Fette sowie Omega-3 und Phytosterole können dich unterstützen."
-    },
-    "D": {
-     "pill": "Stark eingeschränkt",
-     "title": "LDL-Cholesterinregulierung stark eingeschränkt",
-     "text": "Deine Gene filtern zu wenig LDL-Cholesterin aus deinem Blut. Dein Risiko für erhöhte LDL-Werte ist erhöht.",
-     "rec": "Für dich ist die Ernährung ein besonders wichtiger Hebel: wenig Trans- und gesättigte Fette, viel Pflanzliches. Besprich deine Blutfettwerte mit deiner Ärztin oder deinem Arzt."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie gut deine Gene das LDL-Cholesterin aus dem Blut filtern, zeigt die Gene Story „Regulierung von LDL-Cholesterin“ in der Ernährungsanalyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie stark deine Ernährung bei deinen Cholesterinwerten zählt."
-    }
-   },
-   "images": [
-    {
-     "key": "l_ldl_greifarme",
-     "prompt": "A translucent liver cell with delicate golden grabbing arms on its surface, catching LDL cholesterol particles out of a flowing bloodstream."
-    },
-    {
-     "key": "l_ldl_varianten",
-     "prompt": "Two side-by-side blood vessels: in one, LDL particles are filtered out by glowing receptor arms; in the other, broken receptor arms let particles pile up along the vessel wall."
-    }
-   ],
-   "sources": [
-    "Report Studio story-ldl (Lifestyle-Bericht, Regulierung von LDL-Cholesterin): Ergebnis-Titel, Mechanismus, Gene LDLR (rs688) und APOB (rs5742904), Empfehlungstexte",
-    "OM-TextBlock 105285 (APOE / LDLR-Greifarme)",
-    "Video hjObdjQaguw 0:00,9–0:35,6 und 0:36,9–1:03,9 (DE-Animation, KI-Stimme), Clips ldl_1 und ldl_2",
-    "APOE-Typen und E3/E3 rund zwei Drittel: Daniels Schulungsvideo g7kP9S66Wbo (nur als Textquelle, kein Clip)"
-   ],
-   "open_questions": [
-    "Kein Hauptvideo-Ausschnitt: LDL-Cholesterin kommt in keinem der langen Hauptvideos vor. Beide Clips stammen aus der deutschen Animation.",
-    "APOE und „rund zwei Drittel E3/E3“ stammen nur aus Daniels Schulungsvideo, nicht aus der Gentabelle des Studio-Kapitels (dort LDLR und APOB). Prüfen, ob APOE in die Formel DNA_NUTRITION_LDL eingeht, sonst Satz streichen.",
-    "ldl_2 endet bewusst vor dem Satz „Etwa jeder Zehnte hat diesen Fehler in beiden Kopien“, weil diese Zahl nicht im Bericht steht."
-   ]
-  },
-  {
-   "id": "trigly",
-   "station": "herz",
-   "title": "Triglyceride: das andere Fett im Blut",
-   "minutes": 5,
-   "formula": "DNA_NUTRITION_TRIGLYC",
-   "scalebar": "DNA_NUTRITION_TRIGLYC_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Das andere Fett im Blut",
-     "p": "Auf dem Laborzettel stehen neben dem Cholesterin oft auch die Triglyceride. Sie sind eine eigene Form von Fett und dienen deinem Körper als Energiespeicher. Lebenswichtig sind sie, in zu großer Menge aber ungesund für dein Herz. Wie gut dein Körper sie im Griff hat, hängt auch von deinen Genen ab."
-    },
-    {
-     "t": "img",
-     "img": "l_trigly_regler",
-     "h": "Regulierungsgene halten die Werte unten",
-     "p": "Triglyceride nimmst du mit der Nahrung auf, und dein Körper bildet sie auch selbst. Regulierungsgene arbeiten dagegen und senken die Triglyceride im Blut. Ein wichtiges davon ist das APOA5-Gen. Funktioniert es, bleibt dein Triglyceridwert in Ordnung."
-    },
-    {
-     "t": "quiz",
-     "q": "Wofür nutzt dein Körper Triglyceride?",
-     "o": [
-      "Als Energiespeicher",
-      "Als Baustein für Knochen",
-      "Zum Transport von Sauerstoff",
-      "Als Botenstoff im Gehirn"
-     ],
-     "c": 0,
-     "e": "Triglyceride sind Fett, das als Energiespeicher dient. Nur in zu großer Menge werden sie zum Problem."
-    },
-    {
-     "t": "img",
-     "img": "l_trigly_varianten",
-     "h": "Fast jeder Dritte ist betroffen",
-     "p": "Das APOA5-Gen funktioniert bei etwa 29 % der Menschen nicht richtig. Dann werden die Triglyceride schlechter gesenkt und können stark ansteigen. Laut Bericht geht diese Veranlagung außerdem mit niedrigeren HDL-Werten einher, also mit weniger gutem Cholesterin."
-    },
-    {
-     "t": "quiz",
-     "q": "Bei wie vielen Menschen funktioniert das APOA5-Gen nicht richtig?",
-     "o": [
-      "Bei fast allen",
-      "Bei etwa 29 %",
-      "Bei etwa 1 %",
-      "Bei niemandem"
-     ],
-     "c": 1,
-     "e": "Bei etwa 29 % der Menschen arbeitet das APOA5-Gen nicht richtig. Ihre Triglyceride steigen leichter an."
-    },
-    {
-     "t": "text",
-     "h": "Was du beeinflussen kannst",
-     "p": "Die Triglyceride, die dein Körper selbst bildet, kannst du kaum steuern. Die aus der Nahrung schon. Zucker in Fertigprodukten und Softdrinks, Weißbrot, Trans-Fette und gesättigte Fette treiben die Werte nach oben, bei beeinträchtigten Genen auch Alkohol. Wichtig: Fettarm allein reicht nicht. Es kommt auf die Qualität der Fette an, etwa Olivenöl und Fisch mit Omega-3. Eine ballaststoffreiche, pflanzenbetonte Ernährung hilft zusätzlich."
-    },
-    {
-     "t": "quiz",
-     "q": "Was hilft laut Bericht, die Triglyceride zu senken?",
-     "o": [
-      "Einfach möglichst fettarm essen",
-      "Softdrinks statt fettiger Speisen",
-      "Weniger Zucker und bessere Fette wie Olivenöl und Fisch",
-      "Mehr Weißbrot"
-     ],
-     "c": 2,
-     "e": "Fettarm allein hilft nicht. Weniger Zucker und gute Fette machen den Unterschied."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Regulierung von Triglyceriden",
-    "report": "Lifestyle-Bericht · Gesund ernähren",
-    "E": {
-     "pill": "Effektiv",
-     "title": "Senkung der Triglyceride effektiv",
-     "text": "Deine Regulierungsgene senken die Triglyceride in deinem Blut ausreichend. Dein genetisches Risiko für erhöhte Triglyceride ist nicht erhöht.",
-     "rec": "Besondere Ernährungsregeln brauchst du dafür nicht. Wenig Zucker und gute Fette bleiben trotzdem gesund."
-    },
-    "B": {
-     "pill": "Leicht eingeschränkt",
-     "title": "Senkung der Triglyceride leicht eingeschränkt",
-     "text": "Deine Gene senken die Triglyceride nur mäßig. Dein Risiko für erhöhte Triglyceride ist leicht erhöht.",
-     "rec": "Es kann sinnvoll sein, weniger Triglyceride über die Nahrung aufzunehmen: weniger Zucker, Weißbrot, Alkohol und gesättigte Fette."
-    },
-    "D": {
-     "pill": "Stark eingeschränkt",
-     "title": "Senkung der Triglyceride stark eingeschränkt",
-     "text": "Deine Gene können die Triglyceride nicht ausreichend senken. Dein Risiko für erhöhte Triglyceride ist erhöht.",
-     "rec": "Für dich zählt die Ernährung besonders: wenig Zucker und schnelle Kohlenhydrate, bessere Fette und viele Ballaststoffe. Besprich deine Blutfettwerte mit deiner Ärztin oder deinem Arzt."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie gut deine Gene die Triglyceride senken, zeigt die Gene Story „Regulierung von Triglyceriden“ in der Ernährungsanalyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie stark Zucker und Fette bei dir auf die Blutfette wirken."
-    }
-   },
-   "images": [
-    {
-     "key": "l_trigly_regler",
-     "prompt": "Golden triglyceride droplets entering a translucent bloodstream from food and from the body, while a glowing DNA-shaped regulator gently pushes their level down."
-    },
-    {
-     "key": "l_trigly_varianten",
-     "prompt": "A transparent energy storage cell filled with golden fat droplets next to a DNA strand with one softly dimmed segment, symbolizing a gene that regulates blood fats."
-    }
-   ],
-   "sources": [
-    "Report Studio story-trigly (Lifestyle-Bericht, Regulierung von Triglyceriden): Ergebnis-Titel, APOA5 (rs662799), 29 %, Empfehlungstexte",
-    "Daniels Schulungsvideo hUFY050zS7k nur als Textquelle (Ballaststoffe, Omega-3), kein Clip"
-   ],
-   "open_questions": [
-    "Kein Hauptvideo-Ausschnitt – Animation nötig. Triglyceride kommen in keinem langen Hauptvideo vor; es gibt nur die englische Animation Triglycerides-and-your-genes_EN.mp4 (unveröffentlicht)."
-   ]
-  },
-  {
-   "id": "homocys",
-   "station": "herz",
-   "title": "Homocystein: der unbekannte Herz-Faktor",
-   "minutes": 5,
-   "formula": "DNA_NUTRITION_HOMOCYSTEINE",
-   "scalebar": "DNA_NUTRITION_HOMOCYSTEINE_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Ein Stoff, den kaum jemand kennt",
-     "p": "Cholesterin kennt jeder, Homocystein kaum jemand. Dabei ist es ähnlich wichtig für dein Herz. Dein Körper braucht es als Baustein für neue Eiweiße. Zu viel davon belastet aber Herz und Gefäße. Wie gut du es abbaust, steht in deinen Genen."
-    },
-    {
-     "t": "img",
-     "img": "l_homocys_wege",
-     "h": "Zwei Wege aus der Gefahrenzone",
-     "p": "Dein Körper hat zwei Wege, um Homocystein unschädlich zu machen. Auf dem ersten wandeln die MTRR-Gene es mit Hilfe von Vitamin B12 in Methionin um, eine Aminosäure, die dein Körper braucht. Auf dem zweiten wird es mit Hilfe von Vitamin B6 zu Cystein. Sind die MTRR-Gene verändert, läuft der erste Weg nur sehr langsam."
-    },
-    {
-     "t": "quiz",
-     "q": "Welches Vitamin unterstützt die MTRR-Gene bei der Umwandlung in Methionin?",
-     "o": [
-      "Vitamin C",
-      "Vitamin D",
-      "Vitamin B12",
-      "Vitamin K"
-     ],
-     "c": 2,
-     "e": "Vitamin B12 hilft den MTRR-Genen, Homocystein in Methionin umzuwandeln. Vitamin B6 ist am zweiten Weg beteiligt."
-    },
-    {
-     "t": "img",
-     "img": "l_homocys_b2",
-     "h": "Die Sache mit Vitamin B2",
-     "p": "In diesem Kapitel gibt es einen zweiten Balken. Vitamin B2 kann Homocystein ebenfalls senken, aber nur dann, wenn die dafür zuständigen MTHFR-Gene nicht intakt sind. Deshalb ist dieser Balken umgedreht: Ein „defektes“ Ergebnis heißt hier, dass dir Vitamin B2 beim Abbau hilft. Bei intakten Genen hat Vitamin B2 keinen Einfluss auf deinen Homocysteinspiegel."
-    },
-    {
-     "t": "quiz",
-     "q": "Wann hilft Vitamin B2, Homocystein zu senken?",
-     "o": [
-      "Immer, bei jedem Menschen",
-      "Nur wenn die MTHFR-Gene nicht intakt sind",
-      "Nur zusammen mit Kaffee",
-      "Nie, B2 hat nichts mit Homocystein zu tun"
-     ],
-     "c": 1,
-     "e": "Vitamin B2 senkt Homocystein nur, wenn die MTHFR-Gene nicht intakt sind. Bei intakten Genen hat es keinen Einfluss."
-    },
-    {
-     "t": "text",
-     "h": "Was Homocystein ansteigen lässt",
-     "p": "Neben den Genen zählen die Nährstoffe. Ein Mangel an Vitamin B12, Vitamin B6 oder Folsäure kann den Homocysteinwert erhöhen. Weitere Ursachen sind zum Beispiel viel Alkohol oder Übergewicht. Vitamin B12 steckt fast nur in tierischen Lebensmitteln wie Fleisch, fettem Seefisch, Käse, Eiern und Milch. Vitamin B6 findest du auch in Vollkorn, Kartoffeln, Hülsenfrüchten und Kohlgemüse."
-    },
-    {
-     "t": "quiz",
-     "q": "Welcher Mangel kann den Homocysteinwert erhöhen?",
-     "o": [
-      "Ein Mangel an Vitamin B12, B6 oder Folsäure",
-      "Ein Mangel an Zucker",
-      "Zu wenig Salz",
-      "Zu wenig Koffein"
-     ],
-     "c": 0,
-     "e": "Die Vitamine B12 und B6 sowie Folsäure helfen beim Abbau. Fehlen sie, kann Homocystein ansteigen."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Herz-Schutz vor Homocystein",
-    "report": "Lifestyle-Bericht · Gesund ernähren",
-    "E": {
-     "pill": "Reicht aus",
-     "title": "Homocysteinregulierung reicht aus",
-     "text": "Deine MTRR-Gene wandeln Homocystein ausreichend schnell in unschädliche Stoffe um, bevor es das Herz belasten kann.",
-     "rec": "Eine gute Versorgung mit Vitamin B12 und B6 bleibt trotzdem gesund."
-    },
-    "B": {
-     "pill": "Beeinträchtigt",
-     "title": "Homocysteinregulierung beeinträchtigt",
-     "text": "Deine Gene können Homocystein nur eingeschränkt regulieren. Die Umwandlung in Methionin läuft langsamer.",
-     "rec": "Mehr Vitamin B6 und B12 in deiner Ernährung kann die Umwandlung unterstützen. Ob dir zusätzlich Vitamin B2 hilft, zeigt der zweite Balken in deinem Bericht."
-    },
-    "D": {
-     "pill": "Funktioniert nicht",
-     "title": "Homocysteinregulierung funktioniert nicht",
-     "text": "Deine Gene können Homocystein nicht ausreichend regulieren. Es wird zu langsam umgewandelt und kann das Herz belasten.",
-     "rec": "Mehr Vitamin B6 und B12 kann die Umwandlung unterstützen. Besprich deinen Homocysteinwert und eine mögliche Nahrungsergänzung mit deiner Ärztin oder deinem Arzt."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie gut dein Körper Homocystein abbaut, zeigt die Gene Story „Herz-Schutz vor Homocystein“ in der Ernährungsanalyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du mehr Vitamin B6 und B12 brauchst und ob dir Vitamin B2 hilft."
-    }
-   },
-   "images": [
-    {
-     "key": "l_homocys_wege",
-     "prompt": "A translucent homocysteine molecule at a fork in a glowing pathway: one branch transforms it into methionine with a small B12 crystal, the other into cysteine with a B6 crystal."
-    },
-    {
-     "key": "l_homocys_b2",
-     "prompt": "A delicate vitamin B2 crystal gently dissolving homocysteine molecules near a DNA strand with a softly dimmed segment, inside a calm translucent heart vessel."
-    }
-   ],
-   "sources": [
-    "Report Studio story-hcy (Lifestyle-Bericht, Herz-Schutz vor Homocystein): Ergebnis-Titel Hauptbalken und B2-Balken, MTRR (rs1801394), zwei Abbauwege, B2 nur bei nicht intakten MTHFR-Genen, Ursachen und Lebensmittel",
-    "Daniels Schulungsvideo TT0PxT6Wc0o nur als Textquelle, kein Clip"
-   ],
-   "open_questions": [
-    "Zweiter Balken DNA_NUTRITION_HOMOCYSTEINE_VITB2_SCALEBAR ist farblich umgedreht: „defekt“ = „Vitamin B2 beeinflusst Homocysteinspiegel positiv“ (gute Nachricht). Die Karte nutzt nur den Hauptbalken (invert: false). Soll der B2-Balken eine eigene Mini-Karte mit invert: true bekommen? Titel B2 laut Bericht: E „Vitamin B2 beeinflusst Homocysteinspiegel nicht“, B „Vitamin B2 beeinflusst Homocysteinspiegel bedingt“, D „Vitamin B2 beeinflusst Homocysteinspiegel positiv“.",
-    "Im Studio hängen die B2-Sätze in den Empfehlungstexten am Hauptzustand (E = B2 ohne Einfluss, D = B2 positiv), obwohl B2 einen eigenen Balken hat. Bitte prüfen.",
-    "Keine Bevölkerungszahlen für MTRR in Bericht oder Video gefunden; Variantenblock daher ohne Prozentangaben.",
-    "Kein Hauptvideo-Ausschnitt – Animation nötig. Homocystein kommt in keinem langen Hauptvideo vor (79MPy6BFqu8 erwähnt bei Folsäure nur die Herzgesundheit); Homocysteine-and-your-genes_EN.mp4 existiert nur englisch (unveröffentlicht)."
-   ]
-  },
-  {
-   "id": "salz",
-   "station": "herz",
-   "title": "Ist Salz für jeden gleich schlecht?",
-   "minutes": 6,
-   "formula": "DNA_NUTRITION_SALT",
-   "scalebar": "DNA_NUTRITION_SALT_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Weniger Salz, niedrigerer Blutdruck?",
-     "p": "Diesen Rat hast du sicher schon gehört. Ganz so einfach ist es aber nicht."
-    },
-    {
-     "t": "video",
-     "id": "vnMSYJRUVns",
-     "start": 0.3,
-     "end": 21.9,
-     "file": "clips/salz_1.mp4",
-     "tag": "Animation",
-     "cap": "Ist Salz wirklich für jeden schlecht?",
-     "ai": true
-    },
-    {
-     "t": "img",
-     "img": "l_salz_wasser",
-     "h": "Warum Salz den Druck erhöht",
-     "p": "Je mehr Salz im Körper ist, desto mehr Flüssigkeit braucht er. Um das Salz schnell über die Nieren aus dem Blut zu spülen, erhöht dein Körper den Blutdruck. Wie stark er das tut, beeinflusst das AGT-Gen."
-    },
-    {
-     "t": "video",
-     "id": "vnMSYJRUVns",
-     "start": 22.3,
-     "end": 55.5,
-     "file": "clips/salz_2.mp4",
-     "tag": "Animation",
-     "cap": "Ein Lautstärkeregler für Salz",
-     "ai": true
-    },
-    {
-     "t": "quiz",
-     "q": "Warum erhöht der Körper nach viel Salz den Blutdruck?",
-     "o": [
-      "Um das Salz über die Nieren auszuspülen",
-      "Um mehr Salz zu speichern",
-      "Weil Salz den Magen reizt",
-      "Um die Muskeln zu wärmen"
-     ],
-     "c": 0,
-     "e": "Der höhere Druck hilft, das Salz über die Nieren aus dem Blut zu spülen. Bei manchen Genen fällt diese Reaktion stärker aus."
-    },
-    {
-     "t": "img",
-     "img": "l_salz_regler",
-     "h": "Ein Lautstärkeregler für Salz",
-     "p": "Du hast zwei Kopien des AGT-Gens. Mit der unempfindlichen Version schützt dich das Gen: Salz wirkt schwächer auf deinen Blutdruck. Mit der empfindlichen Version ist der Regler aufgedreht. Dasselbe Salz erhöht den Blutdruck dann etwa doppelt so stark."
-    },
-    {
-     "t": "quiz",
-     "q": "Welches Gen beeinflusst, wie stark Salz deinen Blutdruck erhöht?",
-     "o": [
-      "MTHFR",
-      "AGT",
-      "COMT",
-      "APOA1"
-     ],
-     "c": 1,
-     "e": "Das AGT-Gen wirkt wie ein Lautstärkeregler für die Wirkung von Salz auf den Blutdruck."
-    },
-    {
-     "t": "text",
-     "h": "Wo das Salz wirklich steckt",
-     "p": "Mehr als 70 % des täglichen Salzes stammen aus verarbeiteten Lebensmitteln, Fertiggerichten, Fast Food und dem Essen außer Haus. Auch Brot, Wurst und manche Käsesorten sind salzig. Die WHO empfiehlt höchstens 5 g Salz pro Tag. Frisch kochen und mit Kräutern, Pfeffer oder Chili würzen hilft beim Sparen. Reduzierst du schrittweise, gewöhnen sich deine Geschmacksnerven daran."
-    },
-    {
-     "t": "video",
-     "id": "vnMSYJRUVns",
-     "start": 56.0,
-     "end": 72.9,
-     "file": "clips/salz_3.mp4",
-     "tag": "Animation",
-     "cap": "Was das für dich bedeutet",
-     "ai": true
-    },
-    {
-     "t": "quiz",
-     "q": "Woher stammt laut Bericht der Großteil des Salzes, das wir essen?",
-     "o": [
-      "Aus dem Salzstreuer am Tisch",
-      "Aus Obst und Gemüse",
-      "Aus dem Leitungswasser",
-      "Aus verarbeiteten Lebensmitteln und Fertiggerichten"
-     ],
-     "c": 3,
-     "e": "Mehr als 70 % stecken in verarbeiteten Lebensmitteln. Frisch kochen ist deshalb der wirksamste Weg zum Salzsparen."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Kochsalz und Blutdruck",
-    "report": "Lifestyle-Bericht · Gesund ernähren",
-    "E": {
-     "pill": "Kaum Einfluss",
-     "title": "Kochsalz trägt kaum zu erhöhtem Blutdruck bei",
-     "text": "Deine AGT-Gene schützen dich gut vor der blutdruckerhöhenden Wirkung von Kochsalz. Salz hat bei dir nur wenig Einfluss auf den Blutdruck.",
-     "rec": "Übliche Mengen Salz sind für dich kein besonderes Problem. Sehr viel Salz ist trotzdem für niemanden gesund."
-    },
-    "B": {
-     "pill": "Mäßiger Einfluss",
-     "title": "Kochsalz trägt mäßig zu erhöhtem Blutdruck bei",
-     "text": "Deine Gene schützen dich nur eingeschränkt vor Kochsalz. Salz kann deinen Blutdruck mäßig ansteigen lassen.",
-     "rec": "Es kann sinnvoll sein, Salz und salzhaltige Lebensmittel zu reduzieren, vor allem Fertigprodukte."
-    },
-    "D": {
-     "pill": "Starker Einfluss",
-     "title": "Kochsalz trägt zu erhöhtem Blutdruck bei",
-     "text": "Deine Gene schützen dich nicht vor einem übermäßigen Anstieg des Blutdrucks durch Kochsalz.",
-     "rec": "Weniger Salz ist für dich ein besonders wirksamer Hebel. Besprich deinen Blutdruck mit deiner Ärztin oder deinem Arzt."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie stark Salz deinen Blutdruck beeinflusst, zeigt die Gene Story „Kochsalz und Blutdruck“ in der Ernährungsanalyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Salzsparen für dich ein großer oder ein kleiner Hebel ist."
-    }
-   },
-   "images": [
-    {
-     "key": "l_salz_wasser",
-     "prompt": "Salt crystals in a translucent blood vessel drawing water molecules toward them, while a softly glowing kidney filters them out."
-    },
-    {
-     "key": "l_salz_regler",
-     "prompt": "An elegant golden volume dial made of a DNA helix, with salt crystals on one side and a translucent pressure wave in a blood vessel on the other."
-    }
-   ],
-   "sources": [
-    "Report Studio story-salz und nut-overview (OM 104546 / 104547 / 104548): Ergebnis-Titel, AGT (rs699), Mechanismus, 70 %, WHO 5 g, Würztipps",
-    "Video vnMSYJRUVns 0:00,3–0:21,9 / 0:22,3–0:55,5 / 0:56,0–1:12,9 (DE-Animation, KI-Stimme), Clips salz_1 bis salz_3; „etwa doppelt so stark“ aus diesem Video"
-   ],
-   "open_questions": [
-    "Kein Hauptvideo-Ausschnitt: Kochsalz und Blutdruck kommen in keinem langen Hauptvideo vor. Alle drei Clips stammen aus der deutschen Animation.",
-    "salz_1 sagt, die meisten essen etwa doppelt so viel Salz, wie die WHO empfiehlt. Das steht so nicht im Bericht (dort nur: höchstens 5 g pro Tag). Bitte bestätigen.",
-    "salz_3 endet mit „Übertreib es nur [nicht]“, das Ende des Satzes ist im Untertitel abgeschnitten. Bitte gegenhören.",
-    "Titel B: Die Studio-Kapitelseite (rd-heading__salz_n205) zeigt „Kochsalz trägt zu erhöhtem Blutdruck bei“ mit „mäßig“-Text; die OM-Blöcke trennen B „mäßig“ und D „zu erhöhtem Blutdruck“. Verwendet: OM-Wortlaut. Eine eigene D-Ergebnisseite fehlt im Studio.",
-    "„Etwa doppelt so stark“ stammt nur aus der Animation, nicht aus dem Bericht. Bitte bestätigen.",
-    "Im Beispiel-Formel-Output war DNA_NUTRITION_SALT_DEFECTIVE_HIDER = Show bei Stufe 05 (Recherche 01, Abschnitt 4.3). Für die Karte gilt der HIDER-Zustand."
-   ]
-  },
-  {
-   "id": "burnout",
-   "station": "gehirn",
-   "title": "Stress und Burnout: was deine Gene verraten",
-   "minutes": 7,
-   "formula": "DNA_BURNOUT",
-   "scalebar": "DNA_BURNOUT_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Warum hält der eine mehr Stress aus?",
-     "p": "Zwei Kolleginnen, gleicher Job, gleicher Druck. Die eine bleibt gelassen, die andere ist nach ein paar Wochen ausgelaugt. Nicht jeder reagiert auf dieselbe Belastung gleich. Wie dein Kopf mit Stress umgeht, liegt auch an deinen Genen."
-    },
-    {
-     "t": "video",
-     "id": "eOqrJicdJZM",
-     "start": 10.5,
-     "end": 25.9,
-     "file": "clips/burnout_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, wie ein Burnout entsteht",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_burnout_dopamin",
-     "h": "Nach der Aufregung muss Dopamin weg",
-     "p": "Erlebst du etwas Aufregendes oder Stressiges, schüttet dein Gehirn Dopamin aus. Dieser Botenstoff gibt die Nachricht von Zelle zu Zelle weiter, bis das ganze Gehirn Bescheid weiß. Ist die Situation vorbei, muss das Dopamin wieder abgebaut werden, damit dein Gehirn zur Ruhe kommt. Das erledigt das Enzym COMT. Gebildet wird es von deinen COMT-Genen."
-    },
-    {
-     "t": "video",
-     "id": "eOqrJicdJZM",
-     "start": 186.1,
-     "end": 243.7,
-     "file": "clips/burnout_2.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Was passiert, wenn das Gehirn nach Stress nicht zur Ruhe kommt",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was macht das Enzym COMT im Gehirn?",
-     "o": [
-      "Es bildet neues Dopamin",
-      "Es baut Dopamin nach der Aufregung wieder ab",
-      "Es speichert Erinnerungen",
-      "Es senkt den Blutzucker"
-     ],
-     "c": 1,
-     "e": "COMT baut Dopamin ab, damit das Gehirn nach Stress wieder in den Ruhezustand kommt."
-    },
-    {
-     "t": "img",
-     "img": "l_burnout_drei",
-     "h": "Drei Eigenschaften, ein Gen",
-     "p": "Arbeiten die COMT-Gene langsamer, bleibt Dopamin länger im Gehirn. Kommt neuer Stress dazu, wird es überstimuliert. Dein Bericht zeigt deshalb drei Balken: deine <b>Leistung in Stresssituationen</b>, deine <b>emotionale Belastbarkeit</b>, also wie sehr dich negative Gefühle belasten, und deine <b>Veranlagung zu Impulsivität</b>. 41 % der Menschen haben zwei effektive COMT-Gene, 44 % ein verändertes und 15 % zwei veränderte."
-    },
-    {
-     "t": "quiz",
-     "q": "Welche drei Eigenschaften zeigt dein Bericht beim Thema Stress?",
-     "o": [
-      "Schlaf, Appetit und Gewicht",
-      "Blutdruck, Puls und Atmung",
-      "Leistung unter Stress, emotionale Belastbarkeit und Impulsivität",
-      "Gedächtnis, Sehkraft und Gehör"
-     ],
-     "c": 2,
-     "e": "Alle drei hängen am Dopamin-Abbau durch COMT. Zusammen zeigen sie, wie gut du mit Stress umgehst."
-    },
-    {
-     "t": "text",
-     "h": "Gene sind kein Schicksal",
-     "p": "Stress dauert meist eine Zeit lang und geht vorbei. Ein Burnout ist ein Dauerzustand: Du fühlst dich emotional, mental und körperlich ausgelaugt, oft ohne Motivation, selbst für Dinge, die dir früher Spaß gemacht haben. Je ungünstiger deine Gene, desto wichtiger wird dein Lebensstil: Grenzen setzen, Pausen einlegen, gut schlafen, Kontakte pflegen und täglich etwa 30 Minuten Bewegung. Bemerkst du über längere Zeit Zeichen wie ständige Erschöpfung, sprich mit deiner Ärztin oder deinem Arzt."
-    },
-    {
-     "t": "video",
-     "id": "eOqrJicdJZM",
-     "start": 33.45,
-     "end": 89.4,
-     "file": "clips/burnout_3.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel über die drei Eigenschaften und die richtige Lebensführung",
-     "ai": false
-    },
-    {
-     "t": "quiz",
-     "q": "Was unterscheidet einen Burnout von normalem Stress?",
-     "o": [
-      "Ein Burnout dauert nur einen Tag",
-      "Stress ist immer gefährlicher",
-      "Es gibt keinen Unterschied",
-      "Ein Burnout ist ein Dauerzustand der Erschöpfung"
-     ],
-     "c": 3,
-     "e": "Stress kommt und geht. Bei einem Burnout bleibt die Erschöpfung, oft zusammen mit Hoffnungslosigkeit und fehlender Motivation."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Stress und Burnout",
-    "report": "Lifestyle-Bericht · Stress und Burnout",
-    "E": {
-     "pill": "Stressfest",
-     "title": "Bessere Leistung in Stresssituationen",
-     "text": "Deine COMT-Gene bauen Dopamin effektiv ab, dein Gehirn kommt nach Stress schnell zur Ruhe. Das bedeutet bessere Leistung unter Druck, hohe emotionale Belastbarkeit und eine geringe Veranlagung zu Impulsivität.",
-     "rec": "Du bist nicht besonders gefährdet, einen Burnout zu erleiden. Pausen, Bewegung und guter Schlaf bleiben trotzdem gute Gewohnheiten."
-    },
-    "B": {
-     "pill": "Etwas empfindlicher",
-     "title": "Etwas schlechtere Leistung in Stresssituationen",
-     "text": "Deine COMT-Gene bauen Dopamin langsamer ab als vorgesehen. Unter Stress leistest du etwas weniger, bist emotional etwas weniger belastbar und neigst etwas mehr zu Impulsivität.",
-     "rec": "Du bist etwas mehr gefährdet als andere. Ein stressarmer Alltag mit Pausen, Bewegung und klaren Grenzen kann für dich besonders sinnvoll sein."
-    },
-    "D": {
-     "pill": "Stressempfindlich",
-     "title": "Schlechtere Leistung in Stresssituationen",
-     "text": "Deine COMT-Gene bauen Dopamin nicht so schnell ab, wie es sollte. Dein Gehirn bleibt nach Stress lange übererregt: geringere Leistung unter Druck, geringe emotionale Belastbarkeit und eine höhere Veranlagung zu Impulsivität.",
-     "rec": "Du bist deutlich mehr gefährdet, einen Burnout zu erleiden. Stress gezielt zu verringern, ist für dich besonders wichtig. Bei anhaltender Erschöpfung sprich mit deiner Ärztin oder deinem Arzt."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie gut dein Gehirn mit Stress umgeht, zeigt die Gene Story „Stress und Burnout“ in der Burnout-Analyse.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie belastbar du unter Druck bist und wie wichtig ein stressarmer Alltag für dich ist."
-    }
-   },
-   "images": [
-    {
-     "key": "l_burnout_dopamin",
-     "prompt": "Translucent brain cells passing glowing golden dopamine particles from one to the next, while small enzyme figures gently clear them away to restore calm."
-    },
-    {
-     "key": "l_burnout_drei",
-     "prompt": "A softly lit translucent brain with three delicate glowing threads running out of it, balanced like a calm scale against a storm of tiny stress sparks."
-    }
-   ],
-   "sources": [
-    "Report Studio story-burnout (Lifestyle-Bericht, Stress und Burnout): Titel der drei Balken je Zustand, COMT (rs4680), 41 % / 44 % / 15 %, Stress vs. Burnout, Empfehlungen",
-    "nut-overview gs-h__n27 „Stress und Burnout“",
-    "Hauptvideo eOqrJicdJZM 0:10,5–0:25,9 / 3:06,1–4:03,7 / 0:33,5–1:29,4, Clips burnout_1 bis burnout_3"
-   ],
-   "open_questions": [
-    "Die Gruppe DNA_BURNOUT hat im Bericht keinen eigenen Ergebnis-Titel, nur die drei Balken-Titel. Für die Karte (Sammelwert DNA_BURNOUT_SCALEBAR) wurden die Titel des ersten Balkens (Leistung in Stresssituationen) verwendet. Titel der anderen Balken: emotionale Belastbarkeit E „Hohe emotionale Belastbarkeit“, B „Etwas geringere emotionale Belastbarkeit“, D „Geringe emotionale Belastbarkeit“; Impulsivität E „Geringe Veranlagung zu Impulsivität“, B „Etwas höhere Veranlagung zu Impulsivität“, D „Hohe Veranlagung zu Impulsivität“. Lieber einen eigenen Sammeltitel?",
-    "burnout_3 enthält Hinweise auf den Bericht („Die, die grün sind …“, „Da steht alles hier“). Bitte prüfen, ob das für Endkunden passt; sonst bei 0:44,0 neu ansetzen und bei 1:04,4 enden.",
-    "burnout_2 erwähnt kurz die Anfälligkeit für Glücksspiel."
-   ]
-  },
-  {
-   "id": "alkohol",
-   "station": "gehirn",
-   "title": "Alkohol und dein Belohnungssystem",
-   "minutes": 6,
-   "formula": "DNA_TOXO",
-   "scalebar": "DNA_NUTRITION_ALCABUSE_SCALEBAR",
-   "invert": false,
-   "blocks": [
-    {
-     "t": "text",
-     "h": "Warum genießen manche mehr?",
-     "p": "Für die meisten Menschen ist ein gelegentliches Glas Wein oder Bier kein Problem. Manchen fällt es aber schwerer, Maß zu halten oder aufzuhören. Das liegt nicht nur am Willen. Ein Teil der Antwort steht in den Genen, genauer: im Belohnungssystem deines Gehirns."
-    },
-    {
-     "t": "video",
-     "id": "eOqrJicdJZM",
-     "start": 116.45,
-     "end": 170.1,
-     "file": "clips/alkohol_1.mp4",
-     "tag": "Originalaufnahme",
-     "cap": "Daniel erklärt, wie das Gehirn Dopamin ausschüttet und wieder abbaut",
-     "ai": false
-    },
-    {
-     "t": "img",
-     "img": "l_alkohol_belohnung",
-     "h": "Das Belohnungssystem",
-     "p": "Wenn etwas Schönes passiert, schüttet dein Gehirn Dopamin aus, den Botenstoff für Belohnung und Motivation. Danach muss es wieder abgebaut werden. Das übernimmt das Enzym COMT, gebildet vom COMT-Gen. Arbeitet es langsamer, bleiben Dopamin und Noradrenalin länger im Gehirn. Das kann beeinflussen, wie du auf Alkohol reagierst, und das Verlangen nach Belohnung verstärken."
-    },
-    {
-     "t": "quiz",
-     "q": "Welcher Botenstoff steht im Mittelpunkt dieser Gene Story?",
-     "o": [
-      "Insulin",
-      "Melatonin",
-      "Dopamin",
-      "Histamin"
-     ],
-     "c": 2,
-     "e": "Dopamin ist der Botenstoff für Belohnung und Motivation. Das COMT-Gen steuert, wie schnell er wieder abgebaut wird."
-    },
-    {
-     "t": "img",
-     "img": "l_alkohol_kopien",
-     "h": "Schnelle und langsame Kopien",
-     "p": "Das COMT-Gen gibt es in einer schnellen und einer langsamen Version. 85 % der Menschen haben mindestens eine schnelle Kopie. 15 % haben zwei langsame: Ihr Gehirn baut Dopamin drei- bis viermal langsamer ab. Schöne Momente fühlen sich für sie intensiver an, sie sind oft neugieriger und aufmerksamer. Gleichzeitig fühlen sich Alkohol und Glücksspiel lohnender an. Deshalb bringen Studien diese Variante mit einem höheren Suchtrisiko in Verbindung."
-    },
-    {
-     "t": "video",
-     "id": "n1jkxseJBf4",
-     "start": 28.3,
-     "end": 69.9,
-     "file": "clips/alkohol_2.mp4",
-     "tag": "Animation",
-     "cap": "Schnelle und langsame Kopien des Gens",
-     "ai": true
-    },
-    {
-     "t": "quiz",
-     "q": "Was bedeutet eine langsame COMT-Version für das Gehirn?",
-     "o": [
-      "Dopamin bleibt länger wirksam",
-      "Das Gehirn bildet kein Dopamin mehr",
-      "Alkohol wird schneller abgebaut",
-      "Alkohol schmeckt nach nichts"
-     ],
-     "c": 0,
-     "e": "Langsames COMT heißt: Dopamin wird später abgebaut. Belohnung fühlt sich intensiver an, mit Vor- und Nachteilen."
-    },
-    {
-     "t": "text",
-     "h": "Eine Veranlagung ist kein Schicksal",
-     "p": "Ein erhöhtes Risiko bedeutet nicht, dass du abhängig wirst. Umwelt und Lebensstil spielen ebenfalls eine wichtige Rolle. Das Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Der Bericht empfiehlt allen: die Menge begrenzen, regelmäßig alkoholfreie Tage einlegen, Stress gesund abbauen und dich mit Menschen umgeben, die dich dabei unterstützen. Merkst du, dass dir das Aufhören schwerfällt, ist es in Ordnung, Hilfe zu suchen, etwa bei einer Ärztin, einem Psychologen oder in einer Selbsthilfegruppe."
-    },
-    {
-     "t": "video",
-     "id": "n1jkxseJBf4",
-     "start": 82.0,
-     "end": 97.4,
-     "file": "clips/alkohol_3.mp4",
-     "tag": "Animation",
-     "cap": "Was das für dich bedeutet",
-     "ai": true
-    },
-    {
-     "t": "quiz",
-     "q": "Was empfiehlt der Bericht, unabhängig vom Ergebnis?",
-     "o": [
-      "Einfach weitermachen wie bisher",
-      "Die Menge begrenzen und regelmäßig alkoholfreie Tage einlegen",
-      "Nur am Wochenende, dafür mehr",
-      "Auf Stressabbau verzichten"
-     ],
-     "c": 1,
-     "e": "Ein bewusster Umgang mit Alkohol ist für alle sinnvoll. Mit einer ungünstigen Veranlagung wird er noch wichtiger."
-    },
-    {
-     "t": "result"
-    }
-   ],
-   "result": {
-    "story": "Alkohol",
-    "report": "Lifestyle-Bericht · Entgiften",
-    "E": {
-     "pill": "Normales Risiko",
-     "title": "Risiko für Alkoholabhängigkeit normal",
-     "text": "Deine COMT-Gene bauen Dopamin in normaler Geschwindigkeit ab. Dein genetisches Risiko, alkoholabhängig zu werden, ist nicht erhöht.",
-     "rec": "Ein bewusster Umgang mit Alkohol bleibt trotzdem sinnvoll: die Menge begrenzen und regelmäßig alkoholfreie Tage einlegen."
-    },
-    "B": {
-     "pill": "Leicht erhöht",
-     "title": "Risiko für Alkoholabhängigkeit leicht erhöht",
-     "text": "Deine Gene machen dich etwas anfälliger für eine Alkoholabhängigkeit. Dein genetisches Risiko ist leicht erhöht.",
-     "rec": "Dieses Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Alkoholfreie Tage, gesunder Stressabbau und ein unterstützendes Umfeld können dich dabei stärken."
-    },
-    "D": {
-     "pill": "Erhöht",
-     "title": "Risiko für Alkoholabhängigkeit erhöht",
-     "text": "Deine Gene machen dich anfälliger für eine Alkoholabhängigkeit. Dein genetisches Risiko ist erhöht.",
-     "rec": "Eine Veranlagung ist kein Schicksal. Weniger trinken, alkoholfreie Tage und Vorsicht bei Glücksspiel können sinnvoll sein. Fällt dir das Aufhören schwer, ist es in Ordnung, dir Hilfe zu holen."
-    },
-    "N": {
-     "pill": "Noch nicht analysiert",
-     "title": "Diese Analyse hast du noch nicht",
-     "text": "Wie deine Gene dein Belohnungssystem beeinflussen, zeigt die Gene Story „Alkohol“ im Entgiften-Teil des Lifestyle-Berichts.",
-     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du beim Thema Alkohol besonders achtsam sein solltest."
-    }
-   },
-   "images": [
-    {
-     "key": "l_alkohol_belohnung",
-     "prompt": "A translucent brain softly glowing with golden dopamine particles, a delicate wine glass silhouette dissolving into light beside it, calm and non-judgmental."
-    },
-    {
-     "key": "l_alkohol_kopien",
-     "prompt": "Two DNA strands side by side, one with a quick flowing golden current and one with a slow, lingering glow, symbolizing fast and slow enzyme versions."
-    }
-   ],
-   "sources": [
-    "Report Studio story-alk (Lifestyle-Bericht, Alkohol): Ergebnis-Titel, COMT (rs4680), Mechanismus Dopamin/Noradrenalin, Empfehlungen inkl. Unterstützung suchen",
-    "OM-Blöcke 106835 / 106697 / 106700 (Titel E / B / D)",
-    "Hauptvideo eOqrJicdJZM 1:56,5–2:50,1, Clip alkohol_1",
-    "Video n1jkxseJBf4 0:28,3–1:09,9 und 1:22,0–1:37,4 (DE-Animation, KI-Stimme), Clips alkohol_2 und alkohol_3; 85 % / 15 % und drei- bis viermal langsamer aus diesem Video"
-   ],
-   "open_questions": [
-    "Das Kapitel heißt im Studio „Alkohol“, in der Recherche „Alkohol und Drogen“ (zweiter Balken DNA_TOXO_CANA zu Cannabis und Schizophrenie). Der Cannabis-Balken ist bewusst nicht Teil dieser Lektion. Eigene Lektion gewünscht?",
-    "85 % / 15 % und „drei- bis viermal langsamer“ stammen aus der Animation, nicht aus dem Alkohol-Kapitel. Die Burnout-Gentabelle (gleiches Gen COMT rs4680) nennt ebenfalls 15 % mit zwei veränderten Genen.",
-    "Die Studienzahlen der Animation (27 % mehr Alkohol, 2,5-faches Risiko, 1:10–1:21) sind bewusst ausgelassen.",
-    "alkohol_1 stammt aus dem Burnout-Hauptvideo (Alkohol hat kein eigenes Hauptvideo). Er überschneidet sich nicht mit den Burnout-Clips."
-   ]
-  }
- ]
+  ]
 }
