@@ -1,0 +1,1202 @@
+{
+ "lessons": [
+  {
+   "id": "kaffee",
+   "station": "leber",
+   "title": "Kaffee: Herzschutz oder Risiko?",
+   "minutes": 6,
+   "formula": "DNA_NUTRITION_COFFEE",
+   "scalebar": "DNA_NUTRITION_COFFEE_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Gesund oder ungesund?",
+     "p": "Für viele beginnt der Tag mit einer Tasse Kaffee. Mal liest du, dass er das Herz schützt, mal, dass er ihm schadet. Beides stimmt, je nachdem, wer ihn trinkt. Wovon das abhängt? Von deinen Genen."
+    },
+    {
+     "t": "video",
+     "id": "79MPy6BFqu8",
+     "start": 79,
+     "end": 135,
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt, warum Kaffee gesund und giftig zugleich ist",
+     "ai": false,
+     "file": "clips/kaffee_1.mp4"
+    },
+    {
+     "t": "img",
+     "img": "l_kaffee_tasse",
+     "h": "Zwei Seiten einer Tasse",
+     "p": "Kaum ein Lebensmittel enthält so viele gesunde Antioxidantien und Polyphenole wie Kaffee. Daneben steckt aber Koffein darin. Pflanzen haben es als Nervengift gegen Insekten entwickelt. Auch für deinen Körper ist Koffein ein Fremdstoff, den er schnell loswerden will."
+    },
+    {
+     "t": "quiz",
+     "q": "Wofür haben Pflanzen Koffein ursprünglich entwickelt?",
+     "o": [
+      "Als Nervengift gegen Insekten",
+      "Als Energiespeicher für den Winter",
+      "Um Bienen anzulocken",
+      "Als Schutz vor Sonnenlicht"
+     ],
+     "c": 0,
+     "e": "Koffein ist ein Nervengift gegen Insekten. Für dich ist es ein Fremdstoff, den dein Körper abbauen muss."
+    },
+    {
+     "t": "img",
+     "img": "l_kaffee_cyp1a2",
+     "h": "CYP1A2: deine Waffe gegen Koffein",
+     "p": "Das Gen CYP1A2 erkennt Koffein und macht es sofort unschädlich. Du hast zwei Kopien davon, eine von deiner Mutter und eine von deinem Vater. 41 % der Menschen haben zwei funktionierende Kopien und bauen Koffein schnell ab. 44 % haben eine funktionierende und eine defekte Kopie, 15 % zwei defekte. Sie bauen Koffein deutlich langsamer ab."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie viele Menschen haben zwei funktionierende CYP1A2-Kopien?",
+     "o": [
+      "Rund 15 %",
+      "Fast alle, rund 95 %",
+      "Rund 41 %",
+      "Kein einziger Mensch"
+     ],
+     "c": 2,
+     "e": "41 % bauen Koffein schnell ab. Die übrigen 59 % haben mindestens eine defekte Kopie."
+    },
+    {
+     "t": "text",
+     "h": "Was das für dein Herz heißt",
+     "p": "Wird Koffein schnell abgebaut, bleiben vor allem die gesunden Stoffe übrig, und Kaffee schützt dein Herz. Bei langsamem Abbau bleibt das Koffein zu lange im Körper. Dann dreht sich der Effekt um: Derselbe Kaffee erhöht das Herzinfarktrisiko. Nur der Zustand dieses einen Gens entscheidet, ob Kaffee für dich gesund oder ungesund ist."
+    },
+    {
+     "t": "video",
+     "id": "79MPy6BFqu8",
+     "start": 157,
+     "end": 222,
+     "tag": "Originalaufnahme",
+     "cap": "Gute Gene, schlechte Gene: derselbe Kaffee, entgegengesetzte Wirkung",
+     "ai": false,
+     "file": "clips/kaffee_2.mp4"
+    },
+    {
+     "t": "text",
+     "h": "Die Alternative: koffeinfreier Kaffee",
+     "p": "Koffeinfreier Kaffee enthält weiterhin die gesunden Antioxidantien, aber kaum Koffein. Für Menschen, die Koffein langsam abbauen, ist er deshalb eine gute Alternative."
+    },
+    {
+     "t": "video",
+     "id": "79MPy6BFqu8",
+     "start": 344,
+     "end": 364,
+     "tag": "Originalaufnahme",
+     "cap": "Daniel zu entkoffeiniertem Kaffee",
+     "ai": false,
+     "file": "clips/kaffee_3.mp4"
+    },
+    {
+     "t": "quiz",
+     "q": "Was ist für Menschen mit defekten CYP1A2-Genen eine gute Alternative?",
+     "o": [
+      "Doppelt so starker Espresso",
+      "Kaffee nur mit viel Zucker",
+      "Energydrinks statt Kaffee",
+      "Koffeinfreier Kaffee"
+     ],
+     "c": 3,
+     "e": "Koffeinfreier Kaffee liefert die gesunden Antioxidantien, ohne dass Koffein lange im Körper bleibt."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Wirkung von Kaffee und Koffein",
+    "report": "Lifestyle-Bericht · Entgiften",
+    "E": {
+     "pill": "Schneller Abbau",
+     "title": "Abbau von Koffein funktioniert",
+     "text": "Deine CYP1A2-Gene bauen Koffein schnell ab, bevor es Schaden anrichten kann. Die gesunden Stoffe im Kaffee kommen dir voll zugute.",
+     "rec": "Kaffee kann für dich ein gesundes Getränk sein. Laut deinem Bericht können zwei bis fünf Tassen am Tag für dich gesund sein."
+    },
+    "B": {
+     "pill": "Langsamer Abbau",
+     "title": "Abbau von Koffein funktioniert eingeschränkt",
+     "text": "Deine CYP1A2-Gene bauen Koffein nur langsam ab. Das Koffein bleibt länger im Körper und schadet mehr, als die gesunden Stoffe nützen.",
+     "rec": "Es kann sinnvoll sein, koffeinhaltigen Kaffee zu reduzieren. Koffeinfreier Kaffee ist eine gute Alternative."
+    },
+    "D": {
+     "pill": "Sehr langsamer Abbau",
+     "title": "Abbau von Koffein funktioniert nicht",
+     "text": "Deine CYP1A2-Gene können Koffein nicht rasch abbauen. Es bleibt lange im Körper und schadet dir mehr, als die gesunden Stoffe im Kaffee nützen.",
+     "rec": "Koffeinhaltigen Kaffee meidest du am besten, wenn möglich. Koffeinfreier Kaffee liefert dir die gesunden Stoffe ohne das Koffein."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie schnell du Koffein abbaust, zeigt die Gene Story „Wirkung von Kaffee und Koffein“ im Lifestyle-Bericht, Kapitel „Entgiften“.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Kaffee dein Herz schützt oder ob koffeinfreier Kaffee die bessere Wahl ist."
+    }
+   },
+   "images": [
+    {
+     "key": "l_kaffee_tasse",
+     "prompt": "A translucent coffee cup split into two halves: one side glowing with round antioxidant molecules, the other holding sharp, spiky caffeine molecules."
+    },
+    {
+     "key": "l_kaffee_cyp1a2",
+     "prompt": "A translucent liver cell where a gold enzyme catches incoming caffeine molecules and dissolves them into harmless particles, while antioxidant molecules float on unharmed."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Coffee & Caffeine“ P-25 bis P-42 (NUT_BC S. 324–341): Kapiteltext, Ergebnistitel/-texte P-31/P-33/P-35, Empfehlungen P-37 bis P-39, Verteilung 41/44/15 % (P-42), Herzinfarktrisiko −50 % (P-27)",
+    "OM-TextBlocks 104475–104477 (Ergebnistitel, wortgleich)",
+    "Hauptvideo 79MPy6BFqu8 1:19–2:15, 2:36–3:41, 5:42–6:04"
+   ],
+   "open_questions": [
+    "Clips jetzt aus dem Hauptvideo „Gesund oder ungesund?“ (Daniel 17.10.: keine Schulungsvideos). Zahlen im Clip 2:36–3:41: ein Drittel weniger / zwei Drittel mehr Herzinfarkt; Bericht P-27 nennt 50 % weniger und +133 % ab vier Tassen. Lektionstext deshalb ohne Prozentzahl – bitte Zahl festlegen.",
+    "Verteilung 41/44/15 % aus dem Bericht; Hauptvideo sagt „ungefähr die Hälfte“ hat weniger gut funktionierende Gene – passt sinngemäß."
+   ]
+  },
+  {
+   "id": "q10",
+   "station": "leber",
+   "title": "Coenzym Q10 – wirkt es bei dir?",
+   "minutes": 6,
+   "formula": "DNA_NUTRITION_Q10",
+   "scalebar": "DNA_NUTRITION_Q10_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Steckt Q10 in deiner Creme umsonst?",
+     "p": "„Die neue Anti-Aging-Creme mit Q10“ – diesen Satz kennst du sicher aus der Werbung. Q10 steckt in Cremes und in Nahrungsergänzung, und dein Körper stellt es sogar selbst her. Ob es bei dir wirkt, hängt davon ab, wie gut deine Gene es aktivieren."
+    },
+    {
+     "t": "video",
+     "id": "5A5XoWH7XKk",
+     "start": 786,
+     "end": 863,
+     "file": "clips/q10haut_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt, wie Q10 aktiviert wird",
+     "ai": false
+    },
+    {
+     "t": "video",
+     "id": "yvh9JKmdNvI",
+     "start": 24,
+     "end": 63,
+     "file": "clips/q10_1.mp4",
+     "tag": "Animation",
+     "cap": "Q10 ist wie eine Batterie, die ein Gen auflädt",
+     "ai": true
+    },
+    {
+     "t": "img",
+     "img": "l_q10_umwandlung",
+     "h": "Erst aufladen, dann schützen",
+     "p": "Q10 ist zunächst inaktiv, ähnlich wie Folsäure. Das Gen NQO1 bildet ein Enzym, das Q10 in die aktive Form umwandelt: Ubiquinol. Erst Ubiquinol ist ein starkes Antioxidans. Es fängt freie Radikale ab, bevor sie deine Zellen beschädigen. NQO1 ist eines von mehreren Enzymen, die Q10 aktivieren können, aber ein sehr wichtiges."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie heißt die aktive Form von Coenzym Q10?",
+     "o": [
+      "Ubiquinol",
+      "Methylfolat",
+      "Koffein",
+      "Superoxid"
+     ],
+     "c": 0,
+     "e": "Ubiquinol ist die aktive, schützende Form. Es macht freie Radikale unschädlich."
+    },
+    {
+     "t": "img",
+     "img": "l_q10_kopien",
+     "h": "Drei Gruppen von Menschen",
+     "p": "Du hast zwei Kopien des NQO1-Gens. 51 % der Menschen haben zwei funktionierende Kopien und wandeln Q10 gut um. Rund 40 % haben eine funktionierende und eine defekte Kopie: Die Umwandlung ist langsamer, aber möglich. Rund 9 % haben zwei defekte Kopien. In Studien hatten diese nur noch 2 % der Umwandlungsfähigkeit gesunder Gene."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie viel Umwandlungsfähigkeit haben zwei defekte NQO1-Kopien in Studien noch?",
+     "o": [
+      "Rund 50 %",
+      "Rund 90 %",
+      "Rund 2 %",
+      "Genau so viel wie gesunde Gene"
+     ],
+     "c": 2,
+     "e": "Nur rund 2 %. Q10 aus Creme oder Kapsel schützt diese Menschen deshalb kaum."
+    },
+    {
+     "t": "text",
+     "h": "Weniger Q10 mit dem Alter",
+     "p": "Am meisten Q10 bildet dein Körper mit etwa 23 Jahren. Bis zum Alter von 80 Jahren sinkt die Produktion um etwa die Hälfte. Viele greifen deshalb zu Nahrungsergänzung oder Cremes mit Q10. Ob es wirkt, entscheiden deine Gene."
+    },
+    {
+     "t": "text",
+     "h": "Wenn Q10 bei dir kaum wirkt",
+     "p": "Dann übernehmen andere Antioxidantien die Aufgabe: Vitamin C, Vitamin E und Alpha-Liponsäure. Sie brauchen NQO1 nicht."
+    },
+    {
+     "t": "quiz",
+     "q": "Was ist sinnvoll, wenn deine Gene Q10 kaum umwandeln?",
+     "o": [
+      "Einfach die doppelte Menge Q10 nehmen",
+      "Auf andere Antioxidantien wie Vitamin C und E setzen",
+      "Ganz auf Obst und Gemüse verzichten",
+      "Q10 nur noch abends einnehmen"
+     ],
+     "c": 1,
+     "e": "Andere Antioxidantien brauchen NQO1 nicht. Sie können den Schutz vor freien Radikalen übernehmen."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Coenzym Q10: das Anti-Aging-Molekül",
+    "report": "Lifestyle-Bericht · Entgiften",
+    "E": {
+     "pill": "Funktioniert",
+     "title": "Coenzym-Q10-Umwandlung funktioniert",
+     "text": "Deine NQO1-Gene wandeln Q10 gut in die aktive Form Ubiquinol um. Q10 ist bei dir ein wirksamer Schutz gegen freie Radikale.",
+     "rec": "Q10 aus Nahrungsergänzung oder Kosmetik kann für dich sinnvoll sein, vor allem wenn du älter wirst."
+    },
+    "B": {
+     "pill": "Eingeschränkt",
+     "title": "Coenzym-Q10-Umwandlung eingeschränkt möglich",
+     "text": "Deine NQO1-Gene wandeln Q10 nur langsam in Ubiquinol um. Q10 wirkt bei dir deutlich schwächer.",
+     "rec": "Andere Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure können für dich die bessere Wahl sein."
+    },
+    "D": {
+     "pill": "Kaum Umwandlung",
+     "title": "Coenzym-Q10-Umwandlung nicht möglich",
+     "text": "Deine NQO1-Gene können Q10 praktisch nicht in Ubiquinol umwandeln. Q10 aus Kapseln oder Cremes schützt dich deshalb kaum.",
+     "rec": "Statt Q10 kann es sinnvoll sein, andere Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure zu erhöhen."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie gut dein Körper Q10 aktiviert, zeigt die Gene Story „Coenzym Q10: das Anti-Aging-Molekül“ im Lifestyle-Bericht, Kapitel „Entgiften“.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich Q10 für dich lohnt oder ob andere Antioxidantien besser passen."
+    }
+   },
+   "images": [
+    {
+     "key": "l_q10_umwandlung",
+     "prompt": "A translucent, empty battery-shaped Q10 molecule being charged by a gold enzyme into a glowing active form that catches small free radicals."
+    },
+    {
+     "key": "l_q10_kopien",
+     "prompt": "Two translucent gene copies side by side, one glowing gold and active, one dim and faded, each trying to charge a small Q10 molecule."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Coenzyme Q10“ P-106 bis P-123 (NUT_BC S. 342–359): Kapiteltexte, Ergebnistitel/-texte P-112/P-114/P-116, Empfehlungen P-118 bis P-120, 51/40/9 % und 2 % Umwandlungsfähigkeit (P-109), Produktion Höchstwert mit 23 Jahren, Halbierung bis 80 (P-108)",
+    "OM-TextBlocks 104511–104513 (Ergebnistitel, wortgleich)",
+    "Animation yvh9JKmdNvI 0:24–1:02 und 1:05–1:23 (KI-Stimme; Clips q10_1, q10_2)"
+   ],
+   "open_questions": [
+    "Fakt laut Auftrag: NQO1 ist eines von mehreren Q10-reduzierenden Enzymen. Der Bericht formuliert absolut („Coenzym Q10 hat somit bei dir keine Wirkung“, „wirkungslos“, P-116/P-120). Die Lektion schreibt „praktisch nicht“/„kaum“ und nennt NQO1 „eines von mehreren“ – Berichtstext sollte geprüft werden.",
+    "Überschneidung mit der Haut-Lektion „q10haut“ (DNA_BEAUTY_Q10): beide erklären NQO1; Texte abstimmen, damit sie sich nicht widersprechen.",
+    "Kein Hauptvideo-Ausschnitt: Die lokalen Hauptvideos (79MPy6BFqu8, 3AvZMAtALlQ, gwmVcvbaNgE, GyIfKaYmLoE, 2QmG2UWqR1Y, eOqrJicdJZM) erwähnen Q10 nicht. Das Beauty-Video 5A5XoWH7XKk hat ein Q10-Kapitel (13:03–15:13), lag beim Schneiden aber nur als unvollständiger Download vor – dort einen Originalclip nachziehen.",
+    "Animation sagt vereinfacht „Ein Gen lädt es auf“ – der Lektionstext ergänzt, dass NQO1 eines von mehreren Enzymen ist. Clip q10_1 endet vor dem abgebrochenen Satz „Etwa jeder Elfte hat zwei defekte …“, Clip q10_2 vor dem Abbinder „Gleiche Creme, andere Wirkung“.",
+    "Animation (0:16, nicht im Clip) nennt „ab etwa 20 Jahren“ – der Lektionstext nutzt den Bericht (Höchstwert mit etwa 23 Jahren).",
+    "Original-Clip aus Beauty-Video 13:06–14:23 (gleiche Datei wie q10haut_1) vorangestellt; Beauty-Video evtl. KI-Dub (Sie-Form) – prüfen."
+   ]
+  },
+  {
+   "id": "verbrannt",
+   "station": "leber",
+   "title": "Grillen, Rauch und deine Entgiftung",
+   "minutes": 6,
+   "formula": "DNA_NUTRITION_DETOXO_BURNED",
+   "scalebar": "DNA_NUTRITION_DETOXO_BURNED_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Trotz Zigaretten 122 Jahre alt?",
+     "p": "Fast jeder kennt jemanden, der raucht und trotzdem steinalt wird. Ist Rauchen also gar nicht so schlimm? Doch, für alle. Wie stark es dir schadet, hängt aber auch von deinen Entgiftungsgenen ab."
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 8,
+     "end": 90,
+     "file": "clips/verbrannt_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erzählt die Geschichte der ältesten Frau der Welt",
+     "ai": false
+    },
+    {
+     "t": "img",
+     "img": "l_verbrannt_pak",
+     "h": "Was in Verbranntem steckt",
+     "p": "Rauch, Ruß, Asche und angebranntes Essen enthalten PAKs, polyzyklische aromatische Kohlenwasserstoffe. Die Gene CYP1A1 und CYP1B1 bauen sie um. Dabei entsteht zuerst ein krebserregendes Zwischenprodukt, das andere Entgiftungsgene gleich danach abbauen."
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 90,
+     "end": 175,
+     "file": "clips/verbrannt_2.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt, wie Gene Verbranntes entgiften",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Was passiert beim ersten Schritt der Entgiftung von PAKs?",
+     "o": [
+      "Sie werden sofort ausgeatmet",
+      "Es entsteht ein krebserregendes Zwischenprodukt",
+      "Sie verwandeln sich in Vitamine",
+      "Sie werden im Fettgewebe gespeichert"
+     ],
+     "c": 1,
+     "e": "Zuerst entsteht ein krebserregendes Zwischenprodukt. Normalerweise wird es gleich danach abgebaut."
+    },
+    {
+     "t": "img",
+     "img": "l_verbrannt_turbo",
+     "h": "Wenn Gene zu fleißig sind",
+     "p": "Bei den meisten Genen bedeutet ein Defekt, dass sie schlechter arbeiten. Hier ist es umgekehrt: Ein häufiger Gendefekt macht CYP1A1 zu aktiv. Die Gene wandeln PAKs dann viel zu schnell um. Das krebserregende Zwischenprodukt staut sich an, weil der nächste Entgiftungsschritt nicht hinterherkommt. Auch eine Variante in CYP1B1 beschleunigt diese Umwandlung und erhöht bei Rauchern das Risiko für Lungenkrebs deutlich."
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 175,
+     "end": 224,
+     "file": "clips/verbrannt_3.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Wenn Entgiftungsgene zu schnell arbeiten",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Was bewirkt der häufige Gendefekt in CYP1A1?",
+     "o": [
+      "Das Gen arbeitet gar nicht mehr",
+      "Das Gen schützt vor Sonnenbrand",
+      "Das Gen baut Koffein ab",
+      "Das Gen arbeitet zu schnell"
+     ],
+     "c": 3,
+     "e": "Das Gen arbeitet zu schnell. Dadurch entsteht mehr krebserregendes Zwischenprodukt, als abgebaut werden kann."
+    },
+    {
+     "t": "text",
+     "h": "Verbranntes meiden – für alle",
+     "p": "Rauchen ist für jeden ungesund, ganz gleich, welche Gene du hast. Weitere Quellen sind Abgase, Kamine, Öfen und Asche auf der Haut. Den Darm belastet vor allem gegrilltes, geräuchertes oder angebranntes Essen. Liegt das Steak zu lange auf dem Grill, bilden sich PAKs. Schonendes Garen sowie Atemschutz und Handschuhe beim Umgang mit Asche und Ruß senken deine Belastung."
+    },
+    {
+     "t": "quiz",
+     "q": "Welche Quelle für PAKs belastet laut Bericht vor allem den Darm?",
+     "o": [
+      "Gegrilltes, geräuchertes oder angebranntes Essen",
+      "Frisches Obst",
+      "Leitungswasser",
+      "Rohes Gemüse"
+     ],
+     "c": 0,
+     "e": "Gegrilltes, Geräuchertes und Angebranntes enthält PAKs. Eine schonende Zubereitung senkt die Menge."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Entgiftung von Verbranntem",
+    "report": "Lifestyle-Bericht · Entgiften",
+    "E": {
+     "pill": "Funktioniert",
+     "title": "Entgiftung von Schadstoffen funktioniert",
+     "text": "Deine Entgiftungsgene wandeln die Schadstoffe aus Verbranntem im richtigen Tempo um. Das krebserregende Zwischenprodukt wird rasch wieder abgebaut.",
+     "rec": "Rauch, Asche und Verbranntes bleiben ungesund, richten bei dir aber keinen übermäßig großen Schaden an. Nicht zu rauchen ist trotzdem immer die beste Wahl."
+    },
+    "B": {
+     "pill": "Eingeschränkt",
+     "title": "Entgiftung von Schadstoffen ist eingeschränkt",
+     "text": "Deine Gene wandeln die Schadstoffe aus Verbranntem etwas zu schnell um. Die krebserregenden Zwischenprodukte reichern sich etwas an.",
+     "rec": "Rauch, Ruß, Asche und verbranntes Essen meidest du am besten, so gut es geht. Schonendes Garen kann dir dabei helfen."
+    },
+    "D": {
+     "pill": "Zu schnell",
+     "title": "Entgiftung von Schadstoffen funktioniert nicht",
+     "text": "Deine Gene wandeln die Schadstoffe aus Verbranntem zu schnell um. Die krebserregenden Zwischenprodukte reichern sich in deinem Körper an.",
+     "rec": "Für dich ist es besonders wichtig, Rauch, Ruß, Asche und verbranntes Essen zu meiden. Nicht rauchen, schonend kochen und bei Asche oder Ruß Atemschutz und Handschuhe tragen."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie gut du Schadstoffe aus Verbranntem entgiftest, zeigt die Gene Story „Entgiftung von Verbranntem“ im Lifestyle-Bericht, Kapitel „Entgiften“.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie stark dir Rauch und Gegrilltes zusetzen."
+    }
+   },
+   "images": [
+    {
+     "key": "l_verbrannt_pak",
+     "prompt": "Smoke rising from a charred grilled steak releases translucent hexagonal PAH molecules that drift toward a glowing translucent liver cell."
+    },
+    {
+     "key": "l_verbrannt_turbo",
+     "prompt": "A translucent enzyme working at high speed, converting molecules so fast that a pile of glowing dangerous intermediates builds up behind it while a slower enzyme struggles to keep up."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Detox of Burnt Compounds“ P-124 bis P-141 (NUT_BC S. 360–377): Kapiteltexte CYP1A1/CYP1B1, PAK-Quellen, Ergebnistitel/-texte P-130/P-132/P-134, Empfehlungen P-136 bis P-138",
+    "OM-TextBlocks 104518–104520 (Ergebnistitel, wortgleich)",
+    "Hauptvideo 3AvZMAtALlQ (ENTGIFTUNG) 0:08–1:29, 1:30–2:54, 2:55–3:44 (Clips verbrannt_1 bis _3)"
+   ],
+   "open_questions": [
+    "Keine Bevölkerungsverteilung im Studio (P-141 ohne Prozentwerte) – Lektion nennt keine Häufigkeit.",
+    "Risikozahl im Hauptvideo (4:12, „zehn mal schlimmer“) liegt hinter Clip 3 und ist nicht enthalten; die Lektion nennt keine Risikozahl.",
+    "Clip 1: Die Zahlen 122 bzw. 115 Jahre und „Rauchen verkürzt die Lebenserwartung im Schnitt um 10 Jahre“ stammen aus Daniels Erzählung, nicht aus dem Bericht. Auto-Untertitel schreiben „Jean Calmont“ (gemeint Jeanne Calment).",
+    "Kein deutsches Animationsvideo (Grilled-Food-and-your-genes nur EN, unveröffentlicht)."
+   ]
+  },
+  {
+   "id": "chemie",
+   "station": "leber",
+   "title": "Entgiftung von Chemikalien",
+   "minutes": 5,
+   "formula": "DNA_NUTRITION_DETOXO_CHEMS",
+   "scalebar": "DNA_NUTRITION_DETOXO_CHEMS_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Lohnt sich Bio für dich?",
+     "p": "Pestizide auf dem Gemüse, Schwermetalle im Fisch, Lösungsmittel in der Werkstatt: Jeden Tag kommst du mit unzähligen Chemikalien in Kontakt. Dein Körper hat dafür ein eigenes Entgiftungsteam. Wie gut es arbeitet, steht in deinen Genen."
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 264,
+     "end": 327,
+     "file": "clips/chemie_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt, wie Gene Schwermetalle und Chemikalien unschädlich machen",
+     "ai": false
+    },
+    {
+     "t": "img",
+     "img": "l_chemie_gst",
+     "h": "Das GST-Team",
+     "p": "Die wichtigsten Gene für diese Aufgabe heißen GSTT1, GSTM1 und GSTP1. Ihre Enzyme binden sich an Schadstoffe und verändern sie chemisch. So werden die Stoffe meist unschädlich und für den Abbau markiert. Leber und Nieren filtern sie dann aus dem Blut und entfernen sie aus dem Körper."
+    },
+    {
+     "t": "quiz",
+     "q": "Welche Organe filtern die markierten Schadstoffe aus dem Blut?",
+     "o": [
+      "Herz und Lunge",
+      "Leber und Nieren",
+      "Magen und Milz",
+      "Haut und Haare"
+     ],
+     "c": 1,
+     "e": "Leber und Nieren filtern die markierten Schadstoffe heraus. Die GST-Gene bereiten sie dafür vor."
+    },
+    {
+     "t": "img",
+     "img": "l_chemie_nullallel",
+     "h": "Wenn ein Gen ganz fehlt",
+     "p": "Meist ist ein Gendefekt ein einzelner falscher Buchstabe. Bei GSTT1 und GSTM1 gibt es eine Besonderheit: Bei manchen Menschen fehlt das Gen komplett. Man nennt das Null-Allel. Die Folge ist dieselbe: Die Aufgabe wird nicht erfüllt. Drei funktionierende Gene schützen am besten, mit jedem Ausfall sinkt der Schutz. Sind alle drei defekt, fehlt er ganz."
+    },
+    {
+     "t": "quiz",
+     "q": "Was bedeutet „Null-Allel“?",
+     "o": [
+      "Das Gen ist doppelt vorhanden",
+      "Das Gen arbeitet besonders schnell",
+      "Das Gen fehlt komplett",
+      "Das Gen wurde im Labor entfernt"
+     ],
+     "c": 2,
+     "e": "Beim Null-Allel fehlt das Gen ganz. Damit fehlt auch seine Schutzfunktion."
+    },
+    {
+     "t": "text",
+     "h": "Bio, Fisch und Mineralien",
+     "p": "Arbeiten deine GST-Gene gut, entgiftet dein Körper Pestizide und Herbizide ausreichend. Sind sie defekt, ist der Griff zu Bio-Lebensmitteln durchaus sinnvoll. Obst und Gemüse gründlich zu waschen hilft allen. Große Meeresfische und Muscheln können viele Schwermetalle enthalten. Bestimmte Mineralien unterstützen die Entgiftung: Kalzium hilft bei Blei, Zink bei Cadmium."
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 327,
+     "end": 361,
+     "file": "clips/chemie_2.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Was hilft, wenn die Entgiftungsgene schwächeln",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Welches Mineral unterstützt laut Bericht die Entgiftung von Cadmium?",
+     "o": [
+      "Zink",
+      "Natrium",
+      "Jod",
+      "Fluor"
+     ],
+     "c": 0,
+     "e": "Zink ist ein wichtiger Baustein für die Cadmium-Entgiftung. Bei Blei hilft Kalzium."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Entgiftung von Chemikalien",
+    "report": "Lifestyle-Bericht · Entgiften",
+    "E": {
+     "pill": "Funktioniert",
+     "title": "Entgiftung von Chemikalien funktioniert",
+     "text": "Deine GST-Gene erkennen Chemikalien und Schwermetalle und machen sie unschädlich. Dein Körper entgiftet sie sehr gut.",
+     "rec": "Besondere Maßnahmen brauchst du hier nicht. Obst und Gemüse gründlich zu waschen ist trotzdem eine gute Gewohnheit."
+    },
+    "B": {
+     "pill": "Eingeschränkt",
+     "title": "Entgiftung von Chemikalien eingeschränkt",
+     "text": "Deine GST-Gene entgiften Chemikalien und Schwermetalle nur langsam. Schadstoffe bleiben länger in deinem Körper.",
+     "rec": "Es kann sinnvoll sein, Lösungsmittel, Herbizide und Pestizide zu meiden und öfter zu Bio zu greifen. Mehr Mineralien können deine Entgiftung unterstützen."
+    },
+    "D": {
+     "pill": "Stark eingeschränkt",
+     "title": "Entgiftung von Chemikalien funktioniert nicht",
+     "text": "Deine GST-Gene können Chemikalien und Schwermetalle nur sehr schlecht entgiften. Schadstoffe können sich in deinem Körper anreichern.",
+     "rec": "Für dich ist es wichtig, Quellen wie Lösungsmittel, Pestizide, große Meeresfische und Muscheln zu kennen und zu meiden. Größere Mengen an Mineralien können deine Entgiftung unterstützen."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie gut du Chemikalien und Schwermetalle entgiftest, zeigt die Gene Story „Entgiftung von Chemikalien“ im Lifestyle-Bericht, Kapitel „Entgiften“.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich Bio-Lebensmittel für dich besonders lohnen."
+    }
+   },
+   "images": [
+    {
+     "key": "l_chemie_gst",
+     "prompt": "Three translucent gold enzymes grabbing tiny pesticide droplets and heavy-metal particles and tagging them for removal toward a softly glowing liver and kidney."
+    },
+    {
+     "key": "l_chemie_nullallel",
+     "prompt": "A translucent DNA strand with one gene segment completely missing, leaving an empty glowing gap next to two intact gold gene segments."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Detox of Chemicals“ P-142 bis P-159 (NUT_BC S. 378–395): GST-Gene, Null-Allel, Bio-Lebensmittel, Ergebnistitel/-texte P-148/P-150/P-152, Empfehlungen P-154 bis P-156 (Blei/Kalzium, Cadmium/Zink)",
+    "OM-TextBlocks 104525–104527 (Ergebnistitel, wortgleich)",
+    "Hauptvideo 3AvZMAtALlQ (ENTGIFTUNG) 4:24–5:26 und 5:27–6:00 (Clips chemie_1, chemie_2)"
+   ],
+   "open_questions": [
+    "Keine Bevölkerungsverteilung im Studio (P-159 nur GSTM1 Null-Allel, ohne Prozentwerte; Spalten „Beide Gene defekt“ doppelt beschriftet) – Lektion nennt keine Häufigkeit.",
+    "Welche Mineralien genau erhöht werden: Bedarfsseite P-157 zeigt Eisen und Selen, die Empfehlungen nennen Kalzium (Blei) und Zink (Cadmium), das Video nur „bestimmte Mineralien“. Keine Dosis genannt.",
+    "Clip chemie_2 enthält Sie-Ansprache („reduzieren Sie ihre Aufnahme … erhöhen Sie ihre Aufnahme“) – inhaltlich passend, aber nicht in Du-Form.",
+    "Clip chemie_1 beginnt bei „Nun sprechen wir über diese Gene hier“ (Überleitung „Der nächste Punkt ist …“ weggeschnitten); „diese Gene hier“ bezieht sich auf eine Folie.",
+    "Kein deutsches Animationsvideo (Detox-and-your-genes nur EN, unveröffentlicht)."
+   ]
+  },
+  {
+   "id": "radikale",
+   "station": "leber",
+   "title": "Schutz vor freien Radikalen",
+   "minutes": 6,
+   "formula": "DNA_NUTRITION_OXIDATIVE_STRESS",
+   "scalebar": "DNA_NUTRITION_OXIDATIVE_STRESS_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Warum lässt dich Sauerstoff altern?",
+     "p": "Ohne Sauerstoff überlebst du keine paar Minuten. Gleichzeitig lässt er Eisen rosten und greift auch deine Zellen an. Warum altern manche Menschen dadurch schneller als andere? Ein Teil der Antwort steht in deinen Genen."
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 375,
+     "end": 460,
+     "file": "clips/radikale_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt freie Radikale und die Feuerwehr deines Körpers",
+     "ai": false
+    },
+    {
+     "t": "img",
+     "img": "l_radikale_feuer",
+     "h": "Kleine Feuer in deinen Zellen",
+     "p": "Etwa 5 % des eingeatmeten Sauerstoffs werden in deinen Zellen zu einem giftigen Abfallprodukt: Superoxid, dem ersten einer Reihe freier Radikale. Ein freies Radikal wirkt wie ein Feuer im trockenen Wald. Der Schaden breitet sich aus und trifft Zellwände, Eiweiße und die DNA. Über Jahrzehnte ist das einer der Gründe, warum wir altern."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie viel des eingeatmeten Sauerstoffs wird zu freien Radikalen?",
+     "o": [
+      "Rund 50 %",
+      "Gar nichts",
+      "Der gesamte Sauerstoff",
+      "Etwa 5 %"
+     ],
+     "c": 3,
+     "e": "Etwa 5 % werden zu Superoxid, dem ersten freien Radikal. Deine Schutzgene sollen es sofort unschädlich machen."
+    },
+    {
+     "t": "img",
+     "img": "l_radikale_feuerwehr",
+     "h": "Deine genetische Feuerwehr",
+     "p": "Schutzgene erkennen freie Radikale und neutralisieren sie, bevor sie Schaden anrichten. Sie arbeiten in verschiedenen Bereichen der Zelle: SOD2 schützt die Mitochondrien, die Kraftwerke deiner Zellen. Die GST-Gene sind in den übrigen Zellregionen aktiv. Sind diese Gene defekt, können freie Radikale ungehindert Schaden anrichten."
+    },
+    {
+     "t": "quiz",
+     "q": "Welchen Teil der Zelle schützt das Gen SOD2?",
+     "o": [
+      "Den Zellkern von außen",
+      "Die Mitochondrien, die Kraftwerke der Zelle",
+      "Nur die Zellwand",
+      "Die Haarwurzeln"
+     ],
+     "c": 1,
+     "e": "SOD2 arbeitet in den Mitochondrien, wo besonders viele freie Radikale entstehen. Andere Schutzgene wie die GST-Gene sind im Rest der Zelle aktiv."
+    },
+    {
+     "t": "text",
+     "h": "Was das Feuer anheizt und was es löscht",
+     "p": "Ein einziger Zug an der Zigarette kann Milliarden freier Radikale freisetzen. Auch Stress, Alkohol, Umweltgifte, ungeschützte Sonnenbäder und Flugreisen erhöhen den oxidativen Stress. Löschen helfen Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure. Zink und Mangan sind Bausteine der körpereigenen Schutzenzyme. Viele Antioxidantien stecken in Orangen, Erdbeeren, Brokkoli, Spinat, Nüssen und Tee."
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 460,
+     "end": 490,
+     "file": "clips/radikale_2.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Wenn die Feuerwehr ausfällt, hilft Regen: Antioxidantien",
+     "ai": false
+    },
+    {
+     "t": "video",
+     "id": "3AvZMAtALlQ",
+     "start": 492,
+     "end": 566,
+     "file": "clips/radikale_3.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Teurer Urin? Warum das so gewollt ist",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Ein Teil der Antioxidantien wird wieder ausgeschieden. Warum ist das kein Widerspruch?",
+     "o": [
+      "Weil Antioxidantien ohnehin nutzlos sind",
+      "Weil Vitamine gar nicht ausgeschieden werden",
+      "Weil sie wie Regen bei einem Waldbrand überall bereitstehen müssen, auch wenn viel versickert",
+      "Weil der Urin die Radikale neutralisiert"
+     ],
+     "c": 2,
+     "e": "Antioxidantien müssen überall im Körper bereitstehen, so wie Regen den ganzen Wald nass macht. Dass ein Teil ausgeschieden wird, gehört dazu."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Alterungsschutz vor oxidativem Stress",
+    "report": "Lifestyle-Bericht · Entgiften",
+    "E": {
+     "pill": "Guter Schutz",
+     "title": "Schutz gegen freie Radikale funktioniert",
+     "text": "Deine Schutzgene erkennen freie Radikale schnell genug und machen sie unschädlich.",
+     "rec": "Eine gesunde, bunte Ernährung reicht bei dir meist aus. Laut deinem Bericht genügt eine geringe Unterstützung mit Antioxidantien wie Vitamin C und Vitamin E."
+    },
+    "B": {
+     "pill": "Eingeschränkt",
+     "title": "Schutz gegen freie Radikale eingeschränkt",
+     "text": "Deine Gene neutralisieren freie Radikale nicht schnell genug. Ein Teil kann Schaden an deinen Zellen anrichten.",
+     "rec": "Größere Mengen an Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure sowie Zink und Mangan können für dich sinnvoll sein."
+    },
+    "D": {
+     "pill": "Schwacher Schutz",
+     "title": "Schutz gegen freie Radikale funktioniert nicht",
+     "text": "Deine Gene können freie Radikale nicht ausreichend und schnell genug neutralisieren. Sie können deine Zellen ungehindert schädigen.",
+     "rec": "Für dich kann eine deutlich höhere Zufuhr an Antioxidantien sinnvoll sein, über viel Obst und Gemüse und gezielte Nahrungsergänzung. Rauchen und Alkohol meidest du am besten."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie gut dich deine Gene vor freien Radikalen schützen, zeigt die Gene Story „Alterungsschutz vor oxidativem Stress“ im Lifestyle-Bericht, Kapitel „Entgiften“.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie viel Unterstützung durch Antioxidantien du brauchst."
+    }
+   },
+   "images": [
+    {
+     "key": "l_radikale_feuer",
+     "prompt": "Tiny glowing sparks of free radicals spreading like a forest fire through a translucent cell, scorching its membrane and DNA strands."
+    },
+    {
+     "key": "l_radikale_feuerwehr",
+     "prompt": "A translucent mitochondrion where small gold enzyme shapes act like fire engines, extinguishing sparks of free radicals with soft gold mist."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Oxidative Stress“ P-160 bis P-178 (NUT_BC S. 396–415): 5 % Sauerstoff/Superoxid, Waldbrand-Bild, Ursachen, SOD2/GST, Ergebnistitel/-texte P-166/P-168/P-170, Empfehlungen P-172 bis P-174",
+    "OM-TextBlocks 104534–104536 (Ergebnistitel, wortgleich)",
+    "Hauptvideo 3AvZMAtALlQ (ENTGIFTUNG) 6:15–7:39, 7:40–8:10, 8:12–9:26 (Clips radikale_1 bis _3)"
+   ],
+   "open_questions": [
+    "Stationstitel „Schutz vor freien Radikalen“, im Bericht heißt die Gene Story „Alterungsschutz vor oxidativem Stress“ (story-Feld wortgleich Bericht).",
+    "Daniels Sportvideo GyIfKaYmLoE nennt 8 % statt 5 % des Sauerstoffs – nicht verwendet; Bericht und Entgiftungsvideo sagen 5 %.",
+    "Überschneidung mit der Haut-Lektion „oxi“ (DNA_BEAUTY_OXISTRESS) – Bildsprache Feuerwehr/Waldbrand abstimmen.",
+    "Verteilung unklar: P-178 (SOD2) zeigt nur 43 % für die mittlere Gruppe – die Lektion nennt keine Häufigkeit.",
+    "Clip radikale_3 enthält Sie-Ansprache („Vielleicht haben Sie Kritiker sagen hören“) und ein Stocken bei 9:05 („es … Es ist kein …“).",
+    "Die Animation Bf-WdkeB7E0 wird nicht mehr verwendet (das Hauptvideo deckt Feuerwehr, Regen und teuren Urin ab)."
+   ]
+  },
+  {
+   "id": "telomere",
+   "station": "alter",
+   "title": "Telomere: die Uhr deiner Zellen",
+   "minutes": 7,
+   "formula": "DNA_BIOLOGICAL_AGE_B2B",
+   "scalebar": "DNA_AGE_TELOMERE_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Wie alt sind deine Zellen wirklich?",
+     "p": "Dein Geburtsdatum verrät dein Alter in Jahren. Wie alt dein Körper wirklich ist, ist eine andere Frage. Manche Menschen wirken deutlich jünger, als sie sind, andere älter. Ein Grund dafür sitzt an den Enden deiner Chromosomen."
+    },
+    {
+     "t": "video",
+     "id": "gwmVcvbaNgE",
+     "start": 91,
+     "end": 170,
+     "file": "clips/telomere_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt Telomere, die Schutzkappen deiner Chromosomen",
+     "ai": false
+    },
+    {
+     "t": "img",
+     "img": "l_telomere_kappen",
+     "h": "Schutzkappen wie am Schnürsenkel",
+     "p": "Deine Gene sitzen auf Chromosomen. An deren Enden sitzen Telomere, Schutzkappen wie die Plastikhülsen an einem Schnürsenkel. Bei jeder Zellteilung wird die ganze DNA kopiert, und dabei geht ein kleines Stück der Telomere verloren. Nach ungefähr 50 bis 70 Teilungen sind sie aufgebraucht. Die Zelle geht dann in einen Schlafmodus und erfüllt ihre Aufgabe nicht mehr."
+    },
+    {
+     "t": "quiz",
+     "q": "Was passiert mit den Telomeren bei jeder Zellteilung?",
+     "o": [
+      "Sie werden ein kleines Stück kürzer",
+      "Sie verdoppeln sich",
+      "Sie bleiben immer gleich lang",
+      "Sie wandern in den Zellkern"
+     ],
+     "c": 0,
+     "e": "Bei jeder Kopie geht ein Stück verloren. Deshalb haben Babys lange und sehr alte Menschen kurze Telomere."
+    },
+    {
+     "t": "img",
+     "img": "l_telomere_tert",
+     "h": "Das Gen TERT hält die Enden lang",
+     "p": "Das Gen TERT bildet die Telomerase. Sie hilft, die Telomere zu erhalten. Arbeitet TERT gut, werden deine Telomere mit dem Alter langsamer kürzer. Bei Gendefekten verlieren die Zellen ihre Enden schneller. Bei TERT haben 70 % der Menschen zwei effektive Kopien, 28 % eine defekte und 2 % zwei defekte. Wer mit ungünstigen Varianten geboren wird, startet schon mit kürzeren Telomeren."
+    },
+    {
+     "t": "video",
+     "id": "gwmVcvbaNgE",
+     "start": 170,
+     "end": 214,
+     "file": "clips/telomere_2.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Ein Gen entscheidet, wie schnell die Telomere kürzer werden",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Wofür sorgt die Telomerase, die das Gen TERT bildet?",
+     "o": [
+      "Sie baut Koffein ab",
+      "Sie aktiviert Folsäure",
+      "Sie färbt die Haare grau",
+      "Sie hilft, die Telomere zu erhalten"
+     ],
+     "c": 3,
+     "e": "Die Telomerase hilft, die Telomere zu erhalten. Arbeitet sie gut, verkürzen sich deine Telomere langsamer."
+    },
+    {
+     "t": "text",
+     "h": "Bremsen, nicht zurückdrehen",
+     "p": "Bestimmte Nährstoffe können schwächer arbeitende Schutzgene unterstützen: Vitamin D3, Omega-3-Fettsäuren, Vitamin E, Resveratrol und Ginkgo. Wichtig: Sie machen kurze Telomere nicht wieder lang und reparieren sie nicht. Sie können aber helfen, dass die Verkürzung langsamer abläuft. Rauchen, Übergewicht, Bewegungsmangel und oxidativer Stress beschleunigen sie dagegen. Aktive Telomerase ist übrigens nicht immer erwünscht: Bei Krebs kann sie die Krankheit fördern."
+    },
+    {
+     "t": "video",
+     "id": "gwmVcvbaNgE",
+     "start": 271,
+     "end": 290,
+     "file": "clips/telomere_3.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Welche Nährstoffe dein Schutzgen unterstützen",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Was können Nährstoffe wie Vitamin D3, Omega-3 und Vitamin E bei Telomeren leisten?",
+     "o": [
+      "Kurze Telomere wieder auf Babylänge bringen",
+      "Die Verkürzung verlangsamen",
+      "Telomere vollständig reparieren",
+      "Gar nichts, Telomere sind nicht beeinflussbar"
+     ],
+     "c": 1,
+     "e": "Sie können die Verkürzung bremsen. Verlorene Stücke reparieren oder verlängern sie nicht."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Alterungsprozess",
+    "report": "Lifestyle-Bericht · Alterungsprozess",
+    "E": {
+     "pill": "Optimal",
+     "title": "Telomer-Erhaltung optimal",
+     "text": "Deine Gene erhalten deine Telomere bestmöglich. Das spricht für ein jüngeres biologisches Alter.",
+     "rec": "Nicht rauchen, Bewegung und Nährstoffe wie Vitamin D3, Omega-3 und Vitamin E können trotzdem helfen, deine Telomere lange zu erhalten. Bist du an Krebs erkrankt oder warst es, besprich das vorher mit deiner Ärztin oder deinem Arzt."
+    },
+    "B": {
+     "pill": "Eingeschränkt",
+     "title": "Telomer-Erhaltung eingeschränkt",
+     "text": "Deine Gene erhalten deine Telomere nur eingeschränkt. Sie werden schneller kürzer, dein biologisches Alter ist leicht erhöht.",
+     "rec": "Vitamin D3, Omega-3, Vitamin E und Ginkgo können für dich sinnvoll sein, um die Verkürzung zu bremsen. Bist du an Krebs erkrankt oder warst es, besprich das vorher mit deiner Ärztin oder deinem Arzt."
+    },
+    "D": {
+     "pill": "Schwach",
+     "title": "Telomer-Erhaltung schlecht",
+     "text": "Deine Gene erhalten deine Telomere nur schlecht. Sie werden mit jeder Zellteilung rasch kürzer, dein biologisches Alter ist deutlich erhöht.",
+     "rec": "Für dich ist es besonders wichtig, Rauchen und oxidativen Stress zu meiden; Nährstoffe wie Vitamin D3, Omega-3, Vitamin E und Ginkgo können die Verkürzung bremsen. Bist du an Krebs erkrankt oder warst es, besprich das vorher mit deiner Ärztin oder deinem Arzt."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie gut deine Gene deine Telomere erhalten, zeigt die Gene Story „Alterungsprozess“ im Modul Biologisches Alter des Lifestyle-Berichts.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie schnell deine Zellen altern und was du dagegen tun kannst."
+    }
+   },
+   "images": [
+    {
+     "key": "l_telomere_kappen",
+     "prompt": "A translucent X-shaped chromosome whose four ends carry glowing gold protective caps, like the plastic tips of a shoelace, with tiny fragments drifting away from one shortened end."
+    },
+    {
+     "key": "l_telomere_tert",
+     "prompt": "A translucent gold enzyme gently holding the end of a chromosome and keeping its protective cap intact, beside a second chromosome whose cap is visibly shorter."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Biological Age“ P-1450 bis P-1469 (NUT_BC S. 450–469): Telomere, Schlafmodus, Telomerase und Krebs, Ergebnistitel/-texte P-1456/P-1458/P-1460, Empfehlungen P-1462 bis P-1464, TERT 70/28/2 % (P-1467)",
+    "OM-TextBlocks 106562/106568/106573 (Ergebnistitel, wortgleich)",
+    "Hauptvideo gwmVcvbaNgE (BIOLOGISCHES ALTER) 1:31–2:50, 2:50–3:34, 4:31–4:50 (Clips telomere_1 bis _3)"
+   ],
+   "open_questions": [
+    "Flag-Variablen: Gruppe DNA_BIOLOGICAL_AGE_B2B hat korrekt geschriebene Flags (…_EFFECTIVE_HIDER / _IMPAIRED_HIDER / _DEFECTIVE_HIDER, im Beispiel-Output geprüft). Die Schwestergruppe im selben Kapitel, DNA_AGE_MEDINUT, nutzt dagegen DNA_AGE_MEDINUT_EFECTIV_HIDER / _DEFECTIV_HIDER (sic) und _IMPAIRED_HIDER – bei einer gemeinsamen Lesefunktion für beide Balken beachten.",
+    "Fakt laut Auftrag (Nährstoffe verlangsamen die Verkürzung, verlängern/reparieren Telomere nicht) widerspricht dem Berichtstext: Empfehlungen P-1462 bis P-1464 „Bestimmte Nährstoffe können dabei helfen, die Telomere zu verlängern“, P-1452 „Telomerase … verlängert diese Enden … verjüngen“, P-1453 Vitamin D3 steigere „die Aktivität der Verjüngungsgene um fast 20 %“, Diagramm P-1454 „Telomere werden wieder verlängert“. Lektion formuliert nach Vorgabe; Berichtstexte sollten geprüft werden.",
+    "Bericht nennt zusätzlich N-Acetylcystein und Acetylsalicylsäure (Aspirin, nur bei bestimmter Genvariante) – in der Lektion bewusst weggelassen (Medikament).",
+    "Daniels Video gwmVcvbaNgE (5:01) nennt „bis zu 20 Jahre Unterschied“ im biologischen Alter bei zwei defekten Genen – nicht im Bericht, daher nicht in den Lektionstext übernommen.",
+    "Kein deutsches Animationsvideo (Aging-and-your-genes nur EN, unveröffentlicht) – Animation nötig, falls gewünscht.",
+    "Zweites Gen BICD1 (P-1468, 74/24/2 %) nicht erwähnt, um die Lektion schlank zu halten.",
+    "Clip telomere_3 sagt „die Reduktion der Telomere reduzieren“, also bremsen – passt zur Vorgabe. Der Satz davor („hier haben wir ein …“) bezieht sich auf eine Folie und ist weggeschnitten."
+   ]
+  },
+  {
+   "id": "medi",
+   "station": "alter",
+   "title": "Mittelmeerküche gegen das Zellaltern?",
+   "minutes": 5,
+   "formula": "DNA_AGE_MEDINUT",
+   "scalebar": "DNA_AGE_MEDINUT_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Olivenöl gegen das Altern?",
+     "p": "Die Mittelmeerküche gilt als besonders gesund: viel Gemüse, Fisch und Olivenöl. Aber hält sie auch deine Zellen jung? Das hängt überraschend stark von einem bestimmten Gen ab."
+    },
+    {
+     "t": "video",
+     "id": "gwmVcvbaNgE",
+     "start": 248,
+     "end": 265,
+     "file": "clips/medi_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel: Mediterrane Ernährung wirkt nur mit dem passenden Gen auf die Telomere",
+     "ai": false
+    },
+    {
+     "t": "img",
+     "img": "l_medi_teller",
+     "h": "Was mediterran heißt",
+     "p": "Mediterrane Ernährung stammt aus Ländern wie Griechenland, Italien und Spanien. Dazu gehören viel Obst und Gemüse, Vollkornprodukte, gesunde Fette wie Olivenöl, Avocados und Nüsse, Fisch, Hülsenfrüchte und nur mäßig Milchprodukte und Fleisch."
+    },
+    {
+     "t": "quiz",
+     "q": "Was gehört NICHT zum Kern der mediterranen Ernährung?",
+     "o": [
+      "Olivenöl",
+      "Hülsenfrüchte",
+      "Viel Fleisch und Wurst",
+      "Fisch"
+     ],
+     "c": 2,
+     "e": "Fleisch und Milchprodukte gibt es nur in Maßen. Im Mittelpunkt stehen Gemüse, Obst, Fisch und gesunde Fette."
+    },
+    {
+     "t": "img",
+     "img": "l_medi_pparg",
+     "h": "Das Gen PPARG entscheidet",
+     "p": "Ob mediterrane Ernährung deine Telomere schützt, hängt vom Gen PPARG ab. Nur mit einer bestimmten Variante hilft sie, die Telomerlänge zu erhalten. Diese Variante ist selten: Bei 86 % der Menschen hat mediterrane Ernährung laut Bericht keinen Einfluss auf die Telomerlänge."
+    },
+    {
+     "t": "quiz",
+     "q": "Bei wie vielen Menschen hat mediterrane Ernährung laut Bericht keinen Einfluss auf die Telomerlänge?",
+     "o": [
+      "Bei 2 %",
+      "Bei niemandem",
+      "Bei 50 %",
+      "Bei 86 %"
+     ],
+     "c": 3,
+     "e": "Bei 86 % wirkt sie nicht auf die Telomere. Für andere Bereiche der Gesundheit kann sie trotzdem wertvoll sein."
+    },
+    {
+     "t": "text",
+     "h": "Wirkungslos heißt nicht ungesund",
+     "p": "Ein Ergebnis „wirkungslos“ bedeutet nur: Für deine Telomere ist dieser eine Hebel schwach. Daneben gibt es Nährstoffe, die deine Schutzgene unterstützen können, zum Beispiel Vitamin D3, Omega-3-Fettsäuren, Vitamin E, Resveratrol und Ginkgo. Sie können die Verkürzung der Telomere bremsen, verlängern können sie sie nicht."
+    },
+    {
+     "t": "video",
+     "id": "gwmVcvbaNgE",
+     "start": 271,
+     "end": 290,
+     "file": "clips/medi_2.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Welche Nährstoffe die Telomere trotzdem unterstützen",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Was bedeutet das Ergebnis „Wirkung mediterraner Ernährung auf Telomere wirkungslos“?",
+     "o": [
+      "Mediterrane Ernährung ist für dich schädlich",
+      "Mediterrane Ernährung schützt deine Telomere kaum, andere Nährstoffe können trotzdem helfen",
+      "Deine Telomere sind schon aufgebraucht",
+      "Du solltest kein Gemüse mehr essen"
+     ],
+     "c": 1,
+     "e": "Nur dieser eine Weg über die Ernährung wirkt bei dir kaum auf die Telomere. Andere Nährstoffe und ein gesunder Lebensstil bleiben wichtig."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Alterungsprozess",
+    "report": "Lifestyle-Bericht · Alterungsprozess",
+    "E": {
+     "pill": "Wirkt stark",
+     "title": "Wirkung mediterraner Ernährung auf Telomere hoch",
+     "text": "Deine PPARG-Gene sorgen dafür, dass mediterrane Ernährung deine Telomere schützt. Diese Ernährung wirkt bei dir direkt auf die Erhaltung deiner Telomere.",
+     "rec": "Mediterran zu essen kann für dich ein besonders wirksamer Weg sein, dein biologisches Alter günstig zu beeinflussen."
+    },
+    "B": {
+     "pill": "Wirkt etwas",
+     "title": "Wirkung mediterraner Ernährung auf Telomere gering",
+     "text": "Aufgrund deiner Gene wirkt sich mediterrane Ernährung nur leicht positiv auf deine Telomerlänge aus.",
+     "rec": "Mediterran zu essen kann dein biologisches Alter etwas verbessern. Zusätzlich können Nährstoffe wie Vitamin D3, Omega-3 und Vitamin E sinnvoll sein."
+    },
+    "D": {
+     "pill": "Kein Effekt",
+     "title": "Wirkung mediterraner Ernährung auf Telomere wirkungslos",
+     "text": "Aufgrund deiner Gene hat mediterrane Ernährung keinen Einfluss auf deine Telomerlänge.",
+     "rec": "Für deine Telomere können andere Nährstoffe wie Vitamin D3, Omega-3, Vitamin E und Ginkgo die wichtigere Rolle spielen. Für andere Bereiche deiner Gesundheit kann mediterrane Kost trotzdem wertvoll sein."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Ob mediterrane Ernährung deine Telomere schützt, zeigt die Gene Story „Alterungsprozess“ im Modul Biologisches Alter des Lifestyle-Berichts.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob die Mittelmeerküche bei dir direkt gegen das Zellaltern wirkt."
+    }
+   },
+   "images": [
+    {
+     "key": "l_medi_teller",
+     "prompt": "A translucent plate with olive oil drops, fish, tomatoes, chickpeas and nuts, softly glowing above a faint chromosome outline."
+    },
+    {
+     "key": "l_medi_pparg",
+     "prompt": "Olive oil droplets flowing toward two translucent chromosomes: on one, a gold gene switch lights up and protects the chromosome caps; on the other, the switch stays dark."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Biological Age“ P-1453 (PPARG-Hinweis), P-1462 bis P-1464 (Inhalt mediterrane Ernährung), P-1469 (PPARG rs1801282: 2 % / 12 % / 86 %)",
+    "OM-TextBlocks 106564 / 106570 / 106575 (Ergebnistitel hoch / gering / wirkungslos, wortgleich)",
+    "Hauptvideo gwmVcvbaNgE (BIOLOGISCHES ALTER) 4:08–4:25 und 4:31–4:50 (Clips medi_1, medi_2; medi_2 ist derselbe Ausschnitt wie telomere_3)"
+   ],
+   "open_questions": [
+    "Flag-Variablen sic: DNA_AGE_MEDINUT_EFECTIV_HIDER und DNA_AGE_MEDINUT_DEFECTIV_HIDER (Tippfehler), dazu DNA_AGE_MEDINUT_IMPAIRED_HIDER (korrekt) – App-Lesefunktion muss diese Schreibweise kennen.",
+    "Studio zeigt auf allen drei Telomer-Ergebnisseiten (P-1456/P-1458/P-1460) als zweite Überschrift fest „Wirkung mediterraner Ernährung auf Telomere gering“ – vermutlich nicht nach DNA_AGE_MEDINUT verzweigt. Titel für E/B/D deshalb aus den OM-TextBlocks übernommen; OM-Block 106575 heißt intern „…gering“, sein Text lautet „wirkungslos“.",
+    "Farblogik: „wirkungslos“ (rot) ist kein Gesundheitsrisiko, nur ein fehlender Hebel. invert bleibt false; Daniel entscheiden, ob D eher neutral (grau) dargestellt werden soll.",
+    "Widerspruch im Bericht: Der Empfehlungskasten sagt in allen drei Zuständen „Die mediterrane Ernährung ist aufgrund deiner Gene sehr nützlich, um deine Telomere zu verbessern“ – passt nicht zum Ergebnis „wirkungslos“.",
+    "PPARG-Verteilung: Bericht beschriftet nur 2 % („verlängert Telomere“) und 86 % („kein Einfluss“), die 12 % in der Mitte ohne Text. Daniel nennt die günstige Variante im Video „Gendefekt“; Lektion schreibt „Variante“.",
+    "Kein deutsches Animationsvideo vorhanden.",
+    "Clip medi_1 ist nur 16 s lang; mehr sagt das Hauptvideo zum Thema nicht. Clip medi_2 ist inhaltlich identisch mit telomere_3."
+   ]
+  },
+  {
+   "id": "entz",
+   "station": "alter",
+   "title": "Wie aggressiv ist dein Immunsystem?",
+   "minutes": 6,
+   "formula": "DNA_NUTRITION_INFLAMMATION",
+   "scalebar": "DNA_NUTRITION_INFLAMMATION_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Wenn die Abwehr übers Ziel hinausschießt",
+     "p": "Dein Immunsystem schützt dich vor Bakterien, Viren und Pilzen. Doch manchmal reagiert es zu heftig und trifft auch deine eigenen Zellen. Wie aggressiv deine Abwehr eingestellt ist, legen zu einem guten Teil deine Gene fest."
+    },
+    {
+     "t": "video",
+     "id": "GyIfKaYmLoE",
+     "start": 98,
+     "end": 118,
+     "file": "clips/entz_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Entzündung ist Reparatur: Daniel am Beispiel Muskelkater",
+     "ai": false
+    },
+    {
+     "t": "img",
+     "img": "l_entz_abwehr",
+     "h": "Entzündung ist Reparatur",
+     "p": "Bei einer Entzündung bringen Signalstoffe das betroffene Gewebe zum Anschwellen. So kommen die weißen Blutzellen an die Angreifer heran. Das ist gewollt, belastet aber auch die eigenen Zellen. Gene wie TNFa, IL1A und IL6R regeln, wie stark diese Reaktion ausfällt."
+    },
+    {
+     "t": "quiz",
+     "q": "Warum schwillt entzündetes Gewebe an?",
+     "o": [
+      "Damit weiße Blutzellen an die Angreifer herankommen",
+      "Weil sich dort Fett einlagert",
+      "Weil das Herz schneller schlägt",
+      "Damit Vitamine besser wirken"
+     ],
+     "c": 0,
+     "e": "Die Schwellung schafft Platz für die weißen Blutzellen. Ist die Reaktion zu stark, leidet aber auch das eigene Gewebe."
+    },
+    {
+     "t": "video",
+     "id": "GyIfKaYmLoE",
+     "start": 139,
+     "end": 182,
+     "file": "clips/entz_2.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt, wie Gene die Stärke einer Entzündung steuern",
+     "ai": false
+    },
+    {
+     "t": "img",
+     "img": "l_entz_gene",
+     "h": "Häufige Varianten",
+     "p": "Defekte in diesen Genen sind häufig: 90 % der Menschen haben mindestens einen davon. Dann reagiert das Immunsystem aggressiver als nötig und kann eigene Zellen beschädigen. Mögliche Folgen sind laut Bericht schnellere Hautalterung, Muskel- und Knorpelschäden, stärkere Rötung bei Sonnenbrand und Zahnverlust."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie viele Menschen haben laut Bericht mindestens einen Gendefekt in den Entzündungsgenen?",
+     "o": [
+      "Rund 10 %",
+      "Rund 90 %",
+      "Rund 50 %",
+      "Niemand"
+     ],
+     "c": 1,
+     "e": "90 % tragen mindestens einen Defekt. Deshalb lohnt sich der Blick auf deine eigene Kombination."
+    },
+    {
+     "t": "text",
+     "h": "Mit dem Teller bremsen",
+     "p": "Deine Ernährung kann das Immunsystem anheizen oder beruhigen. Arachidonsäure wirkt wie ein Booster. Sie steckt fast nur in tierischen Lebensmitteln, etwa in Kalbsleber, Thunfisch, Geflügel, Rindfleisch, Eiern und Milchprodukten. Omega-3-Fettsäuren aus Hering, Makrele, Sardinen, Algen oder Lein-, Chia- und Walnussöl wirken entzündungshemmend, ebenso organischer Schwefel (MSM), etwa aus Zwiebeln und Sauerkraut."
+    },
+    {
+     "t": "video",
+     "id": "GyIfKaYmLoE",
+     "start": 207,
+     "end": 237,
+     "file": "clips/entz_3.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Arachidonsäure heizt an, Omega-3 und MSM bremsen",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Welcher Stoff macht das Immunsystem aggressiver?",
+     "o": [
+      "Omega-3",
+      "MSM",
+      "Arachidonsäure",
+      "Vitamin C"
+     ],
+     "c": 2,
+     "e": "Arachidonsäure wirkt wie ein Booster. Omega-3 und MSM drosseln das Immunsystem dagegen."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Entzündungen und das Immunsystem",
+    "report": "Lifestyle-Bericht · Gesund ernähren",
+    "E": {
+     "pill": "Richtig eingestellt",
+     "title": "Immunsystem richtig programmiert",
+     "text": "Deine Gene stellen dein Immunsystem richtig ein. Es bekämpft Angreifer und schont deine eigenen Zellen.",
+     "rec": "Besondere Ernährungsregeln brauchst du hier nicht. Omega-3-reiche Lebensmittel bleiben trotzdem eine gesunde Wahl."
+    },
+    "B": {
+     "pill": "Etwas zu aggressiv",
+     "title": "Immunsystem etwas zu aggressiv programmiert",
+     "text": "Deine Gene stellen dein Immunsystem etwas zu aggressiv ein. Es kann dabei auch deine eigenen Zellen beschädigen.",
+     "rec": "Weniger Arachidonsäure und mehr Omega-3 und MSM können für dich sinnvoll sein, um dein Immunsystem zu drosseln."
+    },
+    "D": {
+     "pill": "Zu aggressiv",
+     "title": "Immunsystem zu aggressiv programmiert",
+     "text": "Deine Gene stellen dein Immunsystem deutlich zu aggressiv ein. Es reagiert viel zu stark und kann deine eigenen Zellen beschädigen.",
+     "rec": "Für dich kann es besonders sinnvoll sein, Arachidonsäure zu reduzieren und Omega-3 und MSM zu erhöhen. Hast du eine Entzündungserkrankung, besprich Änderungen mit deiner Ärztin oder deinem Arzt."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie aggressiv dein Immunsystem programmiert ist, zeigt die Gene Story „Entzündungen und das Immunsystem“ im Lifestyle-Bericht, Kapitel „Gesund ernähren“.",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dein Teller dein Immunsystem eher beruhigen sollte."
+    }
+   },
+   "images": [
+    {
+     "key": "l_entz_abwehr",
+     "prompt": "Translucent white blood cells squeezing between gently swollen tissue cells toward small bacteria, with soft glowing signal molecules around them."
+    },
+    {
+     "key": "l_entz_gene",
+     "prompt": "A translucent immune cell firing too many glowing signal arrows, some striking the body's own cells, next to a calm, balanced immune cell sending only a few."
+    }
+   ],
+   "sources": [
+    "Report Studio dev.db, Gruppe „Inflammation & Immunity“ P-1250 bis P-1269 (NUT_BC S. 250–269): Entzündungsablauf, 90 % mit mindestens einem Gendefekt, Folgen, Arachidonsäure/Omega-3/MSM, Ergebnistexte P-1256/P-1258/P-1260, Empfehlungen P-1262 bis P-1264",
+    "OM-TextBlocks 104565–104567 (Ergebnistitel „Immunsystem richtig / etwas zu aggressiv / zu aggressiv programmiert“, wortgleich)",
+    "Hauptvideo GyIfKaYmLoE (SPORTLICHE LEISTUNG) 1:38–1:58, 2:19–3:02, 3:27–3:57 (Clips entz_1 bis _3)"
+   ],
+   "open_questions": [
+    "Kein Hauptvideo zum Thema im Nutrition-Kontext. Alle drei Clips stammen aus dem Hauptvideo „Sportliche Leistung“ (Regeneration nach dem Training, Muskeln/Muskelkater). Clip entz_3 endet vor „mit diesen Nährstoffen kann man das Immunsystem reparieren“ und enthält ein Stocken („die die die das Immunsystem“). Eine deutsche Animation wäre besser (Inflammation-and-your-genes nur EN, unveröffentlicht).",
+    "Ergebnistitel D: Studio P-1260 sagt „Immunsystem zu aggressiv“, OM-TextBlock 104567 „Immunsystem zu aggressiv programmiert“ – laut Auftrag die „programmiert“-Fassung übernommen.",
+    "Kapitel: Im Bericht gehört die Story zu „Gesund Ernähren“ (NUT_BC S. 250–269), in der App zur Station „Zellalter“ – report-Feld entsprechend gesetzt.",
+    "Bericht führt Lachs sowohl bei Arachidonsäure als auch bei Omega-3 auf; Lachs deshalb in der Lektion weggelassen.",
+    "Genverteilungen TNFa 83/16/1 %, IL1A 40/50/10 %, IL6R 52/37/11 % (P-1267 bis P-1269) nicht übernommen, nur die Gesamtzahl 90 %."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,700 @@
+{
+  "lessons": [
+    {
+      "id": "kopien",
+      "station": "zelle",
+      "title": "Zwei Kopien – eine von jedem Elternteil",
+      "minutes": 6,
+      "formula": null,
+      "scalebar": null,
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Ein bisschen Mama, ein bisschen Papa",
+          "p": "Vielleicht hast du die Augen deiner Mutter und das Lachen deines Vaters. Das ist kein Zufall: Von fast jedem Gen trägst du zwei Kopien in dir. Aber was passiert, wenn die beiden nicht gleich gut arbeiten?"
+        },
+        {
+          "t": "video",
+          "id": "79MPy6BFqu8",
+          "start": 136.4,
+          "end": 156.6,
+          "file": "clips/kopien_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt: Von fast jedem Gen hast du zwei Kopien",
+          "ai": false
+        },
+        {
+          "t": "img",
+          "img": "l_kopien_eltern",
+          "h": "Eine Kopie von jedem Elternteil",
+          "p": "Bei der Befruchtung bekommt jedes Kind die Hälfte der Gene vom Vater und die Hälfte von der Mutter. So hast du in der Regel von jedem Gen zwei Kopien. Welche Version ein Elternteil weitergibt, bestimmt der Zufall. Darum können Geschwister ganz unterschiedliche Gene haben."
+        },
+        {
+          "t": "quiz",
+          "q": "Von wem stammen deine zwei Kopien eines Gens?",
+          "o": [
+            "Beide von der Mutter",
+            "Beide vom Vater",
+            "Eine von der Mutter, eine vom Vater",
+            "Sie entstehen erst im Laufe des Lebens"
+          ],
+          "c": 2,
+          "e": "Von jedem Elternteil bekommst du eine Kopie. Zusammen bestimmen sie, wie das Gen bei dir arbeitet."
+        },
+        {
+          "t": "img",
+          "img": "l_kopien_kombis",
+          "h": "Drei mögliche Kombinationen",
+          "p": "Beide Kopien können gut arbeiten, nur eine von beiden oder keine. Ein Beispiel ist das Gen MMP1, das altes Kollagen in der Haut abbaut: Nur rund 20 % der Menschen haben zwei funktionstüchtige Kopien. 47 % haben eine defekte Kopie und bauen Kollagen etwas schneller ab, 33 % deutlich zu schnell. Erst die Kombination beider Kopien ergibt dein Ergebnis."
+        },
+        {
+          "t": "video",
+          "id": "5A5XoWH7XKk",
+          "start": 298.5,
+          "end": 334.6,
+          "file": "clips/kopien_2.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Zwei Kopien, drei Möglichkeiten: das Beispiel Kollagen",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Wie viele Menschen haben beim Kollagen-Gen MMP1 zwei funktionstüchtige Kopien?",
+          "o": [
+            "Fast alle",
+            "Rund die Hälfte",
+            "Rund ein Drittel",
+            "Nur rund 20 %"
+          ],
+          "c": 3,
+          "e": "Nur rund jeder Fünfte hat zwei funktionstüchtige Kopien. Die meisten tragen mindestens eine defekte."
+        },
+        {
+          "t": "text",
+          "h": "Die Sicherheitskopie",
+          "p": "Die zweite Kopie wirkt oft wie eine Sicherheitskopie: Arbeitet eine nicht richtig, kann die andere das in manchen Fällen ausgleichen. Aber nicht immer. Beim MTHFR-Gen zum Beispiel wandeln Menschen mit zwei ungünstigen Kopien Folsäure nur mit etwa einem Viertel der Geschwindigkeit um. Deshalb spricht dein Bericht bei den Ergebnissen immer von „deinen Genen“ in der Mehrzahl."
+        },
+        {
+          "t": "video",
+          "id": "79MPy6BFqu8",
+          "start": 821.55,
+          "end": 846.4,
+          "file": "clips/kopien_3.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Warum jeder Mensch genetisch einzigartig ist",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Wer hat genau dieselben Gene wie ein anderer Mensch?",
+          "o": [
+            "Geschwister",
+            "Eineiige Zwillinge",
+            "Eltern und ihre Kinder",
+            "Niemand, auch Zwillinge nicht"
+          ],
+          "c": 1,
+          "e": "Nur eineiige Zwillinge haben dieselben Gene. Alle anderen sind in ihrer Kombination einzigartig."
+        },
+        {
+          "t": "info",
+          "img": "st01_zelle",
+          "h": "Und bei dir?",
+          "p": "In deinem Bericht siehst du bei jeder Gene Story, wie <b>deine beiden Kopien</b> zusammenarbeiten. In der nächsten Lektion erfährst du, was <b>effektiv, beeinträchtigt und defekt</b> bedeutet."
+        }
+      ],
+      "result": null,
+      "images": [
+        {
+          "key": "l_kopien_eltern",
+          "prompt": "Two translucent DNA double helices drifting toward each other from left and right, one in soft plum and one in warm gold, meeting inside a glowing cell nucleus as a matched pair."
+        },
+        {
+          "key": "l_kopien_kombis",
+          "prompt": "Three pairs of translucent gene strands side by side: the first pair both glowing gold, the second pair one gold and one dimmed, the third pair both dimmed plum."
+        }
+      ],
+      "sources": [
+        "Lifestyle-Bericht (OM-Baustein 106490): „Jeder Mensch besitzt in der Regel zwei Kopien eines jeden Gens, eine von jedem Elternteil … Deshalb sprechen wir in diesem Bericht … von Genen in der Mehrzahl“",
+        "Pharmaco-Bericht V2 (OM-Baustein 113282): doppelte Anlage als „Sicherheitskopie“, Ausgleich in manchen Fällen",
+        "Demo-Bericht Pharmaco Sensor (NOVO ACADEMY, Seite 3): Hälfte der Gene vom Vater, Hälfte von der Mutter, Weitergabe bestimmt der Zufall",
+        "Folsäure-Lektion / Animation hs7Aki3Hi_s: MTHFR mit zwei ungünstigen Kopien nur ein Viertel der Geschwindigkeit",
+        "Hauptvideo 79MPy6BFqu8 2:16–2:37 (zwei Kopien, eine vom Vater, eine von der Mutter; Beispiel Koffein-Gen)",
+        "Hauptvideo 5A5XoWH7XKk 4:58–5:35 (MMP1: zwei Kopien, 20 % / 47 % / 33 %)",
+        "Hauptvideo 79MPy6BFqu8 13:41–14:06 (700 Trillionen Kombinationen, eineiige Zwillinge)"
+      ],
+      "open_questions": [
+        "Clips jetzt aus den Hauptvideos (Daniel 17.10.: keine Schulungsvideos). Clip kopien_1 nennt als Beispiel das Koffein-Gen; Satzteil „wird Koffein abgebaut“ bleibt drin.",
+        "MMP1-Zahlen (20 / 47 / 33 %) stammen aus dem Beauty-Hauptvideo (Sie-Form); deutscher Beauty-Bericht nicht ausgelesen – bitte gegen Bericht prüfen. Clip überschneidet sich nicht mit den Kollagen-Clips (kollagen_1 bis _3 enden bei 4:21).",
+        "Clip kopien_3 sagt „60 Gene“ und „9 Milliarden Menschen“ (Weltbevölkerung derzeit rund 8 Milliarden); Zahlen nicht in den Lektionstext übernommen.",
+        "Ausnahmen von der Zwei-Kopien-Regel werden nur mit „in der Regel“ bzw. im Clip mit „ein paar kleineren Ausnahmen“ angedeutet."
+      ]
+    },
+    {
+      "id": "varianten",
+      "station": "zelle",
+      "title": "Wenn ein Gen anders arbeitet",
+      "minutes": 6,
+      "formula": null,
+      "scalebar": null,
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Ein einziger Buchstabe",
+          "p": "Dein genetischer Code ist 3,2 Milliarden Buchstaben lang. Bei den meisten Unterschieden zwischen Menschen ist nur ein einziger Buchstabe anders. Kann so eine Kleinigkeit wirklich etwas verändern?"
+        },
+        {
+          "t": "img",
+          "img": "l_varianten_buchstabe",
+          "h": "Ein Schreibfehler im Bauplan",
+          "p": "Eine Genvariante ist eine Stelle, an der dein Code anders aussieht als bei den meisten Menschen. Meist ist ein einzelner Buchstabe ausgetauscht. Fachleute nennen das SNP, gesprochen „Snip“. So eine Variante kann ein Gen schwächer machen, es ganz ausschalten oder es sogar zu aktiv machen. Bei manchen Genen fehlt die Kopie auch komplett. Varianten sind ganz normal: Jeder Mensch trägt viele davon."
+        },
+        {
+          "t": "quiz",
+          "q": "Was ist ein SNP?",
+          "o": [
+            "Ein Vitamin, das Gene repariert",
+            "Eine Stelle im Code, an der ein einzelner Buchstabe anders ist",
+            "Ein ganzes Chromosom zu viel",
+            "Ein Labortest für Blutwerte"
+          ],
+          "c": 1,
+          "e": "Ein SNP ist ein ausgetauschter Buchstabe im genetischen Code. Er kann verändern, wie gut ein Gen seine Aufgabe erfüllt."
+        },
+        {
+          "t": "img",
+          "img": "l_varianten_stufen",
+          "h": "Effektiv, beeinträchtigt, defekt",
+          "p": "Dein Bericht fasst das Ergebnis deiner beiden Kopien in drei Stufen zusammen. <b>Effektiv</b>: Deine Gene arbeiten wie vorgesehen. <b>Beeinträchtigt</b>: Sie arbeiten, aber langsamer oder schwächer. <b>Defekt</b>: Eine ungünstige Variante bremst die Aufgabe stark. Defekt heißt dabei nicht immer Totalausfall. Beim MTHFR-Gen etwa reicht die Folsäure-Umwandlung je nach Variante von 100 % über 83 % und 66 % bis zu 25 %."
+        },
+        {
+          "t": "quiz",
+          "q": "Was bedeutet „defekt“ in deinem Bericht?",
+          "o": [
+            "Das Gen fehlt immer komplett",
+            "Du bist krank",
+            "Eine ungünstige Genvariante, die die Aufgabe des Gens stark bremst",
+            "Das Labor konnte das Gen nicht lesen"
+          ],
+          "c": 2,
+          "e": "„Defekt“ steht für eine ungünstige Variante. Das Gen arbeitet dann deutlich schlechter, fällt aber nicht immer ganz aus."
+        },
+        {
+          "t": "img",
+          "img": "l_varianten_balken",
+          "h": "So liest du den rot-grünen Balken",
+          "p": "Zu jeder Gene Story zeigt dein Bericht einen Balken aus zehn Stufen: links rot, rechts grün. Der Griff zeigt, wo deine Gene stehen. Je weiter rechts, desto besser arbeiten sie bei diesem Thema. Darüber steht dein Ergebnis in Worten, zum Beispiel „Folsäureumwandlung funktioniert“."
+        },
+        {
+          "t": "text",
+          "h": "Belegt und abgeleitet",
+          "p": "Wie stark eine Genvariante wirkt, ist durch Studien belegt. Die Empfehlungen, die daraus folgen, sind meist logische Schlussfolgerungen: Wirkt ein Vitamin bei dir nicht, kann ein anderes mit ähnlicher Wirkung sinnvoll sein. Doch ab wann gilt eine Genvariante als belegt?"
+        },
+        {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 240.55,
+          "end": 277.9,
+          "file": "clips/varianten_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wann eine Genvariante als wissenschaftlich bestätigt gilt",
+          "ai": false
+        },
+        {
+          "t": "quiz",
+          "q": "Wann wird eine Genvariante in die Analyse aufgenommen?",
+          "o": [
+            "Sobald eine einzige Studie sie erwähnt",
+            "Wenn mindestens drei unabhängige Studien ihren Einfluss belegen",
+            "Wenn viele Kundinnen und Kunden danach fragen",
+            "Jede bekannte Variante wird automatisch getestet"
+          ],
+          "c": 1,
+          "e": "Mindestens drei Studien von drei Forschungsgruppen an drei Bevölkerungsgruppen müssen den Effekt zeigen. Die Studien findest du im hinteren Teil jedes Kapitels."
+        },
+        {
+          "t": "info",
+          "img": "st01_zelle",
+          "h": "Und bei dir?",
+          "p": "Ab der nächsten Station siehst du am Ende jeder Lektion <b>deinen eigenen Balken</b>: ob deine Gene bei diesem Thema effektiv, beeinträchtigt oder defekt arbeiten."
+        }
+      ],
+      "result": null,
+      "images": [
+        {
+          "key": "l_varianten_buchstabe",
+          "prompt": "A long translucent DNA double helix with one single base pair glowing gold and slightly shifted out of line, like one swapped bead on a string of pearls."
+        },
+        {
+          "key": "l_varianten_stufen",
+          "prompt": "Three translucent enzyme machines side by side: the first spinning smoothly and bright, the second turning slower with a softer glow, the third almost still and dimmed."
+        },
+        {
+          "key": "l_varianten_balken",
+          "prompt": "An elegant horizontal bar of ten glass segments fading from deep red on the left to green on the right, with a small golden slider resting near the right end, floating above a faint DNA helix."
+        }
+      ],
+      "sources": [
+        "Lifestyle-Bericht (OM-Baustein 107580): „Bei den meisten Gendefekten liegt nur ein einzelner Buchstabenfehler … vor“; Null-Allel GSTT1/GSTM1",
+        "Lifestyle-Bericht (OM-Baustein 107487): CYP1A1-Gendefekt macht die Gene „ZU aktiv“",
+        "Lifestyle-Bericht 10X (OM-Bausteine 108371/108740, Terminologie): „effektiv“/„defekt“ vereinfachte Begriffe; negative Effekte bedeuten nicht immer völligen Ausfall",
+        "Lifestyle-Bericht (OM-Bausteine 107485/111045): mindestens drei unabhängige Studien; (107486/111046): Empfehlungen sind logische Schlussfolgerungen",
+        "NOVO Drug Response textbloecke.json (satz.varianten.hinweis): „Varianten sind an sich nichts Ungewöhnliches – jeder Mensch trägt viele davon“",
+        "research/01_GENE_STORIES_UND_FORMEL_OUTPUT.md: SCALEBAR 10 Stufen, links rot, rechts grün; Zustände effektiv/beeinträchtigt/defekt; Ergebnis-Titel Folsäure",
+        "Folsäure-Umwandlung 100 / 83 / 66 / 25 % (Daniel, Folsäure-Erklärung; Bericht Folsäure-Kapitel)",
+        "Hauptvideo 2QmG2UWqR1Y 4:00–4:38 (drei Studien, drei Wissenschaftler, drei Populationen)"
+      ],
+      "open_questions": [
+        "Clip jetzt aus dem Hauptvideo Gewichtsmanagement (Daniel 17.10.: keine Schulungsvideos).",
+        "Passagen zu „Schreibfehler, von den Eltern geerbt“ (2QmG 2:33–2:53) und zum Balken (2QmG 5:22–5:55) wären passend, sind aber schon als fett_2/fett_3 in der direkt folgenden Station Fettgewebe verbaut – deshalb hier nicht doppelt verwendet. Für SNP und Balken: Kein Hauptvideo-Ausschnitt – Animation nötig.",
+        "Die Folsäure-Prozentwerte (100/83/66/25 %) stammen aus Daniels Erklärung im Schulungsvideo (nur als Textquelle); bitte gegen den Folsäure-Bericht prüfen.",
+        "Terminologie-Absatz (effektiv/defekt = vereinfachte Begriffe) nur in 10X-Fassung (Sie-Form) gefunden, nicht im B2B-Lifestyle-Bericht.",
+        "Begriff „SNP“ und Aussprache „Snip“ = Lehrbuchwissen, nicht aus Bericht/Video."
+      ]
+    },
+    {
+      "id": "epigenetik",
+      "station": "zelle",
+      "title": "Epigenetik – Gene lauter und leiser schalten",
+      "minutes": 5,
+      "formula": null,
+      "scalebar": null,
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Feste Gene, beweglicher Alltag",
+          "p": "Deine Gene bleiben ein Leben lang gleich. Trotzdem ist nicht jedes Gen ständig gleich aktiv. Gene können durch deinen Lebensstil lauter oder leiser geschaltet werden. Wie passt das zusammen?"
+        },
+        {
+          "t": "img",
+          "img": "l_epigenetik_marker",
+          "h": "Der Textmarker für deine Gene",
+          "p": "Stell dir deinen Körper als Buch vor. Die Wörter und Sätze sind deine Gene. Epigenetik ist der farbige Marker: Sie betont bestimmte Stellen und lässt andere in den Hintergrund treten. Der Text selbst, also dein genetischer Code, bleibt dabei unverändert."
+        },
+        {
+          "t": "quiz",
+          "q": "Was verändert Epigenetik?",
+          "o": [
+            "Den genetischen Code selbst",
+            "Die Zahl deiner Gene",
+            "Wie stark bestimmte Gene aktiv sind",
+            "Die Gene, die du deinen Kindern vererbst, Buchstabe für Buchstabe"
+          ],
+          "c": 2,
+          "e": "Epigenetik schaltet Gene lauter oder leiser. Der Code selbst bleibt gleich."
+        },
+        {
+          "t": "text",
+          "h": "Deine Gewohnheiten sind die Stifte",
+          "p": "Bewegung, gesunde Ernährung und ausreichend Schlaf sind wie Stifte, mit denen du positive Markierungen setzt. Sie fördern Gene, die mit Gesundheit und Wohlbefinden zusammenhängen. Rauchen, ungesunde Ernährung und chronischer Stress können dagegen negative Markierungen hinterlassen und schützende Gene leiser stellen."
+        },
+        {
+          "t": "img",
+          "img": "l_epigenetik_okinawa",
+          "h": "Das Beispiel Okinawa",
+          "p": "1949 fiel Forschenden ein Volk auf der japanischen Insel Okinawa auf, bekannt für Gesundheit und ein langes Leben. Ihre Ernährung unterschied sich kaum von der im restlichen Japan. Mit einer Ausnahme: Sie aßen 10 bis 20 % weniger Kalorien. Der gesundheitsfördernde Effekt weniger Kalorien wurde später auch bei Würmern, Ratten und Affen nachgewiesen."
+        },
+        {
+          "t": "quiz",
+          "q": "Worin unterschied sich die Ernährung auf Okinawa vom restlichen Japan?",
+          "o": [
+            "Sie aßen 10 bis 20 % weniger Kalorien",
+            "Sie aßen ausschließlich Fisch",
+            "Sie verzichteten ganz auf Reis",
+            "Sie tranken täglich Rotwein"
+          ],
+          "c": 0,
+          "e": "Der wesentliche Unterschied war die Kalorienmenge. Sonst aßen sie ähnlich wie der Rest Japans."
+        },
+        {
+          "t": "text",
+          "h": "Was dabei in den Zellen passiert",
+          "p": "Heute weiß man: Werden die Kalorien langfristig auf 10 % unter den Grundumsatz gesenkt, bei ausreichender Versorgung mit Vitaminen und Mineralstoffen, aktiviert das die Gene DNMT1 und DNMT3b. Sie setzen günstige epigenetische Markierungen: Ungünstige Gene werden abgeschaltet, gute wieder aktiviert."
+        },
+        {
+          "t": "img",
+          "img": "l_epigenetik_altern",
+          "h": "Junge Zellen, alte Zellen",
+          "p": "Mit dem Alter wird die epigenetische Programmierung ungenauer. Gesundheitswichtige Gene werden nach und nach leiser, ungünstige können sich einschalten. Bestimmte Lebensmittel wirken ähnlich wie weniger Kalorien: Resveratrol aus Trauben, Genistein aus Soja, Sulphoraphane aus Brokkoli und Allyl Mercaptan aus Knoblauch."
+        },
+        {
+          "t": "quiz",
+          "q": "Welches Lebensmittel liefert Resveratrol?",
+          "o": [
+            "Brokkoli",
+            "Knoblauch",
+            "Soja",
+            "Weintrauben"
+          ],
+          "c": 3,
+          "e": "Resveratrol steckt in Trauben. Brokkoli, Knoblauch und Soja liefern andere epigenetisch wirksame Stoffe."
+        },
+        {
+          "t": "info",
+          "img": "st01_zelle",
+          "h": "Und bei dir?",
+          "p": "Im Kapitel <b>Epigenetik</b> deines Lifestyle-Berichts steht, welche Lebensmittel für dich aus epigenetischer Sicht sinnvoll sein können, zum Beispiel Weintrauben, Himbeeren, Brokkoli oder Grüner Tee."
+        }
+      ],
+      "result": null,
+      "images": [
+        {
+          "key": "l_epigenetik_marker",
+          "prompt": "An open translucent book whose lines are made of tiny DNA strands, with a glowing golden highlighter stroke brightening a single line while other lines fade softly."
+        },
+        {
+          "key": "l_epigenetik_okinawa",
+          "prompt": "A small green subtropical island in a calm sea at dawn, with a modest bowl of vegetables and rice in the foreground and faint DNA spirals rising like mist."
+        },
+        {
+          "key": "l_epigenetik_altern",
+          "prompt": "Two translucent cells side by side: the left one with neatly wrapped, softly glowing gene spools, the right one with loosening threads and dimmed spools."
+        }
+      ],
+      "sources": [
+        "Lifestyle-Bericht, Kapitel Epigenetik (OM-Bausteine 106636–106654): lauter/leiser schalten, Buch- und Marker-Metapher, Gewohnheiten als Stifte, Okinawa 1949 (10–20 % weniger Kalorien; Würmer, Affen, Ratten), Kalorienreduktion 10 % unter Grundumsatz aktiviert DNMT1/DNMT3b, Resveratrol, Genistein, Sulphoraphane, Allyl Mercaptan, Epigenetik und Altern, Lebensmittelempfehlung",
+        "Lifestyle-Bericht (OM-Baustein 107506): Gene bleiben ein Leben lang gleich",
+        "Alter Prototyp body-lessons 1.html (nur Ideenquelle; Zahlen gegen Bericht geprüft, deckungsgleich)"
+      ],
+      "open_questions": [
+        "Kein Hauptvideo-Ausschnitt – Animation nötig. Alle neun Hauptvideos per Volltextsuche geprüft (Epigenetik, Okinawa, Kalorienreduktion, Resveratrol, lauter/leiser schalten): keine Passage. Einzige Nähe: 71EHqtv3NOA 2:44–2:58 „Elektroauto wird nicht zum Diesel … ein Leben lang“ (Gene bleiben gleich) – bereits Teil des Clips der Lektion „gene“.",
+        "Bericht empfiehlt zusätzlich „mäßigen Konsum von Rotwein“ für Resveratrol; in der Lektion bewusst weggelassen (Alkohol). Bitte bestätigen.",
+        "Okinawa-Satz im Bericht: „wurde erstmals 1949 … beobachtet“ – Jahreszahl nicht extern geprüft.",
+        "Bericht schreibt „Sulphoraphane“ und „Allyl Mercaptan“ (Schreibweise übernommen); üblich wäre „Sulforaphan“ / „Allylmercaptan“.",
+        "Hinweis zu Kalorienreduktion bewusst als Mechanismus formuliert, nicht als Aufforderung; ggf. Arzt-Hinweis ergänzen.",
+        "Infotext nennt Beispiele aus der allgemeinen Bericht-Empfehlung; ob die Epigenetik-Empfehlung im Bericht personalisiert ist (Empfehlungsbalken DNA_EPI_RESVERATROL_*), ist offen."
+      ]
+    },
+    {
+      "id": "wirkung",
+      "station": "pille",
+      "title": "Wie Medikamente in dir wirken",
+      "minutes": 5,
+      "formula": null,
+      "scalebar": null,
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Dieselbe Tablette, andere Wirkung",
+          "p": "Medikamente sollen helfen, und oft tun sie das auch. Doch nur bei etwa 60 % der Menschen entfalten sie die gewünschte Wirkung. Manche spüren gar nichts, andere bekommen Nebenwirkungen. Woran liegt das?"
+        },
+        {
+          "t": "img",
+          "img": "l_wirkung_weg",
+          "h": "Die Reise eines Wirkstoffs",
+          "p": "Wenn du eine Tablette schluckst, gelangt der Wirkstoff über Magen und Darm ins Blut und von dort an den Ort, wo er wirken soll. Danach wird er in der Leber von Enzymen abgebaut. Gesteuert wird das von deinen Genen. Zum Schluss scheiden die Nieren den umgewandelten Wirkstoff mit dem Urin aus."
+        },
+        {
+          "t": "quiz",
+          "q": "Wo wird ein Wirkstoff vor allem abgebaut?",
+          "o": [
+            "Im Magen",
+            "In der Leber",
+            "In der Lunge",
+            "In der Haut"
+          ],
+          "c": 1,
+          "e": "In der Leber bauen Enzyme den Wirkstoff ab. Wie gut sie das tun, steht in deinen Genen."
+        },
+        {
+          "t": "img",
+          "img": "l_wirkung_enzym",
+          "h": "Gene bauen die Werkzeuge",
+          "p": "Die Enzyme in der Leber sind Werkzeuge, deren Bauplan in deinen Genen steht. Ein Beispiel ist Citalopram, ein häufiges Mittel gegen Depressionen. Es wird vor allem vom Gen CYP2C19 abgebaut. Arbeitet das Gen normal, bleibt der Wirkstoff lange genug im Körper, um zu wirken, aber nicht so lange, dass Nebenwirkungen entstehen. Für etwa 20 Gene gibt es offizielle pharmakogenetische Leitlinien."
+        },
+        {
+          "t": "quiz",
+          "q": "Welches Gen baut im Beispiel Citalopram ab?",
+          "o": [
+            "MTHFR",
+            "FABP2",
+            "CYP2C19",
+            "LCT"
+          ],
+          "c": 2,
+          "e": "CYP2C19 steuert den Abbau von Citalopram. Andere Medikamente hängen an anderen Genen."
+        },
+        {
+          "t": "img",
+          "img": "l_wirkung_spiegel",
+          "h": "Wenn sich ein Wirkstoff anstaut",
+          "p": "Viele Medikamente nimmst du regelmäßig ein, damit ihr Spiegel im Blut im Wirkungsbereich bleibt. Bauen deine Gene den Wirkstoff zu langsam ab, steigt der Spiegel mit jeder weiteren Tablette an. Schon eine normale Dosis kann dann zu viel sein und Nebenwirkungen wie Übelkeit, Unruhe oder Herzrhythmusstörungen auslösen."
+        },
+        {
+          "t": "text",
+          "h": "Ein Gen, viele Medikamente",
+          "p": "Ein ungünstiges Ergebnis bei einem Gen heißt nicht, dass du keine Medikamente mehr nehmen darfst. Verschiedene Gene verarbeiten verschiedene Wirkstoffe. Oft gibt es Alternativen, die über ein Gen abgebaut werden, das bei dir normal arbeitet. Und weil sich deine Gene nicht ändern, gilt die Analyse ein Leben lang."
+        },
+        {
+          "t": "quiz",
+          "q": "Was passiert bei regelmäßiger Einnahme, wenn deine Gene einen Wirkstoff zu langsam abbauen?",
+          "o": [
+            "Der Wirkstoff wirkt gar nicht",
+            "Der Spiegel im Blut steigt mit jeder Tablette weiter an",
+            "Der Wirkstoff wird sofort ausgeschieden",
+            "Nichts, die Gene spielen keine Rolle"
+          ],
+          "c": 1,
+          "e": "Der Wirkstoff staut sich an. So kann eine normale Dosis zu hoch werden und Nebenwirkungen auslösen."
+        },
+        {
+          "t": "info",
+          "img": "st11_medikamente",
+          "h": "Und bei dir?",
+          "p": "Die Medikamenten-Analyse <b>Pharmaco Sensor</b> zeigt, wie dein Körper <b>über 2.500 Wirkstoffe</b> verarbeitet. Änderungen an deinen Medikamenten bitte nur gemeinsam mit deiner Ärztin, deinem Arzt oder in der Apotheke."
+        }
+      ],
+      "result": null,
+      "images": [
+        {
+          "key": "l_wirkung_weg",
+          "prompt": "A small translucent capsule dissolving into glowing particles that travel through a stylized bloodstream toward a softly lit translucent liver, then onward to a kidney."
+        },
+        {
+          "key": "l_wirkung_enzym",
+          "prompt": "Inside a translucent liver cell, a delicate golden enzyme shaped like a pair of scissors snipping a drug molecule apart, with a faint DNA strand above acting as its blueprint."
+        },
+        {
+          "key": "l_wirkung_spiegel",
+          "prompt": "A tall translucent glass vessel slowly filling with glowing plum liquid as small capsules drop in one after another, the level rising above a faint golden band in the middle."
+        }
+      ],
+      "sources": [
+        "Pharmaco-Bericht V2 (OM-Bausteine 113209, 113219, 113232–113237, 113256–113276, 113258, 113228)",
+        "Demo-Bericht Pharmaco Sensor (NOVO ACADEMY, Seite 8: Weg durch den Körper, Ausscheidung über die Nieren im Urin; Seite 9–10: Anreicherung bei wiederholter Einnahme)",
+        "Lifestyle-Bericht (OM-Baustein 107506): Gene bleiben ein Leben lang gleich",
+        "Pharmaco-Bericht V2 (OM-Baustein 113340): „Über 2.500 Medikamente, nach deinen Genen bewertet“; NOVO DRUG RESPONSE docs/ARCHITEKTUR.md: 2.704 Wirkstoffe im Formel-Output",
+        "NOVO ACADEMY src/data.js, Kurs pharma-sci (Themen: CYP-Enzyme, schnelle und langsame Metabolisierer)"
+      ],
+      "open_questions": [
+        "Kein Hauptvideo-Ausschnitt – Animation nötig. Alle neun Hauptvideos per Volltextsuche nach Medikament, Tablette, Leber, Enzym, Abbau geprüft: keine Passage zu Medikamenten. Hinweis: In data.js (pharma-sci) ist seit 16.10.2026 ein deutscher KI-Dub der englischen Schulung hinterlegt (YouTube rigUTnBf0wI, aiDub) – laut Auftrag nicht eingebunden; ggf. prüfen, ob ein Ausschnitt mit \"ai\": true passt.",
+        "„Nur bei etwa 60 % der Menschen“ stammt aus dem Pharmaco-Bericht V2 ohne Quellenangabe im Baustein.",
+        "Zahlen zu Nebenwirkungen (V2: „sechsthäufigste Todesursache“, Demo-Bericht: „fünfthäufigste“) widersprechen sich – deshalb nicht verwendet.",
+        "„Etwa 20 Gene mit offiziellen Leitlinien“ (V2) vs. 23 PharmCAT-Gene in der App – Formulierung „etwa 20“ beibehalten."
+      ]
+    },
+    {
+      "id": "typen",
+      "station": "pille",
+      "title": "Schnell, normal oder langsam?",
+      "minutes": 6,
+      "formula": null,
+      "scalebar": null,
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Jedes Gen hat sein Tempo",
+          "p": "Gene sind nicht nur effektiv oder defekt. Sie arbeiten auch unterschiedlich schnell. Bei Medikamenten macht das einen großen Unterschied: Dieselbe Dosis kann für den einen genau richtig, für die andere zu viel und für den nächsten zu wenig sein."
+        },
+        {
+          "t": "img",
+          "img": "l_typen_tempo",
+          "h": "Die vier Metabolisierungstypen",
+          "p": "Wie schnell deine Gene einen Wirkstoff abbauen, nennt man Metabolisierungstyp. <b>Normal</b>: genau richtig abgebaut. <b>Eingeschränkt</b>: etwas langsamer, meist wirkt das Medikament trotzdem, leichte Nebenwirkungen sind möglich. <b>Langsam</b>: der Wirkstoff reichert sich an, das Risiko für Nebenwirkungen steigt. <b>(Ultra)schnell</b>: der Wirkstoff ist so rasch wieder draußen, dass er kaum wirkt. Entscheidend sind immer deine zwei Genkopien."
+        },
+        {
+          "t": "quiz",
+          "q": "Was kann passieren, wenn du ein Medikament ultraschnell abbaust?",
+          "o": [
+            "Es wirkt kaum, weil es zu früh wieder ausgeschieden wird",
+            "Es wirkt doppelt so stark",
+            "Es bleibt für immer im Körper",
+            "Es wird zu Vitaminen umgebaut"
+          ],
+          "c": 0,
+          "e": "Bei ultraschnellem Abbau hat ein normaler Wirkstoff kaum Zeit zu wirken."
+        },
+        {
+          "t": "img",
+          "img": "l_typen_dosis",
+          "h": "Gleiche Packung, andere Dosis",
+          "p": "Je nach Typ kann eine normale Dosis passen, eine niedrigere, eine höhere oder ein anderes Medikament. Ein Beispiel: Für Citalopram nennt die Packungsbeilage bis zu 40 mg pro Tag. Für langsame und eingeschränkte Metabolisierer empfehlen klinische Leitlinien, die Dosis um bis zu 50 % zu senken. Diese Entscheidung trifft immer deine Ärztin oder dein Arzt."
+        },
+        {
+          "t": "quiz",
+          "q": "Du baust einen Wirkstoff langsam ab und nimmst die normale Dosis. Was droht?",
+          "o": [
+            "Der Wirkstoff wirkt gar nicht",
+            "Er reichert sich an und das Risiko für Nebenwirkungen steigt",
+            "Er wird über die Haut ausgeschieden",
+            "Gar nichts, die Dosis passt immer"
+          ],
+          "c": 1,
+          "e": "Wer langsam abbaut, behält den Wirkstoff länger im Körper. Mit jeder Dosis steigt der Spiegel."
+        },
+        {
+          "t": "img",
+          "img": "l_typen_prodrug",
+          "h": "Prodrugs: erst aktivieren, dann wirken",
+          "p": "Manche Medikamente sind beim Schlucken noch inaktiv. Erst deine Gene wandeln sie in die wirksame Form um. Das Schmerzmittel Codein zum Beispiel wird im Körper zu Morphium. Bei solchen Prodrugs ist alles umgekehrt: Arbeiten deine Gene langsam, wird kaum Wirkstoff aktiviert und das Medikament bleibt wirkungslos. Arbeiten sie sehr schnell, entsteht auf einmal zu viel Wirkstoff."
+        },
+        {
+          "t": "quiz",
+          "q": "Bei einem Prodrug arbeitet dein Gen sehr langsam. Was passiert?",
+          "o": [
+            "Es entsteht zu viel Wirkstoff",
+            "Das Medikament wirkt schneller",
+            "Der Wirkstoff wird kaum aktiviert und bleibt wirkungslos",
+            "Es macht keinen Unterschied"
+          ],
+          "c": 2,
+          "e": "Prodrugs brauchen die Gene zur Aktivierung. Langsame Gene heißt hier: zu wenig aktiver Wirkstoff."
+        },
+        {
+          "t": "text",
+          "h": "Kennst du schon vom Kaffee",
+          "p": "Dasselbe Prinzip gilt nicht nur für Medikamente. Das Gen CYP1A2 baut in der Leber Koffein ab. Bei manchen arbeitet es schnell, bei anderen langsam. Darum verträgt der eine abends noch einen Espresso, während die andere nachts wach liegt."
+        },
+        {
+          "t": "info",
+          "img": "st11_medikamente",
+          "h": "Und bei dir?",
+          "p": "Welcher Metabolisierungstyp du bei den wichtigsten Genen bist, zeigt die Medikamenten-Analyse <b>Pharmaco Sensor</b>. Sie bewertet, wie du <b>über 2.500 Wirkstoffe</b> verarbeitest. Nimm dein Ergebnis zum nächsten Gespräch mit deiner Ärztin oder deinem Arzt mit."
+        }
+      ],
+      "result": null,
+      "images": [
+        {
+          "key": "l_typen_tempo",
+          "prompt": "Four translucent hourglasses in a row inside a soft liver silhouette, their glowing sand running at clearly different speeds from very slow to very fast."
+        },
+        {
+          "key": "l_typen_dosis",
+          "prompt": "Three translucent pill capsules of clearly different sizes standing side by side on a glass surface, each casting a soft golden glow, with a faint DNA strand behind them."
+        },
+        {
+          "key": "l_typen_prodrug",
+          "prompt": "A dull, closed translucent capsule passing through a golden enzyme gate and emerging as a bright glowing molecule, like a key being switched on."
+        }
+      ],
+      "sources": [
+        "Pharmaco-Bericht V2 (OM-Bausteine 113279–113289, 113305, 113308–113312, 113316–113318)",
+        "Demo-Bericht Pharmaco Sensor (NOVO ACADEMY, Seite 11: Prodrugs Codein → Morphium; Seite 15: Legende Metabolizer-Typen)",
+        "NOVO DRUG RESPONSE data/textbloecke.json (glossar.metabolisierer, glossar.genkopie)",
+        "NOVO ACADEMY src/data.js, Kurs pharma-sci; Begleit-PDF „Koffein & CYP1A2-Genvariante (Beispiel Pharmakogenetik)“",
+        "Lifestyle-Bericht, Gene Story „Wirkung von Kaffee und Koffein“ (CYP1A2), research/01 Abschnitt 2.1 Nr. 11"
+      ],
+      "open_questions": [
+        "Kein Hauptvideo-Ausschnitt – Animation nötig (vier Typen + Prodrug-Umkehr eignen sich gut als Animation). Nächste Analogie wäre 3AvZMAtALlQ 2:55–3:42 (Entgiftungsgene arbeiten „viel zu schnell“) – bereits in der Lektion „verbrannt“ verbaut, daher nicht doppelt.",
+        "Bericht V2 nennt den Typ „Eingeschränkter Metabolisierer“, die App „Verminderter Metabolisierer“ – Lektion folgt dem Bericht.",
+        "Citalopram-Beispiel (40 mg, bis zu 50 % Reduktion) aus V2-Baustein 113312 übernommen; im Bericht steht „solltest du … reduzieren“ – in der Lektion als Arzt-Entscheidung formuliert.",
+        "Kaffee-Absatz („Espresso am Abend“) ist ein Alltagsbild, keine Zahl; Abgleich mit der Lektion „kaffee“ empfohlen."
+      ]
+    },
+    {
+      "id": "ampel",
+      "station": "pille",
+      "title": "Deine Medikamenten-Ampel",
+      "minutes": 5,
+      "formula": null,
+      "scalebar": null,
+      "invert": false,
+      "blocks": [
+        {
+          "t": "text",
+          "h": "Über 2.500 Medikamente auf einen Blick",
+          "p": "Stell dir vor, du bekommst ein neues Rezept und könntest sofort nachsehen, wie deine Gene mit diesem Wirkstoff umgehen. Genau das macht die Medikamentenliste: Sie bewertet über 2.500 Medikamente nach deinen Genen. Aber wie liest man sie richtig?"
+        },
+        {
+          "t": "img",
+          "img": "l_ampel_farben",
+          "h": "Rot, Orange, Grün",
+          "p": "Jedes Medikament bekommt eine Farbe. <b>Rot</b>: Eine offizielle Leitlinie nennt für dein Ergebnis eine andere Dosis oder ein anderes Medikament. <b>Orange</b>: Es gibt einen Hinweis im Beipackzettel oder gut belegte Studien zu deinem Genotyp. <b>Grün</b>: Zu deinen Genen gibt es bei diesem Wirkstoff keine genetischen Anmerkungen."
+        },
+        {
+          "t": "quiz",
+          "q": "Was bedeutet Rot bei einem Medikament?",
+          "o": [
+            "Das Medikament ist für alle Menschen gefährlich",
+            "Eine offizielle Leitlinie nennt für dein Ergebnis eine andere Dosis oder ein anderes Medikament",
+            "Das Medikament wurde nicht untersucht",
+            "Du darfst es nie wieder nehmen"
+          ],
+          "c": 1,
+          "e": "Rot heißt: Für deinen Genotyp gibt es eine Leitlinie mit einer Anpassung. Was daraus folgt, entscheidet deine Ärztin oder dein Arzt."
+        },
+        {
+          "t": "img",
+          "img": "l_ampel_gruen",
+          "h": "Grün heißt nicht unbedenklich",
+          "p": "Grün bedeutet nur: Deine Gene geben bei diesem Wirkstoff keinen Hinweis auf ein Problem. Es heißt nicht, dass das Medikament für dich harmlos ist. Auch ohne genetische Auffälligkeiten sind Nebenwirkungen und Wechselwirkungen mit anderen Medikamenten möglich. Allergien, Vorerkrankungen oder andere Arzneimittel zeigt keine Genanalyse."
+        },
+        {
+          "t": "quiz",
+          "q": "Ein Medikament steht bei dir auf Grün. Was heißt das?",
+          "o": [
+            "Es kann keine Nebenwirkungen haben",
+            "Du kannst die Dosis selbst erhöhen",
+            "Es passt auch zu allen anderen Medikamenten",
+            "Deine Gene geben keinen Hinweis auf ein Problem, Neben- und Wechselwirkungen sind trotzdem möglich"
+          ],
+          "c": 3,
+          "e": "Grün betrifft nur deine Gene. Neben- und Wechselwirkungen kann es trotzdem geben."
+        },
+        {
+          "t": "text",
+          "h": "Warum das so wichtig ist",
+          "p": "5-FU ist weltweit das Standardmedikament bei Darmkrebs. Wer es genetisch bedingt kaum abbaut, für den kann schon die Standarddosis lebensbedrohliche Nebenwirkungen auslösen. Weiß das Behandlungsteam vorher Bescheid, kann es die Dosis anpassen oder ein anderes Medikament wählen."
+        },
+        {
+          "t": "img",
+          "img": "l_ampel_arzt",
+          "h": "Niemals selbst absetzen",
+          "p": "Deine Medikamenten-Ampel ist eine Information für dich und für deine Ärztin oder deinen Arzt. Setz ein Medikament nie selbst ab und ändere nie selbst die Dosis, auch nicht bei Rot. Jede Anpassung darf nur deine Ärztin, dein Arzt oder deine Apotheke vornehmen. Nimm dein Ergebnis am besten zum nächsten Termin mit."
+        },
+        {
+          "t": "quiz",
+          "q": "Ein Medikament, das du regelmäßig nimmst, steht auf Rot. Was ist richtig?",
+          "o": [
+            "Sofort absetzen",
+            "Die Dosis selbst halbieren",
+            "Mit deiner Ärztin, deinem Arzt oder in der Apotheke besprechen",
+            "Ignorieren, die Ampel ist nur eine Spielerei"
+          ],
+          "c": 2,
+          "e": "Änderungen gehören immer in ärztliche Hände. Sprich dein Ergebnis an, bevor du etwas änderst."
+        },
+        {
+          "t": "info",
+          "img": "st11_medikamente",
+          "h": "Und bei dir?",
+          "p": "Deine persönliche Ampel für <b>über 2.500 Wirkstoffe</b> zeigt dir die Medikamenten-Analyse <b>Pharmaco Sensor</b>. Änderungen an deinen Medikamenten nur mit deiner Ärztin, deinem Arzt oder deiner Apotheke."
+        }
+      ],
+      "result": null,
+      "images": [
+        {
+          "key": "l_ampel_farben",
+          "prompt": "Three translucent glass capsules floating in a vertical row, glowing softly in red, amber and green, each with a faint DNA helix visible inside."
+        },
+        {
+          "key": "l_ampel_gruen",
+          "prompt": "A single green-glowing translucent capsule beside two other pill shapes whose faint light trails cross and interact, hinting at interactions between medicines."
+        },
+        {
+          "key": "l_ampel_arzt",
+          "prompt": "Two hands meeting over a translucent glowing medication card with three soft colored dots, one hand holding a stethoscope, warm golden light between them."
+        }
+      ],
+      "sources": [
+        "Pharmaco-Bericht V2 (OM-Bausteine 113340 „Über 2.500 Medikamente, nach deinen Genen bewertet“, 113341 „Auch ohne genetische Auffälligkeiten sind Neben- und Wechselwirkungen möglich“, 113375 Anpassung nur durch Arzt oder Apotheker, 113379–113381 Legende, 113330/113334 5-FU)",
+        "NOVO DRUG RESPONSE data/textbloecke.json (status.plat.0, status.plat.1, intro.1.t: Bedeutung Rot/Orange/Grün)",
+        "NOVO DRUG RESPONSE docs/FORMEL-OUTPUT-V2.md und research/01 Abschnitt 2.6 (Status 0 Handlungsbedarf/rot, 1 Achtung/orange, 2 Normal/grün)",
+        "Demo-Bericht Pharmaco Sensor (NOVO ACADEMY, Seite 16): „Entscheiden Sie niemals selbst ein Medikament abzusetzen oder in der Dosis zu ändern!“",
+        "Memory pharmaco-report-redesign.md (Statusfarben Achtung orange, Handlungsbedarf rot, Normal grün)"
+      ],
+      "open_questions": [
+        "Kennzeichnung „OK*“ (grün = keine genetischen Anmerkungen) in keiner gelesenen Quelle gefunden (Bericht V2 Legende: „Grün: Unbedenklich“; App: „Normal“). Lektion schreibt neutral „Grün … keine genetischen Anmerkungen“. Bitte genaues Label/Sternchen-Text im aktuellen Bericht bestätigen und ggf. einsetzen.",
+        "Widerspruch: Bericht-Legende V2 nennt Grün „Unbedenklich“ – die Lektion sagt bewusst „Grün heißt nicht unbedenklich“. Legende im Bericht sollte angepasst werden.",
+        "App kennt in der Plattform-Variante vier Stufen (zusätzlich „Hinweis“ für schwächer belegte Studien); Lektion bleibt bei drei Farben wie im Bericht.",
+        "Kein Hauptvideo-Ausschnitt – Animation nötig.",
+        "Bericht-Baustein 113378 sagt „mehr als 1500 Gene … 2.500 Medikamente“, App zählt 894 Gene / 23 mit Typbestimmung – Genzahl deshalb nicht verwendet."
+      ]
+    }
+  ]
+}

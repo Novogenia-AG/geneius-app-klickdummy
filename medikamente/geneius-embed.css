@@ -1,0 +1,48 @@
+/* GENEius skin for NOVO Drug Response (Klickdummy, 22.10.2026).
+   Only active with ?embed=geneius (class gx-embed on <html>).
+   Presentation only: hides the app's own frame (rail, tab bar, mode switch -
+   GENEius shows these in its own header) and adapts fonts, radii and accents.
+   Traffic-light colours, ratings and texts stay exactly as in the app. Pure ASCII. */
+
+html.gx-embed{
+  --font:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --bg:transparent;
+  --gx-plum:#5E0047;--gx-lime:#C6D63F;--gx-lime-ink:#26001D;
+  background:transparent;scrollbar-width:none;
+}
+html.gx-embed *{scrollbar-width:none}
+html.gx-embed::-webkit-scrollbar,html.gx-embed *::-webkit-scrollbar{display:none;width:0;height:0}
+html.gx-embed body{background:transparent;font-family:var(--font)}
+
+/* own frame off: GENEius rail / tabs / header take over */
+html.gx-embed nav.rail,
+html.gx-embed .tabbar,
+html.gx-embed #modsw{display:none!important}
+html.gx-embed .shell{display:block;min-height:0}
+html.gx-embed main#main{padding:2px 2px 48px!important;max-width:none}
+
+/* search field (normally only in the rail on desktop) always visible */
+html.gx-embed .gsw.mobil{display:flex!important;gap:8px;align-items:center;margin:0 0 14px}
+html.gx-embed .gsw.mobil .langsw{display:none}
+html.gx-embed .gsw.mobil .searchwrap input{border-radius:999px;border:0;background:#fff;box-shadow:0 10px 24px -16px rgba(0,0,0,.6);font-family:var(--font)}
+html.gx-embed .gsw.mobil .gs-hilfe{border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff}
+
+/* cards: GENEius white cards with large radius */
+html.gx-embed .hero{border-radius:22px}
+html.gx-embed .foot,html.gx-embed .foot *{color:rgba(255,255,255,.62)}
+html.gx-embed .foot a{color:#fff}
+
+/* text that sits directly on the plum page background: light, like GENEius */
+html.gx-embed .sec-title{background:none!important;box-shadow:none!important;padding:0!important;border-radius:0;color:#fff;font-weight:800;font-size:clamp(22px,2.4vw,28px);letter-spacing:-.015em}
+html.gx-embed .sec-sub,html.gx-embed .listcount,html.gx-embed .sp-klein,html.gx-embed .sp-sub{color:rgba(255,255,255,.78)}
+html.gx-embed .sec-sub b,html.gx-embed .listcount b,html.gx-embed .sp-klein b,html.gx-embed .sp-sub b,html.gx-embed .sp-h{color:#fff}
+html.gx-embed .sec-sub a,html.gx-embed .sp-klein a,html.gx-embed .modlink-zeile a{color:var(--gx-lime)}
+html.gx-embed .gsortz{background:#fff;border-radius:999px;padding:3px 4px 3px 12px}
+html.gx-embed .ws-empty{background:#fff;border-radius:22px;border-color:transparent}
+
+/* primary actions on the dark page: lime, like GENEius buttons */
+html.gx-embed .wshead2 .btn-plum,html.gx-embed .detail-top .btn-plum,html.gx-embed .sp-cta .btn-plum{background:var(--gx-lime);color:var(--gx-lime-ink);border-color:var(--gx-lime);box-shadow:0 10px 22px -10px rgba(198,214,63,.8)}
+html.gx-embed .btn{border-radius:999px}
+
+/* type: Montserrat everywhere except monospace genotype codes */
+html.gx-embed input,html.gx-embed button,html.gx-embed select,html.gx-embed textarea{font-family:var(--font)}

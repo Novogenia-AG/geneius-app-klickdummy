@@ -1,0 +1,1022 @@
+{
+ "lessons": [
+  {
+   "id": "hunger",
+   "station": "darm",
+   "title": "Wann meldet sich dein Hunger?",
+   "minutes": 4,
+   "formula": "DNA_SHAPE_HUNGER",
+   "scalebar": "DNA_SHAPE_HUNGER_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Schon wieder hungrig?",
+     "p": "Manche Menschen frühstücken und denken bis Mittag nicht ans Essen. Bei anderen knurrt der Magen schon eine Stunde später. Liegt das nur an der Disziplin? Nein. Wie früh und wie stark sich dein Hunger meldet, steuern auch deine Gene."
+    },
+    {
+     "t": "img",
+     "img": "l_hunger_uhr",
+     "h": "Gene stellen deine Hungeruhr",
+     "p": "In der Steinzeit ging es mit Pfeil und Bogen auf die Jagd, heute reicht ein kurzer Weg zum Kühlschrank. Damit du nach einer Mahlzeit nicht sofort wieder hungrig bist, nach einer langen Pause aber ans Essen erinnert wirst, regulieren bestimmte Gene die Stärke deines Hungers. Im Bericht ist das das FTO-Gen. Arbeitet es effektiv, kommt der Hunger relativ spät und in normaler Stärke."
+    },
+    {
+     "t": "quiz",
+     "q": "Was steuert das FTO-Gen beim Thema Hunger?",
+     "o": [
+      "Wie schnell du Koffein abbaust",
+      "Wann und wie stark sich dein Hunger meldet",
+      "Wie viel Eisen dein Darm aufnimmt",
+      "Welche Blutgruppe du hast"
+     ],
+     "c": 1,
+     "e": "Das FTO-Gen reguliert, wie schnell und wie stark sich nach dem Essen wieder Hunger entwickelt."
+    },
+    {
+     "t": "img",
+     "img": "l_hunger_kopien",
+     "h": "Kurzer oder normaler Zeithorizont",
+     "p": "Gene steuern nicht nur mechanische Abläufe im Körper, sondern auch deine Gefühle. Arbeiten die Hunger-Gene nicht fehlerfrei, entwickelt sich der Hunger schneller und ist besonders stark. Der Bericht nennt das einen kurzen Zeithorizont. Manche Menschen werden dadurch einfach mehr vom Hunger geplagt als andere."
+    },
+    {
+     "t": "quiz",
+     "q": "Was passiert bei ungünstigen Hunger-Genen?",
+     "o": [
+      "Der Hunger kommt früher und stärker",
+      "Der Hunger verschwindet ganz",
+      "Du verträgst keine Milch mehr",
+      "Du brauchst mehr Vitamin D"
+     ],
+     "c": 0,
+     "e": "Bei ungünstigen Genen meldet sich der Hunger schneller und intensiver. Das macht es schwerer, lange Pausen ohne Essen durchzuhalten."
+    },
+    {
+     "t": "text",
+     "h": "Mit dem Hunger umgehen statt kämpfen",
+     "p": "Wer von seinen Genen stärker mit Hunger geplagt wird, muss sich nicht quälen. Der Bericht empfiehlt dann, die Mahlzeiten auf mehrere kleine statt auf drei große zu verteilen. Kalorienarme Snacks zwischendurch können den Hunger hinauszögern. Wer dagegen ein schwaches Hungergefühl hat, kommt mit drei größeren Mahlzeiten pro Tag gut zurecht. Übrigens: Kaffee über den Tag, viel Stress oder ständige kleine Snacks dämpfen das Hungergefühl. Dann spürst du deine genetische Neigung vielleicht kaum, denn das Ergebnis ist ein Vergleich unter gleichen Bedingungen."
+    },
+    {
+     "t": "quiz",
+     "q": "Was kann dein Hungergefühl im Alltag dämpfen, sodass du es weniger spürst?",
+     "o": [
+      "Ein ruhiger Tag im Büro",
+      "Lange Pausen ohne Essen",
+      "Ein Leben ganz ohne Stress",
+      "Regelmäßiger Kaffee über den Tag"
+     ],
+     "c": 3,
+     "e": "Kaffee, viel Stress oder ständige kleine Snacks dämpfen den Hunger. Das Ergebnis ist deshalb eine relative Aussage: Unter gleichen Bedingungen haben Menschen mit ungünstigen Genen eher mehr Hunger."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Hungergefühl",
+    "report": "Shape-Bericht · Hunger- und Sättigungsgefühl im Griff",
+    "E": {
+     "pill": "Normaler Hunger",
+     "title": "Schwacher Hungertyp",
+     "text": "Deine FTO-Gene regulieren dein Hungergefühl effektiv. Der Hunger meldet sich bei dir in normalen Zeitabständen und in normaler Stärke.",
+     "rec": "Drei größere Mahlzeiten pro Tag können für dich genau richtig sein. Wirst du zwischendurch doch hungrig, sind kleine, kalorienarme Snacks eine gute Wahl."
+    },
+    "B": null,
+    "D": {
+     "pill": "Starker Hunger",
+     "title": "Starker Hungertyp",
+     "text": "Deine Gene lassen den Hunger früher und stärker entstehen als bei Menschen mit günstigeren Genen.",
+     "rec": "Mehrere kleine Mahlzeiten statt drei großer können dir helfen, lange Hungerphasen zu vermeiden. Kalorienarme Snacks zwischendurch können den Hunger hinauszögern."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie stark dein Hungergefühl genetisch geprägt ist, zeigt die Gene Story „Hungergefühl“ im Shape-Bericht (Gewichtsanalyse).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob drei Mahlzeiten oder mehrere kleine besser zu dir passen."
+    }
+   },
+   "images": [
+    {
+     "key": "l_hunger_uhr",
+     "prompt": "A translucent stomach shaped like a soft clock face, with a glowing DNA strand acting as the clock hand that slowly moves toward a small bowl of food."
+    },
+    {
+     "key": "l_hunger_kopien",
+     "prompt": "Two translucent figures side by side, one with a calm, slowly pulsing glow in the belly, the other with a faster, brighter pulse radiating outward like hunger waves."
+    }
+   ],
+   "sources": [
+    "Shape-Bericht (Studio P-5106 bis P-5114, OM-Bausteine 106259–106293, 107499): Kapitel „Hunger- und Sättigungsgefühl im Griff“, Gen FTO (Formel-Variable DNA_SHAPE_HUNGER_FTO_rs9939609)"
+   ],
+   "open_questions": [
+    "Kein Hauptvideo-Ausschnitt – Animation nötig (das Gewichtsvideo 2QmG2UWqR1Y behandelt Hunger, Sättigung, Snacks und Kalorienwahl nicht; auch kein anderes Hauptvideo).",
+    "Nur zwei Zustände im Bericht (E/D); B = null.",
+    "Bericht empfiehlt bei starkem Hunger wörtlich „sechs kleine statt drei große“ Mahlzeiten; in der Lektion neutral „mehrere kleine“ formuliert.",
+    "Hinweis „Kaffee, Stress und Snacks dämpfen den Hunger“ stammt aus dem nicht mehr verwendeten Schulungsvideo Teil 6 und steht nicht wörtlich im Bericht – bitte freigeben."
+   ]
+  },
+  {
+   "id": "kal",
+   "station": "darm",
+   "title": "Warum dich Kalorienreiches lockt",
+   "minutes": 3,
+   "formula": "DNA_SHAPE_HIGHCALORYINGESTION",
+   "scalebar": "DNA_SHAPE_HIGHCALORYINGESTION_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Salat oder Lasagne?",
+     "p": "Du stehst am Buffet und hast freie Wahl. Du glaubst, das entscheidest nur du. Doch deine Gene reden mit, wenn es darum geht, was dir besonders gut schmeckt und wie kalorienreich dein Teller am Ende ist."
+    },
+    {
+     "t": "img",
+     "img": "l_kal_buffet",
+     "h": "Das Buffet-Experiment",
+     "p": "Wissenschaftler haben hungrige Menschen mit einem leeren Teller vor ein Buffet gestellt. Jeder durfte sich nehmen, was er essen wollte. Danach wurden die Kalorien auf jedem Teller gezählt und alle Teilnehmer genetisch analysiert. Das Ergebnis: Menschen mit der veränderten Version des zuständigen Gens hatten deutlich mehr Kalorien auf dem Teller."
+    },
+    {
+     "t": "quiz",
+     "q": "Was zeigte das Buffet-Experiment?",
+     "o": [
+      "Alle Menschen wählen gleich viele Kalorien",
+      "Menschen mit bestimmten Genvarianten legten deutlich mehr Kalorien auf den Teller",
+      "Hungrige Menschen nehmen immer nur Salat",
+      "Gene beeinflussen nur die Verdauung, nicht die Auswahl"
+     ],
+     "c": 1,
+     "e": "Die Genvariante verleitet Menschen dazu, besonders kalorienreiche Lebensmittel zu bevorzugen. Das passiert meist ganz unbewusst."
+    },
+    {
+     "t": "img",
+     "img": "l_kal_gene",
+     "h": "Regulierungsgene steuern dein Verlangen",
+     "p": "Der Bericht nennt sie Regulierungsgene. Für diese Gene Story werden die Gene FTO und APOA2 analysiert. Sie steuern dein Verlangen nach Essen. Sind sie effektiv, greifst du eher zu weniger kalorienreichen Lebensmitteln. Sind sie beeinträchtigt oder defekt, lenken sie dich mehr oder stark zu Kalorienreichem. Hier gibt es also drei Abstufungen."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie wirken die Regulierungsgene bei der Kalorienaufnahme?",
+     "o": [
+      "Sie verändern, wie viele Kalorien ein Lebensmittel hat",
+      "Sie bestimmen deine Körpergröße",
+      "Sie bauen Fett im Darm ab",
+      "Sie beeinflussen, zu welchen Lebensmitteln du greifst"
+     ],
+     "c": 3,
+     "e": "Die Gene ändern nicht das Essen, sondern dein Verlangen. Sie entscheiden mit, ob dich eher das Leichte oder das Kalorienreiche anlacht."
+    },
+    {
+     "t": "text",
+     "h": "Die Verführung erkennen",
+     "p": "Ungünstige Gene verführen leise. Wer das weiß, kann bewusst gegensteuern. Dein Bericht hilft dir dabei mit einer persönlichen Lebensmittelliste: Halte dich an die grün bewerteten Lebensmittel, dann wirkst du deinen Genen entgegen, ohne ständig Kalorien zählen zu müssen."
+    },
+    {
+     "t": "quiz",
+     "q": "Was empfiehlt der Bericht, wenn deine Gene dich zu Kalorienreichem verführen?",
+     "o": [
+      "Ganz aufs Essen verzichten",
+      "Nur noch abends essen",
+      "Dich an die grün bewerteten Lebensmittel deiner Liste halten",
+      "Mehr Snacks einplanen"
+     ],
+     "c": 2,
+     "e": "Die grün bewerteten Lebensmittel in deiner Lebensmittelliste helfen dir, der genetischen Verführung entgegenzuwirken."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Kalorienaufnahme",
+    "report": "Shape-Bericht · Hunger- und Sättigungsgefühl im Griff",
+    "E": {
+     "pill": "Wenig Verführung",
+     "title": "Geringer Kalorienaufnahmetyp",
+     "text": "Deine Gene verleiten dich nicht heimlich zu besonders kalorienreichen Lebensmitteln. Bei Mahlzeiten greifst du eher zu weniger kalorienreichen Speisen.",
+     "rec": "Aufgrund deiner Gene brauchst du hier keine besonderen Regeln zu beachten."
+    },
+    "B": {
+     "pill": "Etwas Verführung",
+     "title": "Mäßiger Kalorienaufnahmetyp",
+     "text": "Deine Gene verführen dich etwas mehr dazu, zu besonders kalorienreichen Lebensmitteln zu greifen.",
+     "rec": "Sei dir dieser leisen Verführung bewusst. Die grün bewerteten Lebensmittel in deiner Lebensmittelliste können dir helfen gegenzusteuern."
+    },
+    "D": {
+     "pill": "Starke Verführung",
+     "title": "Hoher Kalorienaufnahmetyp",
+     "text": "Deine Gene verleiten dich dazu, bei Mahlzeiten vermehrt zu besonders kalorienreichen Lebensmitteln zu greifen.",
+     "rec": "Halte dich am besten an die grün bewerteten Lebensmittel in deiner Lebensmittelliste, um deinen Genen entgegenzuwirken."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Ob deine Gene dich zu kalorienreichem Essen verführen, zeigt die Gene Story „Kalorienaufnahme“ im Shape-Bericht (Gewichtsanalyse).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du deiner Lust auf Kalorienreiches einfach vertrauen kannst oder bewusst gegensteuern solltest."
+    }
+   },
+   "images": [
+    {
+     "key": "l_kal_buffet",
+     "prompt": "A translucent buffet table with two empty plates, one filling with light vegetables and the other with glowing, dense high-calorie dishes, a faint DNA helix hovering between them."
+    },
+    {
+     "key": "l_kal_gene",
+     "prompt": "A translucent human head in profile with a glowing DNA strand inside gently pulling a thread toward a rich, golden slice of cake."
+    }
+   ],
+   "sources": [
+    "Shape-Bericht (Studio P-5108, P-5115 bis P-5122, OM-Bausteine 107502, 106295–106316)",
+    "Formel-Output: Gene FTO und APOA2 (DNA_SHAPE_HIGHCALORYINGESTION_FTO_rs9939609, _APOA2_rs5082)"
+   ],
+   "open_questions": [
+    "Kein Hauptvideo-Ausschnitt – Animation nötig (das Gewichtsvideo 2QmG2UWqR1Y behandelt Hunger, Sättigung, Snacks und Kalorienwahl nicht; auch kein anderes Hauptvideo).",
+    "Genname „Regulierungsgene“ im Bericht; FTO und APOA2 nur aus den Formel-Variablen abgeleitet – bitte bestätigen, dass beide in der Gentabelle stehen."
+   ]
+  },
+  {
+   "id": "satt",
+   "station": "darm",
+   "title": "Wann bist du wirklich satt?",
+   "minutes": 3,
+   "formula": "DNA_SHAPE_SATURATION",
+   "scalebar": "DNA_SHAPE_SATURATION_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Noch ein Nachschlag?",
+     "p": "Der Teller ist leer, du fühlst dich noch nicht satt und holst dir noch eine Portion. Zehn Minuten später merkst du: Das war zu viel. Warum kommt das Sattgefühl bei manchen Menschen so spät? Auch hier spielen deine Gene mit."
+    },
+    {
+     "t": "img",
+     "img": "l_satt_signal",
+     "h": "Das Satt-Signal aus dem Darm",
+     "p": "Kommt eine Mahlzeit im Darm an, beginnt der Sättigungsprozess. Bestimmte Nährstoffe, die im Dünndarm aufgenommen werden, schalten die Bildung eines Sättigungshormons ein. Es lässt den Hunger verschwinden und sagt dem Körper: genug gegessen. Mit effektiven FTO-Genen wird dieses Signal sofort erkannt und das Sättigungsgefühl ist stark."
+    },
+    {
+     "t": "quiz",
+     "q": "Wo startet laut Bericht das Satt-Signal?",
+     "o": [
+      "Im Dünndarm, wenn bestimmte Nährstoffe ankommen",
+      "In den Zähnen beim Kauen",
+      "In der Haut",
+      "In den Muskeln nach dem Sport"
+     ],
+     "c": 0,
+     "e": "Nährstoffe im Dünndarm schalten die Bildung eines Sättigungshormons ein. Das meldet dem Körper, dass er satt ist."
+    },
+    {
+     "t": "img",
+     "img": "l_satt_verzoegert",
+     "h": "Wenn das Signal zu spät kommt",
+     "p": "Bei bestimmten Genvarianten bremsen die Gene das Signal, dass der Körper eigentlich schon satt ist. Man isst weiter, holt sich noch eine Portion, und wenn die Sättigung endlich da ist, hat man sich schon überessen. Die häufige Folge laut Bericht: Überessen und daraus Übergewicht."
+    },
+    {
+     "t": "quiz",
+     "q": "Was passiert, wenn das Sättigungsgefühl zu spät kommt?",
+     "o": [
+      "Man isst weniger als nötig",
+      "Man bekommt mehr Durst",
+      "Man hat sich schon überessen, bevor man es merkt",
+      "Man verträgt kein Eiweiß mehr"
+     ],
+     "c": 2,
+     "e": "Kommt das Satt-Signal verzögert, isst man über den eigentlichen Bedarf hinaus. Das merkt man oft erst hinterher."
+    },
+    {
+     "t": "text",
+     "h": "Langsam essen gibt dem Signal Zeit",
+     "p": "Dein Körper braucht etwas Zeit, um dir zu sagen, dass er satt ist. Der Bericht rät: Lass dir bei deinen Mahlzeiten ausreichend Zeit, damit sich das Sättigungsgefühl entwickeln kann. Vor einem Nachschlag kurz innezuhalten kann dabei helfen."
+    },
+    {
+     "t": "quiz",
+     "q": "Was hilft bei einem schwachen Sättigungsgefühl am meisten?",
+     "o": [
+      "Schneller essen, damit es vorbei ist",
+      "Langsamer essen und dir Zeit lassen",
+      "Mahlzeiten ganz auslassen",
+      "Nur noch flüssige Nahrung"
+     ],
+     "c": 1,
+     "e": "Wer langsam isst, gibt dem verzögerten Satt-Signal die Chance, rechtzeitig anzukommen."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Sättigungsgefühl",
+    "report": "Shape-Bericht · Hunger- und Sättigungsgefühl im Griff",
+    "E": {
+     "pill": "Schnell satt",
+     "title": "Starker Sättigungstyp",
+     "text": "Deine FTO-Gene sorgen dafür, dass dein Körper das Satt-Signal sofort erkennt. Dein Sättigungsgefühl ist stark.",
+     "rec": "Das Risiko für unkontrolliertes Überessen ist bei dir gering. Aufgrund deiner Gene brauchst du hier keine besonderen Regeln zu beachten."
+    },
+    "B": null,
+    "D": {
+     "pill": "Spät satt",
+     "title": "Schwacher Sättigungstyp",
+     "text": "Deine Gene verlangsamen das Signal deines Körpers, dass er satt ist. Dein Sättigungsgefühl setzt später ein.",
+     "rec": "Lass dir bei Mahlzeiten ausreichend Zeit, damit sich das Sättigungsgefühl entwickeln kann. Langsames Essen kann dir helfen, dich nicht zu überessen."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie schnell sich bei dir das Sattgefühl einstellt, zeigt die Gene Story „Sättigungsgefühl“ im Shape-Bericht (Gewichtsanalyse).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du deinem Körper beim Essen bewusst mehr Zeit geben solltest."
+    }
+   },
+   "images": [
+    {
+     "key": "l_satt_signal",
+     "prompt": "A translucent small intestine where nutrient particles light up and release golden hormone signals that travel upward like fireflies toward a softly glowing brain."
+    },
+    {
+     "key": "l_satt_verzoegert",
+     "prompt": "A translucent figure at a table reaching for a second plate while a delayed golden signal is still slowly climbing from the belly toward the head."
+    }
+   ],
+   "sources": [
+    "Shape-Bericht (Studio P-5107, P-5123 bis P-5128, OM-Bausteine 107501, 106317–106336), Gen FTO (DNA_SHAPE_SATURATION_FTO_rs9939609)"
+   ],
+   "open_questions": [
+    "Kein Hauptvideo-Ausschnitt – Animation nötig (das Gewichtsvideo 2QmG2UWqR1Y behandelt Hunger, Sättigung, Snacks und Kalorienwahl nicht; auch kein anderes Hauptvideo).",
+    "Nur zwei Zustände im Bericht (E/D); B = null. Laut shape-bauplan.md steht demo-kunde-c hier auf „beeinträchtigt“ – App muss diesen Fall abfangen.",
+    "Aussagen, die bisher Daniel (Schulungsvideo) zugeschrieben waren, stehen jetzt ohne Zitat; die Kernaussage deckt der Bericht."
+   ]
+  },
+  {
+   "id": "snack",
+   "station": "darm",
+   "title": "Snacklust zwischendurch",
+   "minutes": 3,
+   "formula": "DNA_SHAPE_SNACK",
+   "scalebar": "DNA_SHAPE_SNACK_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Der kleine Hunger um vier",
+     "p": "Mittagessen war gut, das Abendessen ist noch weit weg. Und plötzlich ruft die Schublade mit den Keksen. Manche Menschen spüren diesen Ruf kaum, andere fast jeden Tag. Woran liegt das?"
+    },
+    {
+     "t": "img",
+     "img": "l_snack_fto",
+     "h": "Gene und das Verlangen nach Snacks",
+     "p": "Studien haben beobachtet, dass Menschen mit bestimmten Gendefekten viel öfter zu einem Snack greifen. Auch hier analysiert der Bericht das FTO-Gen. Sind deine Gene effektiv, hast du zwischen den Mahlzeiten wenig Verlangen nach Snacks. Sind sie defekt, ist das Verlangen größer und du snackst öfter als andere."
+    },
+    {
+     "t": "quiz",
+     "q": "Welches Gen untersucht der Bericht beim Snackverhalten?",
+     "o": [
+      "LCT",
+      "HFE",
+      "FTO",
+      "GPX1"
+     ],
+     "c": 2,
+     "e": "Es ist das FTO-Gen. Es spielt auch beim Hunger- und beim Sättigungsgefühl eine Rolle."
+    },
+    {
+     "t": "img",
+     "img": "l_snack_kalorien",
+     "h": "Extra-Kalorien summieren sich",
+     "p": "Ein Snack allein ist kein Problem. Wer aber öfter snackt, nimmt zwischen den Hauptmahlzeiten zusätzliche Kalorien auf. Laufen diese Extra-Kalorien aus dem Ruder, steigt das Körpergewicht. Entscheidend ist also nicht nur, wie oft du snackst, sondern auch was."
+    },
+    {
+     "t": "quiz",
+     "q": "Warum kann häufiges Snacken das Gewicht beeinflussen?",
+     "o": [
+      "Snacks verändern deine Gene",
+      "Snacks blockieren die Verdauung",
+      "Snacken macht immer sofort satt",
+      "Zusätzliche Kalorien zwischen den Mahlzeiten summieren sich"
+     ],
+     "c": 3,
+     "e": "Jeder Snack bringt Kalorien mit. Kommen sie regelmäßig zu den Hauptmahlzeiten dazu, kann das Gewicht steigen."
+    },
+    {
+     "t": "text",
+     "h": "Snacken ja, aber clever",
+     "p": "Wer gern snackt, muss sich nicht quälen. Wichtig ist, dass es keine Chips und Schokoriegel sind, sondern kalorienarme Snacks. Hilfreich kann sein, solche Snacks griffbereit zu haben, damit du gar nicht erst zur Schokolade greifen musst."
+    },
+    {
+     "t": "quiz",
+     "q": "Was ist wichtig, wenn deine Gene dich öfter snacken lassen?",
+     "o": [
+      "Kalorienarme Snacks statt Chips und Schokoriegel",
+      "Snacks komplett verbieten",
+      "Nur süße Snacks essen",
+      "Snacks nur spät abends"
+     ],
+     "c": 0,
+     "e": "Snacks sind erlaubt, wenn du zu kalorienarmen Optionen greifst. So bleibt die Snacklust ohne Folgen fürs Gewicht."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Snackverhalten",
+    "report": "Shape-Bericht · Hunger- und Sättigungsgefühl im Griff",
+    "E": {
+     "pill": "Selten Snacklust",
+     "title": "Seltener Snacktyp",
+     "text": "Deine FTO-Gene sorgen dafür, dass du zwischen den Mahlzeiten kein großes Verlangen nach Snacks hast. Du snackst weniger als Menschen mit anderen Genen.",
+     "rec": "Brauchst du doch einmal einen Snack, ist eine kalorienarme Option eine gute Wahl."
+    },
+    "B": null,
+    "D": {
+     "pill": "Oft Snacklust",
+     "title": "Häufiger Snacktyp",
+     "text": "Deine Gene geben dir ein größeres Verlangen, zwischen den Mahlzeiten zu snacken. Du snackst öfter als Menschen mit anderen Genen.",
+     "rec": "Sei dir dieser Verführung bewusst und greif zu kalorienarmen Alternativen, wenn du Lust auf einen Snack hast."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie stark deine Gene dich zum Snacken verleiten, zeigt die Gene Story „Snackverhalten“ im Shape-Bericht (Gewichtsanalyse).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Snacklust in den Genen liegt und wie du klug damit umgehst."
+    }
+   },
+   "images": [
+    {
+     "key": "l_snack_fto",
+     "prompt": "A translucent hand hovering over an open drawer filled with glowing snack shapes, a fine DNA strand wrapped around the wrist like a gentle tug."
+    },
+    {
+     "key": "l_snack_kalorien",
+     "prompt": "Small translucent snack items between three larger plates on a timeline, each snack adding a tiny golden drop into a slowly filling glass vessel."
+    }
+   ],
+   "sources": [
+    "Shape-Bericht (Studio P-5108, P-5129 bis P-5134, OM-Bausteine 107503, 106337–106357), Gen FTO (DNA_SHAPE_SNACK_FTO_rs9939609)"
+   ],
+   "open_questions": [
+    "Kein Hauptvideo-Ausschnitt – Animation nötig (das Gewichtsvideo 2QmG2UWqR1Y behandelt Hunger, Sättigung, Snacks und Kalorienwahl nicht; auch kein anderes Hauptvideo).",
+    "Nur zwei Zustände im Bericht (E/D); B = null.",
+    "Tipp „kalorienarme Snacks griffbereit haben“ ist abgeleitet, nicht wörtlich im Bericht.",
+    "Aussagen, die bisher Daniel (Schulungsvideo) zugeschrieben waren, stehen jetzt ohne Zitat; die Kernaussage deckt der Bericht."
+   ]
+  },
+  {
+   "id": "kalzium",
+   "station": "darm",
+   "title": "Milch, Laktose und Kalzium",
+   "minutes": 5,
+   "formula": "DNA_NUTRITION_CALCIUM_INTAKE",
+   "scalebar": "DNA_NUTRITION_CALCIUM_INTAKE_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Verträgst du Milch ein Leben lang?",
+     "p": "Als Baby hast du Milch ganz selbstverständlich vertragen. Bei vielen Erwachsenen ist das anders: Nach dem Milchkaffee grummelt der Bauch. Was das mit deinen Knochen zu tun hat, steht in deinen Genen."
+    },
+    {
+     "t": "img",
+     "img": "l_kalzium_knochen",
+     "h": "Kalzium für stabile Knochen",
+     "p": "Kalzium gibt deinen Knochen Stabilität und kann so vor Osteoporose schützen. Etwa 98 % des Kalziums in deinem Körper stecken in den Knochen. Dein Körper kann Kalzium nicht selbst herstellen, er bekommt es nur aus der Nahrung. Es wird im Darm aufgenommen, Vitamin D3 verstärkt das. Das Blut bringt es dann zu den Knochen."
+    },
+    {
+     "t": "video",
+     "id": "79MPy6BFqu8",
+     "start": 1109.65,
+     "end": 1125.9,
+     "file": "clips/kalzium_1.mp4",
+     "tag": "Originalaufnahme",
+     "cap": "Daniel erklärt, wie sich Kalzium und Vitamin D bei der Aufnahme unterstützen",
+     "ai": false
+    },
+    {
+     "t": "quiz",
+     "q": "Wo befindet sich der größte Teil des Kalziums in deinem Körper?",
+     "o": [
+      "Im Blut",
+      "In den Muskeln",
+      "In den Knochen, etwa 98 %",
+      "In der Leber"
+     ],
+     "c": 2,
+     "e": "Fast das ganze Kalzium, etwa 98 %, ist in den Knochen eingebaut. Deshalb ist eine kalziumreiche Ernährung so wichtig für die Knochengesundheit."
+    },
+    {
+     "t": "img",
+     "img": "l_kalzium_lct",
+     "h": "Das LCT-Gen und die Laktose",
+     "p": "Das LCT-Gen bildet das Enzym, das Milchzucker, also Laktose, im Darm spaltet. Mit effektiven LCT-Genen verträgst du Laktose dein Leben lang gut. Bestimmte Varianten lassen die Verträglichkeit mit steigendem Alter sinken. Eine veränderte Kopie reicht dafür nicht: Erst wenn beide Kopien verändert sind, wird Laktose schlechter vertragen."
+    },
+    {
+     "t": "quiz",
+     "q": "Wann verträgt jemand Laktose laut Bericht mit dem Alter schlechter?",
+     "o": [
+      "Wenn eine der beiden LCT-Kopien verändert ist",
+      "Wenn beide LCT-Kopien verändert sind",
+      "Wenn man zu viel Vitamin D3 nimmt",
+      "Das hängt nur vom Alter ab, nicht von den Genen"
+     ],
+     "c": 1,
+     "e": "Mit einer veränderten Kopie bleibt die Funktion normal. Erst wenn beide Kopien verändert sind, sinkt die Laktoseverträglichkeit."
+    },
+    {
+     "t": "img",
+     "img": "l_kalzium_ausweg",
+     "h": "Der Umweg über das Verhalten",
+     "p": "Spannend: Das Gen bremst nicht direkt die Kalziumaufnahme. Wer Laktose schlecht verträgt, meidet aber oft ganz unbewusst Milchprodukte. Und genau die sind wichtige Kalziumquellen. Laut Bericht sinkt die Kalziumaufnahme dadurch um ca. 8 %."
+    },
+    {
+     "t": "quiz",
+     "q": "Warum nehmen Menschen mit bestimmten LCT-Varianten oft weniger Kalzium auf?",
+     "o": [
+      "Ihr Darm kann gar kein Kalzium mehr aufnehmen",
+      "Sie brauchen grundsätzlich kein Kalzium",
+      "Milch enthält bei ihnen weniger Kalzium",
+      "Sie vertragen Laktose schlechter und meiden deshalb Milchprodukte"
+     ],
+     "c": 3,
+     "e": "Der Effekt läuft über das Essverhalten: weniger Milchprodukte auf dem Teller bedeuten weniger Kalzium."
+    },
+    {
+     "t": "text",
+     "h": "Kalzium auch ohne Milch",
+     "p": "Die besten Kalziumquellen sind Milchprodukte, besonders Käse wie Emmentaler, Parmesan, Gouda und Edamer. Wer Milchprodukte meiden möchte, findet Kalzium auch in pflanzlichen Lebensmitteln: Mohn, Sesam, Mandeln, Haselnüsse, Grünkohl, Sojabohnen, Feigen, Walnüsse und Brokkoli."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Gene und Kalziumaufnahme",
+    "report": "Lifestyle-Bericht · Gesund ernähren",
+    "E": {
+     "pill": "Laktose passt",
+     "title": "Kalziumaufnahme funktioniert",
+     "text": "Deine LCT-Gene sorgen dafür, dass du Laktose in Milchprodukten dein Leben lang gut verträgst. Damit isst du tendenziell genug kalziumhaltige Milchprodukte.",
+     "rec": "Eine spezielle Anpassung deiner Ernährung ist für dich nicht nötig."
+    },
+    "B": null,
+    "D": {
+     "pill": "Laktose schwierig",
+     "title": "Kalziumaufnahme funktioniert nicht",
+     "text": "Deine LCT-Gene führen dazu, dass du Laktose mit steigendem Alter schlechter verträgst. Dadurch meidest du Milchprodukte eher und nimmst weniger Kalzium auf.",
+     "rec": "Mehr andere kalziumhaltige Lebensmittel oder eine Nahrungsergänzung können für dich sinnvoll sein. Bei Fragen zu deiner Knochengesundheit sprich mit deiner Ärztin oder deinem Arzt."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie deine Gene Laktoseverträglichkeit und Kalziumaufnahme beeinflussen, zeigt die Gene Story „Gene und Kalziumaufnahme“ im Lifestyle-Bericht (Gesund ernähren).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du beim Kalzium bewusst nachhelfen solltest."
+    }
+   },
+   "images": [
+    {
+     "key": "l_kalzium_knochen",
+     "prompt": "A translucent thigh bone glowing from within as tiny golden calcium particles travel from the intestine through a blood vessel and settle into the bone structure."
+    },
+    {
+     "key": "l_kalzium_lct",
+     "prompt": "A translucent glass of milk whose lactose molecules are being split by small enzyme scissors made of light, a DNA strand coiling around the glass."
+    },
+    {
+     "key": "l_kalzium_ausweg",
+     "prompt": "A translucent hand pushing a milk bottle aside on a table, while a faint golden calcium glow fades from a nearby bone outline."
+    }
+   ],
+   "sources": [
+    "Lifestyle-Bericht (Studio P-1237 bis P-1249): Kapiteltext, Video-Seite (98 %, ca. 8 %), Ergebnisseiten, Empfehlungen, Gentabelle LCT rs4988235 („Ein Gen defekt, weiterhin normale Funktion“)",
+    "Übersichtskarten-Titel OM 104560/104561",
+    "Hauptvideo 79MPy6BFqu8 18:29,7–18:45,9 (Kalzium und Vitamin D unterstützen sich)"
+   ],
+   "open_questions": [
+    "Ergebnis-Titel: Übersichtskarte sagt „Kalziumaufnahme funktioniert / funktioniert nicht“, die Ergebnisseite „Laktose wird gut vertragen / schlecht vertragen“. Verwendet: Übersichtskarte (wie 01_GENE_STORIES). Bitte festlegen.",
+    "Häufigkeiten in der Gentabelle (8 % / 17 % / 75 %) passen eher zur Weltbevölkerung als zu Mitteleuropa – nicht verwendet, bitte prüfen.",
+    "Satz „Das LCT-Gen bildet das Enzym, das Laktose spaltet“ = Lehrbuchwissen, steht so nicht im Bericht.",
+    "Tippfehler im Bericht P-1246: „LTC-Gene“ statt „LCT-Gene“.",
+    "Nur zwei Zustände (E/D); B = null.",
+    "Das Hauptvideo erklärt LCT/Laktose nicht (nur ein Halbsatz bei 0:19). Einziger Clip: Kalzium und Vitamin D aus dem Nahrungsergänzungsteil (16 s); „ausgeschüttet“ meint im Original die Freisetzung aus den Mikroperlen. Für das LCT-Thema: Animation nötig (nur EN Calcium-Milk, unveröffentlicht)."
+   ]
+  },
+  {
+   "id": "vitd",
+   "station": "blut",
+   "title": "Wirkt Vitamin D bei dir?",
+   "minutes": 6,
+   "formula": "DNA_NUTRITION_VITD3",
+   "scalebar": "DNA_NUTRITION_VITD3_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Normaler Bluttest und trotzdem zu wenig?",
+     "p": "Vitamin D3 ist das Sonnenvitamin. Dein Körper bildet es selbst, wenn Sonne auf deine Haut trifft, und es ist besonders für die Knochen wichtig. Viele lassen ihren Wert im Blut messen. Doch ein guter Wert heißt noch nicht, dass Vitamin D3 bei dir auch richtig wirkt."
+    },
+    {
+     "t": "video",
+     "id": "RVCVd4rG1AU",
+     "start": 25.1,
+     "end": 61.85,
+     "file": "clips/vitd_1.mp4",
+     "tag": "Animation",
+     "cap": "Der Vitamin-D-Rezeptor: ein Greifarm an deiner Zelle",
+     "ai": true
+    },
+    {
+     "t": "img",
+     "img": "l_vitd_rezeptor",
+     "h": "Ein Greifarm für Vitamin D3",
+     "p": "Die VDR-Gene enthalten die Bauanleitung für einen Rezeptor. Stell ihn dir wie einen Greifarm vor, der an der Oberfläche der Zelle nach außen ragt. Vitamin D3 dockt genau daran an. Dann bekommt die Zelle ein Signal, entfaltet die gesunden Effekte des Vitamins und schaltet bestimmte andere Gene ein."
+    },
+    {
+     "t": "quiz",
+     "q": "Was bildet die Zelle nach der Anleitung des VDR-Gens?",
+     "o": [
+      "Einen Rezeptor, an dem Vitamin D3 andockt",
+      "Vitamin D3 selbst",
+      "Ein Enzym für den Koffeinabbau",
+      "Das Sättigungshormon"
+     ],
+     "c": 0,
+     "e": "Das VDR-Gen liefert die Bauanleitung für den Vitamin-D-Rezeptor. Erst wenn Vitamin D3 dort andockt, kann es wirken."
+    },
+    {
+     "t": "img",
+     "img": "l_vitd_greifarm",
+     "h": "Wenn der Greifarm schwächer greift",
+     "p": "Hat die Bauanleitung einen Schreibfehler, wird der Rezeptor falsch zusammengesetzt. Vitamin D3 passt noch hinein, bindet aber nur schwach, und das Signal an die Zelle ist viel schwächer. Du hast zwei Kopien des Gens. Ist eine verändert, bildet deine Zelle eine Mischung aus normalen und schwächeren Rezeptoren. Sind beide verändert, gibt es nur schwächere."
+    },
+    {
+     "t": "quiz",
+     "q": "Was hilft laut Studien, wenn die Rezeptoren schwächer greifen?",
+     "o": [
+      "Weniger Vitamin D3",
+      "Gar nichts, das Gen ist nicht zu ändern",
+      "Eine höhere Vitamin-D3-Zufuhr",
+      "Mehr Kaffee"
+     ],
+     "c": 2,
+     "e": "Mit mehr Vitamin D3 werden auch die schwächeren Rezeptoren ausreichend aktiviert. Zusammen ist das Signal dann wieder stark genug."
+    },
+    {
+     "t": "img",
+     "img": "l_vitd_bluttest",
+     "h": "Die Falle beim Bluttest",
+     "p": "Ein Bluttest zeigt, wie viel Vitamin D3 in deinem Blut ist. Er zeigt nicht, wie gut deine Zellen es erkennen. Mit veränderten VDR-Genen kannst du laut Bluttest ausreichend versorgt sein und trotzdem einen Mangel in den Zellen haben, weil das Vitamin seine Wirkung nicht richtig entfalten kann."
+    },
+    {
+     "t": "video",
+     "id": "RVCVd4rG1AU",
+     "start": 71.6,
+     "end": 92.3,
+     "file": "clips/vitd_2.mp4",
+     "tag": "Animation",
+     "cap": "Bluttest normal, Wirkung trotzdem schwach",
+     "ai": true
+    },
+    {
+     "t": "text",
+     "h": "Woher du Vitamin D3 bekommst",
+     "p": "Die wichtigste Quelle ist deine eigene Haut: Schon ein kurzer Aufenthalt in der Sonne regt die Bildung an. Solarien arbeiten vor allem mit UV-A-Strahlen und sind dafür wenig geeignet. Über die Nahrung liefern fetter Fisch wie Hering, Makrele und Lachs, aber auch Leber, Lebertran, Käse und Pilze Vitamin D3. Gut zu wissen: Vitamin D3 fördert die Aufnahme von Kalzium."
+    },
+    {
+     "t": "quiz",
+     "q": "Warum kann ein normaler Vitamin-D-Bluttest täuschen?",
+     "o": [
+      "Vitamin D lässt sich im Blut gar nicht messen",
+      "Er zeigt die Menge im Blut, aber nicht, wie gut deine Zellen das Vitamin erkennen",
+      "Der Test erhöht den Vitamin-D-Wert",
+      "Vitamin D wirkt nur in der Nacht"
+     ],
+     "c": 1,
+     "e": "Entscheidend ist, ob die Rezeptoren das Vitamin D3 erkennen. Das zeigen deine Gene, nicht der Bluttest."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Wirkung von Vitamin D3",
+    "report": "Lifestyle-Bericht · Gesund ernähren",
+    "E": {
+     "pill": "Normale Dosis",
+     "title": "Vitamin D3 wirkt in normaler Dosis",
+     "text": "Deine VDR-Gene bilden normale Rezeptoren. Deine Zellen erkennen normale Mengen Vitamin D3 richtig.",
+     "rec": "Für die volle Wirkung reicht bei dir eine normale Menge Vitamin D3, zum Beispiel über Sonne auf der Haut und fetten Fisch."
+    },
+    "B": {
+     "pill": "Etwas mehr nötig",
+     "title": "Vitamin D3 wirkt nur in höherer Dosis",
+     "text": "Deine VDR-Gene bilden eine Mischung aus normalen und schwächeren Rezeptoren. Normale Mengen Vitamin D3 reichen oft nicht für die volle Wirkung.",
+     "rec": "Eine etwas höhere Vitamin-D3-Zufuhr kann für dich sinnvoll sein. Die passende Dosis besprichst du am besten mit deiner Ärztin oder deinem Arzt."
+    },
+    "D": {
+     "pill": "Deutlich mehr nötig",
+     "title": "Vitamin D3 wirkt nur in viel höherer Dosis",
+     "text": "Deine VDR-Gene bilden nur schwächere Rezeptoren. Deine Zellen erkennen normale Mengen Vitamin D3 nicht ausreichend.",
+     "rec": "Eine deutlich höhere Vitamin-D3-Zufuhr kann für dich sinnvoll sein, damit genug Rezeptoren aktiviert werden. Besprich die Dosis mit deiner Ärztin oder deinem Arzt."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie gut deine Zellen Vitamin D3 erkennen, zeigt die Gene Story „Wirkung von Vitamin D3“ im Lifestyle-Bericht (Gesund ernähren).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dir eine normale Menge Vitamin D3 reicht oder ob du mehr brauchst."
+    }
+   },
+   "images": [
+    {
+     "key": "l_vitd_rezeptor",
+     "prompt": "A translucent cell surface with elegant receptor arms reaching outward, a glowing golden vitamin D molecule docking precisely into one of them and sending a light pulse into the cell."
+    },
+    {
+     "key": "l_vitd_greifarm",
+     "prompt": "Two translucent receptor arms on a cell, one gripping a golden vitamin D molecule firmly, the other slightly misshapen and holding it loosely with only a faint glow."
+    },
+    {
+     "key": "l_vitd_bluttest",
+     "prompt": "A translucent blood test tube full of golden vitamin D particles beside a cell whose receptors stay dim, symbolising a normal blood value without effect."
+    }
+   ],
+   "sources": [
+    "Lifestyle-Bericht (Studio P-66 bis P-83): Kapiteltext „Einfach mehr Vitamin D3?“, Körperdiagramme, Ergebnisseiten, Empfehlungen, Gentabelle VDR rs1544410",
+    "Animation RVCVd4rG1AU 0:25,1–1:01,9 und 1:11,6–1:32,3 (KI-Stimme Daniel)"
+   ],
+   "open_questions": [
+    "Häufigkeiten widersprechen sich: Gentabelle P-83 zeigt nur „41 %“ (Feld „Beide Gene effektiv“), die Animation sagt 47 % / 41 % / 12 %. Deshalb keine Zahl in der Lektion – bitte klären.",
+    "Empfehlungsseite P-78/P-80: „auch im Winter und im Schatten wird Vitamin D3 produziert“; Animation: in London/Berlin von Oktober bis März fast keines. Widerspruch, beide Aussagen nicht verwendet.",
+    "Formel analysiert zusätzlich CYP2R1, CYP27B1, CYP24A1, DHCR7, VDBP; Berichtstext erklärt nur VDR. Lektion bleibt bei VDR.",
+    "Bericht nennt erhöhtes Brustkrebsrisiko (6,8 %) – bewusst nicht in die Endkunden-Lektion übernommen (medizinische Aussage).",
+    "Kein Hauptvideo-Ausschnitt zum VDR-Gen (79MPy6BFqu8 nennt Vitamin D nur im Nahrungsergänzungsteil) – beide Clips aus der deutschen Animation. Die Häufigkeiten der Animation (47/41/12 %, 1:02–1:10) liegen bewusst außerhalb der Clips."
+   ]
+  },
+  {
+   "id": "eisen",
+   "station": "blut",
+   "title": "Eisen: Wann wird gut zu viel?",
+   "minutes": 6,
+   "formula": "DNA_NUTRITION_IRON",
+   "scalebar": "DNA_NUTRITION_IRON_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Mehr Eisen, mehr Energie?",
+     "p": "Wer sich müde fühlt, greift oft zur Eisentablette. Für viele Menschen ist das harmlos oder sogar sinnvoll. Für manche aber wird Eisen mit der Zeit zum Problem. Ob Eisen dir guttut oder schadet, hängt von deinen Genen ab."
+    },
+    {
+     "t": "video",
+     "id": "Qf_vdgupY8M",
+     "start": 10.6,
+     "end": 52.8,
+     "file": "clips/eisen_1.mp4",
+     "tag": "Animation",
+     "cap": "Wie eine Genveränderung vor 6.000 Jahren zum Vorteil wurde",
+     "ai": true
+    },
+    {
+     "t": "img",
+     "img": "l_eisen_kanal",
+     "h": "Das HFE-Gen öffnet die Tür im Darm",
+     "p": "Eisen aus deiner Nahrung kommt in den Darm. Die HFE-Gene bilden dort die Kanäle, über die Eisen in deinen Körper gelangt. Normalerweise wird nur etwa 10 % des Eisens aus der Nahrung aufgenommen, der Rest wird wieder ausgeschieden. Ist das Gen verändert, ist es nicht zu schwach, sondern zu aktiv: Es bildet zu viele Kanäle, und es gelangt zu viel Eisen hinein."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie viel des Eisens aus der Nahrung nimmt der Körper normalerweise auf?",
+     "o": [
+      "Etwa 10 %",
+      "Etwa die Hälfte",
+      "Fast alles",
+      "Gar nichts"
+     ],
+     "c": 0,
+     "e": "Normal sind etwa 10 %. Der Rest wird ausgeschieden. Bei veränderten HFE-Genen ist es deutlich mehr."
+    },
+    {
+     "t": "img",
+     "img": "l_eisen_kelten",
+     "h": "Ein Gendefekt mit Geschichte",
+     "p": "Als Jäger und Sammler aßen unsere Vorfahren viel Fleisch, als Bauern deutlich weniger. Eine Genveränderung, die vor etwa 6.000 Jahren in der Region des heutigen Irlands entstand, schützte vor allem Frauen und Schwangere vor Eisenmangel. Die Kelten verbreiteten sie über Europa. Heute essen wir wieder eisenreich, und genau diese Veränderung wird zum Problem."
+    },
+    {
+     "t": "quiz",
+     "q": "Warum war die HFE-Veränderung früher ein Vorteil?",
+     "o": [
+      "Sie machte Fleisch bekömmlicher",
+      "Sie verbesserte das Sehen",
+      "Sie senkte den Blutdruck",
+      "Sie schützte bei eisenarmer Bauernkost vor Eisenmangel"
+     ],
+     "c": 3,
+     "e": "Bei eisenarmer Ernährung half die höhere Aufnahme, genug Eisen zu bekommen. Bei heutiger eisenreicher Kost kann sie zu viel des Guten werden."
+    },
+    {
+     "t": "text",
+     "h": "Eine Kopie oder zwei?",
+     "p": "Du hast zwei Kopien des HFE-Gens. Wer eine veränderte Kopie geerbt hat, hat meist erhöhte, aber noch gesunde Eisenwerte. Wer sie von beiden Eltern geerbt hat, nimmt viel zu viel Eisen auf. Weil der Körper überschüssiges Eisen kaum loswird, kann es sich über Jahrzehnte anreichern. Laut Bericht haben bei der wichtigsten Variante rund 97 % der Menschen zwei normale Kopien."
+    },
+    {
+     "t": "video",
+     "id": "Qf_vdgupY8M",
+     "start": 52.75,
+     "end": 72.6,
+     "file": "clips/eisen_2.mp4",
+     "tag": "Animation",
+     "cap": "Eine Kopie oder zwei: dieselbe Eisentablette, andere Wirkung",
+     "ai": true
+    },
+    {
+     "t": "img",
+     "img": "l_eisen_tablette",
+     "h": "Achtung bei Eisentabletten",
+     "p": "Zu viel Eisen kann sich in Organen ablagern und Leber, Herz und Bauchspeicheldrüse schädigen. Erste Anzeichen sind oft Müdigkeit und Schwäche, also genau das, was viele für Eisenmangel halten. Eine Nahrungsergänzung mit Eisen, auch in Multimineral-Präparaten, kann bei veränderten Genen schaden. Lass deine Eisenwerte deshalb besser ärztlich prüfen, bevor du Eisen einnimmst."
+    },
+    {
+     "t": "quiz",
+     "q": "Warum ist Müdigkeit kein sicheres Zeichen für Eisenmangel?",
+     "o": [
+      "Müdigkeit hat nie etwas mit Eisen zu tun",
+      "Auch zu viel Eisen kann sich zuerst als Müdigkeit zeigen",
+      "Müdigkeit zeigt immer einen Vitamin-D-Mangel",
+      "Eisen macht grundsätzlich müde"
+     ],
+     "c": 1,
+     "e": "Müdigkeit und Schwäche können bei Eisenmangel und bei Eisenüberschuss auftreten. Deshalb lieber messen lassen als einfach Tabletten nehmen."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Gene und Eisenaufnahme",
+    "report": "Lifestyle-Bericht · Gesund ernähren",
+    "E": {
+     "pill": "Normale Aufnahme",
+     "title": "Eisenaufnahme ist normal",
+     "text": "Deine HFE-Gene lassen eine normale Menge Eisen aus der Nahrung in deinen Körper. Der Rest wird wieder ausgeschieden.",
+     "rec": "Eine eisenreiche Ernährung ist für dich sinnvoll, vor allem wenn du vegetarisch oder vegan isst, damit kein Mangel entsteht. Vitamin C zur Mahlzeit verbessert die Aufnahme."
+    },
+    "B": {
+     "pill": "Leicht erhöht",
+     "title": "Eisenaufnahme ist leicht erhöht",
+     "text": "Deine HFE-Gene lassen etwas mehr Eisen aus der Nahrung hinein als bei anderen Menschen. Das ist laut Bericht kein Problem.",
+     "rec": "Eine normale, ausgewogene Ernährung passt für dich. Eisenhaltige Nahrungsergänzung nimmst du am besten nur nach Rücksprache mit deiner Ärztin oder deinem Arzt."
+    },
+    "D": {
+     "pill": "Deutlich erhöht",
+     "title": "Eisenaufnahme ist erhöht",
+     "text": "Deine HFE-Gene arbeiten zu aktiv und lassen deutlich mehr Eisen in deinen Körper. Über Jahre kann sich dadurch zu viel Eisen ansammeln.",
+     "rec": "Eisenhaltige Nahrungsergänzung und sehr häufiger Verzehr besonders eisenreicher Lebensmittel sind für dich eher ungünstig. Lass deine Eisenwerte am besten ärztlich kontrollieren."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Ob du Eisen normal oder verstärkt aufnimmst, zeigt die Gene Story „Gene und Eisenaufnahme“ im Lifestyle-Bericht (Gesund ernähren).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dir eine Eisentablette eher hilft oder eher schadet."
+    }
+   },
+   "images": [
+    {
+     "key": "l_eisen_kanal",
+     "prompt": "A translucent intestinal wall with small glowing channels letting a few dark-red iron particles pass, while most particles drift onward; beside it a second wall with many wide-open channels flooded with iron."
+    },
+    {
+     "key": "l_eisen_kelten",
+     "prompt": "A translucent DNA strand winding across a stylised map of ancient Europe, starting from a softly glowing point in the west of Ireland and spreading eastward."
+    },
+    {
+     "key": "l_eisen_tablette",
+     "prompt": "A translucent iron tablet dissolving above a liver and heart outline, where small dark-red iron deposits slowly accumulate."
+    }
+   ],
+   "sources": [
+    "Lifestyle-Bericht (Studio P-1304 bis P-1321): Video-Seite (10 %, Jäger und Sammler), Text „Gendefekt erhöht Eisenaufnahme“ (6.000 Jahre, Irland, Kelten, eine/zwei Kopien), „Wichtig zu wissen“ (Symptome), Ergebnisseiten, Empfehlungen, Gentabelle HFE rs1800562 (97 % / 2 % / 1 %) und rs1799945 (87 % / 12 % / 1 %)",
+    "Animation Qf_vdgupY8M 0:10,6–0:52,8 und 0:52,8–1:12,6 (KI-Stimme Daniel)"
+   ],
+   "open_questions": [
+    "Farblogik geprüft: Im Bericht ist „Eisenaufnahme ist normal“ = effektiv = grün, „erhöht“ = defekt = rot. Der Gendefekt macht das Gen zu AKTIV; die Farben sind trotzdem richtig (erhöhte Aufnahme = Risiko) → invert: false. Lektion erklärt ausdrücklich, dass „defekt“ hier „zu aktiv“ heißt.",
+    "„97 %“ bezieht sich auf HFE rs1800562 (Hauptvariante); bitte bestätigen, dass prevPct1 dem Feld „Beide Gene effektiv“ entspricht.",
+    "Diagrammtext P-1315 („aber durch die geringere Aufnahme über die Nahrung bist du geschützt“) wirkt widersprüchlich – nicht verwendet.",
+    "Rat „Eisenwerte ärztlich prüfen lassen“ ist abgeleitet, nicht wörtlich im Bericht.",
+    "Kein Hauptvideo-Ausschnitt zu Eisen/HFE – beide Clips aus der deutschen Animation. Der Schlusssatz der Animation („Die Konsequenz für Sie: … auf keinen Fall Eisenpräparate“, Sie-Form, absolut) liegt außerhalb der Clips."
+   ]
+  },
+  {
+   "id": "selen",
+   "station": "blut",
+   "title": "Selen: Treibstoff für dein Schutzenzym",
+   "minutes": 4,
+   "formula": "DNA_NUTRITION_SELENIUM",
+   "scalebar": "DNA_NUTRITION_SELENIUM_SCALEBAR",
+   "invert": false,
+   "blocks": [
+    {
+     "t": "text",
+     "h": "Ein winziges Spurenelement mit großer Aufgabe",
+     "p": "Selen brauchst du nur in kleinsten Mengen. Trotzdem spielt es eine wichtige Rolle beim Schutz vor freien Radikalen, bei der Regulierung von Entzündungen und bei der Immunabwehr. Wie viel Selen du brauchst, steuern deine Gene."
+    },
+    {
+     "t": "img",
+     "img": "l_selen_gpx1",
+     "h": "GPX1 macht aus einem Radikal Wasser",
+     "p": "Freie Radikale sind aggressive Teilchen, die Zellen schädigen können. Eines davon ist Wasserstoffperoxid. Es entsteht sogar, wenn der Körper andere freie Radikale entgiftet. Das GPX1-Gen bildet ein Enzym, das Wasserstoffperoxid erkennt und in harmloses Wasser umwandelt. Dafür braucht es Selen als festen Baustein."
+    },
+    {
+     "t": "quiz",
+     "q": "Was macht das GPX1-Enzym mit Wasserstoffperoxid?",
+     "o": [
+      "Es speichert es in der Leber",
+      "Es verwandelt es in Vitamin D",
+      "Es wandelt es in harmloses Wasser um",
+      "Es schickt es ins Blut"
+     ],
+     "c": 2,
+     "e": "GPX1 neutralisiert Wasserstoffperoxid zu Wasser. Ohne genug Selen kann das Enzym diese Arbeit nicht richtig machen."
+    },
+    {
+     "t": "img",
+     "img": "l_selen_dosis",
+     "h": "Mehr Selen für ein langsameres Enzym",
+     "p": "Ein häufiger Gendefekt macht das GPX1-Enzym langsamer und schwächer. Es neutralisiert zwar noch, aber der Schutz ist eingeschränkt. Studien haben gezeigt: Mit deutlich mehr Selen bildet der Körper so viel mehr GPX1, dass der Schutz wiederhergestellt werden kann. Laut Bericht haben 62 % der Menschen zwei effektive Kopien, 33 % eine veränderte und 5 % zwei veränderte."
+    },
+    {
+     "t": "quiz",
+     "q": "Wie viele Menschen tragen laut Bericht mindestens eine veränderte GPX1-Kopie?",
+     "o": [
+      "Rund 5 %",
+      "Rund 38 %",
+      "Rund 62 %",
+      "Fast alle"
+     ],
+     "c": 1,
+     "e": "33 % haben eine veränderte Kopie und 5 % zwei. Zusammen sind das rund 38 %, also mehr als jeder Dritte."
+    },
+    {
+     "t": "text",
+     "h": "Mehr ist nicht immer besser",
+     "p": "Selen ist Bestandteil vieler Enzyme, und dein Körper muss es über die Nahrung oder über Nahrungsergänzung bekommen. Gute Quellen sind zum Beispiel Paranüsse, Fisch, Fleisch und Eier. Aber Vorsicht: Sehr hohe Mengen Selen können schaden. Wenn du Selen als Nahrungsergänzung nehmen willst, besprich die Dosis mit deiner Ärztin oder deinem Arzt."
+    },
+    {
+     "t": "quiz",
+     "q": "Warum sollte man Selen nicht einfach beliebig hoch dosieren?",
+     "o": [
+      "Weil Selen gar keine Wirkung hat",
+      "Weil Selen die Gene verändert",
+      "Weil Selen nur nachts wirkt",
+      "Weil sehr hohe Mengen schaden können"
+     ],
+     "c": 3,
+     "e": "Selen ist lebenswichtig, aber in zu hohen Mengen schädlich. Die passende Dosis hängt von deinen Genen und deiner Versorgung ab."
+    },
+    {
+     "t": "result"
+    }
+   ],
+   "result": {
+    "story": "Ausreichende Selenversorgung",
+    "report": "Lifestyle-Bericht · Entgiften",
+    "E": {
+     "pill": "Normaler Bedarf",
+     "title": "Selenbedarf normal",
+     "text": "Deine GPX1-Gene arbeiten effektiv. Mit normalen Mengen Selen schützen sie deine Zellen gut vor dem freien Radikal Wasserstoffperoxid.",
+     "rec": "Eine normale Selenzufuhr über die Nahrung reicht bei dir aus. Wichtig ist nur, dass kein Mangel entsteht."
+    },
+    "B": {
+     "pill": "Etwas mehr Bedarf",
+     "title": "Selenbedarf etwas erhöht",
+     "text": "Deine GPX1-Gene sind beeinträchtigt und arbeiten langsamer. Mit normalen Mengen Selen ist dein Schutz vor Wasserstoffperoxid nicht ganz ausreichend.",
+     "rec": "Eine etwas größere Menge Selen kann für dich sinnvoll sein. Bei Nahrungsergänzung besprich die Dosis mit deiner Ärztin oder deinem Arzt, denn zu viel Selen kann schaden."
+    },
+    "D": {
+     "pill": "Erhöhter Bedarf",
+     "title": "Selenbedarf erhöht",
+     "text": "Deine GPX1-Gene sind defekt. Mit normalen Mengen Selen können sie deine Zellen nicht ausreichend vor Wasserstoffperoxid schützen.",
+     "rec": "Eine größere Menge Selen kann den Schutz wiederherstellen. Besprich die passende Dosis mit deiner Ärztin oder deinem Arzt, denn zu viel Selen kann schaden."
+    },
+    "N": {
+     "pill": "Noch nicht analysiert",
+     "title": "Diese Analyse hast du noch nicht",
+     "text": "Wie viel Selen deine Gene brauchen, zeigt die Gene Story „Ausreichende Selenversorgung“ im Lifestyle-Bericht (Entgiften).",
+     "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dir eine normale Selenzufuhr reicht oder ob du mehr brauchst."
+    }
+   },
+   "images": [
+    {
+     "key": "l_selen_gpx1",
+     "prompt": "A translucent enzyme shaped like a small glowing machine with a golden selenium core, catching a jagged hydrogen peroxide molecule and releasing a clear, calm water droplet."
+    },
+    {
+     "key": "l_selen_dosis",
+     "prompt": "Several slightly misshapen translucent enzymes working side by side, each fed by golden selenium sparks, together neutralising a cloud of jagged free-radical particles."
+    }
+   ],
+   "sources": [
+    "Lifestyle-Bericht (Studio P-1183 bis P-1198): Kapiteleinleitung, Video-Seite (GPX1, Wasserstoffperoxid, hohe Dosis), Körperdiagramme, Ergebnisseiten, Empfehlungen, Gentabelle GPX1 rs1050450 (62 % / 33 % / 5 %)"
+   ],
+   "open_questions": [
+    "Kein Hauptvideo-Ausschnitt – Animation nötig (Selen in keinem Hauptvideo erklärt; das Beauty-Video 5A5XoWH7XKk nennt es nur in einer Aufzählung; Animation nur EN, unveröffentlicht).",
+    "Lebensmittelquellen (Paranüsse, Fisch, Fleisch, Eier) und der Warnhinweis „zu viel Selen kann schaden“ = Lehrbuchwissen, nicht im Bericht. Bitte freigeben.",
+    "Bericht ordnet Selen dem Kapitel „Entgiften“ zu, die App der Station Blut – nur zur Info.",
+    "Video-Seite des Berichts beginnt mit „Im vorangegangenen Kapitel habe ich …“ (Ich-Form, Verweis) – nicht übernommen."
+   ]
+  }
+ ]
+}
