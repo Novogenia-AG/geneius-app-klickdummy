@@ -16,28 +16,20 @@
         },
         {
           "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 64.88,
-          "end": 138.2,
-          "file": "clips/fett_1.mp4",
+          "files": [
+            "clips/fett_1.mp4",
+            "clips/fett_2.mp4",
+            "clips/fett_3.mp4"
+          ],
+          "dur": 140,
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt die Fett-Studie mit 720 Personen und den Fett-Stopp im Darm",
+          "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm und die fünf Gene hinter deiner Fettempfindlichkeit",
           "ai": false
         },
         {
           "t": "text",
           "h": "Der Fett-Stopp im Darm",
           "p": "Fett aus dem Essen wird im Darm aufgenommen. Hat dein Körper genug, schalten sich Regulierungsgene ein, zum Beispiel das FABP2-Gen. Sie blockieren die weitere Fettaufnahme. Das überschüssige Fett wird nicht aufgenommen und ausgeschieden. Sind die Gene defekt, fehlt dieser Stopp: Das Fett wird aufgenommen, und was der Körper nicht braucht, wird gespeichert."
-        },
-        {
-          "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 150.9,
-          "end": 173.6,
-          "file": "clips/fett_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Warum die anderen zugenommen haben: ein Schreibfehler im Gen",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -72,16 +64,6 @@
           "t": "text",
           "h": "Gutes Fett, schlechtes Fett",
           "p": "Fett ist der Energielieferant mit der höchsten Energiedichte. Gesättigte Fettsäuren stecken vor allem in Butter, Schmalz, Fleisch und Milch, aber auch in Kokosfett und Palmöl. Sie sollten höchstens ein Drittel deiner Fettzufuhr ausmachen. Mindestens zwei Drittel sollten aus ungesättigten Fettsäuren kommen, etwa aus Pflanzenölen und Fisch. Bist du fettempfindlich, zählt vor allem die Gesamtmenge an Fett."
-        },
-        {
-          "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 311.8,
-          "end": 355.3,
-          "file": "clips/fett_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Fünf Gene, ein Balken: von gar nicht bis sehr fettempfindlich",
-          "ai": false
         },
         {
           "t": "quiz",

@@ -3014,7 +3014,7 @@ const GN_YT = {"alkohol_1":"aMbH5GGB3zA","alkohol_2":"Tti70Y_PaRY","alkohol_3":"
 const gnYtId = file => GN_YT[String(file || '').replace(/^.*\//, '').replace(/\.mp4$/, '')];
 const CONTENT = {
   relevanz: { minutes: 4, blocks: [
-    { t: 'video', id: '71EHqtv3NOA', start: 54, end: 182, file: 'clips/gene_1.mp4', file2: 'clips/gene_2.mp4', cap: 'Welchen Treibstoff braucht dein Körper? Die Gene als Bedienungsanleitung', tag: 'Originalaufnahme' },
+    { t: 'video', id: '71EHqtv3NOA', start: 54, end: 182, files: ['clips/gene_1.mp4', 'clips/gene_2.mp4'], dur: 127, cap: 'Welchen Treibstoff braucht dein Körper? Die Gene als Bedienungsanleitung', tag: 'Originalaufnahme' },
     { t: 'text', h: 'Die Bedienungsanleitung deines Körpers', p: 'Welchen Treibstoff dein Auto braucht, weiß fast jeder. Welchen Treibstoff dein Körper braucht, wissen die wenigsten. Genau das steht in deinen Genen: welche Nährstoffe du besonders brauchst, wie du auf Fett und Kohlenhydrate reagierst und was dir guttut.' },
     { t: 'text', h: 'Für ein ganzes Leben', p: 'Ein Elektroauto wird nach zehn Jahren nicht plötzlich zum Diesel. Genauso bleiben deine Gene ein Leben lang gleich. Ändern kannst du sie nicht. Aber du kannst wissen, wie sie arbeiten, und dich danach richten.' },
     { t: 'quiz', q: 'Können sich deine Gene im Laufe des Lebens ändern?', o: ['Ja, mit dem Alter ändern sie sich laufend', 'Nein, sie bleiben ein Leben lang gleich', 'Nur wenn du deine Ernährung umstellst', 'Ja, durch Sport'], c: 1, e: 'Richtig. Deine Gene bleiben ein Leben lang gleich. Darum reicht eine Analyse für dein ganzes Leben.' },
@@ -3291,9 +3291,11 @@ function blockHTML(b, i) {
   if (b.t === 'text') return `<div class="blk"><h3>${b.h}</h3><p>${b.p}</p></div>`;
   if (b.t === 'img' && b.report) return `<div class="blk"><div class="fig" style="aspect-ratio:auto;background:#fff;padding:10px"><img src="${b.src}" alt="${esc(b.h)}" style="height:auto;object-fit:contain"></div><h3>${b.h}</h3><p>${b.p}</p></div>`;
   if (b.t === 'img') return `<div class="blk"><div class="fig"><img src="${IMG(b.img)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${IMG(STATIONS[lessonById(LS.id).si].img)}'"></div><h3>${b.h}</h3><p>${b.p}</p><div class="ai-note">Illustration KI-generiert</div></div>`;
+  if (b.t === 'video' && b.files) b = { ...b, file: b.files[0] };          // mehrere Clips am Stück in einem Player
   if (b.t === 'video' && b.file && gnYtId(b.file)) { // eigener Clip als ungelistetes YouTube-Video (ganzes Video, kein start/end)
-    const len = Math.round((b.end || 0) - (b.start || 0)), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
-    return `<div class="blk"><div class="video" data-yt="${gnYtId(b.file)}"${b.file2 && gnYtId(b.file2) ? ` data-yt2="${gnYtId(b.file2)}"` : ''}><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
+    const len = Math.round(b.dur || ((b.end || 0) - (b.start || 0))), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
+    const ids = (b.files || [b.file]).map(gnYtId).filter(Boolean);
+    return `<div class="blk"><div class="video" data-yt="${ids[0]}"${ids.length > 1 ? ` data-ytl="${ids.join(',')}"` : ''}><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
       <div class="vcap"><span><span class="vtag">${b.tag}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
   if (b.t === 'video' && b.file) // Fallback: lokaler, exakt geschnittener Clip
     return `<div class="blk"><div class="video"><video controls playsinline preload="metadata" poster="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" src="nuggets/${b.file}" style="position:absolute;inset:0;width:100%;height:100%;background:#1b1018"></video></div>
@@ -3325,13 +3327,13 @@ function wireBlocks(box) {
     const v = p.parentElement;
     /* Artifact-Hosting (claudeusercontent) blockiert eingebettete YouTube-Player -> Clip auf YouTube in neuem Fenster */
     if (/claudeusercontent\.com$/.test(location.hostname) && v.dataset.yt) {
-      window.open(v.dataset.yt2 ? `https://www.youtube.com/watch_videos?video_ids=${v.dataset.yt},${v.dataset.yt2}` : `https://www.youtube.com/watch?v=${v.dataset.yt}`, '_blank', 'noopener');
+      window.open(v.dataset.ytl ? `https://www.youtube.com/watch_videos?video_ids=${v.dataset.ytl}` : `https://www.youtube.com/watch?v=${v.dataset.yt}`, '_blank', 'noopener');
       if (!v.querySelector('.ytnote')) v.insertAdjacentHTML('beforeend', '<p class="ytnote">Der Clip läuft in einem neuen Fenster auf YouTube. In der fertigen App spielt er direkt hier.</p>');
       return;
     }
     const f = document.createElement('iframe');
     f.src = v.dataset.yt
-      ? `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1${v.dataset.yt2 ? '&playlist=' + v.dataset.yt + ',' + v.dataset.yt2 : ''}`
+      ? `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1${v.dataset.ytl ? '&playlist=' + v.dataset.ytl : ''}`
       : `https://www.youtube-nocookie.com/embed/${v.dataset.id}?start=${v.dataset.s}&end=${v.dataset.e}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
     f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.title = 'Videoclip'; f.referrerPolicy = 'strict-origin-when-cross-origin';
     p.replaceWith(f);
