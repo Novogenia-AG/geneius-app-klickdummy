@@ -1758,7 +1758,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
     </svg>
   </div></header>
 
-  <div class="sec sec-xl"><div class="sec-l"><span class="sx-ic" aria-hidden="true"><svg class="ic"><use href="#i-download"/></svg></span><h2>DNA-Daten herunterladen</h2><span class="cnt">2</span></div><p class="sub">Deine eigenen genetischen Rohdaten aus deiner Novogenia-Analyse – zum Speichern oder für andere Tools.</p></div>
+  <div class="sec sec-xl"><div class="sec-l"><span class="sx-ic" aria-hidden="true"><svg class="ic"><use href="#i-download"/></svg></span><h2>DNA-Daten herunterladen</h2><span class="cnt">2</span></div><p class="sub">Deine eigenen genetischen Rohdaten aus deiner Analyse – zum Speichern oder für andere Tools.</p></div>
   <div class="dlgrid">
     <article class="tile card no-tilt dlc">
       <div class="dlc-h"><span class="ico lime"><svg class="ic"><use href="#i-list"/></svg></span><div><div class="kick">Option 1</div><h3>Analysierte DNA-Variationen</h3></div></div>
@@ -1931,7 +1931,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
 
 <footer class="wrap foot">
   <span>Die Informationen dienen nur zu Informationszwecken und ersetzen keine medizinische Beratung.</span>
-  <span class="dummy">GENEius by Novogenia · Klickdummy</span>
+  <span class="dummy">GENEius · Klickdummy</span>
 </footer>
 
 </div>
@@ -2870,7 +2870,7 @@ $('#fFile').addEventListener('change',e=>{[...e.target.files].forEach(f=>addAtt(
   if(k==='wa'){toast('WhatsApp würde sich jetzt in einem neuen Fenster öffnen (Nummer folgt – Klickdummy).');return}
   if(k==='msg'){sheet('Nachricht an den Kundenservice',`<div class="field"><label for="svS">Betreff</label><select id="svS"><option>Bestellung &amp; Lieferung</option><option>Abo</option><option>Probenentnahme</option><option>Ergebnisse &amp; Analysen</option><option>Rechnung &amp; Zahlung</option><option>Sonstiges</option></select></div><div class="field"><label for="svM">Deine Nachricht</label><textarea id="svM" rows="5" placeholder="Wie können wir dir helfen?"></textarea></div><p class="note">Wir antworten dir per E-Mail an markus@beispiel.at.</p>`,`<button class="btn ghost" data-close>Abbrechen</button><button class="btn plum" id="svSend">${ic('send','sm')}Senden</button>`,`<span class="ico" style="width:40px;height:40px;border-radius:13px">${ic('send')}</span>`);
    $('#svSend').addEventListener('click',()=>{if(!$('#svM').value.trim()){toast('Bitte schreib eine Nachricht.');return}closeSheet();toast('Danke! Deine Nachricht wurde an den Kundenservice gesendet.')});return}
-  sheet('Kundenservice-Chatbot',`<div class="svcchat" id="svcChat" aria-live="polite"><div class="m">Hallo Markus! Ich bin der KI-Chatbot des Novogenia-Kundenservice. Ich helfe dir bei Fragen zu Bestellung, Lieferung, Abo, Probenentnahme oder Rechnung. Für Fragen zu deinen Ergebnissen ist der Gene-ius Coach da.</div></div><form class="svcform" id="svcF" autocomplete="off"><label for="svcIn" class="sr">Frage an den Kundenservice</label><input id="svcIn" placeholder="Deine Frage …"><button class="btn plum" type="submit" aria-label="Senden">${ic('send','sm')}</button></form><p class="disc">KI-Chatbot – bei Bedarf verbinden wir dich mit unserem Team.</p>`,'',`<span class="ico lime" style="width:40px;height:40px;border-radius:13px">${ic('sparkle')}</span>`);
+  sheet('Kundenservice-Chatbot',`<div class="svcchat" id="svcChat" aria-live="polite"><div class="m">Hallo Markus! Ich bin der KI-Chatbot des Kundenservice. Ich helfe dir bei Fragen zu Bestellung, Lieferung, Abo, Probenentnahme oder Rechnung. Für Fragen zu deinen Ergebnissen ist der Gene-ius Coach da.</div></div><form class="svcform" id="svcF" autocomplete="off"><label for="svcIn" class="sr">Frage an den Kundenservice</label><input id="svcIn" placeholder="Deine Frage …"><button class="btn plum" type="submit" aria-label="Senden">${ic('send','sm')}</button></form><p class="disc">KI-Chatbot – bei Bedarf verbinden wir dich mit unserem Team.</p>`,'',`<span class="ico lime" style="width:40px;height:40px;border-radius:13px">${ic('sparkle')}</span>`);
   $('#svcF').addEventListener('submit',ev=>{ev.preventDefault();const v=$('#svcIn').value.trim();if(!v)return;$('#svcIn').value='';say('u',v);
    const a=(ANS.find(x=>x[0].test(v))||[0,'Danke für deine Frage! Ich leite sie an unser Kundenservice-Team weiter – du bekommst die Antwort per E-Mail.'])[1];setTimeout(()=>say('b',a),700)});
   setTimeout(()=>{const i=$('#svcIn');if(i)i.focus()},120)});
@@ -3026,8 +3026,8 @@ const CONTENT = {
     { t: 'quiz', q: 'Aus wie vielen verschiedenen Buchstaben besteht der genetische Code?', o: ['Zwei', 'Vier', '26, wie das Alphabet', '3,2 Milliarden'], c: 1, e: 'Vier Buchstaben: A, T, C und G. 3,2 Milliarden ist die Länge des ganzen Codes.' },
     { t: 'text', h: 'Gene sind Anleitungen', p: 'Ein Gen ist ein Abschnitt dieses Codes, eine Anleitung für eine bestimmte Aufgabe. Rund 23.000 Gene steuern zum Beispiel, wie schnell du Koffein abbaust, wie gut du Folsäure aktivierst oder wie dein Körper auf Fett reagiert.' },
     { t: 'quiz', q: 'Was ist ein Gen?', o: ['Ein kleines Organ im Bauch', 'Ein Abschnitt der DNA mit der Anleitung für eine bestimmte Aufgabe', 'Ein Vitamin, das der Körper selbst bildet', 'Eine besondere Zelle im Blut'], c: 1, e: 'Genau. Jedes Gen ist eine Anleitung, zum Beispiel für ein Enzym, das einen Nährstoff umwandelt.' },
-    { t: 'text', h: 'So liest Novogenia deine Gene', p: 'Für die Analyse reicht eine Speichelprobe. Darin stecken Zellen mit deinem kompletten Code. Im Labor wird die DNA herausgelöst und ausgewertet.' },
-    { t: 'quiz', q: 'Was braucht Novogenia, um deine Gene zu analysieren?', o: ['Eine Blutabnahme beim Arzt', 'Eine Speichelprobe', 'Eine Haarsträhne mit Haarfärbung', 'Einen Fragebogen zu deiner Ernährung'], c: 1, e: 'Richtig ist die Speichelprobe. Grundsätzlich ginge fast jede Zellart, Speichel ist aber am angenehmsten zu sammeln.' },
+    { t: 'text', h: 'So werden deine Gene gelesen', p: 'Für die Analyse reicht eine Speichelprobe. Darin stecken Zellen mit deinem kompletten Code. Im Labor wird die DNA herausgelöst und ausgewertet.' },
+    { t: 'quiz', q: 'Was braucht das Labor, um deine Gene zu analysieren?', o: ['Eine Blutabnahme beim Arzt', 'Eine Speichelprobe', 'Eine Haarsträhne mit Haarfärbung', 'Einen Fragebogen zu deiner Ernährung'], c: 1, e: 'Richtig ist die Speichelprobe. Grundsätzlich ginge fast jede Zellart, Speichel ist aber am angenehmsten zu sammeln.' },
     { t: 'text', h: 'Und bei dir?', p: 'Deine Reise hat <b>11 Stationen</b>. Am Ende jeder Lektion siehst du, wie <b>deine eigenen Gene</b> bei diesem Thema arbeiten.' }
   ] },
   folsaeure: { minutes: 7, blocks: [
