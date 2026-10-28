@@ -16,17 +16,15 @@
         },
         {
           "t": "video",
-          "files": [
-            "clips/fett_1.mp4",
-            "clips/fett_2.mp4",
-            "clips/fett_3.mp4",
-            "clips/kh_1.mp4",
-            "clips/kh_2.mp4"
-          ],
-          "dur": 227,
+          "yt": {
+            "de": "GSjzf6ZNbOk"
+          },
+          "dur": {
+            "de": 384
+          },
+          "poster": "nuggets/themen/fett.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm, die fünf Gene und was sein eigenes Ergebnis für ihn bedeutet",
-          "ai": false
+          "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm, die fünf Gene und was sein eigenes Ergebnis für ihn bedeutet"
         },
         {
           "t": "text",
@@ -151,13 +149,15 @@
         },
         {
           "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 361.4,
-          "end": 406.95,
-          "file": "clips/kh_1.mp4",
+          "yt": {
+            "de": "EW7jCnzdcg0"
+          },
+          "dur": {
+            "de": 88
+          },
+          "poster": "nuggets/themen/kh.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel zeigt sein eigenes Ergebnis: Kohlenhydrate kein Problem, Fett schon",
-          "ai": false
+          "cap": "Daniel zeigt sein eigenes Ergebnis: Kohlenhydrate kein Problem, Fett schon"
         },
         {
           "t": "text",
@@ -197,16 +197,6 @@
           "t": "text",
           "h": "Kurze und lange Ketten",
           "p": "Kurzkettige Kohlenhydrate stecken vor allem in Zucker, aber auch in Obst. Der Körper verarbeitet sie schnell: Der Blutzucker steigt rasch an und fällt rasch wieder ab. Du bist weniger lang satt, und Heißhunger kommt leichter. Langkettige Kohlenhydrate, etwa aus Kartoffeln oder Hülsenfrüchten, müssen im Darm erst aufgespalten werden. Sie bringen den Blutzucker weniger durcheinander und halten länger satt."
-        },
-        {
-          "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 407.3,
-          "end": 448.9,
-          "file": "clips/kh_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Mehr Spaghetti, weniger Steak: was das Ergebnis beim Abnehmen bedeutet",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -286,13 +276,15 @@
         },
         {
           "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 512.85,
-          "end": 567.95,
-          "file": "clips/sport_1.mp4",
+          "yt": {
+            "de": "oAv4cCIK4j0"
+          },
+          "dur": {
+            "de": 85
+          },
+          "poster": "nuggets/themen/sport.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt die Sport-Studien: gleicher Sport, anderes Ergebnis",
-          "ai": false
+          "cap": "Daniel erklärt die Sport-Studien: gleicher Sport, anderes Ergebnis"
         },
         {
           "t": "text",
@@ -332,16 +324,6 @@
           "t": "text",
           "h": "Sport bleibt gesund",
           "p": "Auch wenn Sport bei dir wenig fürs Abnehmen bringt: Für deine Gesundheit ist er trotzdem wichtig. Und es gibt einen zweiten Weg, Kalorien loszuwerden: weniger essen. Wie gut der bei dir wirkt, zeigt die nächste Gene Story. Zusammen ergibt sich, ob du eher ein Sporttyp, ein Kalorienspartyp oder ein Mischtyp bist."
-        },
-        {
-          "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 568.0,
-          "end": 597.7,
-          "file": "clips/sport_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Welche Gene dahinterstecken: für manche eine Superkraft, für andere Quälerei",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -428,13 +410,15 @@
         },
         {
           "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 598.4,
-          "end": 611.95,
-          "file": "clips/kalred_1.mp4",
+          "yt": {
+            "de": "-LO3ulzANCc"
+          },
+          "dur": {
+            "de": 62
+          },
+          "poster": "nuggets/themen/kalred.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Weniger essen: manche nehmen bis zu dreimal weniger ab",
-          "ai": false
+          "cap": "Weniger essen: manche nehmen bis zu dreimal weniger ab"
         },
         {
           "t": "text",
@@ -474,16 +458,6 @@
           "t": "text",
           "h": "Sporttyp, Kalorienspartyp oder Mischtyp?",
           "p": "Aus beiden Gene Stories, Sport und Kalorienreduktion, ergibt sich deine Abnehmstrategie. Kalorienspartypen sparen am besten beim Essen ein. Sporttypen kommen mit Training weiter. Mischtypen fahren mit einer ausgewogenen Verteilung am besten. Übrigens: Auch Sporttypen empfiehlt der Bericht, den Großteil der Kalorien über die Ernährung einzusparen. Das ist einfacher zu kontrollieren und kostet weniger Zeit als Sport."
-        },
-        {
-          "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 617.9,
-          "end": 660.2,
-          "file": "clips/kalred_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie du dich auf deine Stärken konzentrierst",
-          "ai": false
         },
         {
           "t": "quiz",

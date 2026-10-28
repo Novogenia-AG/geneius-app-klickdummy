@@ -16,18 +16,34 @@
         },
         {
           "t": "video",
-          "id": "q5RLfiwj88Y",
-          "start": 15.6,
-          "end": 57.3,
-          "file": "clips/hdl_1.mp4",
+          "anim": true,
+          "yt": {
+            "de": "q5RLfiwj88Y",
+            "en": "wN37It4kZY8"
+          },
+          "dur": {
+            "de": 81,
+            "en": 93
+          },
           "tag": "Animation",
-          "cap": "Wie das gute Cholesterin auf Omega-3 reagiert",
-          "ai": true
+          "cap": "Omega-3 und deine Gene: Wirkt Fischöl bei dir? · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "HDL, die Müllabfuhr im Blut",
           "p": "HDL ist das sogenannte gute Cholesterin. Es sammelt überschüssiges Cholesterin im Blut ein und bringt es zur Entsorgung in die Leber. Der wichtigste Baustein dieser Müllabfuhr entsteht nach der Anleitung der APOA1-Gene. Funktionieren sie, arbeiten sie mit Omega-3 zusammen und dein HDL-Cholesterin steigt."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "wB5Y637mP6Q"
+          },
+          "dur": {
+            "de": 58
+          },
+          "poster": "nuggets/themen/hdl.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Wie das gute Cholesterin auf Omega-3 reagiert"
         },
         {
           "t": "quiz",
@@ -62,16 +78,6 @@
           "t": "text",
           "h": "Omega-3 bleibt trotzdem wertvoll",
           "p": "Auch wenn dein HDL nicht auf Omega-3 reagiert: Omega-3 unterstützt Herz und Gefäße, senkt die Triglyceride und wirkt entzündungshemmend. Fisch und Pflanzenöle sind außerdem besser als gesättigte tierische Fette. Für das Cholesterin gibt es eine Alternative: Phytosterole, vereinfacht gesagt das Cholesterin der Pflanzen. Sie konkurrieren im Darm mit dem Cholesterin. Für jedes Gramm Phytosterole landet ein Gramm weniger Cholesterin im Blut."
-        },
-        {
-          "t": "video",
-          "id": "q5RLfiwj88Y",
-          "start": 58.2,
-          "end": 73.4,
-          "file": "clips/hdl_2.mp4",
-          "tag": "Animation",
-          "cap": "Was das für dich bedeutet",
-          "ai": true
         },
         {
           "t": "quiz",
@@ -154,18 +160,34 @@
         },
         {
           "t": "video",
-          "id": "hjObdjQaguw",
-          "start": 0.9,
-          "end": 35.6,
-          "file": "clips/ldl_1.mp4",
+          "anim": true,
+          "yt": {
+            "de": "hjObdjQaguw",
+            "en": "pAln4SahmJw"
+          },
+          "dur": {
+            "de": 95,
+            "en": 110
+          },
           "tag": "Animation",
-          "cap": "Warum LDL das schlechte Cholesterin heißt",
-          "ai": true
+          "cap": "Cholesterin und deine Gene: Warum dasselbe Frühstück unterschiedlich wirkt · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Zwei Quellen, ein Filter",
           "p": "Cholesterin bekommst du über die Nahrung, und dein Körper stellt es auch selbst her. Das LDL verteilt es von der Leber über das Blut im Körper. Bleibt zu viel LDL im Blut, lagert es sich an den Gefäßwänden ab. Deshalb heißt es schlechtes Cholesterin. Regulierungsgene wie LDLR bauen auf deinen Leberzellen eine Art Greifarme. Sie fischen das LDL aus dem Blut."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "4YOQf37r36Y"
+          },
+          "dur": {
+            "de": 63
+          },
+          "poster": "nuggets/themen/ldl.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Warum LDL das schlechte Cholesterin heißt"
         },
         {
           "t": "quiz",
@@ -200,16 +222,6 @@
           "t": "text",
           "h": "Gene helfen, entscheiden aber nicht allein",
           "p": "Gute Gene machen hohe LDL-Werte nicht unmöglich. Ein ungesunder Lebensstil kann sie trotzdem steigen lassen. Und je weniger deine Gene mithelfen, desto mehr zählt deine Ernährung: weniger Trans-Fette und gesättigte Fette, mehr grünes Gemüse, Vollkorn, Hülsenfrüchte und Nüsse. Auch die mediterrane Küche mit Olivenöl und Fisch gilt als gut geeignet."
-        },
-        {
-          "t": "video",
-          "id": "hjObdjQaguw",
-          "start": 36.9,
-          "end": 63.9,
-          "file": "clips/ldl_2.mp4",
-          "tag": "Animation",
-          "cap": "Wie Greifarme das LDL aus dem Blut ziehen",
-          "ai": true
         },
         {
           "t": "quiz",
@@ -290,6 +302,20 @@
           "t": "text",
           "h": "Das andere Fett im Blut",
           "p": "Auf dem Laborzettel stehen neben dem Cholesterin oft auch die Triglyceride. Sie sind eine eigene Form von Fett und dienen deinem Körper als Energiespeicher. Lebenswichtig sind sie, in zu großer Menge aber ungesund für dein Herz. Wie gut dein Körper sie im Griff hat, hängt auch von deinen Genen ab."
+        },
+        {
+          "t": "video",
+          "anim": true,
+          "yt": {
+            "de": "QnGSrv_Yyic",
+            "en": "rXhzrFukG0Q"
+          },
+          "dur": {
+            "de": 95,
+            "en": 109
+          },
+          "tag": "Animation",
+          "cap": "Triglyceride und deine Gene: Warum dieselbe Pizza unterschiedlich wirkt · KI-generierte Animation"
         },
         {
           "t": "text",
@@ -405,6 +431,20 @@
           "t": "text",
           "h": "Ein Stoff, den kaum jemand kennt",
           "p": "Cholesterin kennt jeder, Homocystein kaum jemand. Dabei ist es ähnlich wichtig für dein Herz. Dein Körper braucht es als Baustein für neue Eiweiße. Zu viel davon belastet aber Herz und Gefäße. Wie gut du es abbaust, steht in deinen Genen."
+        },
+        {
+          "t": "video",
+          "anim": true,
+          "yt": {
+            "de": "VT8CG1DzfUU",
+            "en": "_r38C-Zc9ts"
+          },
+          "dur": {
+            "de": 104,
+            "en": 116
+          },
+          "tag": "Animation",
+          "cap": "Homocystein und deine Gene: Wann Vitamin B2 dein Herz schützt · KI-generierte Animation"
         },
         {
           "t": "text",
@@ -526,13 +566,17 @@
         },
         {
           "t": "video",
-          "id": "vnMSYJRUVns",
-          "start": 0.3,
-          "end": 21.9,
-          "file": "clips/salz_1.mp4",
+          "anim": true,
+          "yt": {
+            "de": "vnMSYJRUVns",
+            "en": "nnkGNXbFU9M"
+          },
+          "dur": {
+            "de": 80,
+            "en": 87
+          },
           "tag": "Animation",
-          "cap": "Ist Salz wirklich für jeden schlecht?",
-          "ai": true
+          "cap": "Salz und deine Gene: Ist Salz für jeden schlecht? · KI-generierte Animation"
         },
         {
           "t": "text",
@@ -541,13 +585,15 @@
         },
         {
           "t": "video",
-          "id": "vnMSYJRUVns",
-          "start": 22.3,
-          "end": 55.5,
-          "file": "clips/salz_2.mp4",
-          "tag": "Animation",
-          "cap": "Ein Lautstärkeregler für Salz",
-          "ai": true
+          "yt": {
+            "de": "B1DdwjH_QRU"
+          },
+          "dur": {
+            "de": 73
+          },
+          "poster": "nuggets/themen/salz.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Ist Salz wirklich für jeden schlecht?"
         },
         {
           "t": "quiz",
@@ -582,16 +628,6 @@
           "t": "text",
           "h": "Wo das Salz wirklich steckt",
           "p": "Mehr als 70 % des täglichen Salzes stammen aus verarbeiteten Lebensmitteln, Fertiggerichten, Fast Food und dem Essen außer Haus. Auch Brot, Wurst und manche Käsesorten sind salzig. Die WHO empfiehlt höchstens 5 g Salz pro Tag. Frisch kochen und mit Kräutern, Pfeffer oder Chili würzen hilft beim Sparen. Reduzierst du schrittweise, gewöhnen sich deine Geschmacksnerven daran."
-        },
-        {
-          "t": "video",
-          "id": "vnMSYJRUVns",
-          "start": 56.0,
-          "end": 72.9,
-          "file": "clips/salz_3.mp4",
-          "tag": "Animation",
-          "cap": "Was das für dich bedeutet",
-          "ai": true
         },
         {
           "t": "quiz",
@@ -676,13 +712,17 @@
         },
         {
           "t": "video",
-          "id": "eOqrJicdJZM",
-          "start": 10.5,
-          "end": 25.9,
-          "file": "clips/burnout_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie ein Burnout entsteht",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "qrNg0nUzJVw",
+            "en": "rkOhZJYeLb8"
+          },
+          "dur": {
+            "de": 101,
+            "en": 117
+          },
+          "tag": "Animation",
+          "cap": "Stress und deine Gene: Krieger oder Sorgenmacher? · KI-generierte Animation"
         },
         {
           "t": "text",
@@ -691,13 +731,15 @@
         },
         {
           "t": "video",
-          "id": "eOqrJicdJZM",
-          "start": 186.1,
-          "end": 243.7,
-          "file": "clips/burnout_2.mp4",
+          "yt": {
+            "de": "9Q5ekTlMSpo"
+          },
+          "dur": {
+            "de": 233
+          },
+          "poster": "nuggets/themen/burnout.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Was passiert, wenn das Gehirn nach Stress nicht zur Ruhe kommt",
-          "ai": false
+          "cap": "Daniel erklärt, wie ein Burnout entsteht"
         },
         {
           "t": "quiz",
@@ -732,16 +774,6 @@
           "t": "text",
           "h": "Gene sind kein Schicksal",
           "p": "Stress dauert meist eine Zeit lang und geht vorbei. Ein Burnout ist ein Dauerzustand: Du fühlst dich emotional, mental und körperlich ausgelaugt, oft ohne Motivation, selbst für Dinge, die dir früher Spaß gemacht haben. Je ungünstiger deine Gene, desto wichtiger wird dein Lebensstil: Grenzen setzen, Pausen einlegen, gut schlafen, Kontakte pflegen und täglich etwa 30 Minuten Bewegung. Bemerkst du über längere Zeit Zeichen wie ständige Erschöpfung, sprich mit deiner Ärztin oder deinem Arzt."
-        },
-        {
-          "t": "video",
-          "id": "eOqrJicdJZM",
-          "start": 33.45,
-          "end": 89.4,
-          "file": "clips/burnout_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel über die drei Eigenschaften und die richtige Lebensführung",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -824,18 +856,32 @@
         },
         {
           "t": "video",
-          "id": "eOqrJicdJZM",
-          "start": 116.45,
-          "end": 170.1,
-          "file": "clips/alkohol_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie das Gehirn Dopamin ausschüttet und wieder abbaut",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "n1jkxseJBf4"
+          },
+          "dur": {
+            "de": 105
+          },
+          "tag": "Animation",
+          "cap": "Alkohol, Glücksspiel und deine Gene: Warum manche es mehr genießen · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Das Belohnungssystem",
           "p": "Wenn etwas Schönes passiert, schüttet dein Gehirn Dopamin aus, den Botenstoff für Belohnung und Motivation. Danach muss es wieder abgebaut werden. Das übernimmt das Enzym COMT, gebildet vom COMT-Gen. Arbeitet es langsamer, bleiben Dopamin und Noradrenalin länger im Gehirn. Das kann beeinflussen, wie du auf Alkohol reagierst, und das Verlangen nach Belohnung verstärken."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "-_Ba3kvIfck"
+          },
+          "dur": {
+            "de": 123
+          },
+          "poster": "nuggets/themen/alkohol.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie das Gehirn Dopamin ausschüttet und wieder abbaut"
         },
         {
           "t": "quiz",
@@ -855,16 +901,6 @@
           "p": "Das COMT-Gen gibt es in einer schnellen und einer langsamen Version. 85 % der Menschen haben mindestens eine schnelle Kopie. 15 % haben zwei langsame: Ihr Gehirn baut Dopamin drei- bis viermal langsamer ab. Schöne Momente fühlen sich für sie intensiver an, sie sind oft neugieriger und aufmerksamer. Gleichzeitig fühlen sich Alkohol und Glücksspiel lohnender an. Deshalb bringen Studien diese Variante mit einem höheren Suchtrisiko in Verbindung."
         },
         {
-          "t": "video",
-          "id": "n1jkxseJBf4",
-          "start": 28.3,
-          "end": 69.9,
-          "file": "clips/alkohol_2.mp4",
-          "tag": "Animation",
-          "cap": "Schnelle und langsame Kopien des Gens",
-          "ai": true
-        },
-        {
           "t": "quiz",
           "q": "Was bedeutet eine langsame COMT-Version für das Gehirn?",
           "o": [
@@ -880,16 +916,6 @@
           "t": "text",
           "h": "Eine Veranlagung ist kein Schicksal",
           "p": "Ein erhöhtes Risiko bedeutet nicht, dass du abhängig wirst. Umwelt und Lebensstil spielen ebenfalls eine wichtige Rolle. Das Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Der Bericht empfiehlt allen: die Menge begrenzen, regelmäßig alkoholfreie Tage einlegen, Stress gesund abbauen und dich mit Menschen umgeben, die dich dabei unterstützen. Merkst du, dass dir das Aufhören schwerfällt, ist es in Ordnung, Hilfe zu suchen, etwa bei einer Ärztin, einem Psychologen oder in einer Selbsthilfegruppe."
-        },
-        {
-          "t": "video",
-          "id": "n1jkxseJBf4",
-          "start": 82.0,
-          "end": 97.4,
-          "file": "clips/alkohol_3.mp4",
-          "tag": "Animation",
-          "cap": "Was das für dich bedeutet",
-          "ai": true
         },
         {
           "t": "quiz",

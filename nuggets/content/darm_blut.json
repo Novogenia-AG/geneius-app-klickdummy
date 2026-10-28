@@ -466,19 +466,35 @@
           "p": "Als Baby hast du Milch ganz selbstverständlich vertragen. Bei vielen Erwachsenen ist das anders: Nach dem Milchkaffee grummelt der Bauch. Was das mit deinen Knochen zu tun hat, steht in deinen Genen."
         },
         {
+          "t": "video",
+          "anim": true,
+          "yt": {
+            "de": "wa9QQEMnUyM",
+            "en": "hH4BnUjmVXg"
+          },
+          "dur": {
+            "de": 116,
+            "en": 124
+          },
+          "tag": "Animation",
+          "cap": "Kalzium, Milch und deine Gene: Warum manche Erwachsene Milch vertragen · KI-generierte Animation"
+        },
+        {
           "t": "text",
           "h": "Kalzium für stabile Knochen",
           "p": "Kalzium gibt deinen Knochen Stabilität und kann so vor Osteoporose schützen. Etwa 98 % des Kalziums in deinem Körper stecken in den Knochen. Dein Körper kann Kalzium nicht selbst herstellen, er bekommt es nur aus der Nahrung. Es wird im Darm aufgenommen, Vitamin D3 verstärkt das. Das Blut bringt es dann zu den Knochen."
         },
         {
           "t": "video",
-          "id": "79MPy6BFqu8",
-          "start": 1109.65,
-          "end": 1125.9,
-          "file": "clips/kalzium_1.mp4",
+          "yt": {
+            "de": "uueP82UBHvw"
+          },
+          "dur": {
+            "de": 16
+          },
+          "poster": "nuggets/themen/kalzium.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie sich Kalzium und Vitamin D bei der Aufnahme unterstützen",
-          "ai": false
+          "cap": "Daniel erklärt, wie sich Kalzium und Vitamin D bei der Aufnahme unterstützen"
         },
         {
           "t": "quiz",
@@ -602,18 +618,34 @@
         },
         {
           "t": "video",
-          "id": "RVCVd4rG1AU",
-          "start": 25.1,
-          "end": 61.85,
-          "file": "clips/vitd_1.mp4",
+          "anim": true,
+          "yt": {
+            "de": "RVCVd4rG1AU",
+            "en": "KrkWDzAmT5I"
+          },
+          "dur": {
+            "de": 115,
+            "en": 65
+          },
           "tag": "Animation",
-          "cap": "Der Vitamin-D-Rezeptor: ein Greifarm an deiner Zelle",
-          "ai": true
+          "cap": "Vitamin D und deine Gene: Reicht ein normaler Wert für dich? · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Ein Greifarm für Vitamin D3",
           "p": "Die VDR-Gene enthalten die Bauanleitung für einen Rezeptor. Stell ihn dir wie einen Greifarm vor, der an der Oberfläche der Zelle nach außen ragt. Vitamin D3 dockt genau daran an. Dann bekommt die Zelle ein Signal, entfaltet die gesunden Effekte des Vitamins und schaltet bestimmte andere Gene ein."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "frpcKLeYSUQ"
+          },
+          "dur": {
+            "de": 67
+          },
+          "poster": "nuggets/themen/vitd.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Der Vitamin-D-Rezeptor: ein Greifarm an deiner Zelle"
         },
         {
           "t": "quiz",
@@ -648,16 +680,6 @@
           "t": "text",
           "h": "Die Falle beim Bluttest",
           "p": "Ein Bluttest zeigt, wie viel Vitamin D3 in deinem Blut ist. Er zeigt nicht, wie gut deine Zellen es erkennen. Mit veränderten VDR-Genen kannst du laut Bluttest ausreichend versorgt sein und trotzdem einen Mangel in den Zellen haben, weil das Vitamin seine Wirkung nicht richtig entfalten kann."
-        },
-        {
-          "t": "video",
-          "id": "RVCVd4rG1AU",
-          "start": 71.6,
-          "end": 92.3,
-          "file": "clips/vitd_2.mp4",
-          "tag": "Animation",
-          "cap": "Bluttest normal, Wirkung trotzdem schwach",
-          "ai": true
         },
         {
           "t": "text",
@@ -750,18 +772,32 @@
         },
         {
           "t": "video",
-          "id": "Qf_vdgupY8M",
-          "start": 10.6,
-          "end": 52.8,
-          "file": "clips/eisen_1.mp4",
+          "anim": true,
+          "yt": {
+            "de": "Qf_vdgupY8M"
+          },
+          "dur": {
+            "de": 85
+          },
           "tag": "Animation",
-          "cap": "Wie eine Genveränderung vor 6.000 Jahren zum Vorteil wurde",
-          "ai": true
+          "cap": "Eisen und deine Gene: Der Fluch der Kelten · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Das HFE-Gen öffnet die Tür im Darm",
           "p": "Eisen aus deiner Nahrung kommt in den Darm. Die HFE-Gene bilden dort die Kanäle, über die Eisen in deinen Körper gelangt. Normalerweise wird nur etwa 10 % des Eisens aus der Nahrung aufgenommen, der Rest wird wieder ausgeschieden. Ist das Gen verändert, ist es nicht zu schwach, sondern zu aktiv: Es bildet zu viele Kanäle, und es gelangt zu viel Eisen hinein."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "ntkpD4_SjSM"
+          },
+          "dur": {
+            "de": 62
+          },
+          "poster": "nuggets/themen/eisen.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Wie eine Genveränderung vor 6.000 Jahren zum Vorteil wurde"
         },
         {
           "t": "quiz",
@@ -796,16 +832,6 @@
           "t": "text",
           "h": "Eine Kopie oder zwei?",
           "p": "Du hast zwei Kopien des HFE-Gens. Wer eine veränderte Kopie geerbt hat, hat meist erhöhte, aber noch gesunde Eisenwerte. Wer sie von beiden Eltern geerbt hat, nimmt viel zu viel Eisen auf. Weil der Körper überschüssiges Eisen kaum loswird, kann es sich über Jahrzehnte anreichern. Laut Bericht haben bei der wichtigsten Variante rund 97 % der Menschen zwei normale Kopien."
-        },
-        {
-          "t": "video",
-          "id": "Qf_vdgupY8M",
-          "start": 52.75,
-          "end": 72.6,
-          "file": "clips/eisen_2.mp4",
-          "tag": "Animation",
-          "cap": "Eine Kopie oder zwei: dieselbe Eisentablette, andere Wirkung",
-          "ai": true
         },
         {
           "t": "text",
@@ -895,6 +921,20 @@
           "t": "text",
           "h": "Ein winziges Spurenelement mit großer Aufgabe",
           "p": "Selen brauchst du nur in kleinsten Mengen. Trotzdem spielt es eine wichtige Rolle beim Schutz vor freien Radikalen, bei der Regulierung von Entzündungen und bei der Immunabwehr. Wie viel Selen du brauchst, steuern deine Gene."
+        },
+        {
+          "t": "video",
+          "anim": true,
+          "yt": {
+            "de": "thky97MDFBQ",
+            "en": "O34SjDRJzmA"
+          },
+          "dur": {
+            "de": 91,
+            "en": 107
+          },
+          "tag": "Animation",
+          "cap": "Selen und deine Gene: Warum dieselbe Paranuss unterschiedlich wirkt · KI-generierte Animation"
         },
         {
           "t": "text",

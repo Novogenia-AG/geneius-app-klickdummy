@@ -16,18 +16,34 @@
         },
         {
           "t": "video",
-          "id": "79MPy6BFqu8",
-          "start": 79,
-          "end": 135,
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, warum Kaffee gesund und giftig zugleich ist",
-          "ai": false,
-          "file": "clips/kaffee_1.mp4"
+          "anim": true,
+          "yt": {
+            "de": "xSA6gW6Klus",
+            "en": "9X6g0COq3Hs"
+          },
+          "dur": {
+            "de": 90,
+            "en": 91
+          },
+          "tag": "Animation",
+          "cap": "Kaffee und deine Gene: gesund oder schädlich? · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Zwei Seiten einer Tasse",
           "p": "Kaum ein Lebensmittel enthält so viele gesunde Antioxidantien und Polyphenole wie Kaffee. Daneben steckt aber Koffein darin. Pflanzen haben es als Nervengift gegen Insekten entwickelt. Auch für deinen Körper ist Koffein ein Fremdstoff, den er schnell loswerden will."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "ztZoac7MWlo"
+          },
+          "dur": {
+            "de": 285
+          },
+          "poster": "nuggets/themen/kaffee.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, warum Kaffee gesund und giftig zugleich ist"
         },
         {
           "t": "quiz",
@@ -64,29 +80,9 @@
           "p": "Wird Koffein schnell abgebaut, bleiben vor allem die gesunden Stoffe übrig, und Kaffee schützt dein Herz. Bei langsamem Abbau bleibt das Koffein zu lange im Körper. Dann dreht sich der Effekt um: Derselbe Kaffee erhöht das Herzinfarktrisiko. Nur der Zustand dieses einen Gens entscheidet, ob Kaffee für dich gesund oder ungesund ist."
         },
         {
-          "t": "video",
-          "id": "79MPy6BFqu8",
-          "start": 157,
-          "end": 222,
-          "tag": "Originalaufnahme",
-          "cap": "Gute Gene, schlechte Gene: derselbe Kaffee, entgegengesetzte Wirkung",
-          "ai": false,
-          "file": "clips/kaffee_2.mp4"
-        },
-        {
           "t": "text",
           "h": "Die Alternative: koffeinfreier Kaffee",
           "p": "Koffeinfreier Kaffee enthält weiterhin die gesunden Antioxidantien, aber kaum Koffein. Für Menschen, die Koffein langsam abbauen, ist er deshalb eine gute Alternative."
-        },
-        {
-          "t": "video",
-          "id": "79MPy6BFqu8",
-          "start": 344,
-          "end": 364,
-          "tag": "Originalaufnahme",
-          "cap": "Daniel zu entkoffeiniertem Kaffee",
-          "ai": false,
-          "file": "clips/kaffee_3.mp4"
         },
         {
           "t": "quiz",
@@ -168,28 +164,34 @@
         },
         {
           "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 786,
-          "end": 863,
-          "file": "clips/q10haut_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie Q10 aktiviert wird",
-          "ai": false
-        },
-        {
-          "t": "video",
-          "id": "yvh9JKmdNvI",
-          "start": 24,
-          "end": 63,
-          "file": "clips/q10_1.mp4",
+          "anim": true,
+          "yt": {
+            "de": "yvh9JKmdNvI",
+            "en": "unVJt_qjrjw"
+          },
+          "dur": {
+            "de": 91,
+            "en": 107
+          },
           "tag": "Animation",
-          "cap": "Q10 ist wie eine Batterie, die ein Gen auflädt",
-          "ai": true
+          "cap": "Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Erst aufladen, dann schützen",
           "p": "Q10 ist zunächst inaktiv, ähnlich wie Folsäure. Das Gen NQO1 bildet ein Enzym, das Q10 in die aktive Form umwandelt: Ubiquinol. Erst Ubiquinol ist ein starkes Antioxidans. Es fängt freie Radikale ab, bevor sie deine Zellen beschädigen. NQO1 ist eines von mehreren Enzymen, die Q10 aktivieren können, aber ein sehr wichtiges."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "lcd_vO_7ENc"
+          },
+          "dur": {
+            "de": 116
+          },
+          "poster": "nuggets/themen/q10.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie Q10 aktiviert wird"
         },
         {
           "t": "quiz",
@@ -314,13 +316,17 @@
         },
         {
           "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 8,
-          "end": 90,
-          "file": "clips/verbrannt_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erzählt die Geschichte der ältesten Frau der Welt",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "NAIy-aesruw",
+            "en": "zeAOzvAEbo8"
+          },
+          "dur": {
+            "de": 88,
+            "en": 106
+          },
+          "tag": "Animation",
+          "cap": "Gegrilltes und deine Gene: Warum Verbranntes manchen mehr schadet · KI-generierte Animation"
         },
         {
           "t": "text",
@@ -329,13 +335,15 @@
         },
         {
           "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 90,
-          "end": 175,
-          "file": "clips/verbrannt_2.mp4",
+          "yt": {
+            "de": "2shEg2xvZsk"
+          },
+          "dur": {
+            "de": 216
+          },
+          "poster": "nuggets/themen/verbrannt.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie Gene Verbranntes entgiften",
-          "ai": false
+          "cap": "Daniel erzählt die Geschichte der ältesten Frau der Welt"
         },
         {
           "t": "quiz",
@@ -353,16 +361,6 @@
           "t": "text",
           "h": "Wenn Gene zu fleißig sind",
           "p": "Bei den meisten Genen bedeutet ein Defekt, dass sie schlechter arbeiten. Hier ist es umgekehrt: Ein häufiger Gendefekt macht CYP1A1 zu aktiv. Die Gene wandeln PAKs dann viel zu schnell um. Das krebserregende Zwischenprodukt staut sich an, weil der nächste Entgiftungsschritt nicht hinterherkommt. Auch eine Variante in CYP1B1 beschleunigt diese Umwandlung und erhöht bei Rauchern das Risiko für Lungenkrebs deutlich."
-        },
-        {
-          "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 175,
-          "end": 224,
-          "file": "clips/verbrannt_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Wenn Entgiftungsgene zu schnell arbeiten",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -463,18 +461,34 @@
         },
         {
           "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 264,
-          "end": 327,
-          "file": "clips/chemie_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie Gene Schwermetalle und Chemikalien unschädlich machen",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "li9ORFGiTdc",
+            "en": "Dz8I0Xrchjk"
+          },
+          "dur": {
+            "de": 88,
+            "en": 102
+          },
+          "tag": "Animation",
+          "cap": "Entgiftung und deine Gene: Lohnt sich Bio für dich? · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Das GST-Team",
           "p": "Die wichtigsten Gene für diese Aufgabe heißen GSTT1, GSTM1 und GSTP1. Ihre Enzyme binden sich an Schadstoffe und verändern sie chemisch. So werden die Stoffe meist unschädlich und für den Abbau markiert. Leber und Nieren filtern sie dann aus dem Blut und entfernen sie aus dem Körper."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "fv62Xf-sfqQ"
+          },
+          "dur": {
+            "de": 97
+          },
+          "poster": "nuggets/themen/chemie.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie Gene Schwermetalle und Chemikalien unschädlich machen"
         },
         {
           "t": "quiz",
@@ -509,16 +523,6 @@
           "t": "text",
           "h": "Bio, Fisch und Mineralien",
           "p": "Arbeiten deine GST-Gene gut, entgiftet dein Körper Pestizide und Herbizide ausreichend. Sind sie defekt, ist der Griff zu Bio-Lebensmitteln durchaus sinnvoll. Obst und Gemüse gründlich zu waschen hilft allen. Große Meeresfische und Muscheln können viele Schwermetalle enthalten. Bestimmte Mineralien unterstützen die Entgiftung: Kalzium hilft bei Blei, Zink bei Cadmium."
-        },
-        {
-          "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 327,
-          "end": 361,
-          "file": "clips/chemie_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Was hilft, wenn die Entgiftungsgene schwächeln",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -603,18 +607,34 @@
         },
         {
           "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 375,
-          "end": 460,
-          "file": "clips/radikale_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt freie Radikale und die Feuerwehr deines Körpers",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "Bf-WdkeB7E0",
+            "en": "NGOcvpeQKUY"
+          },
+          "dur": {
+            "de": 96,
+            "en": 115
+          },
+          "tag": "Animation",
+          "cap": "Antioxidantien und deine Gene: Warum manche schneller altern · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Kleine Feuer in deinen Zellen",
           "p": "Etwa 5 % des eingeatmeten Sauerstoffs werden in deinen Zellen zu einem giftigen Abfallprodukt: Superoxid, dem ersten einer Reihe freier Radikale. Ein freies Radikal wirkt wie ein Feuer im trockenen Wald. Der Schaden breitet sich aus und trifft Zellwände, Eiweiße und die DNA. Über Jahrzehnte ist das einer der Gründe, warum wir altern."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "eUxru2n6bdU"
+          },
+          "dur": {
+            "de": 191
+          },
+          "poster": "nuggets/themen/radikale.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt freie Radikale und die Feuerwehr deines Körpers"
         },
         {
           "t": "quiz",
@@ -649,26 +669,6 @@
           "t": "text",
           "h": "Was das Feuer anheizt und was es löscht",
           "p": "Ein einziger Zug an der Zigarette kann Milliarden freier Radikale freisetzen. Auch Stress, Alkohol, Umweltgifte, ungeschützte Sonnenbäder und Flugreisen erhöhen den oxidativen Stress. Löschen helfen Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure. Zink und Mangan sind Bausteine der körpereigenen Schutzenzyme. Viele Antioxidantien stecken in Orangen, Erdbeeren, Brokkoli, Spinat, Nüssen und Tee."
-        },
-        {
-          "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 460,
-          "end": 490,
-          "file": "clips/radikale_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Wenn die Feuerwehr ausfällt, hilft Regen: Antioxidantien",
-          "ai": false
-        },
-        {
-          "t": "video",
-          "id": "3AvZMAtALlQ",
-          "start": 492,
-          "end": 566,
-          "file": "clips/radikale_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Teurer Urin? Warum das so gewollt ist",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -754,18 +754,34 @@
         },
         {
           "t": "video",
-          "id": "gwmVcvbaNgE",
-          "start": 91,
-          "end": 170,
-          "file": "clips/telomere_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt Telomere, die Schutzkappen deiner Chromosomen",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "w9uq-tiTIps",
+            "en": "u3Um8z_hzp0"
+          },
+          "dur": {
+            "de": 98,
+            "en": 117
+          },
+          "tag": "Animation",
+          "cap": "Altern und deine Gene: Warum manche Jahre jünger aussehen · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Schutzkappen wie am Schnürsenkel",
           "p": "Deine Gene sitzen auf Chromosomen. An deren Enden sitzen Telomere, Schutzkappen wie die Plastikhülsen an einem Schnürsenkel. Bei jeder Zellteilung wird die ganze DNA kopiert, und dabei geht ein kleines Stück der Telomere verloren. Nach ungefähr 50 bis 70 Teilungen sind sie aufgebraucht. Die Zelle geht dann in einen Schlafmodus und erfüllt ihre Aufgabe nicht mehr."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "Iej5Lv47O0k"
+          },
+          "dur": {
+            "de": 199
+          },
+          "poster": "nuggets/themen/telomere.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt Telomere, die Schutzkappen deiner Chromosomen"
         },
         {
           "t": "quiz",
@@ -785,16 +801,6 @@
           "p": "Das Gen TERT bildet die Telomerase. Sie hilft, die Telomere zu erhalten. Arbeitet TERT gut, werden deine Telomere mit dem Alter langsamer kürzer. Bei Gendefekten verlieren die Zellen ihre Enden schneller. Bei TERT haben 70 % der Menschen zwei effektive Kopien, 28 % eine defekte und 2 % zwei defekte. Wer mit ungünstigen Varianten geboren wird, startet schon mit kürzeren Telomeren."
         },
         {
-          "t": "video",
-          "id": "gwmVcvbaNgE",
-          "start": 170,
-          "end": 214,
-          "file": "clips/telomere_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Ein Gen entscheidet, wie schnell die Telomere kürzer werden",
-          "ai": false
-        },
-        {
           "t": "quiz",
           "q": "Wofür sorgt die Telomerase, die das Gen TERT bildet?",
           "o": [
@@ -810,16 +816,6 @@
           "t": "text",
           "h": "Bremsen, nicht zurückdrehen",
           "p": "Bestimmte Nährstoffe können schwächer arbeitende Schutzgene unterstützen: Vitamin D3, Omega-3-Fettsäuren, Vitamin E, Resveratrol und Ginkgo. Wichtig: Sie machen kurze Telomere nicht wieder lang und reparieren sie nicht. Sie können aber helfen, dass die Verkürzung langsamer abläuft. Rauchen, Übergewicht, Bewegungsmangel und oxidativer Stress beschleunigen sie dagegen. Aktive Telomerase ist übrigens nicht immer erwünscht: Bei Krebs kann sie die Krankheit fördern."
-        },
-        {
-          "t": "video",
-          "id": "gwmVcvbaNgE",
-          "start": 271,
-          "end": 290,
-          "file": "clips/telomere_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Welche Nährstoffe dein Schutzgen unterstützen",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -906,13 +902,15 @@
         },
         {
           "t": "video",
-          "id": "gwmVcvbaNgE",
-          "start": 248,
-          "end": 265,
-          "file": "clips/medi_1.mp4",
+          "yt": {
+            "de": "xvGYgpKJsv0"
+          },
+          "dur": {
+            "de": 42
+          },
+          "poster": "nuggets/themen/medi.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel: Mediterrane Ernährung wirkt nur mit dem passenden Gen auf die Telomere",
-          "ai": false
+          "cap": "Daniel: Mediterrane Ernährung wirkt nur mit dem passenden Gen auf die Telomere"
         },
         {
           "t": "text",
@@ -952,16 +950,6 @@
           "t": "text",
           "h": "Wirkungslos heißt nicht ungesund",
           "p": "Ein Ergebnis „wirkungslos“ bedeutet nur: Für deine Telomere ist dieser eine Hebel schwach. Daneben gibt es Nährstoffe, die deine Schutzgene unterstützen können, zum Beispiel Vitamin D3, Omega-3-Fettsäuren, Vitamin E, Resveratrol und Ginkgo. Sie können die Verkürzung der Telomere bremsen, verlängern können sie sie nicht."
-        },
-        {
-          "t": "video",
-          "id": "gwmVcvbaNgE",
-          "start": 271,
-          "end": 290,
-          "file": "clips/medi_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Welche Nährstoffe die Telomere trotzdem unterstützen",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -1048,18 +1036,34 @@
         },
         {
           "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 98,
-          "end": 118,
-          "file": "clips/entz_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Entzündung ist Reparatur: Daniel am Beispiel Muskelkater",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "jFAcL6_oJ64",
+            "en": "9v-saRSSXPA"
+          },
+          "dur": {
+            "de": 96,
+            "en": 107
+          },
+          "tag": "Animation",
+          "cap": "Entzündung und deine Gene: Warum dasselbe Training so unterschiedlich wirkt · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Entzündung ist Reparatur",
           "p": "Bei einer Entzündung bringen Signalstoffe das betroffene Gewebe zum Anschwellen. So kommen die weißen Blutzellen an die Angreifer heran. Das ist gewollt, belastet aber auch die eigenen Zellen. Gene wie TNFa, IL1A und IL6R regeln, wie stark diese Reaktion ausfällt."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "LYxLJuHRKyY"
+          },
+          "dur": {
+            "de": 139
+          },
+          "poster": "nuggets/themen/entz.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Entzündung ist Reparatur: Daniel am Beispiel Muskelkater"
         },
         {
           "t": "quiz",
@@ -1072,16 +1076,6 @@
           ],
           "c": 0,
           "e": "Die Schwellung schafft Platz für die weißen Blutzellen. Ist die Reaktion zu stark, leidet aber auch das eigene Gewebe."
-        },
-        {
-          "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 139,
-          "end": 182,
-          "file": "clips/entz_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie Gene die Stärke einer Entzündung steuern",
-          "ai": false
         },
         {
           "t": "text",
@@ -1104,16 +1098,6 @@
           "t": "text",
           "h": "Mit dem Teller bremsen",
           "p": "Deine Ernährung kann das Immunsystem anheizen oder beruhigen. Arachidonsäure wirkt wie ein Booster. Sie steckt fast nur in tierischen Lebensmitteln, etwa in Kalbsleber, Thunfisch, Geflügel, Rindfleisch, Eiern und Milchprodukten. Omega-3-Fettsäuren aus Hering, Makrele, Sardinen, Algen oder Lein-, Chia- und Walnussöl wirken entzündungshemmend, ebenso organischer Schwefel (MSM), etwa aus Zwiebeln und Sauerkraut."
-        },
-        {
-          "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 207,
-          "end": 237,
-          "file": "clips/entz_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Arachidonsäure heizt an, Omega-3 und MSM bremsen",
-          "ai": false
         },
         {
           "t": "quiz",

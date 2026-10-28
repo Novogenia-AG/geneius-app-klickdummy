@@ -3015,8 +3015,8 @@ const GN_YT = {"alkohol_1":"aMbH5GGB3zA","alkohol_2":"Tti70Y_PaRY","alkohol_3":"
 const gnYtId = file => GN_YT[String(file || '').replace(/^.*\//, '').replace(/\.mp4$/, '')];
 const CONTENT = {
   relevanz: { minutes: 4, blocks: [
-    { t: 'video', id: '71EHqtv3NOA', start: 54, end: 182, files: ['clips/gene_1.mp4', 'clips/gene_2.mp4'], dur: 127, cap: 'Welchen Treibstoff braucht dein Körper? Die Gene als Bedienungsanleitung', tag: 'Originalaufnahme' },
     { t: 'text', h: 'Die Bedienungsanleitung deines Körpers', p: 'Welchen Treibstoff dein Auto braucht, weiß fast jeder. Welchen Treibstoff dein Körper braucht, wissen die wenigsten. Genau das steht in deinen Genen: welche Nährstoffe du besonders brauchst, wie du auf Fett und Kohlenhydrate reagierst und was dir guttut.' },
+    { t: 'video', yt: { de: 'ey0yuErQg_Y' }, dur: { de: 128 }, poster: 'nuggets/themen/relevanz.jpg', tag: 'Originalaufnahme', cap: 'Welchen Treibstoff braucht dein Körper? Die Gene als Bedienungsanleitung' },
     { t: 'text', h: 'Für ein ganzes Leben', p: 'Ein Elektroauto wird nach zehn Jahren nicht plötzlich zum Diesel. Genauso bleiben deine Gene ein Leben lang gleich. Ändern kannst du sie nicht. Aber du kannst wissen, wie sie arbeiten, und dich danach richten.' },
     { t: 'quiz', q: 'Können sich deine Gene im Laufe des Lebens ändern?', o: ['Ja, mit dem Alter ändern sie sich laufend', 'Nein, sie bleiben ein Leben lang gleich', 'Nur wenn du deine Ernährung umstellst', 'Ja, durch Sport'], c: 1, e: 'Richtig. Deine Gene bleiben ein Leben lang gleich. Darum reicht eine Analyse für dein ganzes Leben.' },
     { t: 'quiz', q: 'Was verraten dir deine Gene?', o: ['Welchen „Treibstoff“ dein Körper braucht', 'Deine Lieblingsfarbe', 'Wie viel du heute gegessen hast', 'Wie das Wetter morgen wird'], c: 0, e: 'Genau. Deine Gene sind die Bedienungsanleitung deines Körpers, zum Beispiel dafür, welche Nährstoffe du besonders brauchst.' }
@@ -3044,17 +3044,16 @@ const CONTENT = {
   ] },
   folsaeure: { minutes: 7, blocks: [
     { t: 'text', h: 'Wirkt Folsäure bei dir überhaupt?', p: 'Folsäure ist eines der beliebtesten Nahrungsergänzungsmittel der Welt. Frauenärzte empfehlen sie in der Schwangerschaft, und auch für Männer ist sie wichtig: für gesunde Zellen und ein gesundes Herz. Ob sie bei dir wirkt, steht in deinen Genen.' },
-    { t: 'video', id: '79MPy6BFqu8', start: 446, end: 482, file: 'clips/folsaeure_1.mp4', cap: 'Daniel erklärt, wie Folsäure aktiviert wird', tag: 'Originalaufnahme' },
+    { t: 'video', anim: true, yt: { de: 'hs7Aki3Hi_s' }, dur: { de: 152 }, tag: 'Animation', cap: 'Folsäure und deine Gene: Wirkt sie bei dir? · KI-generierte Animation' },
     { t: 'text', h: 'Erst aktivieren, dann wirken', p: 'Folsäure selbst ist noch inaktiv. Das MTHFR-Gen bildet ein Enzym, das Folsäure erkennt und in die aktive Form umwandelt: Methylfolat. Erst Methylfolat schützt das Herz und das ungeborene Kind.' },
+    { t: 'video', yt: { de: 'RD1cFoewiCQ' }, dur: { de: 339 }, poster: 'nuggets/themen/folsaeure.jpg', tag: 'Originalaufnahme', cap: 'Daniel erklärt, wie Folsäure aktiviert wird' },
+    { t: 'video', yt: { de: 'RM3QmdZaHLQ', en: 'Kchv-yrE81g' }, dur: { de: 63, en: 63 }, tag: '3D-Animation', cap: 'Folsäure und deine Gene: Die Reise durch den Körper · KI-generierte Animation' },
     { t: 'quiz', q: 'Wie heißt die aktive Form der Folsäure?', o: ['Homocystein', 'Methylfolat', 'Vitamin B12', 'Folat-Ester'], c: 1, e: 'Methylfolat ist die aktive Form. Das MTHFR-Gen sorgt für die Umwandlung.' },
     { t: 'text', h: 'Zwei Kopien, unterschiedlich schnell', p: 'Du hast zwei Kopien des MTHFR-Gens: eine von deiner Mutter, eine von deinem Vater. Nicht bei jedem arbeiten beide gleich gut. Es gibt mehrere Stufen: Bei manchen wandelt das Gen Folsäure sehr gut um, bei anderen langsamer, und bei manchen so langsam, dass Folsäure praktisch wirkungslos bleibt.' },
     { t: 'quiz', q: 'Wie viele Kopien des MTHFR-Gens hast du?', o: ['Eine', 'Zwei, eine von jedem Elternteil', 'Vier', 'Das ist bei jedem Menschen anders'], c: 1, e: 'Von jedem Gen hast du zwei Kopien. Wie gut beide arbeiten, entscheidet über die Umwandlung.' },
     { t: 'text', h: 'Die Falle beim Bluttest', p: 'Ein Bluttest zeigt, wie viel Folsäure in deinem Blut ist, aber nicht, ob sie aktiviert wird. Wer schlecht umwandelt, kann gute Blutwerte haben, obwohl die Folsäure kaum wirkt. Das zeigen nur deine Gene.' },
-    { t: 'video', id: '79MPy6BFqu8', start: 494, end: 530, file: 'clips/folsaeure_2.mp4', cap: 'Warum der Bluttest bei Folsäure täuscht', tag: 'Originalaufnahme' },
     { t: 'text', h: 'Folsäure oder Methylfolat?', p: 'Methylfolat ist bereits aktiv und braucht das Gen nicht. Folsäure hat aber Vorteile: Sie ist stabil, günstig und wird doppelt so gut aufgenommen, sofern deine Gene sie aktivieren können.' },
-    { t: 'video', id: '79MPy6BFqu8', start: 549, end: 607, file: 'clips/folsaeure_3.mp4', cap: 'Methylfolat umgeht das Gen, Folsäure hat trotzdem Vorteile', tag: 'Originalaufnahme' },
     { t: 'text', h: 'Wie mächtig diese Information sein kann', p: 'In einer Studie wurden zwölf Frauen mit diesem Gendefekt, die nicht schwanger wurden, von Folsäure auf Methylfolat umgestellt. Daniel erzählt, was dann passiert ist.' },
-    { t: 'video', id: '79MPy6BFqu8', start: 727, end: 785, file: 'clips/folsaeure_4.mp4', cap: 'Die Studie mit zwölf Frauen', tag: 'Originalaufnahme' },
     { t: 'quiz', q: 'Warum kann ein Bluttest bei Folsäure täuschen?', o: ['Folsäure lässt sich im Blut nicht messen', 'Er zeigt die Menge im Blut, nicht ob sie aktiviert wird', 'Der Bluttest verändert die Folsäure', 'Folsäure wirkt nur in der Nacht'], c: 1, e: 'Viel Folsäure im Blut heißt nicht, dass sie wirkt. Entscheidend ist die Umwandlung in Methylfolat.' },
     { t: 'result', key: 'folsaeure' }
   ] }
@@ -3307,7 +3306,7 @@ function blockHTML(b, i) {
     const lang = document.querySelector('[data-lang][aria-pressed="true"]')?.dataset.lang === 'en' ? 'en' : 'de';
     const id = b.yt[lang] || b.yt.de, len = Math.round((b.dur && (b.dur[lang] || b.dur.de)) || 0), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
     const ai = (b.aiLang || []).includes(lang);
-    return `<div class="blk"><div class="video" data-yt="${id}"><button class="poster" aria-label="Video abspielen: ${esc(b.cap)}"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
+    return `<div class="blk"><div class="video" data-yt="${id}"><button class="poster" aria-label="Video abspielen: ${esc(b.cap)}"><img src="${b.poster || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
       <div class="vcap"><span><span class="vtag">${ai ? 'KI-Sprachversion' : b.tag}</span>${esc(b.cap)}${ai ? ' · <b>Stimme und Lippenbewegung KI-generiert</b>' : ''}</span></div></div>`; }
   if (b.t === 'video' && b.files) b = { ...b, file: b.files[0] };          // mehrere Clips am Stück in einem Player
   if (b.t === 'video' && b.file && gnYtId(b.file)) { // eigener Clip als ungelistetes YouTube-Video (ganzes Video, kein start/end)

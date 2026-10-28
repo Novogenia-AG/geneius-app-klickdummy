@@ -15,6 +15,18 @@
           "p": "Manche Menschen sind beim Sprint kaum zu schlagen, andere laufen stundenlang, ohne müde zu werden. Hast du dich schon einmal gefragt, wofür deine Muskeln eigentlich gebaut sind? Ein Teil der Antwort steht in deinen Genen."
         },
         {
+          "t": "video",
+          "yt": {
+            "de": "DZ9SkdHMr94"
+          },
+          "dur": {
+            "de": 35
+          },
+          "poster": "nuggets/themen/faser.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie viele Wiederholungen für Kraft und für Muskelvolumen passen"
+        },
+        {
           "t": "text",
           "h": "Weiße und rote Muskelfasern",
           "p": "Deine Muskeln bestehen aus zwei Hauptarten von Fasern. Weiße Fasern sind groß, kraftvoll und schnell, ermüden aber rasch. Rote Fasern sind ausdauernd und ermüden langsam. Wie viele du von welcher Sorte hast, legen deine Gene mit fest."
@@ -57,16 +69,6 @@
           "t": "text",
           "h": "Kraft ist nicht gleich Volumen",
           "p": "Im Performance-Bericht bekommst du passende Trainingsprinzipien dazu. Für maximale Kraft trainiert man mit schweren Gewichten und 1 bis 6 Wiederholungen. Für mehr Muskelvolumen sind es 6 bis 12 Wiederholungen. Kraft und Volumen sind nicht dasselbe und brauchen unterschiedliches Training."
-        },
-        {
-          "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 980.3,
-          "end": 1014.9,
-          "file": "clips/faser_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie viele Wiederholungen für Kraft und für Muskelvolumen passen",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -269,13 +271,15 @@
         },
         {
           "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 1058.1,
-          "end": 1104.3,
-          "file": "clips/ermued_1.mp4",
+          "yt": {
+            "de": "1-PWFrF1c7E"
+          },
+          "dur": {
+            "de": 202
+          },
+          "poster": "nuggets/themen/ermued.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, warum deine Gene die Pause zwischen den Sätzen mitbestimmen",
-          "ai": false
+          "cap": "Daniel erklärt, warum deine Gene die Pause zwischen den Sätzen mitbestimmen"
         },
         {
           "t": "text",
@@ -320,16 +324,6 @@
           "t": "text",
           "h": "Muskelkater? Lieber warten",
           "p": "Bei Muskelkater rät Daniel klar: nicht trainieren. Muskeln wachsen nicht im Fitnessstudio, sondern danach. Beim Training werden sie beansprucht, in der Erholung neu aufgebaut. Diese Zeit brauchen sie."
-        },
-        {
-          "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 1245.3,
-          "end": 1260.2,
-          "file": "clips/ermued_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel: Bei Muskelkater nicht trainieren",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -414,13 +408,15 @@
         },
         {
           "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 98.66,
-          "end": 117.9,
-          "file": "clips/erhol_1.mp4",
+          "yt": {
+            "de": "N8ROvuJps6E"
+          },
+          "dur": {
+            "de": 141
+          },
+          "poster": "nuggets/themen/erhol.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie das Immunsystem Mikrorisse im Muskel repariert",
-          "ai": false
+          "cap": "Daniel erklärt, wie das Immunsystem Mikrorisse im Muskel repariert"
         },
         {
           "t": "text",
@@ -445,16 +441,6 @@
           "p": "Bei funktionierenden Genen reagiert das Immunsystem genau richtig: Es repariert, ohne gesunde Zellen anzugreifen. Bei veränderten Entzündungs-Genen reagiert es zu stark. Statt das Gewebe nur zu reparieren, schädigt es es zuerst zusätzlich. Die Entzündung wird schlimmer, und die Erholung dauert länger."
         },
         {
-          "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 139.82,
-          "end": 170.8,
-          "file": "clips/erhol_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Wenn das Immunsystem überreagiert, dauert die Erholung länger",
-          "ai": false
-        },
-        {
           "t": "quiz",
           "q": "Was passiert bei veränderten Entzündungs-Genen?",
           "o": [
@@ -470,16 +456,6 @@
           "t": "text",
           "h": "Ernährung stellt das Immunsystem lauter oder leiser",
           "p": "Arachidonsäure, eine Omega-6-Fettsäure aus tierischen Lebensmitteln, wirkt entzündungsfördernd. Auch Alkohol kann die Muskelreparatur bremsen. Omega-3-Fettsäuren und MSM, also organischer Schwefel, wirken dagegen entzündungshemmend. So kannst du in die Erholung eingreifen, auch wenn deine Gene dich nicht unterstützen."
-        },
-        {
-          "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 207.7,
-          "end": 240.1,
-          "file": "clips/erhol_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel zu Arachidonsäure, Omega-3 und MSM",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -566,28 +542,20 @@
         },
         {
           "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 262.3,
-          "end": 304.2,
-          "file": "clips/verletz_1.mp4",
+          "yt": {
+            "de": "tVddQA4j91Q"
+          },
+          "dur": {
+            "de": 104
+          },
+          "poster": "nuggets/themen/verletz.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, warum Gene dein Verletzungsrisiko mitbestimmen",
-          "ai": false
+          "cap": "Daniel erklärt, warum Gene dein Verletzungsrisiko mitbestimmen"
         },
         {
           "t": "text",
           "h": "Gene bauen deine Sehnen",
           "p": "Viele der untersuchten Gene liefern den Bauplan für stabiles Bindegewebe, zum Beispiel für Sehnen. Ein Beispiel ist das Kollagen-Gen COL5A1. Arbeitet ein solches Gen nicht richtig, wird die Sehne schwächer, als sie sein sollte, und Verletzungen passieren leichter."
-        },
-        {
-          "t": "video",
-          "id": "GyIfKaYmLoE",
-          "start": 304.75,
-          "end": 366.5,
-          "file": "clips/verletz_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Ein Gen, fast ein Drittel weniger Spiele: die Studie mit Fußballern",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -712,13 +680,15 @@
         },
         {
           "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 70.85,
-          "end": 127.9,
-          "file": "clips/kollagen_1.mp4",
+          "yt": {
+            "de": "w908BOCdS4M"
+          },
+          "dur": {
+            "de": 190
+          },
+          "poster": "nuggets/themen/kollagen.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie das MMP1-Gen altes Kollagen abbaut",
-          "ai": false
+          "cap": "Daniel erklärt, wie das MMP1-Gen altes Kollagen abbaut"
         },
         {
           "t": "text",
@@ -743,16 +713,6 @@
           "p": "Das Enzym MMP1 arbeitet wie ein kleiner Pac-Man, der altes Kollagen frisst. Bei manchen Menschen ist das MMP1-Gen verändert und bildet zu viel davon. Dann wird Kollagen schneller abgebaut, als der Körper es nachbilden kann, und die Kollagendichte nimmt ab. Laut Daniel haben nur rund 20 % der Menschen zwei funktionierende Kopien, rund 33 % bauen Kollagen viel zu schnell ab."
         },
         {
-          "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 128.95,
-          "end": 167.5,
-          "file": "clips/kollagen_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Ein Gendefekt, der zu gut arbeitet: zu viel MMP1",
-          "ai": false
-        },
-        {
           "t": "quiz",
           "q": "Was macht ein verändertes MMP1-Gen?",
           "o": [
@@ -768,16 +728,6 @@
           "t": "text",
           "h": "Von außen und von innen",
           "p": "Bestimmte Nährstoffe können ein überaktives MMP1 bremsen: Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure. Manche wirken in einer Creme direkt auf der Haut, andere als Nahrungsergänzung von innen. Phytosterole zum Beispiel wirken nur von innen, denn auf der Haut werden sie nicht aufgenommen."
-        },
-        {
-          "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 191.3,
-          "end": 261.2,
-          "file": "clips/kollagen_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Welche Nährstoffe MMP1 bremsen und wo sie wirken",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -863,13 +813,15 @@
         },
         {
           "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 393.15,
-          "end": 479.9,
-          "file": "clips/uv_1.mp4",
+          "yt": {
+            "de": "LQKEd-ELOa0"
+          },
+          "dur": {
+            "de": 205
+          },
+          "poster": "nuggets/themen/uv.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erzählt von einem LKW-Fahrer, dessen Gesicht nur auf einer Seite gealtert ist",
-          "ai": false
+          "cap": "Daniel erzählt von einem LKW-Fahrer, dessen Gesicht nur auf einer Seite gealtert ist"
         },
         {
           "t": "text",
@@ -894,16 +846,6 @@
           "p": "Die Gene MC1R und STXBP5L sorgen dafür, dass deine Haut schützende Pigmente bildet. Das MC1R-Gen bestimmt auch die Farbe von Haut und Haaren. Die Pigmente fangen einen Großteil der UV-Strahlen ab, bevor sie Schaden anrichten. Du hast zwei Kopien: Zwei funktionierende bedeuten starken, eine veränderte mäßigen und zwei veränderte schwachen UV-Schutz."
         },
         {
-          "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 482.15,
-          "end": 535.9,
-          "file": "clips/uv_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Das Sonnenschutz-Gen: eingebauter Schutz oder lichtempfindliche Haut",
-          "ai": false
-        },
-        {
           "t": "quiz",
           "q": "Welches Gen bestimmt laut Bericht auch die Farbe von Haut und Haaren?",
           "o": [
@@ -919,16 +861,6 @@
           "t": "text",
           "h": "Sonnencreme bleibt Pflicht",
           "p": "Auch mit starken Genen ersetzt dein eigener Schutz keine Sonnencreme. Sie wirkt nur von außen als Barriere, schlucken bringt nichts. Von innen und auf der Haut können Vitamin C und Vitamin E helfen: Sie unterstützen sich gegenseitig und helfen der Haut, UV-Schäden zu reparieren."
-        },
-        {
-          "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 536.6,
-          "end": 597.7,
-          "file": "clips/uv_3.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Sonnencreme von außen, Vitamin C und E von innen",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -1017,13 +949,15 @@
         },
         {
           "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 621.6,
-          "end": 703.1,
-          "file": "clips/oxi_1.mp4",
+          "yt": {
+            "de": "oQA1DjuGXSU"
+          },
+          "dur": {
+            "de": 186
+          },
+          "poster": "nuggets/themen/oxi.jpg",
           "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt freie Radikale und die genetische Feuerwehr",
-          "ai": false
+          "cap": "Daniel erklärt freie Radikale und die genetische Feuerwehr"
         },
         {
           "t": "text",
@@ -1048,16 +982,6 @@
           "p": "Schutz-Gene wie SOD2 und die GST-Gene erkennen freie Radikale und machen sie unschädlich, bevor sie Schaden anrichten. SOD2 schützt dort, wo die meisten Brände entstehen: in den Kraftwerken deiner Zellen, den Mitochondrien. Sind diese Gene verändert, arbeitet die Feuerwehr zu langsam, und die Haut altert schneller."
         },
         {
-          "t": "video",
-          "id": "Bf-WdkeB7E0",
-          "start": 28.8,
-          "end": 72.1,
-          "file": "clips/oxi_3.mp4",
-          "tag": "Animation",
-          "cap": "Feuerwehr und Regen: so wirken Antioxidantien",
-          "ai": true
-        },
-        {
           "t": "quiz",
           "q": "Wo schützt das Enzym aus dem SOD2-Gen besonders?",
           "o": [
@@ -1073,16 +997,6 @@
           "t": "text",
           "h": "Regen für den Waldbrand",
           "p": "Schafft die Feuerwehr es nicht allein, muss Regen löschen. Dieser Regen sind Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure. Sie wirken in einer Creme direkt in der Haut und auch von innen. Zink hilft nur von innen, weil es nicht durch die Haut dringt. Je besser deine Gene arbeiten, desto weniger davon brauchst du."
-        },
-        {
-          "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 719.4,
-          "end": 780.1,
-          "file": "clips/oxi_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Welche Antioxidantien von außen und von innen wirken",
-          "ai": false
         },
         {
           "t": "quiz",
@@ -1169,18 +1083,34 @@
         },
         {
           "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 785.6,
-          "end": 862.7,
-          "file": "clips/q10haut_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss",
-          "ai": false
+          "anim": true,
+          "yt": {
+            "de": "yvh9JKmdNvI",
+            "en": "unVJt_qjrjw"
+          },
+          "dur": {
+            "de": 91,
+            "en": 107
+          },
+          "tag": "Animation",
+          "cap": "Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
         },
         {
           "t": "text",
           "h": "Q10 muss erst aufgeladen werden",
           "p": "Coenzym Q10 ist zunächst inaktiv, wie eine leere Batterie. Das NQO1-Gen bildet das Enzym NQO1, das Q10 in seine aktive Form umwandelt: Ubiquinol. Erst Ubiquinol fängt freie Radikale ein. Danach lädt das Enzym es einfach wieder auf."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "v4Hcow7QbFA"
+          },
+          "dur": {
+            "de": 177
+          },
+          "poster": "nuggets/themen/q10haut.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss"
         },
         {
           "t": "quiz",
@@ -1215,26 +1145,6 @@
           "t": "text",
           "h": "Die Falle beim Bluttest",
           "p": "Ab etwa 20 Jahren sinkt der Q10-Gehalt in deinen Organen langsam. Ein Bluttest kann trotzdem viel Q10 zeigen. Er verrät aber nicht, ob es aktiviert wird. Bei veränderten NQO1-Genen bleibt Q10 inaktiv, egal wie viel davon im Blut ist."
-        },
-        {
-          "t": "video",
-          "id": "yvh9JKmdNvI",
-          "start": 24.6,
-          "end": 78.4,
-          "file": "clips/q10haut_3.mp4",
-          "tag": "Animation",
-          "cap": "Q10 als Batterie: so lädt das NQO1-Gen es auf",
-          "ai": true
-        },
-        {
-          "t": "video",
-          "id": "5A5XoWH7XKk",
-          "start": 864.2,
-          "end": 910.4,
-          "file": "clips/q10haut_2.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Was du tun kannst, wenn Q10 bei dir nicht wirkt",
-          "ai": false
         },
         {
           "t": "quiz",
