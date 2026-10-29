@@ -2892,6 +2892,8 @@ const BUCKET={normal:{wort:'Normal',sev:'ok',ic:'st-ok'},auffaellig:{wort:'funkt
    vermindert -> "arbeitet langsam", schnell/ultraschnell -> "arbeitet zu schnell",
    auffaellig -> "funktioniert bei dir anders". Uebrige Woerter bleiben unveraendert. */
 function genKopf(g){const k=genKopf0(g);if(LANG==='en')return k;
+  /* Expertenmodus: Metabolisierer-Typ im Original (z. B. "Normaler Metabolisierer") */
+  if(k.metab&&!SIMPEL_M())return k;
   if(k.metab){if(k.stf===2||k.normalfall)k.wort='arbeitet normal';else if(k.stf===0)k.wort='ist defekt';else if(k.stf===1)k.wort='arbeitet langsam';else if(k.stf===3)k.wort='arbeitet zu schnell';}
   else if(k.bucket==='normal'&&/^(Normale Funktion|Normal)$/.test(klartext(k.wort)))k.wort='arbeitet normal';
   return k;}
