@@ -16,7 +16,7 @@
     var m = '', l = 'de';
     try{ m = (typeof MODUS === 'string') ? MODUS : ''; }catch(e){}
     try{ l = (typeof LANG === 'string') ? LANG : 'de'; }catch(e){}
-    return { src:'ndr-embed', type:'nav', hash: location.hash || '#start', modus: m, lang: l };
+    return { src:'ndr-embed', type:'nav', hash: location.hash || '#liste', modus: m, lang: l };
   }
   var lastSent = '';
   function report(force){
@@ -105,6 +105,6 @@
   /* mode chosen inside the app (first-visit dialog): tell GENEius */
   document.addEventListener('click', function(){ setTimeout(function(){ report(false); }, 30); }, true);
 
-  try{ parentWin.postMessage({ src:'ndr-embed', type:'ready', hash: location.hash || '#start' }, '*'); }catch(e){}
+  try{ parentWin.postMessage({ src:'ndr-embed', type:'ready', hash: location.hash || '#liste' }, '*'); }catch(e){}
   report(true);
 })();

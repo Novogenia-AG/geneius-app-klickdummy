@@ -434,7 +434,6 @@ dl.kv dd{font-weight:700;color:var(--ink);overflow-wrap:anywhere}
 .md-hint .ic{width:18px;height:18px;color:var(--lime);margin-top:1px}
 .md-hint b{color:#fff}
 .md-tabs .cbox{width:132px}
-.md[data-mdm="simpel"] .md-tabs [data-md="gene"]{display:none}
 .md-frame{position:relative;margin-top:14px}
 #mdFrame{display:block;width:100%;height:var(--mdh,78vh);border:0;background:transparent;color-scheme:normal}
 .md-load{position:absolute;inset:0 0 auto 0;height:180px;display:grid;place-items:center;color:rgba(255,255,255,.7);font-size:13px;font-weight:700;pointer-events:none;transition:opacity .3s}
@@ -1039,25 +1038,32 @@ body.touring .rail,body.touring .mtop{z-index:89}
 .steps3 b{font-size:12.5px;color:var(--ink);line-height:1.2}
 .steps3 small{font-size:11px;color:var(--soft);line-height:1.3}
 .dlgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
-.dlc{padding:22px;gap:10px}
-.dlc-h{display:flex;gap:12px;align-items:center}
-.dlc-h h3{font-size:18px}
+.dlc{padding:22px;gap:14px;border-top:6px solid var(--lime-d)}
+.dlc-2{border-top-color:var(--plum)}
+.dlc-top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;align-items:center}
+.dlc-n{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-family:var(--num);font-size:26px;background:var(--lime);color:var(--lime-ink);grid-row:span 2}
+.dlc-2 .dlc-n{background:var(--plum);color:#fff}
+.dlc-top h3{font-size:18px;line-height:1.25}
+.dlc-tag{grid-column:2;justify-self:start;font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:999px;background:#EEF3C9;color:#4B5400}
+.dlc-2 .dlc-tag{background:#F3E6EF;color:var(--plum)}
 .dlc-big{font-size:14px;color:var(--soft);font-weight:600}
-.dlc-big b{font-family:var(--num);font-weight:400;font-size:34px;color:var(--plum);margin-right:6px}
-.dlc-viz{display:flex;flex-wrap:wrap;gap:4px;padding:12px;border-radius:14px;background:#F7F1F5;min-height:52px;align-content:flex-start}
-.dlc-viz i{width:9px;height:9px;border-radius:50%;background:var(--plum);opacity:.85}
-.dlc-viz i.on{background:var(--lime-d);opacity:1}
-.imp{font-size:12.5px;line-height:1.5;color:#463F4B;padding:12px 14px;border-radius:14px;background:#FFF6E0}
-.imp b{display:block;color:#5A3D00;margin-bottom:2px}
-.dlc-fmt{display:flex;gap:8px;align-items:center;font-size:12.5px;color:var(--soft)}
-.dlc .btn{align-self:flex-start;margin-top:auto}
-.scalecmp{padding:20px 22px;margin-top:var(--gap)}
-.sc-row{display:grid;grid-template-columns:140px minmax(0,1fr);align-items:center;gap:14px;margin-top:10px}
-.sc-l{font-size:12.5px;font-weight:700;color:var(--soft)}
-.sc-l b{display:block;font-size:15px;color:var(--ink)}
-.sc-bar{height:18px;border-radius:99px;background:#F1EAEF;overflow:hidden}
-.sc-bar i{display:block;height:100%;min-width:4px;border-radius:99px;background:var(--plum)}
-.sc-row:first-of-type .sc-bar i{background:var(--lime-d)}
+.dlc-big b{font-family:var(--num);font-weight:400;font-size:38px;color:var(--plum);margin-right:6px}
+.dlc-bar{height:14px;border-radius:99px;background:#F1EAEF;overflow:hidden;margin-top:-6px}
+.dlc-bar i{display:block;height:100%;min-width:6px;border-radius:99px;background:var(--lime-d)}
+.dlc-2 .dlc-bar i{background:var(--plum)}
+.dlc-facts{display:grid;gap:0;border-radius:14px;background:#F7F1F5;padding:4px 14px}
+.dlc-facts div{display:grid;grid-template-columns:86px minmax(0,1fr);gap:10px;padding:9px 0}
+.dlc-facts div+div{border-top:1px solid #EADFE6}
+.dlc-facts dt{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding-top:2px}
+.dlc-facts dd{font-size:13.5px;color:var(--ink);margin:0}
+.dlc .btn{align-self:stretch;justify-content:center;margin-top:auto}
+.dlc-note{margin:10px 2px 0;font-size:12.5px;color:rgba(255,255,255,.74)}
+.imp{margin-top:var(--gap);padding:0;color:#463F4B}
+.imp summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:16px 20px;font-weight:800;font-size:15px;color:var(--ink)}
+.imp summary::-webkit-details-marker{display:none}
+.imp summary .chev{margin-left:auto;transition:transform .2s}
+.imp[open] summary .chev{transform:rotate(90deg)}
+.imp p{padding:0 20px 18px;font-size:13.5px;line-height:1.55}
 /* ---------- Analysen ---------- */
 .agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:var(--gap)}
 .ana{padding:22px;gap:14px}
@@ -1190,7 +1196,6 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .dna-up{grid-template-columns:1fr;padding:16px}
   .dlgrid{grid-template-columns:1fr}
   .steps3{gap:6px}
-  .sc-row{grid-template-columns:96px minmax(0,1fr);gap:10px}
   .stats2 .stat{gap:10px;padding:14px}
   .stats2 .stat .go{display:none}
   .stats2 .stat .num{font-size:32px}
@@ -1650,7 +1655,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
       <h1 id="h-md">Medikamente</h1>
       <p class="lead" data-mdt="lead">Was deine Genanalyse zu Wirkstoffen und Medikamenten zeigt.</p>
       <div class="hero-actions">
-        <div class="seg" role="group" aria-label="Ansicht"><button data-mdmode="simpel" aria-pressed="false">Simpel</button><button data-mdmode="standard" aria-pressed="true">Standard</button><button data-mdmode="experte" aria-pressed="false">Experte</button></div>
+        <div class="seg" role="group" aria-label="Ansicht"><button data-mdmode="simpel" aria-pressed="false">Simpel</button><button data-mdmode="experte" aria-pressed="true">Expertenmodus</button></div>
       </div>
       <p class="md-hint"><svg class="ic"><use href="#i-shield"/></svg><span data-mdt="hint"><b>Wichtig:</b> Setze kein Medikament selbst ab und ändere keine Dosis auf eigene Faust. Sprich mit deiner Ärztin oder deinem Arzt darüber – am besten mit dem Dokument „Für deinen Arzt“.</span></p>
     </div>
@@ -1659,9 +1664,8 @@ body.touring .rail,body.touring .mtop{z-index:89}
   <div class="swipe" data-swipe>
     <button class="sarr l" data-sarr="-1" aria-label="Bereiche nach links blättern"><svg class="ic"><use href="#i-chev"/></svg></button>
     <div class="srow md-tabs" role="group" aria-label="Bereiche Medikamente">
-      <a class="cbox" href="#medikamente" data-md="start" aria-pressed="true"><svg class="ic"><use href="#i-grid"/></svg><span data-mdt="t-start">Start</span></a>
+      <a class="cbox" href="#medikamente" data-md="liste" aria-pressed="true"><svg class="ic"><use href="#i-pill-list"/></svg><span data-mdt="t-liste">Alle Wirkstoffe</span></a>
       <a class="cbox" href="#medikamente/meine" data-md="meine" aria-pressed="false"><svg class="ic"><use href="#i-pills"/></svg><span data-mdt="t-meine">Meine Medikamente</span></a>
-      <a class="cbox" href="#medikamente/liste" data-md="liste" aria-pressed="false"><svg class="ic"><use href="#i-pill-list"/></svg><span data-mdt="t-liste">Alle Wirkstoffe</span></a>
       <a class="cbox" href="#medikamente/gene" data-md="gene" aria-pressed="false"><svg class="ic"><use href="#i-dna"/></svg><span data-mdt="t-gene">Gene</span></a>
       <a class="cbox" href="#medikamente/arzt" data-md="arzt" aria-pressed="false"><svg class="ic"><use href="#i-steth"/></svg><span data-mdt="t-arzt">Für deinen Arzt</span></a>
       <a class="cbox" href="#medikamente/quellen" data-md="quellen" aria-pressed="false"><svg class="ic"><use href="#i-quelle"/></svg><span data-mdt="t-quellen">Quellen</span></a>
@@ -1760,30 +1764,34 @@ body.touring .rail,body.touring .mtop{z-index:89}
 
   <div class="sec sec-xl"><div class="sec-l"><span class="sx-ic" aria-hidden="true"><svg class="ic"><use href="#i-download"/></svg></span><h2>DNA-Daten herunterladen</h2><span class="cnt">2</span></div><p class="sub">Deine eigenen genetischen Rohdaten aus deiner Analyse – zum Speichern oder für andere Tools.</p></div>
   <div class="dlgrid">
-    <article class="tile card no-tilt dlc">
-      <div class="dlc-h"><span class="ico lime"><svg class="ic"><use href="#i-list"/></svg></span><div><div class="kick">Option 1</div><h3>Analysierte DNA-Variationen</h3></div></div>
+    <article class="tile card no-tilt dlc dlc-1">
+      <div class="dlc-top"><span class="dlc-n">1</span><div><div class="kick">Option 1</div><h3>Analysierte DNA-Variationen</h3></div><span class="dlc-tag">Für die meisten passend</span></div>
       <p class="dlc-big"><b>ca. 600.000</b> SNPs</p>
-      <p class="d">Nur die analysierten DNA-Variationen als Liste – also die Varianten, die im Labor direkt gemessen wurden.</p>
-      <div class="dlc-viz" aria-hidden="true"><i class="on"></i></div>
-      <p class="dlc-fmt"><svg class="ic sm"><use href="#i-file"/></svg>Kompakte Liste – ideal zum Speichern und Weitergeben.</p>
+      <div class="dlc-bar" aria-hidden="true"><i style="width:.86%"></i></div>
+      <dl class="dlc-facts">
+        <div><dt>Inhalt</dt><dd>Nur die Variationen, die im Labor <b>direkt gemessen</b> wurden</dd></div>
+        <div><dt>Datei</dt><dd>Kompakte Liste</dd></div>
+        <div><dt>Ideal für</dt><dd>Speichern und Weitergeben</dd></div>
+      </dl>
       <button class="btn lime" data-toast="Download startet: Analysierte DNA-Variationen (ca. 600.000 SNPs) – Klickdummy."><svg class="ic sm"><use href="#i-download"/></svg>Option 1 herunterladen</button>
     </article>
-    <article class="tile card no-tilt dlc">
-      <div class="dlc-h"><span class="ico"><svg class="ic"><use href="#i-dna"/></svg></span><div><div class="kick">Option 2</div><h3>Analysierte und imputierte Varianten</h3></div></div>
+    <article class="tile card no-tilt dlc dlc-2">
+      <div class="dlc-top"><span class="dlc-n">2</span><div><div class="kick">Option 2</div><h3>Analysierte und imputierte Varianten</h3></div><span class="dlc-tag">Für Fachleute</span></div>
       <p class="dlc-big"><b>ca. 70 Mio.</b> SNPs</p>
-      <p class="d">Die analysierten Varianten plus daraus abgeleitete (imputierte) Varianten.</p>
-      <div class="dlc-viz big" aria-hidden="true" id="dlViz"></div>
-      <div class="imp"><b>Was heißt „imputiert“?</b> Aus großen genetischen Datenbanken wissen wir: Viele DNA-Variationen werden nicht einzeln vererbt, sondern immer gemeinsam mit anderen Variationen in ihrer Nähe – als zusammenhängende Abschnitte. Kennen wir die analysierten Variationen eines solchen Abschnitts, können wir daraus ableiten, welche benachbarten, nicht gemessenen Variationen bei dir ebenfalls vorhanden sind. So werden aus rund 600.000 gemessenen Variationen ca. 70 Millionen.</div>
-      <p class="dlc-fmt"><svg class="ic sm"><use href="#i-file"/></svg>Sehr große Datei – eher für Fachleute und spezielle Tools.</p>
+      <div class="dlc-bar" aria-hidden="true"><i style="width:100%"></i></div>
+      <dl class="dlc-facts">
+        <div><dt>Inhalt</dt><dd>Die gemessenen Variationen <b>plus daraus abgeleitete (imputierte)</b> Variationen</dd></div>
+        <div><dt>Datei</dt><dd>Sehr große Datei</dd></div>
+        <div><dt>Ideal für</dt><dd>Fachleute und spezielle Tools</dd></div>
+      </dl>
       <button class="btn plum" data-toast="Download startet: Analysierte und imputierte Varianten (ca. 70 Mio. SNPs) – Klickdummy."><svg class="ic sm"><use href="#i-download"/></svg>Option 2 herunterladen</button>
     </article>
   </div>
-  <div class="tile card no-tilt scalecmp">
-    <h3 class="cs-h">Größenvergleich</h3>
-    <div class="sc-row"><span class="sc-l">Option 1<b>ca. 600.000</b></span><div class="sc-bar"><i style="width:.86%"></i></div></div>
-    <div class="sc-row"><span class="sc-l">Option 2<b>ca. 70 Mio.</b></span><div class="sc-bar"><i style="width:100%"></i></div></div>
-    <p class="note">Maßstabsgetreu: Option 2 enthält rund 115-mal so viele Varianten wie Option 1. Oben in den Karten steht jeder Punkt für ca. 600.000 SNPs.</p>
-  </div>
+  <p class="dlc-note">Die Balken sind maßstabsgetreu: Option 2 enthält rund 115-mal so viele Varianten wie Option 1.</p>
+  <details class="tile card no-tilt imp">
+    <summary><svg class="ic sm"><use href="#i-dna"/></svg>Was heißt „imputiert“?<svg class="ic sm chev"><use href="#i-chev"/></svg></summary>
+    <p>Aus großen genetischen Datenbanken wissen wir: Viele DNA-Variationen werden nicht einzeln vererbt, sondern immer gemeinsam mit anderen Variationen in ihrer Nähe – als zusammenhängende Abschnitte. Kennen wir die analysierten Variationen eines solchen Abschnitts, können wir daraus ableiten, welche benachbarten, nicht gemessenen Variationen bei dir ebenfalls vorhanden sind. So werden aus rund 600.000 gemessenen Variationen ca. 70 Millionen.</p>
+  </details>
 
   <div class="sec sec-xl"><div class="sec-l"><span class="sx-ic" aria-hidden="true"><svg class="ic"><use href="#i-upload"/></svg></span><h2>Gendaten hochladen</h2></div><p class="sub">Du hast bereits einen DNA-Test bei einem anderen Anbieter gemacht? Lade deine Rohdaten hoch und lass sie auswerten.</p></div>
   <!-- TODO Shop-URL für Upgrade-Analysen bestätigen -->
@@ -2846,7 +2854,7 @@ $('#cform').addEventListener('submit',e=>{e.preventDefault();if(C.busy)return;co
  if(!HIST.some(h=>h[2]===v)){HIST.unshift([v.length>34?v.slice(0,32)+'…':v,'jetzt',v]);HIST=HIST.slice(0,5);renderChats()}
  ask(v,atts)});
 $('#fPhoto').addEventListener('change',e=>{[...e.target.files].forEach(f=>addAtt(f,'photo'));e.target.value=''});
-$('#dlViz').innerHTML=Array.from({length:117},(_,i)=>`<i class="${i===0?'on':''}"></i>`).join('');
+
 function genFile(f){if(!f)return;$('#dzFile').hidden=false;$('#dzFile').innerHTML=attChip({id:'g',name:f.name,size:fmtSize(f.size||0),img:null});toast(`${f.name} wird hochgeladen – wir prüfen deine Rohdaten und ordnen sie zu (Klickdummy).`)}
 const dz=$('#dz');['dragenter','dragover'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.add('over')}));
 ['dragleave','drop'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.remove('over')}));
@@ -3460,23 +3468,23 @@ const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const sec=document.querySelector('[data-view="medikamente"]');if(!sec)return;
 const wrap=document.getElementById('mdWrap'),load=document.getElementById('mdLoad');
 const MD={frame:null,ready:false,pending:null,modus:'',lang:'de',wantModus:'',wantLang:''};
-/* GENEius-Adresse (#medikamente/…) <-> Adresse der App (#start, #wirkstoff/…) */
+/* GENEius-Adresse (#medikamente/…) <-> Adresse der App (#liste = Einstieg, #wirkstoff/…) */
 function zuApp(full){
  const p=String(full||'').split('/'),sub=p[1]||'',arg=p.slice(2).join('/');
  if(sub==='detail'&&arg)return '#wirkstoff/'+arg;
  if(sub==='gene')return arg?'#gene/'+arg:'#gene';
- if(['meine','liste','arzt','quellen'].includes(sub))return '#'+sub;
- return '#start';
+ if(['meine','arzt','quellen'].includes(sub))return '#'+sub;
+ return '#liste';
 }
 function vonApp(h){
- let m;h=h||'#start';
- if(h==='#start'||h==='#')return '#medikamente';
+ let m;h=h||'#liste';
+ if(h==='#liste'||h==='#start'||h==='#')return '#medikamente';
  if((m=/^#wirkstoff\/(.+)$/.exec(h)))return '#medikamente/detail/'+m[1];
  if((m=/^#gene(\/.+)?$/.exec(h)))return '#medikamente/gene'+(m[1]||'');
- if((m=/^#(meine|liste|arzt|quellen)$/.exec(h)))return '#medikamente/'+m[1];
+ if((m=/^#(meine|arzt|quellen)$/.exec(h)))return '#medikamente/'+m[1];
  return null; /* #laden (Import) ist für Endkunden ausgeblendet */
 }
-function tabVon(full){const s=String(full||'').split('/')[1]||'start';return s==='detail'?'liste':s;}
+function tabVon(full){const s=String(full||'').split('/')[1]||'liste';return s==='detail'||s==='start'?'liste':s;}
 function setTabs(full){
  const t=tabVon(full);
  $$('.md-tabs [data-md]',sec).forEach(a=>{const on=a.dataset.md===t;a.setAttribute('aria-pressed',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
@@ -3488,11 +3496,12 @@ const TX={
  en:{lead:'What your genetic analysis shows about active substances and medication.',hint:'<b>Important:</b> Do not stop any medication or change a dose on your own. Talk to your doctor about it – ideally using the document “For your doctor”.','t-start':'Start','t-meine':'My medication','t-liste':'All active substances','t-gene':'Genes','t-arzt':'For your doctor','t-quellen':'Sources'}
 };
 function ctl(){
- const m=MD.modus||'standard';sec.dataset.mdm=m;
+ if(MD.modus==='standard')MD.modus='experte'; /* Standard + Experte = Expertenmodus */
+ const m=MD.modus||'experte';sec.dataset.mdm=m;
  $$('[data-mdmode]',sec).forEach(b=>b.setAttribute('aria-pressed',b.dataset.mdmode===m));
  $$('[data-mdlang]',sec).forEach(b=>b.setAttribute('aria-pressed',b.dataset.mdlang===MD.lang));
  const t=TX[MD.lang]||TX.de;$$('[data-mdt]',sec).forEach(el=>{const v=t[el.dataset.mdt];if(v!=null)el.innerHTML=v});
- const lab={simpel:['Simpel','Simple'],standard:['Standard','Standard'],experte:['Experte','Expert']};
+ const lab={simpel:['Simpel','Simple'],experte:['Expertenmodus','Expert mode']};
  $$('[data-mdmode]',sec).forEach(b=>b.textContent=lab[b.dataset.mdmode][MD.lang==='en'?1:0]);
 }
 /* iframe füllt die Höhe unter dem fixierten Kopf; scrollt man in der App, rückt der GENEius-Kopf weg */

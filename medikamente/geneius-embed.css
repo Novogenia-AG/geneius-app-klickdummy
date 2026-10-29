@@ -21,7 +21,7 @@ html.gx-embed #modsw{display:none!important}
 html.gx-embed .shell{display:block;min-height:0}
 html.gx-embed main#main{padding:2px 2px 48px!important;max-width:none}
 
-/* search field (normally only in the rail on desktop) always visible */
+/* global search removed 29.10.2026 (Daniel); rules below stay inert */
 html.gx-embed .gsw.mobil{display:flex!important;gap:8px;align-items:center;margin:0 0 14px}
 html.gx-embed .gsw.mobil .langsw{display:none}
 html.gx-embed .gsw.mobil .searchwrap input{border-radius:999px;border:0;background:#fff;box-shadow:0 10px 24px -16px rgba(0,0,0,.6);font-family:var(--font)}

@@ -1,0 +1,362 @@
+{
+ "relevanz": {
+  "title": "Warum Gene relevant sind",
+  "runs": [
+   [
+    "71EHqtv3NOA",
+    54,
+    182
+   ]
+  ],
+  "dur": 128
+ },
+ "fett": {
+  "title": "Wie empfindlich bist du für Fett?",
+  "runs": [
+   [
+    "2QmG2UWqR1Y",
+    64.88,
+    448.9
+   ]
+  ],
+  "dur": 384
+ },
+ "folsaeure": {
+  "title": "Folsäure wird aktiviert",
+  "runs": [
+   [
+    "79MPy6BFqu8",
+    446,
+    785
+   ]
+  ],
+  "dur": 339
+ },
+ "kalzium": {
+  "title": "Milch, Laktose und Kalzium",
+  "runs": [
+   [
+    "79MPy6BFqu8",
+    1109.65,
+    1125.9
+   ]
+  ],
+  "dur": 16
+ },
+ "vitd": {
+  "title": "Wirkt Vitamin D bei dir?",
+  "runs": [
+   [
+    "RVCVd4rG1AU",
+    25.1,
+    92.3
+   ]
+  ],
+  "dur": 67
+ },
+ "eisen": {
+  "title": "Eisen: Wann wird gut zu viel?",
+  "runs": [
+   [
+    "Qf_vdgupY8M",
+    10.6,
+    72.6
+   ]
+  ],
+  "dur": 62
+ },
+ "kh": {
+  "title": "Kohlenhydrate: Freund oder Falle?",
+  "runs": [
+   [
+    "2QmG2UWqR1Y",
+    361.4,
+    448.9
+   ]
+  ],
+  "dur": 88
+ },
+ "sport": {
+  "title": "Bringt dir Sport beim Abnehmen etwas?",
+  "runs": [
+   [
+    "2QmG2UWqR1Y",
+    512.85,
+    597.7
+   ]
+  ],
+  "dur": 85
+ },
+ "kalred": {
+  "title": "Weniger essen: Wie gut wirkt es bei dir?",
+  "runs": [
+   [
+    "2QmG2UWqR1Y",
+    598.4,
+    660.2
+   ]
+  ],
+  "dur": 62
+ },
+ "hdl": {
+  "title": "Hilft Fischöl deinem guten Cholesterin?",
+  "runs": [
+   [
+    "q5RLfiwj88Y",
+    15.6,
+    73.4
+   ]
+  ],
+  "dur": 58
+ },
+ "ldl": {
+  "title": "Wie deine Gene das LDL-Cholesterin filtern",
+  "runs": [
+   [
+    "hjObdjQaguw",
+    0.9,
+    63.9
+   ]
+  ],
+  "dur": 63
+ },
+ "salz": {
+  "title": "Ist Salz für jeden gleich schlecht?",
+  "runs": [
+   [
+    "vnMSYJRUVns",
+    0.3,
+    72.9
+   ]
+  ],
+  "dur": 73
+ },
+ "burnout": {
+  "title": "Stress und Burnout: was deine Gene verraten",
+  "runs": [
+   [
+    "eOqrJicdJZM",
+    10.5,
+    243.7
+   ]
+  ],
+  "dur": 233
+ },
+ "alkohol": {
+  "title": "Alkohol und dein Belohnungssystem",
+  "runs": [
+   [
+    "eOqrJicdJZM",
+    116.45,
+    170.1
+   ],
+   [
+    "n1jkxseJBf4",
+    28.3,
+    97.4
+   ]
+  ],
+  "dur": 123
+ },
+ "kaffee": {
+  "title": "Kaffee: Herzschutz oder Risiko?",
+  "runs": [
+   [
+    "79MPy6BFqu8",
+    79,
+    364
+   ]
+  ],
+  "dur": 285
+ },
+ "q10": {
+  "title": "Coenzym Q10 – wirkt es bei dir?",
+  "runs": [
+   [
+    "5A5XoWH7XKk",
+    786,
+    863
+   ],
+   [
+    "yvh9JKmdNvI",
+    24,
+    63
+   ]
+  ],
+  "dur": 116
+ },
+ "verbrannt": {
+  "title": "Grillen, Rauch und deine Entgiftung",
+  "runs": [
+   [
+    "3AvZMAtALlQ",
+    8,
+    224
+   ]
+  ],
+  "dur": 216
+ },
+ "chemie": {
+  "title": "Entgiftung von Chemikalien",
+  "runs": [
+   [
+    "3AvZMAtALlQ",
+    264,
+    361
+   ]
+  ],
+  "dur": 97
+ },
+ "radikale": {
+  "title": "Schutz vor freien Radikalen",
+  "runs": [
+   [
+    "3AvZMAtALlQ",
+    375,
+    566
+   ]
+  ],
+  "dur": 191
+ },
+ "telomere": {
+  "title": "Telomere: die Uhr deiner Zellen",
+  "runs": [
+   [
+    "gwmVcvbaNgE",
+    91,
+    290
+   ]
+  ],
+  "dur": 199
+ },
+ "medi": {
+  "title": "Mittelmeerküche gegen das Zellaltern?",
+  "runs": [
+   [
+    "gwmVcvbaNgE",
+    248,
+    290
+   ]
+  ],
+  "dur": 42
+ },
+ "entz": {
+  "title": "Wie aggressiv ist dein Immunsystem?",
+  "runs": [
+   [
+    "GyIfKaYmLoE",
+    98,
+    237
+   ]
+  ],
+  "dur": 139
+ },
+ "faser": {
+  "title": "Muskelfasertyp: Kraft oder Ausdauer?",
+  "runs": [
+   [
+    "GyIfKaYmLoE",
+    980.3,
+    1014.9
+   ]
+  ],
+  "dur": 35
+ },
+ "ermued": {
+  "title": "Muskelermüdung beim Krafttraining",
+  "runs": [
+   [
+    "GyIfKaYmLoE",
+    1058.1,
+    1260.2
+   ]
+  ],
+  "dur": 202
+ },
+ "erhol": {
+  "title": "Erholung nach Verletzungen",
+  "runs": [
+   [
+    "GyIfKaYmLoE",
+    98.66,
+    240.1
+   ]
+  ],
+  "dur": 141
+ },
+ "verletz": {
+  "title": "Sport und Verletzungsrisiko",
+  "runs": [
+   [
+    "GyIfKaYmLoE",
+    262.3,
+    366.5
+   ]
+  ],
+  "dur": 104
+ },
+ "kollagen": {
+  "title": "Kollagen und Festigkeit der Haut",
+  "runs": [
+   [
+    "5A5XoWH7XKk",
+    70.85,
+    261.2
+   ]
+  ],
+  "dur": 190
+ },
+ "uv": {
+  "title": "Schutz gegen UV-Strahlen",
+  "runs": [
+   [
+    "5A5XoWH7XKk",
+    393.15,
+    597.7
+   ]
+  ],
+  "dur": 205
+ },
+ "oxi": {
+  "title": "Oxidativer Stress und Hautalterung",
+  "runs": [
+   [
+    "5A5XoWH7XKk",
+    621.6,
+    703.1
+   ],
+   [
+    "Bf-WdkeB7E0",
+    28.8,
+    72.1
+   ],
+   [
+    "5A5XoWH7XKk",
+    719.4,
+    780.1
+   ]
+  ],
+  "dur": 186
+ },
+ "q10haut": {
+  "title": "Wirkung von Q10",
+  "runs": [
+   [
+    "5A5XoWH7XKk",
+    785.6,
+    862.7
+   ],
+   [
+    "yvh9JKmdNvI",
+    24.6,
+    78.4
+   ],
+   [
+    "5A5XoWH7XKk",
+    864.2,
+    910.4
+   ]
+  ],
+  "dur": 177
+ }
+}
