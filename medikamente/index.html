@@ -2886,12 +2886,13 @@ function genBucket(g){
   if(v.allele.length&&v.allele.every(a=>a.ref))return 'normal';
   return 'unklar';
 }
-const BUCKET={normal:{wort:'Normal',sev:'ok',ic:'st-ok'},auffaellig:{wort:'Auff&auml;llig',sev:'warn',ic:'st-excl'},unklar:{wort:'Unklar',sev:'unk',ic:'quest'}};
+const BUCKET={normal:{wort:'Normal',sev:'ok',ic:'st-ok'},auffaellig:{wort:'funktioniert bei dir anders',sev:'warn',ic:'st-excl'},unklar:{wort:'Unklar',sev:'unk',ic:'quest'}};
 /* GX 29.10.2026 (Daniel): Anzeige-Woerter der Genkarten. Nur das angezeigte Wort, keine
-   Einteilung: normal -> "arbeitet normal", langsam (ausser europaeischer Normalfall) -> "ist defekt",
-   schnell -> "funktioniert bei dir anders". Uebrige Woerter bleiben unveraendert. */
+   Einteilung: normal und europaeischer Normalfall (CYP3A5) -> "arbeitet normal", langsam -> "ist defekt",
+   vermindert -> "arbeitet langsam", schnell/ultraschnell -> "arbeitet zu schnell",
+   auffaellig -> "funktioniert bei dir anders". Uebrige Woerter bleiben unveraendert. */
 function genKopf(g){const k=genKopf0(g);if(LANG==='en')return k;
-  if(k.metab){if(k.stf===2&&!k.normalfall)k.wort='arbeitet normal';else if(k.stf===0&&!k.normalfall)k.wort='ist defekt';else if(k.stf===3)k.wort='funktioniert bei dir anders';}
+  if(k.metab){if(k.stf===2||k.normalfall)k.wort='arbeitet normal';else if(k.stf===0)k.wort='ist defekt';else if(k.stf===1)k.wort='arbeitet langsam';else if(k.stf===3)k.wort='arbeitet zu schnell';}
   else if(k.bucket==='normal'&&/^(Normale Funktion|Normal)$/.test(klartext(k.wort)))k.wort='arbeitet normal';
   return k;}
 /* Symbol + Wort einer Genkarte: Metabolisierer-Kugel oder Einteilung */
@@ -3528,7 +3529,7 @@ function allelFreq(g,n){const t=ALLELFREQ[g]&&ALLELFREQ[g][n];if(!t)return null;
 function freqTitel(g,n){const f=allelFreq(g,n);if(!f)return '';const R=['European','Near Eastern','East Asian','Central/South Asian','African American/Afro-Caribbean','Sub-Saharan African','Latino','American','Oceanian'];return R.filter(k=>f.alle[k]).map(k=>`${klartext(FREQ_GRUPPEN[k]||k)} ${klartext(freqText(f.alle[k][0]))}`).join(', ');}
 function freqEuKurz(g,n){const f=allelFreq(g,n);return (f&&f.eu!=null)?freqText(f.eu):'';}
 function allelfreqStand(){return ZUSATZ._allelfreq_stand||'';}
-const BUCKET_POS={auffaellig:{wort:'Auff&auml;llig',sev:'warn',ic:'st-excl'},normal:{wort:'Unauff&auml;llig',sev:'ok',ic:'st-ok'},unklar:{wort:'Unklar',sev:'unk',ic:'quest'}};
+const BUCKET_POS={auffaellig:{wort:'funktioniert bei dir anders',sev:'warn',ic:'st-excl'},normal:{wort:'Unauff&auml;llig',sev:'ok',ic:'st-ok'},unklar:{wort:'Unklar',sev:'unk',ic:'quest'}};
 const GLIMIT=18;
 let gQ='',gOffen={auffaellig:true,normal:false,unklar:false},gSumOpen={normal:false,unklar:false};
 /* Zwei Spalten (Daniel, 01.10.2026, Entwurf E2): gewaehltes Gen, Filter, Sortierung, Sichtgrenze */
