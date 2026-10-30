@@ -15,9 +15,13 @@ html.gx-embed::-webkit-scrollbar,html.gx-embed *::-webkit-scrollbar{display:none
 html.gx-embed body{background:transparent;font-family:var(--font)}
 /* app standard sizes (30.10.2026, Daniel): the drug app is set ~1-2px smaller than
    GENEius (base 15 vs 16, names 13.5 vs 16) - scale the whole embed up evenly */
-html.gx-embed body{zoom:1.12}
-/* 100vh is measured before the zoom: sticky gene panel must stay within the window */
-html.gx-embed .gz-detail{max-height:calc(100vh / 1.12 - 24px)}
+/* only on wide screens: media queries inside measure the unzoomed width, so zoom on
+   phones/foldables pushed every layout ~12% past the edge (Daniel, 30.10.2026) */
+@media(min-width:900px){
+  html.gx-embed body{zoom:1.12}
+  /* 100vh is measured before the zoom: sticky gene panel must stay within the window */
+  html.gx-embed .gz-detail{max-height:calc(100vh / 1.12 - 24px)}
+}
 
 /* own frame off: GENEius rail / tabs / header take over */
 html.gx-embed nav.rail,
