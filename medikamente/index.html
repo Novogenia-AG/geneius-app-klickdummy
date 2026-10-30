@@ -1855,14 +1855,14 @@
 .gstart-rest{margin:12px 2px 0;font-size:13px;color:var(--muted)} .gstart-rest b{color:var(--ink)} .gstart-rest a{font-weight:750}
 
 /* Reihenfolge der Genkarte (Daniel, 01.10.2026): Bloecke fuer Wirkstoffe, Pfeil statt Kasten */
-.gdblocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:8px;margin-top:6px}
+.gdblocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,196px),1fr));gap:8px;margin-top:6px}
 .gdb{display:flex;align-items:center;gap:9px;text-align:left;font:inherit;background:#fff;border:1.5px solid var(--line2);border-radius:12px;padding:8px 10px;cursor:pointer;color:var(--ink);min-width:0}
 .gdb:hover{border-color:var(--plum)}
 .gdb[disabled]{cursor:default;opacity:.6}
 .gdb .gdb-pill{width:30px;height:30px;flex:none}
 .gdb-tx{display:flex;flex-direction:column;min-width:0}
 .gdb-n{font-size:13px;font-weight:800;line-height:1.15;overflow-wrap:anywhere}
-.gdb-s{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:800;margin-top:2px}
+.gdb-s{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:800;margin-top:2px;max-width:100%;white-space:nowrap}
 .gdb-s svg{width:12px;height:12px}
 .gdb.d-crit{border-color:var(--crit-ln);background:var(--crit-bg)}
 .gdb.d-warn{border-color:var(--warn-ln);background:var(--warn-bg)}
@@ -2331,6 +2331,17 @@
 .gz-head.g-crit h2{color:var(--crit-t)} .gz-head.g-warn h2{color:var(--warn-t)}
 .sp-mz .mrow2,.sp-tausch .mrow2{flex:1;min-width:0}
 .wrow .cardwrap .mrow2,.swap-col .mrow2{width:100%}
+/* Expertenmodus (Daniel, 30.10.2026): alles offen, je Thema eine eigene Box untereinander */
+.xboxen{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.gexp .xboxen{margin-top:10px}
+.xbox{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px 18px;min-width:0;box-shadow:0 8px 20px -18px rgba(38,0,29,.5)}
+.xbox-h,.xboxen .xbox>.gsec:first-child{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0 0 14px!important;padding-bottom:10px;border-bottom:1.5px solid var(--plum-100);font-size:12.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--plum);line-height:1.3}
+.xbox-h .zahl,.xboxen .xbox>.gsec .zahl{display:inline-block;padding:1px 8px;border-radius:999px;background:var(--plum-100);color:var(--plum);font-size:12px;font-weight:800;letter-spacing:0}
+.xbox-b>:first-child{margin-top:0!important}
+.xbox-b .gsec.sp{margin-top:16px}
+.xbox-b .reccard+.reccard{margin-top:10px}
+.xbox-b .verdict,.xbox-b .zusatz{margin:0}
+@media(max-width:640px){.xbox{padding:14px 14px 16px;border-radius:16px}}
 /* Meine Medikamente: Karte so hoch wie die zwei Aktionsknoepfe daneben (2x34 + 6),
    damit Austauschen/Entfernen nicht ueber die Karte hinausstehen (30.10.2026) */
 @media(min-width:641px){.wrow .cardwrap .mrow2{min-height:74px;padding:10px 12px;contain-intrinsic-size:94px}}
@@ -4028,9 +4039,9 @@ function genInhaltHtml(e,q){
   const med=genMedikamenteHtml(e);
   if(STD())return med;
   const meta=`<div class="gz-meta">${genMetaHtml(e)}</div>`;
-  if(e.art==='typ'){const t=geneTeile(e.gen,q);return med+technikHtml(t.laien+meta+t.ergebnis+t.tech);}
-  if(e.art==='ohne')return med+technikHtml(`${meta}${stellenTabelle(e.stellen,'',false)}${litZeileHtml(e.stellen)}`);
-  const p=posTeile(e,q);return med+technikHtml(p.laien+meta+p.tech);
+  if(e.art==='typ'){const t=geneTeile(e.gen,q);return genBoxenHtml(med,t.laien+meta+t.ergebnis+t.tech);}
+  if(e.art==='ohne')return genBoxenHtml(med,`${meta}${stellenTabelle(e.stellen,'',false)}${litZeileHtml(e.stellen)}`);
+  const p=posTeile(e,q);return genBoxenHtml(med,p.laien+meta+p.tech);
 }
 /* Betroffene Medikamente eines Gens: Wirkstoffe mit Leitlinie zu diesem Gen (PharmCAT) und
    Wirkstoffe, bei denen die Auswertung das Gen als Grund nennt; nach Stufe sortiert. */
@@ -4051,6 +4062,32 @@ function drugBlocksHtml(drugs){
   if(!drugs||!drugs.length)return '<div class="anno">keine Wirkstoffzuordnung in PharmCAT</div>';
   return `<div class="gdblocks">${drugs.map(d=>{const id=idVonName(d);const s=id?st(id):null;const i=stInfo(s);const nm=id?name(id):(d.charAt(0).toUpperCase()+d.slice(1));
     return `<button class="gdb d-${id?i.sev:'unk'}" ${id?`onclick="event.stopPropagation();openDetail('${id}')"`:'disabled'}>${ico('pillimg','gdb-pill')}<span class="gdb-tx"><span class="gdb-n">${esc(nm)}</span><span class="gdb-s t-${id?i.sev:'unk'}">${id?`${ico(i.ic,'',12)} ${i.kurz}`:'nicht in der Wirkstoffliste'}</span></span></button>`;}).join('')}</div>`;
+}
+/* Expertenmodus (Daniel, 30.10.2026): nichts zugeklappt, je Thema eine Box untereinander.
+   Gen-Karte: Abschnitte an den vorhandenen Zwischentiteln (.gsec) getrennt, Reihenfolge
+   Ergebnis - betroffene Medikamente - Genkopien/Allele/Stellen/Literatur. Inhalte unveraendert. */
+function xbox(titel,n,inhalt){
+  if(!inhalt||!String(inhalt).trim())return '';
+  return `<section class="xbox"><h3 class="xbox-h"><span>${titel}</span>${n?`<span class="zahl">${n}</span>`:''}</h3><div class="xbox-b">${inhalt}</div></section>`;
+}
+function xGruppen(html){
+  const t=document.createElement('template');t.innerHTML=html||'';
+  const gr=[];let akt={kopf:null,teile:[]};
+  [...t.content.childNodes].forEach(n=>{
+    if(n.nodeType===1&&n.classList.contains('gsec')){if(akt.kopf||akt.teile.length)gr.push(akt);akt={kopf:n,teile:[]};}
+    else if(n.nodeType===1||(n.nodeType===3&&n.textContent.trim()))akt.teile.push(n);
+  });
+  if(akt.kopf||akt.teile.length)gr.push(akt);
+  return gr;
+}
+function xGruppeHtml(g,titel){
+  const teile=g.teile.map(n=>n.nodeType===1?n.outerHTML:esc(n.textContent)).join('');
+  if(!g.kopf)return xbox(titel,0,teile);
+  return `<section class="xbox"><h3 class="xbox-h">${g.kopf.innerHTML}</h3><div class="xbox-b">${teile}</div></section>`;
+}
+function genBoxenHtml(med,inner){
+  const gr=xGruppen(inner),erste=gr.length&&!gr[0].kopf?gr.shift():null;
+  return `<div class="xboxen">${erste?xGruppeHtml(erste,TS('xbox.ergebnis','Dein Ergebnis')):''}${xGruppen(med).map(g=>xGruppeHtml(g,'')).join('')}${gr.map(g=>xGruppeHtml(g,'')).join('')}</div>`;
 }
 /* Technischer Teil, zugeklappt (Daniel, 01.10.2026: sichtbar nur das fuer Laien;
    Allele, Stellen und Literatur erst beim Ausklappen). */
@@ -4286,15 +4323,14 @@ function vDetail(){
       dexp(id,'ll',TS('dexp.leitlinien.std','Leitlinien im Wortlaut'),ll.n,ll.html),
       dexp(id,'alt',TS('dexp.alt','Alternativen aus derselben Wirkstoffgruppe'),g.length,g.length?altInhaltHtml(id,g,false):'')
     ]:[
-      dexp(id,'ll',TS('dexp.leitlinien','Leitlinien'),ll.n,ll.html),
-      dexp(id,'alt',TS('dexp.alt','Alternativen aus derselben Wirkstoffgruppe'),g.length,g.length?altInhaltHtml(id,g,true):''),
-      technikHtml([
-        dexp(id,'bew',TS('dexp.bewertung','Bewertung im Detail'),0,bewertungDetailHtml(e,i)),
-        dexp(id,'stud',TS('dexp.studien','Studien zu deinem Genotyp'),tr?tr.klinisch.length:0,studienInhaltHtml(tr)),
-        dexp(id,'zus',TS('dexp.zusatz','Handelsnamen und Klassen'),0,zusatzInhaltHtml(id)),
-        dexp(id,'ix',TS('dexp.ix','Bekannte Wechselwirkungen'),zz&&zz.ix?zz.ix.length:0,ixInhaltHtml(zz)),
-        dexp(id,'quel',TS('dexp.quellen','Quellen'),0,quellenInhaltHtml(id))
-      ].join(''))
+      /* Expertenmodus (Daniel, 30.10.2026): alles sofort sichtbar, je Thema eine Box */
+      xbox(TS('dexp.bewertung','Bewertung im Detail'),0,bewertungDetailHtml(e,i)),
+      xbox(TS('dexp.leitlinien','Leitlinien'),ll.n,ll.html),
+      xbox(TS('dexp.studien','Studien zu deinem Genotyp'),tr?tr.klinisch.length:0,studienInhaltHtml(tr)),
+      xbox(TS('dexp.alt','Alternativen aus derselben Wirkstoffgruppe'),g.length,g.length?altInhaltHtml(id,g,true):''),
+      xbox(TS('dexp.ix','Bekannte Wechselwirkungen'),zz&&zz.ix?zz.ix.length:0,ixInhaltHtml(zz)),
+      xbox(TS('dexp.zusatz','Handelsnamen und Klassen'),0,zusatzInhaltHtml(id)),
+      xbox(TS('dexp.quellen','Quellen'),0,quellenInhaltHtml(id))
     ];
   return `<div class="detail-top"><button class="btn" onclick="history.length>1?history.back():go('liste')">${ico('back','',15)} Zur&uuml;ck</button>
       <button class="btn ${inListe?'':'btn-plum'}" onclick="toggleListe('${id}')">${ico(inListe?'s-check':'plus','',15)} ${inListe?TS('wort.aufliste','Auf deiner Liste'):'Medikament hinzuf&uuml;gen'}</button></div>
@@ -4307,7 +4343,7 @@ function vDetail(){
     ${kategorien(id).some(x=>x.sev!=='unk')?kachelnHtml(id,true):''}
     ${(emp.length||s===0||s===1||s===3)?`<p class="hinweis-arzt">${ico('st-excl','',15)}<span>${TS('satz.leitlinie.warnung','Anpassungen der Medikation d&uuml;rfen nur von &Auml;rztinnen und &Auml;rzten vorgenommen werden. Vor jeder &Auml;nderung ist die Originalleitlinie zu pr&uuml;fen.')}</span></p>`:''}
     </div>
-    <div class="dexp-gruppe">${teile.join('')}</div>
+    <div class="${std?'dexp-gruppe':'xboxen'}">${teile.join('')}</div>
     ${std?`<p class="modlink-zeile"><a href="#" onclick="setModus('experte');return false">${ico('n-dna','',15)} ${TS('satz.expertenlink','Studien, Genvarianten und alle Quellen im Expertenmodus')} &rarr;</a></p>`:''}`;
 }
 function vImport(){
