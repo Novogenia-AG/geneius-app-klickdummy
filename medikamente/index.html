@@ -2346,7 +2346,7 @@
    damit Austauschen/Entfernen nicht ueber die Karte hinausstehen (30.10.2026) */
 @media(min-width:641px){.wrow .cardwrap .mrow2{min-height:74px;padding:10px 12px;contain-intrinsic-size:94px}}
 </style>
-<script>/* GENEius embed (Klickdummy 22.10.2026): nur Darstellung, nur mit ?embed=geneius */(function(){if(/[?&]embed=geneius(&|$)/.test(location.search)){document.documentElement.className+=' gx-embed';document.write('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300..800&display=swap"><link rel="stylesheet" href="geneius-embed.css?v=20261030">');}})();</script>
+<script>/* GENEius embed (Klickdummy 22.10.2026): nur Darstellung, nur mit ?embed=geneius */(function(){if(/[?&]embed=geneius(&|$)/.test(location.search)){document.documentElement.className+=' gx-embed';document.write('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300..800&display=swap"><link rel="stylesheet" href="geneius-embed.css?v=20261030b">');}})();</script>
 </head>
 <body>
 <svg style="display:none" aria-hidden="true">
@@ -4326,11 +4326,11 @@ function vDetail(){
       /* Expertenmodus (Daniel, 30.10.2026): alles sofort sichtbar, je Thema eine Box */
       xbox(TS('dexp.bewertung','Bewertung im Detail'),0,bewertungDetailHtml(e,i)),
       xbox(TS('dexp.leitlinien','Leitlinien'),ll.n,ll.html),
-      xbox(TS('dexp.studien','Studien zu deinem Genotyp'),tr?tr.klinisch.length:0,studienInhaltHtml(tr)),
       xbox(TS('dexp.alt','Alternativen aus derselben Wirkstoffgruppe'),g.length,g.length?altInhaltHtml(id,g,true):''),
       xbox(TS('dexp.ix','Bekannte Wechselwirkungen'),zz&&zz.ix?zz.ix.length:0,ixInhaltHtml(zz)),
       xbox(TS('dexp.zusatz','Handelsnamen und Klassen'),0,zusatzInhaltHtml(id)),
-      xbox(TS('dexp.quellen','Quellen'),0,quellenInhaltHtml(id))
+      xbox(TS('dexp.quellen','Quellen'),0,quellenInhaltHtml(id)),
+      xbox(TS('dexp.studien','Studien zu deinem Genotyp'),tr?tr.klinisch.length:0,studienInhaltHtml(tr))  /* ganz unten (Daniel, 30.10.2026) */
     ];
   return `<div class="detail-top"><button class="btn" onclick="history.length>1?history.back():go('liste')">${ico('back','',15)} Zur&uuml;ck</button>
       <button class="btn ${inListe?'':'btn-plum'}" onclick="toggleListe('${id}')">${ico(inListe?'s-check':'plus','',15)} ${inListe?TS('wort.aufliste','Auf deiner Liste'):'Medikament hinzuf&uuml;gen'}</button></div>
