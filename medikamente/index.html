@@ -2331,6 +2331,9 @@
 .gz-head.g-crit h2{color:var(--crit-t)} .gz-head.g-warn h2{color:var(--warn-t)}
 .sp-mz .mrow2,.sp-tausch .mrow2{flex:1;min-width:0}
 .wrow .cardwrap .mrow2,.swap-col .mrow2{width:100%}
+/* Meine Medikamente: Karte so hoch wie die zwei Aktionsknoepfe daneben (2x34 + 6),
+   damit Austauschen/Entfernen nicht ueber die Karte hinausstehen (30.10.2026) */
+@media(min-width:641px){.wrow .cardwrap .mrow2{min-height:74px;padding:10px 12px;contain-intrinsic-size:94px}}
 </style>
 <script>/* GENEius embed (Klickdummy 22.10.2026): nur Darstellung, nur mit ?embed=geneius */(function(){if(/[?&]embed=geneius(&|$)/.test(location.search)){document.documentElement.className+=' gx-embed';document.write('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300..800&display=swap"><link rel="stylesheet" href="geneius-embed.css">');}})();</script>
 </head>
