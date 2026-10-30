@@ -13,6 +13,9 @@ html.gx-embed{
 html.gx-embed *{scrollbar-width:none}
 html.gx-embed::-webkit-scrollbar,html.gx-embed *::-webkit-scrollbar{display:none;width:0;height:0}
 html.gx-embed body{background:transparent;font-family:var(--font)}
+/* app standard sizes (30.10.2026, Daniel): the drug app is set ~1-2px smaller than
+   GENEius (base 15 vs 16, names 13.5 vs 16) - scale the whole embed up evenly */
+html.gx-embed body{zoom:1.12}
 
 /* own frame off: GENEius rail / tabs / header take over */
 html.gx-embed nav.rail,
@@ -37,6 +40,15 @@ html.gx-embed .sec-title{background:none!important;box-shadow:none!important;pad
 html.gx-embed .sec-sub,html.gx-embed .listcount,html.gx-embed .sp-klein,html.gx-embed .sp-sub{color:rgba(255,255,255,.78)}
 html.gx-embed .sec-sub b,html.gx-embed .listcount b,html.gx-embed .sp-klein b,html.gx-embed .sp-sub b,html.gx-embed .sp-h{color:#fff}
 html.gx-embed .sec-sub a,html.gx-embed .sp-klein a,html.gx-embed .modlink-zeile a{color:var(--gx-lime)}
+/* Simpel / Deine Medikamente: summary line and "Wichtig" hint without box (30.10.2026, Daniel) */
+html.gx-embed .sp-bilanz{background:none!important;padding:0;border-radius:0;font-size:16px;font-weight:600}
+html.gx-embed .sp-bilanz.warn{color:#FFC861}
+html.gx-embed .sp-bilanz.ok{color:#9FE0B2}
+html.gx-embed .sp-bilanz b{color:inherit;font-weight:800}
+html.gx-embed .gx-ohnebox .sp-tipp{background:none;border:0;padding:0;border-radius:0;color:rgba(255,255,255,.82)}
+html.gx-embed .gx-ohnebox .sp-tipp b{color:#fff}
+html.gx-embed .gx-ohnebox .sp-tipp svg{color:#FFC861}
+html.gx-embed .gx-ohnebox .sp-tipp a{color:var(--gx-lime)}
 html.gx-embed .gsortz{background:#fff;border-radius:999px;padding:3px 4px 3px 12px}
 html.gx-embed .ws-empty{background:#fff;border-radius:22px;border-color:transparent}
 

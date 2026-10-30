@@ -2335,7 +2335,7 @@
    damit Austauschen/Entfernen nicht ueber die Karte hinausstehen (30.10.2026) */
 @media(min-width:641px){.wrow .cardwrap .mrow2{min-height:74px;padding:10px 12px;contain-intrinsic-size:94px}}
 </style>
-<script>/* GENEius embed (Klickdummy 22.10.2026): nur Darstellung, nur mit ?embed=geneius */(function(){if(/[?&]embed=geneius(&|$)/.test(location.search)){document.documentElement.className+=' gx-embed';document.write('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300..800&display=swap"><link rel="stylesheet" href="geneius-embed.css">');}})();</script>
+<script>/* GENEius embed (Klickdummy 22.10.2026): nur Darstellung, nur mit ?embed=geneius */(function(){if(/[?&]embed=geneius(&|$)/.test(location.search)){document.documentElement.className+=' gx-embed';document.write('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300..800&display=swap"><link rel="stylesheet" href="geneius-embed.css?v=20261030">');}})();</script>
 </head>
 <body>
 <svg style="display:none" aria-hidden="true">
@@ -4456,7 +4456,7 @@ function vMeineSimpel(){
   const auff=liste.filter(id=>st(id)===0||st(id)===1).length;
   return kopf+`<p class="sp-bilanz ${auff?'warn':'ok'}">${auff?TSf('simpel.meine.auff','Bei <b>{n} von {m}</b> deiner Medikamente gibt es Handlungsbedarf oder Achtung.',{n:auff,m:liste.length}):TSf('simpel.meine.ok','Bei keinem deiner {m} Medikamente gibt es Handlungsbedarf oder Achtung.',{m:liste.length})}</p>
     <div class="sp-liste">${liste.slice().sort((a,b)=>stRang(st(a))-stRang(st(b))).map(spMeineZeile).join('')}</div>
-    ${auff?spTipp():''}
+    ${auff?`<div class="gx-ohnebox">${spTipp()}</div>`:''}
     <button class="fab" onclick="openAdd()" aria-label="Medikament hinzuf&uuml;gen">${ico('plus','',20)}<span>Medikament hinzuf&uuml;gen</span></button>`;
 }
 /* Einfuehrung im Simpel-Modus: drei kurze Schritte, ohne Gene und Ersatzvorschlag */
