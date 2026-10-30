@@ -618,14 +618,24 @@
         },
         {
           "t": "video",
-          "anim": true,
+          "cartoon": true,
           "yt": {
-            "de": "RVCVd4rG1AU",
-            "en": "KrkWDzAmT5I"
+            "en": "xUTEvZpecrM"
           },
           "dur": {
-            "de": 115,
-            "en": 65
+            "en": 71
+          },
+          "tag": "3D-Animation",
+          "cap": "Vitamin D3 und deine Gene: Warum ein normaler Wert nicht immer reicht · KI-generierte Animation"
+        },
+        {
+          "t": "video",
+          "anim": true,
+          "yt": {
+            "de": "RVCVd4rG1AU"
+          },
+          "dur": {
+            "de": 115
           },
           "tag": "Animation",
           "cap": "Vitamin D und deine Gene: Reicht ein normaler Wert für dich? · KI-generierte Animation"
