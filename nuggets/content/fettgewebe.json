@@ -16,6 +16,20 @@
         },
         {
           "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "_c3XxQayI3c",
+            "en": "oFDGmsWIMo8"
+          },
+          "dur": {
+            "de": 110,
+            "en": 114
+          },
+          "tag": "3D-Animation",
+          "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation"
+        },
+        {
+          "t": "video",
           "yt": {
             "de": "GSjzf6ZNbOk"
           },
@@ -149,6 +163,20 @@
         },
         {
           "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "_c3XxQayI3c",
+            "en": "oFDGmsWIMo8"
+          },
+          "dur": {
+            "de": 110,
+            "en": 114
+          },
+          "tag": "3D-Animation",
+          "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation"
+        },
+        {
+          "t": "video",
           "yt": {
             "de": "EW7jCnzdcg0"
           },
@@ -273,6 +301,20 @@
           "t": "text",
           "h": "Gleicher Sport, anderes Ergebnis",
           "p": "Zwei Menschen trainieren gleich oft, gleich lang und gleich diszipliniert. Der eine nimmt deutlich ab, der andere kaum. Unfair? Ja. Bevor du dich auf den Weg ins Fitnesscenter machst, solltest du wissen: Deine Gene entscheiden mit, wie viel Gewicht du durch Sport verlieren kannst."
+        },
+        {
+          "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "fg7AEX8tkp0",
+            "en": "AkCg3HR4sKU"
+          },
+          "dur": {
+            "de": 74,
+            "en": 75
+          },
+          "tag": "3D-Animation",
+          "cap": "Sport und deine Gene: Gleiches Training, anderer Abnehmerfolg · KI-generierte Animation"
         },
         {
           "t": "video",

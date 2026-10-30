@@ -467,6 +467,20 @@
         },
         {
           "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "D3Int-sU9AQ",
+            "en": "s9vqiAN3bt4"
+          },
+          "dur": {
+            "de": 153,
+            "en": 153
+          },
+          "tag": "3D-Animation",
+          "cap": "Milch und deine Gene: Der glückliche Schreibfehler · KI-generierte Animation"
+        },
+        {
+          "t": "video",
           "anim": true,
           "yt": {
             "de": "wa9QQEMnUyM",
@@ -620,13 +634,15 @@
           "t": "video",
           "cartoon": true,
           "yt": {
+            "de": "QrFjOKLROTI",
             "en": "xUTEvZpecrM"
           },
           "dur": {
+            "de": 66,
             "en": 71
           },
           "tag": "3D-Animation",
-          "cap": "Vitamin D3 und deine Gene: Warum ein normaler Wert nicht immer reicht · KI-generierte Animation"
+          "cap": "Vitamin D3 und deine Gene: Warum normale Werte nicht immer reichen · KI-generierte Animation"
         },
         {
           "t": "video",
@@ -782,6 +798,20 @@
         },
         {
           "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "Zvi3PFDN92A",
+            "en": "Vn64A4Wnw1c"
+          },
+          "dur": {
+            "de": 65,
+            "en": 69
+          },
+          "tag": "3D-Animation",
+          "cap": "Eisen und deine Gene: Wenn Eisentabletten mehr schaden als nützen · KI-generierte Animation"
+        },
+        {
+          "t": "video",
           "anim": true,
           "yt": {
             "de": "Qf_vdgupY8M"
@@ -931,6 +961,20 @@
           "t": "text",
           "h": "Ein winziges Spurenelement mit großer Aufgabe",
           "p": "Selen brauchst du nur in kleinsten Mengen. Trotzdem spielt es eine wichtige Rolle beim Schutz vor freien Radikalen, bei der Regulierung von Entzündungen und bei der Immunabwehr. Wie viel Selen du brauchst, steuern deine Gene."
+        },
+        {
+          "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "kjvX9B8R8ls",
+            "en": "hhqoNsAyeNo"
+          },
+          "dur": {
+            "de": 69,
+            "en": 70
+          },
+          "tag": "3D-Animation",
+          "cap": "Selen und deine Gene: Gleiche Paranuss, andere Wirkung · KI-generierte Animation"
         },
         {
           "t": "video",

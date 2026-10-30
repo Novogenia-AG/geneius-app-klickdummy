@@ -16,6 +16,20 @@
         },
         {
           "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "-dBUYfqIdYI",
+            "en": "OxhWO6nVXDA"
+          },
+          "dur": {
+            "de": 69,
+            "en": 72
+          },
+          "tag": "3D-Animation",
+          "cap": "Omega-3 und deine Gene: Steigern Kapseln dein gutes Cholesterin? · KI-generierte Animation"
+        },
+        {
+          "t": "video",
           "anim": true,
           "yt": {
             "de": "q5RLfiwj88Y",
@@ -157,6 +171,20 @@
           "t": "text",
           "h": "Gleiches Frühstück, andere Werte",
           "p": "Manche Menschen essen viel Ei, Butter und Käse und haben trotzdem gute Cholesterinwerte. Bei anderen steigt das LDL schon bei wenig davon. Woran liegt das?"
+        },
+        {
+          "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "ceyLywWsdAo",
+            "en": "DmHajHw9hUQ"
+          },
+          "dur": {
+            "de": 62,
+            "en": 63
+          },
+          "tag": "3D-Animation",
+          "cap": "Cholesterin und deine Gene: Gleiches Frühstück, anderes Cholesterin · KI-generierte Animation"
         },
         {
           "t": "video",

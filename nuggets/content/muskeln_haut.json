@@ -1083,6 +1083,20 @@
         },
         {
           "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "_IpKLgDUqjE",
+            "en": "D1CF20BGL38"
+          },
+          "dur": {
+            "de": 67,
+            "en": 71
+          },
+          "tag": "3D-Animation",
+          "cap": "Coenzym Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
+        },
+        {
+          "t": "video",
           "anim": true,
           "yt": {
             "de": "yvh9JKmdNvI",

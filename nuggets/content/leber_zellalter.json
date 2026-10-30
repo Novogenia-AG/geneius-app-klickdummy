@@ -164,6 +164,20 @@
         },
         {
           "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "_IpKLgDUqjE",
+            "en": "D1CF20BGL38"
+          },
+          "dur": {
+            "de": 67,
+            "en": 71
+          },
+          "tag": "3D-Animation",
+          "cap": "Coenzym Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
+        },
+        {
+          "t": "video",
           "anim": true,
           "yt": {
             "de": "yvh9JKmdNvI",
@@ -313,6 +327,20 @@
           "t": "text",
           "h": "Trotz Zigaretten 122 Jahre alt?",
           "p": "Fast jeder kennt jemanden, der raucht und trotzdem steinalt wird. Ist Rauchen also gar nicht so schlimm? Doch, für alle. Wie stark es dir schadet, hängt aber auch von deinen Entgiftungsgenen ab."
+        },
+        {
+          "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "lX5nwWaUF2Q",
+            "en": "SdXbMvSvOCc"
+          },
+          "dur": {
+            "de": 47,
+            "en": 49
+          },
+          "tag": "3D-Animation",
+          "cap": "Gegrilltes und deine Gene: Wenn die Entgiftung zu schnell läuft · KI-generierte Animation"
         },
         {
           "t": "video",
@@ -1033,6 +1061,20 @@
           "t": "text",
           "h": "Wenn die Abwehr übers Ziel hinausschießt",
           "p": "Dein Immunsystem schützt dich vor Bakterien, Viren und Pilzen. Doch manchmal reagiert es zu heftig und trifft auch deine eigenen Zellen. Wie aggressiv deine Abwehr eingestellt ist, legen zu einem guten Teil deine Gene fest."
+        },
+        {
+          "t": "video",
+          "cartoon": true,
+          "yt": {
+            "de": "t7nvCKyM7CM",
+            "en": "7VOJzdbVDtw"
+          },
+          "dur": {
+            "de": 75,
+            "en": 77
+          },
+          "tag": "3D-Animation",
+          "cap": "Entzündung und deine Gene: Warum manche tagelang Muskelkater haben · KI-generierte Animation"
         },
         {
           "t": "video",
