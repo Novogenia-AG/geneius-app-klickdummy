@@ -34,18 +34,6 @@
           "p": "Kaum ein Lebensmittel enthält so viele gesunde Antioxidantien und Polyphenole wie Kaffee. Daneben steckt aber Koffein darin. Pflanzen haben es als Nervengift gegen Insekten entwickelt. Auch für deinen Körper ist Koffein ein Fremdstoff, den er schnell loswerden will."
         },
         {
-          "t": "video",
-          "yt": {
-            "de": "ztZoac7MWlo"
-          },
-          "dur": {
-            "de": 285
-          },
-          "poster": "nuggets/themen/kaffee.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, warum Kaffee gesund und giftig zugleich ist"
-        },
-        {
           "t": "quiz",
           "q": "Wofür haben Pflanzen Koffein ursprünglich entwickelt?",
           "o": [
@@ -73,6 +61,18 @@
           ],
           "c": 2,
           "e": "41 % bauen Koffein schnell ab. Die übrigen 59 % haben mindestens eine defekte Kopie."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "ztZoac7MWlo"
+          },
+          "dur": {
+            "de": 285
+          },
+          "poster": "nuggets/themen/kaffee.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, warum Kaffee gesund und giftig zugleich ist"
         },
         {
           "t": "text",
@@ -177,35 +177,9 @@
           "cap": "Coenzym Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "yvh9JKmdNvI",
-            "en": "unVJt_qjrjw"
-          },
-          "dur": {
-            "de": 91,
-            "en": 107
-          },
-          "tag": "Animation",
-          "cap": "Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Erst aufladen, dann schützen",
           "p": "Q10 ist zunächst inaktiv, ähnlich wie Folsäure. Das Gen NQO1 bildet ein Enzym, das Q10 in die aktive Form umwandelt: Ubiquinol. Erst Ubiquinol ist ein starkes Antioxidans. Es fängt freie Radikale ab, bevor sie deine Zellen beschädigen. NQO1 ist eines von mehreren Enzymen, die Q10 aktivieren können, aber ein sehr wichtiges."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "lcd_vO_7ENc"
-          },
-          "dur": {
-            "de": 116
-          },
-          "poster": "nuggets/themen/q10.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie Q10 aktiviert wird"
         },
         {
           "t": "quiz",
@@ -235,6 +209,18 @@
           ],
           "c": 2,
           "e": "Nur rund 2 %. Q10 aus Creme oder Kapsel schützt diese Menschen deshalb kaum."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "lcd_vO_7ENc"
+          },
+          "dur": {
+            "de": 116
+          },
+          "poster": "nuggets/themen/q10.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie Q10 aktiviert wird"
         },
         {
           "t": "text",
@@ -343,35 +329,9 @@
           "cap": "Gegrilltes und deine Gene: Wenn die Entgiftung zu schnell läuft · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "NAIy-aesruw",
-            "en": "zeAOzvAEbo8"
-          },
-          "dur": {
-            "de": 88,
-            "en": 106
-          },
-          "tag": "Animation",
-          "cap": "Gegrilltes und deine Gene: Warum Verbranntes manchen mehr schadet · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Was in Verbranntem steckt",
           "p": "Rauch, Ruß, Asche und angebranntes Essen enthalten PAKs, polyzyklische aromatische Kohlenwasserstoffe. Die Gene CYP1A1 und CYP1B1 bauen sie um. Dabei entsteht zuerst ein krebserregendes Zwischenprodukt, das andere Entgiftungsgene gleich danach abbauen."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "2shEg2xvZsk"
-          },
-          "dur": {
-            "de": 216
-          },
-          "poster": "nuggets/themen/verbrannt.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erzählt die Geschichte der ältesten Frau der Welt"
         },
         {
           "t": "quiz",
@@ -401,6 +361,18 @@
           ],
           "c": 3,
           "e": "Das Gen arbeitet zu schnell. Dadurch entsteht mehr krebserregendes Zwischenprodukt, als abgebaut werden kann."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "2shEg2xvZsk"
+          },
+          "dur": {
+            "de": 216
+          },
+          "poster": "nuggets/themen/verbrannt.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erzählt die Geschichte der ältesten Frau der Welt"
         },
         {
           "t": "text",
@@ -489,25 +461,6 @@
         },
         {
           "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "li9ORFGiTdc",
-            "en": "Dz8I0Xrchjk"
-          },
-          "dur": {
-            "de": 88,
-            "en": 102
-          },
-          "tag": "Animation",
-          "cap": "Entgiftung und deine Gene: Lohnt sich Bio für dich? · KI-generierte Animation"
-        },
-        {
-          "t": "text",
-          "h": "Das GST-Team",
-          "p": "Die wichtigsten Gene für diese Aufgabe heißen GSTT1, GSTM1 und GSTP1. Ihre Enzyme binden sich an Schadstoffe und verändern sie chemisch. So werden die Stoffe meist unschädlich und für den Abbau markiert. Leber und Nieren filtern sie dann aus dem Blut und entfernen sie aus dem Körper."
-        },
-        {
-          "t": "video",
           "yt": {
             "de": "fv62Xf-sfqQ"
           },
@@ -517,6 +470,11 @@
           "poster": "nuggets/themen/chemie.jpg",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie Gene Schwermetalle und Chemikalien unschädlich machen"
+        },
+        {
+          "t": "text",
+          "h": "Das GST-Team",
+          "p": "Die wichtigsten Gene für diese Aufgabe heißen GSTT1, GSTM1 und GSTP1. Ihre Enzyme binden sich an Schadstoffe und verändern sie chemisch. So werden die Stoffe meist unschädlich und für den Abbau markiert. Leber und Nieren filtern sie dann aus dem Blut und entfernen sie aus dem Körper."
         },
         {
           "t": "quiz",
@@ -635,25 +593,6 @@
         },
         {
           "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "Bf-WdkeB7E0",
-            "en": "NGOcvpeQKUY"
-          },
-          "dur": {
-            "de": 96,
-            "en": 115
-          },
-          "tag": "Animation",
-          "cap": "Antioxidantien und deine Gene: Warum manche schneller altern · KI-generierte Animation"
-        },
-        {
-          "t": "text",
-          "h": "Kleine Feuer in deinen Zellen",
-          "p": "Etwa 5 % des eingeatmeten Sauerstoffs werden in deinen Zellen zu einem giftigen Abfallprodukt: Superoxid, dem ersten einer Reihe freier Radikale. Ein freies Radikal wirkt wie ein Feuer im trockenen Wald. Der Schaden breitet sich aus und trifft Zellwände, Eiweiße und die DNA. Über Jahrzehnte ist das einer der Gründe, warum wir altern."
-        },
-        {
-          "t": "video",
           "yt": {
             "de": "eUxru2n6bdU"
           },
@@ -663,6 +602,11 @@
           "poster": "nuggets/themen/radikale.jpg",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt freie Radikale und die Feuerwehr deines Körpers"
+        },
+        {
+          "t": "text",
+          "h": "Kleine Feuer in deinen Zellen",
+          "p": "Etwa 5 % des eingeatmeten Sauerstoffs werden in deinen Zellen zu einem giftigen Abfallprodukt: Superoxid, dem ersten einer Reihe freier Radikale. Ein freies Radikal wirkt wie ein Feuer im trockenen Wald. Der Schaden breitet sich aus und trifft Zellwände, Eiweiße und die DNA. Über Jahrzehnte ist das einer der Gründe, warum wir altern."
         },
         {
           "t": "quiz",
@@ -782,25 +726,6 @@
         },
         {
           "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "w9uq-tiTIps",
-            "en": "u3Um8z_hzp0"
-          },
-          "dur": {
-            "de": 98,
-            "en": 117
-          },
-          "tag": "Animation",
-          "cap": "Altern und deine Gene: Warum manche Jahre jünger aussehen · KI-generierte Animation"
-        },
-        {
-          "t": "text",
-          "h": "Schutzkappen wie am Schnürsenkel",
-          "p": "Deine Gene sitzen auf Chromosomen. An deren Enden sitzen Telomere, Schutzkappen wie die Plastikhülsen an einem Schnürsenkel. Bei jeder Zellteilung wird die ganze DNA kopiert, und dabei geht ein kleines Stück der Telomere verloren. Nach ungefähr 50 bis 70 Teilungen sind sie aufgebraucht. Die Zelle geht dann in einen Schlafmodus und erfüllt ihre Aufgabe nicht mehr."
-        },
-        {
-          "t": "video",
           "yt": {
             "de": "Iej5Lv47O0k"
           },
@@ -810,6 +735,11 @@
           "poster": "nuggets/themen/telomere.jpg",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt Telomere, die Schutzkappen deiner Chromosomen"
+        },
+        {
+          "t": "text",
+          "h": "Schutzkappen wie am Schnürsenkel",
+          "p": "Deine Gene sitzen auf Chromosomen. An deren Enden sitzen Telomere, Schutzkappen wie die Plastikhülsen an einem Schnürsenkel. Bei jeder Zellteilung wird die ganze DNA kopiert, und dabei geht ein kleines Stück der Telomere verloren. Nach ungefähr 50 bis 70 Teilungen sind sie aufgebraucht. Die Zelle geht dann in einen Schlafmodus und erfüllt ihre Aufgabe nicht mehr."
         },
         {
           "t": "quiz",
@@ -1077,35 +1007,9 @@
           "cap": "Entzündung und deine Gene: Warum manche tagelang Muskelkater haben · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "jFAcL6_oJ64",
-            "en": "9v-saRSSXPA"
-          },
-          "dur": {
-            "de": 96,
-            "en": 107
-          },
-          "tag": "Animation",
-          "cap": "Entzündung und deine Gene: Warum dasselbe Training so unterschiedlich wirkt · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Entzündung ist Reparatur",
           "p": "Bei einer Entzündung bringen Signalstoffe das betroffene Gewebe zum Anschwellen. So kommen die weißen Blutzellen an die Angreifer heran. Das ist gewollt, belastet aber auch die eigenen Zellen. Gene wie TNFa, IL1A und IL6R regeln, wie stark diese Reaktion ausfällt."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "LYxLJuHRKyY"
-          },
-          "dur": {
-            "de": 139
-          },
-          "poster": "nuggets/themen/entz.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Entzündung ist Reparatur: Daniel am Beispiel Muskelkater"
         },
         {
           "t": "quiz",
@@ -1135,6 +1039,18 @@
           ],
           "c": 1,
           "e": "90 % tragen mindestens einen Defekt. Deshalb lohnt sich der Blick auf deine eigene Kombination."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "LYxLJuHRKyY"
+          },
+          "dur": {
+            "de": 139
+          },
+          "poster": "nuggets/themen/entz.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Entzündung ist Reparatur: Daniel am Beispiel Muskelkater"
         },
         {
           "t": "text",

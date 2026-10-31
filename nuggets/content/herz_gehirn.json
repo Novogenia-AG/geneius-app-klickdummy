@@ -29,35 +29,9 @@
           "cap": "Omega-3 und deine Gene: Steigern Kapseln dein gutes Cholesterin? · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "q5RLfiwj88Y",
-            "en": "wN37It4kZY8"
-          },
-          "dur": {
-            "de": 81,
-            "en": 93
-          },
-          "tag": "Animation",
-          "cap": "Omega-3 und deine Gene: Wirkt Fischöl bei dir? · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "HDL, die Müllabfuhr im Blut",
           "p": "HDL ist das sogenannte gute Cholesterin. Es sammelt überschüssiges Cholesterin im Blut ein und bringt es zur Entsorgung in die Leber. Der wichtigste Baustein dieser Müllabfuhr entsteht nach der Anleitung der APOA1-Gene. Funktionieren sie, arbeiten sie mit Omega-3 zusammen und dein HDL-Cholesterin steigt."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "wB5Y637mP6Q"
-          },
-          "dur": {
-            "de": 58
-          },
-          "poster": "nuggets/themen/hdl.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Wie das gute Cholesterin auf Omega-3 reagiert"
         },
         {
           "t": "quiz",
@@ -87,6 +61,18 @@
           ],
           "c": 3,
           "e": "Zwei von drei Menschen haben zwei veränderte APOA1-Gene. Bei ihnen steigert zusätzliches Omega-3 das HDL nicht."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "wB5Y637mP6Q"
+          },
+          "dur": {
+            "de": 58
+          },
+          "poster": "nuggets/themen/hdl.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Wie das gute Cholesterin auf Omega-3 reagiert"
         },
         {
           "t": "text",
@@ -187,35 +173,9 @@
           "cap": "Cholesterin und deine Gene: Gleiches Frühstück, anderes Cholesterin · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "hjObdjQaguw",
-            "en": "pAln4SahmJw"
-          },
-          "dur": {
-            "de": 95,
-            "en": 110
-          },
-          "tag": "Animation",
-          "cap": "Cholesterin und deine Gene: Warum dasselbe Frühstück unterschiedlich wirkt · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Zwei Quellen, ein Filter",
           "p": "Cholesterin bekommst du über die Nahrung, und dein Körper stellt es auch selbst her. Das LDL verteilt es von der Leber über das Blut im Körper. Bleibt zu viel LDL im Blut, lagert es sich an den Gefäßwänden ab. Deshalb heißt es schlechtes Cholesterin. Regulierungsgene wie LDLR bauen auf deinen Leberzellen eine Art Greifarme. Sie fischen das LDL aus dem Blut."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "4YOQf37r36Y"
-          },
-          "dur": {
-            "de": 63
-          },
-          "poster": "nuggets/themen/ldl.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Warum LDL das schlechte Cholesterin heißt"
         },
         {
           "t": "quiz",
@@ -245,6 +205,18 @@
           ],
           "c": 1,
           "e": "Veränderte Gene filtern zu wenig LDL aus dem Blut. Der Wert steigt leichter an."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "4YOQf37r36Y"
+          },
+          "dur": {
+            "de": 63
+          },
+          "poster": "nuggets/themen/ldl.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Warum LDL das schlechte Cholesterin heißt"
         },
         {
           "t": "text",
@@ -594,25 +566,6 @@
         },
         {
           "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "vnMSYJRUVns",
-            "en": "nnkGNXbFU9M"
-          },
-          "dur": {
-            "de": 80,
-            "en": 87
-          },
-          "tag": "Animation",
-          "cap": "Salz und deine Gene: Ist Salz für jeden schlecht? · KI-generierte Animation"
-        },
-        {
-          "t": "text",
-          "h": "Warum Salz den Druck erhöht",
-          "p": "Je mehr Salz im Körper ist, desto mehr Flüssigkeit braucht er. Um das Salz schnell über die Nieren aus dem Blut zu spülen, erhöht dein Körper den Blutdruck. Wie stark er das tut, beeinflusst das AGT-Gen."
-        },
-        {
-          "t": "video",
           "yt": {
             "de": "B1DdwjH_QRU"
           },
@@ -622,6 +575,11 @@
           "poster": "nuggets/themen/salz.jpg",
           "tag": "Originalaufnahme",
           "cap": "Ist Salz wirklich für jeden schlecht?"
+        },
+        {
+          "t": "text",
+          "h": "Warum Salz den Druck erhöht",
+          "p": "Je mehr Salz im Körper ist, desto mehr Flüssigkeit braucht er. Um das Salz schnell über die Nieren aus dem Blut zu spülen, erhöht dein Körper den Blutdruck. Wie stark er das tut, beeinflusst das AGT-Gen."
         },
         {
           "t": "quiz",
@@ -740,25 +698,6 @@
         },
         {
           "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "qrNg0nUzJVw",
-            "en": "rkOhZJYeLb8"
-          },
-          "dur": {
-            "de": 101,
-            "en": 117
-          },
-          "tag": "Animation",
-          "cap": "Stress und deine Gene: Krieger oder Sorgenmacher? · KI-generierte Animation"
-        },
-        {
-          "t": "text",
-          "h": "Nach der Aufregung muss Dopamin weg",
-          "p": "Erlebst du etwas Aufregendes oder Stressiges, schüttet dein Gehirn Dopamin aus. Dieser Botenstoff gibt die Nachricht von Zelle zu Zelle weiter, bis das ganze Gehirn Bescheid weiß. Ist die Situation vorbei, muss das Dopamin wieder abgebaut werden, damit dein Gehirn zur Ruhe kommt. Das erledigt das Enzym COMT. Gebildet wird es von deinen COMT-Genen."
-        },
-        {
-          "t": "video",
           "yt": {
             "de": "9Q5ekTlMSpo"
           },
@@ -768,6 +707,11 @@
           "poster": "nuggets/themen/burnout.jpg",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie ein Burnout entsteht"
+        },
+        {
+          "t": "text",
+          "h": "Nach der Aufregung muss Dopamin weg",
+          "p": "Erlebst du etwas Aufregendes oder Stressiges, schüttet dein Gehirn Dopamin aus. Dieser Botenstoff gibt die Nachricht von Zelle zu Zelle weiter, bis das ganze Gehirn Bescheid weiß. Ist die Situation vorbei, muss das Dopamin wieder abgebaut werden, damit dein Gehirn zur Ruhe kommt. Das erledigt das Enzym COMT. Gebildet wird es von deinen COMT-Genen."
         },
         {
           "t": "quiz",
@@ -884,23 +828,6 @@
         },
         {
           "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "n1jkxseJBf4"
-          },
-          "dur": {
-            "de": 105
-          },
-          "tag": "Animation",
-          "cap": "Alkohol, Glücksspiel und deine Gene: Warum manche es mehr genießen · KI-generierte Animation"
-        },
-        {
-          "t": "text",
-          "h": "Das Belohnungssystem",
-          "p": "Wenn etwas Schönes passiert, schüttet dein Gehirn Dopamin aus, den Botenstoff für Belohnung und Motivation. Danach muss es wieder abgebaut werden. Das übernimmt das Enzym COMT, gebildet vom COMT-Gen. Arbeitet es langsamer, bleiben Dopamin und Noradrenalin länger im Gehirn. Das kann beeinflussen, wie du auf Alkohol reagierst, und das Verlangen nach Belohnung verstärken."
-        },
-        {
-          "t": "video",
           "yt": {
             "de": "-_Ba3kvIfck"
           },
@@ -910,6 +837,11 @@
           "poster": "nuggets/themen/alkohol.jpg",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie das Gehirn Dopamin ausschüttet und wieder abbaut"
+        },
+        {
+          "t": "text",
+          "h": "Das Belohnungssystem",
+          "p": "Wenn etwas Schönes passiert, schüttet dein Gehirn Dopamin aus, den Botenstoff für Belohnung und Motivation. Danach muss es wieder abgebaut werden. Das übernimmt das Enzym COMT, gebildet vom COMT-Gen. Arbeitet es langsamer, bleiben Dopamin und Noradrenalin länger im Gehirn. Das kann beeinflussen, wie du auf Alkohol reagierst, und das Verlangen nach Belohnung verstärken."
         },
         {
           "t": "quiz",

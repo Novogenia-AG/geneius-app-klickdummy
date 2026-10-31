@@ -480,35 +480,9 @@
           "cap": "Milch und deine Gene: Der glückliche Schreibfehler · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "wa9QQEMnUyM",
-            "en": "hH4BnUjmVXg"
-          },
-          "dur": {
-            "de": 116,
-            "en": 124
-          },
-          "tag": "Animation",
-          "cap": "Kalzium, Milch und deine Gene: Warum manche Erwachsene Milch vertragen · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Kalzium für stabile Knochen",
           "p": "Kalzium gibt deinen Knochen Stabilität und kann so vor Osteoporose schützen. Etwa 98 % des Kalziums in deinem Körper stecken in den Knochen. Dein Körper kann Kalzium nicht selbst herstellen, er bekommt es nur aus der Nahrung. Es wird im Darm aufgenommen, Vitamin D3 verstärkt das. Das Blut bringt es dann zu den Knochen."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "uueP82UBHvw"
-          },
-          "dur": {
-            "de": 16
-          },
-          "poster": "nuggets/themen/kalzium.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie sich Kalzium und Vitamin D bei der Aufnahme unterstützen"
         },
         {
           "t": "quiz",
@@ -538,6 +512,18 @@
           ],
           "c": 1,
           "e": "Mit einer veränderten Kopie bleibt die Funktion normal. Erst wenn beide Kopien verändert sind, sinkt die Laktoseverträglichkeit."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "uueP82UBHvw"
+          },
+          "dur": {
+            "de": 16
+          },
+          "poster": "nuggets/themen/kalzium.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wie sich Kalzium und Vitamin D bei der Aufnahme unterstützen"
         },
         {
           "t": "text",
@@ -645,33 +631,9 @@
           "cap": "Vitamin D3 und deine Gene: Warum normale Werte nicht immer reichen · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "RVCVd4rG1AU"
-          },
-          "dur": {
-            "de": 115
-          },
-          "tag": "Animation",
-          "cap": "Vitamin D und deine Gene: Reicht ein normaler Wert für dich? · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Ein Greifarm für Vitamin D3",
           "p": "Die VDR-Gene enthalten die Bauanleitung für einen Rezeptor. Stell ihn dir wie einen Greifarm vor, der an der Oberfläche der Zelle nach außen ragt. Vitamin D3 dockt genau daran an. Dann bekommt die Zelle ein Signal, entfaltet die gesunden Effekte des Vitamins und schaltet bestimmte andere Gene ein."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "frpcKLeYSUQ"
-          },
-          "dur": {
-            "de": 67
-          },
-          "poster": "nuggets/themen/vitd.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Der Vitamin-D-Rezeptor: ein Greifarm an deiner Zelle"
         },
         {
           "t": "quiz",
@@ -701,6 +663,18 @@
           ],
           "c": 2,
           "e": "Mit mehr Vitamin D3 werden auch die schwächeren Rezeptoren ausreichend aktiviert. Zusammen ist das Signal dann wieder stark genug."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "frpcKLeYSUQ"
+          },
+          "dur": {
+            "de": 67
+          },
+          "poster": "nuggets/themen/vitd.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Der Vitamin-D-Rezeptor: ein Greifarm an deiner Zelle"
         },
         {
           "t": "text",
@@ -811,33 +785,9 @@
           "cap": "Eisen und deine Gene: Wenn Eisentabletten mehr schaden als nützen · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "Qf_vdgupY8M"
-          },
-          "dur": {
-            "de": 85
-          },
-          "tag": "Animation",
-          "cap": "Eisen und deine Gene: Der Fluch der Kelten · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Das HFE-Gen öffnet die Tür im Darm",
           "p": "Eisen aus deiner Nahrung kommt in den Darm. Die HFE-Gene bilden dort die Kanäle, über die Eisen in deinen Körper gelangt. Normalerweise wird nur etwa 10 % des Eisens aus der Nahrung aufgenommen, der Rest wird wieder ausgeschieden. Ist das Gen verändert, ist es nicht zu schwach, sondern zu aktiv: Es bildet zu viele Kanäle, und es gelangt zu viel Eisen hinein."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "ntkpD4_SjSM"
-          },
-          "dur": {
-            "de": 62
-          },
-          "poster": "nuggets/themen/eisen.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Wie eine Genveränderung vor 6.000 Jahren zum Vorteil wurde"
         },
         {
           "t": "quiz",
@@ -867,6 +817,18 @@
           ],
           "c": 3,
           "e": "Bei eisenarmer Ernährung half die höhere Aufnahme, genug Eisen zu bekommen. Bei heutiger eisenreicher Kost kann sie zu viel des Guten werden."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "ntkpD4_SjSM"
+          },
+          "dur": {
+            "de": 62
+          },
+          "poster": "nuggets/themen/eisen.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Wie eine Genveränderung vor 6.000 Jahren zum Vorteil wurde"
         },
         {
           "t": "text",
@@ -975,20 +937,6 @@
           },
           "tag": "3D-Animation",
           "cap": "Selen und deine Gene: Gleiche Paranuss, andere Wirkung · KI-generierte Animation"
-        },
-        {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "thky97MDFBQ",
-            "en": "O34SjDRJzmA"
-          },
-          "dur": {
-            "de": 91,
-            "en": 107
-          },
-          "tag": "Animation",
-          "cap": "Selen und deine Gene: Warum dieselbe Paranuss unterschiedlich wirkt · KI-generierte Animation"
         },
         {
           "t": "text",

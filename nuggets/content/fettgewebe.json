@@ -29,18 +29,6 @@
           "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "yt": {
-            "de": "GSjzf6ZNbOk"
-          },
-          "dur": {
-            "de": 384
-          },
-          "poster": "nuggets/themen/fett.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm, die fünf Gene und was sein eigenes Ergebnis für ihn bedeutet"
-        },
-        {
           "t": "text",
           "h": "Der Fett-Stopp im Darm",
           "p": "Fett aus dem Essen wird im Darm aufgenommen. Hat dein Körper genug, schalten sich Regulierungsgene ein, zum Beispiel das FABP2-Gen. Sie blockieren die weitere Fettaufnahme. Das überschüssige Fett wird nicht aufgenommen und ausgeschieden. Sind die Gene defekt, fehlt dieser Stopp: Das Fett wird aufgenommen, und was der Körper nicht braucht, wird gespeichert."
@@ -73,6 +61,18 @@
           ],
           "c": 2,
           "e": "Es sind fünf Gene: FABP2, FTO, PPARG, APOA2 und APOA5. Zusammen bestimmen sie deinen Platz auf dem Balken."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "GSjzf6ZNbOk"
+          },
+          "dur": {
+            "de": 384
+          },
+          "poster": "nuggets/themen/fett.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm, die fünf Gene und was sein eigenes Ergebnis für ihn bedeutet"
         },
         {
           "t": "text",
@@ -176,18 +176,6 @@
           "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "yt": {
-            "de": "EW7jCnzdcg0"
-          },
-          "dur": {
-            "de": 88
-          },
-          "poster": "nuggets/themen/kh.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel zeigt sein eigenes Ergebnis: Kohlenhydrate kein Problem, Fett schon"
-        },
-        {
           "t": "text",
           "h": "Das ADRB2-Gen entscheidet mit",
           "p": "Kohlenhydrate kommen über die Nahrung in den Körper. Arbeiten deine ADRB2-Gene effektiv, verhindern sie, dass sich überschüssige Kohlenhydratkalorien als Fett ablagern. Sind sie defekt, fehlt dieser Schutz: Die überschüssigen Kalorien werden als Fettpölsterchen gespeichert."
@@ -220,6 +208,18 @@
           ],
           "c": 2,
           "e": "Ab mehr als 50 % der Kalorien aus Kohlenhydraten nahmen Personen mit defekten ADRB2-Genen zu. Mit funktionstüchtigen Genen nicht."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "EW7jCnzdcg0"
+          },
+          "dur": {
+            "de": 88
+          },
+          "poster": "nuggets/themen/kh.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel zeigt sein eigenes Ergebnis: Kohlenhydrate kein Problem, Fett schon"
         },
         {
           "t": "text",
@@ -317,18 +317,6 @@
           "cap": "Sport und deine Gene: Gleiches Training, anderer Abnehmerfolg · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "yt": {
-            "de": "oAv4cCIK4j0"
-          },
-          "dur": {
-            "de": 85
-          },
-          "poster": "nuggets/themen/sport.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt die Sport-Studien: gleicher Sport, anderes Ergebnis"
-        },
-        {
           "t": "text",
           "h": "Drei Gene entscheiden mit",
           "p": "Für diese Gene Story werden drei Gene ausgewertet: ADRB3, FTO und PPARG. Sind sie effektiv, nimmst du bei konsequentem Training gut ab. Nach vier Monaten Training ist die Gewichtsabnahme bis zu dreimal höher als bei Menschen mit anderen Genen. Sind sie defekt, nimmst du trotz konsequenten Trainings nicht effektiv ab."
@@ -361,6 +349,18 @@
           ],
           "c": 3,
           "e": "Non-Responder nehmen trotz gleichem Training weniger ab. Responder sprechen gut auf Sport an."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "oAv4cCIK4j0"
+          },
+          "dur": {
+            "de": 85
+          },
+          "poster": "nuggets/themen/sport.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt die Sport-Studien: gleicher Sport, anderes Ergebnis"
         },
         {
           "t": "text",

@@ -143,6 +143,16 @@
           "p": "Dein genetischer Code ist 3,2 Milliarden Buchstaben lang. Bei den meisten Unterschieden zwischen Menschen ist nur ein einziger Buchstabe anders. Kann so eine Kleinigkeit wirklich etwas verändern?"
         },
         {
+          "t": "video",
+          "id": "2QmG2UWqR1Y",
+          "start": 240.55,
+          "end": 277.9,
+          "file": "clips/varianten_1.mp4",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, wann eine Genvariante als wissenschaftlich bestätigt gilt",
+          "ai": false
+        },
+        {
           "t": "text",
           "h": "Ein Schreibfehler im Bauplan",
           "p": "Eine Genvariante ist eine Stelle, an der dein Code anders aussieht als bei den meisten Menschen. Meist ist ein einzelner Buchstabe ausgetauscht. Fachleute nennen das SNP, gesprochen „Snip“. So eine Variante kann ein Gen schwächer machen, es ganz ausschalten oder es sogar zu aktiv machen. Bei manchen Genen fehlt die Kopie auch komplett. Varianten sind ganz normal: Jeder Mensch trägt viele davon."
@@ -185,16 +195,6 @@
           "t": "text",
           "h": "Belegt und abgeleitet",
           "p": "Wie stark eine Genvariante wirkt, ist durch Studien belegt. Die Empfehlungen, die daraus folgen, sind meist logische Schlussfolgerungen: Wirkt ein Vitamin bei dir nicht, kann ein anderes mit ähnlicher Wirkung sinnvoll sein. Doch ab wann gilt eine Genvariante als belegt?"
-        },
-        {
-          "t": "video",
-          "id": "2QmG2UWqR1Y",
-          "start": 240.55,
-          "end": 277.9,
-          "file": "clips/varianten_1.mp4",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wann eine Genvariante als wissenschaftlich bestätigt gilt",
-          "ai": false
         },
         {
           "t": "quiz",

@@ -1096,35 +1096,9 @@
           "cap": "Coenzym Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
         },
         {
-          "t": "video",
-          "anim": true,
-          "yt": {
-            "de": "yvh9JKmdNvI",
-            "en": "unVJt_qjrjw"
-          },
-          "dur": {
-            "de": 91,
-            "en": 107
-          },
-          "tag": "Animation",
-          "cap": "Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
-        },
-        {
           "t": "text",
           "h": "Q10 muss erst aufgeladen werden",
           "p": "Coenzym Q10 ist zunächst inaktiv, wie eine leere Batterie. Das NQO1-Gen bildet das Enzym NQO1, das Q10 in seine aktive Form umwandelt: Ubiquinol. Erst Ubiquinol fängt freie Radikale ein. Danach lädt das Enzym es einfach wieder auf."
-        },
-        {
-          "t": "video",
-          "yt": {
-            "de": "v4Hcow7QbFA"
-          },
-          "dur": {
-            "de": 177
-          },
-          "poster": "nuggets/themen/q10haut.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss"
         },
         {
           "t": "quiz",
@@ -1154,6 +1128,18 @@
           ],
           "c": 2,
           "e": "Etwa jeder Elfte hat zwei veränderte Kopien. Bei diesen Menschen bleibt Q10 weitgehend wirkungslos."
+        },
+        {
+          "t": "video",
+          "yt": {
+            "de": "v4Hcow7QbFA"
+          },
+          "dur": {
+            "de": 177
+          },
+          "poster": "nuggets/themen/q10haut.jpg",
+          "tag": "Originalaufnahme",
+          "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss"
         },
         {
           "t": "text",
