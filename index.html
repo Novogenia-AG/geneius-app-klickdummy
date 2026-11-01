@@ -1480,6 +1480,10 @@ body.touring .rail,body.touring .mtop{z-index:89}
   body.r-coach .cp-h{gap:8px 10px;padding:12px 14px}
   body.r-coach .cp-h>div{flex:1}
   body.r-coach .cp-h .ki{order:5}
+}
+/* Lade auch beim aufgeklappten Fold / Tablet (Daniel, 01.11.2026): Themen nicht unter dem Chat, sondern von rechts */
+@media (max-width:1040px){
+  body.r-coach .foot{display:none}
   .cs-tog{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 12px;border-radius:999px;background:var(--plum);color:#fff;font:inherit;font-size:12.5px;font-weight:800;flex:none;cursor:pointer}
   .cs-tog .ic{width:17px;height:17px}
   .coach-side{position:fixed;top:var(--mtoph,131px);right:0;bottom:0;width:min(340px,88vw);z-index:40;overflow-y:auto;overscroll-behavior:contain;padding:14px;background:var(--bg0);transform:translateX(104%);visibility:hidden;transition:transform .28s ease,visibility 0s .28s;box-shadow:-24px 0 40px -18px rgba(0,0,0,.7)}
@@ -1495,6 +1499,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .coach-side .cs-swipe .srow.qbox>*{width:auto!important;min-width:0!important;flex:none!important}
   .coach-side .cs-swipe .sarr{display:none!important}
 }
+@media (min-width:761px) and (max-width:1040px){body.r-coach .chatp{height:calc(100dvh - 32px);min-height:0}body.r-coach .cp-h small{display:none}}
 @media (max-width:400px){.cp-h .btn[data-newchat]{font-size:0;gap:0;padding:7px 9px}.cp-h .btn[data-newchat] .ic{margin:0}}
 @media (max-width:400px){.mtop .tour-btn span{display:none}.mtop .tour-btn{padding-left:8px;padding-right:8px}}
 .shop-m .ic{width:17px;height:17px}
