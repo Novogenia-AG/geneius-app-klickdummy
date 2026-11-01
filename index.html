@@ -1469,6 +1469,33 @@ body.touring .rail,body.touring .mtop{z-index:89}
 @media(prefers-reduced-motion:reduce){.rail .nav.shopnav .shop-ic{animation:none}}
 .shop-m{display:none;align-items:center;gap:6px;margin-left:auto;margin-right:8px;height:34px;padding:0 13px;border-radius:999px;border:0;background:var(--lime);color:var(--lime-ink);font:inherit;font-size:13px;font-weight:800;cursor:pointer}
 .mtop .shop-m{display:inline-flex}
+/* Handy-Coach (Daniel, 01.11.2026): Chat sticky im Vollbild, Themen + letzte Chats klappen bei Bedarf von rechts herein */
+.cs-tog,.cs-top,.cs-back{display:none}
+@media (max-width:760px){
+  body.r-coach{overflow:hidden}
+  body.r-coach .foot{display:none}
+  body.r-coach .coach-grid{margin:0}
+  body.r-coach .chatp{position:fixed;left:0;right:0;top:var(--mtoph,131px);bottom:0;height:auto;min-height:0;margin:0;border-radius:0;z-index:20;display:flex;flex-direction:column}
+  body.r-coach .chatp .msgs{flex:1;min-height:0;overscroll-behavior:contain}
+  body.r-coach .cp-h{gap:8px 10px;padding:12px 14px}
+  body.r-coach .cp-h>div{flex:1}
+  body.r-coach .cp-h .ki{order:5}
+  .cs-tog{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 12px;border-radius:999px;background:var(--plum);color:#fff;font:inherit;font-size:12.5px;font-weight:800;flex:none;cursor:pointer}
+  .cs-tog .ic{width:17px;height:17px}
+  .coach-side{position:fixed;top:var(--mtoph,131px);right:0;bottom:0;width:min(340px,88vw);z-index:40;overflow-y:auto;overscroll-behavior:contain;padding:14px;background:var(--bg0);transform:translateX(104%);visibility:hidden;transition:transform .28s ease,visibility 0s .28s;box-shadow:-24px 0 40px -18px rgba(0,0,0,.7)}
+  body.cs-open .coach-side{transform:none;visibility:visible;transition:transform .28s ease}
+  .cs-top{display:flex;align-items:center;justify-content:space-between;color:#fff;font-weight:800;font-size:16px;padding:2px 2px 0}
+  .cs-top button{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+  .cs-back{display:block;position:fixed;inset:0;z-index:35;background:rgba(20,0,16,.5);opacity:0;pointer-events:none;transition:opacity .28s}
+  body.cs-open .cs-back{opacity:1;pointer-events:auto}
+  body.cs-open .svc{display:none}
+  .coach-side{display:flex!important;flex-direction:column;gap:14px}
+  .coach-side>*{flex:none}
+  .coach-side .cs-swipe .srow.qbox{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;overflow:visible!important;padding:0!important;-webkit-mask-image:none!important;mask-image:none!important}
+  .coach-side .cs-swipe .srow.qbox>*{width:auto!important;min-width:0!important;flex:none!important}
+  .coach-side .cs-swipe .sarr{display:none!important}
+}
+@media (max-width:400px){.cp-h .btn[data-newchat]{font-size:0;gap:0;padding:7px 9px}.cp-h .btn[data-newchat] .ic{margin:0}}
 @media (max-width:400px){.mtop .tour-btn span{display:none}.mtop .tour-btn{padding-left:8px;padding-right:8px}}
 .shop-m .ic{width:17px;height:17px}
 .shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
@@ -1570,7 +1597,8 @@ body.touring .rail,body.touring .mtop{z-index:89}
     <div class="tile card no-tilt chatp" aria-label="Chat mit dem Gene-ius Coach">
       <div class="cp-h"><span class="ico lime" style="width:40px;height:40px;border-radius:13px"><svg class="ic"><use href="#i-dna"/></svg></span><div><b>Gene-ius Coach</b><small>Stelle dem Gene-ius Coach eine Frage zu deinen Ergebnissen.</small></div>
         <span class="ki"><svg class="ic sm"><use href="#i-sparkle"/></svg>KI-Coach – ersetzt keine ärztliche Beratung</span>
-        <button class="btn ghost sm" data-newchat><svg class="ic sm"><use href="#i-plus"/></svg>Neuer Chat</button></div>
+        <button class="btn ghost sm" data-newchat aria-label="Neuer Chat"><svg class="ic sm"><use href="#i-plus"/></svg>Neuer Chat</button>
+        <button class="cs-tog" data-cstog aria-expanded="false" aria-controls="coSide"><svg class="ic"><use href="#i-list"/></svg>Themen</button></div>
       <div class="msgs" id="msgs" aria-live="polite"></div>
       <div class="composer">
         <div class="rec" id="rec" hidden><span class="rec-dot" aria-hidden="true"></span><b>Sprich jetzt…</b><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span id="recT">0:00</span><button type="button" class="btn ghost sm" data-mic>Fertig</button></div>
@@ -1588,7 +1616,8 @@ body.touring .rail,body.touring .mtop{z-index:89}
         <p class="cdisc">Die Informationen dienen nur zu Informationszwecken und ersetzen keine medizinische Beratung.</p>
       </div>
     </div>
-    <aside class="coach-side" aria-label="Themen und letzte Chats">
+    <aside class="coach-side" id="coSide" aria-label="Themen und letzte Chats">
+      <div class="cs-top"><span>Themen &amp; Chats</span><button type="button" data-csclose aria-label="Schließen"><svg class="ic"><use href="#i-x"/></svg></button></div>
       <div class="tile card no-tilt cs-box">
         <h3 class="cs-h">Frag den Coach</h3>
         <div class="swipe cs-swipe" data-swipe>
@@ -1603,6 +1632,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
         <button class="btn ghost sm" data-newchat style="margin-top:12px;align-self:flex-start"><svg class="ic sm"><use href="#i-plus"/></svg>Neuer Chat</button>
       </div>
     </aside>
+    <div class="cs-back" data-csclose aria-hidden="true"></div>
   </div>
 </div>
 </section>
@@ -2608,6 +2638,21 @@ function openShop(){
   '<button class="btn ghost" data-close>Weiter einkaufen</button><button class="btn lime" data-toast="Zur Kasse – im Klickdummy ohne Funktion.">'+ic('cart','sm')+'Zur Kasse</button>',sico('cart','lime'),true);
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-shop]')){e.preventDefault();openShop()}});
+/* Handy-Coach: Lade von rechts + Hoehe des Kopfs fuer den fixierten Chat (Daniel, 01.11.2026) */
+(()=>{
+  const B=document.body;
+  const set=o=>{B.classList.toggle('cs-open',o);const t=document.querySelector('[data-cstog]');if(t)t.setAttribute('aria-expanded',o)};
+  const kopf=()=>{const m=document.querySelector('.mtop');document.documentElement.style.setProperty('--mtoph',(m&&getComputedStyle(m).display!=='none'?m.offsetHeight:0)+'px')};
+  addEventListener('resize',kopf);addEventListener('load',kopf);
+  addEventListener('hashchange',()=>{set(false);setTimeout(kopf,0)});
+  document.addEventListener('click',e=>{
+    if(e.target.closest('[data-cstog]'))return set(!B.classList.contains('cs-open'));
+    if(e.target.closest('[data-csclose]'))return set(false);
+    if(B.classList.contains('cs-open')&&e.target.closest('.coach-side button,.coach-side a,.coach-side li')&&!e.target.closest('.sarr'))setTimeout(()=>set(false),60);
+  });
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&B.classList.contains('cs-open'))set(false)});
+  kopf();
+})();
 const DISC='<p class="disc">Die Informationen dienen nur zu Informationszwecken und ersetzen keine medizinische Beratung.</p>';
 const back='<button class="btn ghost" data-close>'+ic('chev','sm').replace('class="ic sm"','class="ic sm" style="transform:rotate(180deg)"')+'Zurück</button>';
 
