@@ -3488,7 +3488,16 @@ const gnShow = () => { if (location.hash === '#nuggets') setTimeout(() => { size
 window.addEventListener('hashchange', gnShow); window.addEventListener('resize', gnShow);
 
 renderAll();
-loadContent().then(() => { renderAll(); gnShow(); });
+// Nur fertige Lektionen zeigen (Daniel 01.11.2026): ohne Video ausgeblendet, bis der Inhalt kommt; leere Stationen ebenso
+function hideUnfinished() {
+  const ready = l => ((CONTENT[l.id] || {}).blocks || []).some(b => b.t === 'video');
+  for (let si = STATIONS.length - 1; si >= 0; si--) {
+    STATIONS[si].lessons = STATIONS[si].lessons.filter(ready);
+    if (!STATIONS[si].lessons.length) STATIONS.splice(si, 1);
+  }
+  ALL.length = 0; STATIONS.forEach((s, si) => s.lessons.forEach((l, li) => { l.si = si; l.li = li; ALL.push(l); }));
+}
+loadContent().then(() => { hideUnfinished(); renderAll(); gnShow(); });
 })();
 </script>
 <!-- MEDIKAMENTE:BEGIN – Pharmakogenetik eingebettet (22.10.2026). Nur Navigation und Darstellung,
