@@ -3496,6 +3496,9 @@ function hideUnfinished() {
     if (!STATIONS[si].lessons.length) STATIONS.splice(si, 1);
   }
   ALL.length = 0; STATIONS.forEach((s, si) => s.lessons.forEach((l, li) => { l.si = si; l.li = li; ALL.push(l); }));
+  const n = STATIONS.length + ' Stationen', fix = s => typeof s === 'string' ? s.replace('11 Stationen', n) : s;
+  Object.values(CONTENT).forEach(c => c.blocks.forEach(b => { b.p = fix(b.p); }));
+  document.querySelectorAll('.gn .sub').forEach(e => { if (e.textContent.includes('11 Stationen')) e.textContent = fix(e.textContent); });
 }
 loadContent().then(() => { hideUnfinished(); renderAll(); gnShow(); });
 })();
