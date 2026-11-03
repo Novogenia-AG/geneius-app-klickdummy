@@ -1148,6 +1148,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .neu.tr + .th{padding-right:84px}
   .cp-h{flex-wrap:wrap}
   .cp-h .ki{margin-left:0;width:100%;justify-content:center}
+  .cp-h [data-newchat]{margin-left:auto}
   .lane-name{margin-bottom:28px}
   .qt{min-height:88px;font-size:12.5px;padding:14px 6px}
   .arow{padding:16px}
@@ -1600,7 +1601,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
   <h1 id="h-co" class="sr">Gene-ius Coach – Hallo. Wie kann ich dir helfen?</h1>
   <div class="coach-grid">
     <div class="tile card no-tilt chatp" aria-label="Chat mit dem Gene-ius Coach">
-      <div class="cp-h"><span class="ico lime" style="width:40px;height:40px;border-radius:13px"><svg class="ic"><use href="#i-dna"/></svg></span><div><b>Gene-ius Coach</b><small>Stelle dem Gene-ius Coach eine Frage zu deinen Ergebnissen.</small></div>
+      <div class="cp-h">
         <span class="ki"><svg class="ic sm"><use href="#i-sparkle"/></svg>KI-Coach – ersetzt keine ärztliche Beratung</span>
         <button class="btn ghost sm" data-newchat aria-label="Neuer Chat"><svg class="ic sm"><use href="#i-plus"/></svg>Neuer Chat</button>
         <button class="cs-tog" data-cstog aria-expanded="false" aria-controls="coSide"><svg class="ic"><use href="#i-list"/></svg>Themen</button></div>
@@ -2570,7 +2571,7 @@ function reveal(el){
 function setBusy(b){C.busy=b;$('#csend').hidden=b;$('#cstop').hidden=!b}
 function greet(){
  stopGen(true);$('#msgs').innerHTML='';
- const m=addMsg('bot','<b>Hallo Markus.</b> Wie kann ich dir helfen? Ich kenne deine Analyse, deine 22 Nährstoffe und deine Bestellungen. Wähle ein Thema, schick mir ein Foto oder einen Befund – oder schreib bzw. sprich einfach.');
+ const m=addMsg('bot','<b>Hallo Markus, wie kann ich dir helfen?</b> Ich kenne deine Analyse, deine 22 Nährstoffe und deine Bestellungen. Wähle ein Thema, schick mir ein Foto oder einen Befund – oder schreib bzw. sprich einfach.');
  $$('#chatList button').forEach(b=>b.classList.remove('on'));
 }
 const attReply=atts=>({t:`Danke, ich habe ${atts.length===1?`deine Datei <b>${esc(atts[0].name)}</b>`:`deine ${atts.length} Dateien`} erhalten. In der echten App lese ich die Laborwerte aus, trage sie für dich ein und werte sie aus. Eine ärztliche Abklärung ersetzt das nicht.`,x:()=>`<div class="cx">${cchip('data-refine="blut"','Eingetragene Werte prüfen','drop')}</div>`});
