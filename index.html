@@ -3935,7 +3935,7 @@ const B=(()=>{
  function sprite(c){if(sprites[c])return sprites[c];const s=document.createElement('canvas');s.width=s.height=64;const g=s.getContext('2d');const gr=g.createRadialGradient(32,32,0,32,32,32);const [r,gg,b]=hex(c);
   gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.18,`rgba(${r},${gg},${b},.95)`);gr.addColorStop(.45,`rgba(${r},${gg},${b},.28)`);gr.addColorStop(1,`rgba(${r},${gg},${b},0)`);g.fillStyle=gr;g.fillRect(0,0,64,64);return sprites[c]=s}
  async function load(){
-  try{const r=await fetch('gedaechtnis/hirn.bin');if(!r.ok)throw 0;const buf=await r.arrayBuffer();N=new DataView(buf).getUint32(0,true);P=new Int16Array(buf.slice(4),0,N*6)}
+  try{let buf;try{const r=await fetch('gedaechtnis/hirn.bin');if(!r.ok)throw 0;buf=await r.arrayBuffer()}catch(_){/* Fallback (Claude-Artifact serviert kein .bin): Base64 als .txt */const r=await fetch('gedaechtnis/hirn.txt');if(!r.ok)throw 0;const t=atob((await r.text()).trim());const u=new Uint8Array(t.length);for(let i=0;i<t.length;i++)u[i]=t.charCodeAt(i);buf=u.buffer}N=new DataView(buf).getUint32(0,true);P=new Int16Array(buf.slice(4),0,N*6)}
   catch(_){ $('#gdLoad').textContent='Gehirn konnte nicht geladen werden.';return}
   $('#gdLoad').hidden=true;rebuild();
  }
