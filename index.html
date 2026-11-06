@@ -2456,10 +2456,10 @@ function renderOrders(){$('#orderGrid').innerHTML=ORDERS.map((o,i)=>orderCard(o,
 /* ================= ANALYSEN ================= */
 /* Cover: Nutrition + Shape aus rb-tester (vorschau-cover.png → berichte/*.webp); Performance: Platzhalter-Cover */
 const ANA=[
- {k:'nutrition',t:'Nutrition',n:'Nutrition-Analyse',sub:'Nutrition Detox Burnout Bio Age',p:'Lifestyle+',o:'NS-fc7ddeb2',d:'21.09.2026',cov:'berichte/cover.webp',back:'berichte/cover-back.webp',toc:1},
+ {k:'nutrition',t:'Nutrition',n:'Nutrition-Analyse',sub:'Nutrition Detox Burnout Bio Age',p:'Lifestyle+',o:'NS-fc7ddeb2',d:'21.09.2026',cov:'berichte/cover.webp',back:'berichte/cover-back.webp',toc:1,f:'berichte/tester/nutrition'},
  {k:'ls2',t:'Lifestyle+',n:'Lifestyle+ Bericht',sub:'Lifestyle+ Bericht',p:'Lifestyle+',o:'NS-28b97f31',d:'17.09.2026',cov:null,back:null,col:'#1A7C4E'},
  {k:'ls3',t:'Lifestyle+',n:'Lifestyle+ Bericht',sub:'Lifestyle+ Bericht',p:'Lifestyle+',o:'NS-1badac9e',d:'09.09.2026',cov:null,back:null,col:'#1A7C4E'},
- {k:'shape',t:'Shape',n:'Shape-Analyse',sub:'Deine Genanalyse zur Gewichtsregulation',p:'Shape (Digital PDF)',o:'NS-cf1763e3',d:'07.09.2026',cov:'berichte/shape-cover.webp',back:'berichte/shape-cover-back.webp'},
+ {k:'shape',t:'Shape',n:'Shape-Analyse',sub:'Deine Genanalyse zur Gewichtsregulation',p:'Shape (Digital PDF)',o:'NS-cf1763e3',d:'07.09.2026',cov:'berichte/shape-cover.webp',back:'berichte/shape-cover-back.webp',f:'berichte/tester/shape'},
  {k:'performance',t:'Performance',n:'Performance-Analyse',sub:'',p:'Performance (Digital PDF)',o:'NS-b0766247',d:'07.09.2026',cov:null,back:null,col:'#2A8C9C'}
 ];
 const AB=Object.fromEntries(ANA.map(a=>[a.k,a]));
@@ -2870,11 +2870,11 @@ document.addEventListener('click',e=>{
  if(d.bkclose!==undefined){ovlClose('#book');return}
  if(d.mrclose!==undefined){ovlClose('#mread');return}
  if(d.bk){bkGo(+d.bk);return}
- if(d.book!==undefined){bkOpen(d.book);return}
- if(d.mread!==undefined){mrOpen(d.mread);return}
+ if(d.book!==undefined){const a=AB[d.book];if(a&&a.f){window.open(a.f+'-buch.html','_blank');return}bkOpen(d.book);return}
+ if(d.mread!==undefined){const a=AB[d.mread];if(a&&a.f){window.open(a.f+'-handy.html','_blank');return}mrOpen(d.mread);return}
  if(d.sarr){const r=t.parentElement.querySelector('.srow');r.scrollBy({left:+d.sarr*Math.max(240,r.clientWidth*.7),behavior:RM?'auto':'smooth'});return}
  if(d.viewMode){NS.view=d.viewMode;$$('[data-view-mode]').forEach(b=>b.setAttribute('aria-pressed',b===t));renderFoodGrid();return}
- if(d.pdf){toast(`Download startet: ${d.pdf} als PDF (Klickdummy).`);return}
+ if(d.pdf){const a=ANA.find(x=>`${x.n} ${x.o}`===d.pdf);if(a&&a.f){window.open(a.f+'.pdf','_blank');return}toast(`Download startet: ${d.pdf} als PDF (Klickdummy).`);return}
  if(d.att){$(d.att==='photo'?'#fPhoto':'#fFile').click();return}
  if(d.gup!==undefined){$('#fGen').click();return}
  if(d.attrm){C.att=C.att.filter(a=>a.id!==d.attrm);renderAtts();return}
