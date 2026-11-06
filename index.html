@@ -2045,6 +2045,11 @@ body.touring .rail,body.touring .mtop{z-index:89}
 <div class="ovl mread" id="mread" role="dialog" aria-modal="true" aria-labelledby="mrTitle" hidden>
   <div class="mr-phone"><div class="mr-top"><b id="mrTitle">Lifestyle+ Bericht</b><button class="sh-x" data-mrclose aria-label="Handy-Ansicht schließen"><svg class="ic"><use href="#i-x"/></svg></button></div><div class="mr-body" id="mrBody"></div></div>
 </div>
+<!-- Bericht aus dem Report Studio: in der App anzeigen statt neues Fenster -->
+<div class="ovl book" id="rview" role="dialog" aria-modal="true" aria-labelledby="rvTitle" hidden>
+  <div class="bk-top"><span class="ico lime" style="width:38px;height:38px;border-radius:12px"><svg class="ic"><use href="#i-book"/></svg></span><div><b id="rvTitle">Bericht</b><br><small id="rvSub"></small></div><button class="sh-x" data-rvclose aria-label="Bericht schließen"><svg class="ic"><use href="#i-x"/></svg></button></div>
+  <iframe id="rvFrame" title="Bericht" style="flex:1;width:100%;border:0;background:#fff"></iframe>
+</div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2.2"/></symbol>
@@ -2512,7 +2517,9 @@ function bkGo(d){const N=PAGES.length;
  bkRender();
 }
 function ovlOpen(id){BK.last=document.activeElement;$(id).hidden=false;document.body.style.overflow='hidden';setTimeout(()=>$(id+' .sh-x').focus(),40)}
-function ovlClose(id,silent){const o=$(id);if(o.hidden)return;o.hidden=true;document.body.style.overflow='';if(!silent&&BK.last&&BK.last.focus)BK.last.focus()}
+function ovlClose(id,silent){const o=$(id);if(o.hidden)return;o.hidden=true;document.body.style.overflow='';if(id==='#rview')$('#rvFrame').src='about:blank';if(!silent&&BK.last&&BK.last.focus)BK.last.focus()}
+function rvOpen(a,teil,sub){$('#rvTitle').textContent=`${a.n} · ${a.o}`;$('#rvSub').textContent=sub;$('#rvFrame').src=a.f+teil;ovlOpen('#rview')}
+function pdfLaden(a){const l=document.createElement('a');l.href=a.f+'.pdf';l.download=`${a.n} ${a.o}.pdf`;document.body.appendChild(l);l.click();l.remove();toast(`Download startet: ${a.n} ${a.o} als PDF.`)}
 function bkOpen(k){closeSheet();const a=AB[k]||ANA[0];BK.a=a.k;PAGES=bkPages(a);$('#bkTitle').textContent=a.n+' · '+a.o;BK.sp=0;BK.pg=0;bkRender();ovlOpen('#book')}
 function mrOpen(k){closeSheet();const a=AB[k]||ANA[0];
  $('#mrTitle').textContent=a.n;
@@ -2857,7 +2864,7 @@ function route(){
  document.body.className=document.body.className.replace(/\br-\S+/g,'').trim()+' r-'+v;
  $$('.rail .nav[data-r],.mtabs a').forEach(a=>{const on=a.dataset.r===v;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
  {const m=$('.mtabs a.on');if(m){const p=m.parentElement;p.scrollLeft=Math.max(0,m.offsetLeft-p.clientWidth/2+m.offsetWidth/2)}}
- closeSheet();ovlClose('#book',1);ovlClose('#mread',1);ovlClose('#fdet',1);window.scrollTo(0,0);bindTilt();
+ closeSheet();ovlClose('#book',1);ovlClose('#mread',1);ovlClose('#rview',1);ovlClose('#fdet',1);window.scrollTo(0,0);bindTilt();
  if(r==='abos')setTimeout(()=>$('#aboSec').scrollIntoView({block:'start'}),40);
  setTimeout(swUpd,60);
 }
@@ -2870,11 +2877,12 @@ document.addEventListener('click',e=>{
  if(d.bkclose!==undefined){ovlClose('#book');return}
  if(d.mrclose!==undefined){ovlClose('#mread');return}
  if(d.bk){bkGo(+d.bk);return}
- if(d.book!==undefined){const a=AB[d.book];if(a&&a.f){window.open(a.f+'-buch.html','_blank');return}bkOpen(d.book);return}
- if(d.mread!==undefined){const a=AB[d.mread];if(a&&a.f){window.open(a.f+'-handy.html','_blank');return}mrOpen(d.mread);return}
+ if(d.rvclose!==undefined){ovlClose('#rview');return}
+ if(d.book!==undefined){const a=AB[d.book];if(a&&a.f){rvOpen(a,'-buch.html','Digital durchblättern');return}bkOpen(d.book);return}
+ if(d.mread!==undefined){const a=AB[d.mread];if(a&&a.f){rvOpen(a,'-handy.html','Ansicht für Mobilgeräte');return}mrOpen(d.mread);return}
  if(d.sarr){const r=t.parentElement.querySelector('.srow');r.scrollBy({left:+d.sarr*Math.max(240,r.clientWidth*.7),behavior:RM?'auto':'smooth'});return}
  if(d.viewMode){NS.view=d.viewMode;$$('[data-view-mode]').forEach(b=>b.setAttribute('aria-pressed',b===t));renderFoodGrid();return}
- if(d.pdf){const a=ANA.find(x=>`${x.n} ${x.o}`===d.pdf);if(a&&a.f){window.open(a.f+'.pdf','_blank');return}toast(`Download startet: ${d.pdf} als PDF (Klickdummy).`);return}
+ if(d.pdf){const a=ANA.find(x=>`${x.n} ${x.o}`===d.pdf);if(a&&a.f){pdfLaden(a);return}toast(`Download startet: ${d.pdf} als PDF (Klickdummy).`);return}
  if(d.att){$(d.att==='photo'?'#fPhoto':'#fFile').click();return}
  if(d.gup!==undefined){$('#fGen').click();return}
  if(d.attrm){C.att=C.att.filter(a=>a.id!==d.attrm);renderAtts();return}
@@ -2918,10 +2926,10 @@ document.addEventListener('input',e=>{
  if(t.matches('[data-wfree]')){WZ.free=t.value;return}
  if(t.matches('[data-ds]'))dosCheck(t);
 });
-const openBox=()=>!$('#fdet').hidden?$('#fdet'):!$('#book').hidden?$('#book'):!$('#mread').hidden?$('#mread'):$('#sheet').classList.contains('on')?$('#sheet'):null;
+const openBox=()=>!$('#rview').hidden?$('#rview'):!$('#fdet').hidden?$('#fdet'):!$('#book').hidden?$('#book'):!$('#mread').hidden?$('#mread'):$('#sheet').classList.contains('on')?$('#sheet'):null;
 document.addEventListener('keydown',e=>{
  const t=e.target,box=openBox();
- if(e.key==='Escape'&&box){if(box.id==='fdet')ovlClose('#fdet');else if(box.id==='book')ovlClose('#book');else if(box.id==='mread')ovlClose('#mread');else closeSheet();return}
+ if(e.key==='Escape'&&box){if(box.id==='rview')ovlClose('#rview');else if(box.id==='fdet')ovlClose('#fdet');else if(box.id==='book')ovlClose('#book');else if(box.id==='mread')ovlClose('#mread');else closeSheet();return}
  if(box&&box.id==='book'&&(e.key==='ArrowRight'||e.key==='ArrowLeft')){e.preventDefault();bkGo(e.key==='ArrowRight'?1:-1);return}
  if(e.key==='Enter'&&box&&box.id==='sheet'&&WZ.k&&typeof WZ.scr==='number'&&!t.matches('textarea,button,a')){e.preventDefault();wzNav(1);return}
  if((e.key==='Enter'||e.key===' ')&&t.matches('[data-flip],article[tabindex][data-food],article[tabindex][data-order],article[tabindex][data-go],article[tabindex][data-refine],article[tabindex][data-sheet],article[tabindex][data-toast]')){e.preventDefault();t.click()}
