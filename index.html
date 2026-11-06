@@ -1515,6 +1515,81 @@ body.touring .rail,body.touring .mtop{z-index:89}
 .shopit .btn{justify-content:center;margin-top:4px}
 .shop-hint{margin:0 0 14px;font-size:13px;color:#7A6F80}
 </style>
+<style id="gd-css">/* GEDAECHTNIS:BEGIN – „Mein Gedächtnis“ (Nachbau der Chatbot-Seite /memory, Klickdummy) */
+.gd .hero{margin-bottom:14px}
+.gd-stage{position:relative;height:calc(100vh - 200px);min-height:560px;border-radius:28px;overflow:hidden;
+  background:radial-gradient(60% 70% at 62% 50%,rgba(140,29,110,.28),transparent 70%),linear-gradient(180deg,#14000F,#07000A);
+  border:1px solid rgba(255,255,255,.09);box-shadow:var(--sh)}
+.gd-brain{position:absolute;inset:0;touch-action:none;cursor:grab}
+.gd-brain.drag{cursor:grabbing}
+.gd-brain canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.gd-labels{position:absolute;inset:0;pointer-events:none}
+.gd-lab{position:absolute;left:0;top:0;transform:translate(-50%,-140%);pointer-events:auto;white-space:nowrap;font-size:11px;font-weight:700;
+  padding:3px 9px;border-radius:999px;background:rgba(18,0,14,.62);border:1px solid rgba(255,255,255,.16);color:#fff;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:opacity .25s,background .2s;display:flex;align-items:center;gap:6px}
+.gd-lab i{width:7px;height:7px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c)}
+.gd-lab:hover,.gd-lab.on{background:rgba(255,255,255,.92);color:var(--lime-ink)}
+.gd-zoom{position:absolute;right:14px;bottom:14px;display:flex;gap:2px;padding:4px;border-radius:14px;background:rgba(18,0,14,.7);border:1px solid rgba(255,255,255,.14)}
+.gd-zoom button{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;color:rgba(255,255,255,.85);font-size:18px;font-weight:700;line-height:1}
+.gd-zoom button:hover{background:rgba(255,255,255,.12);color:#fff}
+.gd-hint{position:absolute;right:16px;top:14px;font-size:11px;color:rgba(255,255,255,.45);pointer-events:none}
+.gd-load{position:absolute;inset:0;display:grid;place-items:center;font-size:13px;color:rgba(255,255,255,.6);pointer-events:none}
+.gd-load[hidden]{display:none}
+.gd-panel{position:absolute;left:14px;top:14px;bottom:14px;width:340px;display:flex;flex-direction:column;border-radius:22px;z-index:2;
+  background:rgba(22,0,17,.72);border:1px solid rgba(255,255,255,.13);-webkit-backdrop-filter:blur(16px) saturate(1.3);backdrop-filter:blur(16px) saturate(1.3)}
+.gd-ph{display:flex;align-items:center;gap:8px;padding:16px 16px 10px}
+.gd-ph h2{font-size:15px;font-weight:800;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gd-ph .gd-back{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.1);flex:none}
+.gd-ph .gd-back[hidden],.gd-ph .cnt:empty{display:none}
+.gd-ph .gd-back:hover{background:rgba(255,255,255,.2)}
+.gd-ph .gd-back svg{transform:rotate(180deg)}
+.gd-search{margin:0 16px 10px;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.gd-search input{flex:1;min-width:0;background:none;border:0;outline:0;font-size:13px;color:#fff}
+.gd-search input::placeholder{color:rgba(255,255,255,.45)}
+.gd-search svg{width:15px;height:15px;opacity:.6;flex:none}
+.gd-seg{margin:0 16px 8px;display:grid;grid-template-columns:repeat(3,1fr);padding:3px;border-radius:12px;background:rgba(255,255,255,.07)}
+.gd-seg button{padding:6px 4px;border-radius:9px;font-size:12px;font-weight:700;color:rgba(255,255,255,.7)}
+.gd-seg button[aria-pressed="true"]{background:rgba(255,255,255,.92);color:var(--lime-ink)}
+.gd-body{flex:1;overflow:auto;padding:4px 8px 8px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.2) transparent}
+.gd-row{width:100%;display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:12px;text-align:left;font-size:13px;color:rgba(255,255,255,.9)}
+.gd-row:hover,.gd-row.on{background:rgba(255,255,255,.09)}
+.gd-row .dot{width:9px;height:9px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c);flex:none}
+.gd-row .tx{flex:1;min-width:0}
+.gd-row .tx b{display:block;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gd-row .tx small{display:block;font-size:11.5px;color:rgba(255,255,255,.55);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gd-row .n{font-size:11.5px;color:rgba(255,255,255,.55);font-variant-numeric:tabular-nums}
+.gd-row .fl{font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:999px;background:rgba(255,184,28,.18);color:#FFCF66}
+.gd-row .fl.ok{background:rgba(95,168,30,.2);color:#B5E07A}
+.gd-row > .ic{opacity:.45;width:16px;height:16px}
+.gd-cap{font-size:10.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);padding:14px 10px 6px}
+.gd-empty{padding:18px 10px;font-size:13px;color:rgba(255,255,255,.6)}
+.gd-det{padding:2px 8px 8px}
+.gd-det .big{font-family:var(--num);font-size:34px;line-height:1.05;margin:6px 0 2px;color:#fff}
+.gd-det .big small{font-family:var(--f);font-size:14px;font-weight:700;color:rgba(255,255,255,.7);margin-left:6px}
+.gd-det .meta{font-size:12px;color:rgba(255,255,255,.6);display:flex;flex-wrap:wrap;gap:4px 12px;margin-bottom:12px}
+.gd-det p{font-size:13px;color:rgba(255,255,255,.85);margin-bottom:12px}
+.gd-det .acts{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.gd-det .acts .btn{padding:8px 13px;font-size:12.5px}
+.gd-hist{border-top:1px solid rgba(255,255,255,.1);padding-top:10px}
+.gd-hist h4{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px}
+.gd-spark{width:100%;height:70px;display:block;margin-bottom:6px}
+.gd-hrow{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.82)}
+.gd-hrow span:last-child{font-variant-numeric:tabular-nums;font-weight:700}
+.gd-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.gd-chips span{font-size:12px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14)}
+.gd-foot{border-top:1px solid rgba(255,255,255,.1);padding:10px 16px 12px;display:flex;gap:8px;align-items:center}
+.gd-foot button{font-size:12px;font-weight:700;color:#FF8A9B;display:flex;align-items:center;gap:6px;padding:6px 8px;border-radius:10px}
+.gd-foot button:hover{background:rgba(255,138,155,.12)}
+@media (max-width:760px){
+  .gd-stage{height:auto;min-height:0;display:flex;flex-direction:column;border-radius:24px}
+  .gd-brain{position:relative;inset:auto;height:min(52vh,380px);flex:none;touch-action:pan-y}
+  .gd-panel{position:relative;left:auto;top:auto;bottom:auto;width:auto;margin:0 8px 8px;border-radius:18px}
+  .gd-body{max-height:none;overflow:visible}
+  .gd-hint{display:none}
+  .gd-zoom{bottom:10px;right:10px}
+  .gd-lab{font-size:10px;padding:2px 7px}
+}
+/* GEDAECHTNIS:END */</style>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
@@ -1531,12 +1606,13 @@ body.touring .rail,body.touring .mtop{z-index:89}
   <button class="nav shopnav" data-shop aria-label="Shop öffnen"><span class="shop-ic"><svg class="ic"><use href="#i-cart"/></svg></span>Shop</button>
   <a class="nav" href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a>
   <span class="sp"></span>
+  <a class="nav" href="#gedaechtnis" data-r="gedaechtnis"><svg class="ic"><use href="#i-brain"/></svg>Mein Gedächtnis</a>
   <button class="nav" data-toast="Du wurdest abgemeldet (Klickdummy)."><svg class="ic"><use href="#i-logout"/></svg>Abmelden</button>
 </nav>
 <div class="center">
 <header class="mtop">
   <div class="mtop-in"><a class="mlogo" href="#coach" aria-label="GENEius – Startseite"><svg viewBox="-8.53 -17.64 105.5 105.5" width="30" height="30" aria-hidden="true"><circle cx="27.38" cy="5.57" r="3.27" fill="var(--a)"></circle><line x1="61.04" y1="5.57" x2="74.43" y2="5.57" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="14.57" y1="14.27" x2="20.81" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="67.63" y1="14.27" x2="87.43" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="8.37" y1="22.98" x2="27.4" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="22.98" x2="73.74" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.92" y1="22.98" x2="93.43" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.57" y1="31.69" x2="32.35" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="56.09" y1="31.69" x2="71.24" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="81.42" y1="31.69" x2="95.23" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.97" y1="40.4" x2="27.4" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="40.4" x2="73.08" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.26" y1="40.4" x2="93.23" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="10.77" y1="49.1" x2="20.81" y2="49.1" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><circle cx="67.63" cy="49.1" r="3.27" fill="var(--a)"></circle><line x1="16.37" y1="57.81" x2="27.4" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="57.81" x2="62.03" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="38.89" y1="66.95" x2="44.11" y2="66.95" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="5.57" x2="50.85" y2="5.57" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="14.27" x2="57.45" y2="14.27" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="22.98" x2="50.85" y2="22.98" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="42.54" y1="31.69" x2="45.9" y2="31.69" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="40.4" x2="50.85" y2="40.4" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="49.1" x2="57.45" y2="49.1" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="57.81" x2="50.85" y2="57.81" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line></svg><span>GENE<b>ius</b></span></a><button class="shop-m" data-shop aria-label="Shop öffnen"><svg class="ic"><use href="#i-cart"/></svg><span>Shop</span></button><button class="tour-btn sm" data-tour aria-label="Tutorial starten"><svg class="ic"><use href="#i-sparkle"/></svg><span>Tutorial</span></button></div>
-  <nav class="mtabs" aria-label="Bereiche mobil"><a href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a><a href="#naehrstoffe" data-r="naehrstoffe" aria-label="Nährstoffe"><svg class="ic"><use href="#i-capsule"/></svg>Bedarf</a><a href="#lebensmittel" data-r="lebensmittel" aria-label="Lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Essen</a><a href="#medikamente" data-r="medikamente" aria-label="Medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a><a href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a><a href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Nuggets</a><a href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellung</a><a href="#dna" data-r="dna" aria-label="DNA-Daten"><svg class="ic"><use href="#i-dna"/></svg>DNA</a><a href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a></nav>
+  <nav class="mtabs" aria-label="Bereiche mobil"><a href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a><a href="#naehrstoffe" data-r="naehrstoffe" aria-label="Nährstoffe"><svg class="ic"><use href="#i-capsule"/></svg>Bedarf</a><a href="#lebensmittel" data-r="lebensmittel" aria-label="Lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Essen</a><a href="#medikamente" data-r="medikamente" aria-label="Medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a><a href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a><a href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Nuggets</a><a href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellung</a><a href="#dna" data-r="dna" aria-label="DNA-Daten"><svg class="ic"><use href="#i-dna"/></svg>DNA</a><a href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a><a href="#gedaechtnis" data-r="gedaechtnis" aria-label="Mein Gedächtnis"><svg class="ic"><use href="#i-brain"/></svg>Gedächtnis</a></nav>
 </header>
 <header class="wrap topbar">
   <span></span>
@@ -1996,6 +2072,35 @@ body.touring .rail,body.touring .mtop{z-index:89}
  const cw=()=>{const d=document.getElementById('gn-deck');if(!d)return;const c=getComputedStyle(d).getPropertyValue('--cw');const card=d.querySelector('.card');if(card)d.parentElement.style.setProperty('--cw',card.offsetWidth+'px')};
  addEventListener('resize',cw);setInterval(cw,1500);cw();})();</script>
 <!-- GENE-NUGGETS:END -->
+<!-- GEDAECHTNIS:BEGIN -->
+<section class="view gd" data-view="gedaechtnis" hidden aria-labelledby="h-gd">
+<div class="wrap">
+  <header class="hero compact"><div class="hero-in">
+    <div>
+      <div class="eyebrow">Genius Coach</div>
+      <h1 id="h-gd">Mein Gedächtnis</h1>
+      <p class="lead">Das merkt sich dein Genius Coach aus euren Gesprächen und aus deinen Analysen. Du entscheidest, was bleibt.</p>
+    </div>
+  </div></header>
+  <div class="gd-stage">
+    <div class="gd-brain" id="gdBrain" aria-label="Dein Gedächtnis als Gehirn. Ziehen zum Drehen, Punkte antippen zum Öffnen.">
+      <canvas id="gdCv"></canvas>
+      <div class="gd-labels" id="gdLabels"></div>
+      <div class="gd-load" id="gdLoad">Gehirn wird geladen …</div>
+      <p class="gd-hint">Ziehen zum Drehen · Punkte anklicken</p>
+      <div class="gd-zoom" role="group" aria-label="Ansicht"><button data-gdzoom="-1" aria-label="Verkleinern">−</button><button data-gdzoom="1" aria-label="Vergrößern">+</button><button data-gdzoom="0" aria-label="Ansicht zurücksetzen"><svg class="ic sm"><use href="#i-refresh"/></svg></button></div>
+    </div>
+    <aside class="gd-panel" aria-label="Über dich">
+      <div class="gd-ph"><button class="gd-back" data-gdback hidden aria-label="Zurück"><svg class="ic sm"><use href="#i-chev"/></svg></button><h2 id="gdTitle">Über dich</h2><span class="cnt" id="gdCnt"></span></div>
+      <label class="gd-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="gdQ" type="search" placeholder="Im Gedächtnis suchen" aria-label="Im Gedächtnis suchen"></label>
+      <div class="gd-seg" role="group" aria-label="Filter"><button data-gdseg="all" aria-pressed="true">Alle</button><button data-gdseg="mem" aria-pressed="false">Gedächtnis</button><button data-gdseg="gene" aria-pressed="false">Gene</button></div>
+      <div class="gd-body" id="gdBody"></div>
+      <div class="gd-foot"><button data-gdwipe><svg class="ic sm"><use href="#i-x"/></svg>Mein ganzes Gedächtnis löschen</button></div>
+    </aside>
+  </div>
+</div>
+</section>
+<!-- GEDAECHTNIS:END -->
 </main>
 
 <footer class="wrap foot">
@@ -2854,7 +2959,7 @@ function bindTilt(){
 }
 
 /* ================= ROUTER ================= */
-const ROUTES=['coach','naehrstoffe','lebensmittel','medikamente','bestellungen','abos','analysen','berichte','dna','profil','nuggets'];
+const ROUTES=['coach','naehrstoffe','lebensmittel','medikamente','bestellungen','abos','analysen','berichte','dna','profil','nuggets','gedaechtnis'];
 const ALIAS={berichte:'analysen',abos:'bestellungen'};
 function route(){
  let r=location.hash.slice(1);const rVoll=r;if(/^medikamente(\/|$)/.test(r))r='medikamente';if(!ROUTES.includes(r))r='coach';
@@ -3676,5 +3781,253 @@ if(/^#medikamente(\/|$)/.test(location.hash))window.medRoute(location.hash.slice
 })();
 </script>
 <!-- MEDIKAMENTE:END -->
+<script id="gd-js">/* GEDAECHTNIS:BEGIN – „Mein Gedächtnis“: Demo-Daten (nach demo/data/memory.mjs des Chatbots, an Markus angepasst),
+   Panel (Übersicht → Kategorie → Eintrag) und das Gehirn als Punktwolke (gedaechtnis/hirn.bin, aus brain-mesh.bin gesampelt). */
+(()=>{
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fire=(k,v)=>{const b=document.createElement('button');b.hidden=true;b.dataset[k]=v;document.body.appendChild(b);b.click();b.remove()};const say=m=>fire('toast',m);
+const RMo=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const dd=n=>{const d=new Date(Date.now()-n*864e5);return d.toLocaleDateString('de-AT',{day:'2-digit',month:'2-digit',year:'numeric'})};
+const rel=n=>n<=0?'heute':n===1?'gestern':n<14?`vor ${n} Tagen`:n<60?`vor ${Math.round(n/7)} Wochen`:`vor ${Math.round(n/30)} Monaten`;
+const de=v=>String(v).replace('.',',');
+/* ---------- Daten ---------- */
+const M=(t,v,u,ago,o={})=>({t,v,u,ago,...o});
+const CATS=[
+ {k:'blut',n:'Blutwerte',c:'#FF5C93',kind:'mem',src:'aus deinem Laborbefund',items:[
+  M('Ferritin',68,'ng/ml',20,{ref:'30–400',h:[[18,210,'niedrig'],[41,120],[68,20]]}),
+  M('Vitamin D (25-OH)',33,'ng/ml',20,{ref:'30–100',h:[[17,210,'niedrig'],[24,120,'niedrig'],[33,20]]}),
+  M('LDL-Cholesterin',131,'mg/dl',20,{ref:'unter 115',fl:'hoch',h:[[124,120,'hoch'],[131,20,'hoch']]}),
+  M('HDL-Cholesterin',52,'mg/dl',20,{ref:'über 40'}),
+  M('HbA1c',5.4,'%',20,{ref:'4,0–5,6'}),
+  M('TSH',2.1,'mU/l',20,{ref:'0,4–4,0'}),
+  M('Vitamin B12',412,'pg/ml',20,{ref:'200–900'}),
+  M('CRP',1.2,'mg/l',20,{ref:'unter 5'}),
+  M('Magnesium',0.71,'mmol/l',20,{ref:'0,75–1,05',fl:'niedrig'})]},
+ {k:'koerper',n:'Körpermaße',c:'#4FC3F7',kind:'mem',src:'aus dem Chat',items:[
+  M('Gewicht',86.4,'kg',3,{h:[[91,150],[89.6,110],[88.2,80],[87.5,45],[86.9,18],[86.4,3]]}),
+  M('Größe',182,'cm',150),
+  M('Bauchumfang',97,'cm',18,{h:[[101,110],[97,18]]})]},
+ {k:'ziele',n:'Ziele',c:'#C6D63F',kind:'mem',src:'aus dem Chat',items:[
+  M('Gewicht','75','kg',5,{x:'Von 91 kg auf 75 kg. Bisher geschafft: 4,6 kg.'}),
+  M('Fitness','10 km unter einer Stunde','',25,{x:'Bis '+dd(-45)+'. Dazu läuft dein 4-Wochen-Laufplan.'}),
+  M('Eiweiß','130','g pro Tag',14,{x:'Eiweiß zu jeder Mahlzeit.'})]},
+ {k:'ernaehrung',n:'Ernährung',c:'#FFB81C',kind:'mem',src:'aus dem Chat',items:[
+  M('Ernährungsweise','Mischkost','',30,{x:'Unter der Woche meist vegetarisch.'}),
+  M('Allergien','Erdnüsse','',30,{chips:['Erdnüsse']}),
+  M('Mag ich nicht','Koriander, Oliven','',22,{chips:['Koriander','Oliven']}),
+  M('Koffein','2 Kaffee vor Mittag','',12)]},
+ {k:'essen',n:'Ernährungstagebuch',c:'#FF8A5B',kind:'mem',src:'aus dem Chat',items:[
+  M('Frühstück','Haferflocken, Banane','',0,{x:'360 kcal · 12 g Eiweiß'}),
+  M('Getränke','1,5 l Wasser','',0),
+  M('Mittagessen','Falafel-Bowl','',1,{x:'640 kcal · 21 g Eiweiß'}),
+  M('Snack','Apfel, Mandeln','',1,{x:'210 kcal'}),
+  M('Frühstück','Eier, Spinat, Toast','',1,{x:'380 kcal · 22 g Eiweiß'}),
+  M('Abendessen','Tofu-Pfanne mit Reis','',2,{x:'690 kcal · 31 g Eiweiß'}),
+  M('Mittagessen','Linsensuppe, Roggenbrot','',3,{x:'560 kcal · 26 g Eiweiß'}),
+  M('Frühstück','Haferflocken, Beeren, Skyr','',3,{x:'420 kcal · 24 g Eiweiß'})]},
+ {k:'training',n:'Training',c:'#8F7CFF',kind:'mem',src:'aus dem Chat',items:[
+  M('Spaziergang','60 min','',0,{x:'5,5 km · locker'}),
+  M('Schwimmen','35 min','',2,{x:'mittel'}),
+  M('Laufen','41 min','',4,{x:'7 km · intensiv'}),
+  M('Krafttraining','50 min','',6,{x:'intensiv'}),
+  M('Radfahren','75 min','',9,{x:'28 km · mittel'}),
+  M('Yoga','40 min','',11,{x:'locker'}),
+  M('Laufen','30 min','',13,{x:'5 km · mittel'}),
+  M('Krafttraining','45 min','',17,{x:'intensiv'}),
+  M('Laufen','32 min','',20,{x:'5,2 km · mittel'})]},
+ {k:'plaene',n:'Pläne',c:'#2EC4B6',kind:'mem',src:'mit dem Coach erstellt',items:[
+  M('4-Wochen-Laufplan','Woche 2 von 4','',8,{plan:1,x:'3 Einheiten pro Woche: locker laufen, Kraft für Beine und Rumpf ohne Sprünge, ein langer Lauf.'})]},
+ {k:'kuehlschrank',n:'Kühlschrank',c:'#9BE07A',kind:'mem',src:'aus dem Chat',items:[
+  M('Im Kühlschrank','8 Lebensmittel','',3,{chips:['Eier','Spinat','Tofu','Skyr','Linsen','Paprika','Feta','Beeren']})]},
+ {k:'notizen',n:'Notizen',c:'#B388FF',kind:'mem',src:'aus dem Chat',items:[
+  M('Schlaf','Schläft unter der Woche schlecht, am Wochenende besser','',12),
+  M('Schlaf','Geht meist gegen 23:30 ins Bett','',9),
+  M('Stress','Jeden Herbst Deadlines im Job','',8),
+  M('Nahrungsergänzung','Nimmt abends Magnesium','',15),
+  M('Nahrungsergänzung','Hat im September mit Eisen aufgehört','',10),
+  M('Kommunikation','Mag kurze Antworten mit Plan','',30),
+  M('Sport','Knie schmerzt nach langen Bergab-Läufen','',6)]},
+ {k:'g-nut',n:'Nutrition-Analyse',c:'#E040FB',kind:'gene',src:'aus deiner Analyse vom 21.09.2026',ana:1,items:['Nutrition','Detox','Burnout','Bio Age'].map(t=>M(t,'Kapitel','',46))},
+ {k:'g-ls2',n:'Lifestyle+ Bericht',c:'#FF6EC7',kind:'gene',src:'aus deiner Analyse vom 17.09.2026',ana:1,items:[M('Lifestyle+','Bericht','',50)]},
+ {k:'g-ls3',n:'Lifestyle+ Bericht',c:'#C77DFF',kind:'gene',src:'aus deiner Analyse vom 09.09.2026',ana:1,items:[M('Lifestyle+','Bericht','',58)]},
+ {k:'g-shape',n:'Shape-Analyse',c:'#7B61FF',kind:'gene',src:'aus deiner Analyse vom 07.09.2026',ana:1,items:[M('Gewichtsregulation','Kapitel','',60)]},
+ {k:'g-perf',n:'Performance-Analyse',c:'#5AA9FF',kind:'gene',src:'aus deiner Analyse vom 07.09.2026',ana:1,items:[M('Performance','Bericht','',60)]}
+];
+CATS.forEach(c=>c.items.forEach((it,i)=>{it.id=c.k+'-'+i;it.cat=c}));
+let BLOCKED=['Religion','Schwangerschaft'];
+const S={page:'outline',key:null,id:null,seg:'all',q:''};
+const catOf=k=>CATS.find(c=>c.k===k);
+const itemOf=id=>{for(const c of CATS){const it=c.items.find(i=>i.id===id);if(it)return it}return null};
+const vis=c=>S.seg==='all'||S.seg===c.kind;
+const valTxt=it=>typeof it.v==='number'?de(it.v)+(it.u?' '+it.u:''):esc(it.v)+(it.u?' '+esc(it.u):'');
+const chev='<svg class="ic"><use href="#i-chev"/></svg>';
+/* ---------- Panel ---------- */
+function row(attrs,c,title,sub,right){return `<button class="gd-row" ${attrs} style="--c:${c}"><span class="dot"></span><span class="tx"><b>${title}</b>${sub?`<small>${sub}</small>`:''}</span>${right||''}${chev}</button>`}
+function spark(h){const vs=h.map(x=>x[0]),mn=Math.min(...vs),mx=Math.max(...vs),W=300,H=70,p=8,sp=mx-mn||1;
+ const pts=h.map((x,i)=>[p+i*(W-2*p)/Math.max(1,h.length-1),H-p-(x[0]-mn)/sp*(H-2*p)]);
+ return `<svg class="gd-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${pts.map(q=>q.join(',')).join(' ')}" fill="none" stroke="var(--c)" stroke-width="2.5" vector-effect="non-scaling-stroke"/>${pts.map(q=>`<circle cx="${q[0]}" cy="${q[1]}" r="3.5" fill="var(--c)"/>`).join('')}</svg>`}
+function render(){
+ const body=$('#gdBody');if(!body)return;
+ const back=$('[data-gdback]'),title=$('#gdTitle'),cnt=$('#gdCnt');
+ $$('[data-gdseg]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.gdseg===S.seg));
+ const total=CATS.filter(vis).reduce((a,c)=>a+c.items.length,0);
+ $('#gdQ').placeholder=`In ${total} Einträgen suchen`;
+ let h='';
+ if(S.q.trim()){
+  const q=S.q.trim().toLowerCase();const hits=[];
+  CATS.filter(vis).forEach(c=>c.items.forEach(it=>{if((it.t+' '+it.v+' '+(it.x||'')+' '+(it.chips||[]).join(' ')+' '+c.n).toLowerCase().includes(q))hits.push(it)}));
+  back.hidden=true;title.textContent='Suche';cnt.textContent=hits.length;
+  h=hits.length?hits.map(it=>row(`data-gdit="${it.id}"`,it.cat.c,esc(it.t),`${esc(it.cat.n)} · ${valTxt(it)}`)).join(''):'<p class="gd-empty">Dazu merkt sich dein Coach nichts.</p>';
+ }else if(S.page==='outline'){
+  back.hidden=true;title.textContent='Über dich';cnt.textContent=total;
+  const mem=CATS.filter(c=>c.kind==='mem'&&vis(c)),gen=CATS.filter(c=>c.kind==='gene'&&vis(c));
+  if(mem.length)h+='<div class="gd-cap">Aus euren Gesprächen</div>'+mem.map(c=>row(`data-gdcat="${c.k}"`,c.c,esc(c.n),'',`<span class="n">${c.items.length}</span>`)).join('');
+  if(gen.length)h+='<div class="gd-cap">Aus deinen Analysen</div>'+gen.map(c=>row(`data-gdcat="${c.k}"`,c.c,esc(c.n),esc(c.src.replace('aus deiner Analyse vom ','vom ')),`<span class="n">${c.items.length}</span>`)).join('');
+  if(S.seg!=='gene')h+='<div class="gd-cap">Datenschutz</div>'+row('data-gdblocked','#9a8f9f','Das merke ich mir nie',BLOCKED.length?BLOCKED.join(', '):'nichts gesperrt',`<span class="n">${BLOCKED.length}</span>`);
+ }else if(S.page==='blocked'){
+  back.hidden=false;title.textContent='Das merke ich mir nie';cnt.textContent=BLOCKED.length;
+  h='<div class="gd-det"><p>Zu diesen Themen speichert dein Coach nichts, auch wenn du im Chat davon erzählst.</p></div>'+
+   (BLOCKED.length?BLOCKED.map(b=>`<div class="gd-row" style="--c:#9a8f9f"><span class="dot"></span><span class="tx"><b>${esc(b)}</b></span><button class="btn glass sm" style="padding:5px 10px;font-size:11.5px" data-gdunblock="${esc(b)}">Wieder erlauben</button></div>`).join(''):'<p class="gd-empty">Nichts gesperrt.</p>');
+ }else if(S.page==='category'){
+  const c=catOf(S.key);back.hidden=false;title.textContent=c.n;cnt.textContent=c.items.length;
+  h=`<div class="gd-cap">${esc(c.src)}</div>`+(c.items.length?c.items.map(it=>row(`data-gdit="${it.id}"`,c.c,esc(it.t),`${valTxt(it)} · ${rel(it.ago)}`,it.fl?`<span class="fl">${esc(it.fl)}</span>`:'')).join(''):'<p class="gd-empty">Hier ist nichts mehr gespeichert.</p>');
+ }else if(S.page==='detail'){
+  const it=itemOf(S.id);if(!it){S.page='outline';return render()}
+  const c=it.cat;back.hidden=false;title.textContent=c.n;cnt.textContent='';
+  h=`<div class="gd-det" style="--c:${c.c}"><div class="gd-cap" style="padding-left:0">${esc(it.t)}</div>`+
+   (c.ana?`<div class="big" style="font-size:24px">${esc(it.t)}</div>`:typeof it.v==='number'||/^\d/.test(it.v)?`<div class="big">${typeof it.v==='number'?de(it.v):esc(it.v)}<small>${esc(it.u||'')}</small></div>`:`<div class="big" style="font-size:20px;font-family:var(--f);font-weight:800">${esc(it.v)}</div>`)+
+   `<div class="meta"><span>${dd(it.ago)}</span><span>${esc(c.src)}</span>${it.ref?`<span>Referenz ${esc(it.ref)} ${esc(it.u)}</span>`:''}${it.fl?`<span style="color:#FFCF66">${esc(it.fl)}</span>`:''}</div>`+
+   (c.ana?`<p>Dein Coach kennt alle Ergebnisse dieses Kapitels und bezieht sie in seine Antworten ein.</p>`:'')+
+   (it.x?`<p>${esc(it.x)}</p>`:'')+(it.chips?`<div class="gd-chips">${it.chips.map(x=>`<span>${esc(x)}</span>`).join('')}</div>`:'')+
+   `<div class="acts"><button class="btn lime" data-gdask="${it.id}"><svg class="ic sm"><use href="#i-chat"/></svg>Im Chat besprechen</button>`+
+   (c.ana?`<a class="btn glass" href="#analysen"><svg class="ic sm"><use href="#i-book"/></svg>Bericht ansehen</a>`:`<button class="btn glass" data-gdforget="${it.id}">Vergessen</button>`)+`</div>`+
+   (it.h?`<div class="gd-hist"><h4>Verlauf</h4>${it.h.length>1?spark(it.h):''}${it.h.slice().reverse().map(x=>`<div class="gd-hrow"><span>${dd(x[1])}${x[2]?` · ${esc(x[2])}`:''}</span><span>${de(x[0])} ${esc(it.u)}</span></div>`).join('')}</div>`:'')+
+   (it.plan?`<div class="gd-hist"><h4>Diese Woche</h4>${[['Di','Laufen','30 min · locker'],['Do','Kraft','40 min · Beine und Rumpf, ohne Sprünge'],['Sa','Langer Lauf','50 min · 7 km']].map(r=>`<div class="gd-hrow"><span>${r[0]} · ${r[1]}</span><span>${r[2]}</span></div>`).join('')}</div>`:'')+
+   `</div>`;
+ }
+ body.innerHTML=h;body.scrollTop=0;
+ B.focus(S.page==='category'?S.key:S.page==='detail'?itemOf(S.id)?.cat.k:null,S.page==='detail'?S.id:null);
+}
+function go(p){Object.assign(S,p);render()}
+document.addEventListener('click',e=>{
+ const t=e.target.closest('[data-gdcat],[data-gdit],[data-gdback],[data-gdseg],[data-gdblocked],[data-gdunblock],[data-gdask],[data-gdforget],[data-gdwipe],[data-gdzoom],.gd-lab');if(!t)return;const d=t.dataset;
+ if(t.classList.contains('gd-lab')){go({page:'category',key:d.k,q:''});$('#gdQ').value='';return}
+ if(d.gdcat){go({page:'category',key:d.gdcat});return}
+ if(d.gdit){const it=itemOf(d.gdit);go({page:'detail',id:d.gdit,key:it.cat.k});return}
+ if(d.gdback!==undefined){if(S.page==='detail')go({page:'category'});else go({page:'outline',key:null});return}
+ if(d.gdseg){go({seg:d.gdseg,page:'outline',key:null});return}
+ if(d.gdblocked!==undefined){go({page:'blocked'});return}
+ if(d.gdunblock){BLOCKED=BLOCKED.filter(b=>b!==d.gdunblock);render();say(`„${d.gdunblock}“ darf sich dein Coach wieder merken.`);return}
+ if(d.gdask){const it=itemOf(d.gdask);const q=it.cat.ana?`Erklär mir das Kapitel „${it.t}“ aus meiner ${it.cat.n}.`:it.cat.k==='blut'?`Was bedeutet mein ${it.t}-Wert von ${valTxt(it)}?`:`Lass uns über „${it.t}: ${it.v}${it.u?' '+it.u:''}“ reden.`;fire("ask",q);return}
+ if(d.gdforget){const it=itemOf(d.gdforget);const c=it.cat;c.items=c.items.filter(i=>i!==it);B.rebuild();go({page:'category',key:c.k});say(`„${it.t}“ vergessen. Dein Coach nutzt diesen Eintrag nicht mehr.`);return}
+ if(d.gdwipe!==undefined){say('Dein Gedächtnis würde jetzt nach einer Rückfrage gelöscht (Klickdummy).');return}
+ if(d.gdzoom!==undefined){B.zoom(+d.gdzoom);return}
+});
+document.addEventListener('input',e=>{if(e.target.id==='gdQ'){S.q=e.target.value;render()}});
+
+/* ---------- Gehirn ---------- */
+const B=(()=>{
+ let P=null,wt=null,N=0,cv,ctx,W=0,H=0,dpr=1,raf=0,on=false,hubs=[],dots=[],col=null,lab=[];
+ const R={p:.3,y:-.85},T={p:.3,y:-.85};let zoom=1,zT=1,focusK=null,selId=null,drag=null,idle=0,last=0;
+ const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+ const sprites={};
+ function sprite(c){if(sprites[c])return sprites[c];const s=document.createElement('canvas');s.width=s.height=64;const g=s.getContext('2d');const gr=g.createRadialGradient(32,32,0,32,32,32);const [r,gg,b]=hex(c);
+  gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.18,`rgba(${r},${gg},${b},.95)`);gr.addColorStop(.45,`rgba(${r},${gg},${b},.28)`);gr.addColorStop(1,`rgba(${r},${gg},${b},0)`);g.fillStyle=gr;g.fillRect(0,0,64,64);return sprites[c]=s}
+ async function load(){
+  try{const r=await fetch('gedaechtnis/hirn.bin');if(!r.ok)throw 0;const buf=await r.arrayBuffer();N=new DataView(buf).getUint32(0,true);P=new Int16Array(buf.slice(4),0,N*6)}
+  catch(_){ $('#gdLoad').textContent='Gehirn konnte nicht geladen werden.';return}
+  $('#gdLoad').hidden=true;rebuild();
+ }
+ const Q=32767;function pt(i){return [P[i*6]/Q,P[i*6+1]/Q,P[i*6+2]/Q]}
+ function rebuild(){
+  if(!P)return;const cats=CATS.filter(c=>c.items.length);
+  /* Knoten: farthest-point über die Oberfläche, deterministisch */
+  hubs=[];const used=[];let cand=0;
+  const d2=(a,b)=>(a[0]-b[0])**2+(a[1]-b[1])**2+(a[2]-b[2])**2;
+  const minD=new Float32Array(N).fill(1e9);
+  for(let h=0;h<CATS.length;h++){
+   if(h===0){let best=0,bv=-9;for(let i=0;i<N;i++){const q=pt(i);const v=q[1]+q[2]*.3;if(v>bv){bv=v;best=i}}cand=best}
+   else{let best=0,bv=-1;for(let i=0;i<N;i+=3){if(minD[i]>bv){bv=minD[i];best=i}}cand=best}
+   used.push(cand);const hp=pt(cand);for(let i=0;i<N;i++){const v=d2(pt(i),hp);if(v<minD[i])minD[i]=v}
+  }
+  const hubPos={};CATS.forEach((c,i)=>hubPos[c.k]=pt(used[i]));
+  hubs=cats.map(c=>({k:c.k,c:c.c,n:c.n,p:hubPos[c.k]}));
+  /* Grain-Farbe: Mischung zum nächsten Knoten */
+  col=new Array(N);wt=new Float32Array(N);const base=[200,170,215];
+  const hc=hubs.map(h=>hex(h.c));
+  for(let i=0;i<N;i++){const q=pt(i);let r=base[0],g=base[1],b=base[2],wsum=0;
+   hubs.forEach((h,j)=>{const w=Math.exp(-d2(q,h.p)/.11);if(w>.01){r+=(hc[j][0]-r)*w;g+=(hc[j][1]-g)*w;b+=(hc[j][2]-b)*w;wsum+=w}});
+   col[i]=`rgb(${r|0},${g|0},${b|0})`;wt[i]=Math.min(1,wsum)}
+  /* Punkte je Eintrag: nahe Oberflächenpunkte um den Knoten */
+  dots=[];hubs.forEach(h=>{const c=catOf(h.k);const near=[];for(let i=0;i<N;i++){near.push([d2(pt(i),h.p),i])}near.sort((a,b)=>a[0]-b[0]);
+   c.items.forEach((it,j)=>{const idx=near[Math.min(near.length-1,3+j*9)][1];dots.push({id:it.id,k:h.k,c:h.c,p:pt(idx)})})});
+  /* Labels */
+  const L=$('#gdLabels');L.innerHTML=hubs.map(h=>`<button class="gd-lab" data-k="${h.k}" style="--c:${h.c}"><i></i>${esc(h.n)}</button>`).join('');lab=$$('.gd-lab',L);
+ }
+ function rot(q){const cy=Math.cos(R.y),sy=Math.sin(R.y),cp=Math.cos(R.p),sp=Math.sin(R.p);
+  const x1=q[0]*cy+q[2]*sy,z1=-q[0]*sy+q[2]*cy;return [x1,q[1]*cp-z1*sp,q[1]*sp+z1*cp]}
+ function geom(){const mob=innerWidth<=760;const pw=mob?0:368;const cx=pw+(W-pw)/2,cy=H/2;const s=Math.min(W-pw,H)*.47*zoom;return {cx,cy,s}}
+ const D=4.2;
+ function proj(v,g){const k=D/(D-v[2]);return [g.cx+v[0]*g.s*k,g.cy-v[1]*g.s*k,k]}
+ function size(){const r=cv.getBoundingClientRect();dpr=Math.min(2,devicePixelRatio||1);W=r.width;H=r.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr)}
+ function frame(t){
+  raf=0;if(!on)return;const dt=Math.min(50,t-(last||t));last=t;
+  if(!drag){if(focusK){R.p+=(T.p-R.p)*.08;R.y+=(T.y-R.y)*.08}else if(!RMo&&t-idle>1200){R.y+=dt*.00012}}
+  zoom+=(zT-zoom)*.12;
+  draw();raf=requestAnimationFrame(frame);
+ }
+ function draw(){
+  if(!P||!W)return;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);ctx.globalCompositeOperation='lighter';
+  const g=geom();const cy=Math.cos(R.y),sy=Math.sin(R.y),cp=Math.cos(R.p),sp=Math.sin(R.p);
+  const fh=focusK?hubs.find(h=>h.k===focusK):null;const fp=fh?fh.p:null;
+  const sz=Math.max(1.2,1.7*zoom*Math.min(1.3,g.s/260));
+  for(let i=0;i<N;i++){const o=i*6;const x=P[o]/Q,y=P[o+1]/Q,z=P[o+2]/Q,nx=P[o+3]/Q,ny=P[o+4]/Q,nz=P[o+5]/Q;
+   const nz1=-nx*sy+nz*cy,nz2=ny*sp+nz1*cp;if(nz2<-.2)continue;
+   const x1=x*cy+z*sy,z1=-x*sy+z*cy,y2=y*cp-z1*sp,z2=y*sp+z1*cp;const k=D/(D-z2);
+   const rim=1-Math.abs(nz2);let a=(.10+.62*rim*rim)*(.55+.45*(z2+1)/2);
+   a*=1+1.3*wt[i];if(fp){const dd2=(x-fp[0])**2+(y-fp[1])**2+(z-fp[2])**2;a*=dd2<.09?1.6:.4}
+   ctx.globalAlpha=Math.min(1,a);ctx.fillStyle=col[i];
+   ctx.fillRect(g.cx+x1*g.s*k-sz/2,g.cy-y2*g.s*k-sz/2,sz,sz)}
+  /* Eintragspunkte */
+  const t=performance.now();
+  dots.forEach(d=>{const v=rot(d.p);if(v[2]<-.35)return;const q=proj(v,g);d.sx=q[0];d.sy=q[1];d.vis=v[2]>-.1;
+   let r=(9+5*(v[2]+1)/2)*Math.min(1.4,zoom);let a=.55+.45*(v[2]+1)/2;
+   if(focusK&&d.k!==focusK)a*=.25;if(d.id===selId){r*=1.9+.25*Math.sin(t/260);a=1}
+   ctx.globalAlpha=a;ctx.drawImage(sprite(d.c),q[0]-r,q[1]-r,r*2,r*2)});
+  ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+  /* Labels */
+  hubs.forEach((h,i)=>{const el=lab[i];if(!el)return;const v=rot(h.p);const q=proj(v,g);
+   el.style.transform=`translate(${q[0]}px,${q[1]}px) translate(-50%,-150%)`;
+   const show=v[2]>-.05&&(!focusK||h.k===focusK);el.style.opacity=show?Math.min(1,.35+v[2]):0;el.style.pointerEvents=show?'auto':'none';el.classList.toggle('on',h.k===focusK)});
+ }
+ function start(){if(on)return;on=true;if(!cv){cv=$('#gdCv');ctx=cv.getContext('2d');bind();load()}size();if(!raf)raf=requestAnimationFrame(frame)}
+ function stop(){on=false;if(raf)cancelAnimationFrame(raf);raf=0}
+ function bind(){
+  const el=$('#gdBrain');
+  el.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;drag={x:e.clientX,y:e.clientY,p:R.p,yy:R.y,m:0,id:e.pointerId};el.classList.add('drag')});
+  addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;drag.m=Math.max(drag.m,Math.abs(dx)+Math.abs(dy));
+   if(drag.m>4){if(e.pointerType==='touch'&&Math.abs(dy)>Math.abs(dx)*1.2&&drag.m<20)return;R.y=drag.yy+dx*.006;R.p=Math.max(-.9,Math.min(.9,drag.p+dy*.005));T.y=R.y;T.p=R.p}});
+  addEventListener('pointerup',e=>{if(!drag)return;const moved=drag.m>6;drag=null;el.classList.remove('drag');idle=performance.now();
+   if(moved)return;const r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+   let best=null,bd=16*16;dots.forEach(d=>{if(!d.vis||(focusK&&d.k!==focusK&&S.page==='detail'))return;const v=(d.sx-x)**2+(d.sy-y)**2;if(v<bd){bd=v;best=d}});
+   if(best){$('#gdQ').value='';go({page:'detail',id:best.id,key:best.k,q:''})}
+   else if(S.page==='detail')go({page:'category'});else if(S.page==='category')go({page:'outline',key:null})});
+  el.addEventListener('wheel',e=>{e.preventDefault();zT=Math.max(.7,Math.min(2.4,zT*(e.deltaY<0?1.12:1/1.12)))},{passive:false});
+  addEventListener('resize',()=>{if(on)size()});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else if(location.hash==='#gedaechtnis')start()});
+ }
+ function focus(k,id){focusK=k||null;selId=id||null;if(!k){T.p=.3;return}
+  const h=hubs.find(x=>x.k===k);if(!h)return;const q=h.p;let y=Math.atan2(-q[0],q[2]);
+  while(y-R.y>Math.PI)y-=2*Math.PI;while(y-R.y<-Math.PI)y+=2*Math.PI;T.y=y;
+  const z1=Math.hypot(q[0],q[2]);T.p=Math.max(-.4,Math.min(.4,Math.atan2(q[1],z1)))}
+ function zoomBy(s){if(s===0){zT=1;focusK=null;selId=null;S.page='outline';S.key=null;render();T.p=.3;return}zT=Math.max(.7,Math.min(2.4,zT*(s>0?1.25:1/1.25)))}
+ return {start,stop,focus,rebuild,zoom:zoomBy};
+})();
+function onRoute(){if(location.hash==='#gedaechtnis'){render();B.start()}else B.stop()}
+addEventListener('hashchange',onRoute);
+if(document.readyState==='loading')addEventListener('DOMContentLoaded',onRoute);else onRoute();
+})();
+/* GEDAECHTNIS:END */</script>
 </body>
 </html>
