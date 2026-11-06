@@ -1590,6 +1590,84 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .gd-lab{font-size:10px;padding:2px 7px}
 }
 /* GEDAECHTNIS:END */</style>
+<style id="db-css">/* DASHBOARD:BEGIN – Coach-Dashboard (Nachbau von /dashboard des Chatbots, Klickdummy) */
+.db .hero{margin-bottom:6px}
+.rail{overflow-y:auto;scrollbar-width:none}.rail::-webkit-scrollbar{display:none}
+.db-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px;margin-top:18px}
+.db-full{grid-column:1/-1}
+.db-blk h2{font-size:14px;font-weight:800;margin:0 0 8px;color:#fff;letter-spacing:.01em}
+.db-card{background:linear-gradient(165deg,#fff 60%,#FBF7FA);color:var(--ink);border-radius:22px;box-shadow:var(--sh);padding:18px 18px 16px}
+.db-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.db-acts .chip{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);font-size:12.5px;padding:7px 12px}
+.db-acts .chip:hover{background:rgba(255,255,255,.22)}
+.db-acts .chip .ic{width:15px;height:15px;color:var(--lime);stroke:var(--lime)}
+.db-goal{background:linear-gradient(150deg,#7A0A5E,#5E0047 55%,#3E002F);color:#fff;border:1px solid rgba(255,255,255,.14)}
+.db-goal .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.db-goal .ey{font-size:11px;font-weight:800;letter-spacing:.2em;color:var(--lime)}
+.db-goal .tag{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.16)}
+.db-goal h3{font-size:clamp(24px,3vw,30px);font-weight:800;margin:6px 0 12px;letter-spacing:-.01em}
+.db-kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.db-kv div{background:rgba(255,255,255,.1);border-radius:12px;padding:9px 11px}
+.db-card:not(.db-goal) .db-kv div{background:#F6F0F4}
+.db-kv b{display:block;font-size:16px;font-weight:800;font-variant-numeric:tabular-nums}
+.db-kv small{font-size:11.5px;opacity:.7}
+.db-bar{height:7px;border-radius:999px;background:rgba(255,255,255,.16);margin:14px 0 8px;overflow:hidden}
+.db-bar i{display:block;height:100%;border-radius:inherit;background:var(--lime)}
+.db-goal .meta{display:flex;justify-content:space-between;font-size:12px;opacity:.85}
+.db-more{border-top:1px solid rgba(255,255,255,.14);margin-top:12px;padding-top:4px}
+.db-card:not(.db-goal) .db-more{border-top-color:var(--line)}
+.db-more summary{cursor:pointer;font-size:13px;font-weight:700;padding:8px 0;list-style:none;display:flex;align-items:center;gap:6px}
+.db-more summary::-webkit-details-marker{display:none}
+.db-more summary::before{content:"›";font-size:16px;transition:transform .2s;display:inline-block;width:10px}
+.db-more[open] summary::before{transform:rotate(90deg)}
+.db-li{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:6px 0;border-bottom:1px solid rgba(94,0,71,.08)}
+.db-goal .db-li{border-bottom-color:rgba(255,255,255,.1)}
+.db-li span:last-child{font-weight:700;text-align:right}
+.db-gene h3{font-size:19px;font-weight:800;margin-bottom:6px;color:var(--plum)}
+.db-gene p{font-size:13.5px;color:var(--soft);margin-bottom:10px}
+.db-gene .src{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px;color:var(--soft)}
+.db-gene .src b{font-size:11.5px;padding:3px 9px;border-radius:999px;background:#F3E6EF;color:var(--plum)}
+.db-today{display:flex;gap:14px;align-items:center}
+.db-ring{flex:none;width:96px;height:96px;position:relative}
+.db-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.db-ring div{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.db-ring b{font-size:20px;font-weight:800;line-height:1}
+.db-ring small{font-size:11px;color:var(--soft)}
+.db-today .db-kv{grid-template-columns:repeat(2,minmax(0,1fr));flex:1}
+.db-wt{display:flex;align-items:baseline;gap:6px}
+.db-wt b{font-family:var(--num);font-size:34px;line-height:1}
+.db-wt span{font-size:13px;color:var(--soft);font-weight:700}
+.db-spark{width:100%;height:64px;display:block;margin:8px 0 10px}
+.db-rec .hd{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.db-rec .em{font-size:30px;line-height:1}
+.db-rec .ey{font-size:10.5px;font-weight:800;letter-spacing:.14em;color:var(--soft)}
+.db-rec h3{font-size:17px;font-weight:800;line-height:1.2}
+.db-rec p{font-size:13px;color:var(--soft);margin-bottom:10px}
+.db-rec ol{padding-left:18px;font-size:13px;margin:4px 0 6px}
+.db-rec ol li{margin:3px 0}
+.db-list{list-style:none;font-size:13.5px}
+.db-list li{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(94,0,71,.08)}
+.db-list li:last-child{border-bottom:0}
+.db-list .bx{width:18px;height:18px;border-radius:6px;border:2px solid #D9C7D3;flex:none;cursor:pointer;display:grid;place-items:center}
+.db-list .bx[aria-checked="true"]{background:var(--ok);border-color:var(--ok)}
+.db-list .bx[aria-checked="true"]::after{content:"";width:8px;height:5px;border:2px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.db-list li.done span{text-decoration:line-through;color:var(--soft)}
+.db-list .r{margin-left:auto;font-size:12px;color:var(--soft);font-weight:700;white-space:nowrap}
+.db-list .ico{width:30px;height:30px;border-radius:10px;background:#F3E6EF;color:var(--plum);display:grid;place-items:center;flex:none}
+.db-list .ico .ic{width:16px;height:16px}
+.db-sum{font-size:12.5px;color:var(--soft);margin-bottom:6px}
+.db-sum b{color:var(--ink)}
+.db-q{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.db-q button{text-align:left;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:13px 14px;color:#fff;transition:background .18s}
+.db-q button:hover{background:rgba(255,255,255,.16)}
+.db-q b{display:flex;align-items:center;gap:8px;font-size:13.5px;margin-bottom:3px}
+.db-q small{font-size:12px;color:rgba(255,255,255,.65)}
+@media (max-width:760px){
+  .db-grid{grid-template-columns:minmax(0,1fr);gap:20px}
+  .db-kv b{font-size:14px}
+  .db-ring{width:84px;height:84px}
+}
+/* DASHBOARD:END */</style>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
@@ -1597,22 +1675,24 @@ body.touring .rail,body.touring .mtop{z-index:89}
 <nav class="rail" aria-label="Bereiche">
   <a class="rlogo" href="#coach" aria-label="GENEius – Startseite"><svg viewBox="-93.09 -2.55 186.18 166.53" aria-hidden="true"><g transform="translate(-66.33 0) scale(1.5)"><circle cx="27.38" cy="5.57" r="3.27" fill="var(--a)"></circle><line x1="61.04" y1="5.57" x2="74.43" y2="5.57" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="14.57" y1="14.27" x2="20.81" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="67.63" y1="14.27" x2="87.43" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="8.37" y1="22.98" x2="27.4" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="22.98" x2="73.74" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.92" y1="22.98" x2="93.43" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.57" y1="31.69" x2="32.35" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="56.09" y1="31.69" x2="71.24" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="81.42" y1="31.69" x2="95.23" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.97" y1="40.4" x2="27.4" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="40.4" x2="73.08" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.26" y1="40.4" x2="93.23" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="10.77" y1="49.1" x2="20.81" y2="49.1" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><circle cx="67.63" cy="49.1" r="3.27" fill="var(--a)"></circle><line x1="16.37" y1="57.81" x2="27.4" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="57.81" x2="62.03" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="38.89" y1="66.95" x2="44.11" y2="66.95" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="5.57" x2="50.85" y2="5.57" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="14.27" x2="57.45" y2="14.27" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="22.98" x2="50.85" y2="22.98" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="42.54" y1="31.69" x2="45.9" y2="31.69" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="40.4" x2="50.85" y2="40.4" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="49.1" x2="57.45" y2="49.1" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="57.81" x2="50.85" y2="57.81" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line></g><g class="wmg"><text x="0" y="148.3244848081044" font-family="Montserrat,sans-serif" font-size="40" font-weight="800" text-anchor="middle" letter-spacing="-0.48" fill="var(--p)">GENE<tspan fill="var(--a)" font-weight="700">ius</tspan></text></g></svg></a>
   <a class="nav" href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a>
+  <a class="nav" href="#dashboard" data-r="dashboard"><svg class="ic"><use href="#i-grid"/></svg>Dashboard</a>
   <a class="nav" href="#naehrstoffe" data-r="naehrstoffe"><svg class="ic"><use href="#i-capsule"/></svg>Nährstoffe</a>
   <a class="nav" href="#lebensmittel" data-r="lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Lebensmittel</a>
   <a class="nav" href="#medikamente" data-r="medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a>
-  <a class="nav" href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a><a class="nav" href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Gene Nuggets</a>
+  <a class="nav" href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a>
   <a class="nav" href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellungen</a>
-  <a class="nav" href="#dna" data-r="dna"><svg class="ic"><use href="#i-dna"/></svg>DNA-Daten</a>
+  <a class="nav" href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Gene Nuggets</a>
   <button class="nav shopnav" data-shop aria-label="Shop öffnen"><span class="shop-ic"><svg class="ic"><use href="#i-cart"/></svg></span>Shop</button>
-  <a class="nav" href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a>
   <span class="sp"></span>
+  <a class="nav" href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a>
   <a class="nav" href="#gedaechtnis" data-r="gedaechtnis"><svg class="ic"><use href="#i-brain"/></svg>Mein Gedächtnis</a>
+  <a class="nav" href="#dna" data-r="dna"><svg class="ic"><use href="#i-dna"/></svg>DNA-Daten</a>
   <button class="nav" data-toast="Du wurdest abgemeldet (Klickdummy)."><svg class="ic"><use href="#i-logout"/></svg>Abmelden</button>
 </nav>
 <div class="center">
 <header class="mtop">
   <div class="mtop-in"><a class="mlogo" href="#coach" aria-label="GENEius – Startseite"><svg viewBox="-8.53 -17.64 105.5 105.5" width="30" height="30" aria-hidden="true"><circle cx="27.38" cy="5.57" r="3.27" fill="var(--a)"></circle><line x1="61.04" y1="5.57" x2="74.43" y2="5.57" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="14.57" y1="14.27" x2="20.81" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="67.63" y1="14.27" x2="87.43" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="8.37" y1="22.98" x2="27.4" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="22.98" x2="73.74" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.92" y1="22.98" x2="93.43" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.57" y1="31.69" x2="32.35" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="56.09" y1="31.69" x2="71.24" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="81.42" y1="31.69" x2="95.23" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.97" y1="40.4" x2="27.4" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="40.4" x2="73.08" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.26" y1="40.4" x2="93.23" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="10.77" y1="49.1" x2="20.81" y2="49.1" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><circle cx="67.63" cy="49.1" r="3.27" fill="var(--a)"></circle><line x1="16.37" y1="57.81" x2="27.4" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="57.81" x2="62.03" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="38.89" y1="66.95" x2="44.11" y2="66.95" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="5.57" x2="50.85" y2="5.57" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="14.27" x2="57.45" y2="14.27" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="22.98" x2="50.85" y2="22.98" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="42.54" y1="31.69" x2="45.9" y2="31.69" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="40.4" x2="50.85" y2="40.4" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="49.1" x2="57.45" y2="49.1" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="57.81" x2="50.85" y2="57.81" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line></svg><span>GENE<b>ius</b></span></a><button class="shop-m" data-shop aria-label="Shop öffnen"><svg class="ic"><use href="#i-cart"/></svg><span>Shop</span></button><button class="tour-btn sm" data-tour aria-label="Tutorial starten"><svg class="ic"><use href="#i-sparkle"/></svg><span>Tutorial</span></button></div>
-  <nav class="mtabs" aria-label="Bereiche mobil"><a href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a><a href="#naehrstoffe" data-r="naehrstoffe" aria-label="Nährstoffe"><svg class="ic"><use href="#i-capsule"/></svg>Bedarf</a><a href="#lebensmittel" data-r="lebensmittel" aria-label="Lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Essen</a><a href="#medikamente" data-r="medikamente" aria-label="Medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a><a href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a><a href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Nuggets</a><a href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellung</a><a href="#dna" data-r="dna" aria-label="DNA-Daten"><svg class="ic"><use href="#i-dna"/></svg>DNA</a><a href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a><a href="#gedaechtnis" data-r="gedaechtnis" aria-label="Mein Gedächtnis"><svg class="ic"><use href="#i-brain"/></svg>Gedächtnis</a></nav>
+  <nav class="mtabs" aria-label="Bereiche mobil"><a href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a><a href="#dashboard" data-r="dashboard"><svg class="ic"><use href="#i-grid"/></svg>Dashboard</a><a href="#naehrstoffe" data-r="naehrstoffe" aria-label="Nährstoffe"><svg class="ic"><use href="#i-capsule"/></svg>Bedarf</a><a href="#lebensmittel" data-r="lebensmittel" aria-label="Lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Essen</a><a href="#medikamente" data-r="medikamente" aria-label="Medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a><a href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a><a href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellung</a><a href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Nuggets</a><a href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a><a href="#gedaechtnis" data-r="gedaechtnis" aria-label="Mein Gedächtnis"><svg class="ic"><use href="#i-brain"/></svg>Gedächtnis</a><a href="#dna" data-r="dna" aria-label="DNA-Daten"><svg class="ic"><use href="#i-dna"/></svg>DNA</a></nav>
 </header>
 <header class="wrap topbar">
   <span></span>
@@ -2101,6 +2181,20 @@ body.touring .rail,body.touring .mtop{z-index:89}
 </div>
 </section>
 <!-- GEDAECHTNIS:END -->
+<!-- DASHBOARD:BEGIN -->
+<section class="view db" data-view="dashboard" hidden aria-labelledby="h-db">
+<div class="wrap">
+  <header class="hero compact"><div class="hero-in">
+    <div>
+      <div class="eyebrow">Genius Coach</div>
+      <h1 id="h-db">Dein Dashboard</h1>
+      <p class="lead">Dein Ziel, dein Tag und dein Training auf einen Blick. Alles, was du dem Coach erzählst, landet hier.</p>
+    </div>
+  </div></header>
+  <div class="db-grid" id="dbGrid"></div>
+</div>
+</section>
+<!-- DASHBOARD:END -->
 </main>
 
 <footer class="wrap foot">
@@ -2959,7 +3053,7 @@ function bindTilt(){
 }
 
 /* ================= ROUTER ================= */
-const ROUTES=['coach','naehrstoffe','lebensmittel','medikamente','bestellungen','abos','analysen','berichte','dna','profil','nuggets','gedaechtnis'];
+const ROUTES=['coach','naehrstoffe','lebensmittel','medikamente','bestellungen','abos','analysen','berichte','dna','profil','nuggets','gedaechtnis','dashboard'];
 const ALIAS={berichte:'analysen',abos:'bestellungen'};
 function route(){
  let r=location.hash.slice(1);const rVoll=r;if(/^medikamente(\/|$)/.test(r))r='medikamente';if(!ROUTES.includes(r))r='coach';
@@ -4029,5 +4123,115 @@ addEventListener('hashchange',onRoute);
 if(document.readyState==='loading')addEventListener('DOMContentLoaded',onRoute);else onRoute();
 })();
 /* GEDAECHTNIS:END */</script>
+<script id="db-js">/* DASHBOARD:BEGIN – Coach-Dashboard. Daten passend zu „Mein Gedächtnis“ (Markus: 91 → 86,4 kg, Ziel 75 kg).
+   Knöpfe nutzen die App-eigenen Attribute: data-ask (Frage an den Coach), data-sheet, data-toast. */
+(()=>{
+const $=s=>document.querySelector(s);
+const ic=(n,c='')=>`<svg class="ic ${c}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const de=v=>String(v).replace('.',',');
+const dd=n=>new Date(Date.now()-n*864e5).toLocaleDateString('de-AT',{day:'2-digit',month:'2-digit'});
+const chip=(attr,label,icon)=>`<button class="chip" ${attr}>${icon?ic(icon):''}${label}</button>`;
+const ask=q=>`data-ask="${q.replace(/"/g,'&quot;')}"`;
+const G={start:91,cur:86.4,goal:75};
+const WH=[[91,150],[89.6,110],[88.2,80],[87.5,45],[86.9,18],[86.4,3]];
+function spark(){const W=300,H=64,p=6,vs=WH.map(x=>x[0]).concat(G.goal),mn=Math.min(...vs),mx=Math.max(...vs),y=v=>H-p-(v-mn)/(mx-mn)*(H-2*p);
+ const pts=WH.map((x,i)=>[p+i*(W-2*p)/(WH.length-1),y(x[0])]);
+ return `<svg class="db-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="Gewichtsverlauf von 91 auf 86,4 kg"><line x1="0" x2="${W}" y1="${y(G.goal)}" y2="${y(G.goal)}" stroke="#9DB01B" stroke-width="1.5" stroke-dasharray="5 5" vector-effect="non-scaling-stroke"/><polyline points="${pts.map(q=>q.join(',')).join(' ')}" fill="none" stroke="#8C1D6E" stroke-width="2.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>`}
+function render(){
+ const el=$('#dbGrid');if(!el||el.dataset.done)return;el.dataset.done=1;
+ const pct=Math.round((G.start-G.cur)/(G.start-G.goal)*100),rest=de((G.cur-G.goal).toFixed(1));
+ const kcal=360,ziel=2200,ring=2*Math.PI*42;
+ el.innerHTML=`
+ <div class="db-blk db-full"><h2>Mein Ziel</h2>
+  <div class="db-card db-goal">
+   <div class="top"><span class="ey">ABNEHMEN</span><span class="tag">Letzter Eintrag ${dd(3)}</span></div>
+   <h3>Auf 75 kg</h3>
+   <div class="db-kv"><div><b>${de(G.start)} kg</b><small>Start</small></div><div><b>${de(G.cur)} kg</b><small>Heute</small></div><div><b>${de(G.goal)} kg</b><small>Ziel</small></div></div>
+   <div class="db-bar"><i style="width:${pct}%"></i></div>
+   <div class="meta"><span>${pct} % geschafft · noch ${rest} kg</span><span>Ohne Termin</span></div>
+   <details class="db-more"><summary>Weitere Ziele</summary>
+    <div class="db-li"><span>Fitness</span><span>10 km unter einer Stunde</span></div>
+    <div class="db-li"><span>Eiweiß</span><span>130 g pro Tag, zu jeder Mahlzeit</span></div>
+   </details>
+  </div>
+  <div class="db-acts">${chip(ask('Ziele ändern'),'Ziele festlegen','target')}</div>
+ </div>
+ <div class="db-blk db-full"><h2>Dein genetischer Hebel</h2>
+  <div class="db-card db-gene">
+   <h3>Schnellkraftfasern: dein Vorteil beim Krafttraining</h3>
+   <p>Dein ACTN3-Gen (C/T) ist funktional. Dein Merkmal für schnell zuckende Muskelfasern liegt bei 95,4 von 100 und unterstützt Kraft und Muskelaufbau. Starte deine Krafteinheit heute mit deiner wichtigsten Muskelgruppe.</p>
+   <div class="src"><b>ACTN3 · rs1815739</b><span>Performance-Analyse · Muskelfasertyp</span></div>
+  </div>
+  <div class="db-acts">${chip(ask('Analyse erklären'),'Bericht erklären','sparkle')}</div>
+ </div>
+ <div class="db-blk"><h2>Heute</h2>
+  <div class="db-card">
+   <div class="db-today">
+    <div class="db-ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="#F1E6EE" stroke-width="10"/><circle cx="50" cy="50" r="42" fill="none" stroke="#C6D63F" stroke-width="10" stroke-linecap="round" stroke-dasharray="${ring}" stroke-dashoffset="${ring*(1-kcal/ziel)}"/></svg><div><b>${kcal}</b><small>kcal</small></div></div>
+    <div class="db-kv"><div><b>2.200</b><small>Tagesziel</small></div><div><b>1.840</b><small>Noch offen</small></div></div>
+   </div>
+   <details class="db-more"><summary>Nährstoffe</summary>
+    <div class="db-li"><span>Eiweiß</span><span>12 von 130 g</span></div>
+    <div class="db-li"><span>Wasser</span><span>1,5 l</span></div>
+    <div class="db-li"><span>Frühstück</span><span>Haferflocken, Banane</span></div>
+   </details>
+  </div>
+  <div class="db-acts">${chip(ask('Essen erfassen'),'Mahlzeit erfassen','food')}${chip('data-toast="250 ml Wasser eingetragen – heute 1,75 l."','Wasser erfassen','drop')}</div>
+ </div>
+ <div class="db-blk"><h2>Gewicht</h2>
+  <div class="db-card">
+   <div class="db-wt"><b>${de(G.cur)}</b><span>kg</span></div>
+   ${spark()}
+   <div class="db-kv"><div><b>${de(G.goal)} kg</b><small>Zielgewicht</small></div><div><b>${rest} kg</b><small>Bis zum Ziel</small></div><div><b>–</b><small>Kein Termin</small></div></div>
+  </div>
+  <div class="db-acts">${chip('data-sheet="weight"','Gewicht erfassen','scale')}</div>
+ </div>
+ <div class="db-blk"><h2>Rezept für heute</h2>
+  <div class="db-card db-rec">
+   <div class="hd"><span class="em" aria-hidden="true">🍝</span><div><div class="ey">ABENDESSEN · 25 MIN</div><h3>Tofu-Brokkoli-Bowl mit Vollkornpasta</h3></div></div>
+   <p>Tofu passt zu deinem Gewichtsziel und zum Muskelaufbau. Die Portion ist auf dein heutiges Tagesziel abgestimmt.</p>
+   <div class="db-kv"><div><b>540</b><small>kcal pro Portion</small></div><div><b>36 g</b><small>Eiweiß</small></div><div><b>1</b><small>Portion</small></div></div>
+   <details class="db-more"><summary>Zutaten und Zubereitung</summary>
+    <div class="db-li"><span>Vollkornpasta</span><span>80 g</span></div>
+    <div class="db-li"><span>Naturtofu</span><span>150 g</span></div>
+    <div class="db-li"><span>Brokkoli</span><span>200 g</span></div>
+    <div class="db-li"><span>Knoblauch, Sojasauce, Sesam</span><span>nach Geschmack</span></div>
+    <ol><li>Pasta kochen, in den letzten 4 Minuten den Brokkoli mitgaren.</li><li>Tofu würfeln und in einer Pfanne goldbraun anbraten.</li><li>Alles mit Knoblauch und Sojasauce mischen, mit Sesam bestreuen.</li></ol>
+   </details>
+  </div>
+  <div class="db-acts">${chip(ask('Schlag mir ein Rezept vor'),'Rezept vorschlagen','bowl')}${chip(ask('Was kann ich mit meinem Kühlschrank kochen?'),'Kühlschrank-Check','box')}</div>
+ </div>
+ <div class="db-blk"><h2>Einkaufsliste</h2>
+  <div class="db-card">
+   <ul class="db-list" id="dbShop">${['Lachs (2 × 150 g)','Linsen & Kichererbsen','Brokkoli, Heidelbeeren','Haferflocken, Walnüsse','Naturjoghurt, Olivenöl'].map(x=>`<li><span class="bx" role="checkbox" aria-checked="false" tabindex="0" data-dbcheck></span><span>${x.replace('&','&amp;')}</span></li>`).join('')}</ul>
+  </div>
+  <div class="db-acts">${chip(ask('Was kann ich mit meinem Kühlschrank kochen?'),'Kühlschrank-Check','box')}${chip(ask('Einkaufsliste'),'Einkaufsliste bearbeiten','cart')}</div>
+ </div>
+ <div class="db-blk"><h2>Training diese Woche</h2>
+  <div class="db-card">
+   <p class="db-sum"><b>4 Einheiten · 186 Minuten</b> seit Montag</p>
+   <ul class="db-list">${[['Spaziergang','60 min · 5,5 km','heute'],['Schwimmen','35 min','vor 2 Tagen'],['Laufen','41 min · 7 km','vor 4 Tagen'],['Krafttraining','50 min · intensiv','vor 6 Tagen']].map(r=>`<li><span class="ico">${ic('run')}</span><span><b>${r[0]}</b><br><small style="color:var(--soft)">${r[1]}</small></span><span class="r">${r[2]}</span></li>`).join('')}</ul>
+  </div>
+  <div class="db-acts">${chip('data-toast="Laufen gespeichert: 30 min."','Laufen','run')}${chip('data-toast="Radfahren gespeichert: 45 min."','Radfahren','run')}${chip('data-toast="Krafttraining gespeichert: 45 min."','Krafttraining','muscle')}${chip(ask('Bewegung erfassen'),'Training erfassen','plus')}</div>
+ </div>
+ <div class="db-blk"><h2>Trainingsplan</h2>
+  <div class="db-card">
+   <p class="db-sum"><b>4-Wochen-Laufplan</b> · Woche 2 von 4</p>
+   <div class="db-bar" style="background:#F1E6EE;margin:6px 0 10px"><i style="width:37%"></i></div>
+   <ul class="db-list">${[['Di','Laufen locker','30 min',1],['Do','Kraft: Beine und Rumpf, ohne Sprünge','40 min',0],['Sa','Langer Lauf','50 min · 7 km',0]].map(r=>`<li class="${r[3]?'done':''}"><span class="bx" role="checkbox" aria-checked="${!!r[3]}" tabindex="0" data-dbcheck></span><span><b>${r[0]}</b> · ${r[1]}</span><span class="r">${r[2]}</span></li>`).join('')}</ul>
+  </div>
+  <div class="db-acts">${chip(ask('Erstelle mir einen Trainingsplan'),'Trainingsplan anpassen','cal')}</div>
+ </div>
+ <div class="db-blk db-full"><h2>Mehr</h2>
+  <div class="db-q">${[['Bericht erklären','Bitte erklär mir meinen Bericht.','book','Analyse erklären'],['Über Blutwerte reden','Ich möchte über meine Blutwerte reden.','drop','Ich möchte meinen Blutbefund hochladen'],['Essensplan erstellen','Wähle einen Zeitraum, ich plane deine Mahlzeiten.','cal','Erstelle mir einen Essensplan'],['Rezept vorschlagen','Sag mir kurz, worauf du Lust hast.','bowl','Schlag mir ein Rezept vor'],['Passt das zu mir?','Tipp ein Lebensmittel ein oder mach ein Foto.','camera','Passt dieses Lebensmittel zu mir?']].map(r=>`<button ${ask(r[3])}><b>${ic(r[2])}${r[0]}</b><small>${r[1]}</small></button>`).join('')}</div>
+ </div>`;
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-dbcheck]');if(!b)return;const on=b.getAttribute('aria-checked')!=='true';b.setAttribute('aria-checked',on);b.closest('li').classList.toggle('done',on)});
+document.addEventListener('keydown',e=>{const b=e.target.closest&&e.target.closest('[data-dbcheck]');if(b&&(e.key===' '||e.key==='Enter')){e.preventDefault();b.click()}});
+function onRoute(){if(location.hash==='#dashboard')render()}
+addEventListener('hashchange',onRoute);
+if(document.readyState==='loading')addEventListener('DOMContentLoaded',onRoute);else onRoute();
+})();
+/* DASHBOARD:END */</script>
 </body>
 </html>
