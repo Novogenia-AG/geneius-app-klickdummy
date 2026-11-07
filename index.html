@@ -1668,6 +1668,135 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .db-ring{width:84px;height:84px}
 }
 /* DASHBOARD:END */</style>
+<style id="br-css">/* BERATUNG:BEGIN – Online-Beratung (Kundenseite). Backend: geneius-beratung (PocketBase/Go), Quelle GENE NUGGETS\beratung */
+.br .hero{margin-bottom:8px}
+.br-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:18px;margin-top:16px;align-items:start}
+.br-card{background:#fff;color:var(--ink);border-radius:24px;box-shadow:var(--sh);padding:20px}
+.br-card h2{font-size:16px;font-weight:800;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.br-card h2 small{font-size:12px;font-weight:700;color:var(--soft)}
+.br-adv{display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;align-items:start}
+.br-av{width:76px;height:76px;border-radius:24px;display:grid;place-items:center;font-family:var(--num);font-size:28px;color:var(--lime-ink);background:linear-gradient(140deg,var(--lime),#E6EE9A);overflow:hidden}
+.br-av img{width:100%;height:100%;object-fit:cover}
+.br-adv h3{font-size:19px;font-weight:800;line-height:1.2}
+.br-adv .t{font-size:13px;color:var(--soft);margin:2px 0 8px}
+.br-langs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.br-langs span{font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:#F3E6EF;color:var(--plum)}
+.br-adv p{font-size:13.5px;color:var(--soft)}
+.br-price{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.br-price div{flex:1;min-width:120px;background:var(--wash);border-radius:16px;padding:11px 13px}
+.br-price b{display:block;font-family:var(--num);font-weight:400;font-size:22px;color:var(--plum);line-height:1.1}
+.br-price small{font-size:12px;color:var(--soft);font-weight:600}
+.br-days{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px;margin-bottom:12px}
+.br-days button{flex:none;display:grid;justify-items:center;gap:1px;min-width:62px;padding:9px 8px;border-radius:16px;border:1.5px solid #E6DCE3;background:#fff;color:var(--ink)}
+.br-days button small{font-size:11px;font-weight:700;color:var(--soft)}
+.br-days button b{font-family:var(--num);font-weight:400;font-size:19px}
+.br-days button[aria-pressed=true]{background:var(--plum);border-color:var(--plum);color:#fff}
+.br-days button[aria-pressed=true] small{color:rgba(255,255,255,.75)}
+.br-times{display:flex;gap:8px;flex-wrap:wrap}
+.br-times button{padding:9px 15px;border-radius:999px;border:1.5px solid #E6DCE3;background:#fff;font-weight:700;font-size:14px;color:var(--ink)}
+.br-times button:hover{border-color:var(--plum)}
+.br-empty{font-size:13.5px;color:var(--soft);padding:10px 0}
+.br-appt{border:1.5px solid #EEE4EB;border-radius:18px;padding:14px;margin-bottom:10px}
+.br-appt.live{border-color:var(--lime-d);background:#FBFDF2}
+.br-appt .h{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.br-appt .h b{font-size:15px;font-weight:800}
+.br-appt .h small{display:block;font-size:12.5px;color:var(--soft);font-weight:600}
+.br-tag{font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;background:#F3E6EF;color:var(--plum);white-space:nowrap}
+.br-tag.ok{background:var(--lime);color:var(--lime-ink)}
+.br-appt .inv{font-size:12px;color:var(--soft);margin:8px 0 10px;display:flex;gap:6px;align-items:flex-start}
+.br-appt .inv .ic{width:14px;height:14px;flex:none;margin-top:2px;color:var(--plum)}
+.br-acts{display:flex;gap:8px;flex-wrap:wrap}
+.br-hand{display:grid;gap:8px}
+.br-hand .row{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--wash);border-radius:14px;padding:10px 12px;font-size:13.5px}
+.br-hand .row small{color:var(--soft);font-weight:600}
+.br-note{font-size:12px;color:rgba(255,255,255,.7);margin-top:14px}
+.br-banner{display:flex;gap:12px;align-items:center;background:var(--lime);color:var(--lime-ink);border-radius:18px;padding:12px 16px;margin-top:14px;font-weight:700}
+.br-banner .btn{margin-left:auto}
+.br-test{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px;font-size:12.5px;color:rgba(255,255,255,.75)}
+/* Sheet (Buchen, Technik-Check) */
+.br-ov{position:fixed;inset:0;z-index:200;background:rgba(18,0,14,.62);display:grid;place-items:center;padding:16px;backdrop-filter:blur(4px)}
+.br-dlg{background:#fff;color:var(--ink);border-radius:26px;box-shadow:var(--sh);width:min(520px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:22px}
+.br-dlg h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.br-dlg p{font-size:13.5px;color:var(--soft);margin-bottom:12px}
+.br-sum{display:grid;gap:6px;margin:12px 0 16px}
+.br-sum div{display:flex;justify-content:space-between;gap:12px;padding:9px 12px;border-radius:12px;background:#F8F3F6;font-size:13.5px}
+.br-sum b{color:var(--plum)}
+.br-dlg .acts{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.br-check{display:flex;gap:10px;align-items:flex-start;font-size:13px;margin:10px 0;cursor:pointer}
+.br-check input{width:18px;height:18px;accent-color:var(--plum);flex:none;margin-top:1px}
+.br-prev{position:relative;border-radius:18px;overflow:hidden;background:#1b1219;aspect-ratio:16/10;margin-bottom:10px}
+.br-prev video{width:100%;height:100%;object-fit:cover;transform:scaleX(-1)}
+.br-prev .msg{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:13px;text-align:center;padding:20px}
+.br-meter{height:8px;border-radius:99px;background:#EFE8ED;overflow:hidden;margin:4px 0 10px}
+.br-meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lime-d),var(--lime));transition:width .08s}
+.br-ok{display:grid;gap:4px;font-size:12.5px;font-weight:700;margin-bottom:6px}
+.br-ok span{display:flex;gap:6px;align-items:center}
+.br-ok .y{color:var(--ok-d)}.br-ok .n{color:var(--bad)}
+/* Beratungsraum */
+.br-room{position:fixed;inset:0;z-index:180;background:linear-gradient(180deg,#3C0033,#12000E);color:#fff;display:grid;grid-template-rows:auto minmax(0,1fr);}
+.br-rtop{display:flex;gap:10px;align-items:center;padding:10px 16px;flex-wrap:wrap}
+.br-rtop b{font-size:15px}
+.br-rtop .live{font-size:11px;font-weight:800;letter-spacing:.14em;padding:4px 9px;border-radius:999px;background:#E23B2E}
+.br-rtop .tm{font-family:var(--num);font-size:15px;color:var(--lime)}
+.br-rtop .sp{flex:1}
+.br-follow{display:flex;gap:8px;align-items:center;font-size:12.5px;font-weight:700;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:4px 4px 4px 12px}
+.br-follow .btn{padding:6px 12px;font-size:12px}
+.br-rbody{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:12px;padding:0 12px 12px;min-height:0}
+.br-stage{position:relative;background:#F7F1F5;color:var(--ink);border-radius:20px;overflow:auto;min-height:0}
+.br-stage .pad{padding:18px}
+.br-stage h3{font-size:18px;font-weight:800;margin-bottom:10px}
+.br-rep{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.br-rep button{text-align:left;background:#fff;border-radius:18px;padding:12px;box-shadow:0 8px 20px -14px rgba(60,0,50,.5);border:2px solid transparent;color:var(--ink)}
+.br-rep button.on{border-color:var(--plum)}
+.br-rep img{width:100%;aspect-ratio:210/297;object-fit:cover;border-radius:10px;background:#eee;margin-bottom:8px}
+.br-rep b{display:block;font-size:14px}.br-rep small{font-size:12px;color:var(--soft)}
+.br-spread{display:flex;justify-content:center;align-items:flex-start;gap:3px;padding:16px;min-height:100%}
+.br-page{position:relative;flex:0 1 auto;max-width:50%;background:#fff;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
+.br-page.solo{max-width:100%}
+.br-page img{display:block;max-height:calc(100vh - 150px);max-width:100%;width:auto;height:auto}
+.br-page .no{position:absolute;bottom:6px;right:8px;font-size:11px;font-weight:700;color:var(--soft);background:rgba(255,255,255,.85);border-radius:6px;padding:1px 6px}
+.br-ptr{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;border:3px solid #FF2D7A;box-shadow:0 0 0 7px rgba(255,45,122,.22);pointer-events:none;animation:brp 1.4s infinite;z-index:5}
+@keyframes brp{50%{box-shadow:0 0 0 14px rgba(255,45,122,.08)}}
+.br-hl{outline:3px solid #FF2D7A;outline-offset:3px;border-radius:12px;animation:brh 1.4s infinite}
+@keyframes brh{50%{outline-color:rgba(255,45,122,.35)}}
+.br-pnav{position:sticky;bottom:10px;display:flex;justify-content:center;gap:8px;pointer-events:none}
+.br-pnav button{pointer-events:auto;background:var(--plum);color:#fff;border-radius:999px;padding:8px 14px;font-weight:700;font-size:13px;box-shadow:var(--sh)}
+.br-stage iframe{width:100%;height:100%;border:0;display:block;background:#fff}
+.br-list{display:grid;gap:6px}
+.br-list .it{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:11px 14px;font-size:14px}
+.br-list .it b{font-weight:700}.br-list .it span{font-weight:800;color:var(--plum);white-space:nowrap}
+.br-foods{display:flex;flex-wrap:wrap;gap:6px}
+.br-foods span{font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:999px;background:#fff;border:1.5px solid #EEE4EB}
+.br-foods span i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.br-side{display:grid;grid-template-rows:auto auto 1fr;gap:10px;min-height:0}
+.br-vid{position:relative;border-radius:18px;overflow:hidden;background:#1b1219;aspect-ratio:4/3}
+.br-vid video{width:100%;height:100%;object-fit:cover}
+.br-vid .lbl{position:absolute;left:10px;bottom:8px;font-size:12px;font-weight:700;background:rgba(0,0,0,.45);padding:3px 9px;border-radius:999px}
+.br-vid .wait{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-size:13px;color:rgba(255,255,255,.8);padding:16px}
+.br-vid .wait[hidden]{display:none}
+.br-self{position:absolute;right:10px;top:10px;width:30%;aspect-ratio:4/3;border-radius:10px;overflow:hidden;border:2px solid rgba(255,255,255,.7);background:#000}
+.br-self video{width:100%;height:100%;object-fit:cover;transform:scaleX(-1)}
+.br-ctl{display:flex;gap:8px;justify-content:center}
+.br-ctl button{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center}
+.br-ctl button[aria-pressed=true]{background:#fff;color:var(--plum)}
+.br-ctl button.end{background:#E23B2E;width:auto;border-radius:999px;padding:0 18px;font-weight:800}
+.br-info{background:rgba(255,255,255,.08);border-radius:16px;padding:12px;font-size:12.5px;color:rgba(255,255,255,.8);overflow:auto}
+.br-info b{color:#fff}
+.br-hov{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);z-index:20;background:#fff;color:var(--ink);border-radius:20px;box-shadow:var(--sh);padding:16px;width:min(420px,calc(100% - 24px))}
+.br-hov b{display:block;font-size:15px;margin-bottom:4px}
+.br-hov p{font-size:13px;color:var(--soft);margin-bottom:10px}
+.br-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:300;background:var(--ink);color:#fff;padding:11px 18px;border-radius:999px;font-size:13.5px;font-weight:600;box-shadow:var(--sh);max-width:calc(100% - 32px)}
+@media (max-width:980px){
+  .br-grid{grid-template-columns:minmax(0,1fr)}
+  .br-rbody{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .br-side{grid-template-rows:auto;grid-template-columns:150px minmax(0,1fr);align-items:center}
+  .br-vid{aspect-ratio:3/4}
+  .br-info{display:none}
+  .br-ctl{justify-content:flex-start;flex-wrap:wrap}
+  .br-page img{max-height:none}
+  .br-rtop{padding:8px 10px}
+}
+/* BERATUNG:END */</style>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
@@ -1680,6 +1809,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
   <a class="nav" href="#lebensmittel" data-r="lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Lebensmittel</a>
   <a class="nav" href="#medikamente" data-r="medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a>
   <a class="nav" href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a>
+  <a class="nav" href="#beratung" data-r="beratung"><svg class="ic"><use href="#i-camera"/></svg>Online-Beratung</a>
   <a class="nav" href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellungen</a>
   <a class="nav" href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Gene Nuggets</a>
   <button class="nav shopnav" data-shop aria-label="Shop öffnen"><span class="shop-ic"><svg class="ic"><use href="#i-cart"/></svg></span>Shop</button>
@@ -1692,7 +1822,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
 <div class="center">
 <header class="mtop">
   <div class="mtop-in"><a class="mlogo" href="#coach" aria-label="GENEius – Startseite"><svg viewBox="-8.53 -17.64 105.5 105.5" width="30" height="30" aria-hidden="true"><circle cx="27.38" cy="5.57" r="3.27" fill="var(--a)"></circle><line x1="61.04" y1="5.57" x2="74.43" y2="5.57" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="14.57" y1="14.27" x2="20.81" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="67.63" y1="14.27" x2="87.43" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="8.37" y1="22.98" x2="27.4" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="22.98" x2="73.74" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.92" y1="22.98" x2="93.43" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.57" y1="31.69" x2="32.35" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="56.09" y1="31.69" x2="71.24" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="81.42" y1="31.69" x2="95.23" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.97" y1="40.4" x2="27.4" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="40.4" x2="73.08" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.26" y1="40.4" x2="93.23" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="10.77" y1="49.1" x2="20.81" y2="49.1" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><circle cx="67.63" cy="49.1" r="3.27" fill="var(--a)"></circle><line x1="16.37" y1="57.81" x2="27.4" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="57.81" x2="62.03" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="38.89" y1="66.95" x2="44.11" y2="66.95" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="5.57" x2="50.85" y2="5.57" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="14.27" x2="57.45" y2="14.27" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="22.98" x2="50.85" y2="22.98" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="42.54" y1="31.69" x2="45.9" y2="31.69" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="40.4" x2="50.85" y2="40.4" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="49.1" x2="57.45" y2="49.1" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="57.81" x2="50.85" y2="57.81" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line></svg><span>GENE<b>ius</b></span></a><button class="shop-m" data-shop aria-label="Shop öffnen"><svg class="ic"><use href="#i-cart"/></svg><span>Shop</span></button><button class="tour-btn sm" data-tour aria-label="Tutorial starten"><svg class="ic"><use href="#i-sparkle"/></svg><span>Tutorial</span></button></div>
-  <nav class="mtabs" aria-label="Bereiche mobil"><a href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a><a href="#dashboard" data-r="dashboard"><svg class="ic"><use href="#i-grid"/></svg>Dashboard</a><a href="#naehrstoffe" data-r="naehrstoffe" aria-label="Nährstoffe"><svg class="ic"><use href="#i-capsule"/></svg>Bedarf</a><a href="#lebensmittel" data-r="lebensmittel" aria-label="Lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Essen</a><a href="#medikamente" data-r="medikamente" aria-label="Medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a><a href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a><a href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellung</a><a href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Nuggets</a><a href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a><a href="#gedaechtnis" data-r="gedaechtnis" aria-label="Mein Gedächtnis"><svg class="ic"><use href="#i-brain"/></svg>Gedächtnis</a><a href="#dna" data-r="dna" aria-label="DNA-Daten"><svg class="ic"><use href="#i-dna"/></svg>DNA</a></nav>
+  <nav class="mtabs" aria-label="Bereiche mobil"><a href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a><a href="#dashboard" data-r="dashboard"><svg class="ic"><use href="#i-grid"/></svg>Dashboard</a><a href="#naehrstoffe" data-r="naehrstoffe" aria-label="Nährstoffe"><svg class="ic"><use href="#i-capsule"/></svg>Bedarf</a><a href="#lebensmittel" data-r="lebensmittel" aria-label="Lebensmittel"><svg class="ic"><use href="#i-apple"/></svg>Essen</a><a href="#medikamente" data-r="medikamente" aria-label="Medikamente"><svg class="ic"><use href="#i-pills"/></svg>Medikamente</a><a href="#analysen" data-r="analysen"><svg class="ic"><use href="#i-book"/></svg>Analysen</a><a href="#beratung" data-r="beratung" aria-label="Online-Beratung"><svg class="ic"><use href="#i-camera"/></svg>Beratung</a><a href="#bestellungen" data-r="bestellungen"><svg class="ic"><use href="#i-box"/></svg>Bestellung</a><a href="#nuggets" data-r="nuggets"><svg class="ic" viewBox="0 0 24 24"><path d="M5 9l5-5h6l4 5-2 9-7 3-7-4z"/><path d="M10 4l1 6 9-1M11 10l-6-1M11 10l-2 11"/></svg>Nuggets</a><a href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a><a href="#gedaechtnis" data-r="gedaechtnis" aria-label="Mein Gedächtnis"><svg class="ic"><use href="#i-brain"/></svg>Gedächtnis</a><a href="#dna" data-r="dna" aria-label="DNA-Daten"><svg class="ic"><use href="#i-dna"/></svg>DNA</a></nav>
 </header>
 <header class="wrap topbar">
   <span></span>
@@ -2195,6 +2325,32 @@ body.touring .rail,body.touring .mtop{z-index:89}
 </div>
 </section>
 <!-- DASHBOARD:END -->
+<!-- BERATUNG:BEGIN -->
+<section class="view br" data-view="beratung" hidden aria-labelledby="h-br">
+<div class="wrap">
+  <header class="hero compact"><div class="hero-in">
+    <div>
+      <div class="eyebrow">Persönlich · per Video</div>
+      <h1 id="h-br">Online-Beratung</h1>
+      <p class="lead">Sprich per Video mit deiner Beraterin. Sie geht mit dir deine Berichte durch, erklärt deinen Bedarf und deine Lebensmittel und schaut deine Medikamente mit dir an.</p>
+      <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span></div>
+    </div>
+  </div></header>
+  <div id="brBanner"></div>
+  <div class="br-grid">
+    <div>
+      <div class="br-card" id="brAdv"><div class="br-empty">Lade deine Beraterin …</div></div>
+      <div class="br-card" style="margin-top:18px"><h2>Freie Termine <small id="brDur"></small></h2><div id="brSlots"><div class="br-empty">Lade freie Termine …</div></div></div>
+    </div>
+    <div>
+      <div class="br-card"><h2>Meine Termine</h2><div id="brMine"><div class="br-empty">Lade …</div></div></div>
+      <div class="br-card" style="margin-top:18px"><h2>Von deiner Beraterin übergeben</h2><div id="brHand"></div></div>
+    </div>
+  </div>
+  <p class="br-note">Termine können bis 24 Stunden vorher kostenlos storniert werden. Die Bezahlung läuft über den GENEius-Shop (im Klickdummy wird nichts abgebucht). Deine Berichte sieht die Beraterin nur während des Termins und nur mit deiner Einwilligung.</p>
+</div>
+</section>
+<!-- BERATUNG:END -->
 </main>
 
 <footer class="wrap foot">
@@ -3053,7 +3209,7 @@ function bindTilt(){
 }
 
 /* ================= ROUTER ================= */
-const ROUTES=['coach','naehrstoffe','lebensmittel','medikamente','bestellungen','abos','analysen','berichte','dna','profil','nuggets','gedaechtnis','dashboard'];
+const ROUTES=['coach','naehrstoffe','lebensmittel','medikamente','bestellungen','abos','analysen','berichte','dna','profil','nuggets','gedaechtnis','dashboard','beratung'];
 const ALIAS={berichte:'analysen',abos:'bestellungen'};
 function route(){
  let r=location.hash.slice(1);const rVoll=r;if(/^medikamente(\/|$)/.test(r))r='medikamente';if(!ROUTES.includes(r))r='coach';
@@ -4233,5 +4389,280 @@ addEventListener('hashchange',onRoute);
 if(document.readyState==='loading')addEventListener('DOMContentLoaded',onRoute);else onRoute();
 })();
 /* DASHBOARD:END */</script>
+<script id="br-js">/* BERATUNG:BEGIN – Online-Beratung, Kundenseite.
+   Backend geneius-beratung (PocketBase/Go, Quelle GENE NUGGETS\beratung). Gegenseite: NovoPilot (Berater).
+   Gemeinsamer Zustand rooms.state {sessionId,view,reportId,spread,htmlAnchor,highlight{page,x,y,item?},by,at} – hier nur LESEN.
+   spread nach Buchlogik: 0 = Titelseite rechts, sonst linke (gerade) Seite. highlight.page = null → x/y relativ zur ganzen Ansicht. */
+(()=>{
+const BASE=location.hostname==='geneius-app.daniel.internal.novogenia.com'?location.origin+'/bapi':'https://geneius-beratung.daniel.internal.novogenia.com';
+const SDK='https://cdn.jsdelivr.net/npm/pocketbase@0.26.2/dist/pocketbase.umd.js';
+const HKEY='gn-beratung-uebergaben';
+const sec=document.querySelector('section[data-view="beratung"]');if(!sec)return;
+const q=s=>sec.querySelector(s);
+const ic=(n,c='')=>`<svg class="ic ${c}"><use href="#i-${n}"/></svg>`;
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const eur=v=>(Math.round(v*100)/100).toLocaleString('de-DE',{minimumFractionDigits:v%1?2:0,maximumFractionDigits:2})+' €';
+const dt=(d,o)=>new Date(d).toLocaleString('de-AT',o);
+const when=d=>dt(d,{weekday:'long',day:'2-digit',month:'2-digit',year:'numeric'})+', '+dt(d,{hour:'2-digit',minute:'2-digit'})+' Uhr';
+function toast(t){const e=document.createElement('div');e.className='br-toast';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),3200)}
+let pb=null,adv=null,mine=[],slots=[],day=null,loaded=false,timer=null;
+
+function loadSdk(){return window.PocketBase?Promise.resolve():new Promise((ok,no)=>{const s=document.createElement('script');s.src=SDK;s.onload=ok;s.onerror=()=>no(new Error('SDK'));document.head.appendChild(s)})}
+async function init(){
+  if(pb)return;
+  await loadSdk();
+  const AS=new PocketBase(BASE).authStore.constructor; /* LocalAuthStore (im UMD-Build nicht exportiert) */
+  pb=new PocketBase(BASE,new AS('gn-beratung-auth'));
+  pb.autoCancellation(false);
+  if(!pb.authStore.isValid||pb.authStore.record?.collectionName!=='customers'){
+    /* Klickdummy: Demo-Konto „Markus Steiner“. In der echten App kommt das GENEius-Konto. */
+    const r=await fetch(BASE+'/api/demo/login',{method:'POST',headers:{'Content-Type':'application/json'},body:'{"role":"customer"}'});
+    const j=await r.json();if(!r.ok)throw new Error(j.message||'Anmeldung fehlgeschlagen');
+    pb.authStore.save(j.token,j.record);
+  }
+}
+async function load(){
+  try{await init()}catch(e){q('#brAdv').innerHTML=`<div class="br-empty">Die Online-Beratung ist gerade nicht erreichbar (${esc(e.message)}).</div>`;return}
+  const me=pb.authStore.record;
+  try{
+    adv=await pb.collection('advisors').getFirstListItem(`ref="${me.advisor||'a1'}"`);
+    slots=await pb.collection('slots').getFullList({filter:`advisor="${adv.ref}" && booked=false && start>="${new Date().toISOString().replace('T',' ')}"`,sort:'start'});
+    mine=await pb.collection('bookings').getFullList({sort:'start',filter:`status!="cancelled"`});
+  }catch(e){toast('Laden fehlgeschlagen: '+e.message);return}
+  loaded=true;renderAdv();renderSlots();renderMine();renderHand();
+  if(!timer)timer=setInterval(()=>{if(location.hash==='#beratung')renderMine()},30000);
+}
+function renderAdv(){
+  const ini=adv.name.replace(/^(Mag\.|Dr\.|Prof\.)\s*/g,'').split(' ').map(x=>x[0]).join('').slice(0,2);
+  const per=eur(adv.rateEur*adv.slotMin/60);
+  q('#brAdv').innerHTML=`<h2>Deine Beraterin</h2><div class="br-adv"><div class="br-av">${adv.photo?`<img src="${esc(adv.photo)}" alt="">`:esc(ini)}</div><div><h3>${esc(adv.name)}</h3><div class="t">${esc(adv.title||'')}</div><div class="br-langs">${(adv.langs||[]).map(l=>`<span>${esc(l)}</span>`).join('')}</div><p>${esc(adv.bio||'')}</p></div></div>
+  <div class="br-price"><div><b>${eur(adv.rateEur)}</b><small>pro Stunde</small></div><div><b>${per}</b><small>pro Termin (${adv.slotMin} Min.)</small></div></div>`;
+  q('#brDur').textContent=adv.slotMin+' Minuten · '+per;
+}
+function renderSlots(){
+  const by={};slots.forEach(s=>{const k=dt(s.start,{year:'numeric',month:'2-digit',day:'2-digit'});(by[k]=by[k]||[]).push(s)});
+  const keys=Object.keys(by);if(!keys.length){q('#brSlots').innerHTML='<div class="br-empty">Gerade sind keine Termine frei. Schau später wieder vorbei.</div>';return}
+  if(!day||!by[day])day=keys[0];
+  q('#brSlots').innerHTML=`<div class="br-days" role="group" aria-label="Tag wählen">${keys.map(k=>{const d=by[k][0].start;return `<button type="button" data-brday="${k}" aria-pressed="${k===day}"><small>${dt(d,{weekday:'short'})}</small><b>${dt(d,{day:'2-digit'})}</b><small>${dt(d,{month:'short'})}</small></button>`}).join('')}</div>
+  <div class="br-times">${by[day].map(s=>`<button type="button" data-brslot="${s.id}">${dt(s.start,{hour:'2-digit',minute:'2-digit'})}</button>`).join('')}</div>`;
+}
+const canJoin=b=>{const n=Date.now(),st=new Date(b.start).getTime(),en=new Date(b.end).getTime();return b.status!=='done'&&n>=st-10*60e3&&n<=en+60*60e3};
+function renderMine(){
+  const up=mine.filter(b=>b.status!=='done'&&new Date(b.end).getTime()+60*60e3>Date.now());
+  const past=mine.filter(b=>!up.includes(b)).slice(-3).reverse();
+  const card=b=>{const live=canJoin(b),soon=new Date(b.start).getTime()-Date.now();
+    return `<div class="br-appt ${live?'live':''}"><div class="h"><div><b>${esc(when(b.start))}</b><small>${b.minutes} Min. mit ${esc(b.advisorName)} · ${b.free?'kostenlos':eur(b.priceEur)}${b.status==='done'?` · abgerechnet ${b.billedMinutes} Min.`:''}</small></div><span class="br-tag ${live?'ok':''}">${b.status==='done'?'Erledigt':live?'Jetzt':'Gebucht'}</span></div>
+    ${b.status!=='done'?`<div class="inv">${ic('send')}<span>Einladung per E-Mail mit Kalendereintrag an ${esc(pb.authStore.record.email)} gesendet. Wir erinnern dich 10 Minuten vorher in der App.</span></div>
+    <div class="br-acts">${live?`<button type="button" class="btn plum sm" data-brjoin="${b.id}">${ic('camera','sm')}Beitreten</button>`:`<button type="button" class="btn ghost sm" disabled title="Beitreten ist ab 10 Minuten vor Beginn möglich">${ic('camera','sm')}Beitreten ab ${dt(new Date(new Date(b.start).getTime()-10*60e3),{hour:'2-digit',minute:'2-digit'})}</button>`}
+      <button type="button" class="btn ghost sm" data-brics="${b.id}">${ic('cal','sm')}Kalender</button>
+      ${soon>24*3600e3?`<button type="button" class="btn ghost sm" data-brcancel="${b.id}">Stornieren</button>`:''}</div>`:''}</div>`};
+  q('#brMine').innerHTML=(up.length?up.map(card).join(''):'<div class="br-empty">Noch kein Termin gebucht. Wähle links einen freien Termin.</div>')+(past.length?`<div class="kick" style="margin:14px 0 8px">Vergangen</div>${past.map(card).join('')}`:'');
+  const next=up.find(canJoin);
+  q('#brBanner').innerHTML=next?`<div class="br-banner">${ic('camera')}<span>Deine Online-Beratung mit ${esc(next.advisorName)} ${new Date(next.start)>Date.now()?'beginnt gleich':'läuft jetzt'}.</span><button type="button" class="btn plum sm" data-brjoin="${next.id}">Beitreten</button></div>`:'';
+}
+const hands=()=>{try{return JSON.parse(localStorage.getItem(HKEY)||'[]')}catch(e){return[]}};
+function renderHand(){
+  const h=hands();
+  q('#brHand').innerHTML=h.length?`<div class="br-hand">${h.slice().reverse().map(x=>`<div class="row"><span><b>${x.list==='bedarf'?'Mein Bedarf':'Lebensmittelliste'}</b><br><small>${(x.payload||[]).length||''} Einträge · ${esc(dt(x.at,{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}))}</small></span><a class="btn ghost sm" href="#${x.list==='bedarf'?'naehrstoffe':'lebensmittel'}">Ansehen</a></div>`).join('')}</div>`:'<div class="br-empty">Hier landen „Mein Bedarf“ und die Lebensmittelliste, wenn deine Beraterin sie dir in der Beratung übergibt.</div>';
+}
+
+/* ---------- Dialoge ---------- */
+function dlg(html){const o=document.createElement('div');o.className='br-ov';o.innerHTML=`<div class="br-dlg" role="dialog" aria-modal="true">${html}</div>`;document.body.appendChild(o);o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-brx]'))close()});function close(){o.dispatchEvent(new Event('close'));o.remove()}o.close=close;return o}
+function book(id){
+  const s=slots.find(x=>x.id===id);if(!s)return;
+  const mins=Math.round((new Date(s.end)-new Date(s.start))/60e3),price=adv.rateEur*mins/60;
+  const o=dlg(`<h3>Termin buchen</h3><p>Prüfe deinen Termin. Nach der Buchung bekommst du eine E-Mail mit Kalendereinladung.</p>
+   <div class="br-sum"><div><span>Wann</span><b>${esc(when(s.start))}</b></div><div><span>Dauer</span><b>${mins} Minuten</b></div><div><span>Mit</span><b>${esc(adv.name)}</b></div><div><span>Stundensatz</span><b>${eur(adv.rateEur)}</b></div><div><span>Preis</span><b>${eur(price)}</b></div></div>
+   <p>Bezahlt wird über den GENEius-Shop mit deiner hinterlegten Zahlungsart. Dauert die Beratung länger, wird minutengenau nachverrechnet. Im Klickdummy wird nichts abgebucht.</p>
+   <div class="acts"><button type="button" class="btn ghost" data-brx>Abbrechen</button><button type="button" class="btn plum" id="brBuy">${ic('check','sm')}Zahlungspflichtig buchen · ${eur(price)}</button></div>`);
+  o.querySelector('#brBuy').onclick=async e=>{e.target.disabled=true;
+    try{await pb.send('/api/book',{method:'POST',body:{slot:id}});o.close();toast('Gebucht! Die Einladung ist unterwegs.');day=null;await load()}
+    catch(err){e.target.disabled=false;toast(err.message||'Buchen fehlgeschlagen');await load()}};
+}
+async function ics(id){
+  try{const r=await fetch(BASE+'/api/booking/'+id+'/ics',{headers:{Authorization:pb.authStore.token}});const b=await r.blob();
+    const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='geneius-beratung.ics';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000)}
+  catch(e){toast('Kalenderdatei konnte nicht geladen werden.')}
+}
+async function cancel(id){
+  if(!confirm('Termin wirklich stornieren?'))return;
+  try{await pb.send('/api/booking/'+id+'/cancel',{method:'POST'});toast('Termin storniert.');await load()}catch(e){toast(e.message)}
+}
+async function demoNow(){
+  try{await init();const b=await pb.send('/api/demo/now',{method:'POST'});await load();precheck(b.id)}catch(e){toast(e.message||'Fehlgeschlagen')}
+}
+
+/* ---------- Technik-Check + Einwilligung ---------- */
+let media=null;
+async function precheck(id){
+  const b=mine.find(x=>x.id===id)||await pb.collection('bookings').getOne(id);
+  const o=dlg(`<h3>Bereit für deine Beratung?</h3><p>Wir prüfen kurz Kamera und Mikrofon.</p>
+   <div class="br-prev"><video autoplay playsinline muted></video><div class="msg">Kamera wird gestartet …</div></div>
+   <div class="br-ok"><span id="brCam">… Kamera</span><span id="brMic">… Mikrofon</span></div><div class="br-meter"><i id="brLvl"></i></div>
+   <label class="br-check"><input type="checkbox" id="brCons" ${b.consentAt?'checked':''}><span>Ich willige ein, dass die Beratung per Video stattfindet und meine Beraterin während dieses Termins meine Berichte, meinen Nährstoffbedarf, meine Lebensmittel und meine Medikamentenauswertung öffnen darf. Es wird nichts aufgezeichnet. Jeder Zugriff wird protokolliert. Ich kann die Beratung jederzeit beenden.</span></label>
+   <div class="acts"><button type="button" class="btn ghost" data-brx>Später</button><button type="button" class="btn plum" id="brGo" disabled>${ic('camera','sm')}Beitreten</button></div>`);
+  const v=o.querySelector('video'),msg=o.querySelector('.msg'),go=o.querySelector('#brGo'),cons=o.querySelector('#brCons');
+  const upd=()=>{go.disabled=!cons.checked};cons.onchange=upd;upd();
+  let raf=0,ac=null;
+  go.onclick=async()=>{go.disabled=true;
+    try{if(!b.consentAt)await pb.send('/api/booking/'+id+'/consent',{method:'POST'});o.joined=true;o.close();room(id)}
+    catch(e){go.disabled=false;toast(e.message)}};
+  try{media=await navigator.mediaDevices.getUserMedia({video:{width:640,height:480},audio:true});v.srcObject=media;msg.remove();
+    o.querySelector('#brCam').innerHTML='<span class="y">✓ Kamera funktioniert</span>';
+    ac=new AudioContext();const an=ac.createAnalyser();ac.createMediaStreamSource(media).connect(an);const d=new Uint8Array(an.fftSize);let peak=0;
+    const tick=()=>{an.getByteTimeDomainData(d);let m=0;for(const x of d)m=Math.max(m,Math.abs(x-128));peak=Math.max(peak,m);o.querySelector('#brLvl').style.width=Math.min(100,m*1.6)+'%';
+      o.querySelector('#brMic').innerHTML=peak>6?'<span class="y">✓ Mikrofon funktioniert</span>':'Sag kurz etwas, um dein Mikrofon zu testen.';raf=requestAnimationFrame(tick)};tick();
+  }catch(e){msg.textContent='Kamera oder Mikrofon sind nicht freigegeben. Du kannst trotzdem beitreten und nur zuhören, oder die Freigabe in deinem Browser erlauben.';
+    o.querySelector('#brCam').innerHTML='<span class="n">✗ Kein Zugriff auf Kamera/Mikrofon</span>';o.querySelector('#brMic').textContent='';media=null}
+  o.addEventListener('close',()=>{cancelAnimationFrame(raf);ac&&ac.close();if(!o.joined&&media){media.getTracks().forEach(t=>t.stop());media=null}});
+}
+
+/* ---------- Beratungsraum ---------- */
+let R=null;
+async function room(id){
+  const b=await pb.collection('bookings').getOne(id);
+  const rec=await pb.collection('rooms').getFirstListItem(`booking="${id}"`);
+  let reps=[];try{reps=(await pb.send('/api/my/reports',{})).items||[]}catch(e){}
+  R={b,rec,st:rec.state||{view:'reports'},reps,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
+  const el=document.createElement('div');el.className='br-room';el.setAttribute('role','dialog');el.setAttribute('aria-label','Online-Beratung');
+  el.innerHTML=`<div class="br-rtop"><span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b><span class="tm" id="brTm">00:00</span><span class="sp"></span><div class="br-follow" id="brFol"></div></div>
+   <div class="br-rbody"><div class="br-stage" id="brStage"></div>
+   <div class="br-side"><div class="br-vid"><video id="brRemote" autoplay playsinline></video><div class="wait" id="brWait">Warte auf ${esc(b.advisorName)} …<br>Sie tritt gleich bei.</div><span class="lbl">${esc(b.advisorName)}</span><div class="br-self"><video id="brSelf" autoplay playsinline muted></video></div></div>
+   <div class="br-ctl"><button type="button" data-brm="mic" aria-pressed="false" aria-label="Mikrofon stummschalten">${ic('mic')}</button><button type="button" data-brm="cam" aria-pressed="false" aria-label="Kamera aus">${ic('camera')}</button><button type="button" class="end" data-brm="leave">Verlassen</button></div>
+   <div class="br-info"><b>So funktioniert's</b><br>Deine Beraterin führt durch die Inhalte, du siehst automatisch dasselbe. Mit „Selbst blättern“ kannst du dich umsehen, „Zurück zur Beraterin“ bringt dich wieder mit. Der pinke Kreis zeigt, worauf sie gerade zeigt.</div></div></div>`;
+  document.body.appendChild(el);R.el=el;document.documentElement.style.overflow='hidden';
+  if(media)el.querySelector('#brSelf').srcObject=media;
+  R.tick=setInterval(()=>{const s=Math.floor((Date.now()-R.t0)/1000);el.querySelector('#brTm').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);
+  R.unsub.push(await pb.collection('rooms').subscribe(rec.id,e=>{R.st=e.record.state||R.st;R.lastAdv=Date.now();if(R.follow)draw();follow()}));
+  R.unsub.push(await pb.collection('events').subscribe('*',e=>e.action==='create'&&onEv(e.record),{filter:`booking="${id}"`}));
+  await send('hello',{role:'customer'});
+  follow();draw();
+  el.addEventListener('click',onRoomClick);
+}
+function send(type,data){return pb.collection('events').create({booking:R.b.id,type,data}).catch(()=>{})}
+async function onEv(ev){
+  if(!R||ev.from!=='advisor')return;
+  if(new Date(ev.created.replace(' ','T')).getTime()<R.joined-3000&&ev.type!=='handover')return;
+  if(ev.type==='hello'){send('ready',{})}
+  if(ev.type==='signal'){
+    const d=ev.data||{};
+    if(d.sdp&&d.sdp.type==='offer'){newPc();await R.pc.setRemoteDescription(d.sdp);const a=await R.pc.createAnswer();await R.pc.setLocalDescription(a);send('signal',{sdp:{type:a.type,sdp:a.sdp}});(R.ice||[]).splice(0).forEach(c=>R.pc.addIceCandidate(c).catch(()=>{}))}
+    if(d.candidate){if(R.pc&&R.pc.remoteDescription)R.pc.addIceCandidate(d.candidate).catch(()=>{});else(R.ice=R.ice||[]).push(d.candidate)}
+  }
+  if(ev.type==='handover')handover(ev);
+  if(ev.type==='bye'){toast('Die Beratung wurde beendet'+(ev.data&&ev.data.minutes?` (${ev.data.minutes} Minuten)`:'')+'. Danke!');leave(true)}
+}
+function newPc(){
+  if(R.pc)R.pc.close();
+  const pc=new RTCPeerConnection({iceServers:[{urls:'stun:stun.l.google.com:19302'}]});R.pc=pc;
+  if(media)media.getTracks().forEach(t=>pc.addTrack(t,media));
+  else{pc.addTransceiver('audio',{direction:'recvonly'});pc.addTransceiver('video',{direction:'recvonly'})}
+  pc.ontrack=e=>{R.el.querySelector('#brRemote').srcObject=e.streams[0];R.el.querySelector('#brWait').hidden=true};
+  pc.onicecandidate=e=>e.candidate&&send('signal',{candidate:e.candidate.toJSON()});
+  pc.onconnectionstatechange=()=>{if(['failed','disconnected'].includes(pc.connectionState)){const w=R.el.querySelector('#brWait');w.hidden=false;w.innerHTML='Verbindung unterbrochen …<br>Sie wird gleich wiederhergestellt.';send('ready',{})}};
+}
+function handover(ev){
+  const d=ev.data||{},name=d.list==='bedarf'?'Mein Bedarf':'deine Lebensmittelliste',n=(d.payload||[]).length;
+  R.el.querySelectorAll('.br-hov').forEach(x=>x.remove());
+  const h=document.createElement('div');h.className='br-hov';
+  h.innerHTML=`<b>${esc(R.b.advisorName)} übergibt dir ${name}</b><p>${n?n+' Einträge. ':''}Nimm sie an, dann ist sie in deiner App gespeichert.</p><div class="br-acts"><button type="button" class="btn plum sm" data-brok="${ev.id}">${ic('check','sm')}Annehmen und speichern</button><button type="button" class="btn ghost sm" data-brno>Später</button></div>`;
+  R.el.querySelector('.br-stage').appendChild(h);
+  h.querySelector('[data-brok]').onclick=()=>{const l=hands();l.push({id:ev.id,list:d.list,payload:d.payload,at:Date.now(),from:R.b.advisorName,booking:R.b.id});try{localStorage.setItem(HKEY,JSON.stringify(l))}catch(e){}
+    send('handover-ack',{handoverId:ev.id,list:d.list});h.remove();toast((d.list==='bedarf'?'Mein Bedarf':'Lebensmittelliste')+' gespeichert ✓');renderHand()};
+  h.querySelector('[data-brno]').onclick=()=>h.remove();
+}
+function follow(){
+  if(!R)return;const f=R.el.querySelector('#brFol');
+  f.innerHTML=R.follow?`<span>${ic('eye','sm')} Du folgst ${esc(R.b.advisorName.replace(/^(Mag\.|Dr\.)\s*/,'').split(' ')[0])}</span><button type="button" class="btn glass" data-brf="self">Selbst blättern</button>`
+    :`<span>Du blätterst selbst</span><button type="button" class="btn lime" data-brf="back">Zurück zur Beraterin</button>`;
+}
+const S=()=>R.follow?R.st:R.local;
+const rep=id=>R.reps.find(r=>r.ref===id||r.id===id)||R.reps[0];
+const purl=(r,n)=>r.img.replace('{n}',String(n).padStart(r.pad||3,'0'));
+const mobile=()=>matchMedia('(max-width:980px)').matches;
+function pagesOf(st,r){const L=st.spread||0;if(L===0)return[1];const p=[L,L+1].filter(n=>n<=r.pages);if(mobile()){const hp=st.highlight&&st.highlight.page;return[p.includes(hp)?hp:(st.mpage&&p.includes(st.mpage)?st.mpage:p[0])]}return p}
+function draw(){
+  if(!R)return;const st=S(),stage=R.el.querySelector('#brStage');const keep=stage.querySelector('.br-hov');
+  let h='';
+  if(st.view==='reports'||!st.view){
+    h=`<div class="pad"><h3>Deine Berichte</h3><div class="br-rep">${R.reps.map(r=>`<button type="button" data-brr="${r.ref}" class="${st.reportId===r.ref?'on':''}"><img src="${purl(r,1)}" alt="" loading="lazy"><b>${esc(r.title)}</b><small>${r.pages} Seiten</small></button>`).join('')||'<div class="br-empty">Keine Berichte gefunden.</div>'}</div></div>`;
+  }else if(st.view==='report'){
+    const r=rep(st.reportId);if(r){const ps=pagesOf(st,r);
+      h=`<div class="br-spread">${ps.map(n=>`<div class="br-page ${ps.length===1?'solo':''}" data-pg="${n}"><img src="${purl(r,n)}" alt="Seite ${n}"><span class="no">${n}</span></div>`).join('')}</div>
+      ${R.follow?'':`<div class="br-pnav"><button type="button" data-brp="-1">‹ Zurück</button><button type="button" data-brp="1">Weiter ›</button></div>`}`;
+      /* Nachbarseiten vorladen */
+      [ps[0]-2,ps[0]-1,ps[ps.length-1]+1,ps[ps.length-1]+2].forEach(n=>{if(n>=1&&n<=r.pages){const i=new Image();i.src=purl(r,n)}});
+    }
+  }else if(st.view==='report-html'){
+    const r=rep(st.reportId);const tg=((r&&r.sections)||[]).find(x=>x.id===st.htmlAnchor);
+    /* Sprung in der HTML-App über ihren eigenen Hash #/seite/<data-page> (zeigeSeite der App) */
+    const hs=tg?(tg.ref?'#/seite/'+encodeURIComponent(tg.ref):'#'+tg.target):'';
+    h=r&&r.htmlUrl?`<iframe id="brHtml" src="${r.htmlUrl}${hs}" title="${esc(r.title)} als Webseite"></iframe>`:'<div class="pad br-empty">Für diesen Bericht gibt es keine HTML-Version.</div>';
+    const cur=stage.querySelector('#brHtml');if(cur&&r&&cur.src.split('#')[0]===r.htmlUrl){if(hs&&!cur.src.endsWith(hs))cur.src=r.htmlUrl+hs;ptr(stage,st);return}
+  }else if(st.view==='bedarf'){
+    /* gleiche Darstellung wie im Reiter „Nährstoffe“ (gerendertes #nutGroups, nur Anzeige) */
+    const src=document.getElementById('nutGroups');
+    h=`<div class="pad br-clone" inert><h3>Mein Bedarf</h3>${src?src.innerHTML:''}</div>`;
+  }else if(st.view==='food'){
+    const src=document.getElementById('foodGrid');
+    h=`<div class="pad br-clone" inert><h3>Deine Lebensmittel</h3>${src?src.innerHTML:''}</div>`;
+  }else if(st.view==='meds'){
+    const cur=stage.querySelector('#brMeds');if(cur){ptr(stage,st);return}
+    h=`<iframe id="brMeds" src="medikamente/index.html?embed=geneius" title="Medikamente"></iframe>`;
+  }
+  stage.innerHTML=h;if(keep)stage.appendChild(keep);
+  ptr(stage,st);
+}
+function ptr(stage,st){
+  stage.querySelectorAll('.br-ptr').forEach(x=>x.remove());stage.querySelectorAll('.br-hl').forEach(x=>x.classList.remove('br-hl'));
+  const hl=st.highlight;if(!hl)return;
+  if(hl.item){const want=String(hl.item).trim().toLowerCase();
+    const t=[...stage.querySelectorAll('.br-clone *')].filter(x=>x.children.length===0&&x.textContent.trim().toLowerCase()===want).map(x=>x.closest('button,li,article,a')||x.parentElement)[0];
+    if(t){t.classList.add('br-hl');t.scrollIntoView({block:'center',behavior:'smooth'});return}}
+  let host=stage,box=null;
+  if(hl.page!=null){host=stage.querySelector(`.br-page[data-pg="${hl.page}"]`);if(!host)return}
+  const d=document.createElement('div');d.className='br-ptr';
+  if(host===stage){d.style.left=(hl.x*stage.clientWidth)+'px';d.style.top=(hl.y*Math.max(stage.scrollHeight,stage.clientHeight))+'px'}
+  else{d.style.left=(hl.x*100)+'%';d.style.top=(hl.y*100)+'%'}
+  host.appendChild(d);
+  if(host!==stage)host.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+function onRoomClick(e){
+  const b=e.target.closest('button');if(!b||!R)return;
+  if(b.dataset.brf==='self'){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));R.local.highlight=null;follow();draw();return}
+  if(b.dataset.brf==='back'){R.follow=true;follow();draw();return}
+  if(b.dataset.brr){if(R.follow){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));follow()}Object.assign(R.local,{view:'report',reportId:b.dataset.brr,spread:0,highlight:null});draw();return}
+  if(b.dataset.brp){const r=rep(R.local.reportId);const dir=+b.dataset.brp;let L=R.local.spread||0;
+    if(mobile()){const cur=pagesOf(R.local,r)[0]+dir;if(cur<1||cur>r.pages)return;L=cur===1?0:cur-(cur%2);R.local.mpage=cur}
+    else{L=dir>0?(L===0?2:L+2):(L<=2?0:L-2);if(L>r.pages)return}
+    R.local.spread=L;R.local.highlight=null;draw();return}
+  const m=b.dataset.brm;
+  if(m==='mic'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);media.getAudioTracks().forEach(t=>t.enabled=!on)}
+  if(m==='cam'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);media.getVideoTracks().forEach(t=>t.enabled=!on)}
+  if(m==='leave'&&confirm('Beratung verlassen? Du kannst später wieder beitreten.'))leave();
+}
+function leave(ended){
+  if(!R)return;send('bye',{role:'customer'});
+  R.unsub.forEach(u=>{try{u()}catch(e){}});clearInterval(R.tick);R.pc&&R.pc.close();
+  if(media){media.getTracks().forEach(t=>t.stop());media=null}
+  R.el.remove();document.documentElement.style.overflow='';R=null;load();
+}
+addEventListener('resize',()=>{if(R)draw()});
+
+/* ---------- Klicks im Reiter ---------- */
+sec.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.brday){day=b.dataset.brday;renderSlots()}
+  else if(b.dataset.brslot)book(b.dataset.brslot);
+  else if(b.dataset.brjoin)precheck(b.dataset.brjoin);
+  else if(b.dataset.brics)ics(b.dataset.brics);
+  else if(b.dataset.brcancel)cancel(b.dataset.brcancel);
+  else if(b.dataset.br==='now')demoNow();
+});
+document.addEventListener('click',e=>{const b=e.target.closest('#brBanner [data-brjoin]');if(b&&!sec.contains(b))precheck(b.dataset.brjoin)});
+const onRoute=()=>{if(location.hash==='#beratung'){loaded?renderMine():load()}};
+addEventListener('hashchange',onRoute);onRoute();
+})();
+/* BERATUNG:END */</script>
 </body>
 </html>
