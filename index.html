@@ -1761,6 +1761,17 @@ body.touring .rail,body.touring .mtop{z-index:89}
 @keyframes brh{50%{outline-color:rgba(255,45,122,.35)}}
 .br-pnav{position:sticky;bottom:10px;display:flex;justify-content:center;gap:8px;pointer-events:none}
 .br-pnav button{pointer-events:auto;background:var(--plum);color:#fff;border-radius:999px;padding:8px 14px;font-weight:700;font-size:13px;box-shadow:var(--sh)}
+.br-med h4{font-size:15px;font-weight:800;margin:14px 0 8px}
+.br-medhint{font-size:13px;color:var(--soft);margin-bottom:10px}
+.br-medchips{display:flex;flex-wrap:wrap;gap:8px}
+.br-medchips button{border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700;background:#fff;color:var(--ink);border:2px solid transparent}
+.br-medchips button.on{border-color:var(--plum);background:var(--plum);color:#fff}
+.br-med ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.br-med li{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border-radius:14px;padding:10px 14px}
+.br-med li b{display:block;font-size:14px}.br-med li small{font-size:12px;color:var(--soft)}
+.br-med .lv{flex:none;font-size:12px;font-weight:800;border-radius:999px;padding:4px 10px}
+.lv-g{background:#E3F3D6;color:#2F6B12}.lv-b{background:#E3ECF7;color:#1F4C8A}.lv-y{background:#FFF1C9;color:#7A5300}.lv-r{background:#FFD9DE;color:#9B1027}
+.br-medall{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--plum)}
 .br-stage iframe{width:100%;height:100%;border:0;display:block;background:#fff}
 .br-list{display:grid;gap:6px}
 .br-list .it{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:11px 14px;font-size:14px}
@@ -4523,7 +4534,8 @@ async function room(id){
   const b=await pb.collection('bookings').getOne(id);
   const rec=await pb.collection('rooms').getFirstListItem(`booking="${id}"`);
   let reps=[];try{reps=(await pb.send('/api/my/reports',{})).items||[]}catch(e){}
-  R={b,rec,st:rec.state||{view:'reports'},reps,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
+  let meds=null;try{meds=await pb.send('/api/my/meds',{})}catch(e){}
+  R={b,rec,st:rec.state||{view:'reports'},reps,meds,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
   const el=document.createElement('div');el.className='br-room';el.setAttribute('role','dialog');el.setAttribute('aria-label','Online-Beratung');
   el.innerHTML=`<div class="br-rtop"><span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b><span class="tm" id="brTm">00:00</span><span class="sp"></span><div class="br-follow" id="brFol"></div></div>
    <div class="br-rbody"><div class="br-stage" id="brStage"></div>
@@ -4607,8 +4619,14 @@ function draw(){
     const src=document.getElementById('foodGrid');
     h=`<div class="pad br-clone" inert><h3>Deine Lebensmittel</h3>${src?src.innerHTML:''}</div>`;
   }else if(st.view==='meds'){
-    const cur=stage.querySelector('#brMeds');if(cur){ptr(stage,st);return}
-    h=`<iframe id="brMeds" src="medikamente/index.html?embed=geneius" title="Medikamente"></iframe>`;
+    /* Gruppen aus /api/my/meds (gleiche Daten wie beim Berater), spread = Gruppenindex */
+    const G=(R.meds&&R.meds.groups)||[];const i=Math.min(Math.max(st.spread||0,0),Math.max(G.length-1,0));const g=G[i];
+    h=G.length?`<div class="pad br-clone br-med"><h3>Deine Medikamente</h3><p class="br-medhint">${esc(R.meds.hint||'')}</p>
+      <div class="br-medchips">${G.map((x,k)=>`<button type="button" data-brmg="${k}" class="${k===i?'on':''}">${esc(x.group)}</button>`).join('')}</div>
+      <h4>${esc(g.group)}</h4><ul>${g.items.map(d=>`<li><div><b>${esc(d.name)}</b><small>${esc(d.note)}</small></div><span class="lv lv-${d.level}">${esc(d.label)}</span></li>`).join('')}</ul>
+      ${R.follow?'':`<div class="br-pnav"><button type="button" data-brmg="${i-1}" ${i<=0?'disabled':''}>‹ Zurück</button><button type="button" data-brmg="${i+1}" ${i>=G.length-1?'disabled':''}>Weiter ›</button></div>`}
+      <a class="br-medall" href="medikamente/index.html?embed=geneius" target="_blank" rel="noopener">Alle Medikamente in der Medikamenten-App ansehen ›</a></div>`
+      :'<div class="pad br-empty">Keine Medikamentendaten gefunden.</div>';
   }
   stage.innerHTML=h;if(keep)stage.appendChild(keep);
   ptr(stage,st);
@@ -4632,6 +4650,8 @@ function onRoomClick(e){
   if(b.dataset.brf==='self'){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));R.local.highlight=null;follow();draw();return}
   if(b.dataset.brf==='back'){R.follow=true;follow();draw();return}
   if(b.dataset.brr){if(R.follow){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));follow()}Object.assign(R.local,{view:'report',reportId:b.dataset.brr,spread:0,highlight:null});draw();return}
+  if(b.dataset.brmg!=null){const G=(R.meds&&R.meds.groups)||[];const k=+b.dataset.brmg;if(k<0||k>=G.length)return;
+    if(R.follow){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));follow()}Object.assign(R.local,{view:'meds',reportId:'pgx',spread:k,highlight:null});draw();return}
   if(b.dataset.brp){const r=rep(R.local.reportId);const dir=+b.dataset.brp;let L=R.local.spread||0;
     if(mobile()){const cur=pagesOf(R.local,r)[0]+dir;if(cur<1||cur>r.pages)return;L=cur===1?0:cur-(cur%2);R.local.mpage=cur}
     else{L=dir>0?(L===0?2:L+2):(L<=2?0:L-2);if(L>r.pages)return}
