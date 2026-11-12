@@ -1854,6 +1854,8 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .br-rbody.smain>.br-vid{grid-column:1;grid-row:1;justify-self:end;align-self:start;width:112px;aspect-ratio:3/4;z-index:3;margin:8px;box-shadow:0 6px 20px rgba(0,0,0,.4)}
   .br-rbody.smain .br-vid .lbl,.br-rbody.smain .br-vid .wait,.br-rbody.smain .br-self{display:none}
   .br-ctl .row:nth-child(3){display:none}
+  .br-side{align-items:stretch!important}
+  .br-side>*{width:100%}
 }
 /* Schloss */
 a[data-r="beratung"].br-locked{opacity:.45;position:relative}
@@ -1864,7 +1866,7 @@ section.br.br-off .br-lock{display:block;text-align:center;padding:34px 24px;mar
 section.br.br-off .br-grid,section.br.br-off .br-note,section.br.br-off #brBanner,section.br.br-off .hero .br-test{display:none}
 .br-lockic{width:62px;height:62px;margin:0 auto 12px;border-radius:50%;background:#F3E6EF;color:var(--plum);display:grid;place-items:center}
 .br-lockic svg{width:30px;height:30px}
-.br-lock h2{margin-bottom:8px}.br-lock p{max-width:520px;margin:0 auto 8px;color:var(--soft)}.br-lock p.sm{font-size:13px}
+.br-lock h2{margin-bottom:8px;justify-content:center;text-align:center}.br-lock p{max-width:520px;margin:0 auto 8px;color:var(--soft)}.br-lock p.sm{font-size:13px}
 .br-lock .br-test{justify-content:center;margin-top:14px;color:var(--soft)}
 .br-lock .btn.glass{background:var(--plum);color:#fff}
 .br-demooff{background:none;border:0;color:inherit;opacity:.7;text-decoration:underline;font-size:12px;cursor:pointer}
