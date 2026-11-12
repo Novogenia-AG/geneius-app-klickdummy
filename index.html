@@ -1886,6 +1886,38 @@ section.br .hero-in{position:relative}
 #brRemote.mirror{transform:scaleX(-1)}
 section.br.br-off .br-testconf{display:none}
 @media (max-width:980px){.br-testconf{position:static;margin-top:12px}}
+/* Chat & Fragen */
+.br-chat{background:rgba(255,255,255,.08);border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:260px}
+.br-chat h3{font-size:13px;font-weight:800;margin:2px 2px 0;color:#fff;display:flex;align-items:center;gap:8px}
+.br-chat .qn{font-size:11px;font-weight:800;background:#C6E33B;color:#3C0033;border-radius:999px;padding:2px 8px}
+.br-chat .qn[hidden]{display:none}
+.br-chat .list{flex:1;min-height:120px;overflow:auto;display:flex;flex-direction:column;gap:6px;padding-right:2px}
+.br-chat .msg{background:rgba(255,255,255,.1);border-radius:12px;padding:7px 10px;font-size:12.5px;color:#fff;max-width:92%}
+.br-chat .msg.customer{align-self:flex-end;background:rgba(198,227,59,.18)}
+.br-chat .msg b{font-size:11.5px;opacity:.85}
+.br-chat .msg p{margin:2px 0 0;line-height:1.4;word-wrap:break-word}
+.br-chat .msg.q{max-width:100%;align-self:stretch;background:#fff;color:var(--ink);border-left:4px solid #C6E33B}
+.br-chat .msg.q.shown{box-shadow:0 0 0 2px #FF2D7A}
+.br-chat .msg.q.done{background:rgba(255,255,255,.55);border-left-color:#9a9a9a}
+.br-chat .msg.q .h{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.br-chat .tag,.br-qbar .tag{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--plum);color:#fff;border-radius:6px;padding:2px 6px}
+.br-chat .ok{font-size:11px;font-weight:700;color:#2F6B12;margin-left:auto}
+.br-chat .qa,.br-qbar .qa{display:flex;gap:6px;margin-top:6px}
+.br-chat .qa button{font-size:11.5px;font-weight:700;border-radius:999px;padding:4px 10px;background:#F3E6EF;color:var(--plum)}
+.br-chat .qa button.dn,.br-qbar .qa .dn{background:var(--plum);color:#fff}
+.br-chat .in{display:flex;gap:6px}
+.br-chat .in input{flex:1;min-width:0;height:38px;border-radius:12px;border:0;padding:0 10px;font:inherit;font-size:13px;background:#fff;color:var(--ink)}
+.br-chat .in button{flex:none;width:38px;height:38px;border-radius:50%;background:#C6E33B;color:#3C0033;display:grid;place-items:center}
+.br-chat .ask{font-size:12px;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:6px;cursor:pointer}
+.br-chat .br-empty{color:rgba(255,255,255,.65);font-size:12.5px}
+.br-qbar{position:absolute;left:50%;transform:translateX(-50%);bottom:64px;z-index:6;width:min(80%,720px);background:#fff;color:var(--ink);border-radius:16px;padding:12px 14px;box-shadow:0 14px 40px rgba(0,0,0,.45);border-left:6px solid #C6E33B;display:flex;gap:12px;align-items:flex-start}
+.br-qbar[hidden]{display:none}
+.br-qbar .t{flex:1;min-width:0}
+.br-qbar p{margin:6px 0 0;font-size:16px;font-weight:700;line-height:1.35}
+.br-qbar .qa{margin:0;flex:none}
+.br-qbar .qa button{height:34px;border-radius:999px;display:inline-flex;align-items:center;gap:5px;padding:0 12px;font-weight:700;font-size:12.5px;background:#F3E6EF;color:var(--plum)}
+.br-qbar .qa button[aria-label]{width:34px;padding:0;justify-content:center}
+@media (max-width:980px){.br-qbar{bottom:12px;width:92%}.br-qbar p{font-size:14px}.br-chat{min-height:220px}}
 /* BERATUNG:END */</style>
 </head>
 <body>
@@ -4629,7 +4661,7 @@ async function room(id){
   const rec=T?{id:'',state:{view:'reports'}}:await pb.collection('rooms').getFirstListItem(`booking="${id}"`);
   let reps=[];try{reps=(await pb.send('/api/my/reports',{})).items||[]}catch(e){}
   let meds=null;try{meds=await pb.send('/api/my/meds',{})}catch(e){}
-  R={b,rec,st:rec.state||{view:'reports'},reps,meds,test:T,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
+  R={b,rec,st:rec.state||{view:'reports'},reps,meds,test:T,chat:[],qShown:null,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
   const el=document.createElement('div');el.className='br-room';el.setAttribute('role','dialog');el.setAttribute('aria-label','Online-Beratung');
   el.innerHTML=`<div class="br-rtop">${T?'<span class="live test">TEST</span><b>Testkonferenz · nur du siehst und hörst dich</b>':`<span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b>`}<span class="tm" id="brTm">00:00</span><span class="sp"></span></div>
    <div class="br-rbody vmain" id="brBody">
@@ -4638,6 +4670,7 @@ async function room(id){
      <div class="br-stage" id="brStage"></div>
      <div class="br-vid" id="brVid"><video id="brRemote" autoplay playsinline></video><div class="wait" id="brWait">Warte auf ${esc(b.advisorName)} …<br>Sie tritt gleich bei.</div><span class="lbl">${esc(b.advisorName)}</span><div class="br-self"><video id="brSelf" autoplay playsinline muted></video><span class="off" id="brSelfOff" hidden>Kamera aus</span></div></div>
      <button type="button" class="br-back" id="brBack" data-brf="back" hidden>Zurück zur Beraterin</button>
+     <div class="br-qbar" id="brQ" hidden></div>
     </div>
     <div class="br-ctl">
      <div class="grp"><button type="button" class="tg" data-brm="mic" aria-pressed="false" title="Mikrofon an/aus" aria-label="Mikrofon stummschalten">${ic('mic')}</button><span class="lvl" title="Mikrofonpegel"><b id="brLv"></b></span><select data-brdev="mic" aria-label="Mikrofon wählen"><option>Mikrofon</option></select></div>
@@ -4648,20 +4681,27 @@ async function room(id){
      <button type="button" class="wide" data-brm="lay" id="brLay" title="Video oder Inhalt groß" hidden>${ic('grid')}<span>Video groß</span></button><button type="button" class="wide" data-brm="full" title="Vollbild">${ic('image')}<span>Vollbild</span></button><button type="button" class="end" data-brm="leave">${T?'Test beenden':'Verlassen'}</button>
     </div>
    </div>
-   <div class="br-side"><div class="br-replist"><h3>Deine Berichte</h3><div id="brReps"></div></div></div>
+   <div class="br-side"><div class="br-replist"><h3>Deine Berichte</h3><div id="brReps"></div></div>
+    <div class="br-chat"><h3>Chat &amp; Fragen <span class="qn" id="brQn" hidden></span></h3><div class="list" id="brChat"><div class="br-empty">Noch keine Nachrichten. Stell hier deine Fragen.</div></div>
+     <div class="in"><input id="brMsg" type="text" maxlength="500" placeholder="Nachricht oder Frage …" aria-label="Nachricht"><button type="button" data-brm="send" aria-label="Senden">${ic('send')}</button></div>
+     <label class="ask"><input type="checkbox" id="brAsk"> Als Frage stellen</label></div></div>
    </div>`;
   document.body.appendChild(el);R.el=el;document.documentElement.style.overflow='hidden';
   if(media)el.querySelector('#brSelf').srcObject=media;
   R.lay='auto';devs();meter();el.addEventListener('change',onDev);
+  el.querySelector('#brMsg').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();sendChat()}});
+  el.querySelector('#brMsg').addEventListener('input',e=>{const a=el.querySelector('#brAsk');if(/\?\s*$/.test(e.target.value)&&!a.dataset.touched)a.checked=true});
+  el.querySelector('#brAsk').addEventListener('change',e=>{e.target.dataset.touched='1'});
   R.tick=setInterval(()=>{const s=Math.floor((Date.now()-R.t0)/1000);el.querySelector('#brTm').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);
   if(T){const rv=el.querySelector('#brRemote');rv.muted=true;if(media){rv.srcObject=media;rv.classList.add('mirror')}
     el.querySelector('#brWait').innerHTML=media?'':'Kamera und Mikrofon sind nicht freigegeben.<br>Erlaube sie im Browser und starte den Test neu.';el.querySelector('#brWait').hidden=!!media;
     el.querySelector('.br-vid .lbl').textContent='Du (Vorschau)';el.querySelector('.br-self').style.display='none';el.querySelector('#brBack').textContent='Zurück zum Video';
-    follow();draw();el.addEventListener('click',onRoomClick);toast('Testkonferenz: Sprich etwas, der grüne Balken zeigt dein Mikrofon. Mit „Testton“ prüfst du den Lautsprecher.');return}
+    follow();draw();renderChat();el.addEventListener('click',onRoomClick);toast('Testkonferenz: Sprich etwas, der grüne Balken zeigt dein Mikrofon. Mit „Testton“ prüfst du den Lautsprecher.');return}
   R.unsub.push(await pb.collection('rooms').subscribe(rec.id,e=>{R.st=e.record.state||R.st;R.lastAdv=Date.now();R.follow=true;draw();follow()}));
   R.unsub.push(await pb.collection('events').subscribe('*',e=>e.action==='create'&&onEv(e.record),{filter:`booking="${id}"`}));
+  try{(await pb.collection('events').getFullList({filter:`booking="${id}" && (type="chat" || type="q-show" || type="q-done")`,sort:'created'})).forEach(e=>chatEv(e.type,e.data||{},e.from))}catch(e){}
   await send('hello',{role:'customer'});
-  follow();draw();
+  follow();draw();renderChat();
   el.addEventListener('click',onRoomClick);
 }
 function send(type,data){if(R&&R.test)return Promise.resolve();return pb.collection('events').create({booking:R.b.id,type,data}).catch(()=>{})}
@@ -4675,6 +4715,7 @@ async function onEv(ev){
     if(d.candidate){if(R.pc&&R.pc.remoteDescription)R.pc.addIceCandidate(d.candidate).catch(()=>{});else(R.ice=R.ice||[]).push(d.candidate)}
   }
   if(ev.type==='handover')handover(ev);
+  if(ev.type==='chat'||ev.type==='q-show'||ev.type==='q-done'){chatEv(ev.type,ev.data||{},ev.from);renderChat();if(ev.type==='chat')toast((ev.data&&ev.data.q?'Frage von ':'Nachricht von ')+R.b.advisorName.replace(/^(Mag\.|Dr\.)\s*/,''))}
   if(ev.type==='bye'){toast('Die Beratung wurde beendet'+(ev.data&&ev.data.minutes?` (${ev.data.minutes} Minuten)`:'')+'. Danke!');leave(true)}
 }
 function newPc(){
@@ -4788,6 +4829,32 @@ async function testConf(){
   if(!media){try{media=await navigator.mediaDevices.getUserMedia({video:{width:1280,height:720},audio:true})}catch(e){media=null;toast('Kamera/Mikrofon nicht freigegeben, du siehst den Raum trotzdem.')}}
   room('test');
 }
+/* Chat & Fragen. Ereignisse (beide Seiten): chat {cid,text,q,name,at} · q-show {cid|null} · q-done {cid}.
+   Fragen (q:true) – egal ob vom Kunden oder von der Beraterin/Moderatorin – lassen sich im 16:9-Bild einblenden und abschließen. */
+function chatEv(type,d,from){
+  if(!R)return;
+  if(type==='chat'){if(!d.cid||R.chat.some(x=>x.cid===d.cid))return;R.chat.push({cid:d.cid,from,name:d.name||'',text:String(d.text||''),q:!!d.q,done:false,at:d.at||Date.now()})}
+  if(type==='q-show')R.qShown=d.cid||null;
+  if(type==='q-done'){const m=R.chat.find(x=>x.cid===d.cid);if(m)m.done=true;if(R.qShown===d.cid)R.qShown=null}
+}
+const who=m=>m.from==='customer'?'Du':(m.name||R.b.advisorName);
+function renderChat(){
+  if(!R)return;const L=R.el.querySelector('#brChat');
+  L.innerHTML=R.chat.length?R.chat.map(m=>m.q?`<div class="msg q ${m.done?'done':''} ${R.qShown===m.cid?'shown':''} ${m.from}"><div class="h"><span class="tag">Frage</span><b>${esc(who(m))}</b>${m.done?'<span class="ok">✓ abgeschlossen</span>':''}</div><p>${esc(m.text)}</p>
+      ${m.done?'':`<div class="qa">${R.qShown===m.cid?`<button type="button" data-brqs="">Ausblenden</button>`:`<button type="button" data-brqs="${m.cid}">Einblenden</button>`}<button type="button" class="dn" data-brqd="${m.cid}">Abschließen</button></div>`}</div>`
+    :`<div class="msg ${m.from}"><b>${esc(who(m))}</b><p>${esc(m.text)}</p></div>`).join('')
+    :'<div class="br-empty">Noch keine Nachrichten. Stell hier deine Fragen.</div>';
+  L.scrollTop=L.scrollHeight;
+  const open=R.chat.filter(m=>m.q&&!m.done).length,n=R.el.querySelector('#brQn');n.hidden=!open;n.textContent=open+' offen';
+  const s=R.chat.find(m=>m.cid===R.qShown),Q=R.el.querySelector('#brQ');Q.hidden=!s;
+  Q.innerHTML=s?`<div class="t"><span class="tag">Frage von ${esc(s.from==='customer'?(R.b.customerName||'dir'):who(s))}</span><p>${esc(s.text)}</p></div><div class="qa"><button type="button" class="dn" data-brqd="${s.cid}">${ic('check')} Abschließen</button><button type="button" data-brqs="" aria-label="Ausblenden">${ic('x')}</button></div>`:'';
+}
+function qAct(type,d){chatEv(type,d,'customer');renderChat();send(type,d)}
+function sendChat(){
+  if(!R)return;const i=R.el.querySelector('#brMsg'),a=R.el.querySelector('#brAsk'),text=i.value.trim();if(!text)return;
+  const d={cid:Date.now().toString(36)+Math.random().toString(36).slice(2,7),text,q:a.checked,name:R.b.customerName||'',at:Date.now()};
+  chatEv('chat',d,'customer');send('chat',d);i.value='';a.checked=false;delete a.dataset.touched;renderChat();
+}
 function meter(){
   if(!R)return;cancelAnimationFrame(R.raf);try{R.ac&&R.ac.close()}catch(e){}R.ac=null;
   const a=media&&media.getAudioTracks()[0],bar=R.el.querySelector('#brLv');if(!a){bar.style.width='0';return}
@@ -4819,7 +4886,10 @@ function onRoomClick(e){
     if(mobile()){const cur=pagesOf(R.local,r)[0]+dir;if(cur<1||cur>r.pages)return;L=cur===1?0:cur-(cur%2);R.local.mpage=cur}
     else{L=dir>0?(L===0?2:L+2):(L<=2?0:L-2);if(L>r.pages)return}
     R.local.spread=L;R.local.highlight=null;draw();return}
+  if(b.dataset.brqs!=null){qAct('q-show',{cid:b.dataset.brqs||null});return}
+  if(b.dataset.brqd){qAct('q-done',{cid:b.dataset.brqd});return}
   const m=b.dataset.brm;
+  if(m==='send'){sendChat();return}
   if(m==='mic'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',on?'Mikrofon einschalten':'Mikrofon stummschalten');media.getAudioTracks().forEach(t=>t.enabled=!on);toast(on?'Mikrofon aus':'Mikrofon an')}
   if(m==='cam'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',on?'Kamera einschalten':'Kamera ausschalten');media.getVideoTracks().forEach(t=>t.enabled=!on);R.el.querySelector('#brSelfOff').hidden=!on;toast(on?'Kamera aus':'Kamera an')}
   if((m==='mic'||m==='cam')&&!media)toast('Kamera und Mikrofon sind nicht freigegeben. Erlaube sie im Browser und tritt neu bei.');
