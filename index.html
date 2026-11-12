@@ -1807,6 +1807,67 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .br-page img{max-height:none}
   .br-rtop{padding:8px 10px}
 }
+
+/* 12.11.2026: Video als Hauptbild, Berichte rechts untereinander, Gerätesteuerung, Schloss */
+.br-rbody{grid-template-columns:minmax(0,1fr) 330px!important;grid-template-rows:auto minmax(0,1fr)}
+.br-rbody>.br-vid{aspect-ratio:auto;min-height:0}
+.br-rbody.vmain>.br-vid{grid-column:1;grid-row:1/3}
+.br-rbody.vmain>.br-stage{display:none}
+.br-rbody.vmain>.br-side{grid-column:2;grid-row:1/3}
+.br-rbody.vmain .br-vid video#brRemote{object-fit:contain;background:#000}
+.br-rbody.vmain .br-self{width:22%;max-width:260px}
+.br-rbody.smain>.br-stage{grid-column:1;grid-row:1/3}
+.br-rbody.smain>.br-vid{grid-column:2;grid-row:1;aspect-ratio:4/3}
+.br-rbody.smain>.br-side{grid-column:2;grid-row:2}
+.br-side{display:flex!important;flex-direction:column;gap:10px;min-height:0;overflow:auto}
+.br-self .off{position:absolute;inset:0;display:grid;place-items:center;background:#000;font-size:11px;font-weight:700}
+.br-self .off[hidden]{display:none}
+.br-ctl{display:flex!important;flex-direction:column;gap:7px;background:rgba(255,255,255,.08);border-radius:16px;padding:10px}
+.br-ctl .row{display:flex;align-items:center;gap:8px}
+.br-ctl .tg{flex:none;width:40px!important;height:40px!important;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;position:relative}
+.br-ctl .tg.ro{background:transparent}
+.br-ctl .tg[aria-pressed=true]{background:#E23B2E!important;color:#fff!important}
+.br-ctl .tg[aria-pressed=true]::after{content:"";position:absolute;width:26px;height:2px;background:#fff;transform:rotate(-45deg);border-radius:2px}
+.br-ctl select{flex:1;min-width:0;height:34px;border-radius:10px;border:0;background:rgba(255,255,255,.12);color:#fff;font:inherit;font-size:12.5px;padding:0 8px}
+.br-ctl select option{color:#222}
+.br-ctl select:disabled{opacity:.5}
+.br-ctl .lvl{flex:none;width:46px;height:6px;border-radius:3px;background:rgba(255,255,255,.18);overflow:hidden}
+.br-ctl .lvl b{display:block;height:100%;width:0;background:#C6E33B;transition:width .08s}
+.br-ctl .acts{flex-wrap:wrap;margin-top:3px}
+.br-ctl .acts button{height:38px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;padding:0 12px;font-weight:700;font-size:12.5px;background:rgba(255,255,255,.14);color:#fff;width:auto!important}
+.br-ctl .acts button[hidden]{display:none}
+.br-ctl .acts .end{background:#E23B2E;margin-left:auto;font-weight:800;padding:0 16px}
+.br-replist{background:rgba(255,255,255,.08);border-radius:16px;padding:10px}
+.br-replist h3{font-size:13px;font-weight:800;margin:2px 2px 8px;color:#fff}
+#brReps{display:flex;flex-direction:column;gap:6px}
+#brReps button{display:flex;align-items:center;gap:10px;text-align:left;background:rgba(255,255,255,.1);border:2px solid transparent;border-radius:12px;padding:6px 8px;color:#fff}
+#brReps button:hover{background:rgba(255,255,255,.18)}
+#brReps button.on{border-color:#C6E33B;background:rgba(255,255,255,.2)}
+#brReps img,#brReps .mi{flex:none;width:36px;height:50px;object-fit:cover;border-radius:5px;background:#fff}
+#brReps .mi{display:grid;place-items:center;color:var(--plum)}
+#brReps b{display:block;font-size:13px}#brReps small{font-size:11.5px;opacity:.75}
+#brReps .br-empty{color:rgba(255,255,255,.7);font-size:12.5px}
+@media (max-width:980px){
+  .br-rbody{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr) auto!important}
+  .br-rbody.vmain>.br-vid,.br-rbody.smain>.br-stage{grid-column:1;grid-row:1}
+  .br-rbody.vmain>.br-side,.br-rbody.smain>.br-side{grid-column:1;grid-row:2;max-height:38vh}
+  .br-rbody.smain>.br-vid{grid-column:1;grid-row:1;justify-self:end;align-self:start;width:112px;aspect-ratio:3/4;z-index:3;margin:8px;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+  .br-rbody.smain .br-vid .lbl,.br-rbody.smain .br-vid .wait,.br-rbody.smain .br-self{display:none}
+  .br-ctl .row:nth-child(3){display:none}
+}
+/* Schloss */
+a[data-r="beratung"].br-locked{opacity:.45;position:relative}
+a[data-r="beratung"].br-locked::after{content:"";position:absolute;top:6px;right:14px;width:15px;height:15px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235E0047' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E") center/10px no-repeat}
+.mtabs a[data-r="beratung"].br-locked::after{top:2px;right:calc(50% - 22px)}
+.br-lock{display:none}
+section.br.br-off .br-lock{display:block;text-align:center;padding:34px 24px;margin-bottom:18px}
+section.br.br-off .br-grid,section.br.br-off .br-note,section.br.br-off #brBanner,section.br.br-off .hero .br-test{display:none}
+.br-lockic{width:62px;height:62px;margin:0 auto 12px;border-radius:50%;background:#F3E6EF;color:var(--plum);display:grid;place-items:center}
+.br-lockic svg{width:30px;height:30px}
+.br-lock h2{margin-bottom:8px}.br-lock p{max-width:520px;margin:0 auto 8px;color:var(--soft)}.br-lock p.sm{font-size:13px}
+.br-lock .br-test{justify-content:center;margin-top:14px;color:var(--soft)}
+.br-lock .btn.glass{background:var(--plum);color:#fff}
+.br-demooff{background:none;border:0;color:inherit;opacity:.7;text-decoration:underline;font-size:12px;cursor:pointer}
 /* BERATUNG:END */</style>
 </head>
 <body>
@@ -2344,9 +2405,10 @@ body.touring .rail,body.touring .mtop{z-index:89}
       <div class="eyebrow">Persönlich · per Video</div>
       <h1 id="h-br">Online-Beratung</h1>
       <p class="lead">Sprich per Video mit deiner Beraterin. Sie geht mit dir deine Berichte durch, erklärt deinen Bedarf und deine Lebensmittel und schaut deine Medikamente mit dir an.</p>
-      <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span></div>
+      <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span><button type="button" class="br-demooff" data-br="off">Demo: Betreuer ohne Online-Beratung</button></div>
     </div>
   </div></header>
+  <div class="br-card br-lock" id="brLock"></div>
   <div id="brBanner"></div>
   <div class="br-grid">
     <div>
@@ -4440,9 +4502,21 @@ async function load(){
     slots=await pb.collection('slots').getFullList({filter:`advisor="${adv.ref}" && booked=false && start>="${new Date().toISOString().replace('T',' ')}"`,sort:'start'});
     mine=await pb.collection('bookings').getFullList({sort:'start',filter:`status!="cancelled"`});
   }catch(e){toast('Laden fehlgeschlagen: '+e.message);return}
-  loaded=true;renderAdv();renderSlots();renderMine();renderHand();
+  loaded=true;lock();renderAdv();renderSlots();renderMine();renderHand();
   if(!timer)timer=setInterval(()=>{if(location.hash==='#beratung')renderMine()},30000);
 }
+/* Bietet der Betreuer keine Online-Beratung an (advisors.consultOff), sind Menüpunkt und Handy-Reiter ausgegraut mit Schloss
+   und der Reiter zeigt nur einen Hinweis. Klickdummy: Schalter zum Ausprobieren. */
+function lock(){
+  const off=!!(adv&&adv.consultOff);
+  document.querySelectorAll('a[data-r="beratung"]').forEach(a=>{a.classList.toggle('br-locked',off);if(off){a.setAttribute('aria-disabled','true');a.title='Dein Betreuer bietet keine Online-Beratung an'}else{a.removeAttribute('aria-disabled');a.removeAttribute('title')}});
+  sec.classList.toggle('br-off',off);
+  const n=adv?adv.name:'Dein Betreuer';
+  q('#brLock').innerHTML=off?`<div class="br-lockic">${LOCK}</div><h2>Online-Beratung nicht verfügbar</h2><p>${esc(n)} bietet keine Online-Beratung per Video an. Sobald sie verfügbar ist, kannst du hier Termine buchen.</p><p class="sm">Fragen kannst du jederzeit im Coach stellen.</p>
+    <div class="br-test"><button type="button" class="btn glass sm" data-br="on">Demo: Online-Beratung einschalten</button></div>`:'';
+}
+const LOCK='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+async function setConsult(on){try{await init();await pb.send('/api/demo/consult',{method:'POST',body:{on}});await load();toast(on?'Online-Beratung eingeschaltet':'Online-Beratung ausgeschaltet: Reiter ist jetzt gesperrt')}catch(e){toast(e.message||'Fehlgeschlagen')}}
 function renderAdv(){
   const ini=adv.name.replace(/^(Mag\.|Dr\.|Prof\.)\s*/g,'').split(' ').map(x=>x[0]).join('').slice(0,2);
   const per=eur(adv.rateEur*adv.slotMin/60);
@@ -4538,12 +4612,22 @@ async function room(id){
   R={b,rec,st:rec.state||{view:'reports'},reps,meds,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
   const el=document.createElement('div');el.className='br-room';el.setAttribute('role','dialog');el.setAttribute('aria-label','Online-Beratung');
   el.innerHTML=`<div class="br-rtop"><span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b><span class="tm" id="brTm">00:00</span><span class="sp"></span><div class="br-follow" id="brFol"></div></div>
-   <div class="br-rbody"><div class="br-stage" id="brStage"></div>
-   <div class="br-side"><div class="br-vid"><video id="brRemote" autoplay playsinline></video><div class="wait" id="brWait">Warte auf ${esc(b.advisorName)} …<br>Sie tritt gleich bei.</div><span class="lbl">${esc(b.advisorName)}</span><div class="br-self"><video id="brSelf" autoplay playsinline muted></video></div></div>
-   <div class="br-ctl"><button type="button" data-brm="mic" aria-pressed="false" aria-label="Mikrofon stummschalten">${ic('mic')}</button><button type="button" data-brm="cam" aria-pressed="false" aria-label="Kamera aus">${ic('camera')}</button><button type="button" class="end" data-brm="leave">Verlassen</button></div>
-   <div class="br-info"><b>So funktioniert's</b><br>Deine Beraterin führt durch die Inhalte, du siehst automatisch dasselbe. Mit „Selbst blättern“ kannst du dich umsehen, „Zurück zur Beraterin“ bringt dich wieder mit. Der pinke Kreis zeigt, worauf sie gerade zeigt.</div></div></div>`;
+   <div class="br-rbody vmain" id="brBody">
+   <div class="br-vid" id="brVid"><video id="brRemote" autoplay playsinline></video><div class="wait" id="brWait">Warte auf ${esc(b.advisorName)} …<br>Sie tritt gleich bei.</div><span class="lbl">${esc(b.advisorName)}</span><div class="br-self"><video id="brSelf" autoplay playsinline muted></video><span class="off" id="brSelfOff" hidden>Kamera aus</span></div></div>
+   <div class="br-stage" id="brStage"></div>
+   <div class="br-side">
+    <div class="br-ctl">
+     <div class="row"><button type="button" class="tg" data-brm="mic" aria-pressed="false" title="Mikrofon an/aus" aria-label="Mikrofon stummschalten">${ic('mic')}</button><span class="lvl" title="Mikrofonpegel"><b id="brLv"></b></span><select data-brdev="mic" aria-label="Mikrofon wählen"><option>Mikrofon</option></select></div>
+     <div class="row"><button type="button" class="tg" data-brm="cam" aria-pressed="false" title="Kamera an/aus" aria-label="Kamera ausschalten">${ic('camera')}</button><select data-brdev="cam" aria-label="Kamera wählen"><option>Kamera</option></select></div>
+     <div class="row"><span class="tg ro" title="Lautsprecher">${ic('volume')}</span><select data-brdev="spk" aria-label="Lautsprecher wählen"><option>Lautsprecher</option></select></div>
+     <div class="row acts"><button type="button" class="wide" data-brm="lay" id="brLay" hidden>${ic('grid')}<span>Video groß</span></button><button type="button" class="wide" data-brm="full" title="Vollbild">${ic('image')}<span>Vollbild</span></button><button type="button" class="end" data-brm="leave">Verlassen</button></div>
+    </div>
+    <div class="br-replist"><h3>Deine Berichte</h3><div id="brReps"></div></div>
+    <div class="br-info"><b>So funktioniert’s</b><br>Zeigt deine Beraterin etwas, wird es groß angezeigt und das Video rückt nach rechts. Mit „Selbst blättern“ kannst du dich umsehen, „Zurück zur Beraterin“ bringt dich wieder mit. Der pinke Kreis zeigt, worauf sie gerade zeigt.</div>
+   </div></div>`;
   document.body.appendChild(el);R.el=el;document.documentElement.style.overflow='hidden';
   if(media)el.querySelector('#brSelf').srcObject=media;
+  R.lay='auto';devs();meter();el.addEventListener('change',onDev);
   R.tick=setInterval(()=>{const s=Math.floor((Date.now()-R.t0)/1000);el.querySelector('#brTm').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);
   R.unsub.push(await pb.collection('rooms').subscribe(rec.id,e=>{R.st=e.record.state||R.st;R.lastAdv=Date.now();if(R.follow)draw();follow()}));
   R.unsub.push(await pb.collection('events').subscribe('*',e=>e.action==='create'&&onEv(e.record),{filter:`booking="${id}"`}));
@@ -4610,7 +4694,7 @@ function draw(){
     /* Sprung in der HTML-App über ihren eigenen Hash #/seite/<data-page> (zeigeSeite der App) */
     const hs=tg?(tg.ref?'#/seite/'+encodeURIComponent(tg.ref):'#'+tg.target):'';
     h=r&&r.htmlUrl?`<iframe id="brHtml" src="${r.htmlUrl}${hs}" title="${esc(r.title)} als Webseite"></iframe>`:'<div class="pad br-empty">Für diesen Bericht gibt es keine HTML-Version.</div>';
-    const cur=stage.querySelector('#brHtml');if(cur&&r&&cur.src.split('#')[0]===r.htmlUrl){if(hs&&!cur.src.endsWith(hs))cur.src=r.htmlUrl+hs;ptr(stage,st);return}
+    const cur=stage.querySelector('#brHtml');if(cur&&r&&cur.src.split('#')[0]===r.htmlUrl){if(hs&&!cur.src.endsWith(hs))cur.src=r.htmlUrl+hs;ptr(stage,st);layout();return}
   }else if(st.view==='bedarf'){
     /* gleiche Darstellung wie im Reiter „Nährstoffe“ (gerendertes #nutGroups, nur Anzeige) */
     const src=document.getElementById('nutGroups');
@@ -4629,7 +4713,48 @@ function draw(){
       :'<div class="pad br-empty">Keine Medikamentendaten gefunden.</div>';
   }
   stage.innerHTML=h;if(keep)stage.appendChild(keep);
-  ptr(stage,st);
+  ptr(stage,st);layout();
+}
+/* Großes Bild: das Video, solange nichts gezeigt wird. Zeigt die Beraterin etwas (oder blätterst du selbst), wird der Inhalt groß
+   und das Video rückt nach rechts oben. „Video groß“/„Inhalt groß“ überschreibt das bis zum nächsten Wechsel der Ansicht. */
+function layout(){
+  if(!R)return;const st=S(),shared=!!(st.view&&st.view!=='reports'),key=(st.view||'')+'|'+(st.reportId||'');
+  if(R.layKey!==key){R.layKey=key;R.lay='auto'}
+  const big=R.lay==='auto'?(shared?'stage':'video'):R.lay;
+  const body=R.el.querySelector('#brBody');body.classList.toggle('vmain',big==='video');body.classList.toggle('smain',big!=='video');
+  const lb=R.el.querySelector('#brLay');lb.hidden=!shared;lb.querySelector('span').textContent=big==='video'?'Inhalt groß':'Video groß';
+  const G=(R.meds&&R.meds.groups)||[];
+  R.el.querySelector('#brReps').innerHTML=(R.reps.map(r=>`<button type="button" data-brr="${r.ref}" class="${/^report/.test(st.view||'')&&st.reportId===r.ref?'on':''}"><img src="${purl(r,1)}" alt="" loading="lazy"><span><b>${esc(r.title)}</b><small>${r.pages} Seiten</small></span></button>`).join('')
+    +(G.length?`<button type="button" data-brmg="0" class="med ${st.view==='meds'?'on':''}"><span class="mi">${ic('pill-list')}</span><span><b>Medikamente</b><small>${G.length} Gruppen</small></span></button>`:''))
+    ||'<div class="br-empty">Keine Berichte gefunden.</div>';
+  const rv=R.el.querySelector('#brRemote');if(rv.paused&&rv.srcObject)rv.play().catch(()=>{});
+}
+/* Geräte: Mikrofon, Kamera, Lautsprecher wählen; Pegelanzeige */
+async function devs(){
+  if(!R)return;let l=[];try{l=await navigator.mediaDevices.enumerateDevices()}catch(e){}
+  if(!R)return;const K={mic:'audioinput',cam:'videoinput',spk:'audiooutput'},N={mic:'Mikrofon',cam:'Kamera',spk:'Lautsprecher'};
+  const tid=k=>{const tr=media&&(k==='mic'?media.getAudioTracks():media.getVideoTracks())[0];return tr&&tr.getSettings?tr.getSettings().deviceId:''};
+  const cur={mic:tid('mic'),cam:tid('cam'),spk:R.spk||'default'};
+  R.el.querySelectorAll('select[data-brdev]').forEach(s=>{const k=s.dataset.brdev,d=l.filter(x=>x.kind===K[k]&&x.deviceId);
+    s.innerHTML=(d.length?d:[{deviceId:'',label:''}]).map((x,i)=>`<option value="${esc(x.deviceId)}" ${x.deviceId===cur[k]?'selected':''}>${esc((x.label||'').replace(/\s*\([0-9a-f]{4}:[0-9a-f]{4}\)/i,'')||N[k]+(d.length>1?' '+(i+1):' (Standard)'))}</option>`).join('');
+    s.disabled=!d.length||(k!=='spk'&&!media)||(k==='spk'&&!('setSinkId' in HTMLMediaElement.prototype))});
+}
+async function onDev(e){
+  const s=e.target.closest('select[data-brdev]');if(!s||!R)return;const k=s.dataset.brdev,id=s.value;
+  if(k==='spk'){R.spk=id;try{await R.el.querySelector('#brRemote').setSinkId(id);toast('Lautsprecher gewechselt')}catch(x){toast('Lautsprecher lässt sich in diesem Browser nicht wählen')}return}
+  if(!media)return;
+  try{const ns=await navigator.mediaDevices.getUserMedia(k==='mic'?{audio:{deviceId:{exact:id}}}:{video:{deviceId:{exact:id},width:640,height:480}});
+    const nt=(k==='mic'?ns.getAudioTracks():ns.getVideoTracks())[0],ot=(k==='mic'?media.getAudioTracks():media.getVideoTracks())[0];
+    nt.enabled=R.el.querySelector(`[data-brm="${k}"]`).getAttribute('aria-pressed')!=='true';
+    if(R.pc){const snd=R.pc.getSenders().find(x=>x.track&&x.track.kind===nt.kind);if(snd)await snd.replaceTrack(nt)}
+    if(ot){media.removeTrack(ot);ot.stop()}media.addTrack(nt);R.el.querySelector('#brSelf').srcObject=media;if(k==='mic')meter();
+    toast(k==='mic'?'Mikrofon gewechselt':'Kamera gewechselt')}catch(x){toast('Dieses Gerät lässt sich nicht verwenden');devs()}
+}
+function meter(){
+  if(!R)return;cancelAnimationFrame(R.raf);try{R.ac&&R.ac.close()}catch(e){}R.ac=null;
+  const a=media&&media.getAudioTracks()[0],bar=R.el.querySelector('#brLv');if(!a){bar.style.width='0';return}
+  try{const ac=new AudioContext();R.ac=ac;const an=ac.createAnalyser();an.fftSize=256;ac.createMediaStreamSource(new MediaStream([a])).connect(an);const d=new Uint8Array(an.fftSize);
+    const loop=()=>{if(!R)return;an.getByteTimeDomainData(d);let m=0;for(const x of d)m=Math.max(m,Math.abs(x-128));bar.style.width=(a.enabled?Math.min(100,m*1.8):0)+'%';R.raf=requestAnimationFrame(loop)};loop()}catch(e){}
 }
 function ptr(stage,st){
   stage.querySelectorAll('.br-ptr').forEach(x=>x.remove());stage.querySelectorAll('.br-hl').forEach(x=>x.classList.remove('br-hl'));
@@ -4657,13 +4782,16 @@ function onRoomClick(e){
     else{L=dir>0?(L===0?2:L+2):(L<=2?0:L-2);if(L>r.pages)return}
     R.local.spread=L;R.local.highlight=null;draw();return}
   const m=b.dataset.brm;
-  if(m==='mic'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);media.getAudioTracks().forEach(t=>t.enabled=!on)}
-  if(m==='cam'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);media.getVideoTracks().forEach(t=>t.enabled=!on)}
+  if(m==='mic'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',on?'Mikrofon einschalten':'Mikrofon stummschalten');media.getAudioTracks().forEach(t=>t.enabled=!on);toast(on?'Mikrofon aus':'Mikrofon an')}
+  if(m==='cam'&&media){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',on?'Kamera einschalten':'Kamera ausschalten');media.getVideoTracks().forEach(t=>t.enabled=!on);R.el.querySelector('#brSelfOff').hidden=!on;toast(on?'Kamera aus':'Kamera an')}
+  if((m==='mic'||m==='cam')&&!media)toast('Kamera und Mikrofon sind nicht freigegeben. Erlaube sie im Browser und tritt neu bei.');
+  if(m==='lay'){R.lay=R.el.querySelector('#brBody').classList.contains('vmain')?'stage':'video';layout()}
+  if(m==='full'){if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});else if(R.el.requestFullscreen)R.el.requestFullscreen().catch(()=>{})}
   if(m==='leave'&&confirm('Beratung verlassen? Du kannst später wieder beitreten.'))leave();
 }
 function leave(ended){
   if(!R)return;send('bye',{role:'customer'});
-  R.unsub.forEach(u=>{try{u()}catch(e){}});clearInterval(R.tick);R.pc&&R.pc.close();
+  R.unsub.forEach(u=>{try{u()}catch(e){}});clearInterval(R.tick);R.pc&&R.pc.close();cancelAnimationFrame(R.raf);try{R.ac&&R.ac.close()}catch(e){}if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});
   if(media){media.getTracks().forEach(t=>t.stop());media=null}
   R.el.remove();document.documentElement.style.overflow='';R=null;load();
 }
@@ -4678,10 +4806,13 @@ sec.addEventListener('click',e=>{
   else if(b.dataset.brics)ics(b.dataset.brics);
   else if(b.dataset.brcancel)cancel(b.dataset.brcancel);
   else if(b.dataset.br==='now')demoNow();
+  else if(b.dataset.br==='on')setConsult(true);
+  else if(b.dataset.br==='off')setConsult(false);
 });
 document.addEventListener('click',e=>{const b=e.target.closest('#brBanner [data-brjoin]');if(b&&!sec.contains(b))precheck(b.dataset.brjoin)});
 const onRoute=()=>{if(location.hash==='#beratung'){loaded?renderMine():load()}};
 addEventListener('hashchange',onRoute);onRoute();
+if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
 })();
 /* BERATUNG:END */</script>
 </body>
