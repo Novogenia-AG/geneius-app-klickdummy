@@ -1808,54 +1808,62 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .br-rtop{padding:8px 10px}
 }
 
-/* 12.11.2026: Video als Hauptbild, Berichte rechts untereinander, Gerätesteuerung, Schloss */
-.br-rbody{grid-template-columns:minmax(0,1fr) 330px!important;grid-template-rows:auto minmax(0,1fr)}
-.br-rbody>.br-vid{aspect-ratio:auto;min-height:0}
-.br-rbody.vmain>.br-vid{grid-column:1;grid-row:1/3}
-.br-rbody.vmain>.br-stage{display:none}
-.br-rbody.vmain>.br-side{grid-column:2;grid-row:1/3}
-.br-rbody.vmain .br-vid video#brRemote{object-fit:contain;background:#000}
-.br-rbody.vmain .br-self{width:22%;max-width:260px}
-.br-rbody.smain>.br-stage{grid-column:1;grid-row:1/3}
-.br-rbody.smain>.br-vid{grid-column:2;grid-row:1;aspect-ratio:4/3}
-.br-rbody.smain>.br-side{grid-column:2;grid-row:2}
-.br-side{display:flex!important;flex-direction:column;gap:10px;min-height:0;overflow:auto}
+/* 12.11.2026 (2): 16:9-Bild wie beim Bildschirmteilen, Leiste darunter, rechts nur die Berichte */
+.br-rbody{display:grid;grid-template-columns:minmax(0,1fr) 300px!important;grid-template-rows:minmax(0,1fr)!important;gap:14px;padding:0 14px 14px;min-height:0}
+.br-mainc{display:flex;flex-direction:column;align-items:center;gap:10px;min-height:0;min-width:0}
+.br-frame{position:relative;width:min(100%,calc((100vh - 170px)*16/9));aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000;flex:none}
+.br-frame>.br-stage{position:absolute;inset:0;border-radius:0;overflow:auto}
+.br-frame>.br-vid{position:absolute;inset:0;border-radius:0;aspect-ratio:auto;background:#1b1219}
+.br-frame .br-vid video#brRemote{width:100%;height:100%;object-fit:contain;background:#000}
+.br-rbody.vmain .br-stage{display:none}
+.br-rbody.vmain .br-self{width:20%;aspect-ratio:16/9;right:12px;top:12px}
+.br-rbody.smain .br-vid{inset:auto 12px auto auto;top:12px;width:22%;aspect-ratio:16/9;border-radius:12px;z-index:4;box-shadow:0 8px 24px rgba(0,0,0,.45);border:2px solid rgba(255,255,255,.75)}
+.br-rbody.smain .br-vid .lbl{font-size:10.5px;left:6px;bottom:5px;padding:2px 7px}
+.br-rbody.smain .br-vid .wait{font-size:11px;padding:6px}
+.br-rbody.smain .br-self{display:none}
+.br-self{aspect-ratio:16/9}
 .br-self .off{position:absolute;inset:0;display:grid;place-items:center;background:#000;font-size:11px;font-weight:700}
 .br-self .off[hidden]{display:none}
-.br-ctl{display:flex!important;flex-direction:column;gap:7px;background:rgba(255,255,255,.08);border-radius:16px;padding:10px}
-.br-ctl .row{display:flex;align-items:center;gap:8px}
+.br-frame .br-spread{height:100%;box-sizing:border-box;padding:12px;align-items:center;min-height:0}
+.br-frame .br-page{height:100%;max-width:none}
+.br-frame .br-page img{height:100%;width:auto;max-height:none;max-width:none}
+.br-frame .br-pnav{position:absolute;left:0;right:0;bottom:12px}
+.br-back{position:absolute;left:12px;top:12px;z-index:5;background:var(--lime);color:var(--plum);font-weight:800;font-size:12.5px;border-radius:999px;padding:7px 14px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.br-back[hidden]{display:none}
+.br-ctl{display:flex!important;flex-direction:row!important;align-items:center;gap:10px;flex-wrap:wrap;width:min(100%,calc((100vh - 170px)*16/9));background:rgba(255,255,255,.08);border-radius:16px;padding:8px 10px;flex:none}
+.br-ctl .grp{display:flex;align-items:center;gap:6px}
+.br-ctl .sp{flex:1}
 .br-ctl .tg{flex:none;width:40px!important;height:40px!important;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;position:relative}
-.br-ctl .tg.ro{background:transparent}
+.br-ctl .tg.ro{background:transparent;width:28px!important}
 .br-ctl .tg[aria-pressed=true]{background:#E23B2E!important;color:#fff!important}
 .br-ctl .tg[aria-pressed=true]::after{content:"";position:absolute;width:26px;height:2px;background:#fff;transform:rotate(-45deg);border-radius:2px}
-.br-ctl select{flex:1;min-width:0;height:34px;border-radius:10px;border:0;background:rgba(255,255,255,.12);color:#fff;font:inherit;font-size:12.5px;padding:0 8px}
+.br-ctl select{width:150px;height:34px;border-radius:10px;border:0;background:rgba(255,255,255,.12);color:#fff;font:inherit;font-size:12.5px;padding:0 8px}
 .br-ctl select option{color:#222}
 .br-ctl select:disabled{opacity:.5}
-.br-ctl .lvl{flex:none;width:46px;height:6px;border-radius:3px;background:rgba(255,255,255,.18);overflow:hidden}
+.br-ctl .lvl{flex:none;width:36px;height:6px;border-radius:3px;background:rgba(255,255,255,.18);overflow:hidden}
 .br-ctl .lvl b{display:block;height:100%;width:0;background:#C6E33B;transition:width .08s}
-.br-ctl .acts{flex-wrap:wrap;margin-top:3px}
-.br-ctl .acts button{height:38px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;padding:0 12px;font-weight:700;font-size:12.5px;background:rgba(255,255,255,.14);color:#fff;width:auto!important}
-.br-ctl .acts button[hidden]{display:none}
-.br-ctl .acts .end{background:#E23B2E;margin-left:auto;font-weight:800;padding:0 16px}
+.br-ctl>button{height:40px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;padding:0 14px;font-weight:700;font-size:12.5px;background:rgba(255,255,255,.14);color:#fff;width:auto!important}
+.br-ctl>button[hidden]{display:none}
+.br-ctl>.end{background:#E23B2E;font-weight:800;padding:0 18px}
+.br-side{display:flex!important;flex-direction:column;gap:10px;min-height:0;overflow:auto}
 .br-replist{background:rgba(255,255,255,.08);border-radius:16px;padding:10px}
 .br-replist h3{font-size:13px;font-weight:800;margin:2px 2px 8px;color:#fff}
 #brReps{display:flex;flex-direction:column;gap:6px}
 #brReps button{display:flex;align-items:center;gap:10px;text-align:left;background:rgba(255,255,255,.1);border:2px solid transparent;border-radius:12px;padding:6px 8px;color:#fff}
 #brReps button:hover{background:rgba(255,255,255,.18)}
 #brReps button.on{border-color:#C6E33B;background:rgba(255,255,255,.2)}
-#brReps img,#brReps .mi{flex:none;width:36px;height:50px;object-fit:cover;border-radius:5px;background:#fff}
-#brReps .mi{display:grid;place-items:center;color:var(--plum)}
+#brReps img{flex:none;width:36px;height:50px;object-fit:cover;border-radius:5px;background:#fff}
 #brReps b{display:block;font-size:13px}#brReps small{font-size:11.5px;opacity:.75}
 #brReps .br-empty{color:rgba(255,255,255,.7);font-size:12.5px}
+@media (max-width:1180px){.br-ctl .spk{display:none}.br-ctl select{width:120px}}
 @media (max-width:980px){
-  .br-rbody{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr) auto!important}
-  .br-rbody.vmain>.br-vid,.br-rbody.smain>.br-stage{grid-column:1;grid-row:1}
-  .br-rbody.vmain>.br-side,.br-rbody.smain>.br-side{grid-column:1;grid-row:2;max-height:38vh}
-  .br-rbody.smain>.br-vid{grid-column:1;grid-row:1;justify-self:end;align-self:start;width:112px;aspect-ratio:3/4;z-index:3;margin:8px;box-shadow:0 6px 20px rgba(0,0,0,.4)}
-  .br-rbody.smain .br-vid .lbl,.br-rbody.smain .br-vid .wait,.br-rbody.smain .br-self{display:none}
-  .br-ctl .row:nth-child(3){display:none}
-  .br-side{align-items:stretch!important}
-  .br-side>*{width:100%}
+  .br-rbody{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto auto!important;overflow:auto;align-content:start}
+  .br-frame,.br-ctl{width:100%}
+  .br-ctl .lvl,.br-ctl select{display:none}
+  .br-ctl>button.wide span{display:none}
+  .br-ctl>button.wide{padding:0 11px}
+  .br-side{overflow:visible}
+  .br-rbody.smain .br-vid{width:30%}
 }
 /* Schloss */
 a[data-r="beratung"].br-locked{opacity:.45;position:relative}
@@ -1870,6 +1878,13 @@ section.br.br-off .br-grid,section.br.br-off .br-note,section.br.br-off #brBanne
 .br-lock .br-test{justify-content:center;margin-top:14px;color:var(--soft)}
 .br-lock .btn.glass{background:var(--plum);color:#fff}
 .br-demooff{background:none;border:0;color:inherit;opacity:.7;text-decoration:underline;font-size:12px;cursor:pointer}
+/* Konferenz testen */
+section.br .hero-in{position:relative}
+.br-testconf{position:absolute;top:0;right:0;display:inline-flex;align-items:center;gap:6px}
+.br-rtop .live.test{background:#C6E33B;color:#3C0033}
+#brRemote.mirror{transform:scaleX(-1)}
+section.br.br-off .br-testconf{display:none}
+@media (max-width:980px){.br-testconf{position:static;margin-top:12px}}
 /* BERATUNG:END */</style>
 </head>
 <body>
@@ -2409,6 +2424,7 @@ section.br.br-off .br-grid,section.br.br-off .br-note,section.br.br-off #brBanne
       <p class="lead">Sprich per Video mit deiner Beraterin. Sie geht mit dir deine Berichte durch, erklärt deinen Bedarf und deine Lebensmittel und schaut deine Medikamente mit dir an.</p>
       <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span><button type="button" class="br-demooff" data-br="off">Demo: Betreuer ohne Online-Beratung</button></div>
     </div>
+    <button type="button" class="btn glass sm br-testconf" data-br="test">Konferenz testen</button>
   </div></header>
   <div class="br-card br-lock" id="brLock"></div>
   <div id="brBanner"></div>
@@ -4607,37 +4623,47 @@ async function precheck(id){
 /* ---------- Beratungsraum ---------- */
 let R=null;
 async function room(id){
-  const b=await pb.collection('bookings').getOne(id);
-  const rec=await pb.collection('rooms').getFirstListItem(`booking="${id}"`);
+  const T=id==='test';
+  const b=T?{id:'test',advisorName:adv?adv.name:'Deine Beraterin'}:await pb.collection('bookings').getOne(id);
+  const rec=T?{id:'',state:{view:'reports'}}:await pb.collection('rooms').getFirstListItem(`booking="${id}"`);
   let reps=[];try{reps=(await pb.send('/api/my/reports',{})).items||[]}catch(e){}
   let meds=null;try{meds=await pb.send('/api/my/meds',{})}catch(e){}
-  R={b,rec,st:rec.state||{view:'reports'},reps,meds,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
+  R={b,rec,st:rec.state||{view:'reports'},reps,meds,test:T,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
   const el=document.createElement('div');el.className='br-room';el.setAttribute('role','dialog');el.setAttribute('aria-label','Online-Beratung');
-  el.innerHTML=`<div class="br-rtop"><span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b><span class="tm" id="brTm">00:00</span><span class="sp"></span><div class="br-follow" id="brFol"></div></div>
+  el.innerHTML=`<div class="br-rtop">${T?'<span class="live test">TEST</span><b>Testkonferenz · nur du siehst und hörst dich</b>':`<span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b>`}<span class="tm" id="brTm">00:00</span><span class="sp"></span></div>
    <div class="br-rbody vmain" id="brBody">
-   <div class="br-vid" id="brVid"><video id="brRemote" autoplay playsinline></video><div class="wait" id="brWait">Warte auf ${esc(b.advisorName)} …<br>Sie tritt gleich bei.</div><span class="lbl">${esc(b.advisorName)}</span><div class="br-self"><video id="brSelf" autoplay playsinline muted></video><span class="off" id="brSelfOff" hidden>Kamera aus</span></div></div>
-   <div class="br-stage" id="brStage"></div>
-   <div class="br-side">
-    <div class="br-ctl">
-     <div class="row"><button type="button" class="tg" data-brm="mic" aria-pressed="false" title="Mikrofon an/aus" aria-label="Mikrofon stummschalten">${ic('mic')}</button><span class="lvl" title="Mikrofonpegel"><b id="brLv"></b></span><select data-brdev="mic" aria-label="Mikrofon wählen"><option>Mikrofon</option></select></div>
-     <div class="row"><button type="button" class="tg" data-brm="cam" aria-pressed="false" title="Kamera an/aus" aria-label="Kamera ausschalten">${ic('camera')}</button><select data-brdev="cam" aria-label="Kamera wählen"><option>Kamera</option></select></div>
-     <div class="row"><span class="tg ro" title="Lautsprecher">${ic('volume')}</span><select data-brdev="spk" aria-label="Lautsprecher wählen"><option>Lautsprecher</option></select></div>
-     <div class="row acts"><button type="button" class="wide" data-brm="lay" id="brLay" hidden>${ic('grid')}<span>Video groß</span></button><button type="button" class="wide" data-brm="full" title="Vollbild">${ic('image')}<span>Vollbild</span></button><button type="button" class="end" data-brm="leave">Verlassen</button></div>
+   <div class="br-mainc">
+    <div class="br-frame" id="brFrame">
+     <div class="br-stage" id="brStage"></div>
+     <div class="br-vid" id="brVid"><video id="brRemote" autoplay playsinline></video><div class="wait" id="brWait">Warte auf ${esc(b.advisorName)} …<br>Sie tritt gleich bei.</div><span class="lbl">${esc(b.advisorName)}</span><div class="br-self"><video id="brSelf" autoplay playsinline muted></video><span class="off" id="brSelfOff" hidden>Kamera aus</span></div></div>
+     <button type="button" class="br-back" id="brBack" data-brf="back" hidden>Zurück zur Beraterin</button>
     </div>
-    <div class="br-replist"><h3>Deine Berichte</h3><div id="brReps"></div></div>
-    <div class="br-info"><b>So funktioniert’s</b><br>Zeigt deine Beraterin etwas, wird es groß angezeigt und das Video rückt nach rechts. Mit „Selbst blättern“ kannst du dich umsehen, „Zurück zur Beraterin“ bringt dich wieder mit. Der pinke Kreis zeigt, worauf sie gerade zeigt.</div>
-   </div></div>`;
+    <div class="br-ctl">
+     <div class="grp"><button type="button" class="tg" data-brm="mic" aria-pressed="false" title="Mikrofon an/aus" aria-label="Mikrofon stummschalten">${ic('mic')}</button><span class="lvl" title="Mikrofonpegel"><b id="brLv"></b></span><select data-brdev="mic" aria-label="Mikrofon wählen"><option>Mikrofon</option></select></div>
+     <div class="grp"><button type="button" class="tg" data-brm="cam" aria-pressed="false" title="Kamera an/aus" aria-label="Kamera ausschalten">${ic('camera')}</button><select data-brdev="cam" aria-label="Kamera wählen"><option>Kamera</option></select></div>
+     <div class="grp spk"><span class="tg ro" title="Lautsprecher">${ic('volume')}</span><select data-brdev="spk" aria-label="Lautsprecher wählen"><option>Lautsprecher</option></select></div>
+     ${T?`<button type="button" class="wide" data-brm="tone">${ic('volume')}<span>Testton</span></button>`:''}
+     <span class="sp"></span>
+     <button type="button" class="wide" data-brm="lay" id="brLay" hidden>${ic('grid')}<span>Video groß</span></button><button type="button" class="wide" data-brm="full" title="Vollbild">${ic('image')}<span>Vollbild</span></button><button type="button" class="end" data-brm="leave">${T?'Test beenden':'Verlassen'}</button>
+    </div>
+   </div>
+   <div class="br-side"><div class="br-replist"><h3>Deine Berichte</h3><div id="brReps"></div></div></div>
+   </div>`;
   document.body.appendChild(el);R.el=el;document.documentElement.style.overflow='hidden';
   if(media)el.querySelector('#brSelf').srcObject=media;
   R.lay='auto';devs();meter();el.addEventListener('change',onDev);
   R.tick=setInterval(()=>{const s=Math.floor((Date.now()-R.t0)/1000);el.querySelector('#brTm').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);
-  R.unsub.push(await pb.collection('rooms').subscribe(rec.id,e=>{R.st=e.record.state||R.st;R.lastAdv=Date.now();if(R.follow)draw();follow()}));
+  if(T){const rv=el.querySelector('#brRemote');rv.muted=true;if(media){rv.srcObject=media;rv.classList.add('mirror')}
+    el.querySelector('#brWait').innerHTML=media?'':'Kamera und Mikrofon sind nicht freigegeben.<br>Erlaube sie im Browser und starte den Test neu.';el.querySelector('#brWait').hidden=!!media;
+    el.querySelector('.br-vid .lbl').textContent='Du (Vorschau)';el.querySelector('.br-self').style.display='none';el.querySelector('#brBack').textContent='Zurück zum Video';
+    follow();draw();el.addEventListener('click',onRoomClick);toast('Testkonferenz: Sprich etwas, der grüne Balken zeigt dein Mikrofon. Mit „Testton“ prüfst du den Lautsprecher.');return}
+  R.unsub.push(await pb.collection('rooms').subscribe(rec.id,e=>{R.st=e.record.state||R.st;R.lastAdv=Date.now();R.follow=true;draw();follow()}));
   R.unsub.push(await pb.collection('events').subscribe('*',e=>e.action==='create'&&onEv(e.record),{filter:`booking="${id}"`}));
   await send('hello',{role:'customer'});
   follow();draw();
   el.addEventListener('click',onRoomClick);
 }
-function send(type,data){return pb.collection('events').create({booking:R.b.id,type,data}).catch(()=>{})}
+function send(type,data){if(R&&R.test)return Promise.resolve();return pb.collection('events').create({booking:R.b.id,type,data}).catch(()=>{})}
 async function onEv(ev){
   if(!R||ev.from!=='advisor')return;
   if(new Date(ev.created.replace(' ','T')).getTime()<R.joined-3000&&ev.type!=='handover')return;
@@ -4670,9 +4696,7 @@ function handover(ev){
   h.querySelector('[data-brno]').onclick=()=>h.remove();
 }
 function follow(){
-  if(!R)return;const f=R.el.querySelector('#brFol');
-  f.innerHTML=R.follow?`<span>${ic('eye','sm')} Du folgst ${esc(R.b.advisorName.replace(/^(Mag\.|Dr\.)\s*/,'').split(' ')[0])}</span><button type="button" class="btn glass" data-brf="self">Selbst blättern</button>`
-    :`<span>Du blätterst selbst</span><button type="button" class="btn lime" data-brf="back">Zurück zur Beraterin</button>`;
+  if(!R)return;const k=R.el.querySelector('#brBack');if(k)k.hidden=R.follow;
 }
 const S=()=>R.follow?R.st:R.local;
 const rep=id=>R.reps.find(r=>r.ref===id||r.id===id)||R.reps[0];
@@ -4725,9 +4749,8 @@ function layout(){
   const big=R.lay==='auto'?(shared?'stage':'video'):R.lay;
   const body=R.el.querySelector('#brBody');body.classList.toggle('vmain',big==='video');body.classList.toggle('smain',big!=='video');
   const lb=R.el.querySelector('#brLay');lb.hidden=!shared;lb.querySelector('span').textContent=big==='video'?'Inhalt groß':'Video groß';
-  const G=(R.meds&&R.meds.groups)||[];
   R.el.querySelector('#brReps').innerHTML=(R.reps.map(r=>`<button type="button" data-brr="${r.ref}" class="${/^report/.test(st.view||'')&&st.reportId===r.ref?'on':''}"><img src="${purl(r,1)}" alt="" loading="lazy"><span><b>${esc(r.title)}</b><small>${r.pages} Seiten</small></span></button>`).join('')
-    +(G.length?`<button type="button" data-brmg="0" class="med ${st.view==='meds'?'on':''}"><span class="mi">${ic('pill-list')}</span><span><b>Medikamente</b><small>${G.length} Gruppen</small></span></button>`:''))
+)
     ||'<div class="br-empty">Keine Berichte gefunden.</div>';
   const rv=R.el.querySelector('#brRemote');if(rv.paused&&rv.srcObject)rv.play().catch(()=>{});
 }
@@ -4751,6 +4774,18 @@ async function onDev(e){
     if(R.pc){const snd=R.pc.getSenders().find(x=>x.track&&x.track.kind===nt.kind);if(snd)await snd.replaceTrack(nt)}
     if(ot){media.removeTrack(ot);ot.stop()}media.addTrack(nt);R.el.querySelector('#brSelf').srcObject=media;if(k==='mic')meter();
     toast(k==='mic'?'Mikrofon gewechselt':'Kamera gewechselt')}catch(x){toast('Dieses Gerät lässt sich nicht verwenden');devs()}
+}
+async function tone(){
+  try{const ac=new AudioContext();if(R&&R.spk&&ac.setSinkId)await ac.setSinkId(R.spk).catch(()=>{});
+    const o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=660;g.gain.setValueAtTime(0,ac.currentTime);
+    g.gain.linearRampToValueAtTime(.25,ac.currentTime+.05);g.gain.setValueAtTime(.25,ac.currentTime+.35);o.frequency.setValueAtTime(880,ac.currentTime+.4);g.gain.linearRampToValueAtTime(0,ac.currentTime+.8);
+    o.connect(g).connect(ac.destination);o.start();o.stop(ac.currentTime+.85);o.onended=()=>ac.close();toast('Testton: Hörst du zwei Töne? Dann passt dein Lautsprecher.')}catch(e){toast('Testton geht in diesem Browser nicht')}
+}
+/* „Konferenz testen“: Kamera/Mikrofon holen, dann den Raum im Testmodus öffnen */
+async function testConf(){
+  try{await init();if(!loaded)await load()}catch(e){}
+  if(!media){try{media=await navigator.mediaDevices.getUserMedia({video:{width:1280,height:720},audio:true})}catch(e){media=null;toast('Kamera/Mikrofon nicht freigegeben, du siehst den Raum trotzdem.')}}
+  room('test');
 }
 function meter(){
   if(!R)return;cancelAnimationFrame(R.raf);try{R.ac&&R.ac.close()}catch(e){}R.ac=null;
@@ -4789,7 +4824,8 @@ function onRoomClick(e){
   if((m==='mic'||m==='cam')&&!media)toast('Kamera und Mikrofon sind nicht freigegeben. Erlaube sie im Browser und tritt neu bei.');
   if(m==='lay'){R.lay=R.el.querySelector('#brBody').classList.contains('vmain')?'stage':'video';layout()}
   if(m==='full'){if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});else if(R.el.requestFullscreen)R.el.requestFullscreen().catch(()=>{})}
-  if(m==='leave'&&confirm('Beratung verlassen? Du kannst später wieder beitreten.'))leave();
+  if(m==='leave'&&(R.test||confirm('Beratung verlassen? Du kannst später wieder beitreten.')))leave();
+  if(m==='tone')tone();
 }
 function leave(ended){
   if(!R)return;send('bye',{role:'customer'});
@@ -4808,6 +4844,7 @@ sec.addEventListener('click',e=>{
   else if(b.dataset.brics)ics(b.dataset.brics);
   else if(b.dataset.brcancel)cancel(b.dataset.brcancel);
   else if(b.dataset.br==='now')demoNow();
+  else if(b.dataset.br==='test')testConf();
   else if(b.dataset.br==='on')setConsult(true);
   else if(b.dataset.br==='off')setConsult(false);
 });
