@@ -1880,12 +1880,19 @@ section.br.br-off .br-grid,section.br.br-off .br-note,section.br.br-off #brBanne
 .br-lock .btn.glass{background:var(--plum);color:#fff}
 .br-demooff{background:none;border:0;color:inherit;opacity:.7;text-decoration:underline;font-size:12px;cursor:pointer}
 /* Konferenz testen */
-section.br .hero-in{position:relative}
-.br-testconf{position:absolute;top:0;right:0;display:inline-flex;align-items:center;gap:6px}
+section.br .hero-in{position:relative;align-items:center}
+.br-testconf{flex:none;display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:var(--lime);color:var(--lime-ink);border:0;border-radius:24px;padding:22px 24px;width:320px;text-align:left;box-shadow:0 20px 44px -18px rgba(198,214,63,.55);transition:transform .15s,box-shadow .15s;cursor:pointer;font:inherit}
+.br-testconf:hover{transform:translateY(-3px);box-shadow:0 26px 50px -18px rgba(198,214,63,.7)}
+.br-testconf .bci{width:54px;height:54px;border-radius:16px;background:var(--lime-ink);color:var(--lime);display:grid;place-items:center}
+.br-testconf .bci .ic{width:28px;height:28px}
+.br-testconf b{font-size:26px;line-height:1.1;font-weight:800}
+.br-testconf small{font-size:13.5px;line-height:1.4;opacity:.85}
+.br-testconf .bgo{display:inline-flex;align-items:center;gap:4px;font-weight:800;font-size:14px;margin-top:4px}
+.br-testconf .bgo .ic{width:16px;height:16px}
 .br-rtop .live.test{background:#C6E33B;color:#3C0033}
 #brRemote.mirror{transform:scaleX(-1)}
 section.br.br-off .br-testconf{display:none}
-@media (max-width:980px){.br-testconf{position:static;margin-top:12px}}
+@media (max-width:980px){section.br .hero-in{flex-direction:column;align-items:stretch}.br-testconf{width:100%;padding:18px 20px}.br-testconf b{font-size:22px}}
 /* Chat & Fragen */
 .br-chat{background:rgba(255,255,255,.08);border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:260px}
 .br-chat h3{font-size:13px;font-weight:800;margin:2px 2px 0;color:#fff;display:flex;align-items:center;gap:8px}
@@ -2457,7 +2464,7 @@ section.br.br-off .br-testconf{display:none}
       <p class="lead">Sprich per Video mit deiner Beraterin. Sie geht mit dir deine Berichte durch, erklärt deinen Bedarf und deine Lebensmittel und schaut deine Medikamente mit dir an.</p>
       <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span><button type="button" class="br-demooff" data-br="off">Demo: Betreuer ohne Online-Beratung</button></div>
     </div>
-    <button type="button" class="btn glass sm br-testconf" data-br="test">Konferenz testen</button>
+    <button type="button" class="br-testconf" data-br="test"><span class="bci"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg></span><b>Konferenz testen</b><small>Prüf vor dem Termin Kamera, Mikrofon und Lautsprecher und sieh dir den Beratungsraum an.</small><span class="bgo">Test starten <svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></button>
   </div></header>
   <div class="br-card br-lock" id="brLock"></div>
   <div id="brBanner"></div>
