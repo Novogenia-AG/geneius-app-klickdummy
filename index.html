@@ -2025,13 +2025,18 @@ body.nx-on-nu .nx-fixed{display:inline-flex}
 [data-view="naehrstoffe"] .nx-refsec{display:none}
 [data-view="naehrstoffe"] .hero{display:none}
 [data-view="naehrstoffe"] .nutools{margin-top:30px}
-[data-view="naehrstoffe"] .nutools .sec-l,[data-view="naehrstoffe"] .ngroup .lhead{display:inline-flex;align-items:center;padding:7px 14px;border-radius:999px;background:rgba(26,0,21,.86);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+[data-view="naehrstoffe"] .nutools .sec-l,[data-view="naehrstoffe"] .ngroup .lhead{display:inline-flex;align-items:center;padding:7px 14px;border-radius:999px;background:#fff;box-shadow:0 6px 18px -8px rgba(0,0,0,.5)}
+[data-view="naehrstoffe"] .nutools .sec-l h2,[data-view="naehrstoffe"] .ngroup .lhead h2,[data-view="naehrstoffe"] .ngroup .lhead span{color:var(--plum)}
+[data-view="naehrstoffe"] .nutools .vtog{background:#fff;box-shadow:0 6px 18px -8px rgba(0,0,0,.5)}
+[data-view="naehrstoffe"] .nutools .vtog button:not([aria-pressed="true"]){color:var(--plum)}
 [data-view="naehrstoffe"] .wrap{position:relative}
-[data-view="naehrstoffe"] .wrap>#nuRact{position:absolute;top:12px;right:0;width:330px;z-index:4;margin:0}
-#nuRact .nx-cta{align-items:center;padding:14px 14px 14px 12px;border-radius:20px}
-#nuRact .nx-cta b{font-size:14.5px;line-height:1.3}
-#nuRact .nx-cta small{display:inline-flex;margin-top:7px;padding:3px 10px;border-radius:999px;background:rgba(38,0,29,.12);font-size:12px;font-weight:800;opacity:1}
-#nuRact .nx-cta .aic{width:42px;height:42px;border-radius:13px}
+[data-view="naehrstoffe"] .wrap>#nuRact{position:absolute;top:12px;right:0;width:300px;z-index:4;margin:0}
+#nuRact .nx-cta{background:var(--lime);color:var(--lime-ink);border-radius:20px;padding:13px;box-shadow:0 16px 30px -16px rgba(198,214,63,.75)}
+#nuRact .nx-cta p{font-size:12.5px;font-weight:700;line-height:1.35;margin:0 2px 10px}
+#nuRact .nx-ctab{display:flex;align-items:center;gap:10px;width:100%;padding:14px 16px;border-radius:14px;background:var(--plum);color:#fff;font-weight:800;font-size:16.5px;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 20px -10px rgba(38,0,29,.7)}
+#nuRact .nx-ctab:hover{transform:translateY(-2px);box-shadow:0 14px 26px -10px rgba(38,0,29,.8)}
+#nuRact .nx-ctab .ic{width:20px;height:20px}
+#nuRact .nx-ctab .ic:last-child{margin-left:auto;width:16px;height:16px}
 @media (max-width:980px){[data-view="naehrstoffe"] .wrap>#nuRact{position:relative;top:auto;right:auto;width:auto;margin:34px 0 0}}
 /* LAYOUT-2:END */
 /* NU-EXTRA:END */</style>
@@ -2207,7 +2212,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 <!-- SACHET-RAD:END -->
   <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2></div><p class="sub">Je mehr GENEius über dich weiß, desto genauer wird deine Rezeptur. Dosierungen änderst du direkt beim jeweiligen Nährstoff.</p></div>
   <div class="ract dub" id="nuRact">
-    <button class="abtn nx-cta" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>GENEius kann 7.628 verschiedene Datenarten berücksichtigen</b><small>Daten übermitteln</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button>
+    <div class="nx-cta"><p>GENEius kann 7.628 verschiedene Datenarten berücksichtigen</p><button type="button" class="nx-ctab" data-refine="daten"><svg class="ic"><use href="#i-compass"/></svg>Daten übermitteln<svg class="ic"><use href="#i-chev"/></svg></button></div>
   </div>
 
   <header class="hero"><div class="hero-in">
