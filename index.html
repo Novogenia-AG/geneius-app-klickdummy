@@ -1949,6 +1949,8 @@ section.br.br-off .br-testconf{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .dub-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:10px 28px;padding:26px 28px;border-radius:28px;background:linear-gradient(135deg,#3C0033,#1F0019 70%);border:1px solid rgba(255,255,255,.1);box-shadow:var(--sh);overflow:hidden;position:relative}
 .dub-eb{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(198,214,63,.16);color:var(--lime);font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .dub-tx h3{font-size:clamp(20px,2.3vw,27px);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin:12px 0 8px;color:#fff}
@@ -2026,16 +2028,11 @@ body.nx-on-nu .nx-fixed{display:inline-flex}
 [data-view="naehrstoffe"] .nutools .sec-l,[data-view="naehrstoffe"] .ngroup .lhead{display:inline-flex;align-items:center;padding:7px 14px;border-radius:999px;background:rgba(26,0,21,.86);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 [data-view="naehrstoffe"] .wrap{position:relative}
 [data-view="naehrstoffe"] .wrap>#nuRact{position:absolute;top:12px;right:0;width:330px;z-index:4;margin:0}
-#nuRact .dub-card{grid-template-columns:1fr;gap:0;padding:16px 16px 16px;border-radius:22px;background:linear-gradient(135deg,rgba(60,0,51,.94),rgba(31,0,25,.94));-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-#nuRact .dub-eb{font-size:10px;padding:4px 9px}
-#nuRact .dub-tx h3{font-size:16px;margin:9px 0 5px}
-#nuRact .dub-tx p{font-size:12px;line-height:1.45;margin:0 0 12px}
-#nuRact .abtn{padding:11px 12px;border-radius:16px;gap:10px}
-#nuRact .abtn .aic{width:38px;height:38px;border-radius:12px}
-#nuRact .abtn b{font-size:14px}
-#nuRact .abtn small{font-size:11px}
-#nuRact .abtn .aarr{width:26px;height:26px}
-@media (max-width:980px){[data-view="naehrstoffe"] .wrap>#nuRact{position:relative;top:auto;right:auto;width:auto;margin:6px 0 0}}
+#nuRact .nx-cta{align-items:center;padding:14px 14px 14px 12px;border-radius:20px}
+#nuRact .nx-cta b{font-size:14.5px;line-height:1.3}
+#nuRact .nx-cta small{display:inline-flex;margin-top:7px;padding:3px 10px;border-radius:999px;background:rgba(38,0,29,.12);font-size:12px;font-weight:800;opacity:1}
+#nuRact .nx-cta .aic{width:42px;height:42px;border-radius:13px}
+@media (max-width:980px){[data-view="naehrstoffe"] .wrap>#nuRact{position:relative;top:auto;right:auto;width:auto;margin:34px 0 0}}
 /* LAYOUT-2:END */
 /* NU-EXTRA:END */</style>
 <style id="sr-css">/* SACHET-RAD:BEGIN – Datenring um das Sachet, Variante 4a (GENE NUGGETS, 16.11.2026) */
@@ -2049,17 +2046,17 @@ body.nx-on-nu .nx-fixed{display:inline-flex}
 .sr-chip{position:absolute;left:0;top:0;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:9px;background:var(--c);color:#26001D;display:grid;place-items:center;box-shadow:0 0 0 3px rgba(255,255,255,.12),0 0 16px var(--c);will-change:transform,opacity;opacity:0}
 .sr-chip .ic{width:16px;height:16px;stroke-width:2.2}
 .sr-card .stick{position:absolute;left:50%;top:85%;width:min(520px,58%);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
-.sr-brain{position:absolute;left:50%;top:62%;width:192px;height:192px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
+.sr-brain{position:absolute;left:50%;top:62%;width:134px;height:134px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
 .sr-brain svg{position:relative;width:100%;height:100%;display:block}
 .sr-brain::before{content:"";position:absolute;inset:-44px;border-radius:50%;background:radial-gradient(circle,rgba(26,0,21,.92) 45%,rgba(26,0,21,0) 72%)}
 @keyframes srGlow{50%{filter:drop-shadow(0 0 28px rgba(198,214,63,.95))}}
 .sr-ai{position:absolute;left:50%;top:calc(39% + 64px);transform:translateX(-50%);z-index:4;font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.14em;color:var(--lime);white-space:nowrap}
 .sr-ai i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin-right:7px;vertical-align:1px;animation:srBlink 1s steps(2) infinite}
 @keyframes srBlink{50%{opacity:.2}}
-.sr-cap{position:absolute;left:0;right:0;bottom:12px;text-align:center;z-index:4;font-size:13px;font-weight:700;color:rgba(255,255,255,.85)}
+.sr-cap{position:absolute;left:50%;transform:translateX(-50%);width:min(250px,72%);top:calc(85% + 58px);line-height:1.35;text-align:center;z-index:4;font-size:13px;font-weight:700;color:rgba(255,255,255,.85)}
 .sr-cap em{font-style:normal;color:var(--lime);font-weight:800}
 body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
-@media (max-width:760px){.sr-card{height:520px}.sr-card .stick{width:80%}.sr-brain{width:150px;height:150px}.sr-ai{top:calc(39% + 52px)}}
+@media (max-width:760px){.sr-card{height:520px}.sr-card .stick{width:80%}.sr-brain{width:88px;height:88px}.sr-cap{top:calc(85% + 32px);font-size:12px}.sr-ai{top:calc(39% + 52px)}}
 @media (prefers-reduced-motion:reduce){.sr-brain,.sr-ai i{animation:none}}
 /* SACHET-RAD:END */</style>
 </head>
@@ -2210,7 +2207,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 <!-- SACHET-RAD:END -->
   <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2></div><p class="sub">Je mehr GENEius über dich weiß, desto genauer wird deine Rezeptur. Dosierungen änderst du direkt beim jeweiligen Nährstoff.</p></div>
   <div class="ract dub" id="nuRact">
-    <div class="dub-card"><div class="dub-tx"><span class="dub-eb">Über 7.000 Datenpunkte</span><h3>Je mehr GENEius weiß, desto genauer deine Rezeptur</h3><p>Über 7.000 medizinische Datenpunkte können in deine Empfehlungen einfließen: Lebensstil, Laborwerte, Medikamente und mehr.</p><button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten übermitteln</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button></div><div class="dub-map" aria-hidden="true"><iframe src="messwerte/datenlandkarte-animiert.html?bg=1" loading="lazy" tabindex="-1" title=""></iframe></div></div>
+    <button class="abtn nx-cta" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>GENEius kann 7.628 verschiedene Datenarten berücksichtigen</b><small>Daten übermitteln</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button>
   </div>
 
   <header class="hero"><div class="hero-in">
