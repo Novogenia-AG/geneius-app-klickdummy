@@ -1988,7 +1988,7 @@ section.br.br-off .br-testconf{display:none}
   </div>
 
   <!-- gleiche Komponenten wie in den Reitern -->
-  <div class="sec"><div class="sec-l"><h2>Rezept aktualisieren</h2><span class="cnt">3</span></div><p class="sub">Lebensstil, Blutwerte oder Dosierung anpassen.</p></div>
+  <div class="sec"><div class="sec-l"><h2>Rezept aktualisieren</h2></div><p class="sub">Lebensstil, Laborwerte, Medikamente und mehr eintragen.</p></div>
   <div class="ract" id="ovRact"></div>
 
   <div class="sec"><div class="sec-l"><h2>Frag den Coach</h2></div></div>
@@ -2076,11 +2076,9 @@ section.br.br-off .br-testconf{display:none}
     </div>
   </div></header>
 
-  <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2><span class="cnt">3</span></div></div>
+  <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2></div><p class="sub">Je mehr GENEius über dich weiß, desto genauer wird deine Rezeptur. Dosierungen änderst du direkt beim jeweiligen Nährstoff.</p></div>
   <div class="ract" id="nuRact">
-    <button class="abtn" data-refine="lebensstil"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Lebensstil aktualisieren</b><small>Ernährung &amp; Alltag</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button>
-    <button class="abtn" data-refine="blut"><span class="aic"><svg class="ic"><use href="#i-drop"/></svg></span><span><b>Blutwerte hochladen</b><small>Laborwerte eingeben</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button>
-    <button class="abtn" data-refine="dosis"><span class="aic"><svg class="ic"><use href="#i-sliders"/></svg></span><span><b>Dosierung anpassen</b><small>Stoffe entfernen oder ändern</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button>
+    <button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten eintragen</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button>
   </div>
   <!-- Sachet „Made for …“ wie in der Original-GENEius-App (public/White Stick Transparent.png, Text Roboto Condensed) -->
   <div class="stick" role="img" aria-label="Deine persönliche Rezeptur: Made for Markus">
@@ -3196,9 +3194,10 @@ const chips=(arr,on=0,multi)=>`<div class="opts" ${multi?'data-multi':'data-sing
 const backIc=ic('chev','sm').replace('class="ic sm"','class="ic sm" style="transform:rotate(180deg)"');
 
 /* ---------- Rezept verfeinern: 3 Aktionen ---------- */
-const REF={lebensstil:['Lebensstil aktualisieren','compass','Ernährung & Alltag'],blut:['Blutwerte hochladen','drop','Laborwerte eingeben'],dosis:['Dosierung anpassen','sliders','Stoffe entfernen oder ändern']};
+const REF={daten:['Daten eintragen','compass','Lebensstil, Laborwerte, Medikamente & mehr']};
 function refineSheet(k){
- if(k==='choose'){
+ if(k==='daten'||k==='choose'){deOpen();return} /* DATEN-EINTRAGEN: ersetzt Lebensstil-/Blutwerte-Fragebogen (16.11.2026) */
+ if(k==='choose_alt'){
   sheet('Rezept aktualisieren',`<p style="margin-bottom:14px">Lebensstil, Blutwerte oder Dosierung anpassen.</p><div class="ract" style="grid-template-columns:1fr">${Object.entries(REF).map(([key,r])=>`<button class="abtn" data-refine="${key}"><span class="aic">${ic(r[1])}</span><span><b>${r[0]}</b><small>${r[2]}</small></span><span class="aarr" aria-hidden="true">${ic('chev')}</span></button>`).join('')}</div>`,'',sico('sliders'));return;
  }
  if(k==='dosis'){dosisSheet();return}
@@ -4943,5 +4942,27 @@ addEventListener('hashchange',onRoute);onRoute();
 if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
 })();
 /* BERATUNG:END */</script>
+<style id="de-css">/* DATEN-EINTRAGEN:BEGIN – Portal „Deine Gesundheitsdaten“ (GENE NUGGETS, 16.11.2026) */
+.de-ov{position:fixed;inset:0;z-index:200;background:rgba(20,0,16,.6);display:none;align-items:stretch;justify-content:center;padding:58px 18px 18px}
+.de-ov.on{display:flex}
+.de-box{position:relative;width:min(1400px,100%);border-radius:22px;overflow:hidden;background:#2E0D29;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.de-box iframe{width:100%;height:100%;border:0;display:block}
+.de-x{position:fixed;top:10px;right:22px;z-index:2;width:40px;height:40px;border-radius:12px;border:0;background:#fff;color:#5E0047;font-size:20px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+@media (max-width:700px){.de-ov{padding:54px 0 0}.de-box{border-radius:14px 14px 0 0}.de-x{right:12px}}
+/* DATEN-EINTRAGEN:END */</style>
+<script id="de-js">/* DATEN-EINTRAGEN:BEGIN */
+(function(){
+ const ov=document.createElement('div');ov.className='de-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Daten eintragen');
+ ov.innerHTML='<div class="de-box"><button class="de-x" type="button" aria-label="Schließen">✕</button><iframe title="Daten eintragen" src="about:blank"></iframe></div>';
+ document.body.appendChild(ov);
+ const fr=ov.querySelector('iframe');
+ window.deOpen=function(){if(fr.src.indexOf('gesundheitsdaten-portal')<0)fr.src='datenpunkte/gesundheitsdaten-portal.html';ov.classList.add('on');document.documentElement.style.overflow='hidden'};
+ const close=()=>{ov.classList.remove('on');document.documentElement.style.overflow=''};
+ ov.querySelector('.de-x').onclick=close;
+ ov.addEventListener('click',e=>{if(e.target===ov)close()});
+ addEventListener('keydown',e=>{if(e.key==='Escape'&&ov.classList.contains('on'))close()});
+ addEventListener('hashchange',()=>{if(ov.classList.contains('on'))close()}); /* „Zum Chat“ im Portal setzt #coach */
+})();
+/* DATEN-EINTRAGEN:END */</script>
 </body>
 </html>
