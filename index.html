@@ -1948,6 +1948,7 @@ section.br.br-off .br-testconf{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .dub-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:10px 28px;padding:26px 28px;border-radius:28px;background:linear-gradient(135deg,#3C0033,#1F0019 70%);border:1px solid rgba(255,255,255,.1);box-shadow:var(--sh);overflow:hidden;position:relative}
 .dub-eb{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(198,214,63,.16);color:var(--lime);font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .dub-tx h3{font-size:clamp(20px,2.3vw,27px);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin:12px 0 8px;color:#fff}
@@ -2011,6 +2012,16 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
 .nx-bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#9DB01B,#C6D63F,#E8F27A);box-shadow:0 0 14px rgba(198,214,63,.7)}
 .nx-pc{font-size:13px;font-weight:800;color:#fff;opacity:.85}
 @media (prefers-reduced-motion:reduce){.nx-orb .r,.nx-orb .r2,.nx-orb .r3,.nx-orb .orbit,.nx-orb .glow,.nx-orb svg.logo,.nx-fab{animation:none}}
+/* LAYOUT-2:BEGIN */
+.nx-fixed{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:70;display:none;align-items:center;gap:8px;margin:0;box-shadow:0 14px 30px -10px rgba(0,0,0,.6),0 0 0 3px rgba(255,159,28,.3)}
+body.nx-on-nu .nx-fixed{display:inline-flex}
+.nx-fixed .nx-tag{background:#2A0022;color:#FF9F1C;padding:3px 7px;font-size:10px}
+@media (max-width:980px){.nx-fixed{top:auto;bottom:150px;right:12px;transform:none}}
+[data-view="naehrstoffe"]{position:relative;overflow:clip}
+[data-view="naehrstoffe"] .wrap>*:not(.sr-card):not(.nx-fixed){position:relative;z-index:1}
+[data-view="naehrstoffe"] .sr-card{z-index:0;margin-top:0;background:none;border:0;border-radius:0;box-shadow:none;overflow:visible}
+[data-view="naehrstoffe"] .nx-refsec{display:none}
+/* LAYOUT-2:END */
 /* NU-EXTRA:END */</style>
 <style id="sr-css">/* SACHET-RAD:BEGIN – Datenring um das Sachet, Variante 4a (GENE NUGGETS, 16.11.2026) */
 .sr-card{position:relative;height:820px;margin-top:22px;border-radius:28px;overflow:hidden;background:radial-gradient(ellipse at 50% 85%,#3A0030,#1A0015 60%,#0E000B);border:1px solid rgba(255,255,255,.08);box-shadow:var(--sh)}
@@ -2023,7 +2034,7 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
 .sr-chip{position:absolute;left:0;top:0;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:9px;background:var(--c);color:#26001D;display:grid;place-items:center;box-shadow:0 0 0 3px rgba(255,255,255,.12),0 0 16px var(--c);will-change:transform,opacity;opacity:0}
 .sr-chip .ic{width:16px;height:16px;stroke-width:2.2}
 .sr-card .stick{position:absolute;left:50%;top:85%;width:min(520px,58%);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
-.sr-brain{position:absolute;left:50%;top:60%;width:192px;height:192px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
+.sr-brain{position:absolute;left:50%;top:62%;width:192px;height:192px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
 .sr-brain svg{position:relative;width:100%;height:100%;display:block}
 .sr-brain::before{content:"";position:absolute;inset:-44px;border-radius:50%;background:radial-gradient(circle,rgba(26,0,21,.92) 45%,rgba(26,0,21,0) 72%)}
 @keyframes srGlow{50%{filter:drop-shadow(0 0 28px rgba(198,214,63,.95))}}
@@ -2033,7 +2044,7 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
 .sr-cap{position:absolute;left:0;right:0;bottom:12px;text-align:center;z-index:4;font-size:13px;font-weight:700;color:rgba(255,255,255,.85)}
 .sr-cap em{font-style:normal;color:var(--lime);font-weight:800}
 body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
-@media (max-width:760px){.sr-card{height:560px}.sr-card .stick{width:80%}.sr-brain{width:150px;height:150px}.sr-ai{top:calc(39% + 52px)}}
+@media (max-width:760px){.sr-card{height:520px}.sr-card .stick{width:80%}.sr-brain{width:150px;height:150px}.sr-ai{top:calc(39% + 52px)}}
 @media (prefers-reduced-motion:reduce){.sr-brain,.sr-ai i{animation:none}}
 /* SACHET-RAD:END */</style>
 </head>
@@ -2172,21 +2183,8 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 <section class="view sr-on" data-view="naehrstoffe" hidden aria-labelledby="h-nu">
 <div class="wrap">
 <!-- NU-EXTRA:TEST -->
-  <div class="nx-test" role="group" aria-label="Testfunktionen"><span class="nx-tag">TEST</span><span class="nx-lb">Layout „Daten übermitteln“:</span><span class="nx-seg"><button data-nxv="a" aria-pressed="true">A Banner</button><button data-nxv="b" aria-pressed="false">B Im Kopf</button><button data-nxv="c" aria-pressed="false">C Neben Sachet</button><button data-nxv="d" aria-pressed="false">D Schwebend</button></span><button class="nx-recalc" data-nxrecalc>Test Recalculation</button></div>
+  <button class="nx-recalc nx-fixed" type="button" data-nxrecalc><span class="nx-tag">TEST</span>Test Recalculation</button>
 <!-- /NU-EXTRA:TEST -->
-  <header class="hero"><div class="hero-in">
-    <div>
-      <div class="eyebrow">Nährstoffe</div>
-      <h1 id="h-nu">Dein Bedarf</h1>
-      <p class="lead">22 Nährstoffe in deiner Rezeptur</p>
-    </div>
-  </div></header>
-
-  <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2></div><p class="sub">Je mehr GENEius über dich weiß, desto genauer wird deine Rezeptur. Dosierungen änderst du direkt beim jeweiligen Nährstoff.</p></div>
-  <div class="ract dub" id="nuRact">
-    <div class="dub-card"><div class="dub-tx"><span class="dub-eb">Über 7.000 Datenpunkte</span><h3>Je mehr GENEius weiß, desto genauer deine Rezeptur</h3><p>Über 7.000 medizinische Datenpunkte können in deine Empfehlungen einfließen: Lebensstil, Laborwerte, Medikamente und mehr.</p><button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten übermitteln</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button></div><div class="dub-map" aria-hidden="true"><iframe src="messwerte/datenlandkarte-animiert.html?bg=1" loading="lazy" tabindex="-1" title=""></iframe></div></div>
-  </div>
-  <!-- Sachet „Made for …“ wie in der Original-GENEius-App (public/White Stick Transparent.png, Text Roboto Condensed) -->
 <!-- SACHET-RAD:BEGIN -->
 <div class="sr-card" aria-label="Deine Daten fließen über GENEius AI in deine Rezeptur"><iframe class="sr-map" src="messwerte/datenlandkarte-animiert.html?bg=1&amp;neu=1&amp;logo=0&amp;glow=0&amp;spokes=0&amp;icons=0&amp;hubs=0&amp;bgt=1" tabindex="-1" aria-hidden="true" title=""></iframe><canvas class="sr-b"></canvas><div class="sr-brain" aria-hidden="true"></div>
   <div class="stick" role="img" aria-label="Deine persönliche Rezeptur: Made for Markus">
@@ -2195,6 +2193,20 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
   </div>
 <canvas class="sr-f"></canvas><div class="sr-fly" aria-hidden="true"></div><div class="sr-cap"><em>55 von 78</em> Datenquellen fließen schon in deine Rezeptur</div></div>
 <!-- SACHET-RAD:END -->
+  <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2></div><p class="sub">Je mehr GENEius über dich weiß, desto genauer wird deine Rezeptur. Dosierungen änderst du direkt beim jeweiligen Nährstoff.</p></div>
+  <div class="ract dub" id="nuRact">
+    <div class="dub-card"><div class="dub-tx"><span class="dub-eb">Über 7.000 Datenpunkte</span><h3>Je mehr GENEius weiß, desto genauer deine Rezeptur</h3><p>Über 7.000 medizinische Datenpunkte können in deine Empfehlungen einfließen: Lebensstil, Laborwerte, Medikamente und mehr.</p><button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten übermitteln</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button></div><div class="dub-map" aria-hidden="true"><iframe src="messwerte/datenlandkarte-animiert.html?bg=1" loading="lazy" tabindex="-1" title=""></iframe></div></div>
+  </div>
+
+  <header class="hero"><div class="hero-in">
+    <div>
+      <div class="eyebrow">Nährstoffe</div>
+      <h1 id="h-nu">Dein Bedarf</h1>
+      <p class="lead">22 Nährstoffe in deiner Rezeptur</p>
+    </div>
+  </div></header>
+
+  <!-- Sachet „Made for …“ wie in der Original-GENEius-App (public/White Stick Transparent.png, Text Roboto Condensed) -->
   <div class="ftools nutools"><div class="sec-l"><h2>Deine Nährstoffe</h2><span class="cnt">22</span></div>
     <div class="fctl"><div class="vtog" role="group" aria-label="Ansicht">
       <button data-nview="cards" aria-pressed="true" aria-label="Kartenansicht" title="Kartenansicht"><svg class="ic"><use href="#i-grid"/></svg></button>
@@ -5101,7 +5113,7 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
   try{localStorage.setItem('gn-nx-layout',v)}catch(_){}
  }
  let v0='a';try{v0=new URLSearchParams(location.search).get('ru')||localStorage.getItem('gn-nx-layout')||'a'}catch(_){}
- setV(/^[abcd]$/.test(v0)?v0:'a');
+ setV('a');
  const onNu=()=>document.body.classList.toggle('nx-on-nu',/^#naehrstoffe/.test(location.hash));
  addEventListener('hashchange',onNu);onNu();
  /* Recalculation */
@@ -5119,6 +5131,7 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
   const L=T[lang()],N=names();$('.nx-h',ov).textContent=L.h;
   const units=['mg','µg','mg','µg','IE'];
   tick=setInterval(()=>{const n=N[Math.random()*N.length|0];$('.nx-ticker',ov).textContent=`${n} → ${(Math.random()*400+1).toFixed(Math.random()<.5?0:1).replace('.',lang()==='de'?',':'.')} ${units[Math.random()*units.length|0]}`},110);
+  {const rl=document.querySelector('.rail'),mt=document.querySelector('.mtop');let L=0,T=0;if(rl&&getComputedStyle(rl).display!=='none'){const r=rl.getBoundingClientRect();if(r.width)L=Math.max(0,r.right)}if(mt&&getComputedStyle(mt).display!=='none'){const r=mt.getBoundingClientRect();if(r.height)T=Math.max(0,r.bottom)}ov.style.left=L+'px';ov.style.top=T+'px'}
   ov.classList.add('on');t0=performance.now();
   const step=now=>{const p=Math.min(1,(now-t0)/DUR);const e=p<1?1-Math.pow(1-p,1.6):1;
    $('.nx-bar i',ov).style.width=(e*100).toFixed(1)+'%';$('.nx-pc',ov).textContent=Math.round(e*100)+' %';
@@ -5199,7 +5212,8 @@ function brain(t){if(Math.random()<.09&&L.length){L[Math.random()*L.length|0].fi
   q.l.setAttribute('stroke',f>0||wave>.82?'#FFFFFF':wave>.45?'#D8E46A':'#C6D63F');q.l.style.opacity=(0.6+0.4*Math.max(f,(wave+1)/2)).toFixed(2)});
  C.forEach((o,j)=>o.c.setAttribute('r',(o.r*(1+.45*Math.sin(t*0.008+j))).toFixed(2)))}
 /* Original-Datenlandkarte: Mittelpunkt = Beutel, alle Einträge (auch „fehlt noch“), ohne Logo, Leuchten und Verbindungslinien in der Mitte */
-function placeMap(){const g=geo();const sc=Math.min(1.45,Math.max(.7,(g.cy-8)/500));const sz=Math.round(1240*sc);
+function placeMap(){const sec=card.closest('section')||card;const sw=sec.getBoundingClientRect().width||card.getBoundingClientRect().width;
+ const sc=Math.min(1.45,Math.max(.62,(sw-24)/1060));card.style.height=Math.round((530*sc+24)/.85)+'px';const g=geo();const sz=Math.round(1240*sc);
  map.style.width=map.style.height=sz+'px';map.style.left=(g.cx-sz/2)+'px';map.style.top=(g.cy-sz/2)+'px';card._icR=175*sc}
 function setupMap(){map.classList.add('on')} /* Ebenen per URL-Parameter (neu, logo, glow, spokes, bgt) */
 map.addEventListener('load',setupMap);setupMap();placeMap();addEventListener('resize',placeMap);
