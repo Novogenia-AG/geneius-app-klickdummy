@@ -1590,12 +1590,12 @@ body.touring .rail,body.touring .mtop{z-index:89}
   .gd-lab{font-size:10px;padding:2px 7px}
 }
 /* Datenlandkarte unter dem Gehirn (16.11.2026) */
-.gd-map{margin-top:18px;border-radius:28px;overflow:hidden;background:linear-gradient(180deg,#14000F,#07000A);border:1px solid rgba(255,255,255,.09);box-shadow:var(--sh)}
+.gd-map{margin:0 0 18px;border-radius:28px;overflow:hidden;background:linear-gradient(180deg,#14000F,#07000A);border:1px solid rgba(255,255,255,.09);box-shadow:var(--sh)}
 .gd-mh{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 22px 6px}
 .gd-mh h2{margin:0;font-size:20px;font-weight:800;color:#fff}
 .gd-mh p{margin:4px 0 0;font-size:13.5px;color:rgba(255,255,255,.72)}
-.gd-map iframe{display:block;width:100%;height:720px;border:0;background:transparent}
-@media (max-width:760px){.gd-map iframe{height:600px}.gd-mh{padding:14px 16px 4px}}
+.gd-map iframe{display:block;width:100%;height:min(880px,82vw);border:0;background:transparent}
+@media (max-width:760px){.gd-map iframe{height:96vw}.gd-mh{padding:14px 16px 4px}}
 /* GEDAECHTNIS:END */</style>
 <style id="db-css">/* DASHBOARD:BEGIN – Coach-Dashboard (Nachbau von /dashboard des Chatbots, Klickdummy) */
 .db .hero{margin-bottom:6px}
@@ -1933,6 +1933,72 @@ section.br.br-off .br-testconf{display:none}
 .br-qbar .qa button[aria-label]{width:34px;padding:0;justify-content:center}
 @media (max-width:980px){.br-qbar{bottom:12px;width:92%}.br-qbar p{font-size:14px}.br-chat{min-height:220px}}
 /* BERATUNG:END */</style>
+<style id="nx-css">/* NU-EXTRA:BEGIN – Daten übermitteln (Layout-Varianten) + Test Recalculation (GENE NUGGETS, 16.11.2026) */
+.ract.dub{grid-template-columns:1fr}
+.dub-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:10px 28px;padding:26px 28px;border-radius:28px;background:linear-gradient(135deg,#3C0033,#1F0019 70%);border:1px solid rgba(255,255,255,.1);box-shadow:var(--sh);overflow:hidden;position:relative}
+.dub-eb{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(198,214,63,.16);color:var(--lime);font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.dub-tx h3{font-size:clamp(20px,2.3vw,27px);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin:12px 0 8px;color:#fff}
+.dub-tx p{color:rgba(255,255,255,.76);font-size:14px;line-height:1.5;margin:0 0 18px;max-width:520px}
+.dub-tx .abtn{max-width:420px}
+.dub-map{position:relative;height:300px;margin:-26px -28px -26px 0}
+.dub-map iframe{position:absolute;inset:-40px -60px -40px -20px;width:calc(100% + 80px);height:calc(100% + 80px);border:0;pointer-events:none;background:transparent}
+@media (max-width:760px){.dub-card{grid-template-columns:1fr;padding:22px 18px}.dub-map{height:240px;margin:0 -18px -22px}.dub-map iframe{inset:-30px 0;width:100%;height:calc(100% + 60px)}}
+/* Variante B: Knopf im Kopfbereich */
+.nx-hb{display:none;flex-direction:column;align-items:flex-end;gap:8px;flex:none}
+.nx-hb .abtn{width:auto;min-width:300px}
+.nx-hb small.nx-n{color:rgba(255,255,255,.75);font-size:12.5px;font-weight:600}
+body.nxv-b .nx-hb{display:flex}
+body.nxv-b [data-view="naehrstoffe"] .nx-refsec,body.nxv-b #nuRact{display:none}
+@media (max-width:760px){body.nxv-b [data-view="naehrstoffe"] .hero-in{flex-direction:column}.nx-hb{align-items:stretch;width:100%}.nx-hb .abtn{min-width:0}}
+/* Variante C: neben dem Sachet */
+body.nxv-c .nx-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--gap);align-items:stretch;margin-top:20px}
+body.nxv-c .nx-row .stick{margin:0;align-self:center}
+body.nxv-c .nx-row .dub-card{grid-template-columns:1fr;height:100%}
+body.nxv-c .nx-row .dub-map{display:none}
+body.nxv-c [data-view="naehrstoffe"] .nx-refsec{display:none}
+@media (max-width:900px){body.nxv-c .nx-row{grid-template-columns:1fr}}
+/* Variante D: schwebender Knopf */
+.nx-fab{display:none;position:fixed;right:100px;bottom:26px;z-index:60;align-items:center;gap:12px;padding:12px 20px 12px 12px;border-radius:999px;background:var(--lime);color:var(--lime-ink);font-weight:800;font-size:15px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55),0 0 0 6px rgba(198,214,63,.22);animation:nxPulse 2.6s ease-in-out infinite}
+.nx-fab .aic{width:40px;height:40px;border-radius:50%;background:var(--plum);color:#fff;display:grid;place-items:center}
+.nx-fab small{display:block;font-size:11.5px;font-weight:600;opacity:.75}
+@keyframes nxPulse{50%{box-shadow:0 18px 40px -12px rgba(0,0,0,.55),0 0 0 12px rgba(198,214,63,.08)}}
+body.nxv-d.nx-on-nu .nx-fab{display:flex}
+body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
+@media (max-width:980px){.nx-fab{bottom:92px;right:16px}}
+.dub-map{height:330px}
+/* Test-Leiste */
+.nx-test{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:0 0 16px;padding:12px 14px;border:2px dashed #FF9F1C;border-radius:18px;background:repeating-linear-gradient(135deg,rgba(255,159,28,.10) 0 12px,rgba(255,159,28,.03) 12px 24px)}
+.nx-tag{padding:4px 9px;border-radius:8px;background:#FF9F1C;color:#2A0022;font-size:11px;font-weight:900;letter-spacing:.12em}
+.nx-lb{font-size:13px;font-weight:700;color:#fff}
+.nx-seg{display:inline-flex;flex-wrap:wrap;gap:4px;padding:3px;border-radius:12px;background:rgba(0,0,0,.25)}
+.nx-seg button{padding:6px 11px;border-radius:9px;font-size:12.5px;font-weight:700;color:rgba(255,255,255,.8)}
+.nx-seg button[aria-pressed="true"]{background:#fff;color:var(--plum)}
+.nx-recalc{margin-left:auto;padding:11px 18px;border-radius:12px;background:#FF9F1C;color:#2A0022;font-weight:900;font-size:14px;letter-spacing:.01em;box-shadow:0 10px 24px -10px rgba(255,159,28,.9)}
+.nx-recalc:hover{background:#FFB347}
+/* Recalculation-Overlay */
+.nx-ov{position:fixed;inset:0;z-index:300;display:grid;place-items:center;background:rgba(30,0,24,.42);-webkit-backdrop-filter:blur(14px) saturate(1.1);backdrop-filter:blur(14px) saturate(1.1);opacity:0;pointer-events:none;transition:opacity .45s ease}
+.nx-ov.on{opacity:1;pointer-events:auto}
+.nx-in{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;width:min(460px,88vw);color:#fff}
+.nx-orb{position:relative;width:220px;height:220px;display:grid;place-items:center}
+.nx-orb .r{position:absolute;inset:0;border-radius:50%;border:2px dashed rgba(198,214,63,.55);animation:nxSpin 7s linear infinite}
+.nx-orb .r2{inset:18px;border:3px solid transparent;border-top-color:#C6D63F;border-right-color:rgba(198,214,63,.35);animation:nxSpin 1.6s cubic-bezier(.6,.1,.4,.9) infinite}
+.nx-orb .r3{inset:36px;border:2px solid transparent;border-bottom-color:#fff;border-left-color:rgba(255,255,255,.3);animation:nxSpin 2.4s linear infinite reverse}
+.nx-orb .glow{position:absolute;inset:50px;border-radius:50%;background:radial-gradient(circle,rgba(198,214,63,.55),rgba(198,214,63,0) 70%);animation:nxGlow 1.3s ease-in-out infinite}
+.nx-orb .dot{position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px;border-radius:50%;background:#C6D63F;box-shadow:0 0 12px #C6D63F}
+.nx-orb .orbit{position:absolute;inset:0;animation:nxSpin var(--t) linear infinite}
+.nx-orb .orbit .dot{transform:translateY(calc(var(--d) * -1))}
+.nx-orb svg.logo{position:relative;width:96px;height:96px;--p:#fff;--a:#C6D63F;animation:nxBeat 1.3s ease-in-out infinite;filter:drop-shadow(0 0 18px rgba(198,214,63,.6))}
+@keyframes nxSpin{to{transform:rotate(360deg)}}
+@keyframes nxGlow{50%{transform:scale(1.25);opacity:.55}}
+@keyframes nxBeat{50%{transform:scale(1.07)}}
+.nx-ticker{height:22px;font-family:var(--num,ui-monospace),ui-monospace,monospace;font-size:14px;color:#C6D63F;letter-spacing:.02em;opacity:.9}
+.nx-h{font-size:clamp(20px,3vw,26px);font-weight:800;letter-spacing:-.01em;line-height:1.2}
+.nx-st{font-size:13.5px;color:rgba(255,255,255,.78);min-height:20px}
+.nx-bar{width:100%;height:10px;border-radius:999px;background:rgba(255,255,255,.14);overflow:hidden}
+.nx-bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#9DB01B,#C6D63F,#E8F27A);box-shadow:0 0 14px rgba(198,214,63,.7)}
+.nx-pc{font-size:13px;font-weight:800;color:#fff;opacity:.85}
+@media (prefers-reduced-motion:reduce){.nx-orb .r,.nx-orb .r2,.nx-orb .r3,.nx-orb .orbit,.nx-orb .glow,.nx-orb svg.logo,.nx-fab{animation:none}}
+/* NU-EXTRA:END */</style>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
@@ -1988,8 +2054,8 @@ section.br.br-off .br-testconf{display:none}
   </div>
 
   <!-- gleiche Komponenten wie in den Reitern -->
-  <div class="sec"><div class="sec-l"><h2>Rezept aktualisieren</h2></div><p class="sub">Lebensstil, Laborwerte, Medikamente und mehr eintragen.</p></div>
-  <div class="ract" id="ovRact"></div>
+  <div class="sec"><div class="sec-l"><h2>Rezept aktualisieren</h2></div><p class="sub">Lebensstil, Laborwerte, Medikamente und mehr übermitteln.</p></div>
+  <div class="ract dub" id="ovRact"></div>
 
   <div class="sec"><div class="sec-l"><h2>Frag den Coach</h2></div></div>
   <div class="tile card no-tilt cs-box ov-topics">
@@ -2068,6 +2134,9 @@ section.br.br-off .br-testconf{display:none}
 <!-- ================= NÄHRSTOFFE ================= -->
 <section class="view" data-view="naehrstoffe" hidden aria-labelledby="h-nu">
 <div class="wrap">
+<!-- NU-EXTRA:TEST -->
+  <div class="nx-test" role="group" aria-label="Testfunktionen"><span class="nx-tag">TEST</span><span class="nx-lb">Layout „Daten übermitteln“:</span><span class="nx-seg"><button data-nxv="a" aria-pressed="true">A Banner</button><button data-nxv="b" aria-pressed="false">B Im Kopf</button><button data-nxv="c" aria-pressed="false">C Neben Sachet</button><button data-nxv="d" aria-pressed="false">D Schwebend</button></span><button class="nx-recalc" data-nxrecalc>Test Recalculation</button></div>
+<!-- /NU-EXTRA:TEST -->
   <header class="hero"><div class="hero-in">
     <div>
       <div class="eyebrow">Nährstoffe</div>
@@ -2077,8 +2146,8 @@ section.br.br-off .br-testconf{display:none}
   </div></header>
 
   <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2></div><p class="sub">Je mehr GENEius über dich weiß, desto genauer wird deine Rezeptur. Dosierungen änderst du direkt beim jeweiligen Nährstoff.</p></div>
-  <div class="ract" id="nuRact">
-    <button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten eintragen</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button>
+  <div class="ract dub" id="nuRact">
+    <div class="dub-card"><div class="dub-tx"><span class="dub-eb">Über 7.000 Datenpunkte</span><h3>Je mehr GENEius weiß, desto genauer deine Rezeptur</h3><p>Über 7.000 medizinische Datenpunkte können in deine Empfehlungen einfließen: Lebensstil, Laborwerte, Medikamente und mehr.</p><button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten übermitteln</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button></div><div class="dub-map" aria-hidden="true"><iframe src="messwerte/datenlandkarte-animiert.html?bg=1" loading="lazy" tabindex="-1" title=""></iframe></div></div>
   </div>
   <!-- Sachet „Made for …“ wie in der Original-GENEius-App (public/White Stick Transparent.png, Text Roboto Condensed) -->
   <div class="stick" role="img" aria-label="Deine persönliche Rezeptur: Made for Markus">
@@ -2426,6 +2495,10 @@ section.br.br-off .br-testconf{display:none}
       <p class="lead">Das merkt sich dein Genius Coach aus euren Gesprächen und aus deinen Analysen. Du entscheidest, was bleibt.</p>
     </div>
   </div></header>
+  <div class="gd-map top">
+    <div class="gd-mh"><div><h2>Deine Datenlandkarte</h2><p>Alles, was dein GENEius-Profil schon über dich weiß.</p></div><a class="btn glass sm" href="messwerte/datenlandkarte-animiert.html" target="_blank" rel="noopener">Vollbild</a></div>
+    <iframe src="messwerte/datenlandkarte-animiert.html?bg=1" title="Deine Datenlandkarte"></iframe>
+  </div>
   <div class="gd-stage">
     <div class="gd-brain" id="gdBrain" aria-label="Dein Gedächtnis als Gehirn. Ziehen zum Drehen, Punkte antippen zum Öffnen.">
       <canvas id="gdCv"></canvas>
@@ -2441,10 +2514,6 @@ section.br.br-off .br-testconf{display:none}
       <div class="gd-body" id="gdBody"></div>
       <div class="gd-foot"><button data-gdwipe><svg class="ic sm"><use href="#i-x"/></svg>Mein ganzes Gedächtnis löschen</button></div>
     </aside>
-  </div>
-  <div class="gd-map">
-    <div class="gd-mh"><div><h2>Deine Datenlandkarte</h2><p>Welche Daten dein GENEius-Profil schon hat und was noch fehlt.</p></div><a class="btn glass sm" href="messwerte/datenlandkarte-animiert.html" target="_blank" rel="noopener">Vollbild</a></div>
-    <iframe src="messwerte/datenlandkarte-animiert.html" loading="lazy" title="Deine Datenlandkarte"></iframe>
   </div>
 </div>
 </section>
@@ -3194,7 +3263,7 @@ const chips=(arr,on=0,multi)=>`<div class="opts" ${multi?'data-multi':'data-sing
 const backIc=ic('chev','sm').replace('class="ic sm"','class="ic sm" style="transform:rotate(180deg)"');
 
 /* ---------- Rezept verfeinern: 3 Aktionen ---------- */
-const REF={daten:['Daten eintragen','compass','Lebensstil, Laborwerte, Medikamente & mehr']};
+const REF={daten:['Daten übermitteln','compass','Lebensstil, Laborwerte, Medikamente & mehr']};
 function refineSheet(k){
  if(k==='daten'||k==='choose'){deOpen();return} /* DATEN-EINTRAGEN: ersetzt Lebensstil-/Blutwerte-Fragebogen (16.11.2026) */
  if(k==='choose_alt'){
@@ -4952,8 +5021,8 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
 /* DATEN-EINTRAGEN:END */</style>
 <script id="de-js">/* DATEN-EINTRAGEN:BEGIN */
 (function(){
- const ov=document.createElement('div');ov.className='de-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Daten eintragen');
- ov.innerHTML='<div class="de-box"><button class="de-x" type="button" aria-label="Schließen">✕</button><iframe title="Daten eintragen" src="about:blank"></iframe></div>';
+ const ov=document.createElement('div');ov.className='de-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Daten übermitteln');
+ ov.innerHTML='<div class="de-box"><button class="de-x" type="button" aria-label="Schließen">✕</button><iframe title="Daten übermitteln" src="about:blank"></iframe></div>';
  document.body.appendChild(ov);
  const fr=ov.querySelector('iframe');
  window.deOpen=function(){if(fr.src.indexOf('gesundheitsdaten-portal')<0)fr.src='datenpunkte/gesundheitsdaten-portal.html';ov.classList.add('on');document.documentElement.style.overflow='hidden'};
@@ -4964,5 +5033,61 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
  addEventListener('hashchange',()=>{if(ov.classList.contains('on'))close()}); /* „Zum Chat“ im Portal setzt #coach */
 })();
 /* DATEN-EINTRAGEN:END */</script>
+<script id="nx-js">/* NU-EXTRA:BEGIN */
+(function(){
+ const $=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>[...r.querySelectorAll(q)];
+ const sec=$('[data-view="naehrstoffe"]');if(!sec)return;
+ const lang=()=>{const b=$('[data-lang][aria-pressed="true"]');return b&&b.dataset.lang==='en'?'en':'de'};
+ const T={de:{h:'GENEius berechnet deine Nährstoffe',st:['Genetische Analyse wird ausgewertet …','Laborwerte werden einbezogen …','Lebensstil und Ziele werden berücksichtigt …','Medikamente und Wechselwirkungen werden geprüft …','Dosierungen werden berechnet …','Deine Rezeptur ist fertig.'],btn:'Daten übermitteln',sub:'Über 7.000 Datenpunkte möglich'},
+          en:{h:'GENEius is calculating your nutrients',st:['Analysing your genetic results …','Including your lab values …','Considering lifestyle and goals …','Checking medication interactions …','Calculating dosages …','Your formula is ready.'],btn:'Submit data',sub:'Over 7,000 data points possible'}};
+ /* Überschrift „Rezept verfeinern“ markieren */
+ const nuR=$('#nuRact');const refsec=nuR&&nuR.previousElementSibling;if(refsec&&refsec.classList.contains('sec'))refsec.classList.add('nx-refsec');
+ /* B: Knopf im Kopf */
+ const hin=$('.hero-in',sec);const hb=document.createElement('div');hb.className='nx-hb';
+ hb.innerHTML='<button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten übermitteln</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button><small class="nx-n">Über 7.000 medizinische Datenpunkte können einfließen</small>';
+ hin&&hin.appendChild(hb);
+ /* D: schwebend */
+ const fab=document.createElement('button');fab.className='nx-fab';fab.dataset.refine='daten';
+ fab.innerHTML='<span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span>Daten übermitteln<small>Über 7.000 Datenpunkte</small></span>';
+ document.body.appendChild(fab);
+ /* C: Sachet + Karte nebeneinander */
+ const stick=$('.stick',sec);let row=null;
+ function setV(v){
+  ['a','b','c','d'].forEach(k=>document.body.classList.toggle('nxv-'+k,k===v));
+  $$('[data-nxv]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.nxv===v));
+  if(v==='c'&&stick&&nuR&&!row){row=document.createElement('div');row.className='nx-row';stick.before(row);row.append(stick,nuR)}
+  if(v!=='c'&&row){row.before(nuR);nuR.after(stick);row.remove();row=null}
+  try{localStorage.setItem('gn-nx-layout',v)}catch(_){}
+ }
+ let v0='a';try{v0=new URLSearchParams(location.search).get('ru')||localStorage.getItem('gn-nx-layout')||'a'}catch(_){}
+ setV(/^[abcd]$/.test(v0)?v0:'a');
+ const onNu=()=>document.body.classList.toggle('nx-on-nu',/^#naehrstoffe/.test(location.hash));
+ addEventListener('hashchange',onNu);onNu();
+ /* Recalculation */
+ const ov=document.createElement('div');ov.className='nx-ov';ov.setAttribute('role','status');ov.setAttribute('aria-live','polite');
+ const logo=($('.mlogo svg')||{}).outerHTML||'';
+ let orbits='';[[96,'2.2s'],[78,'3.4s'],[110,'5s']].forEach(([d,t],i)=>{orbits+=`<div class="orbit" style="--t:${t};animation-delay:-${i*.7}s"><span class="dot" style="--d:${d}px"></span></div>`});
+ ov.innerHTML=`<div class="nx-in"><div class="nx-orb"><span class="glow"></span><span class="r"></span><span class="r r2"></span><span class="r r3"></span>${orbits}${logo.replace('<svg','<svg class="logo"').replace(/ width="\d+"| height="\d+"/g,'')}</div><div class="nx-ticker"></div><div class="nx-h"></div><div class="nx-st"></div><div class="nx-bar"><i></i></div><div class="nx-pc">0 %</div></div>`;
+ document.body.appendChild(ov);
+ const clear=f=>{try{const d=f.contentDocument;if(!d||!d.body)return;d.documentElement.style.background='transparent';d.body.style.background='transparent';const r=d.getElementById('bg');if(r)r.style.fill='transparent'}catch(_){}};
+ $$('.dub-map iframe,.gd-map iframe').forEach(f=>{f.addEventListener('load',()=>clear(f));clear(f)});
+ const DUR=13000;let raf=0,t0=0,tick=0;
+ function names(){const n=$$('.ntile h3',sec).map(e=>e.textContent.trim()).filter(Boolean);return n.length?n:['Vitamin D3','Magnesium','Zink','Omega-3','Folsäure','Vitamin B12','Selen','Eisen']}
+ function run(){
+  cancelAnimationFrame(raf);clearInterval(tick);
+  const L=T[lang()],N=names();$('.nx-h',ov).textContent=L.h;
+  const units=['mg','µg','mg','µg','IE'];
+  tick=setInterval(()=>{const n=N[Math.random()*N.length|0];$('.nx-ticker',ov).textContent=`${n} → ${(Math.random()*400+1).toFixed(Math.random()<.5?0:1).replace('.',lang()==='de'?',':'.')} ${units[Math.random()*units.length|0]}`},110);
+  ov.classList.add('on');t0=performance.now();
+  const step=now=>{const p=Math.min(1,(now-t0)/DUR);const e=p<1?1-Math.pow(1-p,1.6):1;
+   $('.nx-bar i',ov).style.width=(e*100).toFixed(1)+'%';$('.nx-pc',ov).textContent=Math.round(e*100)+' %';
+   const k=p>=1?L.st.length-1:Math.min(L.st.length-2,Math.floor(p*(L.st.length-1)));$('.nx-st',ov).textContent=L.st[k];
+   if(p<1)raf=requestAnimationFrame(step);else{clearInterval(tick);$('.nx-ticker',ov).textContent='✓';setTimeout(()=>ov.classList.remove('on'),700)}};
+  raf=requestAnimationFrame(step);
+ }
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-nxv],[data-nxrecalc]');if(!b)return;
+  if(b.dataset.nxv)setV(b.dataset.nxv);else run()});
+})();
+/* NU-EXTRA:END */</script>
 </body>
 </html>
