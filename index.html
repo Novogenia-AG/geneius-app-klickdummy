@@ -1942,6 +1942,7 @@ section.br.br-off .br-testconf{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .dub-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:10px 28px;padding:26px 28px;border-radius:28px;background:linear-gradient(135deg,#3C0033,#1F0019 70%);border:1px solid rgba(255,255,255,.1);box-shadow:var(--sh);overflow:hidden;position:relative}
 .dub-eb{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(198,214,63,.16);color:var(--lime);font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .dub-tx h3{font-size:clamp(20px,2.3vw,27px);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin:12px 0 8px;color:#fff}
@@ -2179,7 +2180,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
   </div>
   <!-- Sachet „Made for …“ wie in der Original-GENEius-App (public/White Stick Transparent.png, Text Roboto Condensed) -->
 <!-- SACHET-RAD:BEGIN -->
-<div class="sr-card" aria-label="Deine Daten fließen über GENEius AI in deine Rezeptur"><iframe class="sr-map" src="messwerte/datenlandkarte-animiert.html?bg=1" tabindex="-1" aria-hidden="true" title=""></iframe><canvas class="sr-b"></canvas><div class="sr-brain" aria-hidden="true"></div>
+<div class="sr-card" aria-label="Deine Daten fließen über GENEius AI in deine Rezeptur"><iframe class="sr-map" src="messwerte/datenlandkarte-animiert.html?bg=1&amp;neu=1&amp;logo=0&amp;glow=0&amp;spokes=0&amp;bgt=1" tabindex="-1" aria-hidden="true" title=""></iframe><canvas class="sr-b"></canvas><div class="sr-brain" aria-hidden="true"></div>
   <div class="stick" role="img" aria-label="Deine persönliche Rezeptur: Made for Markus">
     <img src="produkte/stick.webp" alt="" width="793" height="182">
     <div class="stick-t" aria-hidden="true"><span>MADE FOR</span><b>MARKUS</b></div>
@@ -5181,14 +5182,10 @@ function brain(t){if(Math.random()<.09&&L.length){L[Math.random()*L.length|0].fi
   const wave=Math.sin(t*0.006-mid*0.09-q.y*0.03),f=Math.max(0,1-(t-q.fire)/260);
   q.l.setAttribute('stroke',f>0||wave>.82?'#FFFFFF':wave>.45?'#D8E46A':'#C6D63F');q.l.style.opacity=(0.6+0.4*Math.max(f,(wave+1)/2)).toFixed(2)});
  C.forEach((o,j)=>o.c.setAttribute('r',(o.r*(1+.45*Math.sin(t*0.008+j))).toFixed(2)))}
-/* Original-Datenlandkarte: Mittelpunkt = Beutel, alle Einträge (auch „fehlt noch“), ohne Logo und Leuchten in der Mitte */
+/* Original-Datenlandkarte: Mittelpunkt = Beutel, alle Einträge (auch „fehlt noch“), ohne Logo, Leuchten und Verbindungslinien in der Mitte */
 function placeMap(){const g=geo();const sc=Math.min(1.45,Math.max(.7,(g.cy-8)/500));const sz=Math.round(1240*sc);
  map.style.width=map.style.height=sz+'px';map.style.left=(g.cx-sz/2)+'px';map.style.top=(g.cy-sz/2)+'px';card._icR=175*sc}
-function setupMap(){try{const d=map.contentDocument;if(!d||!d.getElementById('all'))return;
- d.documentElement.style.background='transparent';d.body.style.background='transparent';const r=d.getElementById('bg');if(r)r.style.fill='transparent';
- d.getElementById('all').click();
- ['logo','glow','spokes'].forEach(k=>{const c=d.querySelector(`[data-lay="${k}"]`);if(c&&c.checked){c.checked=false;c.dispatchEvent(new Event('change',{bubbles:true}))}});
- map.classList.add('on')}catch(_){map.classList.add('on')}}
+function setupMap(){map.classList.add('on')} /* Ebenen per URL-Parameter (neu, logo, glow, spokes, bgt) */
 map.addEventListener('load',setupMap);setupMap();placeMap();addEventListener('resize',placeMap);
 /* nur zeichnen, wenn sichtbar */
 let on=false,raf=0;

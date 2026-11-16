@@ -71,6 +71,7 @@ body.light .key{background:rgba(255,255,255,.75);color:#3C0033}
 html.bg .panel,html.bg .menu,html.bg .key,html.bg .tip{display:none!important}
 html.bg .stage{inset:0;pointer-events:none}
 html.bg body{background:transparent}
+html.bgt,html.bgt body{background:transparent!important}
 </style>
 </head>
 <body>
@@ -239,6 +240,12 @@ if(BG)document.documentElement.classList.add('bg');
 if(!BG)try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s){if(!(s.vz>=2)){s.viz='breite';s.vz=2}S=Object.assign(S,s,{lay:Object.assign(S.lay,s.lay||{})})}}catch(e){}
 const save=()=>{if(BG)return;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
 if(BG)Object.assign(S,{viz:'breite',theme:'nacht',fNeu:0,fHave:1,hoverStop:0,run:1,spd:2.5,off:{}});
+/* URL-Parameter (für die GENEius-App, 16.11.2026): neu=1 zeigt „fehlt noch“, logo/glow/spokes/bands/icons=0 blenden Ebenen aus, bgt=1 macht den Hintergrund durchsichtig */
+const QP=new URLSearchParams(location.search);
+if(QP.get('neu')==='1')S.fNeu=1;
+['logo','glow','spokes','bands','icons','leaves','nums'].forEach(k=>{if(QP.has(k))S.lay[k]=QP.get(k)==='1'?1:0});
+const BGT=QP.get('bgt')==='1';
+if(BGT)document.documentElement.classList.add('bgt');
 const lk=(i,j)=>i+'.'+j;
 /* Mengen-Varianten (Daniel 16.11.2026): Anzahl möglicher Messgrößen je Eintrag sichtbar machen */
 const VIZ=[['aus','Ohne','Alle Einträge gleich – nur die Zahl im Text.'],
@@ -350,7 +357,7 @@ function tick(t){
 }
 /* ---------- Menü ---------- */
 const $=id=>document.getElementById(id);
-function theme(){const T=TH[S.theme];$('bg').setAttribute('fill',T.bg);document.body.classList.toggle('light',!!T.light);
+function theme(){const T=TH[S.theme];$('bg').setAttribute('fill',BGT?'none':T.bg);document.body.classList.toggle('light',!!T.light);
   document.querySelectorAll('#themes button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===S.theme));
   document.querySelectorAll('[data-bc]').forEach(el=>el.style.setProperty('--c',T.col(B[+el.dataset.bc],+el.dataset.bc)));
   dirty=true}
