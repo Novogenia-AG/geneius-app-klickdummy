@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GENEius Datenlandkarte – animiert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--lime:#C6D63F;--pbg:rgba(26,0,21,.78);--pink:#fff;--psub:rgba(255,255,255,.6);--pline:rgba(255,255,255,.14);--f:'Montserrat',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:var(--f);background:radial-gradient(circle at 40% 45%,#3C0033,#1A0015 60%,#0E000B);color:var(--pink);-webkit-font-smoothing:antialiased;overflow:hidden;transition:background .4s}
+body.light{background:radial-gradient(circle at 40% 45%,#FFFFFF,#F7EEF4 60%,#EFDDE8);--pbg:rgba(255,255,255,.86);--pink:#2A0022;--psub:#7A5D72;--pline:rgba(94,0,71,.14)}
+.stage{position:fixed;inset:0 340px 0 0;display:grid;place-items:center}
+.stage svg{width:min(100%,100vh);height:auto;max-height:100vh;display:block;cursor:grab}
+svg text{font-family:'Montserrat',sans-serif}
+.panel{position:fixed;top:0;right:0;bottom:0;width:340px;background:var(--pbg);backdrop-filter:blur(14px);border-left:1px solid var(--pline);display:flex;flex-direction:column;z-index:2;transition:transform .3s}
+.ph{padding:20px 20px 12px;border-bottom:1px solid var(--pline)}
+.eyebrow{font-size:10.5px;font-weight:800;letter-spacing:.22em;color:var(--lime);text-transform:uppercase}
+body.light .eyebrow{color:#7C8A10}
+h1{font-size:20px;font-weight:800;margin:3px 0 4px}
+.ph p{font-size:12.5px;color:var(--psub);line-height:1.45}
+.pb{overflow:auto;padding:6px 20px 24px;flex:1}
+.grp{padding:14px 0 6px;border-bottom:1px solid var(--pline)}
+.grp:last-child{border-bottom:0}
+.gt{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--psub);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.gt span{display:flex;gap:4px}
+.mini{font:inherit;font-size:11px;font-weight:700;letter-spacing:0;text-transform:none;padding:3px 9px;border-radius:99px;border:1px solid var(--pline);background:transparent;color:var(--pink);cursor:pointer}
+.mini:hover{border-color:var(--lime)}
+.row{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:13.5px;font-weight:600;cursor:pointer;user-select:none}
+.row input{appearance:none;width:20px;height:20px;border-radius:6px;border:2px solid var(--c,var(--lime));flex:none;display:grid;place-items:center;cursor:pointer;transition:background .15s}
+.row input:checked{background:var(--c,var(--lime))}
+.row input:checked::after{content:'';width:5px;height:10px;border:solid #26001D;border-width:0 2.5px 2.5px 0;transform:translateY(-1px) rotate(45deg)}
+body.light .row input:checked::after{border-color:#fff}
+.row input:indeterminate{background:linear-gradient(var(--c,var(--lime)),var(--c,var(--lime))) center/10px 2.5px no-repeat}
+.row svg{flex:none}
+.row .n{margin-left:auto;font-size:11.5px;color:var(--psub);font-weight:600}
+details.br{border-radius:10px}
+details.br summary{list-style:none;display:flex;align-items:center}
+details.br summary::-webkit-details-marker{display:none}
+details.br summary .row{flex:1}
+details.br summary .tg{width:26px;height:26px;display:grid;place-items:center;border-radius:6px;color:var(--psub);cursor:pointer;flex:none;transition:transform .2s}
+details.br[open] summary .tg{transform:rotate(90deg)}
+details.br .lv{padding:0 0 6px 30px}
+details.br .lv .row{font-size:12.5px;font-weight:500;padding:3px 0}
+details.br .lv .row input{width:16px;height:16px;border-radius:5px;border-width:1.5px}
+details.br .lv .row input:checked::after{width:4px;height:8px;border-width:0 2px 2px 0}
+.lv .neu{font-style:italic;color:#9A8794}
+body.light .lv .neu{color:#A39CA8}
+.key{position:fixed;left:18px;bottom:16px;z-index:2;display:flex;gap:16px;font-size:12.5px;font-weight:700;color:var(--pink);background:rgba(38,0,29,.55);padding:8px 14px;border-radius:99px;backdrop-filter:blur(6px)}
+body.light .key{background:rgba(255,255,255,.75);color:#3C0033}
+.key span{display:flex;align-items:center;gap:7px}
+.key i{width:22px;height:8px;border-radius:4px;display:block}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips button{font:inherit;font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:99px;border:1px solid var(--pline);background:transparent;color:var(--pink);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--lime);color:#26001D;border-color:var(--lime)}
+.ctl{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;padding:4px 0}
+.ctl input[type=range]{flex:1;accent-color:var(--lime)}
+.play{font:inherit;font-weight:800;font-size:13px;padding:8px 14px;border-radius:99px;border:0;background:var(--lime);color:#26001D;cursor:pointer;min-width:104px}
+.menu{display:none;position:fixed;right:14px;top:14px;z-index:3;font:inherit;font-weight:800;font-size:13px;padding:10px 16px;border-radius:99px;border:0;background:var(--lime);color:#26001D;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.tip{position:fixed;pointer-events:none;background:#26001D;color:#fff;font-size:12.5px;font-weight:600;padding:8px 11px;border-radius:10px;max-width:280px;opacity:0;transition:opacity .12s;z-index:5;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.tip b{color:var(--lime)}
+@media (max-width:860px){
+  .stage{inset:0}
+  .panel{width:min(340px,92vw);transform:translateX(100%)}
+  .panel.open{transform:none}
+  .menu{display:block}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2.2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.8A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 11.5h.01M12.5 11.5h.01M16.5 11.5h.01"/></symbol>
+  <symbol id="i-capsule" viewBox="0 0 24 24"><path d="M10.5 3.5a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7z"/><path d="M7 7l7 7"/></symbol>
+  <symbol id="i-pills" viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="3.5"/><circle cx="9" cy="8" r="2"/><circle cx="15" cy="8" r="2"/><circle cx="9" cy="16" r="2"/><circle cx="15" cy="16" r="2"/></symbol>
+  <symbol id="i-pill-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.3"/><circle cx="4.5" cy="12" r="1.3"/><circle cx="4.5" cy="18" r="1.3"/></symbol>
+  <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-2"/><circle cx="21" cy="12" r="2"/><path d="M4.5 3H7.5M14.5 3h3"/></symbol>
+  <symbol id="i-quelle" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M8.5 8h7M8.5 11.5h5"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 7.5l-9-4.5-9 4.5v9l9 4.5 9-4.5z"/><path d="M3 7.5l9 4.5 9-4.5M12 12v9M7.5 5.2l9 4.6"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="M17 2.5l3.5 3.5L17 9.5"/><path d="M3.5 11.5v-1a4.5 4.5 0 0 1 4.5-4.5h12.5"/><path d="M7 21.5L3.5 18 7 14.5"/><path d="M20.5 12.5v1a4.5 4.5 0 0 1-4.5 4.5H3.5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-flip" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></symbol>
+  <symbol id="i-dna" viewBox="0 0 24 24"><path d="M7 2c0 5.5 10 4.5 10 10S7 16.5 7 22"/><path d="M17 2c0 5.5-10 4.5-10 10s10 4.5 10 10"/><path d="M8.5 5.5h7M8.5 18.5h7M10 9h4M10 15h4"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 10.5 4 20 4c0 10-6 15-15 15z"/><path d="M5 19l8-8"/></symbol>
+  <symbol id="i-carrot" viewBox="0 0 24 24"><path d="M14.5 9.5L4 20l2.6-9.4a3.6 3.6 0 0 1 6-1.4z"/><path d="M15 9c1-2.8 3-4 6-4M15 9c2.8-1 4-3 4-6M15 9c0-2 .2-4-1-6"/><path d="M7.5 15.5l1.8.8M8.7 12.3l1.8.8"/></symbol>
+  <symbol id="i-citrus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><path d="M12 6.5v11M6.5 12h11M8.1 8.1l7.8 7.8M15.9 8.1l-7.8 7.8"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22c4 0 7-2.8 7-6.8 0-4.2-3-6.2-4-10.2-2 1.8-3 4-3 6-1-1-2-2.2-2-4.2-2 2-5 5-5 8.4 0 4 3 6.8 7 6.8z"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9.5 4A3 3 0 0 0 6.5 7a3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 3 3 2.5 2.5 0 0 0 2.5-2.5v-11A2.5 2.5 0 0 0 9.5 4z"/><path d="M14.5 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-3 3 2.5 2.5 0 0 1-2.5-2.5"/><path d="M12 9h-2M12 14h2"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="17" height="10" rx="2.5"/><path d="M22 10.5v3M6 10.5v3M9.5 10.5v3M13 10.5v3"/></symbol>
+  <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.4"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></symbol>
+  <symbol id="i-bone" viewBox="0 0 24 24"><path d="M17 10l-7 7a2.5 2.5 0 1 1-3.5.5 2.5 2.5 0 1 1 .5-3.5l7-7a2.5 2.5 0 1 1 3.5-.5 2.5 2.5 0 1 1-.5 3.5z"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3.5h12l4 5.5-10 12L2 9z"/><path d="M2 9h20M10 3.5L8 9l4 12 4-12-2-5.5"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2.5 12h4l3-8 4.5 16 3-8h4.5"/></symbol>
+  <symbol id="i-hex" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z"/><path d="M9 15a3 3 0 0 0 3 3"/></symbol>
+  <symbol id="i-ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3.5v5M12 15.5v5"/></symbol>
+  <symbol id="i-fish" viewBox="0 0 24 24"><path d="M2.5 12c3.5-4.5 8.5-6 13-3.5L21 5v14l-5.5-3.5C11 18 6 16.5 2.5 12z"/><circle cx="8" cy="11" r=".9"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z"/><path d="M19 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.8-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.2 12 20 12 20z"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3V16h-7"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 21V3c-2.5 1-4 3.5-4 7v3h4"/></symbol>
+  <symbol id="i-run" viewBox="0 0 24 24"><circle cx="14.5" cy="4.5" r="2"/><path d="M5 21l4-6 3 2 1 4M7.5 11l3.5-3.5 4 1 2 4 3 1M11 7.5l1 5.5"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M7.5 10a4.5 4.5 0 0 1 9 0z"/><path d="M12 10l1.6-2.2"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h9M19 6h1M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="16" cy="6" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="18" r="2.2"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2.5-6.5z"/><path d="M11.5 13.5L20 4"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v12M7 11l5 5 5-5M4 20h16"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></symbol>
+  <symbol id="i-logout" viewBox="0 0 24 24"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 8l-4 4 4 4M6 12h10"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5-5-9 8"/></symbol>
+  <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 21V10l6 4v-4l6 4V4h6v17z"/><path d="M7 17h2M12 17h2"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4V2.8h6V4M9 10h6M9 14h6M9 18h3"/></symbol>
+  <symbol id="i-bread" viewBox="0 0 24 24"><path d="M5 11a4 4 0 0 1 2-7.5h10A4 4 0 0 1 19 11v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/><path d="M9 9l2 2M13 9l2 2"/></symbol>
+  <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M8 8c0-2 1-3 2-4.5M12 8c0-2 1-3 2-4.5M16 8c0-2 1-3 2-4.5"/></symbol>
+  <symbol id="i-bean" viewBox="0 0 24 24"><path d="M8 4c3 0 4 3 7 3s5 3 5 6.5S17 21 12 20 3 15 3 10s2-6 5-6z"/><path d="M8.5 10c1 2 3 3 6 3"/></symbol>
+  <symbol id="i-broc" viewBox="0 0 24 24"><path d="M10 21h4l-1-8h-2zM7 13a4 4 0 0 1-.5-7.9A4 4 0 0 1 12 3a4 4 0 0 1 5.5 2.1A4 4 0 0 1 17 13z"/></symbol>
+  <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 7c-2-1.5-7-1.5-7 4.5S8.5 21 12 20c3.5 1 7-3 7-8.5S14 5.5 12 7z"/><path d="M12 7c0-2 1-3.5 3-4"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path d="M5 8h12v6a6 6 0 0 1-12 0zM17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v2M11 3v2M14 3v2"/></symbol>
+  <symbol id="i-potato" viewBox="0 0 24 24"><path d="M6 7c3-4 10-4 13 0s2 11-4 12S3 18 3 13s0-3 3-6z"/><path d="M9 11h.01M14 9h.01M14 15h.01"/></symbol>
+  <symbol id="i-drum" viewBox="0 0 24 24"><path d="M15 3a6 6 0 0 1 2.5 11.5L12 17l-2.5 2.5a2 2 0 1 1-3 2 2 2 0 1 1 2-3L11 16l2.5-5.5A6 6 0 0 1 15 3z"/></symbol>
+  <symbol id="i-meat" viewBox="0 0 24 24"><path d="M4 13c-1-5 4-10 10-10s7 6 5 10-6 8-10 7-4-2-5-7z"/><circle cx="14" cy="9" r="2"/></symbol>
+  <symbol id="i-candy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M8.3 9.5L4 6.5v6zM15.7 14.5l4.3 3v-6z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h2.5L9 4h6l1.5 2H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-paper" viewBox="0 0 24 24"><path d="M20 11.5l-8.2 8.2a5 5 0 0 1-7.1-7.1l8.5-8.5a3.3 3.3 0 0 1 4.7 4.7l-8.5 8.5a1.7 1.7 0 0 1-2.4-2.4L14.8 7"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2" fill="currentColor"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></symbol>
+  <symbol id="i-thumb" viewBox="0 0 24 24"><path d="M7 11v9H4v-9zM7 11l4-7a2 2 0 0 1 3 2l-1 4h5.5a2 2 0 0 1 2 2.4l-1.3 6A2 2 0 0 1 17.2 20H7"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5v14l-4.5-4.5H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1.5A3.5 3.5 0 0 0 7.5 11M17 6h3v1.5a3.5 3.5 0 0 1-3.5 3.5M12 14v4M8 21h8M9.5 18h5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2.5 5.5c3-1.5 6.5-1.5 9.5 1 3-2.5 6.5-2.5 9.5-1v13c-3-1.5-6.5-1.5-9.5 1-3-2.5-6.5-2.5-9.5-1z"/><path d="M12 6.5v13"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l9.5 17h-19z"/><path d="M12 10v4.5M12 17.5h.01"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.5"/><path d="M10.3 8.2h.01M13.7 8.2h.01M10.8 10.2c.7.5 1.7.5 2.4 0"/><path d="M6 21c0-3.5 2.7-6 6-6s6 2.5 6 6"/></symbol>
+  <symbol id="i-muscle" viewBox="0 0 24 24"><path d="M4 18c2-6 3-10 7-12 2-1 4 0 3.5 2l-2.5 1.5c1.5 1 3.5 1 5.5 0 2 2 2 6-1 8.5-3 2.5-8 2.5-12.5 0z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-venus" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M12 14.5V22M8.5 18.5h7"/></symbol>
+  <symbol id="i-mars" viewBox="0 0 24 24"><circle cx="10" cy="14" r="5.5"/><path d="M14 10l6-6M15 4h5v5"/></symbol>
+  <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></symbol>
+  <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 2h4v4l2 3v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9l2-3z"/><path d="M8 13h8"/></symbol>
+</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg-mark" viewBox="-8.53 -17.64 105.5 105.5"><circle cx="27.38" cy="5.57" r="3.27" fill="var(--a)"></circle><line x1="61.04" y1="5.57" x2="74.43" y2="5.57" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="14.57" y1="14.27" x2="20.81" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="67.63" y1="14.27" x2="87.43" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="8.37" y1="22.98" x2="27.4" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="22.98" x2="73.74" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.92" y1="22.98" x2="93.43" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.57" y1="31.69" x2="32.35" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="56.09" y1="31.69" x2="71.24" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="81.42" y1="31.69" x2="95.23" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.97" y1="40.4" x2="27.4" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="40.4" x2="73.08" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.26" y1="40.4" x2="93.23" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="10.77" y1="49.1" x2="20.81" y2="49.1" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><circle cx="67.63" cy="49.1" r="3.27" fill="var(--a)"></circle><line x1="16.37" y1="57.81" x2="27.4" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="57.81" x2="62.03" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="38.89" y1="66.95" x2="44.11" y2="66.95" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="5.57" x2="50.85" y2="5.57" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="14.27" x2="57.45" y2="14.27" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="22.98" x2="50.85" y2="22.98" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="42.54" y1="31.69" x2="45.9" y2="31.69" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="40.4" x2="50.85" y2="40.4" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="49.1" x2="57.45" y2="49.1" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="57.81" x2="50.85" y2="57.81" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line></symbol></svg>
+<div class="stage"><svg id="map" viewBox="-70 -70 1240 1240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GENEius Datenlandkarte"><g id="defs"></g><rect id="bg" x="-70" y="-70" width="1240" height="1240" fill="none"/><g id="g"></g></svg></div>
+<button class="menu" id="menu" type="button">☰ Ebenen</button>
+<aside class="panel" id="panel">
+  <div class="ph">
+    <div class="eyebrow">GENEius · Datenlandkarte</div>
+    <h1>Dein GENEius-Profil</h1>
+    <p>Kreis dreht sich langsam. Häkchen schalten Bereiche, einzelne Einträge und Ebenen ein und aus. Ziehen dreht von Hand.</p>
+  </div>
+  <div class="pb">
+    <div class="grp">
+      <div class="gt">Bewegung</div>
+      <div class="ctl"><button class="play" id="play" type="button">❚❚ Anhalten</button><button class="mini" id="dir" type="button" title="Richtung">↻ Richtung</button></div>
+      <div class="ctl"><span>Tempo</span><input type="range" id="spd" min="0.5" max="12" step="0.5" value="3"><span id="spdv" style="width:48px;text-align:right;color:var(--psub);font-size:12px">3 °/s</span></div>
+      <label class="row"><input type="checkbox" id="hoverStop" checked> Beim Darüberfahren anhalten</label>
+    </div>
+    <div class="grp">
+      <div class="gt">Menge je Eintrag</div>
+      <div class="chips" id="vizs"></div>
+      <p id="vleg" style="font-size:12px;color:var(--psub);line-height:1.45;margin-top:8px"></p>
+    </div>
+    <div class="grp">
+      <div class="gt">Farbwelt</div>
+      <div class="chips" id="themes"></div>
+    </div>
+    <div class="grp">
+      <div class="gt">Ebenen</div>
+      <div id="layers"></div>
+    </div>
+    <div class="grp">
+      <div class="gt">Daten <span><button class="mini" data-q="have" type="button">Vorhanden</button><button class="mini" data-q="neu" type="button">Fehlt noch</button></span></div>
+      <label class="row"><input type="checkbox" id="fHave" checked> Haben wir schon<span class="n" id="cHave"></span></label>
+      <label class="row" style="--c:#9A8794"><input type="checkbox" id="fNeu" checked> Fehlt noch (Vorschlag)<span class="n" id="cNeu"></span></label>
+    </div>
+    <div class="grp">
+      <div class="gt">Bereiche <span><button class="mini" id="all" type="button">Alle</button><button class="mini" id="none" type="button">Keine</button></span></div>
+      <div id="branches"></div>
+    </div>
+  </div>
+</aside>
+<div class="key" id="key"><span><i style="background:linear-gradient(90deg,#C6D63F,#E879B9,#7FB3E0)"></i>Haben wir</span><span><i style="border:1.5px dashed #9A8794"></i>Fehlt noch</span></div>
+<div class="tip" id="tip"></div>
+<script>
+const D={"b": [{"name": "Gene & DNA", "c": "#C6D63F", "s": "L", "icon": "dna", "l": [{"t": "Vitamine, Folat & Eisen", "n": 15, "neu": false, "h": "aus deiner GENEius-Analyse"}, {"t": "Fettstoffwechsel & Herz", "n": 6, "neu": false, "h": ""}, {"t": "Gewicht, Zucker & Leber", "n": 9, "neu": false, "h": ""}, {"t": "Koffein, Alkohol & Laktose", "n": 6, "neu": false, "h": ""}, {"t": "Medikamente (Pharmakogenetik)", "n": 10, "neu": false, "h": ""}, {"t": "Gerinnung, Zöliakie & Weitere", "n": 12, "neu": false, "h": ""}]}, {"name": "Erkrankungen", "c": "#FF6FB5", "s": "L", "icon": "steth", "l": [{"t": "Diagnosen bei mir", "n": 155, "neu": false, "h": "Wizard: Ja/Nein/Unbekannt → Bereich → welche"}, {"t": "Familiengeschichte", "n": 5, "neu": false, "h": "in „Medizinische Daten“"}, {"t": "Andere Erkrankungen (Text)", "n": null, "neu": false, "h": "Freitext"}, {"t": "Impfungen & Vorsorge", "n": null, "neu": true, "h": "Impfpass, Krebsvorsorge, Check-ups mit Datum → Erinnerungen, Longevity-Plan"}, {"t": "Arztbriefe & Befunde hochladen", "n": null, "neu": true, "h": "Foto/PDF → Werte automatisch auslesen (KI), spart das Abtippen"}]}, {"name": "Medikamente & Supplemente", "c": "#B18CFF", "s": "L", "icon": "capsule", "l": [{"t": "Wirkstoffe & Marken (Suche)", "n": 2702, "neu": false, "h": "aus der Medikamenten-App"}, {"t": "Wechselwirkungen mit Nährstoffen", "n": 18, "neu": false, "h": "Regeln LAB-CLC-NEM"}, {"t": "Supplement-Einnahme & Treue", "n": null, "neu": true, "h": "Was wird wirklich genommen? Wichtig für Wirkung und Dosis"}, {"t": "Andere Supplemente & Peptide", "n": null, "neu": true, "h": "Fremdprodukte, Kreatin, NAD+-Booster usw. → Überdosierung vermeiden"}]}, {"name": "Ernährung & Lebensstil", "c": "#FFB81C", "s": "L", "icon": "leaf", "l": [{"t": "Lifestyle-Fragebogen", "n": 20, "neu": false, "h": "Ernährung, Sport, Rauchen, Alkohol, Sonne, Schlaf, Stress"}, {"t": "Essverhalten (Scores)", "n": 18, "neu": false, "h": ""}, {"t": "Trinkmenge", "n": 1, "neu": false, "h": "Wearable/App"}, {"t": "Ernährungstagebuch & Foto", "n": null, "neu": true, "h": "Mahlzeit fotografieren → Nährstoffe, Abgleich mit Genen und Bedarf"}, {"t": "Makros, Kalorien & Eiweiß", "n": null, "neu": true, "h": "aus Tagebuch oder Apps (z. B. Yazio, MyFitnessPal)"}, {"t": "Koffein & Alkohol im Alltag", "n": null, "neu": true, "h": "täglicher Konsum, passend zu deinen Koffein-/Alkohol-Genen"}, {"t": "Fasten & Essfenster", "n": null, "neu": true, "h": "Intervallfasten, Zeit der letzten Mahlzeit → Schlaf und Blutzucker"}]}, {"name": "Körper & Biometrie", "c": "#4FD1C5", "s": "L", "icon": "scale", "l": [{"t": "Größe, Gewicht & Umfänge", "n": 14, "neu": false, "h": ""}, {"t": "Körperanalyse (BIA)", "n": 7, "neu": false, "h": ""}, {"t": "DEXA: Muskel, Fett, Knochen", "n": 12, "neu": false, "h": ""}, {"t": "Blutdruck & Vitalzeichen", "n": 14, "neu": false, "h": ""}, {"t": "EKG & Gefäße", "n": 15, "neu": false, "h": ""}]}, {"name": "Fitness & Leistung", "c": "#7FD67F", "s": "L", "icon": "run", "l": [{"t": "Ausdauer & VO2max", "n": 13, "neu": false, "h": ""}, {"t": "Kraft & Beweglichkeit", "n": 14, "neu": false, "h": "Griffkraft, Aufsteh-Test, Gang"}, {"t": "Energieumsatz", "n": 2, "neu": false, "h": ""}, {"t": "Aktivität & Schritte", "n": 13, "neu": false, "h": "Wearable"}, {"t": "Trainingstagebuch & Belastung", "n": null, "neu": true, "h": "Workouts, Belastung/Strain, Trainingsbelastung (akut/chronisch) → Regeneration und Nährstoffbedarf"}]}, {"name": "Laborwerte", "c": "#FF8A5B", "s": "R", "icon": "flask", "l": [{"t": "Vitamine", "n": 52, "neu": false, "h": ""}, {"t": "Mineralstoffe, Spurenelemente & Eisen", "n": 37, "neu": false, "h": ""}, {"t": "Blutfette & Fettsäuren", "n": 46, "neu": false, "h": ""}, {"t": "Blutzucker & Insulin", "n": 26, "neu": false, "h": ""}, {"t": "Hormone & Schilddrüse", "n": 35, "neu": false, "h": ""}, {"t": "Entzündung, Immunsystem & Allergie", "n": 63, "neu": false, "h": ""}, {"t": "Leber, Niere, Herz & Muskel", "n": 41, "neu": false, "h": ""}, {"t": "Blutbild, Gerinnung & Weitere", "n": 104, "neu": false, "h": ""}, {"t": "Urin", "n": 68, "neu": false, "h": ""}, {"t": "Stuhl & Mikrobiom", "n": 28, "neu": false, "h": ""}, {"t": "Speichel, Atem, Haar & Schweiß", "n": 51, "neu": false, "h": ""}]}, {"name": "Wearables & Heimgeräte", "c": "#5BC0FF", "s": "R", "icon": "ring", "l": [{"t": "Puls, HRV & EKG", "n": 4, "neu": false, "h": ""}, {"t": "Heimblutdruck", "n": 7, "neu": false, "h": ""}, {"t": "Glukose-Sensor (CGM)", "n": 9, "neu": false, "h": ""}, {"t": "Smarte Waage & Maßband", "n": 6, "neu": false, "h": ""}, {"t": "Heimtests Stoffwechsel", "n": 9, "neu": false, "h": "Ketone, Urin-Scan, Spirometer"}, {"t": "Zyklus", "n": 4, "neu": false, "h": ""}, {"t": "Stresssensor (Hautleitwert)", "n": null, "neu": true, "h": "EDA z. B. Fitbit/Garmin → Stressmomente im Alltag"}, {"t": "Automatisch verbinden", "n": null, "neu": true, "h": "Apple Health, Health Connect, Garmin, Oura, Withings, Dexcom/Libre statt Abtippen"}]}, {"name": "Schlaf & Erholung", "c": "#8F9BFF", "s": "R", "icon": "moon", "l": [{"t": "Schlaf vom Wearable", "n": 14, "neu": false, "h": "Dauer, Phasen, SpO₂, Atmung, Temperatur"}, {"t": "Schlaflabor", "n": 4, "neu": false, "h": ""}, {"t": "Schlaf & Chronotyp (Fragebögen)", "n": 7, "neu": false, "h": ""}, {"t": "Schlafschuld & Rhythmus", "n": null, "neu": true, "h": "aus den Wearable-Daten berechnet: Defizit, soziale Zeitverschiebung"}, {"t": "Abendroutine & Licht", "n": null, "neu": true, "h": "Bildschirm, Licht und Koffein am Abend → Einschlafen"}]}, {"name": "Psyche & Gehirn", "c": "#FF7A8A", "s": "R", "icon": "brain", "l": [{"t": "Stimmung & Stress (Scores)", "n": 8, "neu": false, "h": ""}, {"t": "Kognition", "n": 6, "neu": false, "h": ""}, {"t": "Lebensqualität", "n": 7, "neu": false, "h": ""}, {"t": "Täglicher Check-in", "n": null, "neu": true, "h": "Energie, Stimmung, Motivation, Beschwerden in 10 Sekunden – zeigt, was wirkt"}, {"t": "Meditation & Atemübungen", "n": null, "neu": true, "h": "Minuten und Art (Achtsamkeitsminuten vom Wearable gibt es schon)"}, {"t": "Soziales & Bildschirmzeit", "n": null, "neu": true, "h": "soziale Kontakte, Handyzeit – starke Longevity-Faktoren"}]}, {"name": "Longevity & Biologisches Alter", "c": "#E4C66B", "s": "R", "icon": "hex", "l": [{"t": "Epigenetische Uhren", "n": 7, "neu": false, "h": ""}, {"t": "Biologisches Alter aus Routinewerten", "n": 8, "neu": false, "h": ""}, {"t": "Oxidativer Stress", "n": 17, "neu": false, "h": ""}, {"t": "Metabolomik & Mikrobiome", "n": 5, "neu": false, "h": ""}, {"t": "Organ-Alter & Verlauf", "n": null, "neu": true, "h": "Alter je Organ aus Blutwerten und Bildgebung, Verlauf über die Jahre"}]}, {"name": "Arztbefunde & Bildgebung", "c": "#D9A6FF", "s": "R", "icon": "eye", "l": [{"t": "Lunge, Leber & Bauch", "n": 13, "neu": false, "h": ""}, {"t": "Knochen & Schilddrüse", "n": 10, "neu": false, "h": ""}, {"t": "Augen, Haut, Zähne & Gehör", "n": 16, "neu": false, "h": ""}, {"t": "Gynäkologie & Urologie", "n": 4, "neu": false, "h": ""}, {"t": "Ganzkörper-MRT & Screening", "n": null, "neu": true, "h": "Befunde aus Longevity-Checks (Prenuvo, Ganzkörper-MRT, Darmspiegelung)"}]}, {"name": "Umwelt", "c": "#9BE7D1", "s": "R", "icon": "sun", "l": [{"t": "Sonne & UV-Index", "n": null, "neu": true, "h": "Standort + Wetter → Vitamin-D-Bildung, Hautschutz"}, {"t": "Tageslicht & Lärm", "n": 2, "neu": false, "h": "Wearable"}, {"t": "Luftqualität & Pollen", "n": null, "neu": true, "h": "Feinstaub, Ozon, Pollenflug → Atemwege, Allergie, Antioxidantien"}, {"t": "Trinkwasser & Wasserhärte", "n": null, "neu": true, "h": "Calcium/Magnesium aus dem Leitungswasser nach Postleitzahl"}, {"t": "Klima, Höhe & Reisen", "n": null, "neu": true, "h": "Hitze, Höhenlage, Zeitzonen → Flüssigkeit, Eisen, Schlaf"}, {"t": "Wohnung: Schimmel, Radon, Schadstoffe", "n": null, "neu": true, "h": "Selbstangabe/Messgerät → Entzündung, Lunge"}]}], "have": 1097, "meds": 2702, "gaps": 23};
+const B=D.b;
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>n==null?'':Number(n).toLocaleString('de-DE');
+const TAU=Math.PI*2;
+const pol=(cx,cy,r,a)=>[cx+r*Math.cos(a),cy+r*Math.sin(a)];
+const TH={
+ nacht:{id:'nacht',name:'Nacht',light:0,node:'#26001D',bg:'url(#bgN)',ink:'#fff',neu:'#9A8794',p:'#fff',a:'#C6D63F',core:'#5E0047',coreS:'#C6D63F',on:'#26001D',col:(b,i)=>b.c},
+ hell:{id:'hell',name:'Hell',light:1,node:'#FFFFFF',bg:'#FFFFFF',ink:'#241F2C',neu:'#ABA5B2',p:'#5E0047',a:'#9DB01B',core:'#FFFFFF',coreS:'#5E0047',on:'#FFFFFF',col:(b,i)=>['#5E0047','#8C1D6E','#B0306E','#9DB01B','#2F8F83','#3E7CB1','#C2410C','#6D28D9','#0F766E','#BE185D','#A16207','#7E22CE','#15803D'][i%13]},
+ lime:{id:'lime',name:'Lime',light:0,node:'#26001D',bg:'#1B0016',ink:'#F4F8D8',neu:'#8E8879',p:'#FFFFFF',a:'#C6D63F',core:'#26001D',coreS:'#C6D63F',on:'#26001D',col:(b,i)=>i%2?'#C6D63F':'#E3EE8C'},
+ rose:{id:'rose',name:'Rosé',light:1,node:'#FFFFFF',bg:'url(#bgR)',ink:'#3C0033',neu:'#B49DAD',p:'#5E0047',a:'#9DB01B',core:'#FFFFFF',coreS:'#8C1D6E',on:'#FFFFFF',col:(b,i)=>['#5E0047','#8C1D6E','#C04A92','#D9739F','#7A3E8E','#A23B72','#5E0047','#8C1D6E','#C04A92','#D9739F','#7A3E8E','#A23B72','#5E0047'][i%13]}
+};
+const DEFS=`<defs><linearGradient id="bgN" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C0033"/><stop offset=".55" stop-color="#22001B"/><stop offset="1" stop-color="#12000E"/></linearGradient>
+<linearGradient id="bgR" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBF3F8"/><stop offset="1" stop-color="#F2E1EC"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#C6D63F" stop-opacity=".35"/><stop offset="1" stop-color="#C6D63F" stop-opacity="0"/></radialGradient></defs>`;
+const ico=(name,x,y,s,col)=>`<svg x="${x-s/2}" y="${y-s/2}" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${col}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-${name}"/></svg>`;
+function logo(T,cx,cy,r,glow){
+  return `<g>${glow?`<circle cx="${cx}" cy="${cy}" r="${r*2.1}" fill="url(#glow)"/>`:''}
+  <circle cx="${cx}" cy="${cy}" r="${r}" fill="${T.core}" stroke="${T.coreS}" stroke-width="2.5"/><circle cx="${cx}" cy="${cy}" r="${r+8}" fill="none" stroke="${T.coreS}" stroke-opacity=".25" stroke-width="5"/>
+  <g style="--p:${T.p};--a:${T.a}"><use href="#lg-mark" x="${cx-r*.52}" y="${cy-r*.72}" width="${r*1.04}" height="${r*1.04}"/></g>
+  <text x="${cx}" y="${cy+r*.52}" text-anchor="middle" font-size="${r*.27}" font-weight="800" fill="${T.p}">GENE<tspan fill="${T.a}">ius</tspan></text></g>`;
+}
+/* ---------- Zustand ---------- */
+const KEY='gn-datenlandkarte-animiert';
+const LAYERS=[['bands','Farbbänder mit Bereichsnamen',1],['icons','Icons',1],['spokes','Verbindungslinien',1],['leaves','Einträge',1],['nums','Anzahl Messgrößen',1],['logo','GENEius-Logo',1],['glow','Leuchten in der Mitte',1]];
+let S={vz:2,viz:'breite',theme:'nacht',spd:3,dir:1,run:1,hoverStop:1,fHave:1,fNeu:1,lay:Object.fromEntries(LAYERS.map(l=>[l[0],l[2]])),off:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s){if(!(s.vz>=2)){s.viz='breite';s.vz=2}S=Object.assign(S,s,{lay:Object.assign(S.lay,s.lay||{})})}}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const lk=(i,j)=>i+'.'+j;
+/* Mengen-Varianten (Daniel 16.11.2026): Anzahl möglicher Messgrößen je Eintrag sichtbar machen */
+const VIZ=[['aus','Ohne','Alle Einträge gleich – nur die Zahl im Text.'],
+ ['strahl','Strahlen','Je länger der Strahl, desto mehr Messgrößen (Wurzel-Skala, ab 200 gekappt – gestrichelte Spitze).'],
+ ['blase','Blasen','Je größer die Blase, desto mehr Messgrößen; die Zahl steht in der Blase.'],
+ ['breite','Sektorbreite','Jeder Eintrag bekommt so viel vom Kreis, wie er Messgrößen hat – große Bereiche werden breiter.'],
+ ['wolke','Punktwolke','1 Punkt = 1 Messgröße (bis 120, danach gestrichelt weiter).'],
+ ['glut','Glut-Ring','Ring außen: je kräftiger die Farbe, desto mehr Messgrößen.']];
+const CAP=200;
+const vv=l=>l.neu?0:Math.sqrt(Math.min(l.n==null?1:l.n,CAP)/CAP);
+const capd=l=>!l.neu&&l.n!=null&&l.n>CAP;
+const fw=l=>S.viz==='breite'?(l.neu?.45:.35+2.9*vv(l)):1;
+const arc=(r,a0,a1)=>{const p0=pol(cx,cy,r,a0),p1=pol(cx,cy,r,a1);return `M${p0[0].toFixed(1)},${p0[1].toFixed(1)} A${r},${r} 0 ${(a1-a0)>Math.PI?1:0} 1 ${p1[0].toFixed(1)},${p1[1].toFixed(1)}`};
+/* Sichtbarkeit je Eintrag (Ziel 0/1) und aktuelles, weich animiertes Gewicht */
+const want=(i,j)=>{const l=B[i].l[j];if(S.off['b'+i]||S.off[lk(i,j)])return 0;if(l.neu?!S.fNeu:!S.fHave)return 0;return 1};
+const W=B.map((b,i)=>b.l.map((l,j)=>want(i,j)));
+const WB=B.map((b,i)=>W[i].some(x=>x)?1:0);
+/* ---------- Zeichnen ---------- */
+const cx=550,cy=550,R=262,BW=28;
+let rot=0,hoverB=-1;
+function draw(){
+  const T=TH[S.theme],L=S.lay;let s='';
+  const nb=B.map((b,i)=>b.l.reduce((a,l,j)=>a+W[i][j]*fw(l),0));
+  const tot=nb.reduce((a,n,i)=>a+n+1.5*WB[i],0);
+  if(tot>0.02){
+    const st=TAU/tot;let k=0;
+    B.forEach((b,i)=>{
+      const wb=WB[i],n=nb[i];if(wb<0.004){k+=n+1.5*wb;return}
+      const c=T.col(b,i),base=rot-Math.PI/2;
+      const e0=base+st*(k+0.05),e1=base+st*(k+Math.max(n,0.1)-0.05),am=(e0+e1)/2;
+      const hi=hoverB===i,op=hoverB>=0&&!hi?.35:1;
+      const nodeR=172,[bx,by]=pol(cx,cy,nodeR,am);
+      s+=`<g opacity="${(wb*op).toFixed(3)}" data-b="${i}">`;
+      if(L.spokes)s+=`<path d="M${pol(cx,cy,90,am).join(',')} L${bx},${by}" stroke="${c}" stroke-width="5" stroke-linecap="round"/>`;
+      if(L.bands){
+        const bot=Math.sin(am)>0.12,bw=BW*wb*(hi?1.15:1);
+        const p0=pol(cx,cy,R,bot?e1:e0),p1=pol(cx,cy,R,bot?e0:e1),lg=(e1-e0)>Math.PI?1:0;
+        s+=`<path d="M${p0.join(',')} A${R},${R} 0 ${lg} ${bot?0:1} ${p1.join(',')}" fill="none" stroke="${c}" stroke-width="${bw.toFixed(2)}" stroke-linecap="butt"/>`;
+        const x=st*1.5,q0=pol(cx,cy,R,bot?e1+x:e0-x),q1=pol(cx,cy,R,bot?e0-x:e1+x),id='arc-'+i;
+        s+=`<path id="${id}" d="M${q0.join(',')} A${R},${R} 0 ${(e1-e0+2*x)>Math.PI?1:0} ${bot?0:1} ${q1.join(',')}" fill="none" stroke="none"/>`;
+        const Lr=R*(e1-e0);let name=b.name.toUpperCase(),fs=11;const w=(t,f)=>t.length*(f*.8+.4);
+        if(w(name,fs)>Lr-6)name=b.name.split(' & ')[0].toUpperCase();
+        while(w(name,fs)>Lr-6&&fs>6)fs-=.5;
+        if(w(name,fs)<=Lr-2&&wb>.6)s+=`<text font-size="${fs}" font-weight="800" letter-spacing=".4" fill="${T.on}" dy="${fs*.36}"><textPath href="#${id}" startOffset="50%" text-anchor="middle">${esc(name)}</textPath></text>`;
+      }
+      let c2=0;
+      b.l.forEach((l,j)=>{const wl=W[i][j];if(wl<0.004)return;
+        const ww=wl*fw(l),a0=base+st*(k+c2),a=a0+st*ww/2;c2+=ww;const a1=a0+st*ww;
+        const inner=L.bands?R-BW/2:R,outer=L.bands?R+BW/2:R,[ix,iy]=pol(cx,cy,inner,a),deg=a*180/Math.PI,flip=Math.cos(a)<0,v=vv(l),V=S.viz,lc=l.neu?T.neu:c;
+        s+=`<g opacity="${wl.toFixed(3)}">`;
+        if(L.spokes)s+=`<path d="M${bx},${by} Q${pol(cx,cy,(165+R)/2+18,a).join(',')} ${ix},${iy}" fill="none" stroke="${c}" stroke-width="1" opacity=".5"/>`;
+        if(L.leaves){
+          let tr=outer+64;const P=r=>pol(cx,cy,r,a).map(x=>x.toFixed(1)).join(',');
+          if(V==='strahl'){
+            if(l.neu){s+=`<path d="M${P(outer+4)} L${P(outer+22)}" stroke="${lc}" stroke-dasharray="2 3"/>`;tr=outer+30}
+            else{const len=6+100*v;s+=`<path d="M${P(outer+5)} L${P(outer+5+len)}" stroke="${c}" stroke-width="5" stroke-linecap="round"/>`;
+              if(capd(l))s+=`<path d="M${P(outer+5+len+6)} L${P(outer+5+len+22)}" stroke="${c}" stroke-width="5" stroke-dasharray="3 3"/>`;
+              tr=outer+16+len+(capd(l)?22:0)}
+          }else if(V==='blase'){
+            const r=l.neu?4:3.5+15*v,d=outer+34+r,[qx,qy]=pol(cx,cy,d,a);
+            s+=`<path d="M${P(outer)} L${P(outer+34)}" stroke="${lc}" ${l.neu?'stroke-dasharray="2 3"':''} opacity=".7"/><circle cx="${qx.toFixed(1)}" cy="${qy.toFixed(1)}" r="${r.toFixed(1)}" fill="${l.neu?'none':c}" fill-opacity=".9" stroke="${lc}" ${l.neu?'stroke-dasharray="2 2"':''}/>`;
+            if(!l.neu&&l.n!=null&&r>=8.5)s+=`<text x="${qx.toFixed(1)}" y="${qy.toFixed(1)}" dy="${(r*.24).toFixed(1)}" text-anchor="middle" font-size="${Math.min(11,r*.72).toFixed(1)}" font-weight="800" fill="${T.on}">${l.n>999?Math.round(l.n/1000)+'k':l.n}</text>`;
+            tr=d+r+7;
+          }else if(V==='wolke'){
+            if(l.neu){s+=`<path d="M${P(outer+4)} L${P(outer+22)}" stroke="${lc}" stroke-dasharray="2 3"/>`;tr=outer+30}
+            else{const n=Math.min(l.n==null?1:l.n,120),cols=4,sp=3.4;let d='';
+              for(let q=0;q<n;q++){const row=Math.floor(q/cols),col=q%cols,rr=outer+7+row*sp,aa=a+((col-(cols-1)/2)*sp)/rr,[px,py]=pol(cx,cy,rr,aa);d+=`M${px.toFixed(1)},${py.toFixed(1)}h0`}
+              s+=`<path d="${d}" stroke="${c}" stroke-width="2.5" stroke-linecap="round"/>`;
+              const rows=Math.ceil(n/cols);tr=outer+12+rows*sp;
+              if((l.n||0)>120){s+=`<path d="M${P(tr)} L${P(tr+16)}" stroke="${c}" stroke-width="2.5" stroke-dasharray="1 3.4" stroke-linecap="round"/>`;tr+=22}}
+          }else if(V==='glut'){
+            const g0=a0+Math.min(.004,st*ww*.15),g1=a1-Math.min(.004,st*ww*.15);
+            s+=`<path d="${arc(outer+16,g0,g1)}" fill="none" stroke="${l.neu?T.neu:c}" stroke-width="20" stroke-opacity="${l.neu?.18:(.12+.88*v).toFixed(2)}" ${l.neu?'stroke-dasharray="3 3"':''}/>`;
+            tr=outer+34;
+          }else{
+            if(V==='breite'){if(l.neu)s+=`<path d="${arc(outer+5,a0+.006,a1-.006)}" fill="none" stroke="${lc}" stroke-width="1.3" stroke-dasharray="2 2.5"/>`;else s+=`<path d="${arc(outer+5,a0+.004,a1-.004)}" fill="none" stroke="${c}" stroke-width="7" stroke-opacity=".9"/>`}
+            const [lx,ly]=pol(cx,cy,outer,a),[ex,ey]=pol(cx,cy,outer+56,a);
+            s+=`<line x1="${lx}" y1="${ly}" x2="${ex}" y2="${ey}" stroke="${lc}" ${l.neu?'stroke-dasharray="2 3"':''} opacity=".8"/><circle cx="${ex}" cy="${ey}" r="2.8" fill="${l.neu?'none':c}" stroke="${lc}"/>`;
+          }
+          const [tx,ty]=pol(cx,cy,tr,a);
+          const txt=esc(l.t)+(L.nums&&!l.neu&&l.n!=null?` · ${fmt(l.n)}`:'');
+          s+=`<text data-l="${i}.${j}" transform="translate(${tx.toFixed(1)},${ty.toFixed(1)}) rotate(${(flip?deg+180:deg).toFixed(2)})" text-anchor="${flip?'end':'start'}" dy="3.5" font-size="10.5" font-weight="${l.neu?500:700}" font-style="${l.neu?'italic':'normal'}" fill="${l.neu?T.neu:T.ink}" ${l.neu?'opacity=".85"':''}>${txt}${l.neu?' <tspan font-size="9">(fehlt)</tspan>':''}</text>`;
+        }
+        s+=`</g>`});
+      if(L.icons){const sc=wb*(hi?1.12:1);
+        s+=`<g transform="translate(${bx},${by}) scale(${sc.toFixed(3)})"><circle r="33" fill="${c}" opacity=".22"/><circle r="27" fill="${c}" stroke="${T.node}" stroke-width="3"/>${ico(b.icon,0,0,28,T.on)}</g>`}
+      else s+=`<circle cx="${bx}" cy="${by}" r="5" fill="${c}"/>`;
+      s+=`</g>`;
+      k+=n+1.5*wb});
+  }
+  if(L.logo)s+=logo(T,cx,cy,82,L.glow&&!T.light);
+  else if(L.glow&&!T.light)s+=`<circle cx="${cx}" cy="${cy}" r="172" fill="url(#glow)"/>`;
+  G.innerHTML=s;
+}
+/* ---------- Animation ---------- */
+const G=document.getElementById('g'),MAP=document.getElementById('map');
+document.getElementById('defs').innerHTML=DEFS;
+let last=performance.now(),hovering=false,drag=null,dirty=true;
+function tick(t){
+  const dt=Math.min(.1,(t-last)/1000);last=t;
+  /* Gewichte weich nachziehen */
+  const ease=1-Math.exp(-dt*7);let moving=false;
+  B.forEach((b,i)=>{b.l.forEach((l,j)=>{const tg=want(i,j),d=tg-W[i][j];if(Math.abs(d)>.002){W[i][j]+=d*ease;moving=true}else W[i][j]=tg});
+    const tg=W[i].some((x,j)=>want(i,j))?1:0,d=tg-WB[i];if(Math.abs(d)>.002){WB[i]+=d*ease;moving=true}else WB[i]=tg});
+  const spin=S.run&&!drag&&!(S.hoverStop&&hovering);
+  if(spin)rot+=S.dir*S.spd*Math.PI/180*dt;
+  if(spin||moving||dirty){draw();dirty=false}
+  requestAnimationFrame(tick);
+}
+/* ---------- Menü ---------- */
+const $=id=>document.getElementById(id);
+function theme(){const T=TH[S.theme];$('bg').setAttribute('fill',T.bg);document.body.classList.toggle('light',!!T.light);
+  document.querySelectorAll('#themes button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===S.theme));
+  document.querySelectorAll('[data-bc]').forEach(el=>el.style.setProperty('--c',T.col(B[+el.dataset.bc],+el.dataset.bc)));
+  dirty=true}
+function vizUi(){document.querySelectorAll('#vizs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===S.viz));$('vleg').textContent=(VIZ.find(v=>v[0]===S.viz)||VIZ[0])[2]}
+$('vizs').innerHTML=VIZ.map(v=>`<button type="button" data-v="${v[0]}">${v[1]}</button>`).join('');
+$('vizs').onclick=e=>{const b=e.target.closest('button');if(!b)return;S.viz=b.dataset.v;vizUi();dirty=true;save()};
+$('themes').innerHTML=Object.values(TH).map(T=>`<button type="button" data-t="${T.id}">${T.name}</button>`).join('');
+$('themes').onclick=e=>{const b=e.target.closest('button');if(!b)return;S.theme=b.dataset.t;theme();save()};
+$('layers').innerHTML=LAYERS.map(([k,t])=>`<label class="row"><input type="checkbox" data-lay="${k}" ${S.lay[k]?'checked':''}> ${t}</label>`).join('');
+$('layers').onchange=e=>{const k=e.target.dataset.lay;if(!k)return;S.lay[k]=e.target.checked?1:0;dirty=true;save()};
+const nHave=b=>b.l.filter(l=>!l.neu).reduce((a,l)=>a+(l.n||0),0);
+$('cHave').textContent=fmt(B.reduce((a,b)=>a+b.l.filter(l=>!l.neu).length,0))+' Einträge';
+$('cNeu').textContent=fmt(B.reduce((a,b)=>a+b.l.filter(l=>l.neu).length,0))+' Einträge';
+$('branches').innerHTML=B.map((b,i)=>`<details class="br"><summary><label class="row" data-bc="${i}" onclick="event.stopPropagation()"><input type="checkbox" data-b="${i}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-${b.icon}"/></svg>${esc(b.name)}<span class="n">${b.l.length}</span></label><span class="tg" aria-label="Einträge zeigen">›</span></summary>
+  <div class="lv">${b.l.map((l,j)=>`<label class="row" data-bc="${i}"><input type="checkbox" data-l="${i}.${j}"><span class="${l.neu?'neu':''}">${esc(l.t)}${l.neu?' · neu':l.n!=null?' · '+fmt(l.n):''}</span></label>`).join('')}</div></details>`).join('');
+function sync(){
+  B.forEach((b,i)=>{const bi=document.querySelector(`input[data-b="${i}"]`);const on=!S.off['b'+i];
+    const lOn=b.l.filter((l,j)=>!S.off[lk(i,j)]).length;
+    bi.checked=on&&lOn>0;bi.indeterminate=on&&lOn>0&&lOn<b.l.length;
+    b.l.forEach((l,j)=>{document.querySelector(`input[data-l="${i}.${j}"]`).checked=!S.off[lk(i,j)]})});
+  $('fHave').checked=!!S.fHave;$('fNeu').checked=!!S.fNeu;
+  $('play').textContent=S.run?'❚❚ Anhalten':'▶ Drehen';$('spd').value=S.spd;$('spdv').textContent=S.spd+' °/s';$('hoverStop').checked=!!S.hoverStop;
+  $('dir').textContent=S.dir>0?'↻ Richtung':'↺ Richtung';
+}
+$('branches').onchange=e=>{const t=e.target;
+  if(t.dataset.b!=null){const i=+t.dataset.b;if(t.checked){delete S.off['b'+i];B[i].l.forEach((l,j)=>delete S.off[lk(i,j)])}else S.off['b'+i]=1}
+  else if(t.dataset.l){const [i,j]=t.dataset.l.split('.').map(Number);if(t.checked){delete S.off[lk(i,j)];delete S.off['b'+i]}else S.off[lk(i,j)]=1}
+  sync();save()};
+$('all').onclick=()=>{S.off={};S.fHave=1;S.fNeu=1;sync();save()};
+$('none').onclick=()=>{B.forEach((b,i)=>S.off['b'+i]=1);sync();save()};
+document.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{S.off={};S.fHave=b.dataset.q==='have'?1:0;S.fNeu=b.dataset.q==='neu'?1:0;sync();save()});
+$('fHave').onchange=e=>{S.fHave=e.target.checked?1:0;save()};
+$('fNeu').onchange=e=>{S.fNeu=e.target.checked?1:0;save()};
+$('play').onclick=()=>{S.run=S.run?0:1;sync();save()};
+$('dir').onclick=()=>{S.dir=-S.dir;sync();save()};
+$('spd').oninput=e=>{S.spd=+e.target.value;$('spdv').textContent=S.spd+' °/s';save()};
+$('hoverStop').onchange=e=>{S.hoverStop=e.target.checked?1:0;save()};
+$('menu').onclick=()=>$('panel').classList.toggle('open');
+/* Hover, Tooltip, Ziehen */
+const tip=$('tip');
+function svgPt(e){const p=MAP.createSVGPoint();p.x=e.clientX;p.y=e.clientY;return p.matrixTransform(MAP.getScreenCTM().inverse())}
+MAP.addEventListener('pointerenter',()=>hovering=true);
+MAP.addEventListener('pointerleave',()=>{hovering=false;hoverB=-1;tip.style.opacity=0;dirty=true});
+MAP.addEventListener('pointerdown',e=>{const p=svgPt(e);drag={a:Math.atan2(p.y-cy,p.x-cx),r:rot};MAP.setPointerCapture(e.pointerId);MAP.style.cursor='grabbing'});
+MAP.addEventListener('pointerup',()=>{drag=null;MAP.style.cursor=''});
+MAP.addEventListener('pointermove',e=>{
+  const p=svgPt(e);
+  if(drag){rot=drag.r+Math.atan2(p.y-cy,p.x-cx)-drag.a;dirty=true;return}
+  const g=e.target.closest&&e.target.closest('[data-b]');const nb=g?+g.dataset.b:-1;
+  if(nb!==hoverB){hoverB=nb;dirty=true}
+  const lt=e.target.closest&&e.target.closest('text[data-l]');
+  if(lt){const [i,j]=lt.dataset.l.split('.').map(Number),l=B[i].l[j];
+    tip.innerHTML=`<b>${esc(B[i].name)}</b><br>${esc(l.t)}${l.neu?'<br><i>Fehlt noch – Vorschlag</i>'+(l.h?': '+esc(l.h):''):l.n!=null?'<br>'+fmt(l.n)+' Messgrößen':''}`;
+    tip.style.left=Math.min(innerWidth-300,e.clientX+14)+'px';tip.style.top=(e.clientY+14)+'px';tip.style.opacity=1}
+  else if(g){const b=B[nb];tip.innerHTML=`<b>${esc(b.name)}</b><br>${b.l.length} Einträge · ${fmt(nHave(b))} Messgrößen`;tip.style.left=Math.min(innerWidth-300,e.clientX+14)+'px';tip.style.top=(e.clientY+14)+'px';tip.style.opacity=1}
+  else tip.style.opacity=0});
+if(!VIZ.some(v=>v[0]===S.viz))S.viz='strahl';
+sync();theme();vizUi();requestAnimationFrame(tick);
+</script>
+</body>
+</html>
