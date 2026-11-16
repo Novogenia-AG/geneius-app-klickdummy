@@ -1935,6 +1935,8 @@ section.br.br-off .br-testconf{display:none}
 /* BERATUNG:END */</style>
 <style id="nx-css">/* NU-EXTRA:BEGIN – Daten übermitteln (Layout-Varianten) + Test Recalculation (GENE NUGGETS, 16.11.2026) */
 .ract.dub{grid-template-columns:1fr}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .dub-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:10px 28px;padding:26px 28px;border-radius:28px;background:linear-gradient(135deg,#3C0033,#1F0019 70%);border:1px solid rgba(255,255,255,.1);box-shadow:var(--sh);overflow:hidden;position:relative}
 .dub-eb{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(198,214,63,.16);color:var(--lime);font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .dub-tx h3{font-size:clamp(20px,2.3vw,27px);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin:12px 0 8px;color:#fff}
@@ -1999,6 +2001,23 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
 .nx-pc{font-size:13px;font-weight:800;color:#fff;opacity:.85}
 @media (prefers-reduced-motion:reduce){.nx-orb .r,.nx-orb .r2,.nx-orb .r3,.nx-orb .orbit,.nx-orb .glow,.nx-orb svg.logo,.nx-fab{animation:none}}
 /* NU-EXTRA:END */</style>
+<style id="sr-css">/* SACHET-RAD:BEGIN – Datenring um das Sachet, Variante 4a (GENE NUGGETS, 16.11.2026) */
+.sr-card{position:relative;height:500px;margin-top:22px;border-radius:28px;overflow:hidden;background:radial-gradient(ellipse at 50% 85%,#3A0030,#1A0015 60%,#0E000B);border:1px solid rgba(255,255,255,.08);box-shadow:var(--sh)}
+.sr-card canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.sr-card canvas.sr-f{z-index:3;pointer-events:none}
+.sr-card .stick{position:absolute;left:50%;top:79%;width:min(520px,58%);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
+.sr-brain{position:absolute;left:50%;top:39%;width:96px;height:96px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
+.sr-brain svg{width:100%;height:100%;display:block}
+@keyframes srGlow{50%{filter:drop-shadow(0 0 28px rgba(198,214,63,.95))}}
+.sr-ai{position:absolute;left:50%;top:calc(39% + 64px);transform:translateX(-50%);z-index:4;font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.14em;color:var(--lime);white-space:nowrap}
+.sr-ai i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin-right:7px;vertical-align:1px;animation:srBlink 1s steps(2) infinite}
+@keyframes srBlink{50%{opacity:.2}}
+.sr-cap{position:absolute;left:0;right:0;bottom:12px;text-align:center;z-index:4;font-size:13px;font-weight:700;color:rgba(255,255,255,.85)}
+.sr-cap em{font-style:normal;color:var(--lime);font-weight:800}
+body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
+@media (max-width:760px){.sr-card{height:430px}.sr-card .stick{width:80%}.sr-brain{width:76px;height:76px}.sr-ai{top:calc(39% + 52px)}}
+@media (prefers-reduced-motion:reduce){.sr-brain,.sr-ai i{animation:none}}
+/* SACHET-RAD:END */</style>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
@@ -2132,7 +2151,7 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
 </section>
 
 <!-- ================= NÄHRSTOFFE ================= -->
-<section class="view" data-view="naehrstoffe" hidden aria-labelledby="h-nu">
+<section class="view sr-on" data-view="naehrstoffe" hidden aria-labelledby="h-nu">
 <div class="wrap">
 <!-- NU-EXTRA:TEST -->
   <div class="nx-test" role="group" aria-label="Testfunktionen"><span class="nx-tag">TEST</span><span class="nx-lb">Layout „Daten übermitteln“:</span><span class="nx-seg"><button data-nxv="a" aria-pressed="true">A Banner</button><button data-nxv="b" aria-pressed="false">B Im Kopf</button><button data-nxv="c" aria-pressed="false">C Neben Sachet</button><button data-nxv="d" aria-pressed="false">D Schwebend</button></span><button class="nx-recalc" data-nxrecalc>Test Recalculation</button></div>
@@ -2150,10 +2169,14 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
     <div class="dub-card"><div class="dub-tx"><span class="dub-eb">Über 7.000 Datenpunkte</span><h3>Je mehr GENEius weiß, desto genauer deine Rezeptur</h3><p>Über 7.000 medizinische Datenpunkte können in deine Empfehlungen einfließen: Lebensstil, Laborwerte, Medikamente und mehr.</p><button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten übermitteln</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button></div><div class="dub-map" aria-hidden="true"><iframe src="messwerte/datenlandkarte-animiert.html?bg=1" loading="lazy" tabindex="-1" title=""></iframe></div></div>
   </div>
   <!-- Sachet „Made for …“ wie in der Original-GENEius-App (public/White Stick Transparent.png, Text Roboto Condensed) -->
+<!-- SACHET-RAD:BEGIN -->
+<div class="sr-card" aria-label="Deine Daten fließen über GENEius AI in deine Rezeptur"><canvas class="sr-b"></canvas><div class="sr-brain" aria-hidden="true"></div>
   <div class="stick" role="img" aria-label="Deine persönliche Rezeptur: Made for Markus">
     <img src="produkte/stick.webp" alt="" width="793" height="182">
     <div class="stick-t" aria-hidden="true"><span>MADE FOR</span><b>MARKUS</b></div>
   </div>
+<canvas class="sr-f"></canvas><div class="sr-cap"><em>55</em> Datenquellen fließen in deine Rezeptur</div></div>
+<!-- SACHET-RAD:END -->
   <div class="ftools nutools"><div class="sec-l"><h2>Deine Nährstoffe</h2><span class="cnt">22</span></div>
     <div class="fctl"><div class="vtog" role="group" aria-label="Ansicht">
       <button data-nview="cards" aria-pressed="true" aria-label="Kartenansicht" title="Kartenansicht"><svg class="ic"><use href="#i-grid"/></svg></button>
@@ -5051,7 +5074,7 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
  fab.innerHTML='<span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span>Daten übermitteln<small>Über 7.000 Datenpunkte</small></span>';
  document.body.appendChild(fab);
  /* C: Sachet + Karte nebeneinander */
- const stick=$('.stick',sec);let row=null;
+ const stick=$('.sr-card',sec)||$('.stick',sec);let row=null;
  function setV(v){
   ['a','b','c','d'].forEach(k=>document.body.classList.toggle('nxv-'+k,k===v));
   $$('[data-nxv]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.nxv===v));
@@ -5089,5 +5112,73 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
   if(b.dataset.nxv)setV(b.dataset.nxv);else run()});
 })();
 /* NU-EXTRA:END */</script>
+<script id="sr-js">/* SACHET-RAD:BEGIN */
+(function(){
+const card=document.querySelector('.sr-card');if(!card)return;
+const DATA=[{"c": "#C6D63F", "l": ["Vitamine, Folat & Eisen", "Fettstoffwechsel & Herz", "Gewicht, Zucker & Leber", "Koffein, Alkohol & Laktose", "Medikamente (Pharmakogenetik)", "Gerinnung, Zöliakie & Weitere"]}, {"c": "#FF6FB5", "l": ["Diagnosen bei mir", "Familiengeschichte", "Andere Erkrankungen (Text)"]}, {"c": "#B18CFF", "l": ["Wirkstoffe & Marken (Suche)", "Wechselwirkungen mit Nährstoffen"]}, {"c": "#FFB81C", "l": ["Lifestyle-Fragebogen", "Essverhalten (Scores)", "Trinkmenge"]}, {"c": "#4FD1C5", "l": ["Größe, Gewicht & Umfänge", "Körperanalyse (BIA)", "DEXA: Muskel, Fett, Knochen", "Blutdruck & Vitalzeichen", "EKG & Gefäße"]}, {"c": "#7FD67F", "l": ["Ausdauer & VO2max", "Kraft & Beweglichkeit", "Energieumsatz", "Aktivität & Schritte"]}, {"c": "#FF8A5B", "l": ["Vitamine", "Mineralstoffe, Spurenelemente & Eisen", "Blutfette & Fettsäuren", "Blutzucker & Insulin", "Hormone & Schilddrüse", "Entzündung, Immunsystem & Allergie", "Leber, Niere, Herz & Muskel", "Blutbild, Gerinnung & Weitere", "Urin", "Stuhl & Mikrobiom", "Speichel, Atem, Haar & Schweiß"]}, {"c": "#5BC0FF", "l": ["Puls, HRV & EKG", "Heimblutdruck", "Glukose-Sensor (CGM)", "Smarte Waage & Maßband", "Heimtests Stoffwechsel", "Zyklus"]}, {"c": "#8F9BFF", "l": ["Schlaf vom Wearable", "Schlaflabor", "Schlaf & Chronotyp (Fragebögen)"]}, {"c": "#FF7A8A", "l": ["Stimmung & Stress (Scores)", "Kognition", "Lebensqualität"]}, {"c": "#E4C66B", "l": ["Epigenetische Uhren", "Biologisches Alter aus Routinewerten", "Oxidativer Stress", "Metabolomik & Mikrobiome"]}, {"c": "#D9A6FF", "l": ["Lunge, Leber & Bauch", "Knochen & Schilddrüse", "Augen, Haut, Zähne & Gehör", "Gynäkologie & Urologie"]}, {"c": "#9BE7D1", "l": ["Tageslicht & Lärm"]}],LIME='#C6D63F',RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const ITEMS=[];DATA.forEach(b=>b.l.forEach(t=>ITEMS.push({t,c:b.c})));const N=ITEMS.length,STEP=Math.PI*2/N;
+const cb=card.querySelector('.sr-b'),cf=card.querySelector('.sr-f'),stickEl=card.querySelector('.stick'),brainEl=card.querySelector('.sr-brain');
+/* Gehirn = GENEius-Bildmarke aus dem Logo der App */
+const lg=document.querySelector('.mlogo svg');if(lg){brainEl.innerHTML=lg.outerHTML.replace(/ width="\d+"| height="\d+"/g,'')}
+function fit(cv){const r=cv.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1),w=Math.round(r.width*d),h=Math.round(r.height*d);if(cv.width!==w||cv.height!==h){cv.width=w;cv.height=h}const x=cv.getContext('2d');x.setTransform(d,0,0,d,0,0);x.clearRect(0,0,r.width,r.height);return x}
+function geo(){const c=card.getBoundingClientRect(),s=stickEl.getBoundingClientRect(),b=brainEl.getBoundingClientRect();
+ const g={W:c.width,H:c.height,cx:s.left-c.left+s.width/2,cy:s.top-c.top+s.height/2,w:s.width,h:s.height,top:s.top-c.top,bx:b.left-c.left+b.width/2,by:b.top-c.top+b.height/2};
+ g.rIn=Math.max(g.w/2+26,Math.min(200,g.W/2-20));return g}
+const ringPt=(g,a,r)=>[g.cx+Math.cos(a)*(r??g.rIn-12),g.cy+Math.sin(a)*(r??g.rIn-12)];
+const visible=a=>Math.sin(a)<-.08;
+function threadRing(x,g,rot,t){let i=0;DATA.forEach(b=>{const a0=rot+i*STEP-STEP*.5,a1=rot+(i+b.l.length)*STEP-STEP*.5;
+ for(let k=0;k<11;k++){x.strokeStyle=b.c;x.globalAlpha=.14+.06*(k%4);x.lineWidth=.9;x.beginPath();
+  for(let a=a0,f=1;a<=a1+1e-6;a+=0.012){if(Math.sin(a)>.35){f=1;continue}const rr=g.rIn-12+(k-5)*1.5+Math.sin(a*22+t*0.0018+k*1.3)*2.6;const px=g.cx+Math.cos(a)*rr,py=g.cy+Math.sin(a)*rr;if(f){x.moveTo(px,py);f=0}else x.lineTo(px,py)}
+  x.stroke()}i+=b.l.length});x.globalAlpha=1}
+function labels(x,g,rot){const fs=g.W<600?10:11.5;ITEMS.forEach((it,i)=>{const a=rot+i*STEP,sa=Math.sin(a);if(sa>.2)return;const al=Math.min(1,(-sa+.2)*2.4);
+ x.save();x.translate(g.cx,g.cy);x.rotate(a);x.globalAlpha=al;const r=g.rIn+6;
+ x.fillStyle=it.c;x.beginPath();x.moveTo(r,0);x.lineTo(r+8,-4);x.lineTo(r+8,4);x.closePath();x.fill();
+ x.strokeStyle=it.c;x.globalAlpha=al*.5;x.lineWidth=1;x.beginPath();x.moveTo(r+8,0);x.lineTo(r+22,0);x.stroke();x.globalAlpha=al;
+ x.fillStyle='#fff';x.font=`600 ${fs}px Montserrat,sans-serif`;x.textBaseline='middle';
+ if(Math.cos(a)<0){x.rotate(Math.PI);x.textAlign='right';x.fillText(it.t,-(r+27),0)}else{x.textAlign='left';x.fillText(it.t,r+27,0)}
+ x.restore()})}
+function qpt(p0,p1,p2,e){const u=1-e;return [u*u*p0[0]+2*u*e*p1[0]+e*e*p2[0],u*u*p0[1]+2*u*e*p1[1]+e*e*p2[1]]}
+function polyPt(pts,e){let L=0;const seg=[];for(let i=1;i<pts.length;i++){const d=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);seg.push(d);L+=d}let s=e*L;for(let i=0;i<seg.length;i++){if(s<=seg[i]){const f=seg[i]?s/seg[i]:0;return [pts[i][0]+(pts[i+1][0]-pts[i][0])*f,pts[i][1]+(pts[i+1][1]-pts[i][1])*f]}s-=seg[i]}return pts[pts.length-1]}
+function glowDot(x,p,c,r,a){x.globalAlpha=a;x.fillStyle=c;x.shadowColor=c;x.shadowBlur=12;x.beginPath();x.arc(p[0],p[1],r,0,7);x.fill();x.shadowBlur=0;x.globalAlpha=1}
+function traces(g){const n=7,out=[],sp=Math.min(30,g.w*.06);for(let k=0;k<n;k++){const f=(k-(n-1)/2)/((n-1)/2);const x0=g.bx+f*sp,y0=g.by+40,ymid=g.by+70+Math.abs(f)*18,x1=g.cx+f*g.w*.36,y1=g.top+6;out.push([[x0,y0],[x0,ymid],[x1,ymid+(y1-ymid)*.35],[x1,y1]])}return out}
+function drawTraces(x,tr){x.strokeStyle=LIME;x.globalAlpha=.35;x.lineWidth=1.4;tr.forEach(p=>{x.beginPath();p.forEach((q,i)=>i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1]));x.stroke();x.fillStyle=LIME;p.forEach((q,i)=>{if(i&&i<p.length-1){x.beginPath();x.arc(q[0],q[1],2.2,0,7);x.fill()}})});x.globalAlpha=1}
+/* Kügelchen wie im Beutel */
+const GRAN=[['#F6F3EA',44],['#E9DDC2',22],['#F3B21B',12],['#E58A0E',5],['#1C1A1A',10],['#B9B2A6',7]],GSUM=GRAN.reduce((a,b)=>a+b[1],0);
+function granule(){let r=Math.random()*GSUM;for(const [c,w] of GRAN){if((r-=w)<0)return {c,rot:Math.random()*Math.PI,w:6.5+Math.random()*2.5,h:4+Math.random()*1.4,d:Math.random()<.5?1:-1}}return {c:'#fff',rot:0,w:7,h:4.5,d:1}}
+function shade(c){const n=parseInt(c.slice(1),16),f=.72;return `rgb(${(n>>16&255)*f|0},${(n>>8&255)*f|0},${(n&255)*f|0})`}
+function drawGranule(x,pt,gr,sc,e){const w=gr.w*sc*1.5,h=gr.h*sc*1.5;x.save();x.translate(pt[0],pt[1]);x.rotate(gr.rot+e*6*gr.d);
+ x.globalAlpha=e>.9?(1-e)*10:1;x.shadowColor='rgba(0,0,0,.45)';x.shadowBlur=4;x.shadowOffsetY=1.5;
+ const dark=gr.c==='#1C1A1A';const gd=x.createRadialGradient(-w*.25,-h*.3,0,0,0,w*.6);gd.addColorStop(0,dark?'#5a5656':'#fff');gd.addColorStop(.45,gr.c);gd.addColorStop(1,dark?'#000':shade(gr.c));
+ x.fillStyle=gd;x.beginPath();x.ellipse(0,0,w/2,h/2,0,0,7);x.fill();x.restore()}
+const P=[];
+function draw(t){const x=fit(cb),f=fit(cf),g=geo(),rot=t*0.00005;
+ threadRing(x,g,rot,t);
+ ITEMS.forEach((it,i)=>{const a=rot+i*STEP;if(!visible(a))return;const p0=ringPt(g,a),c=[(p0[0]+g.bx)/2,(p0[1]+g.by)/2-30];x.strokeStyle=it.c;x.globalAlpha=.16;x.lineWidth=.8;x.beginPath();x.moveTo(p0[0],p0[1]);x.quadraticCurveTo(c[0],c[1],g.bx,g.by);x.stroke()});x.globalAlpha=1;
+ const tr=traces(g);drawTraces(x,tr);labels(x,g,rot);const trG=tr.map(q=>q.concat([[q[q.length-1][0],g.top+g.h*.66]]));
+ if(Math.random()<.5){const i=Math.random()*N|0,a=rot+i*STEP;if(visible(a))P.push({k:'in',i,t0:t})}
+ if(Math.random()<.22)P.push({k:'tr',n:Math.random()*tr.length|0,t0:t,gr:granule()});
+ for(let j=P.length-1;j>=0;j--){const p=P[j],e=(t-p.t0)/(p.k==='in'?1300:1500);
+  if(e>=1){P.splice(j,1);if(p.k==='in')P.push({k:'tr',n:Math.random()*tr.length|0,t0:t,gr:granule()});continue}
+  if(p.k==='in'){const p0=ringPt(g,rot+p.i*STEP);glowDot(f,qpt(p0,[(p0[0]+g.bx)/2,(p0[1]+g.by)/2-30],[g.bx,g.by],e),ITEMS[p.i].c,2.6,1-e*.3)}
+  else drawGranule(f,polyPt(trG[p.n],e),p.gr,g.w/520,e)}
+ if(P.length>220)P.splice(0,P.length-220)}
+/* Gehirn-Linien einzeln animieren */
+let L=[],C=[];function prepBrain(){const svg=brainEl.querySelector('svg');if(!svg)return;
+ L=[...svg.querySelectorAll('line')].map((l,i)=>({l,i,x1:+l.getAttribute('x1'),x2:+l.getAttribute('x2'),y:+l.getAttribute('y1'),fire:0}));
+ C=[...svg.querySelectorAll('circle')].map(c=>({c,r:+c.getAttribute('r')}))}
+prepBrain();
+function brain(t){if(Math.random()<.09&&L.length){L[Math.random()*L.length|0].fire=t}
+ L.forEach(q=>{const len=q.x2-q.x1,mid=(q.x1+q.x2)/2,k=Math.sin(t*0.0032+q.y*0.21+q.i*0.9),drift=Math.sin(t*0.0011+q.y*0.13)*2.2,nl=Math.max(2,len*(0.72+0.38*(k+1)/2));
+  q.l.setAttribute('x1',(mid-nl/2+drift).toFixed(2));q.l.setAttribute('x2',(mid+nl/2+drift).toFixed(2));
+  const wave=Math.sin(t*0.006-mid*0.09-q.y*0.03),f=Math.max(0,1-(t-q.fire)/260);
+  q.l.setAttribute('stroke',f>0||wave>.82?'#FFFFFF':wave>.45?'#D8E46A':'#C6D63F');q.l.style.opacity=(0.6+0.4*Math.max(f,(wave+1)/2)).toFixed(2)});
+ C.forEach((o,j)=>o.c.setAttribute('r',(o.r*(1+.45*Math.sin(t*0.008+j))).toFixed(2)))}
+/* nur zeichnen, wenn sichtbar */
+let on=false,raf=0;
+function loop(t){const r=card.getBoundingClientRect();if(r.width&&r.bottom>0&&r.top<innerHeight){draw(t);brain(t)}if(on&&!RM)raf=requestAnimationFrame(loop)}
+const io=new IntersectionObserver(es=>{const v=es.some(e=>e.isIntersecting);if(v&&!on){on=true;raf=requestAnimationFrame(loop)}else if(!v){on=false;cancelAnimationFrame(raf)}});io.observe(card);
+if(RM)requestAnimationFrame(t=>{draw(0);brain(0)});
+})();
+/* SACHET-RAD:END */</script>
 </body>
 </html>
