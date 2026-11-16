@@ -68,6 +68,9 @@ body.light .key{background:rgba(255,255,255,.75);color:#3C0033}
   .panel.open{transform:none}
   .menu{display:block}
 }
+html.bg .panel,html.bg .menu,html.bg .key,html.bg .tip{display:none!important}
+html.bg .stage{inset:0;pointer-events:none}
+html.bg body{background:transparent}
 </style>
 </head>
 <body>
@@ -230,8 +233,12 @@ function logo(T,cx,cy,r,glow){
 const KEY='gn-datenlandkarte-animiert';
 const LAYERS=[['bands','Farbbänder mit Bereichsnamen',1],['icons','Icons',1],['spokes','Verbindungslinien',1],['leaves','Einträge',1],['nums','Anzahl Messgrößen',1],['logo','GENEius-Logo',1],['glow','Leuchten in der Mitte',1]];
 let S={vz:2,viz:'breite',theme:'nacht',spd:3,dir:1,run:1,hoverStop:1,fHave:1,fNeu:1,lay:Object.fromEntries(LAYERS.map(l=>[l[0],l[2]])),off:{}};
-try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s){if(!(s.vz>=2)){s.viz='breite';s.vz=2}S=Object.assign(S,s,{lay:Object.assign(S.lay,s.lay||{})})}}catch(e){}
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+/* Hintergrund-Modus ?bg (Kundenportal, Daniel 16.11.2026): ohne Menü, ohne Speichern, nur vorhandene Einträge */
+const BG=new URLSearchParams(location.search).has('bg');
+if(BG)document.documentElement.classList.add('bg');
+if(!BG)try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s){if(!(s.vz>=2)){s.viz='breite';s.vz=2}S=Object.assign(S,s,{lay:Object.assign(S.lay,s.lay||{})})}}catch(e){}
+const save=()=>{if(BG)return;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+if(BG)Object.assign(S,{viz:'breite',theme:'nacht',fNeu:0,fHave:1,hoverStop:0,run:1,spd:2.5,off:{}});
 const lk=(i,j)=>i+'.'+j;
 /* Mengen-Varianten (Daniel 16.11.2026): Anzahl möglicher Messgrößen je Eintrag sichtbar machen */
 const VIZ=[['aus','Ohne','Alle Einträge gleich – nur die Zahl im Text.'],
