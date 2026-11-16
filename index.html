@@ -1946,6 +1946,8 @@ section.br.br-off .br-testconf{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
+.sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .dub-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:10px 28px;padding:26px 28px;border-radius:28px;background:linear-gradient(135deg,#3C0033,#1F0019 70%);border:1px solid rgba(255,255,255,.1);box-shadow:var(--sh);overflow:hidden;position:relative}
 .dub-eb{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(198,214,63,.16);color:var(--lime);font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .dub-tx h3{font-size:clamp(20px,2.3vw,27px);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin:12px 0 8px;color:#fff}
@@ -2021,9 +2023,9 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
 .sr-chip{position:absolute;left:0;top:0;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:9px;background:var(--c);color:#26001D;display:grid;place-items:center;box-shadow:0 0 0 3px rgba(255,255,255,.12),0 0 16px var(--c);will-change:transform,opacity;opacity:0}
 .sr-chip .ic{width:16px;height:16px;stroke-width:2.2}
 .sr-card .stick{position:absolute;left:50%;top:85%;width:min(520px,58%);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
-.sr-brain{position:absolute;left:50%;top:66%;width:96px;height:96px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
+.sr-brain{position:absolute;left:50%;top:60%;width:192px;height:192px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
 .sr-brain svg{position:relative;width:100%;height:100%;display:block}
-.sr-brain::before{content:"";position:absolute;inset:-26px;border-radius:50%;background:radial-gradient(circle,rgba(26,0,21,.92) 45%,rgba(26,0,21,0) 72%)}
+.sr-brain::before{content:"";position:absolute;inset:-44px;border-radius:50%;background:radial-gradient(circle,rgba(26,0,21,.92) 45%,rgba(26,0,21,0) 72%)}
 @keyframes srGlow{50%{filter:drop-shadow(0 0 28px rgba(198,214,63,.95))}}
 .sr-ai{position:absolute;left:50%;top:calc(39% + 64px);transform:translateX(-50%);z-index:4;font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.14em;color:var(--lime);white-space:nowrap}
 .sr-ai i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin-right:7px;vertical-align:1px;animation:srBlink 1s steps(2) infinite}
@@ -2031,7 +2033,7 @@ body.nxv-d [data-view="naehrstoffe"] .nx-refsec,body.nxv-d #nuRact{display:none}
 .sr-cap{position:absolute;left:0;right:0;bottom:12px;text-align:center;z-index:4;font-size:13px;font-weight:700;color:rgba(255,255,255,.85)}
 .sr-cap em{font-style:normal;color:var(--lime);font-weight:800}
 body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
-@media (max-width:760px){.sr-card{height:560px}.sr-card .stick{width:80%}.sr-brain{width:76px;height:76px}.sr-ai{top:calc(39% + 52px)}}
+@media (max-width:760px){.sr-card{height:560px}.sr-card .stick{width:80%}.sr-brain{width:150px;height:150px}.sr-ai{top:calc(39% + 52px)}}
 @media (prefers-reduced-motion:reduce){.sr-brain,.sr-ai i{animation:none}}
 /* SACHET-RAD:END */</style>
 </head>
@@ -5138,7 +5140,7 @@ const map=card.querySelector('.sr-map');const cb=card.querySelector('.sr-b'),cf=
 const lg=document.querySelector('.mlogo svg');if(lg){brainEl.innerHTML=lg.outerHTML.replace(/ width="\d+"| height="\d+"/g,'')}
 function fit(cv){const r=cv.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1),w=Math.round(r.width*d),h=Math.round(r.height*d);if(cv.width!==w||cv.height!==h){cv.width=w;cv.height=h}const x=cv.getContext('2d');x.setTransform(d,0,0,d,0,0);x.clearRect(0,0,r.width,r.height);return x}
 function geo(){const c=card.getBoundingClientRect(),s=stickEl.getBoundingClientRect(),b=brainEl.getBoundingClientRect();
- const g={W:c.width,H:c.height,cx:s.left-c.left+s.width/2,cy:s.top-c.top+s.height/2,w:s.width,h:s.height,top:s.top-c.top,bx:b.left-c.left+b.width/2,by:b.top-c.top+b.height/2};
+ const g={bh:b.height,W:c.width,H:c.height,cx:s.left-c.left+s.width/2,cy:s.top-c.top+s.height/2,w:s.width,h:s.height,top:s.top-c.top,bx:b.left-c.left+b.width/2,by:b.top-c.top+b.height/2};
  g.rIn=Math.max(g.w/2+26,Math.min(200,g.W/2-20));return g}
 const ringPt=(g,a,r)=>[g.cx+Math.cos(a)*(r??g.rIn-12),g.cy+Math.sin(a)*(r??g.rIn-12)];
 const visible=a=>Math.sin(a)<-.08;
@@ -5156,7 +5158,7 @@ function labels(x,g,rot){const fs=g.W<600?10:11.5;ITEMS.forEach((it,i)=>{const a
 function qpt(p0,p1,p2,e){const u=1-e;return [u*u*p0[0]+2*u*e*p1[0]+e*e*p2[0],u*u*p0[1]+2*u*e*p1[1]+e*e*p2[1]]}
 function polyPt(pts,e){let L=0;const seg=[];for(let i=1;i<pts.length;i++){const d=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);seg.push(d);L+=d}let s=e*L;for(let i=0;i<seg.length;i++){if(s<=seg[i]){const f=seg[i]?s/seg[i]:0;return [pts[i][0]+(pts[i+1][0]-pts[i][0])*f,pts[i][1]+(pts[i+1][1]-pts[i][1])*f]}s-=seg[i]}return pts[pts.length-1]}
 function glowDot(x,p,c,r,a){x.globalAlpha=a;x.fillStyle=c;x.shadowColor=c;x.shadowBlur=12;x.beginPath();x.arc(p[0],p[1],r,0,7);x.fill();x.shadowBlur=0;x.globalAlpha=1}
-function traces(g){const n=7,out=[],sp=Math.min(30,g.w*.06);for(let k=0;k<n;k++){const f=(k-(n-1)/2)/((n-1)/2);const x0=g.bx+f*sp,y0=g.by+34,ymid=Math.min(g.top-10,g.by+48+Math.abs(f)*8),x1=g.cx+f*g.w*.36,y1=g.top+6;out.push([[x0,y0],[x0,ymid],[x1,ymid+(y1-ymid)*.35],[x1,y1]])}return out}
+function traces(g){const n=7,out=[],sp=Math.min(30,g.w*.06);for(let k=0;k<n;k++){const f=(k-(n-1)/2)/((n-1)/2);const x0=g.bx+f*sp*2,y0=g.by+g.bh*.34,ymid=Math.min(g.top-10,y0+12+Math.abs(f)*8),x1=g.cx+f*g.w*.36,y1=g.top+6;out.push([[x0,y0],[x0,ymid],[x1,ymid+(y1-ymid)*.35],[x1,y1]])}return out}
 function drawTraces(x,tr){x.strokeStyle=LIME;x.globalAlpha=.35;x.lineWidth=1.4;tr.forEach(p=>{x.beginPath();p.forEach((q,i)=>i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1]));x.stroke();x.fillStyle=LIME;p.forEach((q,i)=>{if(i&&i<p.length-1){x.beginPath();x.arc(q[0],q[1],2.2,0,7);x.fill()}})});x.globalAlpha=1}
 /* Kügelchen wie im Beutel */
 const GRAN=[['#F6F3EA',44],['#E9DDC2',22],['#F3B21B',12],['#E58A0E',5],['#1C1A1A',10],['#B9B2A6',7]],GSUM=GRAN.reduce((a,b)=>a+b[1],0);
@@ -5169,12 +5171,14 @@ function drawGranule(x,pt,gr,sc,e){const w=(gr.w+gr.h)/2*sc*1.5,h=w;x.save();x.t
 const P=[],fly=card.querySelector('.sr-fly');
 function chip(b){const e=document.createElement('div');e.className='sr-chip';e.style.setProperty('--c',b.c);e.innerHTML=`<svg class="ic"><use href="#i-${b.i}"/></svg>`;fly.appendChild(e);return e}
 /* Eingangs-Leiterbahnen: vom Farbband rechtwinklig zum Gehirn */
-function inTraces(g){const n=10,R=g.rIn*1.42,out=[];for(let k=0;k<n;k++){const a=-Math.PI*(.06+.88*k/(n-1)),sx=g.cx+Math.cos(a)*R,sy=g.cy+Math.sin(a)*R;const sg=sx<g.bx?-1:1,lane=k<n/2?k:n-1-k,off=58+lane*9;
- const ym=Math.min(g.by-14,g.by+(sy-g.by)*.42)-lane*3,ex=g.bx+sg*off;out.push([[sx,sy],[sx,ym],[ex,ym],[ex,g.by],[g.bx+sg*44,g.by]])}return out}
-function drawIn(x,tr){x.lineWidth=1.3;tr.forEach(p=>{x.strokeStyle='rgba(198,214,63,.28)';x.beginPath();p.forEach((q,i)=>i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1]));x.stroke();x.fillStyle='rgba(198,214,63,.6)';p.forEach((q,i)=>{if(i<p.length-1){x.beginPath();x.arc(q[0],q[1],i?2.2:3.2,0,7);x.fill()}})})}
+function inTraces(g){const n=24,R=g.rIn*1.42,rb=g.bh*.42,out=[];for(let k=0;k<n;k++){const a=-Math.PI*(.06+.88*k/(n-1)),sx=g.cx+Math.cos(a)*R,sy=g.cy+Math.sin(a)*R;
+ let dx=sx-g.bx,dy=sy-g.by;const d=Math.hypot(dx,dy)||1;dx/=d;dy/=d;const ex=g.bx+dx*rb,ey=g.by+dy*rb,sg=k%2?1:-1,L=d-rb;
+ const c1=[sx-dx*L*.35-dy*L*.32*sg,sy-dy*L*.35+dx*L*.32*sg],c2=[ex+dx*L*.35+dy*L*.22*sg,ey+dy*L*.35-dx*L*.22*sg],pts=[];
+ for(let i=0;i<=28;i++){const t=i/28,u=1-t;pts.push([u*u*u*sx+3*u*u*t*c1[0]+3*u*t*t*c2[0]+t*t*t*ex,u*u*u*sy+3*u*u*t*c1[1]+3*u*t*t*c2[1]+t*t*t*ey])}out.push(pts)}return out}
+function drawIn(x,tr){x.lineWidth=1.3;tr.forEach(p=>{x.strokeStyle='rgba(198,214,63,.22)';x.beginPath();p.forEach((q,i)=>i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1]));x.stroke();x.fillStyle='rgba(198,214,63,.6)';x.beginPath();x.arc(p[0][0],p[0][1],3.2,0,7);x.fill()})}
 function draw(t){const x=fit(cb),f=fit(cf),g=geo(),rot=t*0.00005;
  g.rIn=(card._icR||200)+12;
- const tr=traces(g);drawTraces(x,tr);const ti=inTraces(g);drawIn(x,ti);const trG=tr.map(q=>q.concat([[q[q.length-1][0],g.top+g.h*.13]]));
+ const tr=traces(g);drawTraces(x,tr);const ti=inTraces(g);const trG=tr.map(q=>q.concat([[q[q.length-1][0],g.top+g.h*.13]]));
  if(Math.random()<.09&&fly.childElementCount<14){const b=DATA[Math.random()*DATA.length|0];P.push({k:'in',n:Math.random()*ti.length|0,b,t0:t,el:chip(b)})}
  if(Math.random()<.22)P.push({k:'tr',n:Math.random()*tr.length|0,t0:t,gr:granule()});
  for(let j=P.length-1;j>=0;j--){const p=P[j],e=(t-p.t0)/(p.k==='in'?2000:1500);
