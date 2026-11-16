@@ -245,6 +245,7 @@ const QP=new URLSearchParams(location.search);
 if(QP.get('neu')==='1')S.fNeu=1;
 ['logo','glow','spokes','bands','icons','leaves','nums'].forEach(k=>{if(QP.has(k))S.lay[k]=QP.get(k)==='1'?1:0});
 const BGT=QP.get('bgt')==='1';
+const HUBS=QP.get('hubs')!=='0'; /* hubs=0: ohne Icons auch keine Knotenpunkte */
 if(BGT)document.documentElement.classList.add('bgt');
 const lk=(i,j)=>i+'.'+j;
 /* Mengen-Varianten (Daniel 16.11.2026): Anzahl möglicher Messgrößen je Eintrag sichtbar machen */
@@ -332,7 +333,7 @@ function draw(){
         s+=`</g>`});
       if(L.icons){const sc=wb*(hi?1.12:1);
         s+=`<g transform="translate(${bx},${by}) scale(${sc.toFixed(3)})"><circle r="33" fill="${c}" opacity=".22"/><circle r="27" fill="${c}" stroke="${T.node}" stroke-width="3"/>${ico(b.icon,0,0,28,T.on)}</g>`}
-      else s+=`<circle cx="${bx}" cy="${by}" r="5" fill="${c}"/>`;
+      else if(HUBS)s+=`<circle cx="${bx}" cy="${by}" r="5" fill="${c}"/>`;
       s+=`</g>`;
       k+=n+1.5*wb});
   }
