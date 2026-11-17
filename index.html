@@ -2026,10 +2026,18 @@ body.nx-on-nu .nx-fixed{display:inline-flex}
 #nuRact .nx-ctab .ic:last-child{margin-left:auto;width:16px;height:16px}
 @media (max-width:980px){[data-view="naehrstoffe"] .wrap>#nuRact{position:relative;top:auto;right:auto;width:auto;margin:34px 0 0}}
 /* LAYOUT-2:END */
-/* DEINE-DATEN:BEGIN – Seite = Portal mit Navigation links (Daniel 17.11.2026) */
+/* DEINE-DATEN:BEGIN – Seite = Portal randlos, Menü als Untermenü unter „Deine Daten“ in der App-Leiste (Daniel 17.11.2026) */
 [data-view="gedaechtnis"] .wrap{max-width:none;padding:0;margin:0}
 .dd-portal{display:block;width:100%;height:100vh;border:0;border-radius:0;background:#2E0D29}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dd-sub{display:none;flex-direction:column;align-items:center;gap:2px;margin:2px 0 6px;padding:4px 0 6px;border-radius:16px;background:rgba(255,255,255,.05)}
+.dd-sub.open{display:flex}
+.dd-sh{width:76px;padding:8px 2px 2px;text-align:center;font-size:8.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.dd-si{width:76px;display:grid;justify-items:center;gap:3px;padding:6px 2px;border:0;background:none;border-radius:12px;color:rgba(255,255,255,.75);font:inherit;font-size:9.5px;font-weight:700;line-height:1.15;text-align:center;cursor:pointer}
+.dd-si:hover{background:rgba(255,255,255,.08);color:#fff}
+.dd-si.on{background:rgba(198,214,63,.2);color:#fff}
+.dd-ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:#fff;background:rgba(255,255,255,.12)}
+.dd-ic svg{width:15px;height:15px}
 @media (max-width:980px){.dd-portal{height:calc(100dvh - 130px)}}
 /* DEINE-DATEN:END */
 /* NU-EXTRA:END */</style>
@@ -5124,7 +5132,22 @@ html{scrollbar-width:thin;scrollbar-color:#55204D #1B0016}
 })();
 </script>
 <!-- POPUP-VAR:END -->
-<script id="dd-js">/* DEINE-DATEN-JS */window.deOpen=function(){if(location.hash!=='#gedaechtnis')location.hash='#gedaechtnis';scrollTo(0,0)}</script>
+<script id="dd-js">/* DEINE-DATEN-JS */
+window.deOpen=function(){if(location.hash!=='#gedaechtnis')location.hash='#gedaechtnis';scrollTo(0,0)};
+(function(){
+ const fr=document.querySelector('.dd-portal'),link=document.querySelector('.rail a[data-r="gedaechtnis"]');if(!fr||!link)return;
+ const sub=document.createElement('div');sub.className='dd-sub';sub.setAttribute('aria-label','Deine Daten – Bereiche');link.after(sub);
+ const esc=t=>t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ function build(){let d;try{d=fr.contentDocument}catch(e){return}const it=d?[...d.querySelectorAll('#side .ni,#side .nh')]:[];if(!it.length){setTimeout(build,400);return}
+  sub.innerHTML=it.map(n=>{if(n.classList.contains('nh'))return '<div class="dd-sh">'+esc(n.textContent)+'</div>';
+   const ic=n.querySelector('.bi,.ic'),lab=[...n.childNodes].filter(x=>x.nodeType===3).map(x=>x.textContent).join('').trim();
+   return '<button type="button" class="dd-si" data-ddgo="'+esc(n.dataset.go||'home')+'"><span class="dd-ic"'+(ic&&ic.style.background?' style="background:'+ic.style.background+'"':'')+'>'+(ic?ic.innerHTML:'')+'</span><span>'+esc(lab)+'</span></button>'}).join('');mark()}
+ function mark(){let h='home';try{h=fr.contentWindow.location.hash.slice(1)||'home'}catch(e){}sub.querySelectorAll('.dd-si').forEach(b=>b.classList.toggle('on',b.dataset.ddgo===h))}
+ fr.addEventListener('load',()=>{build();try{fr.contentWindow.addEventListener('hashchange',mark)}catch(e){}});build();
+ sub.addEventListener('click',e=>{const b=e.target.closest('[data-ddgo]');if(!b)return;if(location.hash!=='#gedaechtnis')location.hash='#gedaechtnis';try{fr.contentWindow.location.hash=b.dataset.ddgo}catch(_){}});
+ function vis(){sub.classList.toggle('open',location.hash==='#gedaechtnis')}addEventListener('hashchange',vis);vis();
+})();
+</script>
 <script id="nx-js">/* NU-EXTRA:BEGIN */
 (function(){
  const $=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>[...r.querySelectorAll(q)];
