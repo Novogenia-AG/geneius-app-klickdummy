@@ -224,6 +224,8 @@ html.light,html.light .sug{scrollbar-color:rgba(94,0,71,.25) transparent}
 ::-webkit-scrollbar-thumb{background:#55204D;border-radius:99px}::-webkit-scrollbar-thumb:hover{background:rgba(198,214,63,.6)}
 main{overflow-x:clip}
 @media (min-width:821px){.hero{margin-right:calc(-26px - max(0px,(100vw - 276px - 920px) / 2))}}
+/* Startseite: Kacheln unten weg, die Navigation links reicht (Daniel 17.11.2026); am Handy bleiben sie */
+@media (min-width:821px){.home-more{display:none}.hero{height:max(440px,calc(100vh - 64px));margin-bottom:0}.content:has(.home-more){padding-bottom:0}}
 /* RAND:END */
 </style>
 <script>if(new URLSearchParams(location.search).get('hell')==='1')document.documentElement.classList.add('light')</script>
@@ -342,6 +344,7 @@ function home(){
    <div class="tx"><div class="eyebrow">Dein GENEius-Profil</div><h1>Erzähl GENEius von dir.</h1>
     <p>GENEius kann ${D.total.toLocaleString('de-DE')} medizinische Datenpunkte über deinen Körper erfassen und in deine Empfehlungen einfließen lassen. Alles ist freiwillig: Trag ein, was du hast. Jede Angabe macht deine Empfehlungen noch genauer.</p>
     <button class="bl lime" type="button" data-guide>Führ mich durch die Datenübermittlung ${ico('chev',16)}</button></div></section>
+  <div class="home-more">
   <div class="sec-t">Oder direkt einzeln</div>
   <div class="steps">
    <button class="step ${lsN&&lsD>=lsN?'done':''}" data-go="lifestyle" style="--sc:${D.b[LIFE].c==='#5E0047'?'#B0306E':D.b[LIFE].c}">${lsN&&lsD>=lsN?`<span class="ok">${ico('check',15)}</span>`:''}<span class="n">${ico('checklist')}</span><b>Lifestyle-Fragebogen</b><small>${lsN} kurze Fragen, ca. 3 Minuten</small><span class="st">${lsD?`${lsD} von ${lsN} beantwortet`:'Jetzt starten'}</span></button>
@@ -351,7 +354,8 @@ function home(){
   </div>
   <div class="sec-t">Alle Bereiche</div>
   <div class="tiles">${D.b.map((b,bi)=>{const ps=nIn(b),d=ps.filter(p=>has(p.id)).length;const r=bi===LIFE?'lifestyle':bi===MEDB?'medikamente':'bereich/'+bi;
-    return `<button class="tile" type="button" data-go="${r}">${bicon(b,19)}<span><b>${esc(bname(b))}</b><small class="${d?'ok':''}">${bi===MEDB?(S.medAns==='nein'?'keine Medikamente':S.med.length?S.med.length+' eingetragen':'Wirkstoff oder Marke angeben'):ps.length?(d?d+' von '+ps.length+' ausgefüllt':ps.length+' Fragen'):'automatisch aus deiner Analyse'}</small></span></button>`}).join('')}</div>`;
+    return `<button class="tile" type="button" data-go="${r}">${bicon(b,19)}<span><b>${esc(bname(b))}</b><small class="${d?'ok':''}">${bi===MEDB?(S.medAns==='nein'?'keine Medikamente':S.med.length?S.med.length+' eingetragen':'Wirkstoff oder Marke angeben'):ps.length?(d?d+' von '+ps.length+' ausgefüllt':ps.length+' Fragen'):'automatisch aus deiner Analyse'}</small></span></button>`}).join('')}</div>
+  </div>`;
 }
 function lifestyle(){
   const qs=LQ.filter(vis);let i=Math.min(+(sessionStorage.getItem('lsq')||0),qs.length);
