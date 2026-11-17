@@ -245,6 +245,7 @@ const QP=new URLSearchParams(location.search);
 if(QP.get('neu')==='1')S.fNeu=1;
 ['logo','glow','spokes','bands','icons','leaves','nums'].forEach(k=>{if(QP.has(k))S.lay[k]=QP.get(k)==='1'?1:0});
 const BGT=QP.get('bgt')==='1';
+if(TH[QP.get('theme')])S.theme=QP.get('theme'); /* theme=hell|rose|lime: Farbwelt per URL (helles Portal, 17.11.2026) */
 const HUBS=QP.get('hubs')!=='0'; /* hubs=0: ohne Icons auch keine Knotenpunkte */
 if(BGT)document.documentElement.classList.add('bgt');
 const lk=(i,j)=>i+'.'+j;

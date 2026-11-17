@@ -1933,7 +1933,7 @@ section.br.br-off .br-testconf{display:none}
 .br-qbar .qa button[aria-label]{width:34px;padding:0;justify-content:center}
 @media (max-width:980px){.br-qbar{bottom:12px;width:92%}.br-qbar p{font-size:14px}.br-chat{min-height:220px}}
 /* BERATUNG:END */</style>
-<style id="nx-css">/* NU-EXTRA:BEGIN – Daten übermitteln (Layout-Varianten) + Test Recalculation (GENE NUGGETS, 16.11.2026) */
+<style id="nx-css">/* NU-EXTRA:BEGIN – Daten hochladen (Layout-Varianten) + Test Recalculation (GENE NUGGETS, 16.11.2026) */
 .ract.dub{grid-template-columns:1fr}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
 .sr-on .dub-card{grid-template-columns:1fr}.sr-on .dub-map{display:none}
@@ -2121,7 +2121,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
   </div>
 
   <!-- gleiche Komponenten wie in den Reitern -->
-  <div class="sec"><div class="sec-l"><h2>Rezept aktualisieren</h2></div><p class="sub">Lebensstil, Laborwerte, Medikamente und mehr übermitteln.</p></div>
+  <div class="sec"><div class="sec-l"><h2>Rezept aktualisieren</h2></div><p class="sub">Lebensstil, Laborwerte, Medikamente und mehr hochladen.</p></div>
   <div class="ract dub" id="ovRact"></div>
 
   <div class="sec"><div class="sec-l"><h2>Frag den Coach</h2></div></div>
@@ -2214,7 +2214,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 <!-- SACHET-RAD:END -->
   <div class="sec"><div class="sec-l"><h2>Rezept verfeinern</h2></div><p class="sub">Je mehr GENEius über dich weiß, desto genauer wird deine Rezeptur. Dosierungen änderst du direkt beim jeweiligen Nährstoff.</p></div>
   <div class="ract dub" id="nuRact">
-    <div class="nx-cta"><p>GENEius kann 7.076 verschiedene Datenarten berücksichtigen</p><button type="button" class="nx-ctab" data-refine="daten"><svg class="ic"><use href="#i-compass"/></svg>Daten übermitteln<svg class="ic"><use href="#i-chev"/></svg></button></div>
+    <div class="nx-cta"><p>GENEius kann 7.076 verschiedene Datenarten berücksichtigen</p><button type="button" class="nx-ctab" data-refine="daten"><svg class="ic"><use href="#i-compass"/></svg>Daten hochladen<svg class="ic"><use href="#i-chev"/></svg></button></div>
   </div>
 
   <header class="hero"><div class="hero-in">
@@ -3335,7 +3335,7 @@ const chips=(arr,on=0,multi)=>`<div class="opts" ${multi?'data-multi':'data-sing
 const backIc=ic('chev','sm').replace('class="ic sm"','class="ic sm" style="transform:rotate(180deg)"');
 
 /* ---------- Rezept verfeinern: 3 Aktionen ---------- */
-const REF={daten:['Daten übermitteln','compass','Lebensstil, Laborwerte, Medikamente & mehr']};
+const REF={daten:['Daten hochladen','compass','Lebensstil, Laborwerte, Medikamente & mehr']};
 function refineSheet(k){
  if(k==='daten'||k==='choose'){deOpen();return} /* DATEN-EINTRAGEN: ersetzt Lebensstil-/Blutwerte-Fragebogen (16.11.2026) */
  if(k==='choose_alt'){
@@ -5086,18 +5086,18 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
 <style id="de-css">/* DATEN-EINTRAGEN:BEGIN – Portal „Deine Gesundheitsdaten“ (GENE NUGGETS, 16.11.2026) */
 .de-ov{position:fixed;inset:0;z-index:200;background:rgba(20,0,16,.6);display:none;align-items:stretch;justify-content:center;padding:58px 18px 18px}
 .de-ov.on{display:flex}
-.de-box{position:relative;width:min(1400px,100%);border-radius:22px;overflow:hidden;background:#2E0D29;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.de-box{position:relative;width:min(1400px,100%);border-radius:22px;overflow:hidden;background:#FBF6FA;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.25)}
 .de-box iframe{width:100%;height:100%;border:0;display:block}
 .de-x{position:fixed;top:10px;right:22px;z-index:2;width:40px;height:40px;border-radius:12px;border:0;background:#fff;color:#5E0047;font-size:20px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 @media (max-width:700px){.de-ov{padding:54px 0 0}.de-box{border-radius:14px 14px 0 0}.de-x{right:12px}}
 /* DATEN-EINTRAGEN:END */</style>
 <script id="de-js">/* DATEN-EINTRAGEN:BEGIN */
 (function(){
- const ov=document.createElement('div');ov.className='de-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Daten übermitteln');
- ov.innerHTML='<div class="de-box"><button class="de-x" type="button" aria-label="Schließen">✕</button><iframe title="Daten übermitteln" src="about:blank"></iframe></div>';
+ const ov=document.createElement('div');ov.className='de-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Daten hochladen');
+ ov.innerHTML='<div class="de-box"><button class="de-x" type="button" aria-label="Schließen">✕</button><iframe title="Daten hochladen" src="about:blank"></iframe></div>';
  document.body.appendChild(ov);
  const fr=ov.querySelector('iframe');
- window.deOpen=function(){if(fr.src.indexOf('gesundheitsdaten-portal')<0)fr.src='datenpunkte/gesundheitsdaten-portal.html';ov.classList.add('on');document.documentElement.style.overflow='hidden'};
+ window.deOpen=function(){if(fr.src.indexOf('gesundheitsdaten-portal')<0)fr.src='datenpunkte/gesundheitsdaten-portal.html?hell=1';ov.classList.add('on');document.documentElement.style.overflow='hidden'};
  const close=()=>{ov.classList.remove('on');document.documentElement.style.overflow=''};
  ov.querySelector('.de-x').onclick=close;
  ov.addEventListener('click',e=>{if(e.target===ov)close()});
@@ -5110,17 +5110,17 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
  const $=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>[...r.querySelectorAll(q)];
  const sec=$('[data-view="naehrstoffe"]');if(!sec)return;
  const lang=()=>{const b=$('[data-lang][aria-pressed="true"]');return b&&b.dataset.lang==='en'?'en':'de'};
- const T={de:{h:'GENEius berechnet deine Nährstoffe',st:['Genetische Analyse wird ausgewertet …','Laborwerte werden einbezogen …','Lebensstil und Ziele werden berücksichtigt …','Medikamente und Wechselwirkungen werden geprüft …','Dosierungen werden berechnet …','Deine Rezeptur ist fertig.'],btn:'Daten übermitteln',sub:'Über 7.000 Datenpunkte möglich'},
+ const T={de:{h:'GENEius berechnet deine Nährstoffe',st:['Genetische Analyse wird ausgewertet …','Laborwerte werden einbezogen …','Lebensstil und Ziele werden berücksichtigt …','Medikamente und Wechselwirkungen werden geprüft …','Dosierungen werden berechnet …','Deine Rezeptur ist fertig.'],btn:'Daten hochladen',sub:'Über 7.000 Datenpunkte möglich'},
           en:{h:'GENEius is calculating your nutrients',st:['Analysing your genetic results …','Including your lab values …','Considering lifestyle and goals …','Checking medication interactions …','Calculating dosages …','Your formula is ready.'],btn:'Submit data',sub:'Over 7,000 data points possible'}};
  /* Überschrift „Rezept verfeinern“ markieren */
  const nuR=$('#nuRact');const refsec=nuR&&nuR.previousElementSibling;if(refsec&&refsec.classList.contains('sec'))refsec.classList.add('nx-refsec');
  /* B: Knopf im Kopf */
  const hin=$('.hero-in',sec);const hb=document.createElement('div');hb.className='nx-hb';
- hb.innerHTML='<button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten übermitteln</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button><small class="nx-n">Über 7.000 medizinische Datenpunkte können einfließen</small>';
+ hb.innerHTML='<button class="abtn" data-refine="daten"><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span><b>Daten hochladen</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small></span><span class="aarr" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></button><small class="nx-n">Über 7.000 medizinische Datenpunkte können einfließen</small>';
  hin&&hin.appendChild(hb);
  /* D: schwebend */
  const fab=document.createElement('button');fab.className='nx-fab';fab.dataset.refine='daten';
- fab.innerHTML='<span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span>Daten übermitteln<small>Über 7.000 Datenpunkte</small></span>';
+ fab.innerHTML='<span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><span>Daten hochladen<small>Über 7.000 Datenpunkte</small></span>';
  document.body.appendChild(fab);
  /* C: Sachet + Karte nebeneinander */
  const stick=$('.sr-card',sec)||$('.stick',sec);let row=null;
