@@ -5124,6 +5124,7 @@ html{scrollbar-width:thin;scrollbar-color:#55204D #1B0016}
 })();
 </script>
 <!-- POPUP-VAR:END -->
+<script id="dd-js">/* DEINE-DATEN-JS */window.deOpen=function(){if(location.hash!=='#gedaechtnis')location.hash='#gedaechtnis';scrollTo(0,0)}</script>
 <script id="nx-js">/* NU-EXTRA:BEGIN */
 (function(){
  const $=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>[...r.querySelectorAll(q)];
@@ -5255,6 +5256,8 @@ function placeMap(){const sec=card.closest('section')||card;const sw=sec.getBoun
  map.style.width=map.style.height=sz+'px';map.style.left=(g.cx-sz/2)+'px';map.style.top=(g.cy-sz/2)+'px';card._icR=175*sc}
 function setupMap(){map.classList.add('on')} /* Ebenen per URL-Parameter (neu, logo, glow, spokes, bgt) */
 map.addEventListener('load',setupMap);setupMap();placeMap();addEventListener('resize',placeMap);
+/* neu berechnen, sobald der Reiter sichtbar wird (vorher Breite 0 → Rad zu klein, 17.11.2026) */
+{let lw=0;const sec0=card.closest('section')||card;if(window.ResizeObserver)new ResizeObserver(()=>{const w=Math.round(sec0.getBoundingClientRect().width);if(w&&w!==lw){lw=w;placeMap()}}).observe(sec0)}
 /* nur zeichnen, wenn sichtbar */
 let on=false,raf=0;
 function loop(t){const r=card.getBoundingClientRect();if(r.width&&r.bottom>0&&r.top<innerHeight){draw(t);brain(t)}if(on&&!RM)raf=requestAnimationFrame(loop)}
