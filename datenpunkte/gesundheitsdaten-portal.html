@@ -250,22 +250,21 @@ html.framed .banner{padding-right:16px}
 .bl.wh svg:first-child{color:#8C1D6E}
 @media (max-width:820px){.hero .tx .hbtns{width:100%}.hero .tx .hbtns .bl{white-space:normal;font-size:14px}.banner{top:80px;right:12px;width:calc(100% - 24px)}.banx{top:86px;right:18px}.banner .go span{display:inline}}
 /* BLASE:END */
-/* ICONKNOEPFE:BEGIN – große Icons ohne Box, nebeneinander (Daniel 17.11.2026) */
-.hero .tx .hbtns{display:flex;flex-direction:row;gap:8px;width:auto;max-width:none;margin-top:6px}
-.ib{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;width:132px;padding:8px 4px;border:0;background:none;color:#fff;border-radius:18px;transition:transform .2s}
-.ib .ii{width:84px;height:84px;display:grid;place-items:center;border-radius:50%;color:#fff;transition:background .2s,box-shadow .2s,color .2s}
-.ib .ii svg{stroke-width:1.7}
+/* ICONKNOEPFE:BEGIN – drei gleichfarbige Kachel-Knöpfe mit großem Icon (Daniel 17.11.2026) */
+.hero .tx .hbtns{display:flex;flex-direction:row;gap:12px;width:auto;max-width:none;margin-top:6px}
+.ib{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;gap:4px;width:150px;padding:18px 10px 14px;border:0;background:var(--lime);color:#26001D;border-radius:20px;box-shadow:0 14px 28px -14px rgba(198,214,63,.7);transition:transform .2s,box-shadow .2s}
+.ib .ii{display:grid;place-items:center;height:56px;margin-bottom:4px}
+.ib .ii svg{width:52px;height:52px;stroke-width:1.8}
 .ib b{font-size:14.5px;font-weight:800;line-height:1.2}
-.ib small{font-size:11.5px;color:var(--sub);line-height:1.3}
-.ib.up .ii{color:var(--lime);filter:drop-shadow(0 0 14px rgba(198,214,63,.45))}
-.ib:hover{transform:translateY(-3px)}.ib:hover .ii{background:rgba(255,255,255,.07);box-shadow:0 0 0 1px rgba(255,255,255,.14)}
-.ib.up:hover .ii{background:rgba(198,214,63,.12);box-shadow:0 0 0 1px rgba(198,214,63,.4)}
-@media (max-width:820px){.hero .tx .hbtns{width:100%;justify-content:space-between}.ib{width:auto;flex:1}.ib .ii{width:64px;height:64px}.ib .ii svg{width:44px;height:44px}}
+.ib small{font-size:11.5px;font-weight:600;color:rgba(38,0,29,.7);line-height:1.3}
+.ib:hover{transform:translateY(-3px);box-shadow:0 18px 32px -14px rgba(198,214,63,.85)}
+@media (max-width:820px){.hero .tx .hbtns{width:100%;gap:8px}.ib{width:auto;flex:1;padding:14px 6px 12px}.ib .ii{height:44px}.ib .ii svg{width:40px;height:40px}.ib b{font-size:13px}}
 /* ICONKNOEPFE:END */
 /* INLINE:BEGIN – in der App: keine eigene Seitenleiste (Menü steckt unter „Deine Daten“ in der App-Leiste), Rad flächig */
 @media (min-width:821px){html.inline .shell{grid-template-columns:minmax(0,1fr)}html.inline aside{display:none}
  html.inline .hero{margin-left:calc(-26px - max(0px,(100vw - 8px - 920px) / 2));margin-right:calc(-26px - max(0px,(100vw - 8px - 920px) / 2))}
  html.inline .hero .tx{left:clamp(26px,5vw,72px)}
+ html.inline .banner{top:64px}html.inline .banx{top:70px}
  html.inline .hero iframe{--ms:min(140vh,1700px);right:max(-22%,calc(700px - var(--ms)))}}
 /* INLINE:END */
 </style>
@@ -312,7 +311,7 @@ const BIC={'Gene & DNA':'dna','Erkrankungen':'steth','Medikamente & Supplemente'
  'Fitness & Leistung':'run','Laborwerte':'flask','Wearables & Heimgeräte':'watch','Schlaf & Erholung':'moon','Psyche & Gehirn':'brain','Longevity & Biologisches Alter':'hour','Organe & Untersuchungen':'scan','Allergien & Unverträglichkeiten':'flower','Umwelt & Wohnen':'leaf'};
 const bicon=(b,s=16)=>`<span class="bi" style="background:${b.c}">${ico(BIC[b.name]||'list',s)}</span>`;
 IC.dl='M12 4v11M7 10l5 5 5-5M5 20h14'; /* DNA-Download (17.11.2026) */
-IC.up='M12 16V4M7 9l5-5 5 5M5 20h14';IC.dnadl='M4 3c3.5 2.5 6.5 2.5 10 0M4 13c3.5-2.5 6.5-2.5 10 0M6 4.3v7.4M12 4.3v7.4M18.5 10v10M15.5 17l3 3 3-3';
+IC.up='M7 18.5a4.5 4.5 0 0 1-.7-8.95A6 6 0 0 1 17.8 8.6a4.2 4.2 0 0 1-.3 9.9M12 13v8.5M8.5 16.5 12 13l3.5 3.5';IC.dnadl='M4 2c0 4.5 8 5.5 8 10s-8 5.5-8 10M12 2c0 4.5-8 5.5-8 10s8 5.5 8 10M5.2 4.5h5.6M4.6 12h6.8M5.2 19.5h5.6M19 3v15M15.5 14.5 19 18l3.5-3.5';
 const ico=(k,s=18)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="${IC[k]}"/></svg>`;
 function goCoach(){try{if(window.parent!==window){window.parent.location.hash='#coach';return}}catch(e){}location.href=COACH_URL}
 const nIn=b=>b.s.flatMap(s=>s.p).filter(p=>vis(p)&&INPUT(p));
@@ -388,7 +387,7 @@ function home(){
   return `<section class="hero"><iframe src="${MAP_URL}" title="Datenlandkarte" tabindex="-1" aria-hidden="true"></iframe>
    <div class="tx"><div class="eyebrow">Dein GENEius-Profil</div><h1>Erzähl GENEius von dir.</h1>
     <p>GENEius kann ${D.total.toLocaleString('de-DE')} medizinische Datenpunkte über deinen Körper erfassen und in deine Empfehlungen einfließen lassen. Alles ist freiwillig: Trag ein, was du hast. Jede Angabe macht deine Empfehlungen noch genauer.</p>
-    <div class="hbtns"><button class="ib up" type="button" data-guide><span class="ii">${ico('up',58)}</span><b>Daten hochladen</b><small>Führe mich durch die Datenübermittlung</small></button>${INAPP?`<button class="ib" type="button" data-dna><span class="ii">${ico('dnadl',58)}</span><b>DNA-Daten</b><small>herunterladen</small></button>`:''}<button class="ib" type="button" data-go="wearables"><span class="ii">${ico('watch',58)}</span><b>Wearables</b><small>verbinden</small></button></div></div></section>
+    <div class="hbtns"><button class="ib up" type="button" data-guide><span class="ii">${ico('up',58)}</span><b>Daten hochladen</b><small>Schritt für Schritt geführt</small></button>${INAPP?`<button class="ib" type="button" data-dna><span class="ii">${ico('dnadl',58)}</span><b>DNA-Daten</b><small>herunterladen</small></button>`:''}<button class="ib" type="button" data-go="wearables"><span class="ii">${ico('watch',58)}</span><b>Wearables</b><small>verbinden</small></button></div></div></section>
   <div class="home-more">
   <div class="sec-t">Oder direkt einzeln</div>
   <div class="steps">
