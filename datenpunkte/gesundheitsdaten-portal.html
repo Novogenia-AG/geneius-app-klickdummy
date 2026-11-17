@@ -216,6 +216,14 @@ html.light .hero::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(251,2
 html.light .bubble{box-shadow:0 14px 34px rgba(94,0,71,.22);border:1px solid rgba(94,0,71,.12)}
 @media (max-width:820px){html.light .tabs{background:rgba(251,246,250,.94)}html.light .hero::after{background:linear-gradient(180deg,rgba(251,246,250,0) 0%,rgba(251,246,250,0) 40%,var(--bg) 64%)}}
 /* HELL:END */
+/* RAND:BEGIN – Scrollbalken passend zum Design + Rad bis zum rechten Rand (Daniel 17.11.2026) */
+html,aside,.sug,.tabs{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.22) transparent}
+html.light,html.light aside,html.light .sug{scrollbar-color:rgba(94,0,71,.25) transparent}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.22);border-radius:99px}::-webkit-scrollbar-thumb:hover{background:rgba(198,214,63,.6)}
+main{overflow-x:clip}
+@media (min-width:821px){.hero{margin-right:calc(-26px - max(0px,(100vw - 276px - 920px) / 2))}}
+/* RAND:END */
 </style>
 <script>if(new URLSearchParams(location.search).get('hell')==='1')document.documentElement.classList.add('light')</script>
 </head>

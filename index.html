@@ -5092,53 +5092,19 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
 /* DATEN-EINTRAGEN:END */</script>
 <!-- POPUP-VAR:BEGIN -->
 <style id="pv-css">
-.de-ov.pv1,.de-ov.pv5,.de-ov.pv6{background:rgba(8,0,6,.84);backdrop-filter:blur(10px) saturate(.7);-webkit-backdrop-filter:blur(10px) saturate(.7)}
-.de-ov.pv2 .de-box,.de-ov.pv6 .de-box{box-shadow:0 0 0 2px #C6D63F,0 0 46px rgba(198,214,63,.42),0 30px 90px rgba(0,0,0,.7)}
-.de-head{display:none}
-.de-ov.pv3 .de-box,.de-ov.pv6 .de-box{display:flex;flex-direction:column}
-.de-ov.pv3 .de-box iframe,.de-ov.pv6 .de-box iframe{flex:1;height:auto;min-height:0}
-.de-ov.pv3 .de-head,.de-ov.pv6 .de-head{display:flex;align-items:center;gap:12px;flex:none;background:#C6D63F;color:#26001D;padding:10px 12px 10px 16px}
-.de-head .i{width:36px;height:36px;border-radius:11px;background:#26001D;color:#C6D63F;display:grid;place-items:center;flex:none}
-.de-head .i .ic{width:19px;height:19px}
-.de-head b{font-size:17px;font-weight:800;white-space:nowrap}
-.de-head small{font-size:12.5px;font-weight:600;opacity:.75;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.de-head .de-hx{margin-left:auto;border:0;border-radius:11px;background:#26001D;color:#fff;font:inherit;font-weight:800;font-size:13px;padding:9px 14px;cursor:pointer;white-space:nowrap}
-.de-ov.pv3 .de-x,.de-ov.pv6 .de-x{display:none}
-.de-ov.pv4{padding:0;justify-content:flex-end;background:rgba(8,0,6,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-.de-ov.pv4 .de-box{width:min(1120px,88%);border-radius:26px 0 0 26px;box-shadow:-3px 0 0 #C6D63F,-40px 0 90px rgba(0,0,0,.65)}
-.de-ov.pv4.on .de-box{animation:pvSlide .42s cubic-bezier(.2,.8,.2,1)}
-.de-ov.pv5 .de-box,.de-ov.pv6 .de-box{transform-origin:var(--ox,90%) var(--oy,10%)}
-.de-ov.pv5.on .de-box,.de-ov.pv6.on .de-box{animation:pvZoom .5s cubic-bezier(.2,.85,.25,1)}
-@keyframes pvSlide{from{transform:translateX(100%)}}
+.de-ov{background:rgba(8,0,6,.84);backdrop-filter:blur(10px) saturate(.7);-webkit-backdrop-filter:blur(10px) saturate(.7)}
+.de-ov .de-box{box-shadow:0 0 0 2px rgba(255,255,255,.92),0 0 40px rgba(255,255,255,.16),0 30px 90px rgba(0,0,0,.7);transform-origin:var(--ox,90%) var(--oy,10%)}
+.de-ov.on .de-box{animation:pvZoom .5s cubic-bezier(.2,.85,.25,1)}
 @keyframes pvZoom{from{transform:scale(.06);opacity:0;border-radius:60px}60%{opacity:1}}
-.pv-bar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:210;display:none;gap:4px;align-items:center;flex-wrap:wrap;justify-content:center;width:max-content;max-width:calc(100vw - 24px);background:#26001D;border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:6px;box-shadow:0 12px 30px rgba(0,0,0,.6);font-family:Montserrat,system-ui,sans-serif}
-.pv-bar.on{display:flex}
-.pv-bar span{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#FF9F1C;padding:0 8px}
-.pv-bar button{border:0;border-radius:11px;background:rgba(255,255,255,.08);color:#fff;font:inherit;font-size:12.5px;font-weight:700;padding:8px 11px;cursor:pointer}
-.pv-bar button[aria-pressed=true]{background:#C6D63F;color:#26001D}
-@media (max-width:700px){.de-head small{display:none}.de-ov.pv4 .de-box{width:94%}.pv-bar button{padding:7px 8px;font-size:11.5px}.pv-bar span{display:none}}
+@media (prefers-reduced-motion:reduce){.de-ov.on .de-box{animation:none}}
 </style>
 <script id="pv-js">
 (function(){
- const ov=document.querySelector('.de-ov');if(!ov)return;const box=ov.querySelector('.de-box');
- const h=document.createElement('div');h.className='de-head';
- h.innerHTML='<span class="i"><svg class="ic"><use href="#i-compass"/></svg></span><b>Daten hochladen</b><small>Lebensstil, Laborwerte, Medikamente &amp; mehr</small><button class="de-hx" type="button">✕ Schließen</button>';
- box.insertBefore(h,box.firstChild);h.querySelector('.de-hx').onclick=()=>ov.querySelector('.de-x').click();
- const V=[['0','Heute'],['1','1 Abdunkeln'],['2','2 Lime-Rahmen'],['3','3 Kopfleiste'],['4','4 Seitenpanel'],['5','5 Zoom'],['6','6 Kombi']];
- let v='6';try{v=localStorage.getItem('gn-popup-var')||'6'}catch(e){}
- const bar=document.createElement('div');bar.className='pv-bar';
- bar.innerHTML='<span>Test Popup</span>'+V.map(x=>`<button type="button" data-pv="${x[0]}">${x[1]}</button>`).join('');document.body.appendChild(bar);
- function set(n,replay){v=n;try{localStorage.setItem('gn-popup-var',n)}catch(e){}
-  V.forEach(x=>ov.classList.toggle('pv'+x[0],x[0]===n));bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.pv===n));
-  if(replay){box.style.animation='none';void box.offsetWidth;box.style.animation=''}}
- bar.addEventListener('click',e=>{const b=e.target.closest('[data-pv]');if(b)set(b.dataset.pv,1)});
+ const ov=document.querySelector('.de-ov');if(!ov)return;
  let last=null;document.addEventListener('click',e=>{const b=e.target.closest('[data-refine="daten"]');if(b)last=b.getBoundingClientRect()},true);
  const open=window.deOpen;
- window.deOpen=function(){const r=box.getBoundingClientRect();
-  if(last){const W=innerWidth,H=innerHeight;ov.style.setProperty('--ox',((last.left+last.width/2)/W*100).toFixed(1)+'%');ov.style.setProperty('--oy',((last.top+last.height/2)/H*100).toFixed(1)+'%')}
-  set(v,0);open.apply(this,arguments);bar.classList.add('on')};
- new MutationObserver(()=>{if(!ov.classList.contains('on'))bar.classList.remove('on')}).observe(ov,{attributes:true,attributeFilter:['class']});
- set(v,0);
+ window.deOpen=function(){if(last){ov.style.setProperty('--ox',((last.left+last.width/2)/innerWidth*100).toFixed(1)+'%');ov.style.setProperty('--oy',((last.top+last.height/2)/innerHeight*100).toFixed(1)+'%')}
+  return open.apply(this,arguments)};
 })();
 </script>
 <!-- POPUP-VAR:END -->
