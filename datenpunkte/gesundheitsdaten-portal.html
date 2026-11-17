@@ -226,9 +226,12 @@ main{overflow-x:clip}
 @media (min-width:821px){.hero{margin-right:calc(-26px - max(0px,(100vw - 276px - 920px) / 2))}}
 /* Startseite: Kacheln unten weg, die Navigation links reicht (Daniel 17.11.2026); am Handy bleiben sie */
 @media (min-width:821px){.home-more{display:none}.hero{height:max(440px,calc(100vh - 64px));margin-bottom:0}.content:has(.home-more){padding-bottom:0}}
+/* In der App (iframe): Platz rechts im grünen Banner für das ✕ der App (Daniel 17.11.2026) */
+html.framed .banner{padding-right:74px}
 /* RAND:END */
 </style>
 <script>if(new URLSearchParams(location.search).get('hell')==='1')document.documentElement.classList.add('light')</script>
+<script>try{if(window.self!==window.top)document.documentElement.classList.add('framed')}catch(e){document.documentElement.classList.add('framed')}</script>
 </head>
 <body>
 <div class="shell">
