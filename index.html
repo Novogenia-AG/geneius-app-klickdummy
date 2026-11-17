@@ -5082,7 +5082,7 @@ if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
  ov.innerHTML='<div class="de-box"><button class="de-x" type="button" aria-label="Schließen">✕</button><iframe title="Daten hochladen" src="about:blank"></iframe></div>';
  document.body.appendChild(ov);
  const fr=ov.querySelector('iframe');
- window.deOpen=function(){if(fr.src.indexOf('gesundheitsdaten-portal')<0)fr.src='datenpunkte/gesundheitsdaten-portal.html';ov.classList.add('on');document.documentElement.style.overflow='hidden'};
+ window.deOpen=function(){if(fr.src.indexOf('gesundheitsdaten-portal')<0)fr.src='datenpunkte/gesundheitsdaten-portal.html?v=20261117';ov.classList.add('on');document.documentElement.style.overflow='hidden'};
  const close=()=>{ov.classList.remove('on');document.documentElement.style.overflow=''};
  ov.querySelector('.de-x').onclick=close;
  ov.addEventListener('click',e=>{if(e.target===ov)close()});
