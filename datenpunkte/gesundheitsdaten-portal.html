@@ -161,6 +161,20 @@ input.num{width:140px}
 .sug button:hover{background:rgba(255,255,255,.05)}
 .sug small{color:var(--sub)}
 .medl{display:grid;gap:8px;margin-top:12px}
+/* MEINE:BEGIN – Meine Einträge + Schalter „Nur ausgefüllte“ (18.11.2026) */
+.mgrp{margin:0 0 18px}.mgh{display:flex;align-items:center;gap:10px;margin:0 0 8px;font-size:15px}.mgh small{margin-left:auto;color:var(--sub);font-weight:700}
+.mrow{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 14px;margin:0 0 6px}
+.mrow .mt{flex:1;min-width:0;display:grid;gap:2px}.mrow .mt b{font-size:14px}.mrow .mt span{color:#C6D63F;font-weight:700;font-size:14px;overflow-wrap:anywhere}.mrow .mt small{color:var(--sub);font-size:12px}
+.mdel{border:0;background:rgba(255,255,255,.08);color:#fff;border-radius:10px;padding:8px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}.mdel:hover{background:rgba(255,90,90,.25)}
+.mine-empty{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:grid;gap:14px;justify-items:start}.mine-empty p{margin:0;color:var(--sub)}
+.frow{display:flex;gap:10px;align-items:center}.frow .search{flex:1}
+.onlyf{display:inline-flex;align-items:center;gap:8px;flex:none;border:1px solid var(--line);background:var(--card);color:#fff;border-radius:999px;padding:9px 14px;font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;white-space:nowrap}
+.onlyf small{color:var(--sub)}.onlyf .sw{width:30px;height:18px;border-radius:99px;background:rgba(255,255,255,.18);position:relative;transition:background .2s}
+.onlyf .sw i{position:absolute;left:2px;top:2px;width:14px;height:14px;border-radius:50%;background:#fff;transition:transform .2s}
+.onlyf[aria-pressed="true"]{border-color:#C6D63F}.onlyf[aria-pressed="true"] .sw{background:#C6D63F}.onlyf[aria-pressed="true"] .sw i{transform:translateX(12px);background:#26001D}
+#blist .sub-h[hidden],.top-chips[hidden],.sec-t[hidden],.jump[hidden]{display:none!important}
+@media (max-width:560px){.frow{flex-wrap:wrap}.mrow{flex-wrap:wrap}.mrow .mt{flex-basis:100%}}
+/* MEINE:END */
 .medl div{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-weight:700}
 .medl div small{color:var(--sub);font-weight:600;flex:1}
 .medl button{border:0;background:rgba(255,255,255,.08);border-radius:10px;width:34px;height:34px;font-size:18px}
@@ -322,7 +336,7 @@ Object.assign(IC,{heart:'M12 21s-7.5-4.6-9.5-9.3C1 8.2 3.4 4.5 7 4.5c2 0 3.6 1.1
 const BIC={'Gene & DNA':'dna','Erkrankungen':'steth','Medikamente & Supplemente':'pill','GENEius-Lifestyle-Fragebogen':'clip','Fachfragebögen':'list','Hautbild-Fragebogen (305 Care)':'drop','Ernährung im Alltag':'apple','Körper & Biometrie':'ruler',
  'Fitness & Leistung':'run','Laborwerte':'flask','Wearables & Heimgeräte':'watch','Schlaf & Erholung':'moon','Psyche & Gehirn':'brain','Longevity & Biologisches Alter':'hour','Organe & Untersuchungen':'scan','Allergien & Unverträglichkeiten':'flower','Umwelt & Wohnen':'leaf'};
 const bicon=(b,s=16)=>`<span class="bi" style="background:${b.c}">${ico(BIC[b.name]||'list',s)}</span>`;
-IC.dl='M12 4v11M7 10l5 5 5-5M5 20h14'; /* DNA-Download (17.11.2026) */
+IC.dl='M12 4v11M7 10l5 5 5-5M5 20h14';IC.mine='M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1zM8 5H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2M8.5 13l2.5 2.5 4.5-5'; /* DNA-Download (17.11.2026) */
 IC.aichat='M21 14a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h7M18.5 2.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9zM8.5 10h6M8.5 13h4';IC.dnaup='M4 2c0 4.5 8 5.5 8 10s-8 5.5-8 10M12 2c0 4.5-8 5.5-8 10s8 5.5 8 10M5.2 4.5h5.6M4.6 12h6.8M5.2 19.5h5.6M19 21V6M15.5 9.5 19 6l3.5 3.5';IC.up='M7 18.5a4.5 4.5 0 0 1-.7-8.95A6 6 0 0 1 17.8 8.6a4.2 4.2 0 0 1-.3 9.9M12 13v8.5M8.5 16.5 12 13l3.5 3.5';IC.dnadl='M4 2c0 4.5 8 5.5 8 10s-8 5.5-8 10M12 2c0 4.5-8 5.5-8 10s8 5.5 8 10M5.2 4.5h5.6M4.6 12h6.8M5.2 19.5h5.6M19 3v15M15.5 14.5 19 18l3.5-3.5';
 const ico=(k,s=18)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="${IC[k]}"/></svg>`;
 function goCoach(){try{if(window.parent!==window){window.parent.location.hash='#coach';return}}catch(e){}location.href=COACH_URL}
@@ -374,12 +388,36 @@ function bindField(root,p,onDone){
 }
 const fmtN=x=>Number(x).toLocaleString('de-DE',{maximumFractionDigits:3});
 function mark(root,p){const q=root.closest('.q');if(q){q.classList.toggle('has',has(p.id));const m=q.querySelector('.okm');if(m)m.style.display=has(p.id)?'':'none'}side()}
+/* ---------- Meine Einträge (Daniel 18.11.2026, über LAB TEST): alle selbst ausgefüllten Felder ---------- */
+const WNAME={ah:'Apple Health',hc:'Health Connect'};
+const mineN=()=>ALL.filter(p=>INPUT(p)&&has(p.id)).length+S.med.length+S.supp.length+Object.values(S.wear||{}).filter(Boolean).length;
+const valTxt=p=>{const v=S.val[p.id]||{};let t=Array.isArray(v.v)?v.v.join(', '):String(v.v??'');if((p.k==='num'||p.k==='fb')&&t!==''&&!isNaN(+t))t=fmtN(t);if(p.k==='plz')t=(v.land?v.land+' ':'')+t;return t+(v.u?' '+v.u:'')};
+const whenTxt=v=>!v||!v.w?'':v.w==='Datum'?(v.d?'gemessen am '+v.d.split('-').reverse().join('.'):'genaues Datum'):'gemessen '+v.w;
+function meine(){
+  const n=mineN();
+  let h=`<div class="bh"><span class="ic" style="background:#8C1D6E">${ico('mine',22)}</span><div><h2>Meine Einträge</h2><small>${n?n.toLocaleString('de-DE')+' Datenpunkte von dir':'noch nichts eingetragen'}</small></div></div>`;
+  if(!n)return h+`<div class="mine-empty"><p>Du hast noch keine Daten eingetragen. Alles, was du ausfüllst, siehst du hier gesammelt – und kannst es jederzeit ändern oder löschen.</p><button class="bl lime" type="button" data-guide>${ico('up',18)} Führe mich durch die Datenübermittlung</button></div>`;
+  h+=`<p class="lead">Alles, was du selbst eingetragen hast – nach Bereich sortiert. „Ändern“ führt dich zum Feld, „Löschen“ entfernt die Angabe.</p>`;
+  const row=(nm,val,wh,ed,del)=>`<div class="mrow"><div class="mt"><b>${esc(nm)}</b><span>${esc(val)}</span>${wh?`<small>${esc(wh)}</small>`:''}</div>${ed?`<button class="bl ghost sm" type="button" ${ed}>Ändern</button>`:''}<button class="mdel" type="button" ${del} aria-label="${esc(nm)} löschen">Löschen</button></div>`;
+  D.b.forEach((b,bi)=>{
+    let rows='';
+    if(bi===MEDB){rows+=S.med.map((m,i)=>row(m.n,'Medikament'+(m.w?' · '+m.w:''),'','data-go="medikamente"',`data-rm="${i}"`)).join('');
+      rows+=S.supp.map((m,i)=>row(m,'Nahrungsergänzung','','data-go="medikamente"',`data-rms="${i}"`)).join('')}
+    const ps=b.s.flatMap(s=>s.p).filter(p=>INPUT(p)&&has(p.id));
+    rows+=ps.map(p=>row(p.n||p.fr,valTxt(p),whenTxt(S.val[p.id]),`data-edit="${p.id}"`,`data-del="${p.id}"`)).join('');
+    const c=(bi===MEDB?S.med.length+S.supp.length:0)+ps.length;
+    if(rows)h+=`<div class="mgrp"><div class="mgh">${bicon(b,16)}<b>${esc(bname(b))}</b><small>${c}</small></div>${rows}</div>`});
+  const w=Object.keys(S.wear||{}).filter(k=>S.wear[k]);
+  if(w.length)h+=`<div class="mgrp"><div class="mgh"><span class="bi" style="background:#2E95D3">${ico('watch',16)}</span><b>Wearables</b><small>${w.length}</small></div>${w.map(k=>row(WNAME[k]||k,'verbunden','','data-go="wearables"',`data-wear="${k}"`)).join('')}</div>`;
+  return h;
+}
 /* ---------- Navigation links ---------- */
 function side(){
   const r=R();const cur=k=>r===k?'aria-current="page"':'';
   const lsN=LQ.filter(vis).length,lsD=LQ.filter(p=>vis(p)&&has(p.id)).length,labD=nIn(D.b[LAB]).filter(p=>has(p.id)).length;
   $('side').innerHTML=`<div class="logo"><span class="m">G</span><div><b>GENE<span>ius</span></b><small>Deine Gesundheitsdaten</small></div></div>
    <button class="ni" data-go="home" ${cur('home')}><span class="ic">${ico('home',15)}</span>Start</button>
+   <button class="ni" data-go="meine" ${cur('meine')}><span class="bi" style="background:#8C1D6E">${ico('mine',15)}</span>Meine Einträge<span class="c ok">${mineN()||''}</span></button>
    <div class="nh">Schnellstart</div>
    <button class="ni" data-go="lifestyle" ${cur('lifestyle')}>${bicon(D.b[LIFE],15)}Lifestyle-Fragebogen<span class="c ${lsN&&lsD>=lsN?'ok':''}">${lsD}/${lsN}</span></button>
    <button class="ni" data-go="bereich/${LAB}" ${cur('bereich/'+LAB)}>${bicon(D.b[LAB],15)}Laborwerte<span class="c ok">${labD||''}</span></button>
@@ -388,9 +426,9 @@ function side(){
    <div class="nh">Alle Bereiche</div>
    ${D.b.map((b,bi)=>{if(bi===LIFE||bi===MEDB||bi===LAB)return '';const ps=nIn(b),d=ps.filter(p=>has(p.id)).length;
      return `<button class="ni" data-go="bereich/${bi}" ${cur('bereich/'+bi)}>${bicon(b,15)}${esc(bname(b))}<span class="c ${d?'ok':''}">${ps.length?(d?d+'/':'')+ps.length:'auto'}</span></button>`}).join('')}`;
-  $('tabs').innerHTML=`<button type="button" data-go="home" ${cur('home')}><span class="bi" style="background:#3C0033">${ico('home',16)}</span>Start</button>`+[[LIFE,'lifestyle','Lifestyle'],[LAB,'bereich/'+LAB,'Labor'],[MEDB,'medikamente','Medikamente']].map(([bi,r,t])=>`<button type="button" data-go="${r}" ${cur(r)}>${bicon(D.b[bi],16)}${t}</button>`).join('')+`<button type="button" data-go="wearables" ${cur('wearables')}><span class="bi" style="background:#2E95D3">${ico('watch',16)}</span>Wearables</button>`+D.b.map((b,bi)=>bi===LIFE||bi===LAB||bi===MEDB?'':`<button type="button" data-go="bereich/${bi}" ${cur('bereich/'+bi)}>${bicon(b,16)}${esc(bname(b).replace(' & Unverträglichkeiten','').replace(' & Biologisches Alter','').replace(' & Untersuchungen','').replace(' & Heimgeräte',''))}</button>`).join('');
+  $('tabs').innerHTML=`<button type="button" data-go="home" ${cur('home')}><span class="bi" style="background:#3C0033">${ico('home',16)}</span>Start</button><button type="button" data-go="meine" ${cur('meine')}><span class="bi" style="background:#8C1D6E">${ico('mine',16)}</span>Meine (${mineN()})</button>`+[[LIFE,'lifestyle','Lifestyle'],[LAB,'bereich/'+LAB,'Labor'],[MEDB,'medikamente','Medikamente']].map(([bi,r,t])=>`<button type="button" data-go="${r}" ${cur(r)}>${bicon(D.b[bi],16)}${t}</button>`).join('')+`<button type="button" data-go="wearables" ${cur('wearables')}><span class="bi" style="background:#2E95D3">${ico('watch',16)}</span>Wearables</button>`+D.b.map((b,bi)=>bi===LIFE||bi===LAB||bi===MEDB?'':`<button type="button" data-go="bereich/${bi}" ${cur('bereich/'+bi)}>${bicon(b,16)}${esc(bname(b).replace(' & Unverträglichkeiten','').replace(' & Biologisches Alter','').replace(' & Untersuchungen','').replace(' & Heimgeräte',''))}</button>`).join('');
   const ct=$('tabs').querySelector('[aria-current]');if(ct&&matchMedia('(max-width:820px)').matches)ct.scrollIntoView({inline:'center',block:'nearest'});
-  $('mt').textContent={wearables:'Wearables verbinden',guide:'Datenübermittlung',home:'Start',lifestyle:'Lifestyle-Fragebogen',medikamente:'Medikamente'}[r]||(r.startsWith('bereich/')?bname(D.b[+r.split('/')[1]]):'');
+  $('mt').textContent={meine:'Meine Einträge',wearables:'Wearables verbinden',guide:'Datenübermittlung',home:'Start',lifestyle:'Lifestyle-Fragebogen',medikamente:'Medikamente'}[r]||(r.startsWith('bereich/')?bname(D.b[+r.split('/')[1]]):'');
 }
 /* ---------- Seiten ---------- */
 const R=()=>location.hash.slice(1)||'home';
@@ -530,18 +568,28 @@ function bereich(bi){
   else if(bi===LAB)h+=`<p class="lead">Nimm deinen Befund zur Hand und such den Namen, der dort steht. Du musst nicht alles eintragen – jeder Wert hilft.</p>`;
   else h+=`<p class="lead">${auto?'Diese Werte kommen aus deiner GENEius-Analyse – du musst nichts tun.':'Beantworte, was du weißt. Alles wird sofort gespeichert.'}</p>`;
   const subs=b.s.map(s=>({t:s.t,p:s.p.filter(vis)})).filter(s=>s.p.length);
-  if(ps.length>8)h+=`<div class="filter"><label class="search">${ico('search')}<input id="qb" type="search" placeholder="In ${esc(bname(b))} suchen …" autocomplete="off"></label>${subs.length>1?`<div class="jump">${subs.map((s,i)=>`<button type="button" data-jump="s${i}">${esc(s.t)}</button>`).join('')}</div>`:''}</div>`;
+  const tg=auto?'':`<button class="onlyf" type="button" data-onlyf aria-pressed="${onlyF()}"><span class="sw"><i></i></span>Nur ausgefüllte <small>${d}</small></button>`,
+   jmp=subs.length>1?`<div class="jump">${subs.map((s,i)=>`<button type="button" data-jump="s${i}">${esc(s.t)}</button>`).join('')}</div>`:'';
+  if(ps.length>8)h+=`<div class="filter"><div class="frow"><label class="search">${ico('search')}<input id="qb" type="search" placeholder="In ${esc(bname(b))} suchen …" autocomplete="off"></label>${tg}</div>${jmp}</div>`;
+  else if(tg)h+=`<div class="filter"><div class="frow">${tg}</div></div>`;
   if(bi===LAB){const TOP=['vitd','ferritin','b12','holotc','hba1c','glukose_n','ldl','hdl','tg','tsh','crp','hb','magnesium','zink','selen','omega3_index','hcy','kreatinin','gpt','testo','oestradiol'].map(i=>BYID[i]).filter(p=>p&&vis(p));
     h+=`<div class="sec-t" style="margin-top:6px">Häufige Werte</div><div class="top-chips">${TOP.map(p=>`<button class="chip ${has(p.id)?'on':''}" type="button" data-jumpq="${p.id}">${has(p.id)?'✓ ':''}${esc(p.n.replace(/ – im Blutserum$/,''))}</button>`).join('')}</div>`}
-  h+=`<div id="blist">${subs.map((s,i)=>`<div class="sub-h" id="s${i}">${esc(s.t)} <small>${s.p.length}</small></div>${s.p.map(card).join('')}`).join('')}</div><p class="empty" id="none" hidden>Nichts gefunden – probier ein anderes Wort.</p>`;
+  h+=`<div id="blist">${subs.map((s,i)=>`<div class="sub-h" id="s${i}">${esc(s.t)} <small>${s.p.length}</small></div>${s.p.map(card).join('')}`).join('')}</div><p class="empty" id="none" hidden>${onlyF()?'Hier hast du noch nichts ausgefüllt.':'Nichts gefunden – probier ein anderes Wort.'}</p>`;
   return h;
 }
+const onlyF=()=>{try{return sessionStorage.getItem('gn-nur-ausgefuellt')==='1'}catch(e){return false}};
+function bFilter(){if(!$('blist'))return;const qi=$('qb'),q=qi?norm(qi.value.trim()):'',of=onlyF();let n=0;
+  document.querySelectorAll('#blist .q').forEach(el=>{const p=BYID[el.dataset.q];const ok=(!q||norm(p.n+' '+(p.fb||'')+' '+p.fr+' '+p.t+' '+p.id).includes(q))&&(!of||has(p.id)||el.contains(document.activeElement));el.hidden=!ok;if(ok)n++});
+  document.querySelectorAll('#blist .sub-h').forEach(h=>{let el=h.nextElementSibling,any=false;while(el&&el.classList.contains('q')){if(!el.hidden)any=true;el=el.nextElementSibling}h.hidden=!any});
+  $('none').hidden=n>0;const tp=document.querySelector('.top-chips');if(tp){tp.hidden=of;tp.previousElementSibling.hidden=of}}
 /* ---------- Router ---------- */
 function render(){
   const r=R(),app=$('app');let h;
-  if(r==='guide')h=guide();else if(r==='wearables')h=wearables();else if(r==='lifestyle')h=lifestyle();else if(r==='medikamente')h=medikamente();else if(r.startsWith('bereich/'))h=bereich(+r.split('/')[1]);else h=home();
+  if(r==='meine')h=meine();else if(r==='guide')h=guide();else if(r==='wearables')h=wearables();else if(r==='lifestyle')h=lifestyle();else if(r==='medikamente')h=medikamente();else if(r.startsWith('bereich/'))h=bereich(+r.split('/')[1]);else h=home();
   app.innerHTML=h;side();focusFirst();
   app.querySelectorAll('[data-q]').forEach(el=>bindField(el,BYID[el.dataset.q]));
+  if(r.startsWith('bereich/')&&onlyF())bFilter();
+  const pj=sessionStorage.getItem('gn-jumpq');if(pj){sessionStorage.removeItem('gn-jumpq');const el=$('q-'+pj);if(el)setTimeout(()=>{el.scrollIntoView({block:'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1600)},80)}
   if(r==='lifestyle'||(r==='guide'&&gw()===1)){const qs=LQ.filter(vis),i=+(sessionStorage.getItem('lsq')||0),p=qs[i];
     const nx=()=>{sessionStorage.setItem('lsq',i+1);render();scrollTo(0,0)};
     if(p){bindField(app.querySelector('#qf'),p,p.k==='sel'?nx:null);app.querySelectorAll('[data-next]').forEach(b=>b.onclick=nx);const fi=app.querySelector('#qf input.inp');if(fi)setTimeout(()=>fi.focus(),40);const pv=app.querySelector('[data-prev]');if(pv)pv.onclick=()=>{sessionStorage.setItem('lsq',Math.max(0,i-1));render()}}}
@@ -560,6 +608,9 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-dnaup]')){try{if(parent.dnaOpen){parent.dnaOpen('up');return}parent.location.hash='#dna'}catch(_){}return}
   if(e.target.closest('[data-dna]')){try{if(parent.dnaOpen){parent.dnaOpen('dl');return}parent.location.hash='#dna'}catch(_){}return}
   if(e.target.closest('[data-guide]')){const qs=LQ.filter(vis),f=qs.findIndex(p=>!has(p.id));sessionStorage.setItem('lsq',f<0?qs.length:f);sessionStorage.setItem('gw',f<0?2:1);go('guide');return}
+  const of=e.target.closest('[data-onlyf]');if(of){try{sessionStorage.setItem('gn-nur-ausgefuellt',onlyF()?'0':'1')}catch(_){}of.setAttribute('aria-pressed',onlyF());$('none').textContent=onlyF()?'Hier hast du noch nichts ausgefüllt.':'Nichts gefunden – probier ein anderes Wort.';bFilter();return}
+  const ed=e.target.closest('[data-edit]');if(ed){const p=BYID[ed.dataset.edit];try{sessionStorage.setItem('gn-nur-ausgefuellt','0')}catch(_){}sessionStorage.setItem('gn-jumpq',p.id);go('bereich/'+p.bi);return}
+  const dl=e.target.closest('[data-del]');if(dl){delete S.val[dl.dataset.del];save();render();return}
   const wb=e.target.closest('[data-wear]');if(wb){S.wear=S.wear||{};S.wear[wb.dataset.wear]=!S.wear[wb.dataset.wear];save();render();return}
   const gs=e.target.closest('[data-gw]');if(gs){setGw(+gs.dataset.gw);return}
   const dx=e.target.closest('[data-dx]');if(dx){const id=dx.dataset.dx,on=(S.val[id]||{}).v!=='Ja';if(on)S.val[id]={v:'Ja'};else delete S.val[id];save();dx.setAttribute('aria-pressed',on);side();return}
@@ -574,10 +625,7 @@ document.addEventListener('click',e=>{
   if(e.target.closest('#suppadd')){const v=$('supp').value.trim();if(v){S.supp.push(v);save();render()}return}
 });
 document.addEventListener('input',e=>{
-  if(e.target.id==='qb'){const q=norm(e.target.value.trim());let n=0;
-    document.querySelectorAll('#blist .q').forEach(el=>{const p=BYID[el.dataset.q];const ok=!q||norm(p.n+' '+(p.fb||'')+' '+p.fr+' '+p.t+' '+p.id).includes(q);el.hidden=!ok;if(ok)n++});
-    document.querySelectorAll('#blist .sub-h').forEach(h=>{let el=h.nextElementSibling,any=false;while(el&&el.classList.contains('q')){if(!el.hidden)any=true;el=el.nextElementSibling}h.hidden=!any});
-    $('none').hidden=n>0}
+  if(e.target.id==='qb')bFilter();
   if(e.target.id==='qmess'){const q=norm(e.target.value.trim()),box=$('messres');if(q.length<2){box.innerHTML='';return}
     const hits=MESS.filter(p=>vis(p)&&norm(p.n+' '+(p.fb||'')+' '+p.t+' '+p.b).includes(q)).map(p=>[p,norm(p.n).startsWith(q)?0:norm(p.n).includes(q)?1:2]).sort((a,b)=>a[1]-b[1]).slice(0,6).map(x=>x[0]);
     box.innerHTML=hits.length?hits.map(card).join(''):'<div class="empty">Nicht gefunden – probier ein anderes Wort oder frag den GENEius-Chat.</div>';
