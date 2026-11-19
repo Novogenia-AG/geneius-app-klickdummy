@@ -1933,6 +1933,14 @@ section.br.br-off .br-testconf{display:none}
 .br-qbar .qa button{height:34px;border-radius:999px;display:inline-flex;align-items:center;gap:5px;padding:0 12px;font-weight:700;font-size:12.5px;background:#F3E6EF;color:var(--plum)}
 .br-qbar .qa button[aria-label]{width:34px;padding:0;justify-content:center}
 @media (max-width:980px){.br-qbar{bottom:12px;width:92%}.br-qbar p{font-size:14px}.br-chat{min-height:220px}}
+/* Hinweis Lifestyle-Beratung, Freigaben im Raum (NOVO LEGAL 19.11.2026) */
+.br .br-hint{font-size:12.5px;line-height:1.45;opacity:.9;margin:8px 0 0;max-width:62ch}
+.br-dlg .br-hint{color:var(--soft);font-size:12.5px;background:#F7F1F5;border-radius:12px;padding:10px 12px}
+.br-acc{background:rgba(255,255,255,.08);border-radius:16px;padding:10px;font-size:12.5px;display:grid;gap:6px}
+.br-acc[hidden]{display:none}
+.br-acc .row{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.br-acc button{height:30px;border-radius:999px;padding:0 12px;font-weight:700;font-size:12px;background:#F3E6EF;color:var(--plum);flex:none}
+.br-dlg .br-scope{font-size:13px;color:var(--ink);margin-bottom:12px}
 /* BERATUNG:END */</style>
 <style id="nx-css">/* NU-EXTRA:BEGIN – Daten hochladen (Layout-Varianten) + Test Recalculation (GENE NUGGETS, 16.11.2026) */
 .ract.dub{grid-template-columns:1fr}
@@ -2650,7 +2658,8 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
     <div>
       <div class="eyebrow">Persönlich · per Video</div>
       <h1 id="h-br">Online-Beratung</h1>
-      <p class="lead">Sprich per Video mit deiner Beraterin. Sie geht mit dir deine Berichte durch, erklärt deinen Bedarf und deine Lebensmittel und schaut deine Medikamente mit dir an.</p>
+      <p class="lead">Sprich per Video mit deiner Beraterin. Sie geht mit dir deine Ernährungs- und Lifestyle-Berichte durch, erklärt dir deinen Nährstoffbedarf und deine Lebensmittelliste und zeigt dir, wie du die Empfehlungen im Alltag umsetzt.</p>
+      <p class="br-hint"><b>Lifestyle-Beratung, keine ärztliche oder genetische Beratung.</b> Deine Beraterin erklärt dir deine Ernährungs- und Lifestyle-Berichte. Fragen zu Krankheiten, Medikamenten oder Diagnosen besprichst du bitte mit deiner Ärztin oder deinem Arzt.</p>
       <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span><button type="button" class="br-demooff" data-br="off">Demo: Betreuer ohne Online-Beratung</button></div>
     </div>
     <button type="button" class="br-testconf" data-br="test"><span class="bci"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg></span><b>Konferenz testen</b><small>Prüf vor dem Termin Kamera, Mikrofon und Lautsprecher und sieh dir den Beratungsraum an.</small><span class="bgo">Test starten <svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></button>
@@ -2667,7 +2676,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
       <div class="br-card" style="margin-top:18px"><h2>Von deiner Beraterin übergeben</h2><div id="brHand"></div></div>
     </div>
   </div>
-  <p class="br-note">Termine können bis 24 Stunden vorher kostenlos storniert werden. Die Bezahlung läuft über den GENEius-Shop (im Klickdummy wird nichts abgebucht). Deine Berichte sieht die Beraterin nur während des Termins und nur mit deiner Einwilligung.</p>
+  <p class="br-note">Termine können bis 24 Stunden vorher kostenlos storniert werden. Bezahlt wird bei der Buchung über den GENEius-Shop, der Termin hat einen festen Preis (Endpreis inkl. gesetzlicher USt; im Klickdummy wird nichts abgebucht). Deine Berichte kann deine Beraterin nur rund um euren Termin öffnen (ab 10 Minuten vorher bis höchstens 90 Minuten nach Beginn) und nur mit deiner Einwilligung. Jeder Zugriff deiner Beraterin auf deine Berichte, deinen Bedarf und deine Lebensmittelliste wird protokolliert. Auf Wunsch schicken wir dir das Protokoll. Bild und Ton werden nicht aufgezeichnet oder gespeichert. Gespeichert werden der Chat mit deinen Fragen, die Unterlagen, die dir deine Beraterin übergibt, und ein Protokoll ihrer Zugriffe auf deine Berichte.<br>Demo: Alle Tester nutzen dasselbe Beispielkonto. Bitte keine echten Gesundheitsangaben in den Chat schreiben.</p>
 </div>
 </section>
 <!-- BERATUNG:END -->
@@ -4715,7 +4724,10 @@ if(document.readyState==='loading')addEventListener('DOMContentLoaded',onRoute);
 <script id="br-js">/* BERATUNG:BEGIN – Online-Beratung, Kundenseite.
    Backend geneius-beratung (PocketBase/Go, Quelle GENE NUGGETS\beratung). Gegenseite: NovoPilot (Berater).
    Gemeinsamer Zustand rooms.state {sessionId,view,reportId,spread,htmlAnchor,highlight{page,x,y,item?},by,at} – hier nur LESEN.
-   spread nach Buchlogik: 0 = Titelseite rechts, sonst linke (gerade) Seite. highlight.page = null → x/y relativ zur ganzen Ansicht. */
+   spread nach Buchlogik: 0 = Titelseite rechts, sonst linke (gerade) Seite. highlight.page = null → x/y relativ zur ganzen Ansicht.
+   Freigaben (19.11.2026): Beraterin sendet access-request {scope:'reports'|'account'} → Dialog → POST /api/booking/<id>/access {scope,granted};
+   der Server legt access-grant / access-deny / consent-revoke {scope,granted} an und liefert Berichte bzw. Kundenkonto nur nach Freigabe.
+   Keine Medikamente im Raum (NOVO LEGAL 02-1), fester Terminpreis ohne Nachverrechnung (01-5). */
 (()=>{
 const BASE=location.hostname==='geneius-app.daniel.internal.novogenia.com'?location.origin+'/bapi':'https://geneius-beratung.daniel.internal.novogenia.com';
 const SDK='https://cdn.jsdelivr.net/npm/pocketbase@0.26.2/dist/pocketbase.umd.js';
@@ -4762,16 +4774,18 @@ function lock(){
   document.querySelectorAll('a[data-r="beratung"]').forEach(a=>{a.classList.toggle('br-locked',off);if(off){a.setAttribute('aria-disabled','true');a.title='Dein Betreuer bietet keine Online-Beratung an'}else{a.removeAttribute('aria-disabled');a.removeAttribute('title')}});
   sec.classList.toggle('br-off',off);
   const n=adv?adv.name:'Dein Betreuer';
-  q('#brLock').innerHTML=off?`<div class="br-lockic">${LOCK}</div><h2>Online-Beratung nicht verfügbar</h2><p>${esc(n)} bietet keine Online-Beratung per Video an. Sobald sie verfügbar ist, kannst du hier Termine buchen.</p><p class="sm">Fragen kannst du jederzeit im Coach stellen.</p>
+  q('#brLock').innerHTML=off?`<div class="br-lockic">${LOCK}</div><h2>Online-Beratung nicht verfügbar</h2><p>${esc(n)} bietet keine Online-Beratung per Video an. Sobald sie verfügbar ist, kannst du hier Termine buchen.</p><p class="sm">Fragen kannst du jederzeit unserem KI-Coach stellen. Er ist eine KI, kein Mensch.</p>
     <div class="br-test"><button type="button" class="btn glass sm" data-br="on">Demo: Online-Beratung einschalten</button></div>`:'';
 }
 const LOCK='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
-async function setConsult(on){try{await init();await pb.send('/api/demo/consult',{method:'POST',body:{on}});await load();toast(on?'Online-Beratung eingeschaltet':'Online-Beratung ausgeschaltet: Reiter ist jetzt gesperrt')}catch(e){toast(e.message||'Fehlgeschlagen')}}
+/* S4: nur die Beraterin darf schalten. Klickdummy: kurz als Demo-Beraterin anmelden (Token wird nicht gespeichert). */
+async function setConsult(on){try{await init();const r=await fetch(BASE+'/api/demo/login',{method:'POST',headers:{'Content-Type':'application/json'},body:'{"role":"advisor"}'});const j=await r.json();if(!r.ok)throw new Error(j.message||'Demo-Login fehlgeschlagen');
+    const x=await fetch(BASE+'/api/demo/consult',{method:'POST',headers:{'Content-Type':'application/json',Authorization:j.token},body:JSON.stringify({on})});if(!x.ok)throw new Error((await x.json()).message||'Fehlgeschlagen');await load();toast(on?'Online-Beratung eingeschaltet':'Online-Beratung ausgeschaltet: Reiter ist jetzt gesperrt')}catch(e){toast(e.message||'Fehlgeschlagen')}}
 function renderAdv(){
-  const ini=adv.name.replace(/^(Mag\.|Dr\.|Prof\.)\s*/g,'').split(' ').map(x=>x[0]).join('').slice(0,2);
+  const ini=adv.name.replace(/^(Mag\.|Dr\.|Prof\.)\s*/g,'').replace(/\s*\(.*\)$/,'').split(' ').map(x=>x[0]).join('').slice(0,2);
   const per=eur(adv.rateEur*adv.slotMin/60);
   q('#brAdv').innerHTML=`<h2>Deine Beraterin</h2><div class="br-adv"><div class="br-av">${adv.photo?`<img src="${esc(adv.photo)}" alt="">`:esc(ini)}</div><div><h3>${esc(adv.name)}</h3><div class="t">${esc(adv.title||'')}</div><div class="br-langs">${(adv.langs||[]).map(l=>`<span>${esc(l)}</span>`).join('')}</div><p>${esc(adv.bio||'')}</p></div></div>
-  <div class="br-price"><div><b>${eur(adv.rateEur)}</b><small>pro Stunde</small></div><div><b>${per}</b><small>pro Termin (${adv.slotMin} Min.)</small></div></div>`;
+  <div class="br-price"><div><b>${eur(adv.rateEur)}</b><small>pro Stunde</small></div><div><b>${per}</b><small>pro Termin (${adv.slotMin} Min.)</small></div></div><p class="br-hint">Endpreise inkl. gesetzlicher USt</p>`;
   q('#brDur').textContent=adv.slotMin+' Minuten · '+per;
 }
 function renderSlots(){
@@ -4786,7 +4800,7 @@ function renderMine(){
   const up=mine.filter(b=>b.status!=='done'&&new Date(b.end).getTime()+60*60e3>Date.now());
   const past=mine.filter(b=>!up.includes(b)).slice(-3).reverse();
   const card=b=>{const live=canJoin(b),soon=new Date(b.start).getTime()-Date.now();
-    return `<div class="br-appt ${live?'live':''}"><div class="h"><div><b>${esc(when(b.start))}</b><small>${b.minutes} Min. mit ${esc(b.advisorName)} · ${b.free?'kostenlos':eur(b.priceEur)}${b.status==='done'?` · abgerechnet ${b.billedMinutes} Min.`:''}</small></div><span class="br-tag ${live?'ok':''}">${b.status==='done'?'Erledigt':live?'Jetzt':'Gebucht'}</span></div>
+    return `<div class="br-appt ${live?'live':''}"><div class="h"><div><b>${esc(when(b.start))}</b><small>${b.minutes} Min. mit ${esc(b.advisorName)} · ${b.free?'kostenlos':eur(b.priceEur)}${b.status==='done'?` · beraten ${b.billedMinutes} Min.`:''}</small></div><span class="br-tag ${live?'ok':''}">${b.status==='done'?'Erledigt':live?'Jetzt':'Gebucht'}</span></div>
     ${b.status!=='done'?`<div class="inv">${ic('send')}<span>Einladung per E-Mail mit Kalendereintrag an ${esc(pb.authStore.record.email)} gesendet. Wir erinnern dich 10 Minuten vorher in der App.</span></div>
     <div class="br-acts">${live?`<button type="button" class="btn plum sm" data-brjoin="${b.id}">${ic('camera','sm')}Beitreten</button>`:`<button type="button" class="btn ghost sm" disabled title="Beitreten ist ab 10 Minuten vor Beginn möglich">${ic('camera','sm')}Beitreten ab ${dt(new Date(new Date(b.start).getTime()-10*60e3),{hour:'2-digit',minute:'2-digit'})}</button>`}
       <button type="button" class="btn ghost sm" data-brics="${b.id}">${ic('cal','sm')}Kalender</button>
@@ -4807,8 +4821,9 @@ function book(id){
   const s=slots.find(x=>x.id===id);if(!s)return;
   const mins=Math.round((new Date(s.end)-new Date(s.start))/60e3),price=adv.rateEur*mins/60;
   const o=dlg(`<h3>Termin buchen</h3><p>Prüfe deinen Termin. Nach der Buchung bekommst du eine E-Mail mit Kalendereinladung.</p>
-   <div class="br-sum"><div><span>Wann</span><b>${esc(when(s.start))}</b></div><div><span>Dauer</span><b>${mins} Minuten</b></div><div><span>Mit</span><b>${esc(adv.name)}</b></div><div><span>Stundensatz</span><b>${eur(adv.rateEur)}</b></div><div><span>Preis</span><b>${eur(price)}</b></div></div>
-   <p>Bezahlt wird über den GENEius-Shop mit deiner hinterlegten Zahlungsart. Dauert die Beratung länger, wird minutengenau nachverrechnet. Im Klickdummy wird nichts abgebucht.</p>
+   <div class="br-sum"><div><span>Wann</span><b>${esc(when(s.start))}</b></div><div><span>Dauer</span><b>${mins} Minuten</b></div><div><span>Mit</span><b>${esc(adv.name)}</b></div><div><span>Stundensatz</span><b>${eur(adv.rateEur)}</b></div><div><span>Preis</span><b>${eur(price)} (Endpreis inkl. gesetzlicher USt)</b></div></div>
+   <p>Bezahlt wird bei der Buchung über den GENEius-Shop mit deiner hinterlegten Zahlungsart. Der Termin hat einen festen Preis, es wird nichts nachverrechnet. Im Klickdummy wird nichts abgebucht.</p>
+   <p class="br-hint"><b>Lifestyle-Beratung, keine ärztliche oder genetische Beratung.</b> Deine Beraterin erklärt dir deine Ernährungs- und Lifestyle-Berichte. Fragen zu Krankheiten, Medikamenten oder Diagnosen besprichst du bitte mit deiner Ärztin oder deinem Arzt.</p>
    <div class="acts"><button type="button" class="btn ghost" data-brx>Abbrechen</button><button type="button" class="btn plum" id="brBuy">${ic('check','sm')}Zahlungspflichtig buchen · ${eur(price)}</button></div>`);
   o.querySelector('#brBuy').onclick=async e=>{e.target.disabled=true;
     try{await pb.send('/api/book',{method:'POST',body:{slot:id}});o.close();toast('Gebucht! Die Einladung ist unterwegs.');day=null;await load()}
@@ -4831,17 +4846,15 @@ async function demoNow(){
 let media=null;
 async function precheck(id){
   const b=mine.find(x=>x.id===id)||await pb.collection('bookings').getOne(id);
-  const o=dlg(`<h3>Bereit für deine Beratung?</h3><p>Wir prüfen kurz Kamera und Mikrofon.</p>
+  const o=dlg(`<h3>Bereit für deine Beratung?</h3><p>Wir prüfen kurz Kamera und Mikrofon. Das Testbild bleibt auf deinem Gerät. Übertragen wird erst, wenn du beitrittst.</p>
    <div class="br-prev"><video autoplay playsinline muted></video><div class="msg">Kamera wird gestartet …</div></div>
    <div class="br-ok"><span id="brCam">… Kamera</span><span id="brMic">… Mikrofon</span></div><div class="br-meter"><i id="brLvl"></i></div>
-   <label class="br-check"><input type="checkbox" id="brCons" ${b.consentAt?'checked':''}><span>Ich willige ein, dass die Beratung per Video stattfindet und meine Beraterin während dieses Termins meine Berichte, meinen Nährstoffbedarf, meine Lebensmittel und meine Medikamentenauswertung öffnen darf. Es wird nichts aufgezeichnet. Jeder Zugriff wird protokolliert. Ich kann die Beratung jederzeit beenden.</span></label>
-   <div class="acts"><button type="button" class="btn ghost" data-brx>Später</button><button type="button" class="btn plum" id="brGo" disabled>${ic('camera','sm')}Beitreten</button></div>`);
-  const v=o.querySelector('video'),msg=o.querySelector('.msg'),go=o.querySelector('#brGo'),cons=o.querySelector('#brCons');
-  const upd=()=>{go.disabled=!cons.checked};cons.onchange=upd;upd();
+   <p class="br-hint"><b>Vor deiner Beratung.</b> Die Beratung läuft per Video direkt zwischen dir und ${esc(b.advisorName)}. Bild und Ton werden nicht aufgezeichnet oder gespeichert. Gespeichert werden der Chat mit deinen Fragen, die Unterlagen, die dir ${esc(b.advisorName)} übergibt, und ein Protokoll ihrer Zugriffe. Möchte sie im Termin deine Berichte oder dein Kundenkonto öffnen, fragt dich die App vorher. Verantwortlich: Novogenia Marketing GmbH.</p>
+   ${b.consentAt?`<p class="br-hint">Du hast am ${esc(dt(b.consentAt,{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}))} Uhr den Einblick in deine Berichte erlaubt. Du kannst das im Raum mit „Einblick beenden“ ändern.</p>`:''}
+   <div class="acts"><button type="button" class="btn ghost" data-brx>Später</button><button type="button" class="btn plum" id="brGo">${ic('camera','sm')}Beitreten</button></div>`);
+  const v=o.querySelector('video'),msg=o.querySelector('.msg'),go=o.querySelector('#brGo');
   let raf=0,ac=null;
-  go.onclick=async()=>{go.disabled=true;
-    try{if(!b.consentAt)await pb.send('/api/booking/'+id+'/consent',{method:'POST'});o.joined=true;o.close();room(id)}
-    catch(e){go.disabled=false;toast(e.message)}};
+  go.onclick=()=>{o.joined=true;o.close();room(id)};
   try{media=await navigator.mediaDevices.getUserMedia({video:{width:640,height:480},audio:true});v.srcObject=media;msg.remove();
     o.querySelector('#brCam').innerHTML='<span class="y">✓ Kamera funktioniert</span>';
     ac=new AudioContext();const an=ac.createAnalyser();ac.createMediaStreamSource(media).connect(an);const d=new Uint8Array(an.fftSize);let peak=0;
@@ -4859,10 +4872,9 @@ async function room(id){
   const b=T?{id:'test',advisorName:adv?adv.name:'Deine Beraterin'}:await pb.collection('bookings').getOne(id);
   const rec=T?{id:'',state:{view:'reports'}}:await pb.collection('rooms').getFirstListItem(`booking="${id}"`);
   let reps=[];try{reps=(await pb.send('/api/my/reports',{})).items||[]}catch(e){}
-  let meds=null;try{meds=await pb.send('/api/my/meds',{})}catch(e){}
-  R={b,rec,st:rec.state||{view:'reports'},reps,meds,test:T,chat:[],qShown:null,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
+  R={b,rec,st:rec.state||{view:'reports'},reps,test:T,asks:{},chat:[],qShown:null,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
   const el=document.createElement('div');el.className='br-room';el.setAttribute('role','dialog');el.setAttribute('aria-label','Online-Beratung');
-  el.innerHTML=`<div class="br-rtop">${T?'<span class="live test">TEST</span><b>Testkonferenz · nur du siehst und hörst dich</b>':`<span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b>`}<span class="tm" id="brTm">00:00</span><span class="sp"></span></div>
+  el.innerHTML=`<div class="br-rtop">${T?'<span class="live test">TEST</span><b>Testkonferenz · Nur du siehst und hörst dich. Es wird nichts übertragen oder gespeichert.</b>':`<span class="live">LIVE</span><b>Online-Beratung mit ${esc(b.advisorName)}</b>`}<span class="tm" id="brTm">00:00</span><span class="sp"></span></div>
    <div class="br-rbody vmain" id="brBody">
    <div class="br-mainc">
     <div class="br-frame" id="brFrame">
@@ -4881,7 +4893,8 @@ async function room(id){
     </div>
    </div>
    <div class="br-side"><div class="br-replist"><h3>Deine Berichte</h3><div id="brReps"></div></div>
-    <div class="br-chat"><h3>Chat &amp; Fragen <span class="qn" id="brQn" hidden></span></h3><div class="list" id="brChat"><div class="br-empty">Noch keine Nachrichten. Stell hier deine Fragen.</div></div>
+    <div class="br-acc" id="brAcc" hidden></div>
+    <div class="br-chat"><h3>Chat &amp; Fragen <span class="qn" id="brQn" hidden></span></h3><div class="list" id="brChat"><div class="br-empty">${CHAT0}</div></div>
      <div class="in"><input id="brMsg" type="text" maxlength="500" placeholder="Nachricht oder Frage …" aria-label="Nachricht"><button type="button" data-brm="send" aria-label="Senden">${ic('send')}</button></div>
      <label class="ask"><input type="checkbox" id="brAsk"> Als Frage stellen</label></div></div>
    </div>`;
@@ -4900,9 +4913,13 @@ async function room(id){
   R.unsub.push(await pb.collection('events').subscribe('*',e=>e.action==='create'&&onEv(e.record),{filter:`booking="${id}"`}));
   try{(await pb.collection('events').getFullList({filter:`booking="${id}" && (type="chat" || type="q-show" || type="q-done")`,sort:'created'})).forEach(e=>chatEv(e.type,e.data||{},e.from))}catch(e){}
   await send('hello',{role:'customer'});
-  follow();draw();renderChat();
+  /* Anfragen der Beraterin, die vor dem Beitreten kamen und noch unbeantwortet sind */
+  try{const last={};(await pb.collection('events').getFullList({filter:`booking="${id}" && (type="access-request" || type="access-grant" || type="access-deny" || type="consent-revoke")`,sort:'created'})).forEach(e=>{const sc=(e.data&&e.data.scope)||'reports';last[sc]=e.type});
+    Object.keys(last).forEach(sc=>{if(last[sc]==='access-request')askAccess(sc)})}catch(e){}
+  follow();draw();renderChat();renderAcc();
   el.addEventListener('click',onRoomClick);
 }
+const CHAT0='Noch keine Nachrichten. Stell hier deine Fragen zu deinen Berichten, deiner Ernährung und deinem Nährstoffbedarf. Fragen zu Krankheiten oder Medikamenten beantwortet deine Ärztin oder dein Arzt.';
 function send(type,data){if(R&&R.test)return Promise.resolve();return pb.collection('events').create({booking:R.b.id,type,data}).catch(()=>{})}
 async function onEv(ev){
   if(!R||ev.from!=='advisor')return;
@@ -4914,6 +4931,7 @@ async function onEv(ev){
     if(d.candidate){if(R.pc&&R.pc.remoteDescription)R.pc.addIceCandidate(d.candidate).catch(()=>{});else(R.ice=R.ice||[]).push(d.candidate)}
   }
   if(ev.type==='handover')handover(ev);
+  if(ev.type==='access-request')askAccess((ev.data&&ev.data.scope)==='account'?'account':'reports');
   if(ev.type==='chat'||ev.type==='q-show'||ev.type==='q-done'){chatEv(ev.type,ev.data||{},ev.from);renderChat();if(ev.type==='chat')toast((ev.data&&ev.data.q?'Frage von ':'Nachricht von ')+R.b.advisorName.replace(/^(Mag\.|Dr\.)\s*/,''))}
   if(ev.type==='bye'){toast('Die Beratung wurde beendet'+(ev.data&&ev.data.minutes?` (${ev.data.minutes} Minuten)`:'')+'. Danke!');leave(true)}
 }
@@ -4969,15 +4987,9 @@ function draw(){
   }else if(st.view==='food'){
     const src=document.getElementById('foodGrid');
     h=`<div class="pad br-clone" inert><h3>Deine Lebensmittel</h3>${src?src.innerHTML:''}</div>`;
-  }else if(st.view==='meds'){
-    /* Gruppen aus /api/my/meds (gleiche Daten wie beim Berater), spread = Gruppenindex */
-    const G=(R.meds&&R.meds.groups)||[];const i=Math.min(Math.max(st.spread||0,0),Math.max(G.length-1,0));const g=G[i];
-    h=G.length?`<div class="pad br-clone br-med"><h3>Deine Medikamente</h3><p class="br-medhint">${esc(R.meds.hint||'')}</p>
-      <div class="br-medchips">${G.map((x,k)=>`<button type="button" data-brmg="${k}" class="${k===i?'on':''}">${esc(x.group)}</button>`).join('')}</div>
-      <h4>${esc(g.group)}</h4><ul>${g.items.map(d=>`<li><div><b>${esc(d.name)}</b><small>${esc(d.note)}</small></div><span class="lv lv-${d.level}">${esc(d.label)}</span></li>`).join('')}</ul>
-      ${R.follow?'':`<div class="br-pnav"><button type="button" data-brmg="${i-1}" ${i<=0?'disabled':''}>‹ Zurück</button><button type="button" data-brmg="${i+1}" ${i>=G.length-1?'disabled':''}>Weiter ›</button></div>`}
-      <a class="br-medall" href="medikamente/index.html?embed=geneius" target="_blank" rel="noopener">Alle Medikamente in der Medikamenten-App ansehen ›</a></div>`
-      :'<div class="pad br-empty">Keine Medikamentendaten gefunden.</div>';
+  }else{
+    /* Ansicht, die diese App-Version nicht kennt (z. B. report-pdf, account): Hinweis statt leerer Bühne (A3). Medikamente gibt es im Raum nicht. */
+    h='<div class="pad br-empty">Deine Beraterin zeigt gerade etwas, das diese App-Version noch nicht anzeigen kann.</div>';
   }
   stage.innerHTML=h;if(keep)stage.appendChild(keep);
   ptr(stage,st);layout();
@@ -5040,13 +5052,35 @@ const who=m=>m.from==='customer'?'Du':(m.name||R.b.advisorName);
 function renderChat(){
   if(!R)return;const L=R.el.querySelector('#brChat');
   L.innerHTML=R.chat.length?R.chat.map(m=>m.q?`<div class="msg q ${m.done?'done':''} ${R.qShown===m.cid?'shown':''} ${m.from}"><div class="h"><span class="tag">Frage</span><b>${esc(who(m))}</b>${m.done?'<span class="ok">✓ abgeschlossen</span>':''}</div><p>${esc(m.text)}</p>
-      ${m.done?'':`<div class="qa">${R.qShown===m.cid?`<button type="button" data-brqs="">Ausblenden</button>`:`<button type="button" data-brqs="${m.cid}">Einblenden</button>`}<button type="button" class="dn" data-brqd="${m.cid}">Abschließen</button></div>`}</div>`
+      ${m.done?'':`<div class="qa">${R.qShown===m.cid?`<button type="button" data-brqs="">Ausblenden</button>`:`<button type="button" data-brqs="${esc(m.cid)}">Einblenden</button>`}<button type="button" class="dn" data-brqd="${esc(m.cid)}">Abschließen</button></div>`}</div>`
     :`<div class="msg ${m.from}"><b>${esc(who(m))}</b><p>${esc(m.text)}</p></div>`).join('')
-    :'<div class="br-empty">Noch keine Nachrichten. Stell hier deine Fragen.</div>';
+    :`<div class="br-empty">${CHAT0}</div>`;
   L.scrollTop=L.scrollHeight;
   const open=R.chat.filter(m=>m.q&&!m.done).length,n=R.el.querySelector('#brQn');n.hidden=!open;n.textContent=open+' offen';
   const s=R.chat.find(m=>m.cid===R.qShown),Q=R.el.querySelector('#brQ');Q.hidden=!s;
-  Q.innerHTML=s?`<div class="t"><span class="tag">Frage von ${esc(s.from==='customer'?(R.b.customerName||'dir'):who(s))}</span><p>${esc(s.text)}</p></div><div class="qa"><button type="button" class="dn" data-brqd="${s.cid}">${ic('check')} Abschließen</button><button type="button" data-brqs="" aria-label="Ausblenden">${ic('x')}</button></div>`:'';
+  Q.innerHTML=s?`<div class="t"><span class="tag">Frage von ${esc(s.from==='customer'?(R.b.customerName||'dir'):who(s))}</span><p>${esc(s.text)}</p></div><div class="qa"><button type="button" class="dn" data-brqd="${esc(s.cid)}">${ic('check')} Abschließen</button><button type="button" data-brqs="" aria-label="Ausblenden">${ic('x')}</button></div>`:'';
+}
+/* Freigaben: getrennt für Berichte (reports) und Kundenkonto (account). Nie automatisch, immer mit Dialog. */
+const SCOPE={reports:'deine Berichte',account:'dein Kundenkonto'};
+function askAccess(sc){
+  if(!R||R.test||R.asks[sc])return;const n=esc(R.b.advisorName);
+  const txt=sc==='account'
+   ?`<h3>Darf ${n} deinen Bedarf und deine Lebensmittelliste mit dir ansehen?</h3><p class="br-scope"><b>Einblick in dein Kundenkonto (freiwillig):</b> Mit „Erlauben“ willigst du ausdrücklich ein, dass ${n} rund um diesen Termin (ab 10 Minuten vorher bis höchstens 90 Minuten nach Beginn) deinen Nährstoffbedarf und deine Lebensmittelliste aus deinem Kundenkonto mit dir ansehen darf. Du kannst die Einwilligung jederzeit mit „Einblick beenden“ widerrufen. Bis dahin erfolgte Zugriffe bleiben davon unberührt. Jeder Zugriff wird protokolliert. Verantwortlich: Novogenia Marketing GmbH.</p>`
+   :`<h3>Darf ${n} deine Berichte mit dir ansehen?</h3><p class="br-scope"><b>Einblick in deine Berichte (freiwillig):</b> Mit „Erlauben“ willigst du ausdrücklich ein, dass ${n} rund um diesen Termin (ab 10 Minuten vorher bis höchstens 90 Minuten nach Beginn) deine Ernährungs- und Lifestyle-Berichte (sie enthalten genetische Daten) mit dir ansehen darf. Medizinische Befunde und deine Medikamentenauswertung sieht sie nicht. Du kannst die Einwilligung jederzeit mit „Einblick beenden“ widerrufen. Bis dahin erfolgte Zugriffe bleiben davon unberührt. Jeder Zugriff wird protokolliert. Verantwortlich: Novogenia Marketing GmbH.</p>`;
+  const o=dlg(txt+`<p>Die Beratung läuft auch ohne Freigabe weiter.</p><div class="acts"><button type="button" class="btn ghost" id="brNo">Ablehnen</button><button type="button" class="btn plum" id="brYes">${ic('check','sm')}Erlauben</button></div>`);
+  R.asks[sc]=o;o.addEventListener('close',()=>{if(R&&R.asks[sc]===o)delete R.asks[sc]});
+  o.querySelector('#brYes').onclick=()=>{setAccess(sc,true);o.close()};
+  o.querySelector('#brNo').onclick=()=>{setAccess(sc,false);o.close()};
+}
+async function setAccess(sc,on){
+  if(!R||R.test)return;
+  try{R.b=await pb.send('/api/booking/'+R.b.id+'/access',{method:'POST',body:{scope:sc,granted:on}});renderAcc();
+    toast(on?`Freigegeben: ${SCOPE[sc]}`:(sc==='account'?'Deine Beraterin kann deinen Bedarf und deine Lebensmittelliste ab jetzt nicht mehr abrufen. Das Video läuft weiter.':'Deine Beraterin kann deine Berichte ab jetzt nicht mehr öffnen oder laden. Was sie gerade schon anzeigt, bleibt bei ihr sichtbar, bis sie die Ansicht wechselt. Das Video läuft weiter.'))}
+  catch(e){toast(e.message||'Fehlgeschlagen')}
+}
+function renderAcc(){
+  if(!R||R.test)return;const el=R.el.querySelector('#brAcc');const on=[['reports','consentAt','Berichte'],['account','accountAt','Kundenkonto']].filter(x=>R.b[x[1]]);
+  el.hidden=!on.length;el.innerHTML=on.map(([sc,f,l])=>`<div class="row"><span>Einblick ${l}: erlaubt seit ${esc(dt(R.b[f],{hour:'2-digit',minute:'2-digit'}))} Uhr</span><button type="button" data-bracc="${sc}">Einblick beenden</button></div>`).join('');
 }
 function qAct(type,d){chatEv(type,d,'customer');renderChat();send(type,d)}
 function sendChat(){
@@ -5079,8 +5113,7 @@ function onRoomClick(e){
   if(b.dataset.brf==='self'){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));R.local.highlight=null;follow();draw();return}
   if(b.dataset.brf==='back'){R.follow=true;follow();draw();return}
   if(b.dataset.brr){if(R.follow){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));follow()}Object.assign(R.local,{view:'report',reportId:b.dataset.brr,spread:0,highlight:null});draw();return}
-  if(b.dataset.brmg!=null){const G=(R.meds&&R.meds.groups)||[];const k=+b.dataset.brmg;if(k<0||k>=G.length)return;
-    if(R.follow){R.follow=false;R.local=JSON.parse(JSON.stringify(R.st));follow()}Object.assign(R.local,{view:'meds',reportId:'pgx',spread:k,highlight:null});draw();return}
+  if(b.dataset.bracc){setAccess(b.dataset.bracc,false);return}
   if(b.dataset.brp){const r=rep(R.local.reportId);const dir=+b.dataset.brp;let L=R.local.spread||0;
     if(mobile()){const cur=pagesOf(R.local,r)[0]+dir;if(cur<1||cur>r.pages)return;L=cur===1?0:cur-(cur%2);R.local.mpage=cur}
     else{L=dir>0?(L===0?2:L+2):(L<=2?0:L-2);if(L>r.pages)return}
