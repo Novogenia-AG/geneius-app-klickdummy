@@ -26,7 +26,7 @@
             "en": 72
           },
           "tag": "3D-Animation",
-          "cap": "Omega-3 und deine Gene: Steigern Kapseln dein gutes Cholesterin? · KI-generierte Animation"
+          "cap": "Omega-3 und deine Gene: Steigern Kapseln dein gutes Cholesterin? · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -70,26 +70,27 @@
           "dur": {
             "de": 58
           },
-          "poster": "nuggets/themen/hdl.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Wie das gute Cholesterin auf Omega-3 reagiert"
+          "poster": "nuggets/themen/hdl.webp",
+          "tag": "KI-Animation",
+          "cap": "Wie das gute Cholesterin auf Omega-3 reagiert · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
           "h": "Omega-3 bleibt trotzdem wertvoll",
-          "p": "Auch wenn dein HDL nicht auf Omega-3 reagiert: Omega-3 unterstützt Herz und Gefäße, senkt die Triglyceride und wirkt entzündungshemmend. Fisch und Pflanzenöle sind außerdem besser als gesättigte tierische Fette. Für das Cholesterin gibt es eine Alternative: Phytosterole, vereinfacht gesagt das Cholesterin der Pflanzen. Sie konkurrieren im Darm mit dem Cholesterin. Für jedes Gramm Phytosterole landet ein Gramm weniger Cholesterin im Blut."
+          "p": "Auch wenn dein HDL nicht auf Omega-3 reagiert: EPA und DHA tragen zu einer normalen Herzfunktion bei (ab 250 mg EPA und DHA täglich). Fisch und Pflanzenöle sind außerdem eine gute Alternative zu gesättigten tierischen Fetten. Für das Cholesterin gibt es einen anderen Weg: Phytosterine, vereinfacht gesagt das Cholesterin der Pflanzen. Sie tragen zur Aufrechterhaltung eines normalen Cholesterinspiegels im Blut bei (ab 0,8 g täglich)."
         },
         {
           "t": "quiz",
-          "q": "Was ist eine gute Alternative, wenn Omega-3 dein HDL nicht verbessert?",
+          "q": "Was kann für dein Cholesterin eine Alternative sein, wenn Omega-3 dein HDL nicht anhebt?",
           "o": [
-            "Phytosterole, das Cholesterin der Pflanzen",
+            "Phytosterine, das Cholesterin der Pflanzen",
             "Mehr Butter und Sahne",
             "Ganz auf Fett verzichten",
             "Die doppelte Menge Fischöl"
           ],
           "c": 0,
-          "e": "Phytosterole verdrängen Cholesterin im Darm, sodass weniger davon ins Blut gelangt."
+          "e": "Phytosterine tragen zur Aufrechterhaltung eines normalen Cholesterinspiegels im Blut bei (ab 0,8 g täglich)."
         },
         {
           "t": "result"
@@ -102,25 +103,25 @@
           "pill": "Omega-3 wirkt",
           "title": "Omega-3 verbessert HDL-Cholesterin",
           "text": "Deine APOA1-Gene arbeiten mit Omega-3 zusammen. Mehrfach ungesättigte Fettsäuren heben dein gutes HDL-Cholesterin deutlich an.",
-          "rec": "Omega-3 aus fettem Fisch, Walnüssen und Pflanzenölen kann für dich ein wirksamer Weg sein, deine Cholesterinwerte zu verbessern."
+          "rec": "Deine Gene sprechen auf Omega-3 an. Fetter Fisch, Walnüsse und Pflanzenöle können für dich deshalb eine gute Wahl sein."
         },
         "B": {
           "pill": "Wirkt etwas",
           "title": "Omega-3 verbessert HDL-Cholesterin etwas",
           "text": "Deine APOA1-Gene arbeiten eingeschränkt, aber ausreichend gut. Omega-3 hebt dein HDL-Cholesterin etwas, aber weniger stark als bei anderen Menschen.",
-          "rec": "Omega-3 bleibt für dich sinnvoll. Einen Teil davon durch Phytosterole zu ersetzen, kann deine Cholesterinwerte zusätzlich unterstützen."
+          "rec": "Omega-3 aus Fisch und Pflanzenölen kann für dich sinnvoll bleiben. Phytosterine tragen zur Aufrechterhaltung eines normalen Cholesterinspiegels im Blut bei."
         },
         "D": {
           "pill": "Kein HDL-Effekt",
           "title": "Omega-3 hat keinen positiven Effekt auf HDL-Cholesterin",
           "text": "Deine APOA1-Gene reagieren nicht auf Omega-3. Zusätzliches Omega-3 hebt dein HDL-Cholesterin nicht weiter an.",
-          "rec": "Für Herz, Gefäße und Triglyceride bleibt Omega-3 trotzdem wertvoll. Um dein Cholesterin zu verbessern, können Phytosterole die passendere Wahl sein."
+          "rec": "Omega-3 hebt dein HDL nicht weiter an. EPA und DHA tragen trotzdem zu einer normalen Herzfunktion bei. Für dein Cholesterin können Phytosterine die passendere Wahl sein."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
           "text": "Ob Omega-3 dein gutes Cholesterin hebt, zeigt die Gene Story „Wirkung von Omega-3 auf HDL-Cholesterin“ in der Ernährungsanalyse.",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Fischöl bei dir das HDL verbessert oder ob Phytosterole der bessere Weg sind."
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob Fischöl bei dir das HDL verbessert oder ob Phytosterine der bessere Weg sind."
         }
       },
       "images": [
@@ -170,7 +171,7 @@
             "en": 63
           },
           "tag": "3D-Animation",
-          "cap": "Cholesterin und deine Gene: Gleiches Frühstück, anderes Cholesterin · KI-generierte Animation"
+          "cap": "Cholesterin und deine Gene: Gleiches Frühstück, anderes Cholesterin · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -192,7 +193,7 @@
         {
           "t": "text",
           "h": "Wenn der Filter schwächer ist",
-          "p": "Dein Bericht wertet dafür mehrere Gene aus, zum Beispiel LDLR und APOB. Funktionieren sie, filtern sie genug LDL aus dem Blut. Sind sie verändert, bleibt mehr LDL im Blut und dasselbe Essen lässt den Wert stärker steigen. Dazu kommt das APOE-Gen mit Typen wie E2, E3 und E4. Rund zwei Drittel der Menschen haben den Normaltyp E3/E3."
+          "p": "Dein Bericht wertet dafür mehrere Regulierungsgene aus, zum Beispiel LDLR. Funktionieren sie, filtern sie genug LDL aus dem Blut. Sind sie verändert, bleibt mehr LDL im Blut und dasselbe Essen lässt den Wert stärker steigen."
         },
         {
           "t": "quiz",
@@ -214,9 +215,10 @@
           "dur": {
             "de": 63
           },
-          "poster": "nuggets/themen/ldl.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Warum LDL das schlechte Cholesterin heißt"
+          "poster": "nuggets/themen/ldl.webp",
+          "tag": "KI-Animation",
+          "cap": "Warum LDL das schlechte Cholesterin heißt · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
@@ -252,7 +254,7 @@
           "pill": "Eingeschränkt",
           "title": "LDL-Cholesterinregulierung eingeschränkt",
           "text": "Deine Gene filtern etwas zu wenig LDL-Cholesterin aus deinem Blut. Dein Risiko für erhöhte LDL-Werte ist leicht erhöht.",
-          "rec": "Achte darauf, nicht zu viel Cholesterin über die Nahrung aufzunehmen. Weniger Trans- und gesättigte Fette sowie Omega-3 und Phytosterole können dich unterstützen."
+          "rec": "Achte darauf, nicht zu viel Cholesterin über die Nahrung aufzunehmen. Weniger Trans- und gesättigte Fette helfen dabei. Phytosterine tragen zur Aufrechterhaltung eines normalen Cholesterinspiegels im Blut bei."
         },
         "D": {
           "pill": "Stark eingeschränkt",
@@ -314,8 +316,8 @@
             "de": 95,
             "en": 109
           },
-          "tag": "Animation",
-          "cap": "Triglyceride und deine Gene: Warum dieselbe Pizza unterschiedlich wirkt · KI-generierte Animation"
+          "tag": "KI-Animation",
+          "cap": "Triglyceride und deine Gene: Warum dieselbe Pizza unterschiedlich wirkt · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -443,8 +445,8 @@
             "de": 104,
             "en": 116
           },
-          "tag": "Animation",
-          "cap": "Homocystein und deine Gene: Wann Vitamin B2 dein Herz schützt · KI-generierte Animation"
+          "tag": "KI-Animation",
+          "cap": "Homocystein und deine Gene: Welche Rolle Vitamin B2 spielt · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -466,19 +468,19 @@
         {
           "t": "text",
           "h": "Die Sache mit Vitamin B2",
-          "p": "In diesem Kapitel gibt es einen zweiten Balken. Vitamin B2 kann Homocystein ebenfalls senken, aber nur dann, wenn die dafür zuständigen MTHFR-Gene nicht intakt sind. Deshalb ist dieser Balken umgedreht: Ein „defektes“ Ergebnis heißt hier, dass dir Vitamin B2 beim Abbau hilft. Bei intakten Genen hat Vitamin B2 keinen Einfluss auf deinen Homocysteinspiegel."
+          "p": "In diesem Kapitel gibt es einen zweiten Balken. Er zeigt, ob deine MTHFR-Gene zu den Varianten gehören, bei denen Studien einen Zusammenhang zwischen Vitamin B2 und dem Homocysteinwert gefunden haben. Deshalb ist dieser Balken umgedreht: Ein „defektes“ Ergebnis heißt hier, dass dieser Zusammenhang bei dir besteht. Bei intakten Genen spielt Vitamin B2 dafür keine Rolle."
         },
         {
           "t": "quiz",
-          "q": "Wann hilft Vitamin B2, Homocystein zu senken?",
+          "q": "Bei wem fanden Studien einen Zusammenhang zwischen Vitamin B2 und Homocystein?",
           "o": [
-            "Immer, bei jedem Menschen",
-            "Nur wenn die MTHFR-Gene nicht intakt sind",
-            "Nur zusammen mit Kaffee",
-            "Nie, B2 hat nichts mit Homocystein zu tun"
+            "Bei jedem Menschen",
+            "Bei Menschen mit nicht intakten MTHFR-Genen",
+            "Nur bei Kaffeetrinkern",
+            "Bei niemandem"
           ],
           "c": 1,
-          "e": "Vitamin B2 senkt Homocystein nur, wenn die MTHFR-Gene nicht intakt sind. Bei intakten Genen hat es keinen Einfluss."
+          "e": "Studien fanden diesen Zusammenhang bei Menschen mit nicht intakten MTHFR-Genen. Bei intakten Genen spielt Vitamin B2 dafür keine Rolle."
         },
         {
           "t": "text",
@@ -502,7 +504,7 @@
         }
       ],
       "result": {
-        "story": "Herz-Schutz vor Homocystein",
+        "story": "Homocystein-Regulierung",
         "report": "Lifestyle-Bericht · Gesund ernähren",
         "E": {
           "pill": "Reicht aus",
@@ -514,19 +516,19 @@
           "pill": "Beeinträchtigt",
           "title": "Homocysteinregulierung beeinträchtigt",
           "text": "Deine Gene können Homocystein nur eingeschränkt regulieren. Die Umwandlung in Methionin läuft langsamer.",
-          "rec": "Mehr Vitamin B6 und B12 in deiner Ernährung kann die Umwandlung unterstützen. Ob dir zusätzlich Vitamin B2 hilft, zeigt der zweite Balken in deinem Bericht."
+          "rec": "Vitamin B6 und B12 tragen zu einem normalen Homocystein-Stoffwechsel bei. Achte auf eine gute Versorgung über deine Ernährung. Welche Rolle Vitamin B2 bei dir spielt, zeigt der zweite Balken in deinem Bericht."
         },
         "D": {
           "pill": "Funktioniert nicht",
           "title": "Homocysteinregulierung funktioniert nicht",
           "text": "Deine Gene können Homocystein nicht ausreichend regulieren. Es wird zu langsam umgewandelt und kann das Herz belasten.",
-          "rec": "Mehr Vitamin B6 und B12 kann die Umwandlung unterstützen. Besprich deinen Homocysteinwert und eine mögliche Nahrungsergänzung mit deiner Ärztin oder deinem Arzt."
+          "rec": "Vitamin B6 und B12 tragen zu einem normalen Homocystein-Stoffwechsel bei. Achte auf eine gute Versorgung und besprich deinen Homocysteinwert mit deiner Ärztin oder deinem Arzt."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
-          "text": "Wie gut dein Körper Homocystein abbaut, zeigt die Gene Story „Herz-Schutz vor Homocystein“ in der Ernährungsanalyse.",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob du mehr Vitamin B6 und B12 brauchst und ob dir Vitamin B2 hilft."
+          "text": "Wie gut dein Körper Homocystein abbaut, zeigt die Gene Story „Homocystein-Regulierung“ in der Ernährungsanalyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie gut deine Gene Homocystein regulieren und welche Rolle Vitamin B6, B12 und B2 dabei spielen."
         }
       },
       "images": [
@@ -572,9 +574,10 @@
           "dur": {
             "de": 73
           },
-          "poster": "nuggets/themen/salz.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Ist Salz wirklich für jeden schlecht?"
+          "poster": "nuggets/themen/salz.webp",
+          "tag": "KI-Animation",
+          "cap": "Ist Salz wirklich für jeden schlecht? · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
@@ -704,7 +707,7 @@
           "dur": {
             "de": 233
           },
-          "poster": "nuggets/themen/burnout.jpg",
+          "poster": "nuggets/themen/burnout.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie ein Burnout entsteht"
         },
@@ -770,19 +773,19 @@
           "pill": "Stressfest",
           "title": "Bessere Leistung in Stresssituationen",
           "text": "Deine COMT-Gene bauen Dopamin effektiv ab, dein Gehirn kommt nach Stress schnell zur Ruhe. Das bedeutet bessere Leistung unter Druck, hohe emotionale Belastbarkeit und eine geringe Veranlagung zu Impulsivität.",
-          "rec": "Du bist nicht besonders gefährdet, einen Burnout zu erleiden. Pausen, Bewegung und guter Schlaf bleiben trotzdem gute Gewohnheiten."
+          "rec": "Deine Gene helfen dir, mit Stress gut umzugehen. Pausen, Bewegung und guter Schlaf bleiben trotzdem gute Gewohnheiten."
         },
         "B": {
           "pill": "Etwas empfindlicher",
           "title": "Etwas schlechtere Leistung in Stresssituationen",
           "text": "Deine COMT-Gene bauen Dopamin langsamer ab als vorgesehen. Unter Stress leistest du etwas weniger, bist emotional etwas weniger belastbar und neigst etwas mehr zu Impulsivität.",
-          "rec": "Du bist etwas mehr gefährdet als andere. Ein stressarmer Alltag mit Pausen, Bewegung und klaren Grenzen kann für dich besonders sinnvoll sein."
+          "rec": "Stress kann dich etwas stärker belasten als andere. Ein Alltag mit Pausen, Bewegung und klaren Grenzen kann für dich besonders sinnvoll sein."
         },
         "D": {
           "pill": "Stressempfindlich",
           "title": "Schlechtere Leistung in Stresssituationen",
           "text": "Deine COMT-Gene bauen Dopamin nicht so schnell ab, wie es sollte. Dein Gehirn bleibt nach Stress lange übererregt: geringere Leistung unter Druck, geringe emotionale Belastbarkeit und eine höhere Veranlagung zu Impulsivität.",
-          "rec": "Du bist deutlich mehr gefährdet, einen Burnout zu erleiden. Stress gezielt zu verringern, ist für dich besonders wichtig. Bei anhaltender Erschöpfung sprich mit deiner Ärztin oder deinem Arzt."
+          "rec": "Stress belastet dich stärker als andere. Stress gezielt zu verringern, kann für dich besonders wichtig sein. Bei anhaltender Erschöpfung sprich mit deiner Ärztin oder deinem Arzt."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -834,9 +837,10 @@
           "dur": {
             "de": 123
           },
-          "poster": "nuggets/themen/alkohol.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie das Gehirn Dopamin ausschüttet und wieder abbaut"
+          "poster": "nuggets/themen/alkohol.webp",
+          "tag": "Original + KI",
+          "cap": "Daniel erklärt, wie das Gehirn Dopamin ausschüttet und wieder abbaut · zweiter Teil: KI-generierte Animation, Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
@@ -858,7 +862,7 @@
         {
           "t": "text",
           "h": "Schnelle und langsame Kopien",
-          "p": "Das COMT-Gen gibt es in einer schnellen und einer langsamen Version. 85 % der Menschen haben mindestens eine schnelle Kopie. 15 % haben zwei langsame: Ihr Gehirn baut Dopamin drei- bis viermal langsamer ab. Schöne Momente fühlen sich für sie intensiver an, sie sind oft neugieriger und aufmerksamer. Gleichzeitig fühlen sich Alkohol und Glücksspiel lohnender an. Deshalb bringen Studien diese Variante mit einem höheren Suchtrisiko in Verbindung."
+          "p": "Das COMT-Gen gibt es in einer schnellen und einer langsamen Version. 85 % der Menschen haben mindestens eine schnelle Kopie. 15 % haben zwei langsame: Ihr Gehirn baut Dopamin drei- bis viermal langsamer ab. Schöne Momente fühlen sich für sie intensiver an, sie sind oft neugieriger und aufmerksamer. Gleichzeitig fühlen sich Alkohol und Glücksspiel lohnender an."
         },
         {
           "t": "quiz",
@@ -875,7 +879,7 @@
         {
           "t": "text",
           "h": "Eine Veranlagung ist kein Schicksal",
-          "p": "Ein erhöhtes Risiko bedeutet nicht, dass du abhängig wirst. Umwelt und Lebensstil spielen ebenfalls eine wichtige Rolle. Das Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Der Bericht empfiehlt allen: die Menge begrenzen, regelmäßig alkoholfreie Tage einlegen, Stress gesund abbauen und dich mit Menschen umgeben, die dich dabei unterstützen. Merkst du, dass dir das Aufhören schwerfällt, ist es in Ordnung, Hilfe zu suchen, etwa bei einer Ärztin, einem Psychologen oder in einer Selbsthilfegruppe."
+          "p": "Eine Veranlagung ist kein Schicksal. Umwelt und Lebensstil spielen eine wichtige Rolle. Das Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Der Bericht empfiehlt allen: die Menge begrenzen, regelmäßig alkoholfreie Tage einlegen, Stress gesund abbauen und dich mit Menschen umgeben, die dich dabei unterstützen. Merkst du, dass dir das Aufhören schwerfällt, ist es in Ordnung, Hilfe zu suchen, etwa bei einer Ärztin, einem Psychologen oder in einer Selbsthilfegruppe."
         },
         {
           "t": "quiz",
@@ -897,21 +901,21 @@
         "story": "Alkohol",
         "report": "Lifestyle-Bericht · Entgiften",
         "E": {
-          "pill": "Normales Risiko",
-          "title": "Risiko für Alkoholabhängigkeit normal",
-          "text": "Deine COMT-Gene bauen Dopamin in normaler Geschwindigkeit ab. Dein genetisches Risiko, alkoholabhängig zu werden, ist nicht erhöht.",
+          "pill": "Normal",
+          "title": "Dopamin-Abbau normal",
+          "text": "Deine COMT-Gene bauen Dopamin in normaler Geschwindigkeit ab.",
           "rec": "Ein bewusster Umgang mit Alkohol bleibt trotzdem sinnvoll: die Menge begrenzen und regelmäßig alkoholfreie Tage einlegen."
         },
         "B": {
-          "pill": "Leicht erhöht",
-          "title": "Risiko für Alkoholabhängigkeit leicht erhöht",
-          "text": "Deine Gene machen dich etwas anfälliger für eine Alkoholabhängigkeit. Dein genetisches Risiko ist leicht erhöht.",
+          "pill": "Etwas langsamer",
+          "title": "Dopamin-Abbau etwas langsamer",
+          "text": "Deine COMT-Gene bauen Dopamin etwas langsamer ab. Belohnungen wie Alkohol können sich für dich etwas lohnender anfühlen.",
           "rec": "Dieses Wissen kann dir helfen, bewusster mit Alkohol umzugehen. Alkoholfreie Tage, gesunder Stressabbau und ein unterstützendes Umfeld können dich dabei stärken."
         },
         "D": {
-          "pill": "Erhöht",
-          "title": "Risiko für Alkoholabhängigkeit erhöht",
-          "text": "Deine Gene machen dich anfälliger für eine Alkoholabhängigkeit. Dein genetisches Risiko ist erhöht.",
+          "pill": "Langsam",
+          "title": "Dopamin-Abbau langsam",
+          "text": "Deine COMT-Gene bauen Dopamin langsam ab. Belohnungen wie Alkohol oder Glücksspiel fühlen sich für dich intensiver an.",
           "rec": "Eine Veranlagung ist kein Schicksal. Weniger trinken, alkoholfreie Tage und Vorsicht bei Glücksspiel können sinnvoll sein. Fällt dir das Aufhören schwer, ist es in Ordnung, dir Hilfe zu holen."
         },
         "N": {

@@ -477,12 +477,12 @@
             "en": 153
           },
           "tag": "3D-Animation",
-          "cap": "Milch und deine Gene: Der glückliche Schreibfehler · KI-generierte Animation"
+          "cap": "Milch und deine Gene: Der glückliche Schreibfehler · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
           "h": "Kalzium für stabile Knochen",
-          "p": "Kalzium gibt deinen Knochen Stabilität und kann so vor Osteoporose schützen. Etwa 98 % des Kalziums in deinem Körper stecken in den Knochen. Dein Körper kann Kalzium nicht selbst herstellen, er bekommt es nur aus der Nahrung. Es wird im Darm aufgenommen, Vitamin D3 verstärkt das. Das Blut bringt es dann zu den Knochen."
+          "p": "Calcium wird für die Erhaltung normaler Knochen benötigt. Etwa 98 % des Kalziums in deinem Körper stecken in den Knochen. Dein Körper kann Kalzium nicht selbst herstellen, er bekommt es nur aus der Nahrung. Es wird im Darm aufgenommen, Vitamin D3 verstärkt das. Das Blut bringt es dann zu den Knochen."
         },
         {
           "t": "quiz",
@@ -521,7 +521,7 @@
           "dur": {
             "de": 16
           },
-          "poster": "nuggets/themen/kalzium.jpg",
+          "poster": "nuggets/themen/kalzium.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie sich Kalzium und Vitamin D bei der Aufnahme unterstützen"
         },
@@ -558,12 +558,12 @@
           "pill": "Laktose passt",
           "title": "Kalziumaufnahme funktioniert",
           "text": "Deine LCT-Gene sorgen dafür, dass du Laktose in Milchprodukten dein Leben lang gut verträgst. Damit isst du tendenziell genug kalziumhaltige Milchprodukte.",
-          "rec": "Eine spezielle Anpassung deiner Ernährung ist für dich nicht nötig."
+          "rec": "Aus Sicht dieses Gens brauchst du deine Ernährung nicht besonders anzupassen."
         },
         "B": null,
         "D": {
           "pill": "Laktose schwierig",
-          "title": "Kalziumaufnahme funktioniert nicht",
+          "title": "Kalziumaufnahme eingeschränkt",
           "text": "Deine LCT-Gene führen dazu, dass du Laktose mit steigendem Alter schlechter verträgst. Dadurch meidest du Milchprodukte eher und nimmst weniger Kalzium auf.",
           "rec": "Mehr andere kalziumhaltige Lebensmittel oder eine Nahrungsergänzung können für dich sinnvoll sein. Bei Fragen zu deiner Knochengesundheit sprich mit deiner Ärztin oder deinem Arzt."
         },
@@ -628,12 +628,12 @@
             "en": 71
           },
           "tag": "3D-Animation",
-          "cap": "Vitamin D3 und deine Gene: Warum normale Werte nicht immer reichen · KI-generierte Animation"
+          "cap": "Vitamin D3 und deine Gene: Warum normale Werte nicht immer reichen · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
           "h": "Ein Greifarm für Vitamin D3",
-          "p": "Die VDR-Gene enthalten die Bauanleitung für einen Rezeptor. Stell ihn dir wie einen Greifarm vor, der an der Oberfläche der Zelle nach außen ragt. Vitamin D3 dockt genau daran an. Dann bekommt die Zelle ein Signal, entfaltet die gesunden Effekte des Vitamins und schaltet bestimmte andere Gene ein."
+          "p": "Die VDR-Gene enthalten die Bauanleitung für einen Rezeptor. Stell ihn dir wie einen Greifarm vor, der an der Oberfläche der Zelle nach außen ragt. Vitamin D3 dockt genau daran an. Dann bekommt die Zelle ein Signal und schaltet bestimmte andere Gene ein. Vitamin D trägt zum Beispiel zur Erhaltung normaler Knochen und zu einer normalen Funktion des Immunsystems bei."
         },
         {
           "t": "quiz",
@@ -672,19 +672,20 @@
           "dur": {
             "de": 67
           },
-          "poster": "nuggets/themen/vitd.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Der Vitamin-D-Rezeptor: ein Greifarm an deiner Zelle"
+          "poster": "nuggets/themen/vitd.webp",
+          "tag": "KI-Animation",
+          "cap": "Der Vitamin-D-Rezeptor: ein Greifarm an deiner Zelle · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
           "h": "Die Falle beim Bluttest",
-          "p": "Ein Bluttest zeigt, wie viel Vitamin D3 in deinem Blut ist. Er zeigt nicht, wie gut deine Zellen es erkennen. Mit veränderten VDR-Genen kannst du laut Bluttest ausreichend versorgt sein und trotzdem einen Mangel in den Zellen haben, weil das Vitamin seine Wirkung nicht richtig entfalten kann."
+          "p": "Ein Bluttest zeigt, wie viel Vitamin D3 in deinem Blut ist. Er zeigt nicht, wie gut deine Zellen es erkennen. Mit veränderten VDR-Genen kannst du laut Bluttest ausreichend versorgt sein, obwohl deine Zellen das Vitamin schwächer erkennen."
         },
         {
           "t": "text",
           "h": "Woher du Vitamin D3 bekommst",
-          "p": "Die wichtigste Quelle ist deine eigene Haut: Schon ein kurzer Aufenthalt in der Sonne regt die Bildung an. Solarien arbeiten vor allem mit UV-A-Strahlen und sind dafür wenig geeignet. Über die Nahrung liefern fetter Fisch wie Hering, Makrele und Lachs, aber auch Leber, Lebertran, Käse und Pilze Vitamin D3. Gut zu wissen: Vitamin D3 fördert die Aufnahme von Kalzium."
+          "p": "Die wichtigste Quelle ist deine eigene Haut: Schon ein kurzer Aufenthalt in der Sonne regt die Bildung an. Solarien arbeiten vor allem mit UV-A-Strahlen und sind dafür wenig geeignet. Über die Nahrung liefern fetter Fisch wie Hering, Makrele und Lachs, aber auch Leber, Lebertran, Käse und Pilze Vitamin D3. Gut zu wissen: Vitamin D trägt zu einer normalen Aufnahme und Verwertung von Calcium bei."
         },
         {
           "t": "quiz",
@@ -706,20 +707,20 @@
         "story": "Wirkung von Vitamin D3",
         "report": "Lifestyle-Bericht · Gesund ernähren",
         "E": {
-          "pill": "Normale Dosis",
-          "title": "Vitamin D3 wirkt in normaler Dosis",
+          "pill": "Normal",
+          "title": "Vitamin-D-Rezeptor normal",
           "text": "Deine VDR-Gene bilden normale Rezeptoren. Deine Zellen erkennen normale Mengen Vitamin D3 richtig.",
           "rec": "Für die volle Wirkung reicht bei dir eine normale Menge Vitamin D3, zum Beispiel über Sonne auf der Haut und fetten Fisch."
         },
         "B": {
-          "pill": "Etwas mehr nötig",
-          "title": "Vitamin D3 wirkt nur in höherer Dosis",
+          "pill": "Etwas schwächer",
+          "title": "Vitamin-D-Rezeptor etwas schwächer",
           "text": "Deine VDR-Gene bilden eine Mischung aus normalen und schwächeren Rezeptoren. Normale Mengen Vitamin D3 reichen oft nicht für die volle Wirkung.",
           "rec": "Eine etwas höhere Vitamin-D3-Zufuhr kann für dich sinnvoll sein. Die passende Dosis besprichst du am besten mit deiner Ärztin oder deinem Arzt."
         },
         "D": {
-          "pill": "Deutlich mehr nötig",
-          "title": "Vitamin D3 wirkt nur in viel höherer Dosis",
+          "pill": "Deutlich schwächer",
+          "title": "Vitamin-D-Rezeptor deutlich schwächer",
           "text": "Deine VDR-Gene bilden nur schwächere Rezeptoren. Deine Zellen erkennen normale Mengen Vitamin D3 nicht ausreichend.",
           "rec": "Eine deutlich höhere Vitamin-D3-Zufuhr kann für dich sinnvoll sein, damit genug Rezeptoren aktiviert werden. Besprich die Dosis mit deiner Ärztin oder deinem Arzt."
         },
@@ -727,7 +728,7 @@
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
           "text": "Wie gut deine Zellen Vitamin D3 erkennen, zeigt die Gene Story „Wirkung von Vitamin D3“ im Lifestyle-Bericht (Gesund ernähren).",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dir eine normale Menge Vitamin D3 reicht oder ob du mehr brauchst."
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie gut deine Zellen Vitamin D3 erkennen."
         }
       },
       "images": [
@@ -768,7 +769,7 @@
         {
           "t": "text",
           "h": "Mehr Eisen, mehr Energie?",
-          "p": "Wer sich müde fühlt, greift oft zur Eisentablette. Für viele Menschen ist das harmlos oder sogar sinnvoll. Für manche aber wird Eisen mit der Zeit zum Problem. Ob Eisen dir guttut oder schadet, hängt von deinen Genen ab."
+          "p": "Wer sich müde fühlt, greift oft zur Eisentablette. Wie viel Eisen dein Körper aus der Nahrung aufnimmt, ist aber von Mensch zu Mensch verschieden. Das steht auch in deinen Genen."
         },
         {
           "t": "video",
@@ -782,7 +783,7 @@
             "en": 69
           },
           "tag": "3D-Animation",
-          "cap": "Eisen und deine Gene: Wenn Eisentabletten mehr schaden als nützen · KI-generierte Animation"
+          "cap": "Eisen und deine Gene: Wie viel Eisen dein Darm hereinlässt · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -804,7 +805,7 @@
         {
           "t": "text",
           "h": "Ein Gendefekt mit Geschichte",
-          "p": "Als Jäger und Sammler aßen unsere Vorfahren viel Fleisch, als Bauern deutlich weniger. Eine Genveränderung, die vor etwa 6.000 Jahren in der Region des heutigen Irlands entstand, schützte vor allem Frauen und Schwangere vor Eisenmangel. Die Kelten verbreiteten sie über Europa. Heute essen wir wieder eisenreich, und genau diese Veränderung wird zum Problem."
+          "p": "Als Jäger und Sammler aßen unsere Vorfahren viel Fleisch, als Bauern deutlich weniger. Eine Genveränderung, die vor etwa 6.000 Jahren in der Region des heutigen Irlands entstand, schützte vor allem Frauen und Schwangere vor Eisenmangel. Die Kelten verbreiteten sie über Europa. Heute essen wir wieder eisenreich, und mit dieser Veränderung gelangt heute mehr Eisen in den Körper als nötig."
         },
         {
           "t": "quiz",
@@ -826,31 +827,32 @@
           "dur": {
             "de": 62
           },
-          "poster": "nuggets/themen/eisen.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Wie eine Genveränderung vor 6.000 Jahren zum Vorteil wurde"
+          "poster": "nuggets/themen/eisen.webp",
+          "tag": "KI-Animation",
+          "cap": "Wie eine Genveränderung vor 6.000 Jahren zum Vorteil wurde · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
           "h": "Eine Kopie oder zwei?",
-          "p": "Du hast zwei Kopien des HFE-Gens. Wer eine veränderte Kopie geerbt hat, hat meist erhöhte, aber noch gesunde Eisenwerte. Wer sie von beiden Eltern geerbt hat, nimmt viel zu viel Eisen auf. Weil der Körper überschüssiges Eisen kaum loswird, kann es sich über Jahrzehnte anreichern. Laut Bericht haben bei der wichtigsten Variante rund 97 % der Menschen zwei normale Kopien."
+          "p": "Du hast zwei Kopien des HFE-Gens. Mit einer veränderten Kopie nimmst du etwas mehr Eisen auf, mit zwei veränderten deutlich mehr. Laut Bericht haben bei der wichtigsten Variante rund 97 % der Menschen zwei normale Kopien."
         },
         {
           "t": "text",
           "h": "Achtung bei Eisentabletten",
-          "p": "Zu viel Eisen kann sich in Organen ablagern und Leber, Herz und Bauchspeicheldrüse schädigen. Erste Anzeichen sind oft Müdigkeit und Schwäche, also genau das, was viele für Eisenmangel halten. Eine Nahrungsergänzung mit Eisen, auch in Multimineral-Präparaten, kann bei veränderten Genen schaden. Lass deine Eisenwerte deshalb besser ärztlich prüfen, bevor du Eisen einnimmst."
+          "p": "Weil dein Körper bei veränderten Genen schon aus der Nahrung mehr Eisen aufnimmt, ist bei Eisentabletten Vorsicht sinnvoll, auch in Multimineral-Präparaten. Müdigkeit allein ist kein sicheres Zeichen für Eisenmangel. Lass deine Eisenwerte ärztlich prüfen, bevor du Eisen einnimmst."
         },
         {
           "t": "quiz",
-          "q": "Warum ist Müdigkeit kein sicheres Zeichen für Eisenmangel?",
+          "q": "Warum ist Müdigkeit allein kein sicherer Grund für eine Eisentablette?",
           "o": [
             "Müdigkeit hat nie etwas mit Eisen zu tun",
-            "Auch zu viel Eisen kann sich zuerst als Müdigkeit zeigen",
+            "Müdigkeit hat viele Ursachen, deshalb lieber die Eisenwerte messen lassen",
             "Müdigkeit zeigt immer einen Vitamin-D-Mangel",
             "Eisen macht grundsätzlich müde"
           ],
           "c": 1,
-          "e": "Müdigkeit und Schwäche können bei Eisenmangel und bei Eisenüberschuss auftreten. Deshalb lieber messen lassen als einfach Tabletten nehmen."
+          "e": "Müdigkeit kann viele Ursachen haben. Deshalb lieber messen lassen als einfach Tabletten nehmen."
         },
         {
           "t": "result"
@@ -874,14 +876,14 @@
         "D": {
           "pill": "Deutlich erhöht",
           "title": "Eisenaufnahme ist erhöht",
-          "text": "Deine HFE-Gene arbeiten zu aktiv und lassen deutlich mehr Eisen in deinen Körper. Über Jahre kann sich dadurch zu viel Eisen ansammeln.",
+          "text": "Deine HFE-Gene arbeiten zu aktiv und lassen deutlich mehr Eisen aus der Nahrung in deinen Körper.",
           "rec": "Eisenhaltige Nahrungsergänzung und sehr häufiger Verzehr besonders eisenreicher Lebensmittel sind für dich eher ungünstig. Lass deine Eisenwerte am besten ärztlich kontrollieren."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
           "text": "Ob du Eisen normal oder verstärkt aufnimmst, zeigt die Gene Story „Gene und Eisenaufnahme“ im Lifestyle-Bericht (Gesund ernähren).",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dir eine Eisentablette eher hilft oder eher schadet."
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dein Körper Eisen normal oder verstärkt aufnimmt."
         }
       },
       "images": [
@@ -922,7 +924,7 @@
         {
           "t": "text",
           "h": "Ein winziges Spurenelement mit großer Aufgabe",
-          "p": "Selen brauchst du nur in kleinsten Mengen. Trotzdem spielt es eine wichtige Rolle beim Schutz vor freien Radikalen, bei der Regulierung von Entzündungen und bei der Immunabwehr. Wie viel Selen du brauchst, steuern deine Gene."
+          "p": "Selen brauchst du nur in kleinsten Mengen. Selen trägt dazu bei, die Zellen vor oxidativem Stress zu schützen, und trägt zu einer normalen Funktion des Immunsystems bei. Wie viel Selen du brauchst, steuern deine Gene."
         },
         {
           "t": "video",
@@ -936,7 +938,7 @@
             "en": 70
           },
           "tag": "3D-Animation",
-          "cap": "Selen und deine Gene: Gleiche Paranuss, andere Wirkung · KI-generierte Animation"
+          "cap": "Selen und deine Gene: Gleiche Paranuss, andere Wirkung · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -958,7 +960,7 @@
         {
           "t": "text",
           "h": "Mehr Selen für ein langsameres Enzym",
-          "p": "Ein häufiger Gendefekt macht das GPX1-Enzym langsamer und schwächer. Es neutralisiert zwar noch, aber der Schutz ist eingeschränkt. Studien haben gezeigt: Mit deutlich mehr Selen bildet der Körper so viel mehr GPX1, dass der Schutz wiederhergestellt werden kann. Laut Bericht haben 62 % der Menschen zwei effektive Kopien, 33 % eine veränderte und 5 % zwei veränderte."
+          "p": "Ein häufiger Gendefekt macht das GPX1-Enzym langsamer und schwächer. Es neutralisiert zwar noch, aber der Schutz ist eingeschränkt. Studien zeigen, dass der Körper mit mehr Selen mehr GPX1 bildet. Laut Bericht haben 62 % der Menschen zwei effektive Kopien, 33 % eine veränderte und 5 % zwei veränderte."
         },
         {
           "t": "quiz",
@@ -1012,13 +1014,13 @@
           "pill": "Erhöhter Bedarf",
           "title": "Selenbedarf erhöht",
           "text": "Deine GPX1-Gene sind defekt. Mit normalen Mengen Selen können sie deine Zellen nicht ausreichend vor Wasserstoffperoxid schützen.",
-          "rec": "Eine größere Menge Selen kann den Schutz wiederherstellen. Besprich die passende Dosis mit deiner Ärztin oder deinem Arzt, denn zu viel Selen kann schaden."
+          "rec": "Eine größere Menge Selen kann für dich sinnvoll sein. Besprich die passende Dosis mit deiner Ärztin oder deinem Arzt, denn zu viel Selen kann schaden."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
           "text": "Wie viel Selen deine Gene brauchen, zeigt die Gene Story „Ausreichende Selenversorgung“ im Lifestyle-Bericht (Entgiften).",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob dir eine normale Selenzufuhr reicht oder ob du mehr brauchst."
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie gut dein Schutzenzym GPX1 arbeitet."
         }
       },
       "images": [

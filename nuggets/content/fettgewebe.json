@@ -26,7 +26,7 @@
             "en": 114
           },
           "tag": "3D-Animation",
-          "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation"
+          "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -70,7 +70,7 @@
           "dur": {
             "de": 384
           },
-          "poster": "nuggets/themen/fett.jpg",
+          "poster": "nuggets/themen/fett.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt die Fett-Studie, den Fett-Stopp im Darm, die fünf Gene und was sein eigenes Ergebnis für ihn bedeutet"
         },
@@ -173,7 +173,7 @@
             "en": 114
           },
           "tag": "3D-Animation",
-          "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation"
+          "cap": "Fett oder Kohlenhydrate und deine Gene: Warum manche nicht zunehmen · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -217,7 +217,7 @@
           "dur": {
             "de": 88
           },
-          "poster": "nuggets/themen/kh.jpg",
+          "poster": "nuggets/themen/kh.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel zeigt sein eigenes Ergebnis: Kohlenhydrate kein Problem, Fett schon"
         },
@@ -314,7 +314,7 @@
             "en": 75
           },
           "tag": "3D-Animation",
-          "cap": "Sport und deine Gene: Gleiches Training, anderer Abnehmerfolg · KI-generierte Animation"
+          "cap": "Sport und deine Gene: Gleiches Training, anderer Abnehmerfolg · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -358,7 +358,7 @@
           "dur": {
             "de": 85
           },
-          "poster": "nuggets/themen/sport.jpg",
+          "poster": "nuggets/themen/sport.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt die Sport-Studien: gleicher Sport, anderes Ergebnis"
         },
@@ -389,7 +389,7 @@
         "E": {
           "pill": "Effektiv",
           "title": "Abnehmen durch Sport effektiv",
-          "text": "Deine Gene bewirken, dass du bei konsequentem Training gut an Gewicht verlierst. Nach vier Monaten Training ist deine Gewichtsabnahme bis zu dreimal höher als bei Personen mit anderen Genen.",
+          "text": "Deine Gene bewirken, dass du bei konsequentem Training gut an Gewicht verlierst. In Studien nahmen Menschen mit diesen Genvarianten nach vier Monaten Training bis zu dreimal mehr ab als andere.",
           "rec": "Sport ist für dich eine effektive Methode, um dein Gewicht zu reduzieren. Ein intensiveres Sportprogramm kann sich bei dir besonders lohnen."
         },
         "B": {
@@ -458,7 +458,7 @@
           "dur": {
             "de": 62
           },
-          "poster": "nuggets/themen/kalred.jpg",
+          "poster": "nuggets/themen/kalred.webp",
           "tag": "Originalaufnahme",
           "cap": "Weniger essen: manche nehmen bis zu dreimal weniger ab"
         },
@@ -645,7 +645,7 @@
           "pill": "Gering",
           "title": "Muskelmasseverlust bei Diät gering",
           "text": "Deine Gene sorgen dafür, dass bei einer Kalorienreduktion deine Muskelmasse gut erhalten bleibt. Du verlierst weniger Muskelmasse als Personen mit anderen Genen.",
-          "rec": "Ausdauertraining ist für dich ausreichend, um deine Muskelmasse beim Abnehmen bestmöglich zu unterstützen."
+          "rec": "Ausdauertraining kann für dich ausreichen, um deine Muskelmasse beim Abnehmen bestmöglich zu unterstützen."
         },
         "B": {
           "pill": "Mäßig",
@@ -775,7 +775,7 @@
           "pill": "Stark",
           "title": "Starker Fettorgan-Typ",
           "text": "Deine Gene begünstigen, dass sich überschüssiges Fett hauptsächlich um die Organe im Bauchinneren anlagert. Dieses Fett ist stoffwechselaktiv.",
-          "rec": "Ein optimales Körpergewicht hat für dich eine besonders große gesundheitliche Bedeutung. Besprich Fragen zu deinem Herz-Kreislauf-Risiko mit deiner Ärztin oder deinem Arzt."
+          "rec": "Ein gesundes Körpergewicht hat für dich eine besonders große Bedeutung. Wenn du Fragen zu deinem Gewicht oder deinen Blutwerten hast, sprich mit deiner Ärztin oder deinem Arzt."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -838,7 +838,7 @@
         {
           "t": "text",
           "h": "Zwei Gene, ein Leben lang",
-          "p": "Für diese Gene Story werden zwei Gene ausgewertet: PPARG und ADRB2. Studien zeigen, dass Menschen mit bestimmten Gendefekten viel schneller und leichter wieder zunehmen. Deine Gene können dich also dabei unterstützen, dein Gewicht zu halten, oder gegen dich arbeiten. Und sie bleiben ein Leben lang gleich: Du musst den Test nie wiederholen."
+          "p": "Für diese Gene Story werden zwei Gene ausgewertet: PPARG und ADRB2. Studien zeigen, dass Menschen mit bestimmten Gendefekten viel schneller und leichter wieder zunehmen. Deine Gene können dich also dabei unterstützen, dein Gewicht zu halten, oder gegen dich arbeiten. Und sie bleiben ein Leben lang gleich: Du brauchst die Analyse nie zu wiederholen."
         },
         {
           "t": "quiz",
@@ -864,7 +864,7 @@
             "Eine dauerhafte Umstellung des Lebensstils",
             "Eine möglichst kurze Crash-Diät",
             "Nach der Diät wieder wie früher essen",
-            "Jedes Jahr einen neuen Gentest machen"
+            "Jedes Jahr eine neue Gen-Analyse machen"
           ],
           "c": 0,
           "e": "Gene bleiben ein Leben lang gleich. Deshalb hilft eine dauerhafte, leicht umsetzbare Umstellung am meisten."

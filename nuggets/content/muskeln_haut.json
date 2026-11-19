@@ -22,7 +22,7 @@
           "dur": {
             "de": 35
           },
-          "poster": "nuggets/themen/faser.jpg",
+          "poster": "nuggets/themen/faser.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie viele Wiederholungen für Kraft und für Muskelvolumen passen"
         },
@@ -277,7 +277,7 @@
           "dur": {
             "de": 202
           },
-          "poster": "nuggets/themen/ermued.jpg",
+          "poster": "nuggets/themen/ermued.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, warum deine Gene die Pause zwischen den Sätzen mitbestimmen"
         },
@@ -414,7 +414,7 @@
           "dur": {
             "de": 141
           },
-          "poster": "nuggets/themen/erhol.jpg",
+          "poster": "nuggets/themen/erhol.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie das Immunsystem Mikrorisse im Muskel repariert"
         },
@@ -455,19 +455,19 @@
         {
           "t": "text",
           "h": "Ernährung stellt das Immunsystem lauter oder leiser",
-          "p": "Arachidonsäure, eine Omega-6-Fettsäure aus tierischen Lebensmitteln, wirkt entzündungsfördernd. Auch Alkohol kann die Muskelreparatur bremsen. Omega-3-Fettsäuren und MSM, also organischer Schwefel, wirken dagegen entzündungshemmend. So kannst du in die Erholung eingreifen, auch wenn deine Gene dich nicht unterstützen."
+          "p": "Laut Bericht kann die Ernährung beeinflussen, wie stark dein Immunsystem reagiert: Arachidonsäure, eine Omega-6-Fettsäure aus tierischen Lebensmitteln, gilt als Baustein entzündungsfördernder Botenstoffe. Auch Alkohol kann die Muskelreparatur bremsen. Dein Bericht empfiehlt bei aggressiv programmierten Genen, weniger Arachidonsäure zu essen und öfter zu Hering, Makrele, Sardinen, Algen sowie Lein- und Walnussöl zu greifen."
         },
         {
           "t": "quiz",
-          "q": "Welche Stoffe nennt der Bericht als entzündungshemmend?",
+          "q": "Welchen Stoff aus tierischen Lebensmitteln nennt der Bericht als Treiber für das Immunsystem?",
           "o": [
-            "Zucker und Fruchtzucker",
-            "Arachidonsäure und Alkohol",
-            "Koffein und Salz",
-            "Omega-3 und MSM"
+            "Fruchtzucker",
+            "Koffein",
+            "Kochsalz",
+            "Arachidonsäure"
           ],
           "c": 3,
-          "e": "Omega-3 und MSM drosseln ein zu aktives Immunsystem. Arachidonsäure und Alkohol wirken in die andere Richtung."
+          "e": "Arachidonsäure, eine Omega-6-Fettsäure aus tierischen Lebensmitteln, wirkt wie ein Booster für das Immunsystem. Auch Alkohol kann die Muskelreparatur bremsen."
         },
         {
           "t": "result"
@@ -480,19 +480,19 @@
           "pill": "Normal",
           "title": "Erholung nach muskulären Verletzungen normal",
           "text": "Deine Entzündungsgene sind normal programmiert. Dein Immunsystem reagiert angemessen, und du erholst dich normal schnell von muskulären Verletzungen.",
-          "rec": "Weniger entzündungsfördernde und mehr entzündungshemmende Lebensmittel können deine Erholung trotzdem unterstützen."
+          "rec": "Eine ausgewogene Ernährung mit Fisch, Gemüse und Pflanzenölen ist für dich eine gute Basis. Plane genug Erholung zwischen harten Einheiten ein."
         },
         "B": {
           "pill": "Vermindert",
           "title": "Erholung nach muskulären Verletzungen vermindert",
           "text": "Deine Entzündungsgene sind etwas zu aggressiv programmiert. Du erholst dich etwas langsamer von muskulären Verletzungen, etwa nach einer Überdehnung.",
-          "rec": "Weniger Arachidonsäure und mehr Omega-3 können für dich sinnvoll sein. Plane genug Erholung zwischen harten Einheiten ein."
+          "rec": "Weniger Arachidonsäure und mehr Fisch mit Omega-3-Fettsäuren können für dich sinnvoll sein. Plane genug Erholung zwischen harten Einheiten ein."
         },
         "D": {
           "pill": "Langsam",
           "title": "Erholung nach muskulären Verletzungen schlecht",
           "text": "Deine Entzündungsgene sind deutlich zu aggressiv programmiert. Dein Immunsystem reagiert zu stark, und du erholst dich langsamer von muskulären Verletzungen.",
-          "rec": "Eine entzündungsarme Ernährung mit Omega-3 und MSM kann für dich besonders sinnvoll sein. Bei echten Verletzungen besprich dein Training mit deiner Ärztin oder deinem Arzt."
+          "rec": "Weniger Arachidonsäure und mehr Fisch mit Omega-3-Fettsäuren können für dich besonders sinnvoll sein. Bei echten Verletzungen besprich dein Training mit deiner Ärztin oder deinem Arzt."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -548,7 +548,7 @@
           "dur": {
             "de": 104
           },
-          "poster": "nuggets/themen/verletz.jpg",
+          "poster": "nuggets/themen/verletz.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, warum Gene dein Verletzungsrisiko mitbestimmen"
         },
@@ -686,7 +686,7 @@
           "dur": {
             "de": 190
           },
-          "poster": "nuggets/themen/kollagen.jpg",
+          "poster": "nuggets/themen/kollagen.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie das MMP1-Gen altes Kollagen abbaut"
         },
@@ -726,20 +726,20 @@
         },
         {
           "t": "text",
-          "h": "Von außen und von innen",
-          "p": "Bestimmte Nährstoffe können ein überaktives MMP1 bremsen: Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure. Manche wirken in einer Creme direkt auf der Haut, andere als Nahrungsergänzung von innen. Phytosterole zum Beispiel wirken nur von innen, denn auf der Haut werden sie nicht aufgenommen."
+          "h": "Was du tun kannst",
+          "p": "Vitamin C trägt zu einer normalen Kollagenbildung für eine normale Funktion der Haut bei. In der Hautpflege setzt dein Bericht auf Wirkstoffe, die die Haut pflegen und ihre Spannkraft unterstützen."
         },
         {
           "t": "quiz",
-          "q": "Warum bringen Phytosterole in einer Hautcreme laut Daniel nichts?",
+          "q": "Welches Vitamin trägt zu einer normalen Kollagenbildung bei?",
           "o": [
-            "Weil die Haut sie nicht aufnimmt",
-            "Weil sie die Haut austrocknen",
-            "Weil sie nur nachts wirken",
-            "Weil sie Kollagen zerstören"
+            "Vitamin C",
+            "Vitamin K",
+            "Vitamin B12",
+            "Vitamin D"
           ],
           "c": 0,
-          "e": "Ein Nährstoff muss dorthin gelangen, wo er gebraucht wird. Phytosterole dringen nicht in die Haut ein und wirken deshalb nur von innen."
+          "e": "Vitamin C trägt zu einer normalen Kollagenbildung für eine normale Funktion der Haut bei."
         },
         {
           "t": "result"
@@ -751,26 +751,26 @@
         "E": {
           "pill": "Normal",
           "title": "Normaler Kollagenabbau",
-          "text": "Deine MMP1-Gene funktionieren richtig und bilden die richtige Menge MMP1. Altes Kollagen wird wie gewollt abgebaut, das hält deine Haut jung.",
-          "rec": "Mit dem Alter steigt die MMP1-Bildung langsam an. Eine geringe Menge Lutein, Vitamin C und Vitamin E kann dem entgegenwirken."
+          "text": "Deine MMP1-Gene funktionieren richtig und bilden die richtige Menge MMP1. Altes Kollagen wird wie gewollt abgebaut und ersetzt.",
+          "rec": "Mit dem Alter steigt die MMP1-Bildung langsam an. Eine pflegende Hautroutine und genug Vitamin C in der Ernährung sind eine gute Basis."
         },
         "B": {
           "pill": "Etwas schneller",
           "title": "Etwas schnellerer Kollagenabbau",
           "text": "Deine MMP1-Gene sind beeinträchtigt. Deine Haut bildet etwas mehr MMP1 und baut Kollagen etwas schneller ab.",
-          "rec": "Nährstoffe, die MMP1 bremsen, wie Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure, können für dich sinnvoll sein, in der Creme und von innen."
+          "rec": "Für dich kann eine Pflege sinnvoll sein, die die Spannkraft der Haut unterstützt. Vitamin C trägt zu einer normalen Kollagenbildung für eine normale Funktion der Haut bei."
         },
         "D": {
           "pill": "Viel zu schnell",
           "title": "Viel zu schneller Kollagenabbau",
           "text": "Deine MMP1-Gene bilden zu viel MMP1. Deine Haut baut Kollagen schneller ab, als sie es nachbilden kann.",
-          "rec": "Für dich kann es besonders sinnvoll sein, MMP1 gezielt zu bremsen: mit Lutein, Vitamin C, Vitamin E und Alpha-Liponsäure von außen und von innen."
+          "rec": "Für dich kann eine Pflege besonders sinnvoll sein, die die Spannkraft der Haut unterstützt. Vitamin C trägt zu einer normalen Kollagenbildung für eine normale Funktion der Haut bei."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
           "text": "Wie schnell deine Haut Kollagen abbaut, zeigt die Gene Story „Kollagen und Festigkeit der Haut“ in der Beauty-Analyse.",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Haut Kollagen zu schnell abbaut und welche Nährstoffe sie schützen."
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob deine Haut Kollagen zu schnell abbaut und welche Pflege zu ihr passt."
         }
       },
       "images": [
@@ -819,7 +819,7 @@
           "dur": {
             "de": 205
           },
-          "poster": "nuggets/themen/uv.jpg",
+          "poster": "nuggets/themen/uv.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erzählt von einem LKW-Fahrer, dessen Gesicht nur auf einer Seite gealtert ist"
         },
@@ -860,7 +860,7 @@
         {
           "t": "text",
           "h": "Sonnencreme bleibt Pflicht",
-          "p": "Auch mit starken Genen ersetzt dein eigener Schutz keine Sonnencreme. Sie wirkt nur von außen als Barriere, schlucken bringt nichts. Von innen und auf der Haut können Vitamin C und Vitamin E helfen: Sie unterstützen sich gegenseitig und helfen der Haut, UV-Schäden zu reparieren."
+          "p": "Auch mit starken Genen ersetzt dein eigener Schutz keine Sonnencreme. Sie wirkt nur von außen als Barriere, schlucken bringt nichts. Vitamin C und Vitamin E tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         {
           "t": "quiz",
@@ -885,13 +885,13 @@
           "pill": "Stark",
           "title": "Starker UV-Schutz",
           "text": "Deine Gene funktionieren ausreichend und schützen deine Haut relativ gut gegen die UV-Strahlen der Sonne.",
-          "rec": "Dein genetischer Schutz ersetzt keine Sonnencreme. Bei moderater Sonne kann ein niedrigerer Lichtschutzfaktor reichen, passe ihn aber immer an die UV-Stärke an."
+          "rec": "Dein genetischer Schutz ersetzt keine Sonnencreme. Passe den Lichtschutzfaktor immer an die UV-Stärke an."
         },
         "B": {
           "pill": "Mäßig",
           "title": "Mäßiger UV-Schutz",
           "text": "Manche der Gene, die deine Haut vor UV-Strahlen schützen sollen, funktionieren nicht richtig. Direkte Sonne schädigt deine Haut etwas stärker als bei anderen Menschen.",
-          "rec": "Verwende in direkter Sonne konsequent Sonnencreme, je nach Situation mit mittlerem bis höherem Lichtschutzfaktor. Vitamin C und E können die Reparatur unterstützen."
+          "rec": "Verwende in direkter Sonne konsequent Sonnencreme, je nach Situation mit mittlerem bis höherem Lichtschutzfaktor."
         },
         "D": {
           "pill": "Schwach",
@@ -955,9 +955,10 @@
           "dur": {
             "de": 186
           },
-          "poster": "nuggets/themen/oxi.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt freie Radikale und die genetische Feuerwehr"
+          "poster": "nuggets/themen/oxi.webp",
+          "tag": "Original + KI",
+          "cap": "Daniel erklärt freie Radikale und die genetische Feuerwehr · Mittelteil: KI-generierte Animation, Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
@@ -995,8 +996,8 @@
         },
         {
           "t": "text",
-          "h": "Regen für den Waldbrand",
-          "p": "Schafft die Feuerwehr es nicht allein, muss Regen löschen. Dieser Regen sind Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure. Sie wirken in einer Creme direkt in der Haut und auch von innen. Zink hilft nur von innen, weil es nicht durch die Haut dringt. Je besser deine Gene arbeiten, desto weniger davon brauchst du."
+          "h": "Unterstützung für die Feuerwehr",
+          "p": "Schafft die Feuerwehr es nicht allein, braucht sie Unterstützung. Vitamin C, Vitamin E und Zink tragen dazu bei, die Zellen vor oxidativem Stress zu schützen. Zink dringt nicht durch die Haut, es gelangt nur über die Ernährung in den Körper. Je besser deine Gene arbeiten, desto weniger davon brauchst du."
         },
         {
           "t": "quiz",
@@ -1008,7 +1009,7 @@
             "Weil es nur bei Kindern wirkt"
           ],
           "c": 2,
-          "e": "Zink ist Teil eines körpereigenen Antioxidans, kommt aber nicht durch die Haut. Darum wirkt es nur von innen."
+          "e": "Zink ist Baustein eines körpereigenen Schutzenzyms, kommt aber nicht durch die Haut. Darum gelangt es nur über die Ernährung in den Körper."
         },
         {
           "t": "result"
@@ -1027,13 +1028,13 @@
           "pill": "Schlechterer Schutz",
           "title": "Schlechterer Schutz gegen freie Radikale",
           "text": "Einige deiner antioxidativen Gene arbeiten nicht optimal. Freie Radikale werden zu langsam neutralisiert, deine Haut kann dadurch schneller altern.",
-          "rec": "Eine besonders gute Versorgung mit Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure kann für dich sinnvoll sein, über die Ernährung oder die Haut."
+          "rec": "Eine gute Versorgung mit Vitamin C und Vitamin E kann für dich sinnvoll sein. Beide tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         "D": {
           "pill": "Schlechter Schutz",
           "title": "Schlechter Schutz gegen freie Radikale",
           "text": "Deine antioxidativen Gene arbeiten nicht richtig. Freie Radikale werden zu langsam neutralisiert und beschleunigen die Hautalterung.",
-          "rec": "Für dich kann eine besonders hohe Zufuhr an Antioxidantien sinnvoll sein, von innen und von außen. Sei sparsam mit dem, was das Feuer anheizt: Rauchen, Alkohol und Zucker."
+          "rec": "Eine gute Versorgung mit Vitamin C und E kann für dich sinnvoll sein; beide tragen dazu bei, die Zellen vor oxidativem Stress zu schützen. Sei sparsam mit dem, was das Feuer anheizt: Rauchen, Alkohol und Zucker."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -1078,8 +1079,8 @@
       "blocks": [
         {
           "t": "text",
-          "h": "Wirkt deine Q10-Creme überhaupt?",
-          "p": "Q10 steckt in unzähligen Cremes und Nahrungsergänzungsmitteln und gilt als das Anti-Aging-Molekül. Es ist teuer, und bei manchen Menschen wirkt es kaum. Ob es bei dir wirkt, entscheidet ein einziges Gen."
+          "h": "Wird dein Q10 überhaupt aktiviert?",
+          "p": "Q10 steckt in unzähligen Cremes und Nahrungsergänzungen und wird oft als Anti-Aging-Wirkstoff beworben. Ob dein Körper es aktivieren kann, hängt stark von einem Gen ab."
         },
         {
           "t": "video",
@@ -1093,12 +1094,12 @@
             "en": 71
           },
           "tag": "3D-Animation",
-          "cap": "Coenzym Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
+          "cap": "Coenzym Q10 und deine Gene: Warum Q10 unterschiedlich aktiviert wird · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
           "h": "Q10 muss erst aufgeladen werden",
-          "p": "Coenzym Q10 ist zunächst inaktiv, wie eine leere Batterie. Das NQO1-Gen bildet das Enzym NQO1, das Q10 in seine aktive Form umwandelt: Ubiquinol. Erst Ubiquinol fängt freie Radikale ein. Danach lädt das Enzym es einfach wieder auf."
+          "p": "Coenzym Q10 ist zunächst inaktiv, wie eine leere Batterie. Das NQO1-Gen bildet das Enzym NQO1, das Q10 in seine aktive Form umwandelt: Ubiquinol. Ist Ubiquinol verbraucht, lädt das Enzym es einfach wieder auf."
         },
         {
           "t": "quiz",
@@ -1110,12 +1111,12 @@
             "Melanin"
           ],
           "c": 0,
-          "e": "Das NQO1-Enzym wandelt Q10 in Ubiquinol um. Erst diese Form schützt vor freien Radikalen."
+          "e": "Das NQO1-Enzym wandelt Q10 in Ubiquinol um, die aktive Form."
         },
         {
           "t": "text",
           "h": "Zwei Kopien, drei Möglichkeiten",
-          "p": "Du hast zwei Kopien des NQO1-Gens, eine von deiner Mutter, eine von deinem Vater. Funktionieren beide, wird Q10 mühelos aktiviert, egal ob es aus deinem Körper, aus einer Kapsel oder aus einer Creme kommt. Ist eine Kopie verändert, gelingt das nur langsam. Mit zwei veränderten Kopien wird Q10 nicht aktiviert. Das betrifft etwa jeden Elften."
+          "p": "Du hast zwei Kopien des NQO1-Gens, eine von deiner Mutter, eine von deinem Vater. Funktionieren beide, wird Q10 mühelos aktiviert, egal ob es aus deinem Körper, aus einer Kapsel oder aus einer Creme kommt. Ist eine Kopie verändert, gelingt das nur langsam. Mit zwei veränderten Kopien wird Q10 kaum aktiviert. Das betrifft etwa jeden Elften."
         },
         {
           "t": "quiz",
@@ -1127,7 +1128,7 @@
             "Niemand"
           ],
           "c": 2,
-          "e": "Etwa jeder Elfte hat zwei veränderte Kopien. Bei diesen Menschen bleibt Q10 weitgehend wirkungslos."
+          "e": "Etwa jeder Elfte hat zwei veränderte Kopien. Bei diesen Menschen wird Q10 kaum aktiviert."
         },
         {
           "t": "video",
@@ -1137,14 +1138,15 @@
           "dur": {
             "de": 177
           },
-          "poster": "nuggets/themen/q10haut.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss"
+          "poster": "nuggets/themen/q10haut.webp",
+          "tag": "Original + KI",
+          "cap": "Daniel erklärt, warum Q10 erst aktiviert werden muss · Mittelteil: KI-generierte Animation, Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
           "h": "Die Falle beim Bluttest",
-          "p": "Ab etwa 20 Jahren sinkt der Q10-Gehalt in deinen Organen langsam. Ein Bluttest kann trotzdem viel Q10 zeigen. Er verrät aber nicht, ob es aktiviert wird. Bei veränderten NQO1-Genen bleibt Q10 inaktiv, egal wie viel davon im Blut ist."
+          "p": "Ab etwa 20 Jahren sinkt der Q10-Gehalt in deinen Organen langsam. Ein Bluttest kann trotzdem viel Q10 zeigen. Er verrät aber nicht, ob es aktiviert wird. Bei veränderten NQO1-Genen bleibt Q10 weitgehend inaktiv, egal wie viel davon im Blut ist."
         },
         {
           "t": "quiz",
@@ -1156,7 +1158,7 @@
             "Nichts, freie Radikale sind harmlos"
           ],
           "c": 1,
-          "e": "Mehr Q10 hilft nicht, wenn das Gen es nicht aktiviert. Andere Antioxidantien erreichen dasselbe Ziel auf anderem Weg."
+          "e": "Mehr Q10 hilft nicht, wenn das Gen es nicht aktiviert. Vitamin C und E brauchen NQO1 nicht und tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         {
           "t": "result"
@@ -1166,28 +1168,28 @@
         "story": "Wirkung von Q10",
         "report": "Beauty-Bericht · Aktivierung von Q10",
         "E": {
-          "pill": "Wirksam",
-          "title": "Die Aktivierung von Coenzym Q10 ist wirksam",
+          "pill": "Funktioniert",
+          "title": "Die Aktivierung von Coenzym Q10 funktioniert",
           "text": "Deine NQO1-Gene funktionieren richtig und wandeln Q10 effektiv in die aktive Form Ubiquinol um.",
-          "rec": "Q10 kann für dich ein wirksamer Inhaltsstoff sein, als Creme oder als Nahrungsergänzung, besonders wenn du älter wirst."
+          "rec": "Q10 kann für dich ein passender Inhaltsstoff in deiner Hautpflege sein."
         },
         "B": {
           "pill": "Eingeschränkt",
           "title": "Aktivierung von Coenzym Q10 ist eingeschränkt",
           "text": "Deine NQO1-Gene sind beeinträchtigt und wandeln Q10 nur langsam in die aktive Form um.",
-          "rec": "Q10 kann für dich trotzdem nützlich sein. Zusätzliche Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure können den Schutz ergänzen."
+          "rec": "Q10 wird bei dir langsamer aktiviert. Vitamin C und Vitamin E können eine gute Ergänzung sein; beide tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         "D": {
           "pill": "Defekt",
           "title": "Die Aktivierung von Coenzym Q10 ist defekt",
-          "text": "Deine NQO1-Gene können Q10 nicht in die aktive Form umwandeln. Auch zusätzlich eingenommenes Q10 zeigt bei dir keine antioxidative Wirkung.",
-          "rec": "Statt Q10 können andere Antioxidantien wie Vitamin C, Vitamin E, Alpha-Liponsäure, Zink und Mangan für dich die bessere Wahl sein."
+          "text": "Deine NQO1-Gene können Q10 kaum in die aktive Form umwandeln. Zusätzliches Q10 wird bei dir deshalb nur wenig aktiviert.",
+          "rec": "Statt auf Q10 kannst du auf Vitamin C, Vitamin E, Zink und Mangan setzen. Sie tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
-          "text": "Ob Q10 bei dir wirkt, zeigt die Gene Story „Wirkung von Q10“ in der Beauty-Analyse.",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich Q10 in deiner Hautpflege lohnt oder ob andere Antioxidantien besser passen."
+          "text": "Wie gut dein Körper Q10 aktiviert, zeigt die Gene Story „Wirkung von Q10“ in der Beauty-Analyse.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie gut dein Körper Q10 aktiviert und ob es in deine Hautpflege passt."
         }
       },
       "images": [

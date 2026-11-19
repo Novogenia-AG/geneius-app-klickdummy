@@ -26,7 +26,7 @@
             "en": 96
           },
           "tag": "3D-Animation",
-          "cap": "Kaffee und deine Gene: gesund oder schädlich? · KI-generierte Animation"
+          "cap": "Kaffee und deine Gene: gesund oder schädlich? · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -70,14 +70,14 @@
           "dur": {
             "de": 285
           },
-          "poster": "nuggets/themen/kaffee.jpg",
+          "poster": "nuggets/themen/kaffee.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, warum Kaffee gesund und giftig zugleich ist"
         },
         {
           "t": "text",
           "h": "Was das für dein Herz heißt",
-          "p": "Wird Koffein schnell abgebaut, bleiben vor allem die gesunden Stoffe übrig, und Kaffee schützt dein Herz. Bei langsamem Abbau bleibt das Koffein zu lange im Körper. Dann dreht sich der Effekt um: Derselbe Kaffee erhöht das Herzinfarktrisiko. Nur der Zustand dieses einen Gens entscheidet, ob Kaffee für dich gesund oder ungesund ist."
+          "p": "Wird Koffein schnell abgebaut, bleiben vor allem die gesunden Stoffe übrig, und Kaffee schützt dein Herz. Bei langsamem Abbau bleibt das Koffein zu lange im Körper. Dann dreht sich der Effekt um: Derselbe Kaffee erhöht das Herzinfarktrisiko. Bei Kaffee entscheidet dieses eine Gen besonders stark mit, ob er dir eher nützt oder schadet."
         },
         {
           "t": "text",
@@ -107,7 +107,7 @@
           "pill": "Schneller Abbau",
           "title": "Abbau von Koffein funktioniert",
           "text": "Deine CYP1A2-Gene bauen Koffein schnell ab, bevor es Schaden anrichten kann. Die gesunden Stoffe im Kaffee kommen dir voll zugute.",
-          "rec": "Kaffee kann für dich ein gesundes Getränk sein. Laut deinem Bericht können zwei bis fünf Tassen am Tag für dich gesund sein."
+          "rec": "Kaffee kann für dich ein gesundes Getränk sein. Dein Bericht nennt dafür zwei bis fünf Tassen am Tag."
         },
         "B": {
           "pill": "Langsamer Abbau",
@@ -119,7 +119,7 @@
           "pill": "Sehr langsamer Abbau",
           "title": "Abbau von Koffein funktioniert nicht",
           "text": "Deine CYP1A2-Gene können Koffein nicht rasch abbauen. Es bleibt lange im Körper und schadet dir mehr, als die gesunden Stoffe im Kaffee nützen.",
-          "rec": "Koffeinhaltigen Kaffee meidest du am besten, wenn möglich. Koffeinfreier Kaffee liefert dir die gesunden Stoffe ohne das Koffein."
+          "rec": "Es kann sinnvoll sein, koffeinhaltigen Kaffee zu meiden. Koffeinfreier Kaffee liefert dir die gesunden Stoffe ohne das Koffein."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -151,7 +151,7 @@
     {
       "id": "q10",
       "station": "leber",
-      "title": "Coenzym Q10 – wirkt es bei dir?",
+      "title": "Coenzym Q10 – wird es bei dir aktiviert?",
       "minutes": 6,
       "formula": "DNA_NUTRITION_Q10",
       "scalebar": "DNA_NUTRITION_Q10_SCALEBAR",
@@ -160,7 +160,7 @@
         {
           "t": "text",
           "h": "Steckt Q10 in deiner Creme umsonst?",
-          "p": "„Die neue Anti-Aging-Creme mit Q10“ – diesen Satz kennst du sicher aus der Werbung. Q10 steckt in Cremes und in Nahrungsergänzung, und dein Körper stellt es sogar selbst her. Ob es bei dir wirkt, hängt davon ab, wie gut deine Gene es aktivieren."
+          "p": "„Die neue Anti-Aging-Creme mit Q10“ – diesen Satz kennst du sicher aus der Werbung. Q10 steckt in Cremes und in Nahrungsergänzung, und dein Körper stellt es sogar selbst her. Wie viel davon bei dir aktiv wird, hängt von deinen Genen ab."
         },
         {
           "t": "video",
@@ -174,12 +174,12 @@
             "en": 71
           },
           "tag": "3D-Animation",
-          "cap": "Coenzym Q10 und deine Gene: Warum das Anti-Aging-Molekül unterschiedlich wirkt · KI-generierte Animation"
+          "cap": "Coenzym Q10 und deine Gene: Warum Q10 unterschiedlich aktiviert wird · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
-          "h": "Erst aufladen, dann schützen",
-          "p": "Q10 ist zunächst inaktiv, ähnlich wie Folsäure. Das Gen NQO1 bildet ein Enzym, das Q10 in die aktive Form umwandelt: Ubiquinol. Erst Ubiquinol ist ein starkes Antioxidans. Es fängt freie Radikale ab, bevor sie deine Zellen beschädigen. NQO1 ist eines von mehreren Enzymen, die Q10 aktivieren können, aber ein sehr wichtiges."
+          "h": "Erst aktivieren",
+          "p": "Q10 ist zunächst inaktiv, ähnlich wie Folsäure. Das Gen NQO1 bildet ein Enzym, das Q10 in die aktive Form Ubiquinol umwandelt. NQO1 ist eines von mehreren Enzymen, die Q10 aktivieren können, aber ein sehr wichtiges."
         },
         {
           "t": "quiz",
@@ -191,7 +191,7 @@
             "Superoxid"
           ],
           "c": 0,
-          "e": "Ubiquinol ist die aktive, schützende Form. Es macht freie Radikale unschädlich."
+          "e": "Ubiquinol ist die aktive Form von Q10."
         },
         {
           "t": "text",
@@ -208,7 +208,7 @@
             "Genau so viel wie gesunde Gene"
           ],
           "c": 2,
-          "e": "Nur rund 2 %. Q10 aus Creme oder Kapsel schützt diese Menschen deshalb kaum."
+          "e": "Nur rund 2 %. Q10 aus Creme oder Kapsel wird bei diesen Menschen deshalb kaum aktiviert."
         },
         {
           "t": "video",
@@ -218,19 +218,20 @@
           "dur": {
             "de": 116
           },
-          "poster": "nuggets/themen/q10.jpg",
-          "tag": "Originalaufnahme",
-          "cap": "Daniel erklärt, wie Q10 aktiviert wird"
+          "poster": "nuggets/themen/q10.webp",
+          "tag": "Original + KI",
+          "cap": "Daniel erklärt, wie Q10 aktiviert wird · zweiter Teil: KI-generierte Animation, Stimme: KI-Klon von Dr. Daniel Wallerstorfer",
+          "ai": true
         },
         {
           "t": "text",
           "h": "Weniger Q10 mit dem Alter",
-          "p": "Am meisten Q10 bildet dein Körper mit etwa 23 Jahren. Bis zum Alter von 80 Jahren sinkt die Produktion um etwa die Hälfte. Viele greifen deshalb zu Nahrungsergänzung oder Cremes mit Q10. Ob es wirkt, entscheiden deine Gene."
+          "p": "Am meisten Q10 bildet dein Körper mit etwa 23 Jahren. Bis zum Alter von 80 Jahren sinkt die Produktion um etwa die Hälfte. Viele greifen deshalb zu Nahrungsergänzung oder Cremes mit Q10. Wie gut es aktiviert wird, hängt von deinen Genen ab."
         },
         {
           "t": "text",
-          "h": "Wenn Q10 bei dir kaum wirkt",
-          "p": "Dann übernehmen andere Antioxidantien die Aufgabe: Vitamin C, Vitamin E und Alpha-Liponsäure. Sie brauchen NQO1 nicht."
+          "h": "Wenn Q10 bei dir kaum aktiviert wird",
+          "p": "Vitamin C und Vitamin E brauchen NQO1 nicht. Beide tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         {
           "t": "quiz",
@@ -242,38 +243,38 @@
             "Q10 nur noch abends einnehmen"
           ],
           "c": 1,
-          "e": "Andere Antioxidantien brauchen NQO1 nicht. Sie können den Schutz vor freien Radikalen übernehmen."
+          "e": "Vitamin C und E brauchen NQO1 nicht. Beide tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         {
           "t": "result"
         }
       ],
       "result": {
-        "story": "Coenzym Q10: das Anti-Aging-Molekül",
+        "story": "Aktivierung von Coenzym Q10",
         "report": "Lifestyle-Bericht · Entgiften",
         "E": {
           "pill": "Funktioniert",
           "title": "Coenzym-Q10-Umwandlung funktioniert",
-          "text": "Deine NQO1-Gene wandeln Q10 gut in die aktive Form Ubiquinol um. Q10 ist bei dir ein wirksamer Schutz gegen freie Radikale.",
-          "rec": "Q10 aus Nahrungsergänzung oder Kosmetik kann für dich sinnvoll sein, vor allem wenn du älter wirst."
+          "text": "Deine NQO1-Gene wandeln Q10 gut in die aktive Form Ubiquinol um.",
+          "rec": "Q10 wird bei dir gut aktiviert, egal ob aus deinem Körper, aus Lebensmitteln oder aus einer Creme."
         },
         "B": {
           "pill": "Eingeschränkt",
           "title": "Coenzym-Q10-Umwandlung eingeschränkt möglich",
-          "text": "Deine NQO1-Gene wandeln Q10 nur langsam in Ubiquinol um. Q10 wirkt bei dir deutlich schwächer.",
-          "rec": "Andere Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure können für dich die bessere Wahl sein."
+          "text": "Deine NQO1-Gene wandeln Q10 nur langsam in Ubiquinol um. Bei dir wird deutlich weniger Q10 aktiviert.",
+          "rec": "Vitamin C und Vitamin E können für dich eine gute Ergänzung sein. Beide tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         "D": {
           "pill": "Kaum Umwandlung",
           "title": "Coenzym-Q10-Umwandlung nicht möglich",
-          "text": "Deine NQO1-Gene können Q10 praktisch nicht in Ubiquinol umwandeln. Q10 aus Kapseln oder Cremes schützt dich deshalb kaum.",
-          "rec": "Statt Q10 kann es sinnvoll sein, andere Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure zu erhöhen."
+          "text": "Deine NQO1-Gene können Q10 praktisch nicht in Ubiquinol umwandeln. Q10 aus Kapseln oder Cremes wird bei dir kaum aktiviert.",
+          "rec": "Statt auf Q10 kann es sinnvoll sein, auf Vitamin C und Vitamin E zu setzen. Beide tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
-          "text": "Wie gut dein Körper Q10 aktiviert, zeigt die Gene Story „Coenzym Q10: das Anti-Aging-Molekül“ im Lifestyle-Bericht, Kapitel „Entgiften“.",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, ob sich Q10 für dich lohnt oder ob andere Antioxidantien besser passen."
+          "text": "Wie gut dein Körper Q10 aktiviert, zeigt die Gene Story „Aktivierung von Coenzym Q10“ im Lifestyle-Bericht, Kapitel „Entgiften“.",
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie gut dein Körper Q10 aktiviert."
         }
       },
       "images": [
@@ -326,7 +327,7 @@
             "en": 49
           },
           "tag": "3D-Animation",
-          "cap": "Gegrilltes und deine Gene: Wenn die Entgiftung zu schnell läuft · KI-generierte Animation"
+          "cap": "Gegrilltes und deine Gene: Wenn die Entgiftung zu schnell läuft · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -370,7 +371,7 @@
           "dur": {
             "de": 216
           },
-          "poster": "nuggets/themen/verbrannt.jpg",
+          "poster": "nuggets/themen/verbrannt.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erzählt die Geschichte der ältesten Frau der Welt"
         },
@@ -467,7 +468,7 @@
           "dur": {
             "de": 97
           },
-          "poster": "nuggets/themen/chemie.jpg",
+          "poster": "nuggets/themen/chemie.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt, wie Gene Schwermetalle und Chemikalien unschädlich machen"
         },
@@ -507,20 +508,20 @@
         },
         {
           "t": "text",
-          "h": "Bio, Fisch und Mineralien",
-          "p": "Arbeiten deine GST-Gene gut, entgiftet dein Körper Pestizide und Herbizide ausreichend. Sind sie defekt, ist der Griff zu Bio-Lebensmitteln durchaus sinnvoll. Obst und Gemüse gründlich zu waschen hilft allen. Große Meeresfische und Muscheln können viele Schwermetalle enthalten. Bestimmte Mineralien unterstützen die Entgiftung: Kalzium hilft bei Blei, Zink bei Cadmium."
+          "h": "Bio und Fisch",
+          "p": "Arbeiten deine GST-Gene gut, entgiftet dein Körper Pestizide und Herbizide ausreichend. Sind sie defekt, ist der Griff zu Bio-Lebensmitteln durchaus sinnvoll. Obst und Gemüse gründlich zu waschen hilft allen. Große Meeresfische und Muscheln können viele Schwermetalle enthalten."
         },
         {
           "t": "quiz",
-          "q": "Welches Mineral unterstützt laut Bericht die Entgiftung von Cadmium?",
+          "q": "Welche Lebensmittel können laut Bericht viele Schwermetalle enthalten?",
           "o": [
-            "Zink",
-            "Natrium",
-            "Jod",
-            "Fluor"
+            "Große Meeresfische und Muscheln",
+            "Äpfel und Birnen",
+            "Reis und Nudeln",
+            "Wasser aus der Leitung"
           ],
           "c": 0,
-          "e": "Zink ist ein wichtiger Baustein für die Cadmium-Entgiftung. Bei Blei hilft Kalzium."
+          "e": "Große Meeresfische und Muscheln können viele Schwermetalle enthalten. Wer schlecht entgiftet, kann sie seltener essen."
         },
         {
           "t": "result"
@@ -539,13 +540,13 @@
           "pill": "Eingeschränkt",
           "title": "Entgiftung von Chemikalien eingeschränkt",
           "text": "Deine GST-Gene entgiften Chemikalien und Schwermetalle nur langsam. Schadstoffe bleiben länger in deinem Körper.",
-          "rec": "Es kann sinnvoll sein, Lösungsmittel, Herbizide und Pestizide zu meiden und öfter zu Bio zu greifen. Mehr Mineralien können deine Entgiftung unterstützen."
+          "rec": "Es kann sinnvoll sein, Lösungsmittel, Herbizide und Pestizide zu meiden und öfter zu Bio zu greifen."
         },
         "D": {
           "pill": "Stark eingeschränkt",
           "title": "Entgiftung von Chemikalien funktioniert nicht",
           "text": "Deine GST-Gene können Chemikalien und Schwermetalle nur sehr schlecht entgiften. Schadstoffe können sich in deinem Körper anreichern.",
-          "rec": "Für dich ist es wichtig, Quellen wie Lösungsmittel, Pestizide, große Meeresfische und Muscheln zu kennen und zu meiden. Größere Mengen an Mineralien können deine Entgiftung unterstützen."
+          "rec": "Für dich ist es wichtig, Quellen wie Lösungsmittel, Pestizide, große Meeresfische und Muscheln zu kennen und zu meiden."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -599,7 +600,7 @@
           "dur": {
             "de": 191
           },
-          "poster": "nuggets/themen/radikale.jpg",
+          "poster": "nuggets/themen/radikale.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt freie Radikale und die Feuerwehr deines Körpers"
         },
@@ -640,7 +641,7 @@
         {
           "t": "text",
           "h": "Was das Feuer anheizt und was es löscht",
-          "p": "Ein einziger Zug an der Zigarette kann Milliarden freier Radikale freisetzen. Auch Stress, Alkohol, Umweltgifte, ungeschützte Sonnenbäder und Flugreisen erhöhen den oxidativen Stress. Löschen helfen Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure. Zink und Mangan sind Bausteine der körpereigenen Schutzenzyme. Viele Antioxidantien stecken in Orangen, Erdbeeren, Brokkoli, Spinat, Nüssen und Tee."
+          "p": "Ein einziger Zug an der Zigarette kann Milliarden freier Radikale freisetzen. Auch Stress, Alkohol, Umweltgifte, ungeschützte Sonnenbäder und Flugreisen erhöhen den oxidativen Stress. Vitamin C, Vitamin E, Zink und Mangan tragen dazu bei, die Zellen vor oxidativem Stress zu schützen. Zink und Mangan sind außerdem Bausteine körpereigener Schutzenzyme. Viele Antioxidantien stecken in Orangen, Erdbeeren, Brokkoli, Spinat, Nüssen und Tee."
         },
         {
           "t": "quiz",
@@ -671,13 +672,13 @@
           "pill": "Eingeschränkt",
           "title": "Schutz gegen freie Radikale eingeschränkt",
           "text": "Deine Gene neutralisieren freie Radikale nicht schnell genug. Ein Teil kann Schaden an deinen Zellen anrichten.",
-          "rec": "Größere Mengen an Antioxidantien wie Vitamin C, Vitamin E und Alpha-Liponsäure sowie Zink und Mangan können für dich sinnvoll sein."
+          "rec": "Eine gute Versorgung mit Vitamin C, Vitamin E, Zink und Mangan kann für dich sinnvoll sein. Sie tragen dazu bei, die Zellen vor oxidativem Stress zu schützen."
         },
         "D": {
           "pill": "Schwacher Schutz",
           "title": "Schutz gegen freie Radikale funktioniert nicht",
           "text": "Deine Gene können freie Radikale nicht ausreichend und schnell genug neutralisieren. Sie können deine Zellen ungehindert schädigen.",
-          "rec": "Für dich kann eine deutlich höhere Zufuhr an Antioxidantien sinnvoll sein, über viel Obst und Gemüse und gezielte Nahrungsergänzung. Rauchen und Alkohol meidest du am besten."
+          "rec": "Für dich kann eine besonders gute Versorgung mit Vitamin C, Vitamin E, Zink und Mangan sinnvoll sein, über viel Obst und Gemüse und bei Bedarf über Nahrungsergänzung. Rauchen und Alkohol meidest du am besten."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -732,7 +733,7 @@
           "dur": {
             "de": 199
           },
-          "poster": "nuggets/themen/telomere.jpg",
+          "poster": "nuggets/themen/telomere.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel erklärt Telomere, die Schutzkappen deiner Chromosomen"
         },
@@ -772,20 +773,20 @@
         },
         {
           "t": "text",
-          "h": "Bremsen, nicht zurückdrehen",
-          "p": "Bestimmte Nährstoffe können schwächer arbeitende Schutzgene unterstützen: Vitamin D3, Omega-3-Fettsäuren, Vitamin E, Resveratrol und Ginkgo. Wichtig: Sie machen kurze Telomere nicht wieder lang und reparieren sie nicht. Sie können aber helfen, dass die Verkürzung langsamer abläuft. Rauchen, Übergewicht, Bewegungsmangel und oxidativer Stress beschleunigen sie dagegen. Aktive Telomerase ist übrigens nicht immer erwünscht: Bei Krebs kann sie die Krankheit fördern."
+          "h": "Was die Telomere schneller kürzer macht",
+          "p": "Telomere kann man nicht wieder verlängern. Was die Verkürzung beschleunigt, ist aber bekannt: Rauchen, Übergewicht, Bewegungsmangel und oxidativer Stress. Vitamin C, Vitamin E und Zink tragen dazu bei, die Zellen vor oxidativem Stress zu schützen. Aktive Telomerase ist übrigens nicht immer erwünscht: Bei Krebs kann sie die Krankheit fördern."
         },
         {
           "t": "quiz",
-          "q": "Was können Nährstoffe wie Vitamin D3, Omega-3 und Vitamin E bei Telomeren leisten?",
+          "q": "Was beschleunigt laut Bericht die Verkürzung der Telomere?",
           "o": [
-            "Kurze Telomere wieder auf Babylänge bringen",
-            "Die Verkürzung verlangsamen",
-            "Telomere vollständig reparieren",
-            "Gar nichts, Telomere sind nicht beeinflussbar"
+            "Viel Schlaf",
+            "Rauchen, Übergewicht und Bewegungsmangel",
+            "Obst und Gemüse",
+            "Regelmäßige Spaziergänge"
           ],
           "c": 1,
-          "e": "Sie können die Verkürzung bremsen. Verlorene Stücke reparieren oder verlängern sie nicht."
+          "e": "Rauchen, Übergewicht, Bewegungsmangel und oxidativer Stress lassen die Telomere schneller kürzer werden. Verlängern kann man sie nicht."
         },
         {
           "t": "result"
@@ -795,28 +796,28 @@
         "story": "Alterungsprozess",
         "report": "Lifestyle-Bericht · Alterungsprozess",
         "E": {
-          "pill": "Optimal",
-          "title": "Telomer-Erhaltung optimal",
-          "text": "Deine Gene erhalten deine Telomere bestmöglich. Das spricht für ein jüngeres biologisches Alter.",
-          "rec": "Nicht rauchen, Bewegung und Nährstoffe wie Vitamin D3, Omega-3 und Vitamin E können trotzdem helfen, deine Telomere lange zu erhalten. Bist du an Krebs erkrankt oder warst es, besprich das vorher mit deiner Ärztin oder deinem Arzt."
+          "pill": "Gut",
+          "title": "Telomer-Erhaltung gut",
+          "text": "Deine Gene erhalten deine Telomere gut. Sie werden langsamer kürzer als bei Menschen mit ungünstigeren Genen.",
+          "rec": "Deine Telomer-Erhaltung funktioniert gut. Ein gesunder Lebensstil mit Bewegung, ausreichend Schlaf und abwechslungsreicher Ernährung hilft dir, das zu erhalten."
         },
         "B": {
           "pill": "Eingeschränkt",
           "title": "Telomer-Erhaltung eingeschränkt",
-          "text": "Deine Gene erhalten deine Telomere nur eingeschränkt. Sie werden schneller kürzer, dein biologisches Alter ist leicht erhöht.",
-          "rec": "Vitamin D3, Omega-3, Vitamin E und Ginkgo können für dich sinnvoll sein, um die Verkürzung zu bremsen. Bist du an Krebs erkrankt oder warst es, besprich das vorher mit deiner Ärztin oder deinem Arzt."
+          "text": "Deine Gene erhalten deine Telomere nur eingeschränkt. Sie werden schneller kürzer als bei Menschen mit günstigeren Genen.",
+          "rec": "Achte besonders auf einen gesunden Lebensstil: regelmäßige Bewegung, ausreichend Schlaf, nicht rauchen und eine abwechslungsreiche Ernährung."
         },
         "D": {
           "pill": "Schwach",
           "title": "Telomer-Erhaltung schlecht",
-          "text": "Deine Gene erhalten deine Telomere nur schlecht. Sie werden mit jeder Zellteilung rasch kürzer, dein biologisches Alter ist deutlich erhöht.",
-          "rec": "Für dich ist es besonders wichtig, Rauchen und oxidativen Stress zu meiden; Nährstoffe wie Vitamin D3, Omega-3, Vitamin E und Ginkgo können die Verkürzung bremsen. Bist du an Krebs erkrankt oder warst es, besprich das vorher mit deiner Ärztin oder deinem Arzt."
+          "text": "Deine Gene erhalten deine Telomere nur schlecht. Sie werden mit jeder Zellteilung rascher kürzer.",
+          "rec": "Achte besonders auf einen gesunden Lebensstil: regelmäßige Bewegung, ausreichend Schlaf, nicht rauchen und eine abwechslungsreiche Ernährung."
         },
         "N": {
           "pill": "Noch nicht analysiert",
           "title": "Diese Analyse hast du noch nicht",
           "text": "Wie gut deine Gene deine Telomere erhalten, zeigt die Gene Story „Alterungsprozess“ im Modul Biologisches Alter des Lifestyle-Berichts.",
-          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie schnell deine Zellen altern und was du dagegen tun kannst."
+          "rec": "Das wäre eine spannende Analyse für dich: Dann weißt du, wie gut deine Gene deine Telomere erhalten."
         }
       },
       "images": [
@@ -866,7 +867,7 @@
           "dur": {
             "de": 42
           },
-          "poster": "nuggets/themen/medi.jpg",
+          "poster": "nuggets/themen/medi.webp",
           "tag": "Originalaufnahme",
           "cap": "Daniel: Mediterrane Ernährung wirkt nur mit dem passenden Gen auf die Telomere"
         },
@@ -907,19 +908,19 @@
         {
           "t": "text",
           "h": "Wirkungslos heißt nicht ungesund",
-          "p": "Ein Ergebnis „wirkungslos“ bedeutet nur: Für deine Telomere ist dieser eine Hebel schwach. Daneben gibt es Nährstoffe, die deine Schutzgene unterstützen können, zum Beispiel Vitamin D3, Omega-3-Fettsäuren, Vitamin E, Resveratrol und Ginkgo. Sie können die Verkürzung der Telomere bremsen, verlängern können sie sie nicht."
+          "p": "Ein Ergebnis „wirkungslos“ bedeutet nur: Für deine Telomere ist dieser eine Hebel schwach. Nicht rauchen, Bewegung und ein gesundes Gewicht bleiben für dich wichtig."
         },
         {
           "t": "quiz",
           "q": "Was bedeutet das Ergebnis „Wirkung mediterraner Ernährung auf Telomere wirkungslos“?",
           "o": [
             "Mediterrane Ernährung ist für dich schädlich",
-            "Mediterrane Ernährung schützt deine Telomere kaum, andere Nährstoffe können trotzdem helfen",
+            "Mediterrane Ernährung schützt deine Telomere kaum, ein gesunder Lebensstil bleibt trotzdem wichtig",
             "Deine Telomere sind schon aufgebraucht",
             "Du solltest kein Gemüse mehr essen"
           ],
           "c": 1,
-          "e": "Nur dieser eine Weg über die Ernährung wirkt bei dir kaum auf die Telomere. Andere Nährstoffe und ein gesunder Lebensstil bleiben wichtig."
+          "e": "Nur dieser eine Weg über die Ernährung wirkt bei dir kaum auf die Telomere. Ein gesunder Lebensstil bleibt trotzdem wichtig."
         },
         {
           "t": "result"
@@ -932,19 +933,19 @@
           "pill": "Wirkt stark",
           "title": "Wirkung mediterraner Ernährung auf Telomere hoch",
           "text": "Deine PPARG-Gene sorgen dafür, dass mediterrane Ernährung deine Telomere schützt. Diese Ernährung wirkt bei dir direkt auf die Erhaltung deiner Telomere.",
-          "rec": "Mediterran zu essen kann für dich ein besonders wirksamer Weg sein, dein biologisches Alter günstig zu beeinflussen."
+          "rec": "Mediterran zu essen wirkt bei dir besonders günstig auf die Erhaltung deiner Telomere."
         },
         "B": {
           "pill": "Wirkt etwas",
           "title": "Wirkung mediterraner Ernährung auf Telomere gering",
           "text": "Aufgrund deiner Gene wirkt sich mediterrane Ernährung nur leicht positiv auf deine Telomerlänge aus.",
-          "rec": "Mediterran zu essen kann dein biologisches Alter etwas verbessern. Zusätzlich können Nährstoffe wie Vitamin D3, Omega-3 und Vitamin E sinnvoll sein."
+          "rec": "Mediterran zu essen wirkt bei dir leicht günstig auf die Erhaltung deiner Telomere. Nicht rauchen, Bewegung und ein gesundes Gewicht bleiben für dich wichtig."
         },
         "D": {
           "pill": "Kein Effekt",
           "title": "Wirkung mediterraner Ernährung auf Telomere wirkungslos",
           "text": "Aufgrund deiner Gene hat mediterrane Ernährung keinen Einfluss auf deine Telomerlänge.",
-          "rec": "Für deine Telomere können andere Nährstoffe wie Vitamin D3, Omega-3, Vitamin E und Ginkgo die wichtigere Rolle spielen. Für andere Bereiche deiner Gesundheit kann mediterrane Kost trotzdem wertvoll sein."
+          "rec": "Für deine Telomere spielen andere Faktoren wie Nichtrauchen und Bewegung die wichtigere Rolle. Für andere Bereiche deiner Gesundheit kann mediterrane Kost trotzdem wertvoll sein."
         },
         "N": {
           "pill": "Noch nicht analysiert",
@@ -1004,7 +1005,7 @@
             "en": 77
           },
           "tag": "3D-Animation",
-          "cap": "Entzündung und deine Gene: Warum manche tagelang Muskelkater haben · KI-generierte Animation"
+          "cap": "Entzündung und deine Gene: Warum manche tagelang Muskelkater haben · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer"
         },
         {
           "t": "text",
@@ -1048,26 +1049,26 @@
           "dur": {
             "de": 139
           },
-          "poster": "nuggets/themen/entz.jpg",
+          "poster": "nuggets/themen/entz.webp",
           "tag": "Originalaufnahme",
           "cap": "Entzündung ist Reparatur: Daniel am Beispiel Muskelkater"
         },
         {
           "t": "text",
           "h": "Mit dem Teller bremsen",
-          "p": "Deine Ernährung kann das Immunsystem anheizen oder beruhigen. Arachidonsäure wirkt wie ein Booster. Sie steckt fast nur in tierischen Lebensmitteln, etwa in Kalbsleber, Thunfisch, Geflügel, Rindfleisch, Eiern und Milchprodukten. Omega-3-Fettsäuren aus Hering, Makrele, Sardinen, Algen oder Lein-, Chia- und Walnussöl wirken entzündungshemmend, ebenso organischer Schwefel (MSM), etwa aus Zwiebeln und Sauerkraut."
+          "p": "Laut Bericht kann die Ernährung beeinflussen, wie stark dein Immunsystem reagiert: Arachidonsäure gilt als Baustein entzündungsfördernder Botenstoffe. Sie steckt fast nur in tierischen Lebensmitteln, etwa in Kalbsleber, Thunfisch, Geflügel, Rindfleisch, Eiern und Milchprodukten. Dein Bericht empfiehlt bei aggressiv programmierten Genen, weniger davon zu essen und öfter zu Hering, Makrele, Sardinen, Algen sowie Lein- und Walnussöl zu greifen."
         },
         {
           "t": "quiz",
           "q": "Welcher Stoff macht das Immunsystem aggressiver?",
           "o": [
             "Omega-3",
-            "MSM",
+            "Ballaststoffe",
             "Arachidonsäure",
             "Vitamin C"
           ],
           "c": 2,
-          "e": "Arachidonsäure wirkt wie ein Booster. Omega-3 und MSM drosseln das Immunsystem dagegen."
+          "e": "Arachidonsäure wirkt wie ein Booster für das Immunsystem."
         },
         {
           "t": "result"
@@ -1086,13 +1087,13 @@
           "pill": "Etwas zu aggressiv",
           "title": "Immunsystem etwas zu aggressiv programmiert",
           "text": "Deine Gene stellen dein Immunsystem etwas zu aggressiv ein. Es kann dabei auch deine eigenen Zellen beschädigen.",
-          "rec": "Weniger Arachidonsäure und mehr Omega-3 und MSM können für dich sinnvoll sein, um dein Immunsystem zu drosseln."
+          "rec": "Weniger Arachidonsäure und mehr Fisch mit Omega-3-Fettsäuren können für dich sinnvoll sein."
         },
         "D": {
           "pill": "Zu aggressiv",
           "title": "Immunsystem zu aggressiv programmiert",
           "text": "Deine Gene stellen dein Immunsystem deutlich zu aggressiv ein. Es reagiert viel zu stark und kann deine eigenen Zellen beschädigen.",
-          "rec": "Für dich kann es besonders sinnvoll sein, Arachidonsäure zu reduzieren und Omega-3 und MSM zu erhöhen. Hast du eine Entzündungserkrankung, besprich Änderungen mit deiner Ärztin oder deinem Arzt."
+          "rec": "Weniger Arachidonsäure und mehr Fisch mit Omega-3-Fettsäuren können für dich besonders sinnvoll sein. Hast du eine Entzündungserkrankung, besprich Änderungen mit deiner Ärztin oder deinem Arzt."
         },
         "N": {
           "pill": "Noch nicht analysiert",

@@ -1462,6 +1462,11 @@ body.touring .rail,body.touring .mtop{z-index:89}
 .gn .res .rec{display:block;margin:0;color:#3F3845}.gn .quiz .opt{color:var(--ink)}.gn .demo .note{margin-top:0}
 .gn .sec .sub{margin-top:8px}
 .gn small{text-transform:none;letter-spacing:0}
+/* NOVO LEGAL/CODE 19.11.2026: YouTube-Hinweis, KI-Hinweis, Wissenschaftszeile, Nugget-Symbol (WebP, beschnitten) */
+.gn .gn-ytds{font-size:11.5px;line-height:1.45;color:var(--soft);margin:6px 2px 0}
+.gn .gn-ainote{text-align:center;font-size:10.5px;color:var(--soft);margin:2px 0 0}
+.gn .res .sci{font-size:11px;line-height:1.45;color:var(--soft);margin-top:8px}
+.gn img[src$="nugget.webp"],.gn-flynug{object-fit:contain}
 /* GENE-NUGGETS:END */
 /* Shop (Platzhalter, 30.10.2026) */
 .rail .nav.shopnav{color:#fff}
@@ -2549,16 +2554,16 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
   <header class="hero"><div class="hero-in"><div>
     <div class="eyebrow">Gene Nuggets · Deine Reise durch deine Gene</div>
     <h1 id="gn-h">Lerne deine Gene kennen</h1>
-    <p class="lead">Kurze Lektionen mit Videos von Dr. Daniel Wallerstorfer und am Ende jeweils dein eigenes Ergebnis. Für jede Lektion sammelst du Gene Nuggets.</p>
-    <div class="pills"><span class="pill p-hi" id="gn-nugchip"><img src="nuggets/img/nugget.png" alt="" style="width:18px;height:18px"><b id="gn-nugn">0</b>&nbsp;Nuggets</span><span class="pill p-mid" id="gn-lvchip">Gen-Neuling</span><span class="pill p-lo" id="gn-stchip"></span></div>
+    <p class="lead">Kurze Lektionen mit Videos von Dr. Daniel Wallerstorfer, teils als KI-Animation mit seiner KI-Stimme. Am Ende jeweils dein eigenes Ergebnis. Für jede Lektion sammelst du Gene Nuggets.</p>
+    <div class="pills"><span class="pill p-hi" id="gn-nugchip"><img src="nuggets/img/nugget.webp" alt="" style="width:18px;height:18px"><b id="gn-nugn">0</b>&nbsp;Nuggets</span><span class="pill p-mid" id="gn-lvchip">Gen-Neuling</span><span class="pill p-lo" id="gn-stchip"></span></div>
     <div class="hero-actions"><button class="btn lime" id="gn-contbtn"><span id="gn-contlbl">Weiterlernen</span></button>
       <div class="seg toggle" role="group" aria-label="Ansicht"><button id="gn-tg-body" aria-pressed="true">Körper</button><button id="gn-tg-cards" aria-pressed="false">Karten</button></div></div>
   </div></div></header>
   <div class="sec"><div class="sec-l"><h2>Deine Reise</h2></div><p class="sub">11 Stationen vom Gehirn bis zu den Füßen. Tippe eine Station an.</p></div>
   <div class="split">
     <div class="gn-pane" id="gn-view-body"><div class="mapcard">
-      <div class="bodymap" id="gn-bodymap"><img class="fig" src="nuggets/img/body_hex_female.jpg" alt="Dein Körper mit deiner DNA"><div class="sexsw seg light" role="group" aria-label="Körper"><button data-sex="f" aria-pressed="true">Frau</button><button data-sex="m" aria-pressed="false">Mann</button></div><svg class="links" id="gn-links"></svg><div class="stlist" id="gn-stlist"></div></div>
-      <div class="progress-note" id="gn-pnote"></div></div></div>
+      <div class="bodymap" id="gn-bodymap"><img class="fig" src="nuggets/img/body_hex_female.webp" alt="Dein Körper mit deiner DNA"><div class="sexsw seg light" role="group" aria-label="Körper"><button data-sex="f" aria-pressed="true">Frau</button><button data-sex="m" aria-pressed="false">Mann</button></div><svg class="links" id="gn-links"></svg><div class="stlist" id="gn-stlist"></div></div>
+      <div class="progress-note" id="gn-pnote"></div><p class="gn-ainote">Illustrationen KI-generiert.</p></div></div>
     <div class="gn-pane" id="gn-view-cards"><div class="deckwrap"><button class="sidearr l" id="gn-sprev" tabindex="-1" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 18 18"><path d="M11.5 3.5L6 9l5.5 5.5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="sidearr r" id="gn-snext" tabindex="-1" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 18 18"><path d="M6.5 3.5L12 9l-5.5 5.5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="deck" id="gn-deck" tabindex="0" role="region" aria-roledescription="Karussell" aria-label="Stationen – mit Pfeiltasten oder Wischen blättern"><div class="cards" id="gn-cards"></div></div></div>
       <div class="decknav"><button class="arr" id="gn-prev" aria-label="Vorherige Station"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M11.5 3.5L6 9l5.5 5.5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dots" id="gn-dots"></div><button class="arr" id="gn-next" aria-label="Nächste Station"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M6.5 3.5L12 9l-5.5 5.5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
       <div class="decklbl" id="gn-decklbl" aria-live="polite"></div></div>
@@ -2568,11 +2573,11 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 <div class="lesson" id="gn-lesson" aria-hidden="true" role="dialog" aria-label="Lektion">
   <div class="lbar"><button class="x" id="gn-lclose" aria-label="Lektion schließen"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
     <div class="meta"><div class="k" id="gn-lkick"></div><div class="t" id="gn-ltitle"></div><div class="rbar"><i id="gn-lprog"></i></div></div>
-    <span class="chip" id="gn-lnug"><img src="nuggets/img/nugget.png" alt=""><span id="gn-lnugn">0</span></span></div>
+    <span class="chip" id="gn-lnug"><img src="nuggets/img/nugget.webp" alt=""><span id="gn-lnugn">0</span></span></div>
   <div class="lscroll" id="gn-lscroll"></div>
 </div>
 <div class="celebrate" id="gn-cele" role="dialog" aria-label="Lektion abgeschlossen">
-  <div class="big"><img src="nuggets/img/nugget.png" alt=""><span id="gn-celen">+0</span></div>
+  <div class="big"><img src="nuggets/img/nugget.webp" alt=""><span id="gn-celen">+0</span></div>
   <h2 id="gn-celeh">Lektion geschafft!</h2><p id="gn-celep"></p><span class="lvup" id="gn-celelv"></span>
   <button class="btn lime" id="gn-celebtn">Weiter zur Reise</button>
 </div>
@@ -2587,7 +2592,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
     <label style="margin-top:6px">SCALEBAR <b id="gn-sbv">08</b></label><input type="range" id="gn-sb" min="1" max="10" step="1" value="8" aria-label="Scalebar-Stufe"><pre id="gn-json"></pre></fieldset>
   <fieldset><legend>Reise</legend><label><input type="checkbox" id="gn-unlock"> Alle Stationen und Lektionen freischalten</label>
     <div class="row" style="margin-top:8px"><button id="gn-reset">Fortschritt zurücksetzen</button><button id="gn-demo3">Beispielstand: 3 Stationen erledigt</button></div></fieldset>
-  <p class="note">Bilder KI-generiert (Higgsfield). Clips: Dr. Daniel Wallerstorfer.</p>
+  <p class="note">Bilder KI-generiert (Higgsfield). Videos: Dr. Daniel Wallerstorfer, teils KI-Animation mit KI-Stimme.</p>
 </aside>
 </section>
 <script>/* Seitenpfeile links/rechts der offenen Karte (Desktop) – spiegeln die Pfeile unten */
@@ -2596,7 +2601,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
  const sync=()=>{SP.disabled=P.disabled;SN.disabled=N.disabled};sync();
  new MutationObserver(sync).observe(P,{attributes:true,attributeFilter:['disabled']});new MutationObserver(sync).observe(N,{attributes:true,attributeFilter:['disabled']});
  const cw=()=>{const d=document.getElementById('gn-deck');if(!d)return;const c=getComputedStyle(d).getPropertyValue('--cw');const card=d.querySelector('.card');if(card)d.parentElement.style.setProperty('--cw',card.offsetWidth+'px')};
- addEventListener('resize',cw);setInterval(cw,1500);cw();})();</script>
+ addEventListener('resize',cw);const D0=document.getElementById('gn-deck'),C0=document.getElementById('gn-cards');if(window.ResizeObserver&&D0)new ResizeObserver(()=>requestAnimationFrame(cw)).observe(D0);if(C0)new MutationObserver(()=>requestAnimationFrame(cw)).observe(C0,{childList:true});cw();})();</script>
 <!-- GENE-NUGGETS:END -->
 <!-- GEDAECHTNIS:BEGIN -->
 <section class="view gd" data-view="gedaechtnis" hidden aria-labelledby="h-gd">
@@ -3720,6 +3725,19 @@ window.addEventListener('hashchange',route);route();
 'use strict';
 const $ = id => document.getElementById('gn-' + id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+// NOVO CODE S1 (19.11.2026): Lektionstexte aus den JSONs nur mit erlaubten Tags ins DOM (b, i, em, strong, br, sup, sub,
+// span mit class, a mit https-Link). Alles andere wird entpackt (Text bleibt), Script/Style/iframe samt Inhalt entfernt,
+// alle übrigen Attribute (on*, style, src …) gelöscht. <template> ist inert: Bilder laden nicht, onerror läuft nicht.
+const SAFE_TAGS = new Set(['B', 'I', 'EM', 'STRONG', 'BR', 'SUP', 'SUB', 'SPAN', 'A']), DROP_TAGS = new Set(['SCRIPT', 'STYLE', 'IFRAME', 'OBJECT', 'EMBED', 'TEMPLATE', 'NOSCRIPT', 'SVG', 'MATH']);
+const safe = s => { const t = document.createElement('template'); t.innerHTML = String(s ?? '');
+  (function walk(el) { [...el.childNodes].forEach(c => {
+    if (c.nodeType === 3) return; if (c.nodeType !== 1) { c.remove(); return; }
+    const tag = c.tagName.toUpperCase(); if (DROP_TAGS.has(tag)) { c.remove(); return; }
+    walk(c); if (!SAFE_TAGS.has(tag)) { c.replaceWith(...c.childNodes); return; }
+    [...c.attributes].forEach(a => { const ok = (tag === 'SPAN' && a.name === 'class') || (tag === 'A' && a.name === 'href' && /^https:\/\//i.test(a.value)); if (!ok) c.removeAttribute(a.name); });
+    if (tag === 'A') { c.setAttribute('target', '_blank'); c.setAttribute('rel', 'noopener noreferrer'); } }); })(t.content);
+  return t.innerHTML; };
+const ytOk = id => /^[\w-]{11}$/.test(String(id || ''));
 
 // ===================== DATEN =====================
 // Je Gene Story: formula = Präfix der *_HIDER-Variablen, scalebar = Slider-Variable (01–10, 10 = grün).
@@ -3752,7 +3770,7 @@ const STATIONS = [
     L('hdl', 'Omega-3 und HDL-Cholesterin', 'DNA_NUTRITION_HDL', 'DNA_NUTRITION_HDL_SCALEBAR'),
     L('ldl', 'Regulierung von LDL-Cholesterin', 'DNA_NUTRITION_LDL', 'DNA_NUTRITION_LDL_SCALEBAR'),
     L('trigly', 'Regulierung von Triglyceriden', 'DNA_NUTRITION_TRIGLYC', 'DNA_NUTRITION_TRIGLYC_SCALEBAR'),
-    L('homocys', 'Herz-Schutz vor Homocystein', 'DNA_NUTRITION_HOMOCYSTEINE', 'DNA_NUTRITION_HOMOCYSTEINE_SCALEBAR'),
+    L('homocys', 'Homocystein-Regulierung', 'DNA_NUTRITION_HOMOCYSTEINE', 'DNA_NUTRITION_HOMOCYSTEINE_SCALEBAR'),
     L('salz', 'Kochsalz und Blutdruck', 'DNA_NUTRITION_SALT', 'DNA_NUTRITION_SALT_SCALEBAR') ] },
   { k: 'muskel', n: 'Muskeln', sub: 'Sport & Leistung', img: 'st06_muskeln', lessons: [
     L('faser', 'Muskelfasertyp', null, 'DNA_PERFORMANCE_MUSKELFASER_SCALEBAR'),
@@ -3767,7 +3785,7 @@ const STATIONS = [
     L('q10haut', 'Wirkung von Q10', 'DNA_BEAUTY_Q10', 'DNA_BEAUTY_Q10_SCALA') ] },
   { k: 'gehirn', n: 'Gehirn', sub: 'Stress & Burnout', img: 'st08_gehirn', lessons: [
     L('burnout', 'Stress und Burnout', 'DNA_BURNOUT', 'DNA_BURNOUT_SCALEBAR'),
-    L('alkohol', 'Alkohol und Sucht', 'DNA_TOXO', 'DNA_NUTRITION_ALCABUSE_SCALEBAR') ] },
+    L('alkohol', 'Alkohol und dein Belohnungssystem', 'DNA_TOXO', 'DNA_NUTRITION_ALCABUSE_SCALEBAR') ] },
   { k: 'alter', n: 'Zellalter', sub: 'Biologisches Alter', img: 'st09_zellalter', lessons: [
     L('telomere', 'Telomere und biologisches Alter', 'DNA_BIOLOGICAL_AGE_B2B', 'DNA_AGE_TELOMERE_SCALEBAR'),
     L('medi', 'Mediterrane Ernährung und Alter', 'DNA_AGE_MEDINUT', 'DNA_AGE_MEDINUT_SCALEBAR'),
@@ -3783,46 +3801,51 @@ const STATIONS = [
     L('typen', 'Schnell, normal oder langsam?'),
     L('ampel', 'Deine Medikamenten-Ampel') ] }
 ];
+// Pharmakogenetik nur über die ärztliche Schiene: Station fest gesperrt, auch mit Video nie einblenden (NOVO LEGAL G4, 19.11.2026)
+const GESPERRT = ['pille'];
+for (let si = STATIONS.length - 1; si >= 0; si--) if (GESPERRT.includes(STATIONS[si].k)) STATIONS.splice(si, 1);
 const ALL = []; STATIONS.forEach((s, si) => s.lessons.forEach((l, li) => { l.si = si; l.li = li; ALL.push(l); }));
+// Review 05 Nr. 11: Stationszahl im Untertitel gleich nach dem Sperren anpassen, nicht erst nach dem Laden
+document.querySelectorAll('.gn .sub').forEach(e => { e.textContent = e.textContent.replace(/\b11 Stationen\b/, STATIONS.length + ' Stationen'); });
 const lessonById = id => ALL.find(l => l.id === id);
 
 // Gene-Story-Texte für die Ergebniskarte (Titel = Wortlaut im Bericht)
 const RESULTS = {
   folsaeure: {
     story: 'Wirkung von Folsäure', report: 'Lifestyle-Bericht · Gesund ernähren',
-    E: { pill: 'Funktioniert', title: 'Folsäureumwandlung funktioniert', text: 'Deine MTHFR-Gene wandeln Folsäure gut in Methylfolat um. Folsäure wirkt bei dir so, wie sie soll.', rec: 'Normale Folsäure ist für dich eine gute Wahl: stabil, günstig und gut aufgenommen.' },
+    E: { pill: 'Funktioniert', title: 'Folsäureumwandlung funktioniert', text: 'Deine MTHFR-Gene wandeln Folsäure gut in Methylfolat um. Folsäure wird bei dir so aktiviert, wie sie soll.', rec: 'Normale Folsäure ist für dich eine gute Wahl: stabil, günstig und von deinen Genen gut aktiviert.' },
     B: { pill: 'Beeinträchtigt', title: 'Folsäureumwandlung beeinträchtigt', text: 'Deine Gene wandeln Folsäure langsamer um. Ein Großteil wird aktiviert, aber nicht alles.', rec: 'Eine Kombination aus Folsäure und Methylfolat kann für dich sinnvoll sein.' },
-    D: { pill: 'Funktioniert nicht', title: 'Folsäureumwandlung funktioniert nicht', text: 'Deine Gene wandeln Folsäure kaum in die aktive Form um. Normale Folsäure bleibt bei dir weitgehend wirkungslos.', rec: 'Methylfolat ist für dich die passendere Form, weil es das Gen nicht braucht. Besprich die Einnahme mit deiner Ärztin oder deinem Arzt, vor allem bei Kinderwunsch.' },
-    N: { pill: 'Noch nicht analysiert', title: 'Diese Analyse hast du noch nicht', text: 'Wie gut dein Körper Folsäure aktiviert, zeigt die Gene Story „Wirkung von Folsäure“ in der Ernährungsanalyse.', rec: 'Das wäre eine spannende Analyse für dich: Dann weißt du, ob Folsäure bei dir wirkt oder ob Methylfolat die bessere Wahl ist.' }
+    D: { pill: 'Funktioniert nicht', title: 'Folsäureumwandlung funktioniert nicht', text: 'Deine Gene wandeln Folsäure nur zu einem kleinen Teil in die aktive Form um. Normale Folsäure wirkt bei dir deshalb nicht ausreichend.', rec: 'Methylfolat kann für dich die passendere Form sein, weil es das Gen nicht braucht. Besprich die Einnahme mit deiner Ärztin oder deinem Arzt, vor allem bei Kinderwunsch.' },
+    N: { pill: 'Noch nicht analysiert', title: 'Diese Analyse hast du noch nicht', text: 'Wie gut dein Körper Folsäure aktiviert, zeigt die Gene Story „Wirkung von Folsäure“ in der Ernährungsanalyse.', rec: 'Das wäre eine spannende Analyse für dich: Dann weißt du, wie gut deine Gene Folsäure aktivieren.' }
   }
 };
 
 // Ausgearbeitete Lektionen
-const IMG = n => 'nuggets/img/' + n + '.jpg';
+const IMG = n => 'nuggets/img/' + n + '.webp';
 // Clips als ungelistete YouTube-Videos (Kanal Dr. Daniel Wallerstorfer); Quelle: nuggets/youtube_ids.json (MEDIA MAKER/finalize_gene_nuggets.py)
 const GN_YT = {"alkohol_1":"aMbH5GGB3zA","alkohol_2":"Tti70Y_PaRY","alkohol_3":"RClEri_ezE8","burnout_1":"BeYnWOHh_IU","burnout_2":"1sZbZjr9-O4","burnout_3":"FMVmO4RKgvM","chemie_1":"lLY5h1ffILo","chemie_2":"qtc4SjYUc64","eisen_1":"VOau_SFQ5Jg","eisen_2":"6O2Te_uIDQg","entz_1":"waiNk3TK7Cg","entz_2":"yEyk8ZfDfYA","entz_3":"uhtsWVpH_Wg","erhol_1":"mlYBEWIg7_s","erhol_2":"Z7QDtHV5wsg","erhol_3":"n-A8nvv8ReQ","ermued_1":"Fj7K75W8MdM","ermued_2":"eBO3leV75mo","faser_1":"AQdBsZAZZrU","fett_1":"wuCDwkc6Nl4","fett_2":"hpSOgeDiUeQ","fett_3":"h_X6ggAjMg8","folsaeure_1":"ihNO2L7hWMA","folsaeure_2":"uCVzPpjq7nQ","folsaeure_3":"M-9jQrePu10","folsaeure_4":"PNTEv8VZjco","gene_1":"rBmaBw35VRw","gene_2":"9T06ongp0GE","gene_3":"oWBKSTyChVw","hdl_1":"D1H7OIJXsRY","hdl_2":"FdhYMfIChkg","kaffee_1":"3RI_6g3M3PI","kaffee_2":"FRM1PSEcywo","kaffee_3":"R9R0egD3Zds","kalred_1":"3RWVaSlUta0","kalred_2":"ZU0Dopz7VEk","kalzium_1":"BII4jqizyLs","kh_1":"kXQ4kSnlrs8","kh_2":"GbvoZPSNLeA","kollagen_1":"-pmFKfOvH4o","kollagen_2":"c8WwSUqWS1Y","kollagen_3":"P6m5Ql5MOgg","kopien_1":"bl5J83uBXwg","kopien_2":"E41XFaDdunc","kopien_3":"YZqbprWLDl8","ldl_1":"P9hAEnmFGa4","ldl_2":"Iqdl-egL3bo","medi_1":"hFZgHokvC6E","medi_2":"-SDQFt6p1yc","oxi_1":"BFXrL5QPcpI","oxi_2":"HikghhpFpsk","oxi_3":"hXlz_6CUEJ4","q10_1":"ncTbP9vEVGw","q10_2":"tS40TnD8L_s","q10haut_1":"vmT-WmkoSt0","q10haut_2":"M0bdZBu1Vms","q10haut_3":"Ozal6LX_9P8","radikale_1":"PcvDY7b0n_E","radikale_2":"7h3ZPNIH6ck","radikale_3":"PKEgFjBz5D8","salz_1":"osEQSMlogpY","salz_2":"HHytewkskho","salz_3":"ER5lnyUIwO8","sport_1":"Rb6cVWovPGM","sport_2":"4-3XCgD8byo","telomere_1":"Y4AMVECQF_Y","telomere_2":"L3nnlwlrP34","telomere_3":"DnGKgcgh46o","uv_1":"8eDduv4esqY","uv_2":"1nIKzut0KAQ","uv_3":"DTikLD_3IWQ","varianten_1":"Qa2Ab8ETvfc","verbrannt_1":"EcJqUoHNnpg","verbrannt_2":"jfsNXSwoQ9k","verbrannt_3":"ZXuOKoqwf6E","verletz_1":"BSV5ssOJJRo","verletz_2":"N9z2Hscb1ak","vitd_1":"1x_F9ckJ4Q4","vitd_2":"F4ncYnt6SRw"};
 const gnYtId = file => GN_YT[String(file || '').replace(/^.*\//, '').replace(/\.mp4$/, '')];
 const CONTENT = {
   relevanz: { minutes: 4, blocks: [
-    { t: 'text', h: 'Die Bedienungsanleitung deines Körpers', p: 'Welchen Treibstoff dein Auto braucht, weiß fast jeder. Welchen Treibstoff dein Körper braucht, wissen die wenigsten. Genau das steht in deinen Genen: welche Nährstoffe du besonders brauchst, wie du auf Fett und Kohlenhydrate reagierst und was dir guttut.' },
-    { t: 'video', yt: { de: 'ey0yuErQg_Y' }, dur: { de: 128 }, poster: 'nuggets/themen/relevanz.jpg', tag: 'Originalaufnahme', cap: 'Welchen Treibstoff braucht dein Körper? Die Gene als Bedienungsanleitung' },
+    { t: 'text', h: 'Die Bedienungsanleitung deines Körpers', p: 'Welchen Treibstoff dein Auto braucht, weiß fast jeder. Welchen Treibstoff dein Körper braucht, wissen die wenigsten. Genau dazu stehen Hinweise in deinen Genen: wie du bestimmte Nährstoffe verwertest, wie du auf Fett und Kohlenhydrate reagierst und was dir guttun kann.' },
+    { t: 'video', yt: { de: 'ey0yuErQg_Y' }, dur: { de: 128 }, poster: 'nuggets/themen/relevanz.webp', tag: 'Originalaufnahme', cap: 'Welchen Treibstoff braucht dein Körper? Die Gene als Bedienungsanleitung' },
     { t: 'text', h: 'Für ein ganzes Leben', p: 'Ein Elektroauto wird nach zehn Jahren nicht plötzlich zum Diesel. Genauso bleiben deine Gene ein Leben lang gleich. Ändern kannst du sie nicht. Aber du kannst wissen, wie sie arbeiten, und dich danach richten.' },
     { t: 'quiz', q: 'Können sich deine Gene im Laufe des Lebens ändern?', o: ['Ja, mit dem Alter ändern sie sich laufend', 'Nein, sie bleiben ein Leben lang gleich', 'Nur wenn du deine Ernährung umstellst', 'Ja, durch Sport'], c: 1, e: 'Richtig. Deine Gene bleiben ein Leben lang gleich. Darum reicht eine Analyse für dein ganzes Leben.' },
-    { t: 'quiz', q: 'Was verraten dir deine Gene?', o: ['Welchen „Treibstoff“ dein Körper braucht', 'Deine Lieblingsfarbe', 'Wie viel du heute gegessen hast', 'Wie das Wetter morgen wird'], c: 0, e: 'Genau. Deine Gene sind die Bedienungsanleitung deines Körpers, zum Beispiel dafür, welche Nährstoffe du besonders brauchst.' }
+    { t: 'quiz', q: 'Was verraten dir deine Gene?', o: ['Welchen „Treibstoff“ dein Körper braucht', 'Deine Lieblingsfarbe', 'Wie viel du heute gegessen hast', 'Wie das Wetter morgen wird'], c: 0, e: 'Genau. Deine Gene sind die Bedienungsanleitung deines Körpers, zum Beispiel dafür, wie dein Körper bestimmte Nährstoffe verwertet.' }
   ] },
   longevity: { minutes: 8, blocks: [
     { t: 'text', h: 'Wie lange können wir leben?', p: 'Longevity, auf Deutsch Langlebigkeit, ist eines der heißesten Themen der Medizin: das Leben verlängern und vor allem die gesunde Phase des Lebens. Wie lange haben Menschen früher gelebt, wie lange leben wir heute und wohin geht die Reise?' },
-    { t: 'video', yt: { de: 'jHgdDRGy0hA', en: 'J5zMYFBtjQA' }, dur: { de: 342, en: 326 }, aiLang: ['en'], cap: 'Langlebigkeit erklärt: Wie deine Gene dein Leben verlängern können', tag: 'Originalaufnahme' },
+    { t: 'video', yt: { de: 'jHgdDRGy0hA', en: 'J5zMYFBtjQA' }, dur: { de: 342, en: 326 }, aiLang: ['en'], cap: 'Langlebigkeit erklärt: Was die Forschung heute weiß', tag: 'Originalaufnahme' },
     { t: 'text', h: 'Von 35 auf 86 Jahre', p: 'Bis ins Jahr 1800 lag die durchschnittliche Lebenserwartung bei rund 35 Jahren. Sauberes Wasser und Seife hoben sie auf 49 Jahre. Danach kamen Sterilisierung, Impfungen, Antibiotika, Operationen und Transplantationen, Krebsfrüherkennung und das Human Genome Project. Heute liegt das fortschrittlichste Land bei durchschnittlich 86 Jahren.' },
     { t: 'quiz', q: 'Wie hoch war die durchschnittliche Lebenserwartung bis ins Jahr 1800?', o: ['Rund 35 Jahre', 'Rund 50 Jahre', 'Rund 70 Jahre', 'Rund 86 Jahre'], c: 0, e: 'Rund 35 Jahre. Erst sauberes Wasser, Hygiene und Medizin haben die Lebenserwartung danach stark steigen lassen.' },
     { t: 'text', h: 'Jedes Jahr drei Monate mehr', p: 'Unsere Lebenserwartung steigt jedes Jahr um rund drei Monate. Wer ein Jahr nach dir geboren ist, lebt statistisch drei Monate länger als du.' },
     { t: 'quiz', q: 'Um wie viel steigt die Lebenserwartung jedes Jahr?', o: ['Um einen Tag', 'Um rund drei Monate', 'Um ein ganzes Jahr', 'Gar nicht mehr'], c: 1, e: 'Rund drei Monate pro Jahr. Die Medizin verlängert unser Leben laufend weiter.' },
-    { t: 'text', h: 'Was als Nächstes kommt', p: 'Geforscht wird an der Umprogrammierung gealterter Zellen, an Organen aus dem 3D-Drucker, an epigenetischer Verjüngung und an Nanorobotern, die Schäden reparieren. Der X-Prize ist mit 101 Millionen Dollar dotiert für die erste Gruppe, die das Alter in drei Organsystemen um 10 bis 20 Jahre zurückdreht. Viele Wissenschaftler halten 120 Jahre für machbar.' },
-    { t: 'text', h: 'Jetzt ist die Zeit der Genetik', p: 'Bis diese Technologien da sind, sind Genanalyse und ein darauf abgestimmter Lebensstil der nächste Schritt: Ernährung und Gesundheit individuell auf dich zugeschnitten, für die bestmögliche Langlebigkeit.' },
-    { t: 'quiz', q: 'Was ist heute der nächste Schritt für ein längeres, gesundes Leben?', o: ['Abwarten, bis es Nanoroboter gibt', 'Genetik und ein darauf abgestimmter Lebensstil', 'Möglichst viele Vitamine auf einmal', 'Nur noch Organe aus dem 3D-Drucker'], c: 1, e: 'Genau. Mit Genanalyse und personalisierter Ernährung kannst du heute schon für deine Gesundheit arbeiten.' }
+    { t: 'text', h: 'Was als Nächstes kommt', p: 'Geforscht wird an der Umprogrammierung gealterter Zellen, an Organen aus dem 3D-Drucker, an epigenetischer Verjüngung und an Nanorobotern, die Schäden reparieren. Der XPRIZE Healthspan ist mit 101 Millionen Dollar dotiert. Gewinnen soll das Team, das die Funktion von Muskeln, Gehirn und Immunsystem bei älteren Menschen um 10 bis 20 Jahre verjüngt. Viele Wissenschaftler halten 120 Jahre für machbar.' },
+    { t: 'text', h: 'Jetzt ist die Zeit der Genetik', p: 'Bis diese Technologien da sind, sind Genanalyse und ein darauf abgestimmter Lebensstil ein naheliegender nächster Schritt: Du weißt, wie deine Gene arbeiten, und kannst Ernährung und Alltag daran ausrichten.' },
+    { t: 'quiz', q: 'Was ist heute der nächste Schritt für ein längeres, gesundes Leben?', o: ['Abwarten, bis es Nanoroboter gibt', 'Genetik und ein darauf abgestimmter Lebensstil', 'Möglichst viele Vitamine auf einmal', 'Nur noch Organe aus dem 3D-Drucker'], c: 1, e: 'Genau. Wenn du weißt, wie deine Gene arbeiten, kannst du deinen Lebensstil heute schon danach ausrichten.' }
   ] },
   gene: { minutes: 4, blocks: [
-    { t: 'img', src: 'nuggets/img/bericht_gene_figur.png', report: true, h: 'In jeder Zelle steckt dein Code', p: 'Dein Körper besteht aus rund 50 Billionen Zellen, das ist eine 5 mit 13 Nullen. In fast jeder Zelle steckt ein Zellkern mit deinem kompletten genetischen Code: der DNA.' },
+    { t: 'img', src: 'nuggets/img/bericht_gene_figur.webp', report: true, h: 'In jeder Zelle steckt dein Code', p: 'Dein Körper besteht aus rund 50 Billionen Zellen, das ist eine 5 mit 13 Nullen. In fast jeder Zelle steckt ein Zellkern mit deinem kompletten genetischen Code: der DNA.' },
     { t: 'text', h: 'Vier Buchstaben, 3,2 Milliarden Mal', p: 'Der Code besteht aus nur vier Buchstaben: A, T, C und G. Zusammen sind es rund 3,2 Milliarden. Ein winziger Ausschnitt sieht so aus: <span class="code">ATCGATCTTCGGAAATCTTGA</span>' },
     { t: 'quiz', q: 'Aus wie vielen verschiedenen Buchstaben besteht der genetische Code?', o: ['Zwei', 'Vier', '26, wie das Alphabet', '3,2 Milliarden'], c: 1, e: 'Vier Buchstaben: A, T, C und G. 3,2 Milliarden ist die Länge des ganzen Codes.' },
     { t: 'text', h: 'Gene sind Anleitungen', p: 'Ein Gen ist ein Abschnitt dieses Codes, eine Anleitung für eine bestimmte Aufgabe. Rund 23.000 Gene steuern zum Beispiel, wie schnell du Koffein abbaust, wie gut du Folsäure aktivierst oder wie dein Körper auf Fett reagiert.' },
@@ -3832,17 +3855,16 @@ const CONTENT = {
     { t: 'text', h: 'Und bei dir?', p: 'Deine Reise hat <b>11 Stationen</b>. Am Ende jeder Lektion siehst du, wie <b>deine eigenen Gene</b> bei diesem Thema arbeiten.' }
   ] },
   folsaeure: { minutes: 7, blocks: [
-    { t: 'text', h: 'Wirkt Folsäure bei dir überhaupt?', p: 'Folsäure ist eines der beliebtesten Nahrungsergänzungsmittel der Welt. Frauenärzte empfehlen sie in der Schwangerschaft, und auch für Männer ist sie wichtig: für gesunde Zellen und ein gesundes Herz. Ob sie bei dir wirkt, steht in deinen Genen.' },
-    { t: 'video', cartoon: true, yt: { de: 'RM3QmdZaHLQ', en: 'Kchv-yrE81g' }, dur: { de: 63, en: 63 }, tag: '3D-Animation', cap: 'Folsäure und deine Gene: Die Reise durch den Körper · KI-generierte Animation' },
-    { t: 'text', h: 'Erst aktivieren, dann wirken', p: 'Folsäure selbst ist noch inaktiv. Das MTHFR-Gen bildet ein Enzym, das Folsäure erkennt und in die aktive Form umwandelt: Methylfolat. Erst Methylfolat schützt das Herz und das ungeborene Kind.' },
+    { t: 'text', h: 'Wirkt Folsäure bei dir überhaupt?', p: 'Folsäure ist eine der beliebtesten Nahrungsergänzungen der Welt. Frauenärzte empfehlen sie rund um die Schwangerschaft, und auch für Männer ist Folat wichtig: Folat hat eine Funktion bei der Zellteilung und trägt zu einem normalen Homocystein-Stoffwechsel bei. Ob Folsäure bei dir gut aktiviert wird, steht in deinen Genen.' },
+    { t: 'video', cartoon: true, yt: { de: 'RM3QmdZaHLQ', en: 'Kchv-yrE81g' }, dur: { de: 63, en: 63 }, tag: '3D-Animation', cap: 'Folsäure und deine Gene: Die Reise durch den Körper · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer' },
+    { t: 'text', h: 'Erst aktivieren, dann wirken', p: 'Folsäure selbst ist noch inaktiv. Das MTHFR-Gen bildet ein Enzym, das Folsäure erkennt und in die aktive Form umwandelt: Methylfolat. Erst Methylfolat ist die Form, die der Körper direkt nutzen kann.' },
     { t: 'quiz', q: 'Wie heißt die aktive Form der Folsäure?', o: ['Homocystein', 'Methylfolat', 'Vitamin B12', 'Folat-Ester'], c: 1, e: 'Methylfolat ist die aktive Form. Das MTHFR-Gen sorgt für die Umwandlung.' },
-    { t: 'text', h: 'Zwei Kopien, unterschiedlich schnell', p: 'Du hast zwei Kopien des MTHFR-Gens: eine von deiner Mutter, eine von deinem Vater. Nicht bei jedem arbeiten beide gleich gut. Es gibt mehrere Stufen: Bei manchen wandelt das Gen Folsäure sehr gut um, bei anderen langsamer, und bei manchen so langsam, dass Folsäure praktisch wirkungslos bleibt.' },
+    { t: 'text', h: 'Zwei Kopien, unterschiedlich schnell', p: 'Du hast zwei Kopien des MTHFR-Gens: eine von deiner Mutter, eine von deinem Vater. Nicht bei jedem arbeiten beide gleich gut. Es gibt mehrere Stufen: Bei manchen wandelt das Gen Folsäure sehr gut um, bei anderen langsamer, und bei manchen so langsam, dass nur ein kleiner Teil der Folsäure aktiviert wird.' },
     { t: 'quiz', q: 'Wie viele Kopien des MTHFR-Gens hast du?', o: ['Eine', 'Zwei, eine von jedem Elternteil', 'Vier', 'Das ist bei jedem Menschen anders'], c: 1, e: 'Von jedem Gen hast du zwei Kopien. Wie gut beide arbeiten, entscheidet über die Umwandlung.' },
-    { t: 'video', yt: { de: 'RD1cFoewiCQ' }, dur: { de: 339 }, poster: 'nuggets/themen/folsaeure.jpg', tag: 'Originalaufnahme', cap: 'Daniel erklärt, wie Folsäure aktiviert wird' },
-    { t: 'text', h: 'Die Falle beim Bluttest', p: 'Ein Bluttest zeigt, wie viel Folsäure in deinem Blut ist, aber nicht, ob sie aktiviert wird. Wer schlecht umwandelt, kann gute Blutwerte haben, obwohl die Folsäure kaum wirkt. Das zeigen nur deine Gene.' },
-    { t: 'text', h: 'Folsäure oder Methylfolat?', p: 'Methylfolat ist bereits aktiv und braucht das Gen nicht. Folsäure hat aber Vorteile: Sie ist stabil, günstig und wird doppelt so gut aufgenommen, sofern deine Gene sie aktivieren können.' },
-    { t: 'text', h: 'Wie mächtig diese Information sein kann', p: 'In einer Studie wurden zwölf Frauen mit diesem Gendefekt, die nicht schwanger wurden, von Folsäure auf Methylfolat umgestellt. Daniel erzählt, was dann passiert ist.' },
-    { t: 'quiz', q: 'Warum kann ein Bluttest bei Folsäure täuschen?', o: ['Folsäure lässt sich im Blut nicht messen', 'Er zeigt die Menge im Blut, nicht ob sie aktiviert wird', 'Der Bluttest verändert die Folsäure', 'Folsäure wirkt nur in der Nacht'], c: 1, e: 'Viel Folsäure im Blut heißt nicht, dass sie wirkt. Entscheidend ist die Umwandlung in Methylfolat.' },
+    { t: 'video', yt: { de: 'RD1cFoewiCQ' }, dur: { de: 339 }, poster: 'nuggets/themen/folsaeure.webp', tag: 'Originalaufnahme', cap: 'Daniel erklärt, wie Folsäure aktiviert wird' },
+    { t: 'text', h: 'Die Falle beim Bluttest', p: 'Ein Bluttest zeigt, wie viel Folsäure in deinem Blut ist, aber nicht, ob sie aktiviert wird. Wer schlecht umwandelt, kann gute Blutwerte haben, obwohl ein Teil der Folsäure nicht aktiviert wird. Das zeigen nur deine Gene.' },
+    { t: 'text', h: 'Folsäure oder Methylfolat?', p: 'Methylfolat ist bereits aktiv und braucht das Gen nicht. Folsäure hat aber Vorteile: Sie ist stabil und günstig, und wer sie gut aktiviert, nutzt sie problemlos.' },
+    { t: 'quiz', q: 'Warum kann ein Bluttest bei Folsäure täuschen?', o: ['Folsäure lässt sich im Blut nicht messen', 'Er zeigt die Menge im Blut, nicht ob sie aktiviert wird', 'Der Bluttest verändert die Folsäure', 'Folsäure wirkt nur in der Nacht'], c: 1, e: 'Viel Folsäure im Blut heißt nicht, dass sie aktiviert wird. Entscheidend ist die Umwandlung in Methylfolat.' },
     { t: 'result', key: 'folsaeure' }
   ] }
 };
@@ -3895,7 +3917,7 @@ async function loadContent() {
   for (const f of CONTENT_FILES) {
     try { const r = await fetch('nuggets/content/' + f + '.json', { cache: 'no-store' }); if (!r.ok) continue; const j = await r.json();
       (j.lessons || []).forEach(x => { const l = lessonById(x.id); if (!l || !Array.isArray(x.blocks)) return;
-        CONTENT[x.id] = { minutes: x.minutes || 5, blocks: x.blocks }; if (x.result) RESULTS[x.id] = x.result;
+        CONTENT[x.id] = { minutes: +x.minutes || 5, blocks: x.blocks }; if (x.result) RESULTS[x.id] = x.result;
         l.full = true; if (x.title) l.t = x.title; l.invert = !!x.invert; });
     } catch (e) { console.warn('Inhalt nicht geladen:', f, e); }
   }
@@ -3903,9 +3925,10 @@ async function loadContent() {
 
 // ===================== KÖRPER-ANSICHT =====================
 let CUR = null; // im Karussell gewählte Station
+let LOADED = false; // NOVO CODE A2: erst nach loadContent() sind Lektionen anklickbar (vorher Ladezustand statt Platzhalter)
 const HELIX_TOP = 0.085, HELIX_BOT = 0.955; // Hexagon-Helix vom Gehirn bis ganz nach unten (Anteil der Bildhöhe); waagrecht = Bildmitte
 function renderBody() {
-  const fig = $('bodymap').querySelector('.fig'), src = S.sex === 'm' ? 'nuggets/img/body_hex_male.jpg' : 'nuggets/img/body_hex_female.jpg';
+  const fig = $('bodymap').querySelector('.fig'), src = S.sex === 'm' ? 'nuggets/img/body_hex_male.webp' : 'nuggets/img/body_hex_female.webp';
   if (!fig.src.endsWith(src)) { fig.src = src; fig.onload = () => requestAnimationFrame(drawLinks); }
   document.querySelectorAll('.sexsw button').forEach(b => b.setAttribute('aria-pressed', b.dataset.sex === (S.sex || 'f')));
   const list = $('stlist'); list.innerHTML = '';
@@ -3960,19 +3983,19 @@ function renderCards() {
     const st = stState(si), n = stCount(si), tot = s.lessons.length, c = document.createElement('article');
     c.className = 'card'; c.id = 'gn-card-' + si; c.dataset.si = si;
     const locked = st === 'lock' && !S.unlockAll;
-    const next = s.lessons.find(l => !S.done[l.id] && lessonOpen({ ...l, si, li: s.lessons.indexOf(l) }));
+    const next = s.lessons.find(l => LOADED && l.full && !S.done[l.id] && lessonOpen({ ...l, si, li: s.lessons.indexOf(l) }));
     c.innerHTML = `<div class="pic"><img src="${IMG(s.img)}" alt=""><span class="num ${st}">${si + 1}</span>${locked ? '<div class="lockveil"><svg width="30" height="34" viewBox="0 0 12 14"><rect x="1" y="6" width="10" height="7.5" rx="2" fill="#5E0047"/><path d="M3.5 6V4.2a2.5 2.5 0 0 1 5 0V6" stroke="#5E0047" stroke-width="1.4" fill="none"/></svg></div>' : ''}</div>
       <div class="body"><h2>${esc(s.n)}</h2><div class="sub">${esc(s.sub)}</div>
       <div class="bar"><i style="width:${(n / tot) * 100}%"></i></div><div class="bartxt">${n} von ${tot} Lektionen</div>
-      <div class="lessons">${s.lessons.map((l, li) => { const full = { ...l, si, li }, open = lessonOpen(full), d = S.done[l.id];
+      <div class="lessons">${s.lessons.map((l, li) => { const full = { ...l, si, li }, open = LOADED && l.full && lessonOpen(full), d = S.done[l.id];
         return `<button class="lrow ${d ? 'done' : ''} ${open ? '' : 'locked'} ${l.full ? 'full' : ''}" data-l="${l.id}" ${open ? '' : 'aria-disabled="true"'}>
           <span class="ic">${d ? '<svg width="18" height="18" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#3d8b3a"/><path d="M4.5 8.2l2.3 2.3 4.7-5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>' : open ? '<svg width="18" height="18" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#5E0047" stroke-width="1.6"/><path d="M6.5 5l4 3-4 3z" fill="#5E0047"/></svg>' : '<svg width="12" height="14" viewBox="0 0 12 14"><rect x="1" y="6" width="10" height="7.5" rx="2" fill="#b9aeb5"/><path d="M3.5 6V4.2a2.5 2.5 0 0 1 5 0V6" stroke="#b9aeb5" stroke-width="1.6" fill="none"/></svg>'}</span>
-          <span class="tt">${esc(l.t)}<small>${l.full ? (CONTENT[l.id].minutes + ' Min.') : 'Platzhalter'}</small></span><span class="rw">${d ? 'erledigt' : nugLabel(l)}</span></button>`; }).join('')}</div>
-      <button class="btn gold" data-start="${next ? next.id : ''}" ${next ? '' : 'disabled'}>${next ? (n ? 'Weiterlernen' : 'Station starten') : stDone(si) ? 'Station geschafft' : 'Noch gesperrt'}</button></div>`;
+          <span class="tt">${esc(l.t)}<small>${!LOADED ? 'lädt …' : l.full ? (CONTENT[l.id].minutes + ' Min.') : 'Platzhalter'}</small></span><span class="rw">${d ? 'erledigt' : nugLabel(l)}</span></button>`; }).join('')}</div>
+      <button class="btn gold" data-start="${next ? next.id : ''}" ${next ? '' : 'disabled'}>${next ? (n ? 'Weiterlernen' : 'Station starten') : !LOADED ? 'Lädt …' : stDone(si) ? 'Station geschafft' : 'Noch gesperrt'}</button></div>`;
     wrap.appendChild(c);
     const d = document.createElement('button'); d.className = st; d.setAttribute('aria-label', 'Station ' + (si + 1) + ': ' + s.n); d.addEventListener('click', () => goTo(si)); dots.appendChild(d);
   });
-  wrap.querySelectorAll('.lrow').forEach(b => b.addEventListener('click', () => { const l = lessonById(b.dataset.l); if (lessonOpen(l)) openLesson(l.id); }));
+  wrap.querySelectorAll('.lrow').forEach(b => b.addEventListener('click', () => { const l = lessonById(b.dataset.l); if (LOADED && l.full && lessonOpen(l)) openLesson(l.id); }));
   wrap.querySelectorAll('[data-start]').forEach(b => b.addEventListener('click', () => b.dataset.start && openLesson(b.dataset.start)));
   if (CUR == null) CUR = Math.min(curStation(), STATIONS.length - 1);
   sizeDeck(); layout(CUR); setActive();
@@ -4065,17 +4088,17 @@ $('tg-cards').addEventListener('click', () => showView('cards'));
 // ===================== LEKTION =====================
 let LS = null; // laufende Lektion
 function openLesson(id) {
-  const l = lessonById(id), s = STATIONS[l.si], c = CONTENT[id];
+  const l = lessonById(id), c = CONTENT[id];
+  if (!l || !c || !LOADED) return;
+  const s = STATIONS[l.si];
   LS = { id, quiz: 0, quizRight: 0, revealed: false, ended: false };
   $('lkick').textContent = `Station ${l.si + 1} · ${s.n}`; $('ltitle').textContent = l.t; $('lnugn').textContent = 0; $('lprog').style.width = '0';
   const box = $('lscroll'); box.scrollTop = 0;
-  if (!c) {
-    box.innerHTML = `<div class="blk"><div class="fig"><img src="${IMG(s.img)}" alt=""></div><h3>${esc(l.t)}</h3><p>Diese Lektion ist im Prototyp noch nicht ausgearbeitet. Sie folgt demselben Aufbau wie „Folsäure wird aktiviert“: kurze Texte, Bilder, ein passender Videoclip, Quizfragen und am Ende dein persönliches Ergebnis.</p></div>
-      <div class="stub"><b>Für die Entwicklung</b><br>${l.formula ? `Zustand aus <code>${l.formula}_EFFECTIVE_HIDER</code> / <code>_IMPAIRED_HIDER</code> / <code>_DEFECTIVE_HIDER</code>` : 'Allgemeine Lektion ohne persönliches Ergebnis'}${l.scalebar ? `<br>Balken aus <code>${l.scalebar}</code> (01–10)` : ''}</div>` + finishHTML();
-  } else {
-    box.innerHTML = c.blocks.map(blockHTML).join('') + finishHTML();
-    wireBlocks(box);
-  }
+  box.innerHTML = c.blocks.map(blockHTML).join('') + finishHTML();
+  wireBlocks(box);
+  // NOVO LEGAL D2 (19.11.2026): Hinweis vor dem Laden des YouTube-Players, unter dem ersten Video der Lektion
+  const fv = box.querySelector('.video[data-yt]');
+  if (fv) fv.closest('.blk').insertAdjacentHTML('beforeend', '<p class="gn-ytds">Beim Abspielen lädt das Video von YouTube (Google Ireland Limited). Dabei werden deine IP-Adresse und Nutzungsdaten an Google übertragen, auch in die USA. Mehr in der Datenschutzerklärung.</p>');
   wireFinish();
   $('lesson').classList.add('open'); $('lesson').setAttribute('aria-hidden', 'false');
   setTimeout(() => $('lclose').focus(), 350);
@@ -4087,29 +4110,30 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && LS && !$('
 
 function blockHTML(b, i) {
   if ((b.t === 'img' && !b.report) || b.t === 'info') b = { t: 'text', h: b.h, p: b.p }; // keine KI-generierten Bilder im Content
-  if (b.t === 'text') return `<div class="blk"><h3>${b.h}</h3><p>${b.p}</p></div>`;
-  if (b.t === 'img' && b.report) return `<div class="blk"><div class="fig" style="aspect-ratio:auto;background:#fff;padding:10px"><img src="${b.src}" alt="${esc(b.h)}" style="height:auto;object-fit:contain"></div><h3>${b.h}</h3><p>${b.p}</p></div>`;
-  if (b.t === 'img') return `<div class="blk"><div class="fig"><img src="${IMG(b.img)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${IMG(STATIONS[lessonById(LS.id).si].img)}'"></div><h3>${b.h}</h3><p>${b.p}</p><div class="ai-note">Illustration KI-generiert</div></div>`;
+  if (b.t === 'text') return `<div class="blk"><h3>${safe(b.h)}</h3><p>${safe(b.p)}</p></div>`;
+  if (b.t === 'img' && b.report) return `<div class="blk"><div class="fig" style="aspect-ratio:auto;background:#fff;padding:10px"><img src="${esc(b.src)}" alt="${esc(b.h)}" style="height:auto;object-fit:contain"></div><h3>${safe(b.h)}</h3><p>${safe(b.p)}</p></div>`;
+  if (b.t === 'img') return `<div class="blk"><div class="fig"><img src="${esc(IMG(b.img))}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${IMG(STATIONS[lessonById(LS.id).si].img)}'"></div><h3>${safe(b.h)}</h3><p>${safe(b.p)}</p><div class="ai-note">Illustration KI-generiert</div></div>`;
   if (b.t === 'video' && b.yt) { // Video je App-Sprache (Profil): z. B. deutsches Original, englische KI-Version
     const lang = document.querySelector('[data-lang][aria-pressed="true"]')?.dataset.lang === 'en' ? 'en' : 'de';
     const id = b.yt[lang] || b.yt.de || b.yt.en, len = Math.round((b.dur && (b.dur[lang] || b.dur.de || b.dur.en)) || 0), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
     const ai = (b.aiLang || []).includes(lang), enOnly = !b.yt[lang] && !b.yt.de && lang !== 'en';
-    return `<div class="blk"><div class="video" data-yt="${id}"><button class="poster" aria-label="Video abspielen: ${esc(b.cap)}"><img src="${b.poster || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
-      <div class="vcap"><span><span class="vtag">${ai ? 'KI-Sprachversion' : b.tag}</span>${esc(b.cap)}${enOnly ? ' · auf Englisch' : ''}${ai ? ' · <b>Stimme und Lippenbewegung KI-generiert</b>' : ''}</span></div></div>`; }
+    if (!ytOk(id)) return '';
+    return `<div class="blk"><div class="video" data-yt="${id}"><button class="poster" aria-label="Video abspielen: ${esc(b.cap)}"><img src="${esc(b.poster || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`)}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
+      <div class="vcap"><span><span class="vtag">${ai ? 'KI-Sprachversion' : esc(b.tag || '')}</span>${esc(b.cap)}${enOnly ? ' · auf Englisch' : ''}${ai ? ' · <b>Stimme und Lippenbewegung KI-generiert</b>' : ''}</span></div></div>`; }
   if (b.t === 'video' && b.files) b = { ...b, file: b.files[0] };          // mehrere Clips am Stück in einem Player
   if (b.t === 'video' && b.file && gnYtId(b.file)) { // eigener Clip als ungelistetes YouTube-Video (ganzes Video, kein start/end)
     const len = Math.round(b.dur || ((b.end || 0) - (b.start || 0))), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
-    const ids = (b.files || [b.file]).map(gnYtId).filter(Boolean);
-    return `<div class="blk"><div class="video" data-yt="${ids[0]}"${ids.length > 1 ? ` data-ytl="${ids.join(',')}"` : ''}><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
-      <div class="vcap"><span><span class="vtag">${b.tag}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
+    const ids = (b.files || [b.file]).map(gnYtId).filter(ytOk); if (!ids.length) return '';
+    return `<div class="blk"><div class="video" data-yt="${ids[0]}"${ids.length > 1 ? ` data-ytl="${ids.join(',')}"` : ''}><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="nuggets/${esc(b.file.replace(/\.mp4$/, '.jpg'))}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
+      <div class="vcap"><span><span class="vtag">${esc(b.tag || '')}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
   if (b.t === 'video' && b.file) // Fallback: lokaler, exakt geschnittener Clip
-    return `<div class="blk"><div class="video"><video controls playsinline preload="metadata" poster="nuggets/${b.file.replace(/\.mp4$/, '.jpg')}" src="nuggets/${b.file}" style="position:absolute;inset:0;width:100%;height:100%;background:#1b1018"></video></div>
-      <div class="vcap"><span><span class="vtag">${b.tag}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`;
+    return `<div class="blk"><div class="video"><video controls playsinline preload="metadata" poster="nuggets/${esc(b.file.replace(/\.mp4$/, '.jpg'))}" src="nuggets/${esc(b.file)}" style="position:absolute;inset:0;width:100%;height:100%;background:#1b1018"></video></div>
+      <div class="vcap"><span><span class="vtag">${esc(b.tag || '')}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`;
   if (b.t === 'video') { const len = b.end - b.start, mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
-    return `<div class="blk"><div class="video" data-id="${b.id}" data-s="${b.start}" data-e="${b.end}"><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="${b.ytposter || !b.poster ? `https://i.ytimg.com/vi/${b.id}/hqdefault.jpg` : IMG(b.poster)}" data-fallback="${IMG(b.poster || STATIONS[lessonById(LS.id).si].img)}" onerror="if(this.src.indexOf('ytimg')>0)this.src=this.dataset.fallback" alt=""><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span><span class="dur">${mm}:${ss}</span></button></div>
-      <div class="vcap"><span><span class="vtag">${b.tag}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
-  if (b.t === 'quiz') return `<div class="blk quiz" data-c="${b.c}" data-e="${esc(b.e)}"><div class="k">Kurze Frage</div><div class="q">${esc(b.q)}</div>${b.o.map((o, k) => `<button class="opt" data-k="${k}"><span class="l">${'ABCD'[k]}</span><span>${esc(o)}</span></button>`).join('')}<div class="fb" aria-live="polite"></div></div>`;
-  if (b.t === 'info') return `<div class="blk infocard"><img src="${IMG(b.img)}" alt=""><div><h3 style="font-size:16px;margin-bottom:4px">${b.h}</h3><p style="font-size:14px">${b.p}</p></div></div>`;
+    return `<div class="blk"><div class="video" data-id="${ytOk(b.id) ? b.id : ''}" data-s="${+b.start || 0}" data-e="${+b.end || 0}"><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="${b.ytposter || !b.poster ? `https://i.ytimg.com/vi/${esc(b.id)}/hqdefault.jpg` : esc(IMG(b.poster))}" data-fallback="${esc(IMG(b.poster || STATIONS[lessonById(LS.id).si].img))}" onerror="if(this.src.indexOf('ytimg')>0)this.src=this.dataset.fallback" alt=""><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span><span class="dur">${mm}:${ss}</span></button></div>
+      <div class="vcap"><span><span class="vtag">${esc(b.tag || '')}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
+  if (b.t === 'quiz') return `<div class="blk quiz" data-c="${+b.c | 0}" data-e="${esc(b.e)}"><div class="k">Kurze Frage</div><div class="q">${esc(b.q)}</div>${b.o.map((o, k) => `<button class="opt" data-k="${k}"><span class="l">${'ABCD'[k]}</span><span>${esc(o)}</span></button>`).join('')}<div class="fb" aria-live="polite"></div></div>`;
+  if (b.t === 'info') return `<div class="blk infocard"><img src="${IMG(b.img)}" alt=""><div><h3 style="font-size:16px;margin-bottom:4px">${safe(b.h)}</h3><p style="font-size:14px">${safe(b.p)}</p></div></div>`;
   if (b.t === 'result') return resultHTML(b.key || LS.id);
   return '';
 }
@@ -4122,9 +4146,10 @@ function resultHTML(key) {
   r.st = cls;
   return `<div class="blk res ${st === 'N' ? 'none' : ''}" id="gn-res" data-pos="${pct}"><div class="in">
     <button class="f" id="gn-resbtn" aria-label="Dein Ergebnis aufdecken"><span class="ring"><svg width="26" height="30" viewBox="0 0 12 14"><rect x="1" y="6" width="10" height="7.5" rx="2" fill="#fff"/><path d="M3.5 6V4.2a2.5 2.5 0 0 1 5 0V6" stroke="#fff" stroke-width="1.4" fill="none"/></svg></span><h3>Und bei dir?</h3><span>Antippen und dein Ergebnis aufdecken · +2 Nuggets</span></button>
-    <div class="b"><div class="lbl">Dein Ergebnis · ${esc(R.story)}</div><span class="pill ${r.st}">${v.pill}</span><h4>${esc(v.title)}</h4>
+    <div class="b"><div class="lbl">Dein Ergebnis · ${esc(R.story)}</div><span class="pill ${r.st}">${esc(v.pill)}</span><h4>${esc(v.title)}</h4>
       ${r.st !== 'N' ? '<div class="scale" aria-hidden="true"><i></i></div>' : ''}
       <div class="rtxt">${esc(v.text)}</div><div class="rec"><b>${r.st === 'N' ? 'Tipp: ' : 'Was das für dich heißt: '}</b>${esc(v.rec)}</div>
+      ${r.st !== 'N' ? '<div class="sci">Information zur Wissenschaft: Die genetische Eigenschaft ist durch mindestens drei unabhängige Studien belegt. Die Empfehlung ist eine daraus abgeleitete Schlussfolgerung.</div>' : ''}
       <div class="src">${r.st === 'N' ? 'Gene Story: ' + esc(R.story) : 'Aus deinem ' + esc(R.report || 'Bericht')}</div></div></div></div>`;
 }
 function wireBlocks(box) {
@@ -4147,14 +4172,14 @@ function wireBlocks(box) {
     if (q.dataset.done) return; q.dataset.done = 1; LS.quiz++;
     const ok = +o.dataset.k === +q.dataset.c, fb = q.querySelector('.fb'), right = q.querySelector(`.opt[data-k="${q.dataset.c}"]`);
     q.querySelectorAll('.opt').forEach(x => x.disabled = true);
-    if (ok) { o.classList.add('right'); LS.quizRight++; fb.innerHTML = `<b class="ok">Richtig!</b> ${q.dataset.e}`; plus(q, 1); }
-    else { o.classList.add('wrong'); setTimeout(() => right.classList.add('right'), 380); fb.innerHTML = `<b class="no">Nicht ganz.</b> ${q.dataset.e}`; }
+    if (ok) { o.classList.add('right'); LS.quizRight++; fb.innerHTML = `<b class="ok">Richtig!</b> ${safe(q.dataset.e)}`; plus(q, 1); }
+    else { o.classList.add('wrong'); setTimeout(() => right.classList.add('right'), 380); fb.innerHTML = `<b class="no">Nicht ganz.</b> ${safe(q.dataset.e)}`; }
     updTally();
   })));
   const rb = box.querySelector('#gn-resbtn');
   if (rb) rb.addEventListener('click', () => { const res = $('res'); res.classList.add('on'); setTimeout(() => { res.classList.add('flat'); const i = res.querySelector('.scale i'); if (i) setTimeout(() => i.style.left = res.dataset.pos + '%', 30); }, 800); if (!LS.revealed) { LS.revealed = true; plus(res, 2); updTally(); } });
 }
-function plus(el, n) { const p = document.createElement('div'); p.className = 'plus'; p.innerHTML = `+${n} <img src="img/nugget.png" alt="">`; el.appendChild(p); setTimeout(() => p.remove(), 1200); }
+function plus(el, n) { const p = document.createElement('div'); p.className = 'plus'; p.innerHTML = `+${n} <img src="nuggets/img/nugget.webp" alt="">`; el.appendChild(p); setTimeout(() => p.remove(), 1200); }
 
 // Abschluss: Knopf erst ganz unten aktiv
 function finishHTML() { return `<div class="finish" id="gn-finish"><div class="tally" id="gn-tally"></div><button class="btn" id="gn-fbtn" disabled>Bis ganz unten lesen</button><div class="hint" id="gn-fhint">Bestanden ist die Lektion, wenn du bis hier gescrollt und abgeschlossen hast. Das Quiz ist nur zum Üben.</div></div>`; }
@@ -4186,7 +4211,7 @@ function flyNuggets(n) {
   const x0 = from.left - o.left, y0 = from.top - o.top, x1 = to.left - o.left + 4, y1 = to.top - o.top + 2;
   let shown = S.nuggets - n; $('nugn').textContent = shown;
   for (let k = 0; k < n; k++) setTimeout(() => {
-    const im = document.createElement('img'); im.src = 'nuggets/img/nugget.png'; im.className = 'gn-flynug'; im.alt = ''; ph.appendChild(im);
+    const im = document.createElement('img'); im.src = 'nuggets/img/nugget.webp'; im.className = 'gn-flynug'; im.alt = ''; ph.appendChild(im);
     const sx = x0 + (k % 5 - 2) * 12;
     im.animate([{ transform: `translate(${sx}px,${y0}px) scale(.5)` }, { transform: `translate(${(sx + x1) / 2}px,${Math.min(y0, y1) - 30 - (k % 3) * 20}px) scale(1.2)`, offset: .45 }, { transform: `translate(${x1}px,${y1}px) scale(.6)` }], { duration: 900, easing: 'cubic-bezier(.4,0,.2,1)' }).onfinish = () => { im.remove(); shown++; $('nugn').textContent = Math.min(shown, S.nuggets); $('nugchip').classList.remove('bump'); void $('nugchip').offsetWidth; $('nugchip').classList.add('bump'); };
   }, 300 + k * 120);
@@ -4220,10 +4245,10 @@ let renderAll = function () { $('nugn').textContent = S.nuggets; $('lvchip').tex
 // ---- Einbau in die GENIUS-App: Dialog-Hintergrund, Weiterlernen, Zähler, Demo, Neuzeichnen beim Reiterwechsel ----
 new MutationObserver(() => { const on = $('lesson').classList.contains('open'); $('scrim').classList.toggle('on', on); document.body.style.overflow = on ? 'hidden' : ''; }).observe($('lesson'), { attributes: true, attributeFilter: ['class'] });
 $('scrim').addEventListener('click', () => { if (!$('cele').classList.contains('on')) closeLesson(); });
-function nextLesson() { return ALL.find(l => !S.done[l.id] && lessonOpen(l)); }
+function nextLesson() { return LOADED ? ALL.find(l => l.full && !S.done[l.id] && lessonOpen(l)) : null; }
 function updHero() {
   const n = nextLesson(), done = STATIONS.filter((s, si) => stDone(si)).length;
-  $('contlbl').textContent = n ? 'Weiterlernen: ' + n.t : 'Alle Lektionen geschafft';
+  $('contlbl').textContent = !LOADED ? 'Lektionen werden geladen …' : n ? 'Weiterlernen: ' + n.t : 'Alle Lektionen geschafft';
   $('contbtn').disabled = !n;
   $('stchip').textContent = done + ' von ' + STATIONS.length + ' Stationen';
 }
@@ -4236,17 +4261,21 @@ window.addEventListener('hashchange', gnShow); window.addEventListener('resize',
 renderAll();
 // Nur fertige Lektionen zeigen (Daniel 01.11.2026): ohne Video ausgeblendet, bis der Inhalt kommt; leere Stationen ebenso
 function hideUnfinished() {
+  const keep = CUR != null && STATIONS[CUR] ? STATIONS[CUR].k : null; // Review 05 Nr. 12
   const ready = l => ((CONTENT[l.id] || {}).blocks || []).some(b => b.t === 'video');
   for (let si = STATIONS.length - 1; si >= 0; si--) {
     STATIONS[si].lessons = STATIONS[si].lessons.filter(ready);
-    if (!STATIONS[si].lessons.length) STATIONS.splice(si, 1);
+    if (!STATIONS[si].lessons.length || GESPERRT.includes(STATIONS[si].k)) STATIONS.splice(si, 1);
   }
   ALL.length = 0; STATIONS.forEach((s, si) => s.lessons.forEach((l, li) => { l.si = si; l.li = li; ALL.push(l); }));
-  const n = STATIONS.length + ' Stationen', fix = s => typeof s === 'string' ? s.replace('11 Stationen', n) : s;
+  const n = STATIONS.length + ' Stationen', fix = s => typeof s === 'string' ? s.replace(/\b\d+ Stationen\b/, n) : s;
   Object.values(CONTENT).forEach(c => c.blocks.forEach(b => { b.p = fix(b.p); }));
   document.querySelectorAll('.gn .sub').forEach(e => { if (e.textContent.includes('11 Stationen')) e.textContent = fix(e.textContent); });
+  document.querySelectorAll('.gn .sub').forEach(e => { e.textContent = e.textContent.replace(/\b\d+ Stationen\b/, n); }); // Review 05 Nr. 11
+  const ki = keep ? STATIONS.findIndex(st => st.k === keep) : -1; // Review 05 Nr. 12: gewählte Station behalten
+  CUR = ki >= 0 ? ki : null; // NOVO CODE A1: sonst neu wählen (Index der ungefilterten Liste wäre falsch)
 }
-loadContent().then(() => { hideUnfinished(); renderAll(); gnShow(); });
+loadContent().then(() => { LOADED = true; hideUnfinished(); renderAll(); gnShow(); });
 })();
 </script>
 <!-- MEDIKAMENTE:BEGIN – Pharmakogenetik eingebettet (22.10.2026). Nur Navigation und Darstellung,
