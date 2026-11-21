@@ -348,6 +348,10 @@ const G=document.getElementById('g'),MAP=document.getElementById('map');
 document.getElementById('defs').innerHTML=DEFS;
 let last=performance.now(),hovering=false,drag=null,dirty=true;
 const RM=matchMedia('(prefers-reduced-motion: reduce)');
+/* Bewegung anhalten (shop-check 21.11.2026): Schalter im App-Profil setzt localStorage gn-ruhig, App/Portal melden es per postMessage */
+let RUHIG=false;try{RUHIG=localStorage.getItem('gn-ruhig')==='1'}catch(e){}
+addEventListener('storage',e=>{if(e.key==='gn-ruhig')RUHIG=e.newValue==='1'});
+addEventListener('message',e=>{if(e.origin===location.origin&&e.data&&typeof e.data.ruhig==='boolean')RUHIG=e.data.ruhig});
 function tick(t){
   /* NOVO CODE P1 19.11.2026: unsichtbar (iframe ausgeblendet, Größe 0) → nicht zeichnen, nur alle 0,5 s nachsehen */
   if(!innerWidth||!innerHeight){setTimeout(()=>requestAnimationFrame(tick),500);last=performance.now();return}
@@ -356,7 +360,7 @@ function tick(t){
   const ease=1-Math.exp(-dt*7);let moving=false;
   B.forEach((b,i)=>{b.l.forEach((l,j)=>{const tg=want(i,j),d=tg-W[i][j];if(Math.abs(d)>.002){W[i][j]+=d*ease;moving=true}else W[i][j]=tg});
     const tg=W[i].some((x,j)=>want(i,j))?1:0,d=tg-WB[i];if(Math.abs(d)>.002){WB[i]+=d*ease;moving=true}else WB[i]=tg});
-  const spin=S.run&&!drag&&!(S.hoverStop&&hovering)&&!RM.matches;
+  const spin=S.run&&!drag&&!(S.hoverStop&&hovering)&&!RM.matches&&!RUHIG;
   if(spin)rot+=S.dir*S.spd*Math.PI/180*dt;
   /* NOVO CODE P3: reines Drehen nur ~20 Bilder/s neu zeichnen (vorher 60 – Handy lief auf Volllast) */
   /* Video-Aufnahme (virtuelle Uhr window.__vt, sachet-rad\video\aufnahme.mjs): jedes Bild zeichnen */

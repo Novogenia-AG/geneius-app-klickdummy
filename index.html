@@ -5,7 +5,7 @@ Das Portal übernimmt die Bildsprache der responsiven Report-Studio-App: tiefer 
 Inhalte 1:1 aus ORIGINAL-INHALTE.md: Nährstoff-Kacheln und Detail-Dialog wie im Original (Berechnungsgrundlage Größe · Gewicht · Geschlecht · Alter, keine Gen-Begründungen), Nährstoffe und Lebensmittel als getrennte Bereiche, „Rezept verfeinern“ als drei Aktions-Buttons mit den Original-Fragebögen (Lebensstil 17 Fragen, Blutwerte 18 Werte, Dosierung).
 Bestellungen und Abos zeigen die Produktfreisteller groß auf eigenem weißen Feld (nie beschnitten), jedes Datum mit relativer Zeitangabe; Berichte mit großem Cover, PDF-Download, Buch-Ansicht, Handy-Ansicht und Coach-Erklärung. Alles Erfundene trägt ein „neu“-Etikett.
 -->
-<html lang="de">
+<html lang="de" class="boot">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -1474,7 +1474,7 @@ body.touring .rail,body.touring .mtop{z-index:89}
 .rail .nav.shopnav:hover .shop-ic{transform:scale(1.06)}
 @keyframes shopPuls{0%,100%{box-shadow:0 0 0 4px rgba(198,214,63,.22),0 10px 22px -8px rgba(198,214,63,.9)}50%{box-shadow:0 0 0 9px rgba(198,214,63,.08),0 10px 22px -8px rgba(198,214,63,.9)}}
 @media(prefers-reduced-motion:reduce){.rail .nav.shopnav .shop-ic{animation:none}}
-.shop-m{display:none;align-items:center;gap:6px;margin-left:auto;margin-right:8px;height:34px;padding:0 13px;border-radius:999px;border:0;background:var(--lime);color:var(--lime-ink);font:inherit;font-size:13px;font-weight:800;cursor:pointer}
+.shop-m{display:none;align-items:center;gap:6px;margin-left:auto;margin-right:8px;height:44px;padding:0 13px;border-radius:999px;border:0;background:var(--lime);color:var(--lime-ink);font:inherit;font-size:13px;font-weight:800;cursor:pointer}
 .mtop .shop-m{display:inline-flex}
 /* Handy-Coach (Daniel, 01.11.2026): Chat sticky im Vollbild, Themen + letzte Chats klappen bei Bedarf von rechts herein */
 .cs-tog,.cs-top,.cs-back{display:none}
@@ -1885,7 +1885,7 @@ a[data-r="beratung"].br-locked::after{content:"";position:absolute;top:6px;right
 .mtabs a[data-r="beratung"].br-locked::after{top:2px;right:calc(50% - 22px)}
 .br-lock{display:none}
 section.br.br-off .br-lock{display:block;text-align:center;padding:34px 24px;margin-bottom:18px}
-section.br.br-off .br-grid,section.br.br-off .br-note,section.br.br-off #brBanner,section.br.br-off .hero .br-test{display:none}
+section.br.br-off .br-grid,section.br.br-off .br-note,section.br.br-off #brBanner,section.br.br-off .hero .br-test,section.br.br-off .br-tester{display:none}
 .br-lockic{width:62px;height:62px;margin:0 auto 12px;border-radius:50%;background:#F3E6EF;color:var(--plum);display:grid;place-items:center}
 .br-lockic svg{width:30px;height:30px}
 .br-lock h2{margin-bottom:8px;justify-content:center;text-align:center}.br-lock p{max-width:520px;margin:0 auto 8px;color:var(--soft)}.br-lock p.sm{font-size:13px}
@@ -1906,6 +1906,20 @@ section.br .hero-in{position:relative;align-items:center}
 #brRemote.mirror{transform:scaleX(-1)}
 section.br.br-off .br-testconf{display:none}
 @media (max-width:980px){section.br .hero-in{flex-direction:column;align-items:stretch}.br-testconf{width:100%;padding:18px 20px}.br-testconf b{font-size:22px}}
+/* shop-check 21.11.2026 (A5, A7): Knöpfe ≥ 48 px, Dialogknöpfe am Handy untereinander (Hauptknopf oben), Fokusring, weniger Bewegung,
+   Demo-Knöpfe eingeklappt unter „Für Tester“, „Konferenz testen“ am Handy als Zeile */
+.br-times button{min-height:48px}
+.br-times button:disabled{opacity:.45;cursor:not-allowed}
+.br-dlg .acts .btn{min-height:48px}
+@media (max-width:480px){.br-dlg .acts{flex-direction:column-reverse;align-items:stretch}.br-dlg .acts .btn{width:100%;white-space:normal}}
+section.br :focus-visible,.br-ov :focus-visible,.br-room :focus-visible{outline:3px solid var(--plum);outline-offset:2px;box-shadow:0 0 0 2px #fff}
+.br-dlg h3:focus{outline:none}.br-dlg h3:focus-visible{outline:3px solid var(--plum);outline-offset:2px}
+.br-tester{margin-top:14px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff}
+.br-tester summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:0 14px;font-weight:700;font-size:13px}
+.br-tester .br-test{margin:0;padding:0 14px 14px}
+.br-demooff{min-height:44px;color:#D7BFD1;opacity:1;padding:12px 8px;margin:-12px -8px}
+@media (max-width:980px){.br-testconf{flex-direction:row;align-items:center;flex-wrap:wrap;gap:6px 12px;padding:12px 16px;border-radius:18px}.br-testconf .bci{width:40px;height:40px;border-radius:12px}.br-testconf .bci .ic{width:22px;height:22px}.br-testconf b{font-size:17px}.br-testconf small{display:none}.br-testconf .bgo{margin:0 0 0 auto}}
+@media (prefers-reduced-motion:reduce){section.br *,.br-ov,.br-ov *,.br-room *{animation:none!important;transition:none!important}.br-testconf:hover{transform:none}}
 /* Chat & Fragen */
 .br-chat{background:rgba(255,255,255,.08);border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:260px}
 .br-chat h3{font-size:13px;font-weight:800;margin:2px 2px 0;color:#fff;display:flex;align-items:center;gap:8px}
@@ -2112,6 +2126,69 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 @media (max-width:760px){.sr-card{height:520px}.sr-card .stick{width:80%}.sr-brain{width:88px;height:88px}.sr-cap{top:calc(85% + 44px);font-size:15px}.sr-ai{top:calc(39% + 52px)}}
 @media (prefers-reduced-motion:reduce){.sr-brain,.sr-ai i{animation:none}}
 /* SACHET-RAD:END */</style>
+<style id="shop-css">/* SHOP-CHECK:BEGIN (patch_shop.py, 21.11.2026) */
+.cart-n{font-weight:800}
+.cart-sum{margin-right:auto;align-self:center;font-size:13px;font-weight:700;color:var(--plum)}
+.shopit .btn[aria-pressed=true]{background:#fff;color:var(--plum);border:1.5px solid var(--plum);box-shadow:none}
+body:has(#sheet.on) .svc-fab{visibility:hidden}
+@media (max-width:600px){.cart-sum{width:100%;text-align:center}}
+.ckr{display:flex;gap:10px;align-items:flex-start;min-height:44px;padding:11px 12px;margin-top:8px;border:1.5px solid #EADFE6;border-radius:14px;cursor:pointer;font-size:14px;color:var(--ink)}
+.ckr input{margin-top:2px;width:18px;height:18px;accent-color:var(--plum);flex:none}
+.ckr:has(input:checked){border-color:var(--plum);background:#FBF5F9}
+.ckerr{color:#B42318!important;font-weight:700}
+@media (pointer:coarse){.btn.sm,.more,.sh-f .btn,.shopit .btn{min-height:44px}}
+/* SHOP-CHECK:END */</style>
+<!-- VISUELL-KOPF:BEGIN (patch_shop.py, 21.11.2026) -->
+<script>try{if(localStorage.getItem('gn-ruhig')==='1')document.documentElement.classList.add('ruhig')}catch(e){}
+addEventListener('load',()=>document.documentElement.classList.remove('boot'))</script>
+<style id="vis-css">
+/* 1 Reflow bei 400 % Zoom (CSS-Höhe ≤ 480 px): Kopf und Coach-Karte nicht fixieren, Portal so hoch wie der Bildschirm */
+@media (max-height:480px){
+ .mtop{position:static!important}
+ body.r-coach{overflow:auto!important}
+ body.r-coach .chatp{position:static!important;height:auto!important;min-height:100dvh}
+ .dd-portal{height:100dvh!important;min-height:100dvh}
+ .gn .lbar{padding:6px 12px;gap:8px}.gn .lbar .meta .k{display:none}.gn .lbar .meta .t{white-space:normal;font-size:14px;line-height:1.25}
+ .svc-fab{width:44px!important;height:44px!important}#gn-demofab{display:none!important}
+}
+.tour-btn.sm{min-width:0;max-width:100%}
+@media (max-width:360px){.mtop .tour-btn{display:none}}
+/* 2 Schwebende Knöpfe nicht über offenen Fenstern */
+body:has(#sheet.on,#gn-lesson.open,.br-ov,.br-room,.ovl:not([hidden]),.de-ov.on,.dn-ov.on,.celebrate.on) :is(.svc,#gn-demofab,.nx-recalc.nx-fixed,.nx-fab){display:none!important}
+.nx-recalc.nx-fixed{z-index:55}
+/* 3 Fokusring auf hellen Flächen: plum 3 px (13,4:1) mit weißem Rand */
+:is(.sheet,.br-dlg,#gn-lesson,.card,.tile,.shopit,.br-card,.nlrow) :focus-visible,.btn.ghost:focus-visible{outline:3px solid #5E0047!important;outline-offset:2px;box-shadow:0 0 0 5px #fff}
+/* 4 Zustände: gedrückt, deaktiviert, lädt; Hover für Zeitfenster */
+.btn:active,.opt:active,.qb:active,.br-times button:active{transform:translateY(1px) scale(.98);filter:brightness(.94);transition-duration:.06s}
+.btn:disabled,.btn[aria-disabled=true]{opacity:.45;cursor:not-allowed;transform:none!important;box-shadow:none;filter:none}
+.btn[aria-busy=true]{pointer-events:none;position:relative;color:transparent!important;opacity:.85}
+.btn[aria-busy=true]>*{visibility:hidden}
+.btn[aria-busy=true]::after{content:"";position:absolute;inset:0;margin:auto;width:18px;height:18px;border-radius:50%;border:2.5px solid #5E0047;border-right-color:transparent;animation:gn-spin .7s linear infinite}
+.btn.plum[aria-busy=true]::after{border-color:#fff;border-right-color:transparent}
+@keyframes gn-spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.btn[aria-busy=true]::after{animation:none;opacity:.6}}
+.br-times button:hover{border-color:#5E0047}
+/* 5 Gemeinsame Knopfgrößen (Eckenradius bleibt, Designfrage für Daniel) */
+:root{--btn-h:44px;--btn-h-sm:36px}
+@media (pointer:coarse){:root{--btn-h:48px;--btn-h-sm:44px}.tour-btn,.sh-x,.gn .lbar .x{min-height:44px;min-width:44px}}
+.btn{min-height:var(--btn-h)}.btn.sm{min-height:var(--btn-h-sm)}
+/* 6 Kontrast */
+.gn button.lrow .rw,.gn .quiz div.k,#gn-tally span:nth-child(even),#gn-tally .sum{color:#5A6600}
+.gn button.lrow.done{opacity:.9}.gn button.lrow .tt small{color:#5E5462}
+li.dw-r.weak,li.dw-r.none{opacity:1}li.dw-r.weak small,li.dw-r.none small{color:#6F6270}li.dw-r.weak .dw-bar,li.dw-r.none .dw-bar{opacity:.55}
+nav.dd-sub .dd-sh{color:#C4ADC1}
+#cin::placeholder{color:#6B6B6B}
+/* 7 Skelett beim Start statt leerer Übersicht */
+html.boot main#main>section{display:none!important}
+html.boot main#main::before{content:"";display:block;height:70vh;margin:24px;border-radius:24px;background:linear-gradient(90deg,rgba(255,255,255,.06),rgba(255,255,255,.13),rgba(255,255,255,.06));background-size:200% 100%;animation:gn-skel 1.2s linear infinite}
+@keyframes gn-skel{to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){html.boot main#main::before{animation:none}}
+/* 8 Bewegung anhalten (html.ruhig, Profil); Hintergrund nur ein Durchlauf */
+.aurora{animation-iteration-count:1}
+html.ruhig *,html.ruhig *::before,html.ruhig *::after{animation-play-state:paused!important}
+html.ruhig .btn[aria-busy=true]::after{animation-play-state:running!important}
+</style>
+<!-- VISUELL-KOPF:END -->
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
@@ -2155,13 +2232,14 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
       <p class="lead">Hier ist ein Überblick über deine Bestellungen und Analysen.</p>
       <div class="pills" id="ovPills"></div>
       <!-- TODO Shop-URL bestätigen -->
-      <div class="hero-actions"><a class="btn lime" href="https://www.novogenia.com/shop" target="_blank" rel="noopener"><svg class="ic sm"><use href="#i-plus"/></svg>Neue Bestellung<span class="sr"> (öffnet den Shop in einem neuen Fenster)</span></a></div>
+      <!-- Kaufweg = In-App-Shop (openShop). Externe Shop-URL https://www.novogenia.com/shop erst nach Bestätigung wieder verlinken (shop-check A3) -->
+      <div class="hero-actions"><button type="button" class="btn lime" data-shop><svg class="ic sm"><use href="#i-plus"/></svg>Neue Bestellung</button></div>
     </div>
   </div></header>
 
   <!-- Kennzahlen wie im echten Portal -->
   <div class="stats2">
-    <a class="tile card act stat" href="#bestellungen" aria-label="10 Bestellungen – zu den Bestellungen"><span class="ico"><svg class="ic"><use href="#i-box"/></svg></span><span><span class="num">10</span><small>Bestellungen</small></span><span class="go" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></a>
+    <a class="tile card act stat" href="#bestellungen" aria-label="7 Bestellungen – zu den Bestellungen" data-ordn><span class="ico"><svg class="ic"><use href="#i-box"/></svg></span><span><span class="num">7</span><small>Bestellungen</small></span><span class="go" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></a>
     <a class="tile card act stat" href="#analysen" aria-label="5 Berichte – zu den Analysen"><span class="ico"><svg class="ic"><use href="#i-file"/></svg></span><span><span class="num">5</span><small>Berichte</small></span><span class="go" aria-hidden="true"><svg class="ic"><use href="#i-chev"/></svg></span></a>
   </div>
 
@@ -2354,7 +2432,8 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
       <p class="lead">Deine bisherigen Bestellungen – mit Live-Status vom Kit bis zur Lieferung.</p>
       <div class="pills"><span class="pill p-run"><i></i>In Bearbeitung · <b>3</b></span><span class="pill p-ok"><i></i>Abgeschlossen · <b>4</b></span><a class="pill p-neu" href="#abos"><i></i>Abos · <b>2</b></a></div>
       <!-- TODO Shop-URL bestätigen -->
-      <div class="hero-actions"><a class="btn lime" href="https://www.novogenia.com/shop" target="_blank" rel="noopener"><svg class="ic sm"><use href="#i-plus"/></svg>Neue Bestellung<span class="sr"> (öffnet den Shop in einem neuen Fenster)</span></a></div>
+      <!-- Kaufweg = In-App-Shop (openShop). Externe Shop-URL https://www.novogenia.com/shop erst nach Bestätigung wieder verlinken (shop-check A3) -->
+      <div class="hero-actions"><button type="button" class="btn lime" data-shop><svg class="ic sm"><use href="#i-plus"/></svg>Neue Bestellung</button></div>
     </div>
   </div></header>
   <div class="sec"><div class="sec-l"><h2>Bestellungen</h2><span class="cnt">7</span></div><p class="sub">Tippe eine Bestellung an, um alle Stationen mit Datum zu sehen.</p></div>
@@ -2362,33 +2441,33 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 
   <!-- ===== ABOS (jetzt Teil von Bestellungen) ===== -->
   <div class="sec" id="aboSec" style="scroll-margin-top:120px"><div class="sec-l"><h2>Deine Abos</h2><span class="cnt">2</span><span class="pill p-start"><i></i>Startet · <b>1</b></span><span class="pill p-pause"><i></i>Pause geplant · <b>1</b></span></div>
-    <p class="sub">Nächste Zahlung am <b data-dr="24.10.2026">24.10.2026</b> · nächste Lieferung am <b data-dr="08.01.2027">08.01.2027</b></p></div>
+    <p class="sub">Nächste Zahlung am <b data-dr="24.10.2026" data-pay>24.10.2026</b> · nächste Lieferung am <b data-dr="08.01.2027" data-del>08.01.2027</b></p></div>
   <h3 class="slabel" style="margin-top:20px">Abo-Fahrplan · Oktober 2026 bis März 2027</h3>
   <div class="tile card no-tilt plan">
     <svg class="ill c-plum" aria-hidden="true" style="opacity:.06"><use href="#i-cal"/></svg>
-    <div class="plan-head" style="align-items:center"><div><div class="kick">Was als Nächstes ankommt</div><h3 style="margin-top:4px">2 Abos · Lifestyle+</h3><p class="d">alle 3 Monate · €115.00</p></div><img class="plan-img" src="produkte/lifestyle-plus-foto.webp" alt="Lifestyle+ Abo – Produktbild" width="1000" height="500"></div>
+    <div class="plan-head" style="align-items:center"><div><div class="kick">Was als Nächstes ankommt</div><h3 style="margin-top:4px">2 Abos · Lifestyle+</h3><p class="d">alle 3 Monate · 115,00 €</p></div><img class="plan-img" src="produkte/lifestyle-plus-foto.webp" alt="Lifestyle+ Abo – Produktbild" width="1000" height="500"></div>
     <div class="months"><span></span><span>Okt</span><span>Nov</span><span>Dez</span><span>Jan</span><span>Feb</span><span>Mär</span></div>
     <div class="lane"><div class="lane-name"><img src="produkte/lifestyle-plus-foto.webp" alt="" aria-hidden="true"><span>Lifestyle+ Abo<small>Erstbestellung · startet</small></span></div><div class="track" id="laneA"></div></div>
-    <div class="lane"><div class="lane-name"><img src="produkte/lifestyle-plus-foto.webp" alt="" aria-hidden="true"><span>Lifestyle+ Abo<small>alle 3 Monate · €115.00</small></span></div><div class="track" id="laneB"></div></div>
-    <div class="legend"><span><i style="background:var(--lime)"></i>Start / Produktion</span><span><i style="border:1.5px solid var(--plum)"></i>Zahlung €115.00</span><span><i style="background:var(--plum)"></i>Lieferung</span><span><i style="background:rgba(255,143,0,.25);border:1px dashed #C86400"></i>Pause geplant</span></div>
+    <div class="lane"><div class="lane-name"><img src="produkte/lifestyle-plus-foto.webp" alt="" aria-hidden="true"><span>Lifestyle+ Abo<small>alle 3 Monate · 115,00 €</small></span></div><div class="track" id="laneB"></div></div>
+    <div class="legend"><span><i style="background:var(--lime)"></i>Start / Produktion</span><span><i style="border:1.5px solid var(--plum)"></i>Zahlung 115,00 €</span><span><i style="background:var(--plum)"></i>Lieferung</span><span><i style="background:rgba(255,143,0,.25);border:1px dashed #C86400"></i>Pause geplant</span></div>
   </div>
 
   <h3 class="slabel">Abo-Details</h3>
   <div class="bento" id="aboGrid">
     <article class="tile card no-tilt ticket has-img t-x">
       <div class="tk-img"><img src="produkte/lifestyle-plus-foto.webp" alt="Lifestyle+ Abo – Produktbild" width="1000" height="500"></div>
-      <div class="tk-top"><div><div class="kick">Abo · Erstbestellung NS-e1494a8e</div><h3>Lifestyle+ Abo</h3><p>alle 3 Monate · €115.00</p></div><span class="pill p-start"><i></i>Startet</span></div>
+      <div class="tk-top"><div><div class="kick">Abo · Erstbestellung NS-e1494a8e</div><h3>Lifestyle+ Abo</h3><p>alle 3 Monate · 115,00 €</p></div><span class="pill p-start"><i></i>Startet</span></div>
       <div class="perf"></div>
       <div class="tk-note"><span class="ico lime" style="width:40px;height:40px"><svg class="ic"><use href="#i-factory"/></svg></span><p>Deine erste Rezeptur wird gerade produziert. Sobald sie versendet ist, erscheinen hier deine Liefer- und Zahlungstermine.</p></div>
-      <div class="tk-act"><button class="btn plum sm" data-order="NS-e1494a8e"><svg class="ic sm"><use href="#i-truck"/></svg>Sendung verfolgen</button><button class="btn ghost sm" data-sheet="recipe"><svg class="ic sm"><use href="#i-file"/></svg>Rezept ansehen</button></div>
+      <div class="tk-act"><button class="btn plum sm" data-order="NS-e1494a8e"><svg class="ic sm"><use href="#i-truck"/></svg>Sendung verfolgen</button><button class="btn ghost sm" data-sheet="recipe"><svg class="ic sm"><use href="#i-file"/></svg>Rezept ansehen</button><button class="btn plum sm" data-sheet="cancel"><svg class="ic sm"><use href="#i-x"/></svg>Abo kündigen</button></div>
     </article>
     <article class="tile card no-tilt ticket has-img t-x">
       <div class="tk-img"><img src="produkte/lifestyle-plus-foto.webp" alt="Lifestyle+ Abo – Produktbild" width="1000" height="500"></div>
-      <div class="tk-top"><div><div class="kick">Abo · seit 09/2026</div><h3>Lifestyle+ Abo</h3><p>alle 3 Monate · €115.00</p></div><span class="pill p-pause"><i></i>Pause geplant</span></div>
+      <div class="tk-top"><div><div class="kick">Abo · seit 09/2026</div><h3>Lifestyle+ Abo</h3><p>alle 3 Monate · 115,00 €</p></div><span class="pill p-pause"><i></i>Pause geplant</span></div>
       <span class="stamp" aria-hidden="true">Pause geplant</span>
       <div class="perf"></div>
-      <div class="tk-dates"><div><small>Nächste Zahlung</small><b>24.10.2026</b><em><span data-rt="24.10.2026">in 3 Tagen</span> · €115.00</em></div><div><small>Nächste Lieferung</small><b>08.01.2027</b><em data-rt="08.01.2027">in 79 Tagen</em></div></div>
-      <div class="tk-act"><button class="btn lime sm" data-sheet="pause"><svg class="ic sm"><use href="#i-pause"/></svg>Pausieren</button><button class="btn ghost sm" data-sheet="shift"><svg class="ic sm"><use href="#i-cal"/></svg>Lieferung verschieben</button><button class="btn ghost sm" data-sheet="recipe"><svg class="ic sm"><use href="#i-file"/></svg>Rezept ansehen</button></div>
+      <div class="tk-dates"><div><small>Nächste Zahlung</small><b data-pay>24.10.2026</b><em><span data-rt="24.10.2026" data-pay>in 3 Tagen</span> · 115,00 €</em></div><div><small>Nächste Lieferung</small><b data-del>08.01.2027</b><em data-rt="08.01.2027" data-del>in 79 Tagen</em></div></div>
+      <div class="tk-act"><button class="btn lime sm" data-sheet="pause"><svg class="ic sm"><use href="#i-pause"/></svg>Pausieren</button><button class="btn plum sm" data-sheet="cancel"><svg class="ic sm"><use href="#i-x"/></svg>Abo kündigen</button><button class="btn ghost sm" data-sheet="shift"><svg class="ic sm"><use href="#i-cal"/></svg>Lieferung verschieben</button><button class="btn ghost sm" data-sheet="recipe"><svg class="ic sm"><use href="#i-file"/></svg>Rezept ansehen</button></div>
     </article>
   </div>
 </div>
@@ -2471,7 +2550,8 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
       <p>Mit diesen Daten kannst du weitere Analysen freischalten. Den Preis siehst du vorher im Shop.</p>
       <div class="dna-ok-p"><span>Nutrition</span><span>Shape</span><span>Performance</span><span>Beauty</span><span>Lifestyle+</span></div>
     </div>
-    <a class="btn lime" href="https://www.novogenia.com/shop" target="_blank" rel="noopener"><svg class="ic sm"><use href="#i-plus"/></svg>Weitere Analysen ansehen<span class="sr"> (öffnet den Shop in einem neuen Fenster)</span></a>
+    <!-- Kaufweg = In-App-Shop (openShop). Externe Shop-URL erst nach Bestätigung wieder verlinken (shop-check A3) -->
+    <button type="button" class="btn lime" data-shop><svg class="ic sm"><use href="#i-plus"/></svg>Weitere Analysen ansehen<span class="sr"> (öffnet den Shop)</span></button>
   </div>
   <div class="tile card no-tilt dna-up">
     <div class="dz" id="dz" data-gup role="button" tabindex="0" aria-label="Rohdaten-Datei auswählen oder hierher ziehen">
@@ -2526,7 +2606,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
         <path d="M30 24 C 120 40, 210 80, 320 104" fill="none" stroke="#C9B9C5" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>
         <circle cx="30" cy="24" r="7" fill="#C6D63F" stroke="#5E0047" stroke-width="2.5"/>
         <text x="44" y="22" font-size="12" font-weight="800" fill="#241F2C"><tspan data-wcur>91</tspan> kg</text>
-        <text x="44" y="37" font-size="10.5" fill="#675E6E">heute, 21.10.</text>
+        <text x="44" y="37" font-size="10.5" fill="#675E6E" data-heute>heute, 21.10.</text>
         <text x="320" y="124" text-anchor="end" font-size="10.5" fill="#675E6E">möglicher Verlauf · ca. 0,5 kg/Woche</text>
       </svg>
       <p class="note">Dein Gewichtsverlauf wird ab jetzt aufgezeichnet.</p>
@@ -2536,6 +2616,12 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
       <svg class="ill c-plum" aria-hidden="true"><use href="#i-globe"/></svg>
       <div class="th"><span class="ico berry"><svg class="ic"><use href="#i-globe"/></svg></span><div><div class="kick">Sprache</div><h3>App-Sprache</h3></div></div>
       <div style="margin-top:auto;position:relative;z-index:1"><div class="seg light" role="group" aria-label="Sprache"><button data-lang="de" aria-pressed="true">Deutsch</button><button data-lang="en" aria-pressed="false">English</button></div></div>
+    </article>
+    <article class="tile card t-w" id="ruhigCard">
+      <svg class="ill c-plum" aria-hidden="true"><use href="#i-pause"/></svg>
+      <div class="th"><span class="ico"><svg class="ic"><use href="#i-pause"/></svg></span><div><div class="kick">Bewegung</div><h3>Animationen</h3></div></div>
+      <p class="note">Hält alle Animationen an, auch das Rad bei den Nährstoffen und die Datenlandkarte. Die Einstellung bleibt auf diesem Gerät gespeichert.</p>
+      <div style="margin-top:auto;padding-top:14px;position:relative;z-index:1"><button class="btn ghost sm" type="button" data-ruhig aria-pressed="false"><svg class="ic sm"><use href="#i-pause"/></svg><span>Bewegung anhalten</span></button></div>
     </article>
     <article class="tile card t-l">
       <svg class="ill c-plum" aria-hidden="true"><use href="#i-pin"/></svg>
@@ -2608,7 +2694,7 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
 <div class="wrap">
 <!-- DEINE-DATEN:BEGIN -->
   <h1 id="h-gd" class="sr-only">Deine Daten</h1>
-  <iframe class="dd-portal" src="datenpunkte/gesundheitsdaten-portal.html?inline=1&amp;v=20261117" title="Deine Daten"></iframe>
+  <iframe class="dd-portal" data-src="datenpunkte/gesundheitsdaten-portal.html?inline=1&amp;v=20261117" title="Deine Daten"></iframe>
   <div class="gd-old" hidden>
 <!-- DEINE-DATEN:END -->
   <header class="hero compact"><div class="hero-in">
@@ -2665,7 +2751,6 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
       <h1 id="h-br">Online-Beratung</h1>
       <p class="lead">Sprich per Video mit deiner Beraterin. Sie geht mit dir deine Ernährungs- und Lifestyle-Berichte durch, erklärt dir deinen Nährstoffbedarf und deine Lebensmittelliste und zeigt dir, wie du die Empfehlungen im Alltag umsetzt.</p>
       <p class="br-hint"><b>Lifestyle-Beratung, keine ärztliche oder genetische Beratung.</b> Deine Beraterin erklärt dir deine Ernährungs- und Lifestyle-Berichte. Fragen zu Krankheiten, Medikamenten oder Diagnosen besprichst du bitte mit deiner Ärztin oder deinem Arzt.</p>
-      <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span><button type="button" class="br-demooff" data-br="off">Demo: Betreuer ohne Online-Beratung</button></div>
     </div>
     <button type="button" class="br-testconf" data-br="test"><span class="bci"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg></span><b>Konferenz testen</b><small>Prüf vor dem Termin Kamera, Mikrofon und Lautsprecher und sieh dir den Beratungsraum an.</small><span class="bgo">Test starten <svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></button>
   </div></header>
@@ -2675,6 +2760,9 @@ body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
     <div>
       <div class="br-card" id="brAdv"><div class="br-empty">Lade deine Beraterin …</div></div>
       <div class="br-card" style="margin-top:18px"><h2>Freie Termine <small id="brDur"></small></h2><div id="brSlots"><div class="br-empty">Lade freie Termine …</div></div></div>
+      <details class="br-tester"><summary>Für Tester</summary>
+        <div class="br-test"><button type="button" class="btn glass sm" data-br="now">Jetzt testen: Termin sofort starten</button><span>Demo: legt einen Termin an, der gleich beginnt.</span><button type="button" class="br-demooff" data-br="off">Demo: Betreuer ohne Online-Beratung</button></div>
+      </details>
     </div>
     <div>
       <div class="br-card"><h2>Meine Termine</h2><div id="brMine"><div class="br-empty">Lade …</div></div></div>
@@ -2850,6 +2938,10 @@ const rel=s=>{const n=daysTo(s),a=Math.abs(n);if(n===0)return 'heute';if(n===-1)
  let t;if(a<14)t=a+' Tagen';else if(a<60){const w=Math.round(a/7);t=w===1?'einer Woche':w+' Wochen'}else{const m=Math.round(a/30.44);t=m===1?'einem Monat':m+' Monaten'}
  return (n<0?'vor ':'in ')+t};
 const dr=s=>`${s} <span class="rel">(${rel(s)})</span>`;
+/* Demo-Abo: Termine relativ zu heute (shop-check 21.11.2026, A12) */
+const addD=(d,k)=>{const x=new Date(d);x.setDate(x.getDate()+k);return x};
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const PAY=fd(addD(TODAY,3)),DEL=daysTo('08.01.2027')>14?'08.01.2027':fd(addD(TODAY,79));
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ================= DATA ================= */
@@ -2928,6 +3020,7 @@ const NUT=[
   about:'Lutein ist ein Carotinoid aus grünem Blattgemüse, das sich in der Netzhaut des Auges anreichert.',
   uses:[]}
 ];
+NUT.forEach(n=>{n.amt=String(n.amt).replace('.',',')}); /* Dezimalkomma (shop-check A12) */
 const NB=Object.fromEntries(NUT.map(n=>[n.id,n]));
 const LVCOUNT={hi:0,mid:0,lo:0,none:0};NUT.forEach(n=>LVCOUNT[n.lvl]++);
 
@@ -2973,11 +3066,11 @@ const OFFS=[0,1,6,8,14,18,21];
 const ORDERS=[
  {id:'NS-e1494a8e',p:'Lifestyle+ Abo',t:'Erstbestellung',d:'06.10.2026',s:4},
  {id:'NS-43088da2',p:'Pharmaco Sensor',t:'Digital PDF',d:'22.09.2026',s:1},
- {id:'NS-cf1763e3',p:'Shape',t:'Digital PDF · Upsell',d:'07.09.2026',s:3},
+ {id:'NS-cf1763e3',p:'Shape',t:'Digital PDF',d:'07.09.2026',s:3},
  {id:'NS-fc7ddeb2',p:'Lifestyle+ Abo',t:'',d:'21.09.2026',s:6},
  {id:'NS-28b97f31',p:'Lifestyle+',t:'',d:'17.09.2026',s:6},
  {id:'NS-1badac9e',p:'Lifestyle+',t:'',d:'09.09.2026',s:6},
- {id:'NS-b0766247',p:'Performance',t:'Digital PDF · Upsell',d:'07.09.2026',s:6}
+ {id:'NS-b0766247',p:'Performance',t:'Digital PDF',d:'07.09.2026',s:6}
 ];
 const OB=Object.fromEntries(ORDERS.map(o=>[o.id,o]));
 const REPORTS=[
@@ -3058,6 +3151,7 @@ function renderOverview(){
  $('#ovRact').innerHTML=$('#nuRact').innerHTML;
  $('#ovQA').innerHTML=qbHtml();
  $('#ovOrder').innerHTML=orderCard(ORDERS[0],true);
+ {const o=$('[data-ordn]');if(o){$('.num',o).textContent=ORDERS.length;o.setAttribute('aria-label',ORDERS.length+' Bestellungen – zu den Bestellungen')}}
  const ab=$$('#aboGrid > article');
  $('#ovAbo').innerHTML=ab[ab.length-1].outerHTML+$('#weightCard').outerHTML.replace(' id="weightCard"','');
  $('#ovFocus').innerHTML=['vitd','mthf','omega','q10'].map(id=>ntileHtml(NB[id])).join('');
@@ -3070,7 +3164,7 @@ const bpills=()=>`<div class="bpills">${BASIS.map((b,i)=>`<span class="bpill b${
 const nimg=(n,cls)=>PIMG[n.id]?`<img class="${cls}" src="${PIMG[n.id]}" alt="" aria-hidden="true">`:`<span class="cap" style="--c1:${n.c[0]};--c2:${n.c[1]}" aria-hidden="true"></span>`;
 function ntileHtml(n){return `<article class="ntile">
    ${nimg(n,'nimg')}<h3>${n.name}</h3>${pill('p-'+n.lvl,LV[n.lvl])}
-   <p class="namt"><b>${n.amt}</b>${n.u} pro Tag</p>
+   <p class="namt"><b>${n.amt}</b> ${n.u} pro Tag</p>
    <div class="nbase">Basierend auf:${bpills()}</div>
    <button class="btn ghost sm" data-nut="${n.id}" aria-label="Details anzeigen: ${n.name}">Details anzeigen</button>
   </article>`}
@@ -3225,7 +3319,7 @@ function renderAbos(){
  const x=d=>((pd(d).getTime()-s)/(e-s)*100).toFixed(2)+'%';
  const today=`<span class="today" style="left:${x(fd(TODAY))}"><b>Heute</b></span>`;
  $('#laneA').innerHTML=today+`<button class="mk start" style="left:${x('06.10.2026')}" data-order="NS-e1494a8e" title="Start 06.10.2026">${ic('factory')}Start 06.10. <span class="mrel">(${rel('06.10.2026')})</span></button><span class="pband" title="In Produktion" style="left:calc(${x('06.10.2026')} + 34px);width:calc(${x('21.10.2026')} - ${x('06.10.2026')} - 34px);background:repeating-linear-gradient(90deg,rgba(198,214,63,.45) 0 8px,rgba(198,214,63,.15) 8px 16px);border-color:rgba(130,150,0,.5)"></span>`;
- $('#laneB').innerHTML=today.replace('<b>Heute</b>','')+`<span class="pband" style="left:${x('24.10.2026')};width:calc(${x('08.01.2027')} - ${x('24.10.2026')})">Pause geplant</span><button class="mk pay" style="left:${x('24.10.2026')}" data-toast="Nächste Zahlung: 24.10.2026 · €115.00" title="Zahlung 24.10.2026">${ic('cal')}24.10. <span class="mrel">(${rel('24.10.2026')})</span></button><button class="mk del" style="left:${x('08.01.2027')}" data-toast="Nächste Lieferung: 08.01.2027" title="Lieferung 08.01.2027">${ic('truck')}08.01. <span class="mrel">(${rel('08.01.2027')})</span></button>`;
+ $('#laneB').innerHTML=today.replace('<b>Heute</b>','')+`<span class="pband" style="left:${x(PAY)};width:calc(${x(DEL)} - ${x(PAY)})">Pause geplant</span><button class="mk pay" style="left:${x(PAY)}" data-toast="Nächste Zahlung: ${PAY} · 115,00 €" title="Zahlung ${PAY}">${ic('cal')}${PAY.slice(0,6)} <span class="mrel">(${rel(PAY)})</span></button><button class="mk del" style="left:${x(DEL)}" data-toast="Nächste Lieferung: ${DEL}" title="Lieferung ${DEL}">${ic('truck')}${DEL.slice(0,6)} <span class="mrel">(${rel(DEL)})</span></button>`;
 }
 
 /* ================= PROFIL ================= */
@@ -3335,10 +3429,20 @@ const SHOP=[['dna','DNA-Analyse Basis','Deine Gene zu Ernährung, Nährstoffen u
  ['book','Upgrade-Analysen','Zusätzliche Berichte zu deinen vorhandenen Gendaten – ohne neue Probe.','Preis folgt'],
  ['capsule','Nahrungsergänzung nach Genprofil','Monatspackung, abgestimmt auf deinen Bedarf.','Preis folgt'],
  ['box','Probenset für Familie','Speichelprobe für eine weitere Person.','Preis folgt']];
+/* Warenkorb im Klickdummy (shop-check 21.11.2026, A2): Zustand nur im Speicher, Zähler am Shop-Knopf, Ansage über den Toast (aria-live) */
+const CART=new Set();
+const cartBtn=k=>CART.has(k)?ic('check','sm')+'Im Warenkorb':ic('cart','sm')+'In den Warenkorb';
+function cartUpd(){const n=CART.size;
+ $$('.shopnav,.shop-m').forEach(b=>{let c=b.querySelector('.cart-n');if(!c){c=document.createElement('span');c.className='cart-n';c.setAttribute('aria-hidden','true');b.appendChild(c)}c.textContent=n?' · '+n:'';b.setAttribute('aria-label',n?`Shop öffnen, ${n} Artikel im Warenkorb`:'Shop öffnen')});
+ const s=$('#cartSum');if(s)s.textContent=n?`${n} Artikel · Summe: Preis folgt`:'Dein Warenkorb ist leer';}
 function openShop(){
- sheet('Shop','<p class="shop-hint">Platzhalter-Shop im Klickdummy – Produkte und Preise sind Beispiele.</p><div class="shopgrid">'+SHOP.map(([i,t,d,p])=>`<article class="shopit"><div class="sh-pic">${ic(i)}</div><h4>${t}</h4><p>${d}</p><div class="sh-pr">${p}</div><button class="btn lime" data-toast="„${t}“ liegt im Warenkorb (Klickdummy).">${ic('cart','sm')}In den Warenkorb</button></article>`).join('')+'</div>',
-  '<button class="btn ghost" data-close>Weiter einkaufen</button><button class="btn lime" data-toast="Zur Kasse – im Klickdummy ohne Funktion.">'+ic('cart','sm')+'Zur Kasse</button>',sico('cart','lime'),true);
+ sheet('Shop','<p class="shop-hint">Platzhalter-Shop im Klickdummy – Produkte und Preise sind Beispiele.</p><div class="shopgrid">'+SHOP.map(([i,t,d,p],k)=>`<article class="shopit"><div class="sh-pic">${ic(i)}</div><h4>${t}</h4><p>${d}</p><div class="sh-pr">${p}</div><button type="button" class="btn lime" data-cart="${k}" aria-pressed="${CART.has(k)}">${cartBtn(k)}</button></article>`).join('')+'</div>',
+  '<span class="cart-sum" id="cartSum"></span><button class="btn ghost" data-close>Weiter einkaufen</button><button class="btn lime" data-toast="Zur Kasse – im Klickdummy ohne Funktion.">'+ic('cart','sm')+'Zur Kasse</button>',sico('cart','lime'),true);
+ cartUpd();
 }
+document.addEventListener('click',e=>{const b=e.target.closest('[data-cart]');if(!b)return;const k=+b.dataset.cart,t=SHOP[k][1];
+ if(CART.has(k)){CART.delete(k);toast(`„${t}“ aus dem Warenkorb genommen.`)}else{CART.add(k);toast(`„${t}“ liegt im Warenkorb (Klickdummy).`)}
+ b.setAttribute('aria-pressed',CART.has(k));b.innerHTML=cartBtn(k);cartUpd()});
 document.addEventListener('click',e=>{if(e.target.closest('[data-shop]')){e.preventDefault();openShop()}});
 /* Handy-Coach: Lade von rechts + Hoehe des Kopfs fuer den fixierten Chat (Daniel, 01.11.2026) */
 (()=>{
@@ -3517,10 +3621,13 @@ function dosisSheet(){
 }
 function dosCheck(inp){const i=+inp.dataset.ds,d=DOS[i],bad=dosOut(d,inp.value),c=$('#dc'+i);c.classList.toggle('bad',bad);$('.dwarn',c).hidden=!bad}
 
+/* Abo kündigen (Review 05/3): Prüfen, Bestätigungsseite mit Datum und Uhrzeit, Bestätigung als Textdatei speichern (Klickdummy) */
+let CK=null;function ckGo(){const ao=$('[name=ckArt][value=ao]').checked,g=$('#ckGrund'),id=$('#ckId'),dv=$('#ckDatum').value;let bad=null;[[g,'#ckGrundE',ao&&!g.value.trim()],[id,'#ckIdE',!id.value.trim()]].forEach(([f,e,x])=>{$(e).hidden=!x;if(x){f.setAttribute('aria-invalid','true');bad=bad||f}else f.removeAttribute('aria-invalid')});if(bad){bad.focus();return}const now=new Date(),ts=fd(now)+', '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0')+' Uhr';CK.rows=[['Abo',CK.abo],['Art der Kündigung',ao?'Außerordentlich (aus wichtigem Grund)':'Ordentlich (zum nächstmöglichen Termin)']].concat(ao?[['Grund',g.value.trim()]]:[],[['Gewünschtes Enddatum',dv?dv.split('-').reverse().join('.'):'nächstmöglicher Termin'],['Kundennummer bzw. E-Mail',id.value.trim()],['Eingegangen am',ts]]);sheet('Kündigung eingegangen',`<p style="margin-bottom:12px">Deine Kündigung ist am ${ts} bei uns eingegangen. Wir senden dir die Bestätigung per E-Mail.</p><div class="rlist">${CK.rows.map(([a,b])=>`<div class="rrow"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('')}</div><p class="note" style="margin-top:12px">Klickdummy: Es wird nichts gekündigt und keine E-Mail verschickt.</p>`,`<button class="btn ghost" data-ckdl>${ic('download','sm')}Bestätigung speichern</button><button class="btn plum" data-close>Fertig</button>`,`<span class="ico lime" style="width:40px;height:40px;border-radius:13px">${ic('check')}</span>`)}function ckSave(){if(!CK||!CK.rows)return;const txt='Kündigungsbestätigung (Klickdummy)\n\n'+CK.rows.map(([a,b])=>a+': '+b).join('\n')+'\n\nWir senden dir die Bestätigung per E-Mail.\n';const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'text/plain;charset=utf-8'}));a.download='kuendigung-bestaetigung.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);toast('Bestätigung gespeichert.')}
 const SHEETS={
  recipe:()=>sheet('Deine Rezeptur · v3',`<p style="margin-bottom:6px">22 Nährstoffe in deiner Rezeptur</p>${GROUPS.map(([g,l])=>`<h4>${l}</h4><div class="rlist">${NUT.filter(n=>n.g===g).map(n=>`<div class="rrow"><b>${n.name}</b><span>${n.lvl==='none'?LV.none:n.amt+' '+n.u}</span></div>`).join('')}</div>`).join('')}${DISC}`,`<button class="btn ghost" data-toast="Rezeptur wird als PDF geöffnet.">${ic('download','sm')}PDF</button><button class="btn plum" data-close>Fertig</button>`,`<span class="ico lime" style="width:40px;height:40px;border-radius:13px">${ic('capsule')}</span>`),
- pause:()=>sheet('Abo pausieren',`<p style="margin-bottom:14px">Lifestyle+ Abo · nächste Zahlung 24.10.2026</p><div class="field"><span class="flabel">Wie lange?</span>${chips(['1 Lieferung','2 Lieferungen','bis auf Weiteres'])}</div><p class="note">Du kannst die Pause jederzeit wieder aufheben.</p>`,back+`<button class="btn plum" data-done="Abo pausiert – du bekommst eine Bestätigung per E-Mail.">Pause bestätigen</button>`,`<span class="ico orange" style="width:40px;height:40px;border-radius:13px">${ic('pause')}</span>`),
- shift:()=>sheet('Lieferung verschieben',`<p style="margin-bottom:14px">Aktuell geplant: <b>08.01.2027</b></p><div class="field"><label for="sd">Neues Lieferdatum</label><input id="sd" type="date" value="2027-01-22" min="2026-10-24"></div>`,back+`<button class="btn plum" data-shift>Verschieben</button>`,`<span class="ico" style="width:40px;height:40px;border-radius:13px">${ic('cal')}</span>`),
+ pause:()=>sheet('Abo pausieren',`<p style="margin-bottom:14px">Lifestyle+ Abo · nächste Zahlung ${PAY}</p><div class="field"><span class="flabel">Wie lange?</span>${chips(['1 Lieferung','2 Lieferungen','bis auf Weiteres'])}</div><p class="note">Du kannst die Pause jederzeit wieder aufheben.</p>`,back+`<button class="btn plum" data-done="Abo pausiert – du bekommst eine Bestätigung per E-Mail.">Pause bestätigen</button>`,`<span class="ico orange" style="width:40px;height:40px;border-radius:13px">${ic('pause')}</span>`),
+ cancel:t=>{const k=t&&t.closest?t.closest('.ticket'):null,kick=k&&$('.kick',k)?$('.kick',k).textContent:'';sheet('Abo kündigen',`<p style="margin-bottom:6px"><b>Lifestyle+ Abo</b> · alle 3 Monate · 115,00&nbsp;€</p>${kick?`<p class="note" style="margin:0 0 14px">${esc(kick)}</p>`:''}<div class="field" role="radiogroup" aria-labelledby="ckArtL"><span class="flabel" id="ckArtL">Art der Kündigung</span><label class="ckr"><input type="radio" name="ckArt" value="ord" checked><span>Ordentlich kündigen (zum nächstmöglichen Termin)</span></label><label class="ckr"><input type="radio" name="ckArt" value="ao"><span>Außerordentlich kündigen (aus wichtigem Grund)</span></label></div><div class="field" id="ckGrundF" hidden><label for="ckGrund">Grund der außerordentlichen Kündigung (Pflichtfeld)</label><textarea id="ckGrund" rows="3" aria-required="true" aria-describedby="ckGrundE"></textarea><p class="note ckerr" id="ckGrundE" hidden>Bitte gib den Grund an.</p></div><div class="field"><label for="ckDatum">Gewünschtes Enddatum (optional)</label><input id="ckDatum" type="date" min="${iso(addD(TODAY,1))}"></div><div class="field"><label for="ckId">Kundennummer bzw. E-Mail</label><input id="ckId" type="text" autocomplete="email" value="markus@beispiel.at" aria-describedby="ckIdE"><p class="note ckerr" id="ckIdE" hidden>Bitte gib deine Kundennummer oder E-Mail an.</p></div><p>Ohne Datum endet dein Abo zum nächstmöglichen Termin. Wir bestätigen dir die Kündigung und das Enddatum per E-Mail.</p>`,`<button class="btn ghost" data-sheet="pause">${ic('pause','sm')}Stattdessen pausieren</button><button class="btn plum" data-ckgo>${ic('check','sm')}Jetzt kündigen</button>`,`<span class="ico" style="width:40px;height:40px;border-radius:13px">${ic('x')}</span>`);CK={abo:'Lifestyle+ Abo · alle 3 Monate · 115,00 €'+(kick?' · '+kick:'')};const upd=()=>{const ao=$('[name=ckArt][value=ao]').checked;$('#ckGrundF').hidden=!ao;if(!ao){$('#ckGrundE').hidden=true;$('#ckGrund').removeAttribute('aria-invalid')}};$$('[name=ckArt]').forEach(x=>x.addEventListener('change',upd))},
+ shift:()=>sheet('Lieferung verschieben',`<p style="margin-bottom:14px">Aktuell geplant: <b>${DEL}</b></p><div class="field"><label for="sd">Neues Lieferdatum</label><input id="sd" type="date" value="${iso(addD(pd(DEL),14))}" min="${iso(addD(TODAY,1))}"></div>`,back+`<button class="btn plum" data-shift>Verschieben</button>`,`<span class="ico" style="width:40px;height:40px;border-radius:13px">${ic('cal')}</span>`),
  profile:()=>sheet('Profil bearbeiten',`<div class="field"><label for="p1">Name</label><input id="p1" value="Markus Huber"></div><div class="field"><label for="p2">E-Mail</label><input id="p2" type="email" value="markus@beispiel.at"></div><div class="field"><label for="p3">Geburtstag</label><input id="p3" type="date" value="1995-10-06"></div>`,back+`<button class="btn plum" data-done="Profil gespeichert.">Speichern</button>`,`<span class="ico lime" style="width:40px;height:40px;border-radius:13px">${ic('user')}</span>`),
  address:()=>sheet('Adresse hinzufügen',`<div class="field"><label for="a0">Name</label><input id="a0" value="Markus Huber"></div><div class="field"><label for="a1">Straße &amp; Hausnummer</label><input id="a1" placeholder="z. B. Musterstraße 12"></div><div style="display:grid;grid-template-columns:1fr 2fr;gap:10px"><div class="field"><label for="a2">PLZ</label><input id="a2" inputmode="numeric" placeholder="5020"></div><div class="field"><label for="a3">Ort</label><input id="a3" placeholder="Salzburg"></div></div><div class="field"><label for="a4">Land</label><select id="a4"><option>Österreich</option><option>Deutschland</option><option>Schweiz</option></select></div><p class="note">Adressen für Shop-Bestellungen verwaltest du in deinem NovoDaily-Shop-Konto.</p>`,back+`<button class="btn plum" data-addr>Adresse speichern</button>`,`<span class="ico" style="width:40px;height:40px;border-radius:13px">${ic('pin')}</span>`),
  weight:()=>sheet('Gewicht eintragen',`<div class="field"><label for="wv">Aktuelles Gewicht (kg)</label><input id="wv" inputmode="decimal" value="${de(W.cur)}"></div><p class="note">Ziel: <b>75 kg</b> · Dein Gewichtsverlauf wird ab jetzt aufgezeichnet.</p>`,back+`<button class="btn plum" data-wsave>Speichern</button>`,`<span class="ico lime" style="width:40px;height:40px;border-radius:13px">${ic('scale')}</span>`)
@@ -3598,7 +3705,9 @@ document.addEventListener('click',e=>{
  if(d.foodGo!==undefined){if(d.foodGo)NS.sort=d.foodGo;renderFood();location.hash='#lebensmittel';return}
  if(d.order){orderSheet(d.order);return}
  if(d.refine){refineSheet(d.refine);return}
- if(d.sheet){SHEETS[d.sheet]();return}
+ if(d.ckgo!==undefined){ckGo();return}
+ if(d.ckdl!==undefined){ckSave();return}
+ if(d.sheet){SHEETS[d.sheet](t);return}
  if(d.done){closeSheet();toast(d.done);return}
  if(d.shift!==undefined){const v=$('#sd').value;closeSheet();if(v){const[y,m,dd]=v.split('-');toast(`Lieferung auf ${dd}.${m}.${y} verschoben.`)}return}
  if(d.wsave!==undefined){const v=parseFloat(($('#wv').value||'').replace(',','.'));if(!(v>30&&v<300)){toast('Bitte ein gültiges Gewicht eingeben.');return}W.cur=Math.round(v*10)/10;renderWeight();closeSheet();toast(`Gewicht ${de(W.cur)} kg gespeichert.`);return}
@@ -3656,8 +3765,9 @@ $('#fFile').addEventListener('change',e=>{[...e.target.files].forEach(f=>addAtt(
  document.addEventListener('click',e=>{if(!e.target.closest('#svc'))setOpen(false)});
  document.addEventListener('keydown',e=>{if(e.key==='Escape')setOpen(false)});
  const say=(who,t)=>{const c=$('#svcChat');if(!c)return;const m=document.createElement('div');m.className='m'+(who==='u'?' u':'');m.textContent=t;c.appendChild(m);$('#shBody').scrollTop=$('#shBody').scrollHeight};
- const ANS=[[/liefer|versand|paket|bestell/i,'Deine aktuelle Bestellung NS-e1494a8e ist in Produktion. Sobald sie versendet wird, bekommst du eine E-Mail mit der Sendungsnummer.'],
-  [/abo|pause|kündig|verschieb/i,'Dein Abo kannst du unter „Bestellungen“ pausieren oder die Lieferung verschieben. Soll ich dich mit unserem Team verbinden?'],
+ const ANS=[[/kündig/i,'Du kannst dein Abo selbst kündigen: Unter „Bestellungen“ findest du an jeder Abo-Karte den Knopf „Abo kündigen“. Die Bestätigung mit dem Enddatum bekommst du per E-Mail.'],
+  [/liefer|versand|paket|bestell/i,'Deine aktuelle Bestellung NS-e1494a8e ist in Produktion. Sobald sie versendet wird, bekommst du eine E-Mail mit der Sendungsnummer.'],
+  [/abo|pause|verschieb/i,'Dein Abo kannst du unter „Bestellungen“ pausieren, die Lieferung verschieben oder kündigen. Soll ich dich mit unserem Team verbinden?'],
   [/rechnung|zahl|preis/i,'Rechnungen findest du in jeder Bestellung unter „Rechnung“. Bei Fragen zur Zahlung leite ich dich gerne an unser Team weiter.'],
   [/probe|kit|speichel/i,'Für die Speichelprobe bitte 30 Minuten vorher nichts essen, trinken oder rauchen. Die Anleitung liegt deinem Kit bei.']];
  $('#svcMenu').addEventListener('click',e=>{const b=e.target.closest('[data-svc]');if(!b)return;e.stopPropagation();setOpen(false);const k=b.dataset.svc;
@@ -3711,6 +3821,8 @@ $('#fFile').addEventListener('change',e=>{[...e.target.files].forEach(f=>addAtt(
 })();
 
 /* ================= INIT ================= */
+[['pay',PAY],['del',DEL]].forEach(([k,v])=>$$('[data-'+k+']').forEach(e=>{if(e.dataset.dr)e.dataset.dr=v;else if(e.dataset.rt)e.dataset.rt=v;else e.textContent=v}));
+$$('[data-heute]').forEach(e=>e.textContent='heute, '+fd(TODAY).slice(0,6));
 $$('[data-days]').forEach(e=>e.textContent=daysTo(e.dataset.days));
 $$('[data-rt]').forEach(e=>e.textContent=rel(e.dataset.rt));
 $$('[data-dr]').forEach(e=>e.innerHTML=dr(e.dataset.dr));
@@ -4791,11 +4903,13 @@ async function load(){
   try{
     adv=await pb.collection('advisors').getFirstListItem(`ref="${me.advisor||'a1'}"`);
     slots=await pb.collection('slots').getFullList({filter:`advisor="${adv.ref}" && booked=false && start>="${new Date().toISOString().replace('T',' ')}"`,sort:'start'});
-    mine=await pb.collection('bookings').getFullList({sort:'start',filter:`status!="cancelled"`});
+    mine=(await pb.collection('bookings').getFullList({sort:'start',filter:`status!="cancelled"`})).map(advN);
   }catch(e){toast('Laden fehlgeschlagen: '+e.message);return}
   loaded=true;lock();renderAdv();renderSlots();renderMine();renderHand();
   if(!timer)timer=setInterval(()=>{if(location.hash==='#beratung')renderMine()},30000);
 }
+/* Name der Beraterin einheitlich aus dem Profil (shop-check 21.11.2026, A12): ältere Buchungen speichern noch den alten Namen */
+function advN(b){if(b&&adv&&b.advisor===adv.ref)b.advisorName=adv.name;return b}
 /* Bietet der Betreuer keine Online-Beratung an (advisors.consultOff), sind Menüpunkt und Handy-Reiter ausgegraut mit Schloss
    und der Reiter zeigt nur einen Hinweis. Klickdummy: Schalter zum Ausprobieren. */
 function lock(){
@@ -4845,7 +4959,22 @@ function renderHand(){
 }
 
 /* ---------- Dialoge ---------- */
-function dlg(html){const o=document.createElement('div');o.className='br-ov';o.innerHTML=`<div class="br-dlg" role="dialog" aria-modal="true">${html}</div>`;document.body.appendChild(o);o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-brx]'))close()});function close(){o.dispatchEvent(new Event('close'));o.remove()}o.close=close;return o}
+/* Dialog (shop-check 21.11.2026, A4): aria-labelledby auf die Überschrift, Fokus in den Dialog, Tab bleibt im Dialog,
+   Escape schließt, danach Fokus zurück auf den Auslöser */
+let dlgN=0;
+function dlg(html){const back=document.activeElement,o=document.createElement('div');o.className='br-ov';o.innerHTML=`<div class="br-dlg" role="dialog" aria-modal="true">${html}</div>`;
+  const d=o.firstElementChild,h=d.querySelector('h3');if(h){h.id='brDlgT'+(++dlgN);h.tabIndex=-1;d.setAttribute('aria-labelledby',h.id)}
+  document.body.appendChild(o);
+  o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-brx]'))close()});
+  o.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){e.preventDefault();e.stopPropagation();close();return}
+    if(e.key!=='Tab')return;
+    const f=[...d.querySelectorAll('button:not([disabled]),a[href],input:not([disabled]),select:not([disabled]),textarea,[tabindex]:not([tabindex="-1"])')].filter(x=>x.offsetParent!==null);
+    if(!f.length){e.preventDefault();return}
+    const a=f[0],z=f[f.length-1],c=document.activeElement;
+    if(e.shiftKey&&(c===a||c===h||!d.contains(c))){e.preventDefault();z.focus()}else if(!e.shiftKey&&(c===z||!d.contains(c))){e.preventDefault();a.focus()}});
+  function close(){if(!o.isConnected)return;o.dispatchEvent(new Event('close'));o.remove();if(!o.joined&&back&&back.focus&&document.contains(back))back.focus({preventScroll:true})}
+  o.close=close;(h||d).focus();return o}
 function book(id){
   const s=slots.find(x=>x.id===id);if(!s)return;
   const mins=Math.round((new Date(s.end)-new Date(s.start))/60e3),price=adv.rateEur*mins/60;
@@ -4854,18 +4983,26 @@ function book(id){
    <p>Bezahlt wird bei der Buchung über den GENEius-Shop mit deiner hinterlegten Zahlungsart. Der Termin hat einen festen Preis, es wird nichts nachverrechnet. Im Klickdummy wird nichts abgebucht.</p>
    <p class="br-hint"><b>Lifestyle-Beratung, keine ärztliche oder genetische Beratung.</b> Deine Beraterin erklärt dir deine Ernährungs- und Lifestyle-Berichte. Fragen zu Krankheiten, Medikamenten oder Diagnosen besprichst du bitte mit deiner Ärztin oder deinem Arzt.</p>
    <div class="acts"><button type="button" class="btn ghost" data-brx>Abbrechen</button><button type="button" class="btn plum" id="brBuy">${ic('check','sm')}Zahlungspflichtig buchen · ${eur(price)}</button></div>`);
-  o.querySelector('#brBuy').onclick=async e=>{e.target.disabled=true;
+  /* visuell 21.11.2026 (Top 4): Knopf sperren, bis die Antwort da ist (aria-busy), damit ein Doppelklick nicht zweimal bucht */
+  const buy=o.querySelector('#brBuy');let busy=false;
+  const lock=on=>{busy=on;buy.setAttribute('aria-disabled',on);if(on)buy.setAttribute('aria-busy','true');else buy.removeAttribute('aria-busy')};
+  buy.onclick=async()=>{if(busy)return;lock(true);
     try{await pb.send('/api/book',{method:'POST',body:{slot:id}});o.close();toast('Gebucht! Die Einladung ist unterwegs.');day=null;await load()}
-    catch(err){e.target.disabled=false;toast(err.message||'Buchen fehlgeschlagen');await load()}};
+    catch(err){lock(false);toast(err.message||'Buchen fehlgeschlagen');await load()}};
 }
 async function ics(id){
   try{const r=await fetch(BASE+'/api/booking/'+id+'/ics',{headers:{Authorization:pb.authStore.token}});const b=await r.blob();
     const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='geneius-beratung.ics';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000)}
   catch(e){toast('Kalenderdatei konnte nicht geladen werden.')}
 }
-async function cancel(id){
-  if(!confirm('Termin wirklich stornieren?'))return;
-  try{await pb.send('/api/booking/'+id+'/cancel',{method:'POST'});toast('Termin storniert.');await load()}catch(e){toast(e.message)}
+function cancel(id){
+  const b=mine.find(x=>x.id===id);
+  const o=dlg(`<h3>Termin${b?' am '+esc(when(b.start)):''} stornieren?</h3><p>Bis 24 Stunden vor Beginn stornierst du kostenlos.</p>
+   <div class="acts"><button type="button" class="btn ghost" data-brx>Behalten</button><button type="button" class="btn plum" id="brCx">Stornieren</button></div>`);
+  const cx=o.querySelector('#brCx');let busy=false;
+  cx.onclick=async()=>{if(busy)return;busy=true;cx.setAttribute('aria-busy','true');cx.setAttribute('aria-disabled','true');
+    try{await pb.send('/api/booking/'+id+'/cancel',{method:'POST'});o.close();toast('Termin storniert.');await load()}
+    catch(err){busy=false;cx.removeAttribute('aria-busy');cx.setAttribute('aria-disabled','false');toast(err.message||'Stornieren fehlgeschlagen')}};
 }
 async function demoNow(){
   try{await init();const b=await pb.send('/api/demo/now',{method:'POST'});await load();precheck(b.id)}catch(e){toast(e.message||'Fehlgeschlagen')}
@@ -4874,7 +5011,7 @@ async function demoNow(){
 /* ---------- Technik-Check + Einwilligung ---------- */
 let media=null;
 async function precheck(id){
-  const b=mine.find(x=>x.id===id)||await pb.collection('bookings').getOne(id);
+  const b=mine.find(x=>x.id===id)||advN(await pb.collection('bookings').getOne(id));
   const o=dlg(`<h3>Bereit für deine Beratung?</h3><p>Wir prüfen kurz Kamera und Mikrofon. Das Testbild bleibt auf deinem Gerät. Übertragen wird erst, wenn du beitrittst.</p>
    <div class="br-prev"><video autoplay playsinline muted></video><div class="msg">Kamera wird gestartet …</div></div>
    <div class="br-ok"><span id="brCam">… Kamera</span><span id="brMic">… Mikrofon</span></div><div class="br-meter"><i id="brLvl"></i></div>
@@ -4898,7 +5035,7 @@ async function precheck(id){
 let R=null;
 async function room(id){
   const T=id==='test';
-  const b=T?{id:'test',advisorName:adv?adv.name:'Deine Beraterin'}:await pb.collection('bookings').getOne(id);
+  const b=T?{id:'test',advisorName:adv?adv.name:'Deine Beraterin'}:advN(await pb.collection('bookings').getOne(id));
   const rec=T?{id:'',state:{view:'reports'}}:await pb.collection('rooms').getFirstListItem(`booking="${id}"`);
   let reps=[];try{reps=(await pb.send('/api/my/reports',{})).items||[]}catch(e){}
   R={b,rec,st:rec.state||{view:'reports'},reps,test:T,asks:{},chat:[],qShown:null,follow:true,local:null,pc:null,joined:Date.now(),unsub:[],t0:Date.now(),pending:null};
@@ -4928,6 +5065,7 @@ async function room(id){
      <label class="ask"><input type="checkbox" id="brAsk"> Als Frage stellen</label></div></div>
    </div>`;
   document.body.appendChild(el);R.el=el;document.documentElement.style.overflow='hidden';
+  {const tt=el.querySelector('.br-rtop b');if(tt){tt.tabIndex=-1;tt.focus({preventScroll:true})}} /* Review 05/5: Fokus in den Raum */
   if(media)el.querySelector('#brSelf').srcObject=media;
   R.lay='auto';devs();meter();el.addEventListener('change',onDev);
   el.querySelector('#brMsg').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();sendChat()}});
@@ -5098,6 +5236,7 @@ function askAccess(sc){
    :`<h3>Darf ${n} deine Berichte mit dir ansehen?</h3><p class="br-scope"><b>Einblick in deine Berichte (freiwillig):</b> Mit „Erlauben“ willigst du ausdrücklich ein, dass ${n} rund um diesen Termin (ab 10 Minuten vorher bis höchstens 90 Minuten nach Beginn) deine Ernährungs- und Lifestyle-Berichte (sie enthalten genetische Daten) mit dir ansehen darf. Medizinische Befunde und deine Medikamentenauswertung sieht sie nicht. Du kannst die Einwilligung jederzeit mit „Einblick beenden“ widerrufen. Bis dahin erfolgte Zugriffe bleiben davon unberührt. Jeder Zugriff wird protokolliert. Verantwortlich: Novogenia Marketing GmbH.</p>`;
   const o=dlg(txt+`<p>Die Beratung läuft auch ohne Freigabe weiter.</p><div class="acts"><button type="button" class="btn ghost" id="brNo">Ablehnen</button><button type="button" class="btn plum" id="brYes">${ic('check','sm')}Erlauben</button></div>`);
   R.asks[sc]=o;o.addEventListener('close',()=>{if(R&&R.asks[sc]===o)delete R.asks[sc]});
+  o.addEventListener('keydown',e=>{if(e.key==='Escape')setAccess(sc,false)},true); /* Review 05/7: Escape = Ablehnen */
   o.querySelector('#brYes').onclick=()=>{setAccess(sc,true);o.close()};
   o.querySelector('#brNo').onclick=()=>{setAccess(sc,false);o.close()};
 }
@@ -5294,7 +5433,7 @@ window.deOpen=function(r){if(location.hash!=='#gedaechtnis')location.hash='#geda
  const sub=document.createElement('nav');sub.className='dd-sub';sub.setAttribute('aria-label','Deine Daten – Bereiche');document.body.appendChild(sub);
  const rail=document.querySelector('.rail');function pos(){if(rail)document.documentElement.style.setProperty('--rw',Math.round(rail.getBoundingClientRect().right)+'px')}addEventListener('resize',pos);pos();
  const esc=t=>t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- function build(){let d;try{d=fr.contentDocument}catch(e){return}const it=d?[...d.querySelectorAll('#side .ni,#side .nh')]:[];if(!it.length){setTimeout(build,400);return}
+ function build(){if(!fr.getAttribute('src'))return;let d;try{d=fr.contentDocument}catch(e){return}const it=d?[...d.querySelectorAll('#side .ni,#side .nh')]:[];if(!it.length){setTimeout(build,400);return}
   sub.innerHTML='<div class="dd-tt">Deine Daten</div>'+it.map(n=>{if(n.classList.contains('nh'))return '<div class="dd-sh">'+esc(n.textContent)+'</div>'+(n.textContent.trim()==='Schnellstart'?'<button type="button" class="dd-si" data-dnaup><span class="dd-ic" style="background:#8C1D6E"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2c0 4.5 8 5.5 8 10s-8 5.5-8 10M12 2c0 4.5-8 5.5-8 10s8 5.5 8 10M5.2 4.5h5.6M4.6 12h6.8M5.2 19.5h5.6M19 21V6M15.5 9.5 19 6l3.5 3.5"/></svg></span><span>Gendaten hochladen</span></button>':'');
    const ic=n.querySelector('.bi,.ic'),lab=[...n.childNodes].filter(x=>x.nodeType===3).map(x=>x.textContent).join('').trim();
    return '<button type="button" class="dd-si" data-ddgo="'+esc(n.dataset.go||'home')+'"><span class="dd-ic"'+(ic&&ic.style.background?' style="background:'+ic.style.background+'"':'')+'>'+(ic?ic.innerHTML:'')+'</span><span>'+esc(lab)+'</span></button>'}).join('');mark()}
@@ -5432,17 +5571,36 @@ function brain(t){if(Math.random()<.09&&L.length){L[Math.random()*L.length|0].fi
 /* Original-Datenlandkarte: Mittelpunkt = Beutel, alle Einträge (auch „fehlt noch“), ohne Logo, Leuchten und Verbindungslinien in der Mitte */
 function placeMap(){const sec=card.closest('section')||card;const sw=sec.getBoundingClientRect().width||card.getBoundingClientRect().width;
  const sc=Math.min(1.45,Math.max(.62,(sw-24)/1060));card.style.height=Math.round((530*sc+24)/.85)+'px';const g=geo();const sz=Math.round(1240*sc);
- map.style.width=map.style.height=sz+'px';map.style.left=(g.cx-sz/2)+'px';map.style.top=(g.cy-sz/2)+'px';card._icR=175*sc}
+ map.style.width=map.style.height=sz+'px';map.style.left=(g.cx-sz/2)+'px';map.style.top=(g.cy-sz/2)+'px';card._icR=175*sc;if(document.documentElement.classList.contains('ruhig')||matchMedia('(prefers-reduced-motion: reduce)').matches)requestAnimationFrame(t=>{draw(t);brain(t)})}
 function setupMap(){map.classList.add('on')} /* Ebenen per URL-Parameter (neu, logo, glow, spokes, bgt) */
 map.addEventListener('load',setupMap);setupMap();placeMap();addEventListener('resize',placeMap);
 /* neu berechnen, sobald der Reiter sichtbar wird (vorher Breite 0 → Rad zu klein, 17.11.2026) */
 {let lw=0;const sec0=card.closest('section')||card;if(window.ResizeObserver)new ResizeObserver(()=>{const w=Math.round(sec0.getBoundingClientRect().width);if(w&&w!==lw){lw=w;placeMap()}}).observe(sec0)}
 /* nur zeichnen, wenn sichtbar */
 let on=false,raf=0;
-function loop(t){const r=card.getBoundingClientRect();if(r.width&&r.bottom>0&&r.top<innerHeight){draw(t);brain(t)}if(on&&!RM)raf=requestAnimationFrame(loop)}
+const ruhig=()=>document.documentElement.classList.contains('ruhig');
+function loop(t){const r=card.getBoundingClientRect();if(r.width&&r.bottom>0&&r.top<innerHeight){draw(t);brain(t)}if(on&&!RM&&!ruhig())raf=requestAnimationFrame(loop)}
+addEventListener('gn-ruhig',()=>{if(on&&!RM&&!ruhig()){cancelAnimationFrame(raf);raf=requestAnimationFrame(loop)}});
 const io=new IntersectionObserver(es=>{const v=es.some(e=>e.isIntersecting);if(v&&!on){on=true;raf=requestAnimationFrame(loop)}else if(!v){on=false;cancelAnimationFrame(raf)}});io.observe(card);
 if(RM)requestAnimationFrame(t=>{draw(0);brain(0)});
 })();
 /* SACHET-RAD:END */</script>
+<script id="vis-js">/* VISUELL:BEGIN (patch_shop.py, 21.11.2026) */
+/* 7: Skelett weg, sobald die erste Ansicht steht; Portal-iframe erst beim ersten Öffnen von „Deine Daten“ laden */
+requestAnimationFrame(()=>document.documentElement.classList.remove('boot'));
+(function(){const ld=()=>{if(location.hash!=='#gedaechtnis')return;const fr=document.querySelector('.dd-portal[data-src]');if(fr&&!fr.getAttribute('src'))fr.setAttribute('src',fr.dataset.src)};addEventListener('hashchange',ld);ld();
+ /* Review 05/1: erster Aufruf mit Route (z. B. Coach-Chip „Blutwerte“) – Route gleich in die Adresse, damit sie auch bei langsamem Netz greift */
+ const o=window.deOpen;if(typeof o==='function')window.deOpen=function(r){const fr=document.querySelector('.dd-portal[data-src]');if(r&&fr&&!fr.getAttribute('src'))fr.setAttribute('src',fr.dataset.src+'#'+r);return o.apply(this,arguments)}})();
+/* 8: Bewegung anhalten – html.ruhig, gespeichert auf diesem Gerät; Datenlandkarten hören über storage bzw. postMessage mit */
+(function(){const H=document.documentElement,K='gn-ruhig';
+ function apply(on,save){H.classList.toggle('ruhig',on);if(save){try{on?localStorage.setItem(K,'1'):localStorage.removeItem(K)}catch(e){}}
+  document.querySelectorAll('[data-ruhig]').forEach(b=>{b.setAttribute('aria-pressed',on);const t=b.querySelector('span');if(t)t.textContent=on?'Bewegung fortsetzen':'Bewegung anhalten'});
+  document.querySelectorAll('iframe').forEach(f=>{try{f.contentWindow.postMessage({ruhig:on},location.origin)}catch(e){}});
+  dispatchEvent(new Event('gn-ruhig'))}
+ apply(H.classList.contains('ruhig'),false);
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-ruhig]');if(!b)return;const on=!H.classList.contains('ruhig');apply(on,true);
+  const tt=document.getElementById('toast');if(tt){tt.querySelector('span').textContent=on?'Bewegung angehalten.':'Bewegung läuft wieder.';tt.classList.add('on');clearTimeout(tt._vt);tt._vt=setTimeout(()=>tt.classList.remove('on'),2800)}});
+})();
+/* VISUELL:END */</script>
 </body>
 </html>

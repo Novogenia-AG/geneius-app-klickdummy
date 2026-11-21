@@ -344,8 +344,29 @@ html.framed .banner{padding-right:16px}
 details.dxe{margin:14px 0}details.dxe summary{cursor:pointer;font-weight:800;font-size:13.5px;color:var(--sub);padding:8px 0}
 html.light .tst,html.light .legal .tag{background:#F6E2A6}
 /* LEGAL:END */
+/* SHOP-CHECK:BEGIN (shop-check 21.11.2026, A8–A11) */
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+html.light :focus-visible{outline-color:#5E0047}
+.skip{min-height:44px;padding:10px 12px}
+.ovb .lnk{display:inline-flex;align-items:center;min-height:44px}
+.inp.num[aria-invalid=true]{border-color:#FFB4B4}
+html.light .inp.num[aria-invalid=true]{border-color:#B42318}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+/* SHOP-CHECK:END */
+/* VISUELL:BEGIN (shop-check 21.11.2026, visuell.md Top 1, 4, 6, 8) */
+@media (max-height:480px){.tabs{position:static}.filter{position:static}}
+.bl{transition:filter .15s,transform .1s}
+.bl.lime:hover,.ib:hover{filter:brightness(1.06)}
+.bl:active,.ib:active,.chip:active,.opt:active{transform:scale(.98);filter:brightness(.94)}
+.bl:disabled,.bl[aria-disabled=true]{opacity:.45;cursor:not-allowed;transform:none;filter:none}
+.bl[aria-busy=true]{pointer-events:none;opacity:.8}
+html:not(.light) .urow input.inp{border-color:#9A7D94}
+html.ruhig *,html.ruhig *::before,html.ruhig *::after{animation-play-state:paused!important}
+/* VISUELL:END */
 </style>
 <script>if(new URLSearchParams(location.search).get('hell')==='1')document.documentElement.classList.add('light')</script>
+<script>/* Bewegung anhalten (gn-ruhig, Schalter im App-Profil) */(function(){const H=document.documentElement,f=on=>H.classList.toggle('ruhig',!!on);try{f(localStorage.getItem('gn-ruhig')==='1')}catch(e){}
+addEventListener('storage',e=>{if(e.key==='gn-ruhig')f(e.newValue==='1')});addEventListener('message',e=>{if(e.origin===location.origin&&e.data&&typeof e.data.ruhig==='boolean'){f(e.data.ruhig);document.querySelectorAll('iframe').forEach(x=>{try{x.contentWindow.postMessage(e.data,location.origin)}catch(_){}})}})})()</script>
 <script>(function(){const H=document.documentElement;let f=true;try{f=window.self!==window.top}catch(e){}if(new URLSearchParams(location.search).get('inline')==='1')H.classList.add('inline');else if(f)H.classList.add('framed')})()</script>
 </head>
 <body>
@@ -422,8 +443,8 @@ function field(p){
   switch(p.k){
     case 'num':case 'fb':{const uf=p.uf||[];let h=lb+hl;
       if(p.k==='fb')h+=`<p class="note">Standard-Fragebogen mit ${p.fbq} Fragen. Hast du ihn schon bei deiner Ärztin, deinem Arzt oder in einer Studie ausgefüllt? Dann trag hier dein Ergebnis ein.</p>`;
-      if(uf.length>1)h+=`<p class="note">Trag den Wert nur in das Feld mit der Einheit ein, die auf deinem Befund steht.</p>`+uf.map(x=>`<div class="urow"><input class="inp num" type="number" inputmode="decimal" placeholder="Wert" data-u="${esc(x.u)}" value="${v.u===x.u?esc(v.v):''}"><span class="unit">${esc(x.u)}${x.a?` <small>(= ${esc(x.a)})</small>`:''}</span></div>`).join('');
-      else{const u0=uf[0]?uf[0].u:'';h+=`<div class="urow"><input class="inp num" type="number" inputmode="decimal" placeholder="Wert" data-u="${esc(u0)}" value="${v.u===u0&&!(p.cls&&p.cls.includes(v.v))?esc(v.v||''):''}"><span class="unit">${esc(u0)}</span></div>`}
+      if(uf.length>1)h+=`<p class="note">Trag den Wert nur in das Feld mit der Einheit ein, die auf deinem Befund steht.</p>`+uf.map(x=>`<div class="urow"><input class="inp num" type="number" inputmode="decimal" placeholder="Wert" aria-label="${esc(p.fr)}${x.u?' in '+esc(x.u):''}" data-u="${esc(x.u)}" value="${v.u===x.u?esc(v.v):''}"><span class="unit">${esc(x.u)}${x.a?` <small>(= ${esc(x.a)})</small>`:''}</span></div>`).join('');
+      else{const u0=uf[0]?uf[0].u:'';h+=`<div class="urow"><input class="inp num" type="number" inputmode="decimal" placeholder="Wert" aria-label="${esc(p.fr)}${u0?' in '+esc(u0):''}" data-u="${esc(u0)}" value="${v.u===u0&&!(p.cls&&p.cls.includes(v.v))?esc(v.v||''):''}"><span class="unit">${esc(u0)}</span></div>`}
       if(p.cls)h+=`<div class="urow"><span class="hl" style="margin:0">oder Klasse:</span><select class="inp" data-cls>${['–'].concat(p.cls).map(c=>`<option ${v.v===c?'selected':''}>${esc(c)}</option>`).join('')}</select></div>`;
       {const rt=rwTxt(p);if(rt)h+=`<p class="hl" style="margin:4px 0 0">${rt===REFS?'':'Hinweis: '}${esc(rt)}</p>`}
       return h+(p.q==='Messwert'?when:'')}
@@ -444,11 +465,19 @@ function field(p){
 }
 function bindField(root,p,onDone){
   const set=o=>{S.val[p.id]=Object.assign({},S.val[p.id]||{},o);if(!has(p.id)&&!S.val[p.id].w)delete S.val[p.id];save();mark(root,p)};
-  root.querySelectorAll('input.num').forEach(inp=>inp.addEventListener('input',()=>{root.querySelectorAll('input.num').forEach(o=>{if(o!==inp){o.value='';o.classList.remove('bad')}});const c=root.querySelector('[data-cls]');if(c)c.value='–';
-    let w=root.querySelector('.warn');if(w)w.remove();const val=inp.value.trim()===''?null:+inp.value,lm=p.lim&&p.lim[inp.dataset.u];
-    const bad=val!=null&&(isNaN(val)||(lm?(val<lm[0]||val>lm[1]):val<0));inp.classList.toggle('bad',bad);
-    if(bad){inp.closest('.urow').insertAdjacentHTML('afterend',`<p class="warn">Dieser Wert wirkt unrealistisch${lm?` – erwartet ${fmtN(lm[0])} bis ${fmtN(lm[1])} ${esc(inp.dataset.u)}`:''}. Bitte prüf die Einheit und das Komma.</p>`);set({v:'',u:''});return}
-    set({v:inp.value,u:inp.dataset.u})}));
+  /* shop-check 21.11.2026 (A8, A9): beim Tippen nur speichern, wenn der Wert passt (Häkchen); die Warnung kommt erst beim
+     Verlassen des Feldes (change). Der Wert bleibt im Feld stehen, wird markiert (aria-invalid) und nicht gespeichert. */
+  const wid='w-'+String(p.id).replace(/[^\w-]/g,'_');
+  const chk=inp=>{const val=inp.value.trim()===''?null:+inp.value,lm=p.lim&&p.lim[inp.dataset.u];return{val,lm,bad:val!=null&&(isNaN(val)||(lm?(val<lm[0]||val>lm[1]):val<0))}};
+  const unwarn=inp=>{const w=root.querySelector('.warn');if(w)w.remove();inp.classList.remove('bad');inp.removeAttribute('aria-invalid');inp.removeAttribute('aria-describedby')};
+  root.querySelectorAll('input.num').forEach(inp=>{
+    inp.addEventListener('input',()=>{root.querySelectorAll('input.num').forEach(o=>{if(o!==inp){o.value='';unwarn(o)}});const c=root.querySelector('[data-cls]');if(c)c.value='–';
+      const t=chk(inp);if(!t.bad)unwarn(inp);
+      if(t.val==null||t.bad){set({v:'',u:''});return}
+      set({v:inp.value,u:inp.dataset.u})});
+    inp.addEventListener('change',()=>{const t=chk(inp);unwarn(inp);if(!t.bad)return;
+      inp.classList.add('bad');inp.setAttribute('aria-invalid','true');inp.setAttribute('aria-describedby',wid);
+      inp.closest('.urow').insertAdjacentHTML('afterend',`<p class="warn" id="${wid}">Dieser Wert wirkt unrealistisch${t.lm?` – erwartet ${fmtN(t.lm[0])} bis ${fmtN(t.lm[1])} ${esc(inp.dataset.u)}`:''}. Bitte prüf die Einheit und das Komma.</p>`)})});
   const c=root.querySelector('[data-cls]');if(c)c.addEventListener('change',()=>{root.querySelectorAll('input.num').forEach(o=>o.value='');set({v:c.value==='–'?'':c.value,u:''})});
   root.querySelectorAll('[data-one] .chip,[data-one] .opt').forEach(b=>b.onclick=()=>{const on=b.getAttribute('aria-pressed')!=='true';b.parentElement.querySelectorAll('.chip,.opt').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed',on);set({v:on?b.dataset.o:''});if(on&&onDone)setTimeout(onDone,220)});
   root.querySelectorAll('[data-many] .chip,[data-many] .opt').forEach(b=>b.onclick=()=>{const a=new Set((S.val[p.id]||{}).v||[]);const o=b.dataset.o;if(a.has(o))a.delete(o);else{if(/^Keine/.test(o))a.clear();else a.forEach(x=>{if(/^Keine/.test(x))a.delete(x)});a.add(o)}b.parentElement.querySelectorAll('.chip,.opt').forEach(x=>x.setAttribute('aria-pressed',a.has(x.dataset.o)));set({v:[...a]})});
@@ -727,9 +756,9 @@ function bFilter(){if(!$('blist'))return;const qi=$('qb'),q=qi?norm(qi.value.tri
   $('none').hidden=n>0;const tp=document.querySelector('.top-chips');if(tp){tp.hidden=of;tp.previousElementSibling.hidden=of}}
 /* ---------- Einwilligung, Upload, Toast (Feedback Thomas 18.11.2026; Text = Vorschlag, Rechtsprüfung offen) ---------- */
 const needsOk=r=>r==='guide'||r==='lifestyle'||r==='medikamente'||(r.startsWith('bereich/')&&D.b[+r.split('/')[1]]&&D.b[+r.split('/')[1]].name!=='Gene & DNA');
-function consentThen(cb){if(S.consent){cb&&cb();return}if($('ovc'))return;
+function consentThen(cb){if(S.consent){cb&&cb();return}if($('ovc'))return;const back=document.activeElement;
   const o=document.createElement('div');o.className='ov';o.id='ovc';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.setAttribute('aria-labelledby','ovct');o.addEventListener('keydown',e=>{if(e.key==='Escape'){const n=o.querySelector('#ckno');if(n)n.click()}});
-  o.innerHTML=`<div class="ovb"><div class="eyebrow">${ico('lock',13)} Datenschutz</div><h3 id="ovct">Bevor du Gesundheitsdaten einträgst</h3>
+  o.innerHTML=`<div class="ovb"><div class="eyebrow">${ico('lock',13)} Datenschutz</div><h3 id="ovct" tabindex="-1">Bevor du Gesundheitsdaten einträgst</h3>
    <p>Was du hier einträgst – Laborwerte, Medikamente, Erkrankungen, Lebensstil, Werte aus deinen Geräten und Angaben zu Erkrankungen in deiner Familie – sind Gesundheitsdaten. Die Novogenia Marketing GmbH, Strass 19, 5301 Eugendorf, Österreich, verwendet sie zusammen mit den Ergebnissen deiner Gen-Analyse für einen Zweck: deine persönlichen Empfehlungen und die Dosierung deiner Rezeptur zu berechnen und dir zu erklären. Die Berechnung läuft automatisch.</p>
    <p>Alles ist freiwillig. Was du nicht einträgst, fließt nicht ein. Unter „Meine Einträge“ kannst du jede Angabe ändern oder löschen und deine Einwilligung jederzeit widerrufen – die Rechtmäßigkeit der Verarbeitung bis dahin bleibt davon unberührt.</p>
    <p><b>Testversion:</b> Deine Angaben bleiben nur in diesem Browser auf diesem Gerät und werden an niemanden gesendet.</p>
@@ -737,8 +766,13 @@ function consentThen(cb){if(S.consent){cb&&cb();return}if($('ovc'))return;
    <p style="margin:-8px 0 14px"><button class="lnk" type="button" data-go="rechtliches">Datenschutzhinweise lesen</button></p>
    <div class="nav"><button class="bl ghost" type="button" id="ckno">Nicht jetzt</button><button class="bl lime" type="button" id="ckyes" disabled>Einverstanden, weiter</button></div></div>`;
   document.body.appendChild(o);const ck=$('ckok'),y=$('ckyes');ck.onchange=()=>y.disabled=!ck.checked;
-  y.onclick=()=>{if(!ck.checked)return;S.consent=Date.now();save();o.remove();cb&&cb()};
-  $('ckno').onclick=()=>{o.remove();if(needsOk(R()))location.hash='home'}}
+  /* shop-check 21.11.2026 (A10): Fokus in den Dialog (sonst greift Escape nicht), danach zurück auf den Auslöser */
+  setTimeout(()=>{if(o.isConnected)$('ovct').focus()},60);
+  o.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...o.querySelectorAll('button:not([disabled]),input:not([disabled]),a[href]')].filter(x=>x.offsetParent!==null);if(!f.length)return;const a=f[0],z=f[f.length-1],c=document.activeElement;
+   if(e.shiftKey&&(c===a||c===$('ovct')||!o.contains(c))){e.preventDefault();z.focus()}else if(!e.shiftKey&&(c===z||!o.contains(c))){e.preventDefault();a.focus()}}); /* Review 05/4 */
+  const ret=()=>{const g=back&&back!==document.body&&document.contains(back)?back:document.querySelector('[data-guide]');if(g&&g.focus)g.focus({preventScroll:true});else focusFirst()};
+  y.onclick=()=>{if(!ck.checked)return;S.consent=Date.now();save();o.remove();if(cb)cb();else ret()};
+  $('ckno').onclick=()=>{o.remove();if(needsOk(R()))location.hash='home';else ret()}}
 const fin=document.createElement('input');fin.type='file';fin.accept='image/*,application/pdf';fin.multiple=true;fin.hidden=true;document.body.appendChild(fin);
 fin.onchange=()=>{const fs=[...fin.files];if(!fs.length)return;S.up=(S.up||[]).concat(fs.map(f=>({n:f.name,at:Date.now()})));save();fin.value='';side();
   toast(fs.length>1?'Danke, deine Befunde sind vorgemerkt.':'Danke, dein Befund ist vorgemerkt.',fs.length>1?'Testversion: Die Dateien werden nicht hochgeladen und nicht ausgelesen.':'Testversion: Die Datei wird nicht hochgeladen und nicht ausgelesen.');if(R()==='meine')render()};
