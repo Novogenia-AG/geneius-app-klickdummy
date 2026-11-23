@@ -363,6 +363,12 @@ html.light .inp.num[aria-invalid=true]{border-color:#B42318}
 html:not(.light) .urow input.inp{border-color:#9A7D94}
 html.ruhig *,html.ruhig *::before,html.ruhig *::after{animation-play-state:paused!important}
 /* VISUELL:END */
+/* PILLE:BEGIN (Daniel 23.11.2026: Knöpfe wie in der App in Pillenform) */
+.bl,.bl.sm,.mdel,.opt,.skip,.lnk,.onlyf{border-radius:999px}
+.opt{padding-left:18px;padding-right:18px}
+.ov h3:focus,.ov h3[tabindex]:focus-visible{outline:none}
+/* PILLE:END */
+
 </style>
 <script>if(new URLSearchParams(location.search).get('hell')==='1')document.documentElement.classList.add('light')</script>
 <script>/* Bewegung anhalten (gn-ruhig, Schalter im App-Profil) */(function(){const H=document.documentElement,f=on=>H.classList.toggle('ruhig',!!on);try{f(localStorage.getItem('gn-ruhig')==='1')}catch(e){}
