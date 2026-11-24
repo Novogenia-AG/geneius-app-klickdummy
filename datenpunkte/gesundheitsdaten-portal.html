@@ -368,6 +368,15 @@ html.ruhig *,html.ruhig *::before,html.ruhig *::after{animation-play-state:pause
 .opt{padding-left:18px;padding-right:18px}
 .ov h3:focus,.ov h3[tabindex]:focus-visible{outline:none}
 /* PILLE:END */
+/* OHNE-DEMO:BEGIN (Daniel 24.11.2026: Layout) */
+@media (min-width:821px){.hero{height:auto;min-height:max(440px,calc(100vh - 64px));display:flex;align-items:center}.hero .tx{position:relative;top:auto;transform:none;padding:32px 0}}
+.hbtns .ib{background:#3D1738}.hbtns .ib:hover{background:#4A1D44}
+html.light .hbtns .ib{background:#fff}
+.hero .tx .hbtns{grid-template-columns:repeat(6,minmax(0,1fr))}.hero .tx .hbtns .ib{grid-column:span 2}
+.hero .tx .hbtns .ib:nth-child(4):nth-last-child(2),.hero .tx .hbtns .ib:nth-child(5):last-child{grid-column:span 3}
+.hero .tx .hbtns .ib:nth-child(1):nth-last-child(2),.hero .tx .hbtns .ib:nth-child(2):last-child{grid-column:span 3}
+.priv{margin-top:12px}
+/* OHNE-DEMO:END */
 
 </style>
 <script>if(new URLSearchParams(location.search).get('hell')==='1')document.documentElement.classList.add('light')</script>
@@ -379,7 +388,6 @@ addEventListener('storage',e=>{if(e.key==='gn-ruhig')f(e.newValue==='1')});addEv
 <div class="shell">
  <aside id="side"></aside>
  <main>
-  <div class="tst" role="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><span>Testversion: Bitte trag keine echten Gesundheitsdaten ein. Deine Eingaben bleiben nur in diesem Browser.</span></div>
   <button class="banner" id="banner" type="button" data-coach></button><div class="mtop"><b id="mt"></b></div><nav class="tabs" id="tabs" aria-label="Bereiche"></nav>
   <div class="content" id="app"></div>
  </main>
@@ -510,7 +518,7 @@ function meine(){
   let h=`<div class="bh"><span class="ic" style="background:#8C1D6E">${ico('mine',22)}</span><div><h2>Meine Einträge</h2><small>${n?n.toLocaleString('de-DE')+' Datenpunkte von dir':'noch nichts eingetragen'}</small></div></div>`;
   if(!n)return h+`<div class="mine-empty"><p>Du hast noch keine Daten eingetragen. Alles, was du ausfüllst, siehst du hier gesammelt – und kannst es jederzeit ändern oder löschen.</p><button class="bl lime" type="button" data-guide>${ico('up',18)} Führe mich durch die Datenübermittlung</button></div>`+consentBox(n);
   h+=`<p class="lead">Alles, was du selbst eingetragen hast – nach Bereich sortiert. „Ändern“ führt dich zum Feld, „Löschen“ entfernt die Angabe.</p>`;
-  const up=S.up||[];if(up.length)h+=`<div class="mgrp"><div class="mgh"><span class="bi" style="background:#8C1D6E">${ico('up',16)}</span><b>Hochgeladene Befunde</b><small>${up.length}</small></div>${up.map((u,i)=>`<div class="mrow"><div class="mt"><b>${esc(u.n)}</b><span>nicht ausgelesen (Testversion)</span><small>hochgeladen am ${new Date(u.at).toLocaleDateString('de-DE')} · in der Testversion wird nur der Dateiname gespeichert</small></div><button class="mdel" type="button" data-rmu="${i}" aria-label="${esc(u.n)} löschen">Löschen</button></div>`).join('')}</div>`;
+  const up=S.up||[];if(up.length)h+=`<div class="mgrp"><div class="mgh"><span class="bi" style="background:#8C1D6E">${ico('up',16)}</span><b>Hochgeladene Befunde</b><small>${up.length}</small></div>${up.map((u,i)=>`<div class="mrow"><div class="mt"><b>${esc(u.n)}</b><span>vorgemerkt</span><small>hochgeladen am ${new Date(u.at).toLocaleDateString('de-DE')}</small></div><button class="mdel" type="button" data-rmu="${i}" aria-label="${esc(u.n)} löschen">Löschen</button></div>`).join('')}</div>`;
   const row=(nm,val,wh,ed,del)=>`<div class="mrow"><div class="mt"><b>${esc(nm)}</b><span>${esc(val)}</span>${wh?`<small>${esc(wh)}</small>`:''}</div>${ed?`<button class="bl ghost sm" type="button" ${ed}>Ändern</button>`:''}<button class="mdel" type="button" ${del} aria-label="${esc(nm)} löschen">Löschen</button></div>`;
   D.b.forEach((b,bi)=>{
     let rows='';
@@ -570,7 +578,7 @@ function home(){
     <p>In deinem Profil ist Platz für <b class="hl">über ${(Math.floor(D.total/1000)*1000).toLocaleString('de-DE')}</b> Gesundheits- und Lebensstil-Angaben – vom Fragebogen über Laborwerte bis zu Medikamenten. Alles ist freiwillig. Was NovoGenius für deine Rezeptur nutzen kann, fließt automatisch ein.</p>
     <button class="bl lime hgo" type="button" data-guide><span class="r">${ico('checklist',22)} Hier starten: Daten eingeben</span><small>Schritt für Schritt: Fragebogen, Laborwerte, Medikamente · ca. 5 Minuten</small></button>
     <div class="hor">Oder</div><div class="hbtns"><button class="ib" type="button" data-upload><span class="ii">${ico('up',58)}</span><b>Befund hochladen</b><small>Foto oder PDF</small></button>${INAPP?`<button class="ib" type="button" data-dnaup><span class="ii">${ico('dnaup',58)}</span><b>DNA-Daten</b><small>hochladen</small></button>`:''}${INAPP?`<button class="ib" type="button" data-dna><span class="ii">${ico('dnadl',58)}</span><b>DNA-Daten</b><small>herunterladen</small></button>`:''}<button class="ib" type="button" data-coach><span class="ii lg"><svg viewBox="-8.53 -17.64 105.5 105.5" width="56" height="56" class="lgm" aria-hidden="true"><circle cx="27.38" cy="5.57" r="3.27" fill="var(--a)"></circle><line x1="61.04" y1="5.57" x2="74.43" y2="5.57" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="14.57" y1="14.27" x2="20.81" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="67.63" y1="14.27" x2="87.43" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="8.37" y1="22.98" x2="27.4" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="22.98" x2="73.74" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.92" y1="22.98" x2="93.43" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.57" y1="31.69" x2="32.35" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="56.09" y1="31.69" x2="71.24" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="81.42" y1="31.69" x2="95.23" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.97" y1="40.4" x2="27.4" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="40.4" x2="73.08" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.26" y1="40.4" x2="93.23" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="10.77" y1="49.1" x2="20.81" y2="49.1" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><circle cx="67.63" cy="49.1" r="3.27" fill="var(--a)"></circle><line x1="16.37" y1="57.81" x2="27.4" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="57.81" x2="62.03" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="38.89" y1="66.95" x2="44.11" y2="66.95" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="5.57" x2="50.85" y2="5.57" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="14.27" x2="57.45" y2="14.27" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="22.98" x2="50.85" y2="22.98" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="42.54" y1="31.69" x2="45.9" y2="31.69" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="40.4" x2="50.85" y2="40.4" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="49.1" x2="57.45" y2="49.1" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="57.81" x2="50.85" y2="57.81" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line></svg></span><b>KI trägt ein</b><small>im NovoGenius-Chat</small></button><button class="ib" type="button" data-go="wearables"><span class="ii">${ico('watch',58)}</span><b>Wearables</b><small>verbinden</small></button></div>
-    <p class="priv">${ico('lock',15)}<span>Testversion: Deine Angaben bleiben nur in diesem Browser. Alles ist freiwillig, und unter „Meine Einträge“ kannst du jede Angabe ändern oder löschen und deine Einwilligung widerrufen. <button class="lnk" type="button" data-go="rechtliches">Datenschutz &amp; Impressum</button></span></p></div></section>
+    <p class="priv"><button class="lnk" type="button" data-go="rechtliches">Datenschutz &amp; Impressum</button></p></div></section>
   <div class="home-more">
   <div class="sec-t">Oder direkt einzeln</div>
   <div class="steps">
@@ -624,7 +632,6 @@ function wearables(){
    <button class="step ${con.ah?'done':''}" data-wear="ah" style="--sc:#2E95D3">${con.ah?`<span class="ok">${ico('check',15)}</span>`:''}<span class="n">${ico('sync')}</span><b>Apple Health</b><small>für iPhone · Apple Watch und Apps, die in Apple Health schreiben</small><span class="st">${con.ah?'Verbunden':'Mit Apple Health verbinden'}</span></button>
    <button class="step ${con.hc?'done':''}" data-wear="hc" style="--sc:#2E95D3">${con.hc?`<span class="ok">${ico('check',15)}</span>`:''}<span class="n">${ico('sync')}</span><b>Health Connect</b><small>für Android · Gib NovoGenius Zugriff auf deine Daten in Health Connect</small><span class="st">${con.hc?'Zugriff erlaubt':'Zugriff erlauben'}</span></button>
   </div>
-  <p class="hl" style="color:var(--mut);font-size:12.5px;margin:8px 0 0">Demo: Das Verbinden funktioniert nur in der NovoGenius-App am Handy (Apple Health und Health Connect sind nur auf dem Telefon erreichbar).</p>
   <div class="sumg" style="grid-template-columns:repeat(3,1fr)"><div><b>${n}</b><small>Marken & Apps in unserer Liste</small></div><div><b>${ah}</b><small>über Apple Health möglich</small></div><div><b>${hc}</b><small>über Health Connect möglich</small></div></div>
   <div class="sec-t">Welche Daten können übernommen werden?</div><div class="chips">${WTYP.map(t=>`<span class="chip" style="cursor:default">${t}</span>`).join('')}</div>
   <div class="sec-t">Was funktioniert damit?</div>
@@ -637,10 +644,10 @@ function wearables(){
 }
 /* ---------- Datenschutz & Impressum (NOVO LEGAL 19.11.2026; Impressum = Entwurf aus 11_gegenpruefung, Gesellschaft legt Daniel fest) ---------- */
 function rechtliches(){
-  return `<div class="bh"><span class="ic" style="background:#55204D">${ico('lock',22)}</span><div><h2>Datenschutz &amp; Impressum</h2><small>Testversion</small></div></div>
+  return `<div class="bh"><span class="ic" style="background:#55204D">${ico('lock',22)}</span><div><h2>Datenschutz &amp; Impressum</h2></div></div>
   <div class="legal">
    <h3>Datenschutz</h3>
-   <div class="card"><span class="tag">Testversion</span><p>Testversion – die Datenschutzhinweise der NovoGenius-App folgen vor dem Start. Heute bleiben alle Eingaben nur in deinem Browser; nichts wird an Novogenia gesendet.</p>
+   <div class="card"><p>Die Datenschutzhinweise der NovoGenius-App folgen vor dem Start. Heute bleiben alle Eingaben nur in deinem Browser; nichts wird an Novogenia gesendet.</p>
     <p>Deine Einwilligung kannst du jederzeit unter <button class="lnk" type="button" data-go="meine">Meine Einträge</button> widerrufen. Dort kannst du auch alle Angaben auf einmal löschen.</p></div>
    <h3>Gesundheit</h3>
    <div class="card"><p>NovoGenius gibt dir Informationen zu Ernährung und Nahrungsergänzung. Das ist keine Diagnose und keine Behandlung und ersetzt keine ärztliche Beratung. Die Beurteilung deiner Befunde bleibt bei deiner Ärztin oder deinem Arzt.</p>
@@ -681,7 +688,7 @@ function guide(){
   if(n===2)return steps(2)+`<div class="wzh">Schritt 2 von 5</div><div class="wzq">Hast du Laborwerte oder andere Messungen?</div>
     <p class="lead">Zum Beispiel einen Blutbefund, Blutdruck, Körperfett, eine Knochendichte-Messung oder Werte aus deiner Smartwatch.</p>
     <div class="big2"><button type="button" data-gw="3">Ja, habe ich</button><button type="button" data-gw="4">Nein / später</button></div>
-    <p class="lead" style="margin-top:6px">Befund auf Papier oder als PDF? <button class="bl ghost sm" type="button" data-upload>${ico('up',15)} Foto oder PDF hochladen</button> – in der fertigen App liest die NovoGenius-KI die Werte aus, du prüfst sie danach. (Testversion: Die Datei wird nicht ausgelesen.)</p>
+    <p class="lead" style="margin-top:6px">Befund auf Papier oder als PDF? <button class="bl ghost sm" type="button" data-upload>${ico('up',15)} Foto oder PDF hochladen</button> – in der fertigen App liest die NovoGenius-KI die Werte aus, du prüfst sie danach.</p>
     <p class="lead" style="margin-top:6px">Smartwatch, Ring oder smarte Waage? <button class="bl ghost sm" type="button" data-go="wearables">${ico('watch',15)} Wearables verbinden</button></p>
     <div class="nav"><button class="bl ghost" type="button" data-gw="1">Zurück</button><span></span></div>`;
   if(n===3){const done=MESS.filter(p=>has(p.id));
@@ -699,7 +706,7 @@ function guide(){
       return no.map(g).join('')+(ge.length?`<details class="dxe" ${ge.some(s=>s.p.some(p=>dxOn(p.id)))?'open':''}><summary>Seltene erbliche Erkrankungen (nur falls ärztlich festgestellt)</summary><p class="subnote">${GENNOTE}</p>${ge.map(g).join('')}</details>`:'')})()}</div>`+gnav(4,6,'Fertig');}
   const lsD=LQ.filter(p=>vis(p)&&has(p.id)).length,mD=MESS.filter(p=>has(p.id)).length,dxD=D.b[DXB].s.flatMap(s=>s.p).filter(p=>dxOn(p.id)).length;
   return `<div class="wzh">Geschafft</div><div class="wzq">Die schnelle Übermittlung ist abgeschlossen.</div>
-   <p class="lead" style="font-size:16px">Danke! NovoGenius berücksichtigt deine Angaben bei deinem nächsten Rezeptur-Vorschlag. <b>Dein Abo ändert sich nicht von selbst</b> – du entscheidest, ob du den Vorschlag übernimmst.</p><p class="lead" style="font-size:13px">Testversion: Deine Angaben bleiben nur in diesem Browser – es wird nichts übertragen und nichts neu berechnet.</p>
+   <p class="lead" style="font-size:16px">Danke! NovoGenius berücksichtigt deine Angaben bei deinem nächsten Rezeptur-Vorschlag. <b>Dein Abo ändert sich nicht von selbst</b> – du entscheidest, ob du den Vorschlag übernimmst.</p>
    ${wheel()}
    <div class="sumg"><div><b>${lsD}</b><small>Fragen beantwortet</small></div><div><b>${mD}</b><small>Werte eingetragen</small></div><div><b>${S.medAns==='nein'?0:S.med.length}</b><small>Medikamente</small></div><div><b>${dxD}</b><small>Krankheiten</small></div></div>
    <p class="lead">Weitere Angaben kannst du jederzeit in den einzelnen Bereichen machen.</p>
@@ -767,7 +774,7 @@ function consentThen(cb){if(S.consent){cb&&cb();return}if($('ovc'))return;const 
   o.innerHTML=`<div class="ovb"><div class="eyebrow">${ico('lock',13)} Datenschutz</div><h3 id="ovct" tabindex="-1">Bevor du Gesundheitsdaten einträgst</h3>
    <p>Was du hier einträgst – Laborwerte, Medikamente, Erkrankungen, Lebensstil, Werte aus deinen Geräten und Angaben zu Erkrankungen in deiner Familie – sind Gesundheitsdaten. Die Novogenia Marketing GmbH, Strass 19, 5301 Eugendorf, Österreich, verwendet sie zusammen mit den Ergebnissen deiner Gen-Analyse für einen Zweck: deine persönlichen Empfehlungen und die Dosierung deiner Rezeptur zu berechnen und dir zu erklären. Die Berechnung läuft automatisch.</p>
    <p>Alles ist freiwillig. Was du nicht einträgst, fließt nicht ein. Unter „Meine Einträge“ kannst du jede Angabe ändern oder löschen und deine Einwilligung jederzeit widerrufen – die Rechtmäßigkeit der Verarbeitung bis dahin bleibt davon unberührt.</p>
-   <p><b>Testversion:</b> Deine Angaben bleiben nur in diesem Browser auf diesem Gerät und werden an niemanden gesendet.</p>
+   <p>Deine Angaben bleiben nur in diesem Browser auf diesem Gerät und werden an niemanden gesendet.</p>
    <label class="ck"><input type="checkbox" id="ckok"><span>Ich willige ausdrücklich ein, dass die Novogenia Marketing GmbH meine hier eingetragenen Gesundheitsdaten zusammen mit den Ergebnissen meiner Gen-Analyse für diesen Zweck verarbeitet.</span></label>
    <p style="margin:-8px 0 14px"><button class="lnk" type="button" data-go="rechtliches">Datenschutzhinweise lesen</button></p>
    <div class="nav"><button class="bl ghost" type="button" id="ckno">Nicht jetzt</button><button class="bl lime" type="button" id="ckyes" disabled>Einverstanden, weiter</button></div></div>`;
@@ -781,7 +788,7 @@ function consentThen(cb){if(S.consent){cb&&cb();return}if($('ovc'))return;const 
   $('ckno').onclick=()=>{o.remove();if(needsOk(R()))location.hash='home';else ret()}}
 const fin=document.createElement('input');fin.type='file';fin.accept='image/*,application/pdf';fin.multiple=true;fin.hidden=true;document.body.appendChild(fin);
 fin.onchange=()=>{const fs=[...fin.files];if(!fs.length)return;S.up=(S.up||[]).concat(fs.map(f=>({n:f.name,at:Date.now()})));save();fin.value='';side();
-  toast(fs.length>1?'Danke, deine Befunde sind vorgemerkt.':'Danke, dein Befund ist vorgemerkt.',fs.length>1?'Testversion: Die Dateien werden nicht hochgeladen und nicht ausgelesen.':'Testversion: Die Datei wird nicht hochgeladen und nicht ausgelesen.');if(R()==='meine')render()};
+  toast(fs.length>1?'Danke, deine Befunde sind vorgemerkt.':'Danke, dein Befund ist vorgemerkt.');if(R()==='meine')render()};
 function toast(t,m){let el=$('toast');if(!el){el=document.createElement('div');el.id='toast';el.className='toast';el.setAttribute('role','status');document.body.appendChild(el)}
   el.innerHTML=`<b>${esc(t)}</b>${esc(m||'')}`;el.classList.add('on');clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove('on'),5200)}
 /* Kundenservice-Knopf der App liegt am Handy über „Weiter“ – im Fragebogen ausblenden */
