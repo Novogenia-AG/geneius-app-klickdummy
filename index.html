@@ -2102,30 +2102,6 @@ body.nx-on-nu .nx-fixed{display:inline-flex}
 @media (max-width:560px){.dw-r{grid-template-columns:1fr auto}.dw-bar{grid-column:1/-1;order:3}}
 /* DOSIS-WARUM:END */
 /* NU-EXTRA:END */</style>
-<style id="sr-css">/* SACHET-RAD:BEGIN – Datenring um das Sachet, Variante 4a (GENE NUGGETS, 16.11.2026) */
-.sr-card{position:relative;height:820px;margin-top:22px;border-radius:28px;overflow:hidden;background:radial-gradient(ellipse at 50% 85%,#3A0030,#1A0015 60%,#0E000B);border:1px solid rgba(255,255,255,.08);box-shadow:var(--sh)}
-.sr-card canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.sr-card canvas.sr-f{z-index:3;pointer-events:none}
-.sr-card canvas.sr-b{z-index:1}
-.sr-map{position:absolute;border:0;pointer-events:none;z-index:0;background:transparent;opacity:0;transition:opacity .8s}
-.sr-map.on{opacity:1}
-.sr-fly{position:absolute;inset:0;z-index:3;pointer-events:none}
-.sr-chip{position:absolute;left:0;top:0;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:9px;background:var(--c);color:#26001D;display:grid;place-items:center;box-shadow:0 0 0 3px rgba(255,255,255,.12),0 0 16px var(--c);will-change:transform,opacity;opacity:0}
-.sr-chip .ic{width:16px;height:16px;stroke-width:2.2}
-.sr-card .stick{position:absolute;left:50%;top:85%;width:min(520px,58%);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
-.sr-brain{position:absolute;left:50%;top:62%;width:134px;height:134px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
-.sr-brain svg{position:relative;width:100%;height:100%;display:block}
-.sr-brain::before{content:"";position:absolute;inset:-44px;border-radius:50%;background:radial-gradient(circle,rgba(26,0,21,.92) 45%,rgba(26,0,21,0) 72%)}
-@keyframes srGlow{50%{filter:drop-shadow(0 0 28px rgba(198,214,63,.95))}}
-.sr-ai{position:absolute;left:50%;top:calc(39% + 64px);transform:translateX(-50%);z-index:4;font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.14em;color:var(--lime);white-space:nowrap}
-.sr-ai i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin-right:7px;vertical-align:1px;animation:srBlink 1s steps(2) infinite}
-@keyframes srBlink{50%{opacity:.2}}
-.sr-cap{position:absolute;left:50%;transform:translateX(-50%);width:min(360px,86%);top:calc(85% + 76px);line-height:1.3;text-align:center;z-index:4;font-size:19px;font-weight:700;color:rgba(255,255,255,.85)}
-.sr-cap em{font-style:normal;color:var(--lime);font-weight:800}
-body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
-@media (max-width:760px){.sr-card{height:520px}.sr-card .stick{width:80%}.sr-brain{width:88px;height:88px}.sr-cap{top:calc(85% + 44px);font-size:15px}.sr-ai{top:calc(39% + 52px)}}
-@media (prefers-reduced-motion:reduce){.sr-brain,.sr-ai i{animation:none}}
-/* SACHET-RAD:END */</style>
 <style id="shop-css">/* SHOP-CHECK:BEGIN (patch_shop.py, 21.11.2026) */
 .cart-n{font-weight:800}
 .cart-sum{margin-right:auto;align-self:center;font-size:13px;font-weight:700;color:var(--plum)}
@@ -2189,10 +2165,121 @@ html.ruhig *,html.ruhig *::before,html.ruhig *::after{animation-play-state:pause
 html.ruhig .btn[aria-busy=true]::after{animation-play-state:running!important}
 </style>
 <!-- VISUELL-KOPF:END -->
+<style id="sr-css">/* SACHET-RAD:BEGIN – Datenring um das Sachet, Variante 4a (GENE NUGGETS, 16.11.2026) */
+.sr-card{position:relative;height:820px;margin-top:22px;border-radius:28px;overflow:hidden;background:radial-gradient(ellipse at 50% 85%,#3A0030,#1A0015 60%,#0E000B);border:1px solid rgba(255,255,255,.08);box-shadow:var(--sh)}
+.sr-card canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.sr-card canvas.sr-f{z-index:3;pointer-events:none}
+.sr-card canvas.sr-b{z-index:1}
+.sr-map{position:absolute;border:0;pointer-events:none;z-index:0;background:transparent;opacity:0;transition:opacity .8s}
+.sr-map.on{opacity:1}
+.sr-fly{position:absolute;inset:0;z-index:3;pointer-events:none}
+.sr-chip{position:absolute;left:0;top:0;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:9px;background:var(--c);color:#26001D;display:grid;place-items:center;box-shadow:0 0 0 3px rgba(255,255,255,.12),0 0 16px var(--c);will-change:transform,opacity;opacity:0}
+.sr-chip .ic{width:16px;height:16px;stroke-width:2.2}
+.sr-card .stick{position:absolute;left:50%;top:85%;width:min(520px,58%);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
+.sr-brain{position:absolute;left:50%;top:62%;width:134px;height:134px;transform:translate(-50%,-50%);z-index:2;--p:#fff;--a:#C6D63F;filter:drop-shadow(0 0 16px rgba(198,214,63,.65));animation:srGlow 2.4s ease-in-out infinite}
+.sr-brain svg{position:relative;width:100%;height:100%;display:block}
+.sr-brain::before{content:"";position:absolute;inset:-44px;border-radius:50%;background:radial-gradient(circle,rgba(26,0,21,.92) 45%,rgba(26,0,21,0) 72%)}
+@keyframes srGlow{50%{filter:drop-shadow(0 0 28px rgba(198,214,63,.95))}}
+.sr-ai{position:absolute;left:50%;top:calc(39% + 64px);transform:translateX(-50%);z-index:4;font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.14em;color:var(--lime);white-space:nowrap}
+.sr-ai i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin-right:7px;vertical-align:1px;animation:srBlink 1s steps(2) infinite}
+@keyframes srBlink{50%{opacity:.2}}
+.sr-cap{position:absolute;left:50%;transform:translateX(-50%);width:min(360px,86%);top:calc(85% + 76px);line-height:1.3;text-align:center;z-index:4;font-size:19px;font-weight:700;color:rgba(255,255,255,.85)}
+.sr-cap em{font-style:normal;color:var(--lime);font-weight:800}
+body.nxv-c .nx-row .sr-card{margin:0;height:100%;min-height:420px}
+@media (max-width:760px){.sr-card{height:520px}.sr-card .stick{width:80%}.sr-brain{width:88px;height:88px}.sr-cap{top:calc(85% + 44px);font-size:15px}.sr-ai{top:calc(39% + 52px)}}
+@media (prefers-reduced-motion:reduce){.sr-brain,.sr-ai i{animation:none}}
+/* SACHET-RAD:END */</style>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
 <div class="app">
+<!-- FARBMODUS:BEGIN (Daniel 26.11.2026) -->
+<style id="fm-css">
+html.hell-wait body{opacity:0}
+.rail .nav.fm-btn{width:100%;font:inherit;text-align:inherit}
+</style>
+<script id="fm-js">
+(function(){
+const H=document.documentElement,K='gn-farbe';let on=false;try{on=localStorage.getItem(K)==='hell'}catch(e){}
+if(on)H.classList.add('hell','hell-wait');
+/* ---------- Farben ---------- */
+const PROPS=['color','background-color','background-image','background','border-color','border-top-color','border-right-color','border-bottom-color','border-left-color','border','border-top','border-bottom','border-left','border-right','outline-color','fill','stroke','caret-color','column-rule-color','text-decoration-color','accent-color','--*'];
+const CRE=/#(?:[0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{3,4})\b|rgba?\([^)]*\)|hsla?\([^)]*\)|\b(?:white|black)\b/g;
+function parse(c){c=c.trim().toLowerCase();if(c==='white')return[255,255,255,1];if(c==='black')return[0,0,0,1];
+ if(c[0]==='#'){let h=c.slice(1);if(h.length<=4)h=h.split('').map(x=>x+x).join('');const n=parseInt(h.slice(0,6),16);return[n>>16&255,n>>8&255,n&255,h.length===8?parseInt(h.slice(6),16)/255:1]}
+ const m=c.match(/\(([^)]*)\)/);if(!m)return null;const p=m[1].split(/[\s,\/]+/).filter(Boolean);
+ if(c.startsWith('hsl')){const h=parseFloat(p[0])/360,s=parseFloat(p[1])/100,l=parseFloat(p[2])/100;const[r,g,b]=h2r(h,s,l);return[r,g,b,p[3]!=null?(p[3].endsWith('%')?parseFloat(p[3])/100:+p[3]):1]}
+ return[+p[0],+p[1],+p[2],p[3]!=null?(p[3].endsWith('%')?parseFloat(p[3])/100:+p[3]):1]}
+function r2h(r,g,b){r/=255;g/=255;b/=255;const x=Math.max(r,g,b),n=Math.min(r,g,b),l=(x+n)/2;let h=0,s=0;if(x!==n){const d=x-n;s=l>.5?d/(2-x-n):d/(x+n);h=x===r?(g-b)/d+(g<b?6:0):x===g?(b-r)/d+2:(r-g)/d+4;h/=6}return[h,s,l]}
+function h2r(h,s,l){if(!s){const v=Math.round(l*255);return[v,v,v]}const q=l<.5?l*(1+s):l+s-l*s,p=2*l-q,f=t=>{t=(t+1)%1;return t<1/6?p+(q-p)*6*t:t<.5?q:t<2/3?p+(q-p)*(2/3-t)*6:p};return[f(h+1/3),f(h),f(h-1/3)].map(v=>Math.round(v*255))}
+const accent=([r,g,b])=>{const[,s,l]=r2h(r,g,b);return s>.35&&l>.28&&l<.78};
+/* kind: 'fg' Schrift/Linien · 'bg' Fläche */
+/* Nur das Dunkle wird hell: dunkle Flächen → helle Tönung, helle Schrift → Pflaumen-Tinte. Was schon hell ist
+   (weiße Chat- und Kartenflächen, dunkle Schrift darauf), bleibt unverändert. Weiße Schleier (rgba weiß, durchsichtig)
+   auf dunklem Grund werden zu Pflaumen-Schleiern. */
+function mapC(c,kind){const v=parse(c);if(!v||v[3]===0)return c;const[r,g,b,a]=v;let[h,s,l]=r2h(r,g,b);
+ if(accent(v)){if(kind!=='fg'||l<.45)return c;l=.33}           /* Markenfarbe: Fläche bleibt, Schrift dunkler */
+ else if(kind==='bg'){
+  if(l>.9&&a<.6){h=312/360;s=1;l=.2}                             /* weißer Schleier → Pflaumen-Schleier */
+  else if(l<.5){l=Math.min(1-l,.985);if(l>.9)l=.94+(l-.9)*.45;s=Math.min(s,.45)}  /* dunkle Fläche → ruhige helle Tönung (nie reinweiß) */
+  else return c}
+ else if(kind==='bd'){if(l>.6&&a<.7){h=312/360;s=1;l=.2}else return c} /* helle Linie auf Dunkel → Pflaumen-Linie */
+ else{if(l>.6){l=Math.max(1-l,.07);if(s<.2){h=312/360;s=1;l=Math.max(l,.07)}}else return c} /* helle Schrift → Tinte */
+ const[R,G,B]=h2r(h,s,l);return a<1?`rgba(${R},${G},${B},${+a.toFixed(3)})`:`rgb(${R},${G},${B})`}
+const kindOf=p=>/^border|^outline|^column-rule/.test(p)?'bd':/^(color|fill|stroke|caret-color|text-decoration-color|accent-color)$/.test(p)?'fg':'bg';
+const RS=()=>getComputedStyle(document.documentElement);let RSc=null;
+const rv=v=>v.indexOf('var(--')<0?v:v.replace(/var\((--[\w-]+)(?:,[^)]*)?\)/g,(m,n)=>{RSc=RSc||RS();const x=RSc.getPropertyValue(n).trim();return x&&!/var\(/.test(x)?x:m});
+const varKind=p=>p==='--p'||/ink|text|fg|soft|sub|mut|tx/i.test(p)?'fg':/bg|wash|card|panel|surface|line/i.test(p)?'bg':'';
+const mapV=(val,p)=>{const k=p.startsWith('--')?varKind(p):kindOf(p);return k?val.replace(CRE,c=>mapC(c,k)):val};
+const isAccentBg=st=>{const b=st.getPropertyValue('background-color')||st.getPropertyValue('background');const m=b&&b.match(CRE);if(!m)return false;const v=parse(m[0]);return !!v&&v[3]>.6&&accent(v)};
+function pre(sel){return sel.split(',').map(x=>{x=x.trim();if(!x)return x;if(/^:root\b/.test(x))return x.replace(/^:root/,'html.hell');if(/^html\b/.test(x))return x.replace(/^html/,'html.hell');return 'html.hell '+x}).join(',')}
+function rule(r){const st=r.style;if(!st||!r.selectorText)return'';const keepFg=isAccentBg(st);let out='';
+ for(let i=0;i<st.length;i++){const p=st[i];if(p.startsWith('--')){const v=st.getPropertyValue(p);if(CRE.test(v)){CRE.lastIndex=0;out+=`${p}:${mapV(v,p)};`}CRE.lastIndex=0;continue}
+  if(!PROPS.includes(p)&&!/^border-.*color$/.test(p))continue;if(p==='color'&&keepFg)continue;const v=rv(st.getPropertyValue(p));if(!v||!/#|rgb|hsl|white|black/i.test(v))continue;
+  out+=`${p}:${mapV(v,p)}${st.getPropertyPriority(p)?' !important':''};`}
+ /* Kurzschreibweisen mit var(): Längsschreibweisen sind dann leer, deshalb die Kurzform auflösen und abbilden */
+ ['background','border','border-top','border-right','border-bottom','border-left','outline'].forEach(sh=>{const v=st.getPropertyValue(sh);if(!v||v.indexOf('var(')<0)return;const x=rv(v);if(!/#|rgb|hsl|white|black/i.test(x))return;out+=`${sh}:${mapV(x,sh)}${st.getPropertyPriority(sh)?' !important':''};`});
+ return out?`${pre(r.selectorText)}{${out}}`:''}
+function walk(rules){let out='';for(const r of rules){try{if(r.cssRules&&r.media)out+=`@media ${r.media.mediaText}{${walk(r.cssRules)}}`;else if(r.cssRules&&r.conditionText!=null&&!r.selectorText)out+=`@supports ${r.conditionText}{${walk(r.cssRules)}}`;else if(r.selectorText)out+=rule(r)}catch(e){}}return out}
+let built=false;
+function build(){const css=[...document.styleSheets].filter(s=>s.ownerNode&&s.ownerNode.id!=='fm-gen'&&s.ownerNode.id!=='fm-css').map(s=>{try{return walk(s.cssRules)}catch(e){return''}}).join('\n');
+ let el=document.getElementById('fm-gen');if(!el){el=document.createElement('style');el.id='fm-gen';document.head.appendChild(el)}
+ el.textContent=css+FIX;built=true}
+/* Feinschliff nach Sichtprüfung */
+const FIX=`
+html.hell{color-scheme:light}
+html.hell .aurora{opacity:.55}
+html.hell img,html.hell video,html.hell canvas{filter:none}
+`;
+/* Inline-Farben (vom Skript gezeichnete Teile) */
+const IP=['color','background-color','background','border-color','fill','stroke'];
+/* Review 26.11.: nur die geänderten Farb-Eigenschaften merken ({prop:{o,n}}) und nur diese zurücksetzen; was ein Skript
+   inzwischen an display/width … gesetzt hat, bleibt. Neu gesetzte Inline-Farben werden über attributeFilter nachgezogen. */
+function inl(el){if(!el.getAttribute||!el.style)return;let o={};try{o=JSON.parse(el.dataset.fmo||'{}')}catch(e){}
+ if(on){const s=el.getAttribute('style');if(!s||!/#|rgb|hsl|white|black/i.test(s))return;const st=el.style,keep=isAccentBg(st);let ch=false;
+  IP.forEach(p=>{const v=st.getPropertyValue(p);if(!v||(p==='color'&&keep)||(o[p]&&o[p].n===v))return;const n=mapV(v,p);if(n!==v){o[p]={o:v,n};st.setProperty(p,n,st.getPropertyPriority(p));ch=true}});
+  if(ch)el.dataset.fmo=JSON.stringify(o)}
+ else if(el.dataset.fmo!=null){Object.keys(o).forEach(p=>{if(el.style.getPropertyValue(p)===o[p].n)el.style.setProperty(p,o[p].o)});delete el.dataset.fmo}}
+function inlAll(root){(root.querySelectorAll?[root,...root.querySelectorAll('[style]')]:[]).forEach(inl)}
+let mo=null;
+function frames(){document.querySelectorAll('iframe').forEach(f=>{try{f.contentWindow.postMessage({farbe:on?'hell':'dunkel'},location.origin)}catch(e){}})}
+function ui(){document.querySelectorAll('[data-farbe]').forEach(b=>{b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',on?'Dunkler Modus':'Heller Modus');const t=b.querySelector('span');if(t)t.textContent=b.classList.contains('fm-btn')?(on?'Dunkel':'Hell'):(on?'Dunkler Modus':'Heller Modus');const u=b.querySelector('use');if(u)u.setAttribute('href',on?'#fm-moon':'#fm-sun')})}
+function apply(v,save){on=v;if(on&&!built)build();H.classList.toggle('hell',on);inlAll(document.body);
+ if(on&&!mo){mo=new MutationObserver(ms=>{if(!on)return;ms.forEach(m=>{if(m.type==='attributes')inl(m.target);else m.addedNodes.forEach(n=>{if(n.nodeType===1)inlAll(n)})})});mo.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['style']})}
+ if(save){try{on?localStorage.setItem(K,'hell'):localStorage.removeItem(K)}catch(e){}}
+ const mt=document.querySelector('meta[name=theme-color]');if(mt)mt.content=on?'#F7EEF4':'#3C0033';
+ ui();frames();H.classList.remove('hell-wait')}
+window.gnFarbe=v=>apply(v===true||v==='hell',true); /* Review 26.11.: auch 'hell'/'dunkel' wie in den postMessages */
+document.addEventListener('DOMContentLoaded',()=>{
+ const sp=document.createElement('div');sp.hidden=true;sp.innerHTML='<svg xmlns="http://www.w3.org/2000/svg"><symbol id="fm-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></symbol><symbol id="fm-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z"/></symbol></svg>';document.body.prepend(sp);
+ apply(on,false);
+ document.querySelectorAll('iframe').forEach(f=>f.addEventListener('load',()=>{try{f.contentWindow.postMessage({farbe:on?'hell':'dunkel'},location.origin)}catch(e){}}));
+ new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.tagName==='IFRAME')n.addEventListener('load',()=>{try{n.contentWindow.postMessage({farbe:on?'hell':'dunkel'},location.origin)}catch(e){}})}))).observe(document.body,{childList:true,subtree:true});
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-farbe]');if(!b)return;e.preventDefault();apply(!on,true)});
+ addEventListener('storage',e=>{if(e.key===K)apply(e.newValue==='hell',false)})});
+})();
+</script>
+<!-- FARBMODUS:END -->
 <nav class="rail" aria-label="Bereiche">
   <a class="rlogo" href="#coach" aria-label="NovoGenius – Startseite"><svg viewBox="-93.09 -2.55 186.18 166.53" aria-hidden="true"><g transform="translate(-66.33 0) scale(1.5)"><circle cx="27.38" cy="5.57" r="3.27" fill="var(--a)"></circle><line x1="61.04" y1="5.57" x2="74.43" y2="5.57" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="14.57" y1="14.27" x2="20.81" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="67.63" y1="14.27" x2="87.43" y2="14.27" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="8.37" y1="22.98" x2="27.4" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="22.98" x2="73.74" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.92" y1="22.98" x2="93.43" y2="22.98" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.57" y1="31.69" x2="32.35" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="56.09" y1="31.69" x2="71.24" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="81.42" y1="31.69" x2="95.23" y2="31.69" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="5.97" y1="40.4" x2="27.4" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="40.4" x2="73.08" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="83.26" y1="40.4" x2="93.23" y2="40.4" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="10.77" y1="49.1" x2="20.81" y2="49.1" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><circle cx="67.63" cy="49.1" r="3.27" fill="var(--a)"></circle><line x1="16.37" y1="57.81" x2="27.4" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="61.04" y1="57.81" x2="62.03" y2="57.81" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="38.89" y1="66.95" x2="44.11" y2="66.95" stroke="var(--a)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="5.57" x2="50.85" y2="5.57" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="14.27" x2="57.45" y2="14.27" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="22.98" x2="50.85" y2="22.98" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="42.54" y1="31.69" x2="45.9" y2="31.69" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="40.4" x2="50.85" y2="40.4" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="31" y1="49.1" x2="57.45" y2="49.1" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line><line x1="37.59" y1="57.81" x2="50.85" y2="57.81" stroke="var(--p)" stroke-width="6.53" stroke-linecap="round"></line></g><g class="wmg"><text x="0" y="148.3244848081044" font-family="Montserrat,sans-serif" font-size="30" font-weight="800" text-anchor="middle" letter-spacing="-0.48" fill="var(--p)">Novo<tspan fill="var(--a)" font-weight="700">Genius</tspan></text></g></svg></a>
   <a class="nav" href="#coach" data-r="coach"><svg class="ic"><use href="#i-chat"/></svg>Coach</a>
@@ -2207,6 +2294,7 @@ html.ruhig .btn[aria-busy=true]::after{animation-play-state:running!important}
   <a class="nav" href="#gedaechtnis" data-r="gedaechtnis"><svg class="ic" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v6.5c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.5"/><path d="M4.5 12v6.5c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V12"/></svg>Deine Daten</a>
   <button class="nav shopnav" data-shop aria-label="Shop öffnen"><span class="shop-ic"><svg class="ic"><use href="#i-cart"/></svg></span>Shop</button>
   <span class="sp"></span>
+  <button class="nav fm-btn" type="button" data-farbe aria-pressed="false"><svg class="ic"><use href="#fm-sun"/></svg><span>Heller Modus</span></button>
   <a class="nav" href="#profil" data-r="profil"><svg class="ic"><use href="#i-user"/></svg>Profil</a>
   <button class="nav" data-toast="Du wurdest abgemeldet (Klickdummy)."><svg class="ic"><use href="#i-logout"/></svg>Abmelden</button>
 </nav>
@@ -2328,7 +2416,7 @@ html.ruhig .btn[aria-busy=true]::after{animation-play-state:running!important}
   <button class="nx-recalc nx-fixed" type="button" data-nxrecalc><span class="nx-tag">TEST</span>Test Recalculation</button>
 <!-- /NU-EXTRA:TEST -->
 <!-- SACHET-RAD:BEGIN -->
-<div class="sr-card" aria-label="Deine Daten fließen in deine persönliche Rezeptur ein"><iframe class="sr-map" src="messwerte/datenlandkarte-animiert.html?bg=1&amp;neu=1&amp;logo=0&amp;glow=0&amp;spokes=0&amp;icons=0&amp;hubs=0&amp;bgt=1" tabindex="-1" aria-hidden="true" title=""></iframe><canvas class="sr-b"></canvas><div class="sr-brain" aria-hidden="true"></div>
+<div class="sr-card" aria-label="Deine Daten fließen in deine persönliche Rezeptur ein"><iframe class="sr-map" data-src="messwerte/datenlandkarte-animiert.html?bg=1&amp;neu=1&amp;logo=0&amp;glow=0&amp;spokes=0&amp;icons=0&amp;hubs=0&amp;bgt=1" tabindex="-1" aria-hidden="true" title=""></iframe><canvas class="sr-b"></canvas><div class="sr-brain" aria-hidden="true"></div>
   <div class="stick" role="img" aria-label="Deine persönliche Rezeptur: Made for Markus">
     <img src="produkte/stick.webp" alt="" width="793" height="182">
     <div class="stick-t" aria-hidden="true"><span>MADE FOR</span><b>MARKUS</b></div>
@@ -2622,6 +2710,12 @@ html.ruhig .btn[aria-busy=true]::after{animation-play-state:running!important}
       <div class="th"><span class="ico"><svg class="ic"><use href="#i-pause"/></svg></span><div><div class="kick">Bewegung</div><h3>Animationen</h3></div></div>
       <p class="note">Hält alle Animationen an, auch das Rad bei den Nährstoffen und die Datenlandkarte. Die Einstellung bleibt auf diesem Gerät gespeichert.</p>
       <div style="margin-top:auto;padding-top:14px;position:relative;z-index:1"><button class="btn ghost sm" type="button" data-ruhig aria-pressed="false"><svg class="ic sm"><use href="#i-pause"/></svg><span>Bewegung anhalten</span></button></div>
+    </article>
+    <article class="tile card t-w" id="fmCard">
+      <svg class="ill c-plum" aria-hidden="true"><use href="#fm-sun"/></svg>
+      <div class="th"><span class="ico"><svg class="ic"><use href="#fm-sun"/></svg></span><div><div class="kick">Darstellung</div><h3>Farbmodus</h3></div></div>
+      <p class="note">Hell oder dunkel – gilt für die ganze App und bleibt auf diesem Gerät gespeichert.</p>
+      <div style="margin-top:auto;padding-top:14px;position:relative;z-index:1"><button class="btn ghost sm" type="button" data-farbe aria-pressed="false"><svg class="ic sm"><use href="#fm-sun"/></svg><span>Heller Modus</span></button></div>
     </article>
     <article class="tile card t-l">
       <svg class="ill c-plum" aria-hidden="true"><use href="#i-pin"/></svg>
@@ -3833,6 +3927,7 @@ window.addEventListener('hashchange',route);route();
 })();
 </script>
 <script id="gn-js">
+/* GENE-NUGGETS:BEGIN (gn-js) – Code der Gene Nuggets; Einbau nur per tools/patch_*.py */
 (() => {
 'use strict';
 const $ = id => document.getElementById('gn-' + id);
@@ -3920,6 +4015,8 @@ const ALL = []; STATIONS.forEach((s, si) => s.lessons.forEach((l, li) => { l.si 
 // Review 05 Nr. 11: Stationszahl im Untertitel gleich nach dem Sperren anpassen, nicht erst nach dem Laden
 document.querySelectorAll('.gn .sub').forEach(e => { e.textContent = e.textContent.replace(/\b11 Stationen\b/, STATIONS.length + ' Stationen'); });
 const lessonById = id => ALL.find(l => l.id === id);
+// A5 (NOVO CODE 24.11.2026): Stationszahl in Lektionstexten beim Zeichnen einsetzen, Inhalte bleiben unverändert
+const stn = s => typeof s === 'string' ? s.replace(/\b\d+ Stationen\b/, STATIONS.length + ' Stationen') : s;
 
 // Gene-Story-Texte für die Ergebniskarte (Titel = Wortlaut im Bericht)
 const RESULTS = {
@@ -3935,8 +4032,6 @@ const RESULTS = {
 // Ausgearbeitete Lektionen
 const IMG = n => 'nuggets/img/' + n + '.webp';
 // Clips als ungelistete YouTube-Videos (Kanal Dr. Daniel Wallerstorfer); Quelle: nuggets/youtube_ids.json (MEDIA MAKER/finalize_gene_nuggets.py)
-const GN_YT = {"alkohol_1":"aMbH5GGB3zA","alkohol_2":"Tti70Y_PaRY","alkohol_3":"RClEri_ezE8","burnout_1":"BeYnWOHh_IU","burnout_2":"1sZbZjr9-O4","burnout_3":"FMVmO4RKgvM","chemie_1":"lLY5h1ffILo","chemie_2":"qtc4SjYUc64","eisen_1":"VOau_SFQ5Jg","eisen_2":"6O2Te_uIDQg","entz_1":"waiNk3TK7Cg","entz_2":"yEyk8ZfDfYA","entz_3":"uhtsWVpH_Wg","erhol_1":"mlYBEWIg7_s","erhol_2":"Z7QDtHV5wsg","erhol_3":"n-A8nvv8ReQ","ermued_1":"Fj7K75W8MdM","ermued_2":"eBO3leV75mo","faser_1":"AQdBsZAZZrU","fett_1":"wuCDwkc6Nl4","fett_2":"hpSOgeDiUeQ","fett_3":"h_X6ggAjMg8","folsaeure_1":"ihNO2L7hWMA","folsaeure_2":"uCVzPpjq7nQ","folsaeure_3":"M-9jQrePu10","folsaeure_4":"PNTEv8VZjco","gene_1":"rBmaBw35VRw","gene_2":"9T06ongp0GE","gene_3":"oWBKSTyChVw","hdl_1":"D1H7OIJXsRY","hdl_2":"FdhYMfIChkg","kaffee_1":"3RI_6g3M3PI","kaffee_2":"FRM1PSEcywo","kaffee_3":"R9R0egD3Zds","kalred_1":"3RWVaSlUta0","kalred_2":"ZU0Dopz7VEk","kalzium_1":"BII4jqizyLs","kh_1":"kXQ4kSnlrs8","kh_2":"GbvoZPSNLeA","kollagen_1":"-pmFKfOvH4o","kollagen_2":"c8WwSUqWS1Y","kollagen_3":"P6m5Ql5MOgg","kopien_1":"bl5J83uBXwg","kopien_2":"E41XFaDdunc","kopien_3":"YZqbprWLDl8","ldl_1":"P9hAEnmFGa4","ldl_2":"Iqdl-egL3bo","medi_1":"hFZgHokvC6E","medi_2":"-SDQFt6p1yc","oxi_1":"BFXrL5QPcpI","oxi_2":"HikghhpFpsk","oxi_3":"hXlz_6CUEJ4","q10_1":"ncTbP9vEVGw","q10_2":"tS40TnD8L_s","q10haut_1":"vmT-WmkoSt0","q10haut_2":"M0bdZBu1Vms","q10haut_3":"Ozal6LX_9P8","radikale_1":"PcvDY7b0n_E","radikale_2":"7h3ZPNIH6ck","radikale_3":"PKEgFjBz5D8","salz_1":"osEQSMlogpY","salz_2":"HHytewkskho","salz_3":"ER5lnyUIwO8","sport_1":"Rb6cVWovPGM","sport_2":"4-3XCgD8byo","telomere_1":"Y4AMVECQF_Y","telomere_2":"L3nnlwlrP34","telomere_3":"DnGKgcgh46o","uv_1":"8eDduv4esqY","uv_2":"1nIKzut0KAQ","uv_3":"DTikLD_3IWQ","varianten_1":"Qa2Ab8ETvfc","verbrannt_1":"EcJqUoHNnpg","verbrannt_2":"jfsNXSwoQ9k","verbrannt_3":"ZXuOKoqwf6E","verletz_1":"BSV5ssOJJRo","verletz_2":"N9z2Hscb1ak","vitd_1":"1x_F9ckJ4Q4","vitd_2":"F4ncYnt6SRw"};
-const gnYtId = file => GN_YT[String(file || '').replace(/^.*\//, '').replace(/\.mp4$/, '')];
 const CONTENT = {
   relevanz: { minutes: 4, blocks: [
     { t: 'text', h: 'Die Bedienungsanleitung deines Körpers', p: 'Welchen Treibstoff dein Auto braucht, weiß fast jeder. Welchen Treibstoff dein Körper braucht, wissen die wenigsten. Genau dazu stehen Hinweise in deinen Genen: wie du bestimmte Nährstoffe verwertest, wie du auf Fett und Kohlenhydrate reagierst und was dir guttun kann.' },
@@ -3968,7 +4063,7 @@ const CONTENT = {
   ] },
   folsaeure: { minutes: 7, blocks: [
     { t: 'text', h: 'Wirkt Folsäure bei dir überhaupt?', p: 'Folsäure ist eine der beliebtesten Nahrungsergänzungen der Welt. Frauenärzte empfehlen sie rund um die Schwangerschaft, und auch für Männer ist Folat wichtig: Folat hat eine Funktion bei der Zellteilung und trägt zu einem normalen Homocystein-Stoffwechsel bei. Ob Folsäure bei dir gut aktiviert wird, steht in deinen Genen.' },
-    { t: 'video', cartoon: true, yt: { de: 'RM3QmdZaHLQ', en: 'Kchv-yrE81g' }, dur: { de: 63, en: 63 }, tag: '3D-Animation', cap: 'Folsäure und deine Gene: Die Reise durch den Körper · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer' },
+    { t: 'video', cartoon: true, yt: { de: 'RM3QmdZaHLQ', en: 'Kchv-yrE81g' }, dur: { de: 63, en: 63 }, poster: 'nuggets/themen/yt_RM3QmdZaHLQ.webp', tag: '3D-Animation', cap: 'Folsäure und deine Gene: Die Reise durch den Körper · KI-generierte Animation · Stimme: KI-Klon von Dr. Daniel Wallerstorfer' },
     { t: 'text', h: 'Erst aktivieren, dann wirken', p: 'Folsäure selbst ist noch inaktiv. Das MTHFR-Gen bildet ein Enzym, das Folsäure erkennt und in die aktive Form umwandelt: Methylfolat. Erst Methylfolat ist die Form, die der Körper direkt nutzen kann.' },
     { t: 'quiz', q: 'Wie heißt die aktive Form der Folsäure?', o: ['Homocystein', 'Methylfolat', 'Vitamin B12', 'Folat-Ester'], c: 1, e: 'Methylfolat ist die aktive Form. Das MTHFR-Gen sorgt für die Umwandlung.' },
     { t: 'text', h: 'Zwei Kopien, unterschiedlich schnell', p: 'Du hast zwei Kopien des MTHFR-Gens: eine von deiner Mutter, eine von deinem Vater. Nicht bei jedem arbeiten beide gleich gut. Es gibt mehrere Stufen: Bei manchen wandelt das Gen Folsäure sehr gut um, bei anderen langsamer, und bei manchen so langsam, dass nur ein kleiner Teil der Folsäure aktiviert wird.' },
@@ -4025,14 +4120,17 @@ function readResult(lesson, fo) {
 
 // ---- Lektionen aus content/*.json laden (eine Datei je Stationsgruppe) ----
 const CONTENT_FILES = ['zelle_medikamente', 'fettgewebe', 'darm_blut', 'herz_gehirn', 'muskeln_haut', 'leber_zellalter'];
+// P1/P2 (NOVO CODE 24.11.2026): eine schlanke Datei aus tools/nuggets_app_export.py; fehlt sie, die 6 Redaktions-JSONs parallel
+const getJSON = u => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
+function useLessons(j) {
+  (j.lessons || []).forEach(x => { const l = lessonById(x.id); if (!l || !Array.isArray(x.blocks)) return;
+    CONTENT[x.id] = { minutes: +x.minutes || 5, blocks: x.blocks }; if (x.result) RESULTS[x.id] = x.result;
+    l.full = true; if (x.title) l.t = x.title; l.invert = !!x.invert; });
+}
 async function loadContent() {
-  for (const f of CONTENT_FILES) {
-    try { const r = await fetch('nuggets/content/' + f + '.json', { cache: 'no-store' }); if (!r.ok) continue; const j = await r.json();
-      (j.lessons || []).forEach(x => { const l = lessonById(x.id); if (!l || !Array.isArray(x.blocks)) return;
-        CONTENT[x.id] = { minutes: +x.minutes || 5, blocks: x.blocks }; if (x.result) RESULTS[x.id] = x.result;
-        l.full = true; if (x.title) l.t = x.title; l.invert = !!x.invert; });
-    } catch (e) { console.warn('Inhalt nicht geladen:', f, e); }
-  }
+  try { useLessons(await getJSON('nuggets/app/lektionen.json')); return; } catch (e) { console.warn('App-Lektionen fehlen, lade Redaktions-JSONs:', e.message); }
+  (await Promise.allSettled(CONTENT_FILES.map(f => getJSON('nuggets/content/' + f + '.json'))))
+    .forEach((r, i) => r.status === 'fulfilled' ? useLessons(r.value) : console.warn('Inhalt nicht geladen:', CONTENT_FILES[i], r.reason));
 }
 
 // ===================== KÖRPER-ANSICHT =====================
@@ -4186,14 +4284,6 @@ function deckIntro() {
   requestAnimationFrame(() => layout(CUR));
 }
 document.querySelectorAll('.sexsw button').forEach(b => b.addEventListener('click', () => { S.sex = b.dataset.sex; save(); renderBody(); }));
-function applyDevice() { return;
-  const d = S.dev === 'desk'; $('phone').classList.toggle('desk', d);
-  document.querySelectorAll('input[name=dev]').forEach(r => r.checked = r.value === (S.dev || 'phone'));
-  if (d) { $('view-body').hidden = false; $('view-cards').hidden = false; }
-  else if (!$('view-body').hidden && !$('view-cards').hidden) showView('body');
-  requestAnimationFrame(() => { drawLinks(); scrollToCard(Math.min(curStation(), STATIONS.length - 1)); });
-}
-document.querySelectorAll('input[name=dev]').forEach(r => r.addEventListener('change', () => { S.dev = r.value; save(); applyDevice(); }));
 $('tg-body').addEventListener('click', () => showView('body'));
 $('tg-cards').addEventListener('click', () => showView('cards'));
 
@@ -4222,30 +4312,16 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && LS && !$('
 
 function blockHTML(b, i) {
   if ((b.t === 'img' && !b.report) || b.t === 'info') b = { t: 'text', h: b.h, p: b.p }; // keine KI-generierten Bilder im Content
-  if (b.t === 'text') return `<div class="blk"><h3>${safe(b.h)}</h3><p>${safe(b.p)}</p></div>`;
+  if (b.t === 'text') return `<div class="blk"><h3>${safe(b.h)}</h3><p>${safe(stn(b.p))}</p></div>`;
   if (b.t === 'img' && b.report) return `<div class="blk"><div class="fig" style="aspect-ratio:auto;background:#fff;padding:10px"><img src="${esc(b.src)}" alt="${esc(b.h)}" style="height:auto;object-fit:contain"></div><h3>${safe(b.h)}</h3><p>${safe(b.p)}</p></div>`;
-  if (b.t === 'img') return `<div class="blk"><div class="fig"><img src="${esc(IMG(b.img))}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${IMG(STATIONS[lessonById(LS.id).si].img)}'"></div><h3>${safe(b.h)}</h3><p>${safe(b.p)}</p><div class="ai-note">Illustration KI-generiert</div></div>`;
   if (b.t === 'video' && b.yt) { // Video je App-Sprache (Profil): z. B. deutsches Original, englische KI-Version
     const lang = document.querySelector('[data-lang][aria-pressed="true"]')?.dataset.lang === 'en' ? 'en' : 'de';
     const id = b.yt[lang] || b.yt.de || b.yt.en, len = Math.round((b.dur && (b.dur[lang] || b.dur.de || b.dur.en)) || 0), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
     const ai = (b.aiLang || []).includes(lang), enOnly = !b.yt[lang] && !b.yt.de && lang !== 'en';
     if (!ytOk(id)) return '';
-    return `<div class="blk"><div class="video" data-yt="${id}"><button class="poster" aria-label="Video abspielen: ${esc(b.cap)}"><img src="${esc(b.poster || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`)}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
+    return `<div class="blk"><div class="video" data-yt="${id}"><button class="poster" aria-label="Video abspielen: ${esc(b.cap)}"><img src="${esc(b.poster || IMG(STATIONS[lessonById(LS.id).si].img))}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
       <div class="vcap"><span><span class="vtag">${ai ? 'KI-Sprachversion' : esc(b.tag || '')}</span>${esc(b.cap)}${enOnly ? ' · auf Englisch' : ''}${ai ? ' · <b>Stimme und Lippenbewegung KI-generiert</b>' : ''}</span></div></div>`; }
-  if (b.t === 'video' && b.files) b = { ...b, file: b.files[0] };          // mehrere Clips am Stück in einem Player
-  if (b.t === 'video' && b.file && gnYtId(b.file)) { // eigener Clip als ungelistetes YouTube-Video (ganzes Video, kein start/end)
-    const len = Math.round(b.dur || ((b.end || 0) - (b.start || 0))), mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
-    const ids = (b.files || [b.file]).map(gnYtId).filter(ytOk); if (!ids.length) return '';
-    return `<div class="blk"><div class="video" data-yt="${ids[0]}"${ids.length > 1 ? ` data-ytl="${ids.join(',')}"` : ''}><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="nuggets/${esc(b.file.replace(/\.mp4$/, '.jpg'))}" alt="" loading="lazy"><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span>${len > 0 ? `<span class="dur">${mm}:${ss}</span>` : ''}</button></div>
-      <div class="vcap"><span><span class="vtag">${esc(b.tag || '')}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
-  if (b.t === 'video' && b.file) // Fallback: lokaler, exakt geschnittener Clip
-    return `<div class="blk"><div class="video"><video controls playsinline preload="metadata" poster="nuggets/${esc(b.file.replace(/\.mp4$/, '.jpg'))}" src="nuggets/${esc(b.file)}" style="position:absolute;inset:0;width:100%;height:100%;background:#1b1018"></video></div>
-      <div class="vcap"><span><span class="vtag">${esc(b.tag || '')}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`;
-  if (b.t === 'video') { const len = b.end - b.start, mm = Math.floor(len / 60), ss = String(len % 60).padStart(2, '0');
-    return `<div class="blk"><div class="video" data-id="${ytOk(b.id) ? b.id : ''}" data-s="${+b.start || 0}" data-e="${+b.end || 0}"><button class="poster" aria-label="Clip abspielen: ${esc(b.cap)}"><img src="${b.ytposter || !b.poster ? `https://i.ytimg.com/vi/${esc(b.id)}/hqdefault.jpg` : esc(IMG(b.poster))}" data-fallback="${esc(IMG(b.poster || STATIONS[lessonById(LS.id).si].img))}" onerror="if(this.src.indexOf('ytimg')>0)this.src=this.dataset.fallback" alt=""><span class="play"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M3 2l17 10L3 22z" fill="#5E0047"/></svg></span><span class="dur">${mm}:${ss}</span></button></div>
-      <div class="vcap"><span><span class="vtag">${esc(b.tag || '')}</span>${esc(b.cap)}${b.ai ? ' · <b>Stimme KI-generiert</b>' : ''}</span></div></div>`; }
   if (b.t === 'quiz') return `<div class="blk quiz" data-c="${+b.c | 0}" data-e="${esc(b.e)}"><div class="k">Kurze Frage</div><div class="q">${esc(b.q)}</div>${b.o.map((o, k) => `<button class="opt" data-k="${k}"><span class="l">${'ABCD'[k]}</span><span>${esc(o)}</span></button>`).join('')}<div class="fb" aria-live="polite"></div></div>`;
-  if (b.t === 'info') return `<div class="blk infocard"><img src="${IMG(b.img)}" alt=""><div><h3 style="font-size:16px;margin-bottom:4px">${safe(b.h)}</h3><p style="font-size:14px">${safe(b.p)}</p></div></div>`;
   if (b.t === 'result') return resultHTML(b.key || LS.id);
   return '';
 }
@@ -4274,10 +4350,8 @@ function wireBlocks(box) {
       return;
     }
     const f = document.createElement('iframe');
-    f.src = v.dataset.yt
-      ? `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1${v.dataset.ytl ? '&playlist=' + v.dataset.ytl : ''}`
-      : `https://www.youtube-nocookie.com/embed/${v.dataset.id}?start=${v.dataset.s}&end=${v.dataset.e}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
-    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.title = 'Videoclip'; f.referrerPolicy = 'strict-origin-when-cross-origin';
+    f.src = `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1${v.dataset.ytl ? '&playlist=' + v.dataset.ytl : ''}`;
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.title = 'Videoclip'; f.referrerPolicy = 'strict-origin'; f.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox');
     p.replaceWith(f);
   }));
   box.querySelectorAll('.quiz').forEach(q => q.querySelectorAll('.opt').forEach(o => o.addEventListener('click', () => {
@@ -4353,7 +4427,7 @@ $('reset').addEventListener('click', () => { const keep = { res: S.res, sel: S.s
 $('demo3').addEventListener('click', () => { S.done = {}; STATIONS.slice(0, 3).forEach(s => s.lessons.forEach(l => S.done[l.id] = true)); S.nuggets = 130; save(); renderAll(); });
 function refreshResult() { const r = $('res'); if (!r || !LS) return; const wasOn = r.classList.contains('on'); r.outerHTML = resultHTML(LS.id); wireBlocks($('lscroll')); if (wasOn) { const n = $('res'); n.classList.add('on', 'flat'); setTimeout(() => { const i = n.querySelector('.scale i'); if (i) i.style.left = n.dataset.pos + '%'; }, 50); } }
 
-let renderAll = function () { $('nugn').textContent = S.nuggets; $('lvchip').textContent = levelOf(S.nuggets); renderBody(); renderCards(); renderDemo(); applyDevice(); }
+function renderAll() { $('nugn').textContent = S.nuggets; $('lvchip').textContent = levelOf(S.nuggets); renderBody(); renderCards(); renderDemo(); updHero(); }
 // ---- Einbau in die NovoGenius-App: Dialog-Hintergrund, Weiterlernen, Zähler, Demo, Neuzeichnen beim Reiterwechsel ----
 new MutationObserver(() => { const on = $('lesson').classList.contains('open'); $('scrim').classList.toggle('on', on); document.body.style.overflow = on ? 'hidden' : ''; }).observe($('lesson'), { attributes: true, attributeFilter: ['class'] });
 $('scrim').addEventListener('click', () => { if (!$('cele').classList.contains('on')) closeLesson(); });
@@ -4366,7 +4440,6 @@ function updHero() {
 }
 $('contbtn').addEventListener('click', () => { const n = nextLesson(); if (n) openLesson(n.id); });
 $('demofab').addEventListener('click', () => { const d = $('demo'); d.hidden = !d.hidden; $('demofab').setAttribute('aria-expanded', !d.hidden); });
-const _renderAll = renderAll; renderAll = function () { _renderAll(); updHero(); };
 const gnShow = () => { if (location.hash === '#nuggets') setTimeout(() => { sizeDeck(); layout(CUR); drawLinks(); deckIntro(); }, 80); else if ($('lesson').classList.contains('open')) closeLesson(); };
 window.addEventListener('hashchange', gnShow); window.addEventListener('resize', gnShow);
 
@@ -4380,15 +4453,18 @@ function hideUnfinished() {
     if (!STATIONS[si].lessons.length || GESPERRT.includes(STATIONS[si].k)) STATIONS.splice(si, 1);
   }
   ALL.length = 0; STATIONS.forEach((s, si) => s.lessons.forEach((l, li) => { l.si = si; l.li = li; ALL.push(l); }));
-  const n = STATIONS.length + ' Stationen', fix = s => typeof s === 'string' ? s.replace(/\b\d+ Stationen\b/, n) : s;
-  Object.values(CONTENT).forEach(c => c.blocks.forEach(b => { b.p = fix(b.p); }));
-  document.querySelectorAll('.gn .sub').forEach(e => { if (e.textContent.includes('11 Stationen')) e.textContent = fix(e.textContent); });
+  const n = STATIONS.length + ' Stationen';
   document.querySelectorAll('.gn .sub').forEach(e => { e.textContent = e.textContent.replace(/\b\d+ Stationen\b/, n); }); // Review 05 Nr. 11
   const ki = keep ? STATIONS.findIndex(st => st.k === keep) : -1; // Review 05 Nr. 12: gewählte Station behalten
   CUR = ki >= 0 ? ki : null; // NOVO CODE A1: sonst neu wählen (Index der ungefilterten Liste wäre falsch)
 }
-loadContent().then(() => { LOADED = true; hideUnfinished(); renderAll(); gnShow(); });
+// P1 (NOVO CODE 24.11.2026): Lektionen erst laden, wenn #nuggets zum ersten Mal offen ist
+let gnStarted = false;
+const gnStart = () => { if (gnStarted || !location.hash.startsWith('#nuggets')) return; gnStarted = true;
+  loadContent().then(() => { LOADED = true; hideUnfinished(); renderAll(); gnShow(); }); };
+window.addEventListener('hashchange', gnStart); gnStart();
 })();
+/* GENE-NUGGETS:END (gn-js) */
 </script>
 <!-- MEDIKAMENTE:BEGIN – Pharmakogenetik eingebettet (22.10.2026). Nur Navigation und Darstellung,
      keine Bewertungslogik: Ampeln, Stufen und Texte kommen unverändert aus medikamente/index.html. -->
@@ -5325,49 +5401,14 @@ addEventListener('hashchange',onRoute);onRoute();
 if(location.hash!=='#beratung')setTimeout(()=>{if(!loaded)load()},1500);
 })();
 /* BERATUNG:END */</script>
-<style id="de-css">/* DATEN-EINTRAGEN:BEGIN – Portal „Deine Gesundheitsdaten“ (GENE NUGGETS, 16.11.2026) */
-.de-ov{position:fixed;inset:0;z-index:200;background:rgba(20,0,16,.6);display:none;align-items:stretch;justify-content:center;padding:58px 18px 18px}
-.de-ov.on{display:flex}
-.de-box{position:relative;width:min(1400px,100%);border-radius:22px;overflow:hidden;background:#2E0D29;box-shadow:0 30px 80px rgba(0,0,0,.45)}
-.de-box iframe{width:100%;height:100%;border:0;display:block}
-.de-x{position:fixed;top:10px;right:22px;z-index:2;width:40px;height:40px;border-radius:12px;border:0;background:#fff;color:#5E0047;font-size:20px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
-@media (max-width:700px){.de-ov{padding:54px 0 0}.de-box{border-radius:14px 14px 0 0}.de-x{right:12px}}
-/* DATEN-EINTRAGEN:END */</style>
-<script id="de-js">/* DATEN-EINTRAGEN:BEGIN */
-(function(){
- const ov=document.createElement('div');ov.className='de-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Daten hochladen');
- ov.innerHTML='<div class="de-box"><button class="de-x" type="button" aria-label="Schließen">✕</button><iframe title="Daten hochladen" src="about:blank"></iframe></div>';
- document.body.appendChild(ov);
- const fr=ov.querySelector('iframe');
- window.deOpen=function(){if(fr.src.indexOf('gesundheitsdaten-portal')<0)fr.src='datenpunkte/gesundheitsdaten-portal.html?v=20261117';ov.classList.add('on');document.documentElement.style.overflow='hidden'};
- const close=()=>{ov.classList.remove('on');document.documentElement.style.overflow=''};
- ov.querySelector('.de-x').onclick=close;
- ov.addEventListener('click',e=>{if(e.target===ov)close()});
- addEventListener('keydown',e=>{if(e.key==='Escape'&&ov.classList.contains('on'))close()});
- addEventListener('hashchange',()=>{if(ov.classList.contains('on'))close()}); /* „Zum Chat“ im Portal setzt #coach */
-})();
+<script id="de-js">/* DATEN-EINTRAGEN:BEGIN – altes Popup entfernt (NOVO CODE A4, 24.11.2026); deOpen kommt aus dd-js.
+   P4: Rad-Karte erst beim ersten Öffnen von #naehrstoffe laden (CODE-2026-11-24) */
+(function(){const ld=()=>{if(location.hash!=='#naehrstoffe')return;const f=document.querySelector('.sr-map[data-src]');if(f&&!f.getAttribute('src'))f.setAttribute('src',f.dataset.src)};addEventListener('hashchange',ld);ld()})();
 /* DATEN-EINTRAGEN:END */</script>
 <!-- POPUP-VAR:BEGIN -->
 <style id="pv-css">
 html{scrollbar-width:thin;scrollbar-color:#55204D #1B0016}
-.de-ov{background:rgba(8,0,6,.84);backdrop-filter:blur(10px) saturate(.7);-webkit-backdrop-filter:blur(10px) saturate(.7)}
-.de-ov .de-box{box-shadow:0 0 0 2px rgba(255,255,255,.92),0 0 40px rgba(255,255,255,.16),0 30px 90px rgba(0,0,0,.7);transform-origin:var(--ox,90%) var(--oy,10%)}
-.de-ov.on .de-box{animation:pvZoom .5s cubic-bezier(.2,.85,.25,1)}
-/* ✕ im Fenster rechts oben, im grünen Banner (Daniel 17.11.2026) */
-.de-ov .de-x{position:absolute;top:10px;right:14px;background:#26001D;color:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.9)}
-@media (max-width:700px){.de-ov .de-x{top:8px;right:10px}}
-@keyframes pvZoom{from{transform:scale(.06);opacity:0;border-radius:60px}60%{opacity:1}}
-@media (prefers-reduced-motion:reduce){.de-ov.on .de-box{animation:none}}
 </style>
-<script id="pv-js">
-(function(){
- const ov=document.querySelector('.de-ov');if(!ov)return;
- let last=null;document.addEventListener('click',e=>{const b=e.target.closest('[data-refine="daten"]');if(b)last=b.getBoundingClientRect()},true);
- const open=window.deOpen;
- window.deOpen=function(){if(last){ov.style.setProperty('--ox',((last.left+last.width/2)/innerWidth*100).toFixed(1)+'%');ov.style.setProperty('--oy',((last.top+last.height/2)/innerHeight*100).toFixed(1)+'%')}
-  return open.apply(this,arguments)};
-})();
-</script>
 <!-- POPUP-VAR:END -->
 <script id="dw-js">/* DOSIS-WARUM:BEGIN – Beispieldaten aus GENE NUGGETS\sachet-rad\dosis_daten.py */
 const DOSE={"vita": {"stoff": "VIT_A", "name": "Vitamin A", "einheit": "µg", "grundmenge": 253, "hoechstmenge": 2500, "dosis": 1386.0, "entscheidend": "bco1_a", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Gen (Phänotyp)", "datenpunkt": "bco1_a", "name": "Beta-Carotin-zu-Vitamin-A-Gen (Variante 1)", "wert": "Stärke 50 %", "txt": "dein Körper wegen deiner Gen-Variante im Beta-Carotin-Gen (BCO1) Beta-Carotin schlechter in Vitamin A umwandelt", "risiko": 50, "menge_allein": 1386.0, "rolle": "entscheidend"}, {"quelle": "Laborwert", "datenpunkt": "vita", "name": "Vitamin A", "wert": "im Normalbereich", "txt": "", "risiko": 0, "menge_allein": 253, "rolle": "ohne Wirkung"}], "hinweis": "Nicht in der Schwangerschaft ohne ärztliche Rücksprache."}, "vitc": {"stoff": "VIT_C", "name": "Vitamin C", "einheit": "mg", "grundmenge": 23.3, "hoechstmenge": 240, "dosis": 156.0, "entscheidend": "vitc", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "vitc", "name": "Vitamin C", "wert": "im unteren Graubereich", "txt": "dein Laborwert Vitamin C im unteren Graubereich liegt", "risiko": 61, "menge_allein": 156.0, "rolle": "entscheidend"}]}, "vite": {"stoff": "VIT_E", "name": "Vitamin E", "einheit": "mg", "grundmenge": 3.8, "hoechstmenge": 36, "dosis": 23.0, "entscheidend": "vite", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "vite", "name": "Alpha-Tocopherol", "wert": "im unteren Graubereich", "txt": "dein Laborwert Alpha-Tocopherol im unteren Graubereich liegt", "risiko": 60, "menge_allein": 23.0, "rolle": "entscheidend"}]}, "b2": {"stoff": "VIT_B2", "name": "Vitamin B2", "einheit": "mg", "grundmenge": 0.3, "hoechstmenge": 4.3, "dosis": 2.3, "entscheidend": "mthfr677", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Gen (Phänotyp)", "datenpunkt": "mthfr677", "name": "Folat-Gen (MTHFR)", "wert": "Stärke 50 %", "txt": "du im Folat-Gen (MTHFR) eine Gen-Variante trägst", "risiko": 50, "menge_allein": 2.3, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "meat", "name": "Fleisch pro Woche", "wert": "Fleisch: 1–2× pro Woche", "txt": "du wenig Fleisch isst", "risiko": 40, "menge_allein": 1.9, "rolle": "schwächer – enthalten"}, {"quelle": "Laborwert", "datenpunkt": "vitb2", "name": "Riboflavin", "wert": "im Normalbereich", "txt": "", "risiko": 0, "menge_allein": 0.3, "rolle": "ohne Wirkung"}]}, "b6": {"stoff": "VIT_B6", "name": "Vitamin B6", "einheit": "mg", "grundmenge": 0.4, "hoechstmenge": 4.3, "dosis": 2.4, "entscheidend": "vitb6", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "vitb6", "name": "Vitamin B6", "wert": "im unteren Graubereich", "txt": "dein Laborwert Vitamin B6 im unteren Graubereich liegt", "risiko": 51, "menge_allein": 2.4, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "meat", "name": "Fleisch pro Woche", "wert": "Fleisch: 1–2× pro Woche", "txt": "du wenig Fleisch isst", "risiko": 40, "menge_allein": 1.96, "rolle": "schwächer – enthalten"}]}, "vitd": {"stoff": "VIT_D3", "name": "Vitamin D", "einheit": "µg", "grundmenge": 10, "hoechstmenge": 100, "dosis": 100.0, "entscheidend": "vitd", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "vitd", "name": "Vitamin D", "wert": "unter dem Zielbereich der Rezeptur", "txt": "dein Laborwert Vitamin D unter dem Bereich liegt, den wir für deine Rezeptur als Ziel verwenden", "risiko": 100, "menge_allein": 100.0, "rolle": "entscheidend"}, {"quelle": "Gen (Phänotyp)", "datenpunkt": "vdr_fok", "name": "Vitamin-D-Rezeptor-Gen (FokI)", "wert": "Stärke 70 %", "txt": "", "risiko": 70, "menge_allein": 73.0, "rolle": "schwächer – enthalten"}, {"quelle": "Fragebogen", "datenpunkt": "meat", "name": "Fleisch pro Woche", "wert": "Fleisch: 1–2× pro Woche", "txt": "du wenig Fleisch isst", "risiko": 40, "menge_allein": 46.0, "rolle": "schwächer – enthalten"}, {"quelle": "Fragebogen", "datenpunkt": "fish", "name": "Fisch pro Woche", "wert": "Fisch: nie", "txt": "du nie Fisch isst", "risiko": 40, "menge_allein": 46.0, "rolle": "schwächer – enthalten"}, {"quelle": "Fragebogen", "datenpunkt": "milk", "name": "Milchprodukte pro Woche", "wert": "Milchprodukte: 1–2× pro Woche", "txt": "du selten Milchprodukte isst", "risiko": 40, "menge_allein": 46.0, "rolle": "schwächer – enthalten"}, {"quelle": "Fragebogen", "datenpunkt": "sun", "name": "Sonne (min/Tag)", "wert": "Sonne: weniger als 10 Minuten am Tag", "txt": "du kaum in die Sonne kommst", "risiko": 40, "menge_allein": 46.0, "rolle": "schwächer – enthalten"}]}, "b12": {"stoff": "VIT_B12", "name": "Vitamin B12", "einheit": "µg", "grundmenge": 80, "hoechstmenge": 800, "dosis": 400.0, "entscheidend": "holotc", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "holotc", "name": "Aktives Vitamin B12", "wert": "im unteren Graubereich", "txt": "dein Laborwert Aktives Vitamin B12 im unteren Graubereich liegt", "risiko": 44, "menge_allein": 400.0, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "meat", "name": "Fleisch pro Woche", "wert": "Fleisch: 1–2× pro Woche", "txt": "du wenig Fleisch isst", "risiko": 40, "menge_allein": 368, "rolle": "schwächer – enthalten"}, {"quelle": "Gen (Phänotyp)", "datenpunkt": "fut2", "name": "B12-Aufnahme-Gen (FUT2)", "wert": "Stärke 31 %", "txt": "", "risiko": 31, "menge_allein": 303, "rolle": "schwächer – enthalten"}]}, "fols": {"stoff": "FOLICACID", "name": "Folsäure", "einheit": "µg", "grundmenge": 62.2, "hoechstmenge": 600, "dosis": 223.11, "entscheidend": "mthfr677", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Gen (Phänotyp)", "datenpunkt": "mthfr677", "name": "Folat-Gen (MTHFR)", "wert": "Stärke 30 %", "txt": "du im Folat-Gen (MTHFR) eine Gen-Variante trägst", "risiko": 30, "menge_allein": 223.11, "rolle": "entscheidend"}, {"quelle": "Laborwert", "datenpunkt": "hcy", "name": "Homocystein", "wert": "im Normalbereich", "txt": "", "risiko": 0, "menge_allein": 62.2, "rolle": "ohne Wirkung"}]}, "zink": {"stoff": "ZINC", "name": "Zink", "einheit": "mg", "grundmenge": 2.5, "hoechstmenge": 25, "dosis": 16.0, "entscheidend": "zink", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "zink", "name": "Zink", "wert": "im unteren Graubereich", "txt": "dein Laborwert Zink im unteren Graubereich liegt", "risiko": 60, "menge_allein": 16.0, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "meat", "name": "Fleisch pro Woche", "wert": "Fleisch: 1–2× pro Woche", "txt": "du wenig Fleisch isst", "risiko": 40, "menge_allein": 11.5, "rolle": "schwächer – enthalten"}]}, "calc": {"stoff": "CALCIUM", "name": "Calcium", "einheit": "mg", "grundmenge": 266, "hoechstmenge": 1200, "dosis": 1200.0, "entscheidend": "calcium", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "calcium", "name": "Calcium", "wert": "unter dem Zielbereich der Rezeptur", "txt": "dein Laborwert Calcium unter dem Bereich liegt, den wir für deine Rezeptur als Ziel verwenden", "risiko": 100, "menge_allein": 1200.0, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "meat", "name": "Fleisch pro Woche", "wert": "Fleisch: 1–2× pro Woche", "txt": "du wenig Fleisch isst", "risiko": 40, "menge_allein": 639, "rolle": "schwächer – enthalten"}, {"quelle": "Fragebogen", "datenpunkt": "milk", "name": "Milchprodukte pro Woche", "wert": "Milchprodukte: 1–2× pro Woche", "txt": "du selten Milchprodukte isst", "risiko": 40, "menge_allein": 639, "rolle": "schwächer – enthalten"}]}, "selen": {"stoff": "SELENIUM", "name": "Selen", "einheit": "µg", "grundmenge": 16.9, "hoechstmenge": 165, "dosis": 106.0, "entscheidend": "gpx1", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Gen (Phänotyp)", "datenpunkt": "gpx1", "name": "Selen-Schutzenzym-Gen (GPX1)", "wert": "Stärke 60 %", "txt": "du im Selen-Schutzenzym-Gen (GPX1) eine Gen-Variante trägst", "risiko": 60, "menge_allein": 106.0, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "grain", "name": "Vollkorn/Getreide pro Woche", "wert": "Vollkorn: selten", "txt": "du selten Vollkorn isst", "risiko": 40, "menge_allein": 76.1, "rolle": "schwächer – enthalten"}, {"quelle": "Laborwert", "datenpunkt": "selen", "name": "Selen", "wert": "im Normalbereich", "txt": "", "risiko": 0, "menge_allein": 16.9, "rolle": "ohne Wirkung"}]}, "mg": {"stoff": "MAGNESIUM", "name": "Magnesium", "einheit": "mg", "grundmenge": 113, "hoechstmenge": 250, "dosis": 199.0, "entscheidend": "magnesium", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "magnesium", "name": "Magnesium", "wert": "im unteren Graubereich", "txt": "dein Laborwert Magnesium im unteren Graubereich liegt", "risiko": 63, "menge_allein": 199.0, "rolle": "entscheidend"}]}, "mn": {"stoff": "MANGANESE", "name": "Mangan", "einheit": "mg", "grundmenge": 0.5, "hoechstmenge": 6.0, "dosis": 3.9, "entscheidend": "mangan", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "mangan", "name": "Mangan", "wert": "im unteren Graubereich", "txt": "dein Laborwert Mangan im unteren Graubereich liegt", "risiko": 62, "menge_allein": 3.9, "rolle": "entscheidend"}]}, "fe": {"stoff": "IRON", "name": "Eisen", "einheit": "mg", "grundmenge": 4.9, "hoechstmenge": 40, "dosis": 20.0, "entscheidend": "ferritin", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "ferritin", "name": "Ferritin", "wert": "im unteren Graubereich", "txt": "dein Laborwert Ferritin im unteren Graubereich liegt", "risiko": 43, "menge_allein": 20.0, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "meat", "name": "Fleisch pro Woche", "wert": "Fleisch: 1–2× pro Woche", "txt": "du wenig Fleisch isst", "risiko": 40, "menge_allein": 18.9, "rolle": "schwächer – enthalten"}]}, "cu": {"stoff": "COPPER", "name": "Kupfer", "einheit": "mg", "grundmenge": 0.27, "hoechstmenge": 2.0, "dosis": 0.63, "entscheidend": "kupfer", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "kupfer", "name": "Kupfer", "wert": "im unteren Graubereich", "txt": "dein Laborwert Kupfer im unteren Graubereich liegt", "risiko": 21, "menge_allein": 0.63, "rolle": "entscheidend"}]}, "q10": {"stoff": "Q10", "name": "Coenzym Q10", "einheit": "mg", "grundmenge": 16.3, "hoechstmenge": 130.5, "dosis": 108.0, "entscheidend": "nqo1", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Gen (Phänotyp)", "datenpunkt": "nqo1", "name": "Q10-Aktivierungs-Gen (NQO1)", "wert": "Stärke 80 %", "txt": "du im Q10-Aktivierungs-Gen (NQO1) eine Gen-Variante trägst", "risiko": 80, "menge_allein": 108.0, "rolle": "entscheidend"}, {"quelle": "Laborwert", "datenpunkt": "q10", "name": "Coenzym Q10", "wert": "im Normalbereich", "txt": "", "risiko": 0, "menge_allein": 16.3, "rolle": "ohne Wirkung"}]}, "phy": {"stoff": "PHYTOSTEROLS", "name": "Phytosterine", "einheit": "mg", "grundmenge": 83.1, "hoechstmenge": 630, "dosis": 252.0, "entscheidend": "apoe", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Gen (Phänotyp)", "datenpunkt": "apoe", "name": "Fettstoffwechsel-Gen", "wert": "Stärke 31 %", "txt": "du im Fettstoffwechsel-Gen eine Gen-Variante trägst", "risiko": 31, "menge_allein": 252.0, "rolle": "entscheidend"}]}, "lut": {"stoff": "LUTEIN", "name": "Lutein", "einheit": "mg", "grundmenge": 1.8, "hoechstmenge": 6.8, "dosis": 2.1, "entscheidend": "lutein", "formel": "NEM-CLC-NEED v16 (Beispiel)", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "lutein", "name": "Lutein", "wert": "im unteren Graubereich", "txt": "dein Laborwert Lutein im unteren Graubereich liegt", "risiko": 6, "menge_allein": 2.1, "rolle": "entscheidend"}]}, "ala": {"stoff": "ALA", "name": "Alpha-Liponsäure", "einheit": "mg", "grundmenge": 33.8, "hoechstmenge": 195, "dosis": 132, "entscheidend": "gsh", "formel": "Dummy-Beispiel", "abzuege": [], "gruende": [{"quelle": "Laborwert", "datenpunkt": "gsh", "name": "Glutathion", "wert": "im unteren Graubereich", "txt": "dein Laborwert Glutathion im unteren Graubereich liegt", "risiko": 61, "menge_allein": 132, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "sport", "name": "Sport (h/Woche)", "wert": "Sport: 1–3 Stunden", "risiko": 0, "menge_allein": 33.8, "rolle": "ohne Wirkung"}]}, "msm": {"stoff": "MSM", "name": "MSM", "einheit": "mg", "grundmenge": 96.4, "hoechstmenge": 630, "dosis": 630, "entscheidend": "gewicht", "formel": "Dummy-Beispiel", "abzuege": [], "gruende": [{"quelle": "Körperdaten", "datenpunkt": "gewicht", "name": "Körpergewicht", "wert": "über dem Referenzgewicht", "txt": "dein Körpergewicht über dem Referenzgewicht liegt", "risiko": 100, "menge_allein": 630, "rolle": "entscheidend"}, {"quelle": "Fragebogen", "datenpunkt": "move", "name": "Bewegung im Beruf", "wert": "Beruf: viel auf den Beinen", "risiko": 40, "menge_allein": 310, "rolle": "schwächer – enthalten"}]}, "omega": {"stoff": "OMEGA", "name": "Omega-3 (EPA/DHA)", "einheit": "mg", "grundmenge": 250, "hoechstmenge": 2000, "dosis": 950, "entscheidend": "fish", "formel": "Dummy-Beispiel", "abzuege": [], "gruende": [{"quelle": "Fragebogen", "datenpunkt": "fish", "name": "Fisch pro Woche", "wert": "Fisch: nie", "txt": "du nie Fisch isst", "risiko": 40, "menge_allein": 950, "rolle": "entscheidend"}, {"quelle": "Gen (Phänotyp)", "datenpunkt": "fads1", "name": "Omega-3-Umbau-Gen (FADS1)", "wert": "Stärke 30 %", "risiko": 30, "menge_allein": 775, "rolle": "schwächer – enthalten"}, {"quelle": "Laborwert", "datenpunkt": "omega3_index", "name": "Omega-3-Index", "wert": "nicht gemessen", "risiko": 0, "menge_allein": 250, "rolle": "ohne Wirkung"}]}, "folat": {"stoff": "FOLAT", "name": "Folat", "einheit": "µg", "grundmenge": 0.333, "hoechstmenge": 600, "dosis": 0.333, "entscheidend": "fruits_vegetables", "formel": "Dummy-Beispiel", "abzuege": [], "gruende": [{"quelle": "Fragebogen", "datenpunkt": "fruits_vegetables", "name": "Obst & Gemüse pro Woche", "wert": "Obst & Gemüse: täglich", "txt": "du genug Obst und Gemüse isst und Folsäure und 5-MTHF deinen Bedarf schon abdecken", "risiko": 0, "rolle": "entscheidend", "menge_allein": 0.333}, {"quelle": "Laborwert", "datenpunkt": "hcy", "name": "Homocystein", "wert": "im Normalbereich", "risiko": 0, "menge_allein": 0.333, "rolle": "ohne Wirkung"}]}, "mthf": {"stoff": "MTHF", "name": "5-MTHF", "einheit": "µg", "grundmenge": 62.2, "hoechstmenge": 600, "dosis": 109.89, "entscheidend": "mthfr677", "formel": "Dummy-Beispiel", "abzuege": [], "gruende": [{"quelle": "Gen (Phänotyp)", "datenpunkt": "mthfr677", "name": "Folat-Gen (MTHFR)", "wert": "Stärke 9 %", "txt": "dein Folat-Gen (MTHFR) Folsäure etwas schlechter umwandelt", "risiko": 9, "menge_allein": 109.89, "rolle": "entscheidend"}, {"quelle": "Laborwert", "datenpunkt": "hcy", "name": "Homocystein", "wert": "im Normalbereich", "risiko": 0, "menge_allein": 62.2, "rolle": "ohne Wirkung"}]}};
@@ -5433,12 +5474,12 @@ window.deOpen=function(r){if(location.hash!=='#gedaechtnis')location.hash='#geda
  const sub=document.createElement('nav');sub.className='dd-sub';sub.setAttribute('aria-label','Deine Daten – Bereiche');document.body.appendChild(sub);
  const rail=document.querySelector('.rail');function pos(){if(rail)document.documentElement.style.setProperty('--rw',Math.round(rail.getBoundingClientRect().right)+'px')}addEventListener('resize',pos);pos();
  const esc=t=>t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- function build(){if(!fr.getAttribute('src'))return;let d;try{d=fr.contentDocument}catch(e){return}const it=d?[...d.querySelectorAll('#side .ni,#side .nh')]:[];if(!it.length){setTimeout(build,400);return}
+ function build(){if(!fr.getAttribute('src'))return;let d;try{d=fr.contentDocument}catch(e){return}const it=d?[...d.querySelectorAll('#side .ni,#side .nh')]:[];if(!it.length){if((build.n=(build.n||0)+1)<20)setTimeout(build,400);return}
   sub.innerHTML='<div class="dd-tt">Deine Daten</div>'+it.map(n=>{if(n.classList.contains('nh'))return '<div class="dd-sh">'+esc(n.textContent)+'</div>'+(n.textContent.trim()==='Schnellstart'?'<button type="button" class="dd-si" data-dnaup><span class="dd-ic" style="background:#8C1D6E"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2c0 4.5 8 5.5 8 10s-8 5.5-8 10M12 2c0 4.5-8 5.5-8 10s8 5.5 8 10M5.2 4.5h5.6M4.6 12h6.8M5.2 19.5h5.6M19 21V6M15.5 9.5 19 6l3.5 3.5"/></svg></span><span>Gendaten hochladen</span></button>':'');
    const ic=n.querySelector('.bi,.ic'),lab=[...n.childNodes].filter(x=>x.nodeType===3).map(x=>x.textContent).join('').trim();
    return '<button type="button" class="dd-si" data-ddgo="'+esc(n.dataset.go||'home')+'"><span class="dd-ic"'+(ic&&ic.style.background?' style="background:'+ic.style.background+'"':'')+'>'+(ic?ic.innerHTML:'')+'</span><span>'+esc(lab)+'</span></button>'}).join('');mark()}
  function mark(){let h='home';try{h=fr.contentWindow.location.hash.slice(1)||'home'}catch(e){}sub.querySelectorAll('.dd-si').forEach(b=>b.classList.toggle('on',b.dataset.ddgo===h))}
- fr.addEventListener('load',()=>{build();try{fr.contentWindow.addEventListener('hashchange',mark)}catch(e){}});build();
+ fr.addEventListener('load',()=>{build.n=0;build();try{fr.contentWindow.addEventListener('hashchange',mark)}catch(e){}});build();
  sub.addEventListener('click',e=>{if(e.target.closest('[data-dnaup]')){window.dnaOpen&&dnaOpen('up');return}const b=e.target.closest('[data-ddgo]');if(!b)return;if(location.hash!=='#gedaechtnis')location.hash='#gedaechtnis';try{fr.contentWindow.location.hash=b.dataset.ddgo}catch(_){}});
  function vis(){pos();sub.classList.toggle('open',location.hash==='#gedaechtnis')}addEventListener('hashchange',vis);vis();
 })();
@@ -5500,6 +5541,23 @@ window.deOpen=function(r){if(location.hash!=='#gedaechtnis')location.hash='#geda
   if(b.dataset.nxv)setV(b.dataset.nxv);else run()});
 })();
 /* NU-EXTRA:END */</script>
+<script id="vis-js">/* VISUELL:BEGIN (patch_shop.py, 21.11.2026) */
+/* 7: Skelett weg, sobald die erste Ansicht steht; Portal-iframe erst beim ersten Öffnen von „Deine Daten“ laden */
+requestAnimationFrame(()=>document.documentElement.classList.remove('boot'));
+(function(){const ld=()=>{if(location.hash!=='#gedaechtnis')return;const fr=document.querySelector('.dd-portal[data-src]');if(fr&&!fr.getAttribute('src'))fr.setAttribute('src',fr.dataset.src)};addEventListener('hashchange',ld);ld();
+ /* Review 05/1: erster Aufruf mit Route (z. B. Coach-Chip „Blutwerte“) – Route gleich in die Adresse, damit sie auch bei langsamem Netz greift */
+ const o=window.deOpen;if(typeof o==='function')window.deOpen=function(r){const fr=document.querySelector('.dd-portal[data-src]');if(r&&fr&&!fr.getAttribute('src'))fr.setAttribute('src',fr.dataset.src+'#'+r);return o.apply(this,arguments)}})();
+/* 8: Bewegung anhalten – html.ruhig, gespeichert auf diesem Gerät; Datenlandkarten hören über storage bzw. postMessage mit */
+(function(){const H=document.documentElement,K='gn-ruhig';
+ function apply(on,save){H.classList.toggle('ruhig',on);if(save){try{on?localStorage.setItem(K,'1'):localStorage.removeItem(K)}catch(e){}}
+  document.querySelectorAll('[data-ruhig]').forEach(b=>{b.setAttribute('aria-pressed',on);const t=b.querySelector('span');if(t)t.textContent=on?'Bewegung fortsetzen':'Bewegung anhalten'});
+  document.querySelectorAll('iframe').forEach(f=>{try{f.contentWindow.postMessage({ruhig:on},location.origin)}catch(e){}});
+  dispatchEvent(new Event('gn-ruhig'))}
+ apply(H.classList.contains('ruhig'),false);
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-ruhig]');if(!b)return;const on=!H.classList.contains('ruhig');apply(on,true);
+  const tt=document.getElementById('toast');if(tt){tt.querySelector('span').textContent=on?'Bewegung angehalten.':'Bewegung läuft wieder.';tt.classList.add('on');clearTimeout(tt._vt);tt._vt=setTimeout(()=>tt.classList.remove('on'),2800)}});
+})();
+/* VISUELL:END */</script>
 <script id="sr-js">/* SACHET-RAD:BEGIN */
 (function(){
 const card=document.querySelector('.sr-card');if(!card)return;
@@ -5585,22 +5643,5 @@ const io=new IntersectionObserver(es=>{const v=es.some(e=>e.isIntersecting);if(v
 if(RM)requestAnimationFrame(t=>{draw(0);brain(0)});
 })();
 /* SACHET-RAD:END */</script>
-<script id="vis-js">/* VISUELL:BEGIN (patch_shop.py, 21.11.2026) */
-/* 7: Skelett weg, sobald die erste Ansicht steht; Portal-iframe erst beim ersten Öffnen von „Deine Daten“ laden */
-requestAnimationFrame(()=>document.documentElement.classList.remove('boot'));
-(function(){const ld=()=>{if(location.hash!=='#gedaechtnis')return;const fr=document.querySelector('.dd-portal[data-src]');if(fr&&!fr.getAttribute('src'))fr.setAttribute('src',fr.dataset.src)};addEventListener('hashchange',ld);ld();
- /* Review 05/1: erster Aufruf mit Route (z. B. Coach-Chip „Blutwerte“) – Route gleich in die Adresse, damit sie auch bei langsamem Netz greift */
- const o=window.deOpen;if(typeof o==='function')window.deOpen=function(r){const fr=document.querySelector('.dd-portal[data-src]');if(r&&fr&&!fr.getAttribute('src'))fr.setAttribute('src',fr.dataset.src+'#'+r);return o.apply(this,arguments)}})();
-/* 8: Bewegung anhalten – html.ruhig, gespeichert auf diesem Gerät; Datenlandkarten hören über storage bzw. postMessage mit */
-(function(){const H=document.documentElement,K='gn-ruhig';
- function apply(on,save){H.classList.toggle('ruhig',on);if(save){try{on?localStorage.setItem(K,'1'):localStorage.removeItem(K)}catch(e){}}
-  document.querySelectorAll('[data-ruhig]').forEach(b=>{b.setAttribute('aria-pressed',on);const t=b.querySelector('span');if(t)t.textContent=on?'Bewegung fortsetzen':'Bewegung anhalten'});
-  document.querySelectorAll('iframe').forEach(f=>{try{f.contentWindow.postMessage({ruhig:on},location.origin)}catch(e){}});
-  dispatchEvent(new Event('gn-ruhig'))}
- apply(H.classList.contains('ruhig'),false);
- document.addEventListener('click',e=>{const b=e.target.closest('[data-ruhig]');if(!b)return;const on=!H.classList.contains('ruhig');apply(on,true);
-  const tt=document.getElementById('toast');if(tt){tt.querySelector('span').textContent=on?'Bewegung angehalten.':'Bewegung läuft wieder.';tt.classList.add('on');clearTimeout(tt._vt);tt._vt=setTimeout(()=>tt.classList.remove('on'),2800)}});
-})();
-/* VISUELL:END */</script>
 </body>
 </html>

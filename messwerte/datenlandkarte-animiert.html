@@ -352,6 +352,10 @@ const RM=matchMedia('(prefers-reduced-motion: reduce)');
 let RUHIG=false;try{RUHIG=localStorage.getItem('gn-ruhig')==='1'}catch(e){}
 addEventListener('storage',e=>{if(e.key==='gn-ruhig')RUHIG=e.newValue==='1'});
 addEventListener('message',e=>{if(e.origin===location.origin&&e.data&&typeof e.data.ruhig==='boolean')RUHIG=e.data.ruhig});
+/* FARBMODUS (26.11.2026): heller Modus der App – im Hintergrund-Modus Farbwelt „Hell“, ohne zu speichern */
+const TH0=S.theme;const fm=v=>{if(!BG&&!QP.has('theme'))return;const t=v==='hell'?'hell':(QP.get('theme')&&QP.get('theme')!=='hell'?QP.get('theme'):TH0==='hell'?'nacht':TH0);if(S.theme!==t&&TH[t]){S.theme=t;theme()}};
+try{if(localStorage.getItem('gn-farbe')==='hell'&&BG)S.theme='hell'}catch(e){}
+addEventListener('message',e=>{if(e.origin===location.origin&&e.data&&typeof e.data.farbe==='string')fm(e.data.farbe)});addEventListener('storage',e=>{if(e.key==='gn-farbe')fm(e.newValue==='hell'?'hell':'dunkel')});
 function tick(t){
   /* NOVO CODE P1 19.11.2026: unsichtbar (iframe ausgeblendet, Größe 0) → nicht zeichnen, nur alle 0,5 s nachsehen */
   if(!innerWidth||!innerHeight){setTimeout(()=>requestAnimationFrame(tick),500);last=performance.now();return}
